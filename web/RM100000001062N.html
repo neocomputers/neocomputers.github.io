@@ -1,0 +1,1281 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P050500" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290546" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001062N" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P050500</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P050500</h1>
+<div class="section" id="RM100000001062N__RM100000001062N_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P050500</td> 
+       <td class="dtcname" headers="ID0EED">Idle Control System</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001062N__RM100000001062N_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The idle speed is controlled by the electronic throttle control system. The electronic throttle control system is comprised of: 1) one valve type throttle body assembly; 2) the throttle actuator, which operates the throttle valve; 3) the throttle position sensor, which detects the opening angle of the throttle valve; 4) the accelerator pedal position sensor, which detects the accelerator pedal position; 5) the ECM, which controls the electronic throttle control system. Based on the target idle speed, the ECM controls the throttle actuator to provide the proper throttle valve opening angle.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0E2F" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EBG" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EHG" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0ENG" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0ETG" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EZG" width="NaN%">Memory</th> 
+        <th align="center" class="cellrowborder" id="ID0E6G" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0E2F " width="NaN%">P050500</td> 
+        <td align="left" class="cellrowborder" headers="ID0EBG " width="NaN%">Idle Control System</td> 
+        <td align="left" class="cellrowborder" headers="ID0EHG " width="NaN%">The idle speed differs largely from the target idle speed (2 trip detection logic).</td> 
+        <td align="left" class="cellrowborder" headers="ID0ENG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Electronic throttle control system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Intake system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV hose connection</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">EGR valve assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ETG " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EZG " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0E6G " width="NaN%">SAE Code: P0505</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001062N__RM100000001062N_08">
+     
+    <p class="subpara-subparaName">MONITOR DESCRIPTION</p> 
+    <p class="content5-ptxt">The ECM monitors the idle speed and idling air flow volume to conduct idle speed control. The ECM determines that the idle speed control system is malfunctioning if either of the following conditions is met:</p> 
+    <br class="subpara"/>
+    <ul class="content5-list1"> 
+     <li class="list1-item">
+<p class="content5-list1-heading">The difference between the target engine idle speed and actual engine idle speed exceeds the threshold and the idle control correction value is stuck at the upper or lower limit for 5 seconds or more.</p>
+</li> 
+     <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<p class="content5-list1-heading">After driving at a vehicle speed of 10 km/h (6 mph) or more, the difference between the target and actual engine idle speed exceeds the threshold 5 times or more during a driving cycle, and then the system determines that the idle control correction value is stuck at the upper or lower limit, or that the idle control correction value has been changed by an amount that exceeds the threshold.</p>
+<div class="fignone--bigImage">
+<img alt="B006I3GE03" class="figure-graphic--bigImage" src="../images/b006i3ge03.png"/>
+</div>
+</li> 
+    </ul> 
+   </div>
+<div class="subpara" id="RM100000001062N__RM100000001062N_09">
+     
+    <p class="subpara-subparaName">MONITOR STRATEGY</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Required Sensors/Components (Main)</td> 
+        <td class="cellrowborder" width="NaN%">Electronic throttle control system</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Required Sensors/Components (Related)</td> 
+        <td class="cellrowborder" width="NaN%"> <p class="ptxt">Crankshaft position sensor</p> <p class="ptxt">Engine coolant temperature sensor</p> </td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Frequency of Operation</td> 
+        <td class="cellrowborder" width="NaN%">Continuous</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001062N__RM100000001062N_11">
+     
+    <p class="subpara-subparaName">TYPICAL MALFUNCTION THRESHOLDS</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Either of the following conditions is met</td> 
+        <td align="left" class="cellrowborder" width="NaN%">1 or 2</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">1. Both of the following conditions A and B met</td> 
+        <td align="left" class="cellrowborder" width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">A. Engine speed - Target engine speed</td> 
+        <td align="left" class="cellrowborder" width="NaN%">Less than -100 rpm, or higher than 150 rpm</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">B. Idle control correction value</td> 
+        <td align="left" class="cellrowborder" width="NaN%">-7 Nm or less, or 15 Nm or more for 5 seconds or more</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">2. Both of the following conditions C and D met</td> 
+        <td align="left" class="cellrowborder" width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">C. Frequency that all of following conditions (a), (b) and (c) met</td> 
+        <td align="left" class="cellrowborder" width="NaN%">5 times or more</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">(a) Engine speed - Target engine speed</td> 
+        <td align="left" class="cellrowborder" width="NaN%">Less than -100 rpm, or higher than 150 rpm</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">(b) Idle control feedback correction amount</td> 
+        <td align="left" class="cellrowborder" width="NaN%">-7 Nm or less, or 10 Nm or more</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">(c) Vehicle condition</td> 
+        <td align="left" class="cellrowborder" width="NaN%">Stopped after being driven at 10 km/h (6 mph) or more</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">D. Amount of change Idle control correction value</td> 
+        <td align="left" class="cellrowborder" width="NaN%">-12.09 Nm or less, or 7.16 Nm or more</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001062N__RM100000001062N_12">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <div class="fignone--bigImage">
+<img alt="B006IPNE11" class="figure-graphic--bigImage" src="../images/b006ipne11.png"/>
+</div> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) [A].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Start the engine and warm it up until the engine coolant temperature is 75°C (167°F) or higher with the A/C switch and all the accessories off [B].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Reconnect the cable to the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Start the engine and rev the engine for 5 seconds or more with the park (P) selected [C].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Idle the engine for 5 minutes or more [D].</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">In order to keep the idling stable, turn off the A/C and all other electric loads and do not perform any shift operations.</p> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes [E].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Read the pending DTCs.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is output, the system is malfunctioning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is not output, perform the following procedure.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Input the DTC: P050500.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tablenoborder">
+       <table class="item-table">
+<thead align="left" class="item-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0ENIAE" width="NaN%">GTS Display</th> 
+          <th align="center" class="cellrowborder" id="ID0ETIAE" width="NaN%">Description</th> 
+         </tr> 
+        </thead>
+<tbody class="item-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ENIAE " width="NaN%">NORMAL</td> 
+          <td class="cellrowborder" headers="ID0ETIAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System normal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ENIAE " width="NaN%">ABNORMAL</td> 
+          <td class="cellrowborder" headers="ID0ETIAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System abnormal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ENIAE " width="NaN%">INCOMPLETE</td> 
+          <td class="cellrowborder" headers="ID0ETIAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment not completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Perform driving pattern after confirming DTC enabling conditions</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ENIAE " width="NaN%">N/A</td> 
+          <td class="cellrowborder" headers="ID0ETIAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Unable to perform DTC judgment</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Number of DTCs which do not fulfill DTC preconditions has reached ECU memory limit</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is NORMAL, the system is normal.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is ABNORMAL, the system is malfunctioning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is INCOMPLETE or N/A, perform steps [F] through [I].</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Press the EV/HV mode selection switch to select HV mode.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">With the engine running, accelerate the vehicle to 10 km/h (6 mph) or more [F].</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">When performing the confirmation driving pattern, obey all speed limits and traffic laws.</p> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">If the engine stops, further depress the accelerator pedal to restart the engine.</p> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Stop the vehicle and rev the engine for 5 seconds or more with the park (P) selected [G].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Idle the engine for 20 seconds or more [H].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Repeat the steps [F] through [H] 10 times.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes [I].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Read the pending DTCs.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is output, the system is malfunctioning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is not output, perform the following procedure.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Input the DTC: P050500.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tablenoborder">
+       <table class="item-table">
+<thead align="left" class="item-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0E1VAE" width="NaN%">GTS Display</th> 
+          <th align="center" class="cellrowborder" id="ID0EAWAE" width="NaN%">Description</th> 
+         </tr> 
+        </thead>
+<tbody class="item-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E1VAE " width="NaN%">NORMAL</td> 
+          <td class="cellrowborder" headers="ID0EAWAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System normal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E1VAE " width="NaN%">ABNORMAL</td> 
+          <td class="cellrowborder" headers="ID0EAWAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System abnormal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E1VAE " width="NaN%">INCOMPLETE</td> 
+          <td class="cellrowborder" headers="ID0EAWAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment not completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Perform driving pattern after confirming DTC enabling conditions</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E1VAE " width="NaN%">N/A</td> 
+          <td class="cellrowborder" headers="ID0EAWAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Unable to perform DTC judgment</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Number of DTCs which do not fulfill DTC preconditions has reached ECU memory limit</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is NORMAL, the system is normal.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is ABNORMAL, the system is malfunctioning.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001062N__RM100000001062N_06">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">After turning power switch off, waiting time may be required before disconnecting the cable from the negative (-) auxiliary battery terminal. Therefore, make sure to read the disconnecting the cable from the negative (-) auxiliary battery terminal notices before proceeding with work.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM100000001AAN7.html#RM100000001AAN7">Click here</a>
+</p> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">The following conditions may also cause DTC P050500 to be stored:</p>
+</li> 
+      <br class="list1-li-list2"/>
+<ol class="li-list2-list2">
+<li class="list2-item">
+<p class="li-list2-list2-heading">If the floor carpet or floor mat is resting slightly on the accelerator pedal, causing the accelerator pedal to be slightly depressed and therefore the throttle valve position to be slightly open.</p>
+</li>
+<li class="list2-item">
+<p class="li-list2-list2-heading">The accelerator pedal is not fully released.</p>
+</li>
+</ol> 
+      <li class="list1-item">
+<p class="list1-heading">Refer to "Data List / Active Test" [Engine Speed and ISC Learning Value].</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001AMDB.html#RM100000001AMDB">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Read freeze frame data using the GTS. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air fuel ratio was lean or rich, and other data from the time the malfunction occurred.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001062N__RM100000001062N_13">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001062N__RM100000001062N_13_0001">
+<p class="testgrp-heading">CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P050500)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1GAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E1GAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDIAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJIAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDIAG " width="NaN%">DTC P050500 is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJIAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDIAG " width="NaN%">DTC P050500 and other DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJIAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If any DTCs other than P050500 are output, troubleshoot those DTCs first.</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART <a class="content6-ptxt-xref" href="RM100000001AMDC.html#RM100000001AMDC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001062N__RM100000001062N_13_0002">
+<p class="testgrp-heading">CHECK PCV HOSE CONNECTIONS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the PCV hose connections.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZW8T.html#RM100000000ZW8T">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETMAG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ETMAG">PCV valve and hose are connected correctly and are not damaged.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENNAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENNAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQOAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQOAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQOAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE PCV HOSE </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001062N__RM100000001062N_13_0005">
+<p class="testgrp-heading">CHECK INTAKE SYSTEM</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the intake system for vacuum leaks.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZW8V.html#RM100000000ZW8V">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E5RAG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E5RAG">No leaks from the intake system.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after repairing or replacing the intake system.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENTAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENTAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQUAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQUAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQUAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE INTAKE SYSTEM </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001062N__RM100000001062N_13_0017">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (CONTROL THE EGR STEP POSITION)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EYZAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EYZAG " width="NaN%">Inspection Mode</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Start the engine and warm it up until the engine coolant temperature is 75°C (167°F) or higher.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">The A/C switch and all accessories should be off.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Active Test / Control the EGR Step Position / Data List / Intake Manifold Absolute Pressure and Engine Independent.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EBABG" width="NaN%">Active Test Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EBABG " width="NaN%">Control the EGR Step Position</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ENBBG" width="NaN%">Data List Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ENBBG " width="NaN%">Intake Manifold Absolute Pressure</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ENBBG " width="NaN%">Engine Independent</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Confirm that the value of Data List item Engine Independent is "Operate" then check the value of Intake Manifold Absolute Pressure while performing the Active Test.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <br class="note"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Do not leave the EGR valve open for 10 seconds or more during the Active Test.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Be sure to return the EGR valve to step 0 when the Active Test is completed.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Do not open the EGR valve 30 steps or more during the Active Test.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXKBG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EXKBG">The value of Intake Manifold Absolute Pressure changes in response to the EGR step position when the value of Engine Independent is "Operate".</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ERLBG" class="spec-title">Standard</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ERLBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E6MBG" rowspan="2" width="NaN%">-</th> 
+                 <th align="center" class="spec-table-item" colspan="2" id="ID0EGNBG">Control the EGR Step Position (Active Test)</th> 
+                </tr> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ESNBG" width="NaN%">0 Steps</th> 
+                 <th align="center" class="spec-table-item" id="ID0EYNBG" width="NaN%">0 to 30 Steps</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6MBG ID0ESNBG " width="NaN%"> <p class="ptxt">Intake Manifold Absolute Pressure</p> <p class="ptxt">(Data List)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGNBG ID0EYNBG " width="NaN%">(EGR valve is fully closed)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGNBG " width="NaN%">Intake Manifold Absolute Pressure value is at least +10 kPa (1.45 psi) higher than when EGR valve is fully closed</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If the value of Data List item Engine Independent is "Not Opr" when the engine is idling, charge control is being performed. Perform the Active Test after charge control is complete ("Operate" is displayed).</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">While performing the Active Test, if the increase in the value of Intake Manifold Absolute Pressure is small, the EGR valve assembly may be malfunctioning.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Even if the EGR valve assembly is malfunctioning, rough idling or an increase in the value of Intake Manifold Absolute Pressure may occur while performing the Active Test. However, the amount that the value of Intake Manifold Absolute Pressure increases will be smaller than normal.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBRBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBRBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EESBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EESBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EESBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">OK</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 6  <a class="res-right-fin-false-xref" href="#RM100000001062N__RM100000001062N_13_0007">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001062N__RM100000001062N_13_0016">
+<p class="testgrp-heading">INSPECT EGR VALVE ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the EGR valve assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZW7X.html#RM100000000ZW7X">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the EGR valve is stuck open.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBWBG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EBWBG">EGR valve is tightly closed.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the EGR valve assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQXBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQXBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETYBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETYBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETYBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE EGR VALVE ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000ZW7X.html#RM100000000ZW7X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001062N__RM100000001062N_13_0007">
+<p class="testgrp-heading">INSPECT THROTTLE BODY ASSEMBLY (THROTTLE VALVE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the throttle body assembly condition.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E32BG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E32BG">Throttle valve is not contaminated with foreign matter and moves smoothly.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the throttle body assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EL4BG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EL4BG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EO5BG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EO5BG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EO5BG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE THROTTLE BODY ASSEMBLY <a class="content6-ptxt-xref" href="RM100000001067E.html#RM100000001067E">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001062N__RM100000001062N_13_0018">
+<p class="testgrp-heading">CLEAR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EEGAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EEGAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EHHAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHHAI " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001062N__RM100000001062N_13_0009">
+<p class="testgrp-heading">CONFIRM WHETHER DTC OUTPUT RECURS (DTC P050500)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Drive the vehicle in accordance with the driving pattern described in Confirmation Driving Pattern.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the pending DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENNAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENNAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWOAI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3OAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWOAI " width="NaN%">DTCs are not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3OAI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWOAI " width="NaN%">DTC P050500 is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3OAI " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ECM <a class="content6-ptxt-xref" href="RM100000001067I.html#RM100000001067I">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

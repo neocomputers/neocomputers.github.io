@@ -1,0 +1,509 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SIMPLE INTELLIGENT PARKING ASSIST SYSTEM SYSTEM DESCRIPTION" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_56" name="servcatId"/> 
+  <meta content="Audio / Visual / Telematics" name="servcatName"/> 
+  <meta content="_058038" name="sectionId"/> 
+  <meta content="PARK ASSIST / MONITORING" name="sectionName"/> 
+  <meta content="_0292669" name="ttlId"/> 
+  <meta content="SIMPLE INTELLIGENT PARKING ASSIST SYSTEM" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="SYSTEM DESCRIPTION" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001148E" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>SIMPLE INTELLIGENT PARKING ASSIST SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SIMPLE INTELLIGENT PARKING ASSIST SYSTEM<span class="topictitle1"> SYSTEM DESCRIPTION</span>
+</h1>
+<div class="subpara" id="RM100000001148E__RM100000001148E_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000001148E__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">FUNCTION OF COMPONENTS</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">The simple intelligent parking assist system consists of the following components:</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E1E" width="NaN%">Component</th> 
+            <th align="center" class="cellrowborder" id="ID0EAF" width="NaN%">Function</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%">Clearance Warning ECU Assembly</td> 
+            <td class="cellrowborder" headers="ID0EAF " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Sends operation signals to the power steering ECU assembly via CAN communication when simple intelligent parking assist system is operating.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Sends simple intelligent parking assist display request signals to the meter circuit plate via CAN communication.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Searches for empty parking spaces based on the signals from the ultra sonic sensors when the simple intelligent parking assist system is operating.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E1E " width="NaN%">S-IPA Switch</td> 
+            <td class="cellrowborder" headers="ID0EAF " width="NaN%">Sends the switch operation signal to the clearance warning ECU assembly.</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E1E " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Front Side Ultrasonic Sensor</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Rear Side Ultrasonic Sensor</p>
+</li> 
+             </ul> </td> 
+            <td class="cellrowborder" headers="ID0EAF " width="NaN%">Controlled by the clearance warning ECU assembly and detects an available parking space</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E1E " width="NaN%">Steering Sensor</td> 
+            <td class="cellrowborder" headers="ID0EAF " width="NaN%">Detects the angle of the steering wheel and sends the resulting signals to the clearance warning ECU assembly via CAN communication.</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E1E " width="NaN%">Power Steering ECU Assembly</td> 
+            <td class="cellrowborder" headers="ID0EAF " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Sends EPS failure, intervention steering, and other related vehicle condition signals to the clearance warning ECU assembly.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Performs steering control based on simple intelligent parking assist control signals and steering-related signals.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E1E " width="NaN%">Skid Control ECU</td> 
+            <td class="cellrowborder" headers="ID0EAF " width="NaN%">Sends the stop switch signal, vehicle speed signal, driving distance signal, and other vehicle condition signals to the clearance warning ECU assembly.</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E1E " width="NaN%">ECM</td> 
+            <td class="cellrowborder" headers="ID0EAF " width="NaN%">Sends status signals to the clearance warning ECU assembly via CAN communication.</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E1E " width="NaN%">Hybrid Vehicle Control ECU Assembly</td> 
+            <td class="cellrowborder" headers="ID0EAF " width="NaN%">Sends the shift state signal to the clearance warning ECU assembly via CAN communication</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E1E " width="NaN%">Air Conditioning Amplifier Assembly</td> 
+            <td class="cellrowborder" headers="ID0EAF " width="NaN%">Sends the outside temperature signal to the clearance warning ECU assembly via CAN communication.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%">Meter Circuit Plate</td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Displays information on the multi-information display in accordance with the operation condition and state of the simple intelligent parking assist system, based on the received display request signal.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Displays the position of an obstruction and the distance between the vehicle and the obstruction on the multi-information display.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Sends turn signal switch signals to the clearance warning ECU assembly.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Illuminates the S-IPA indicator on the multi-information display when automatic steering is started while the simple intelligent parking assist system is operating.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Sounds the buzzer in accordance with the operation condition and state of the simple intelligent parking assist system, based on the received buzzer sound signal.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Illuminates the S-IPA indicator light when the system is operating.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%">Airbag Sensor Assembly</td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%">Sends acceleration and yaw rate sensor signal to the clearance warning ECU assembly via CAN communication.</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E1E " width="NaN%">Main Body ECU (Multiplex Network Body ECU)</td> 
+            <td class="cellrowborder" headers="ID0EAF " width="NaN%">Sends the vehicle information signal to the clearance warning ECU assembly via CAN communication.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">METER DISPLAY OPERATION</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<div class="ie8fixer"/>
+<p class="step2-heading">When the simple intelligent parking assist system is operating normally (no DTCs are stored) and the S-IPA switch is pressed, the display screen changes.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">It is not possible to select a display screen if all display conditions are not met. Refer to the display conditions for each screen.</p> 
+        </div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">A buzzer sounds when the S-IPA switch is pressed and the screen changes.</p> 
+        </div>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<p class="step3-heading">Parallel parking mode and back-in parking mode</p>
+<div class="fignone--bigImage">
+<img alt="A003OMKC01" class="figure-graphic--bigImage" src="../images/a003omkc01.png"/>
+<div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="big-image-callout">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%">Parking Mode Selection:</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td align="left" class="cellrowborder" width="NaN%">S-IPA switch Pressed</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+                <td align="left" class="cellrowborder" width="NaN%">Parallel Parking Mode</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+                <td align="left" class="cellrowborder" width="NaN%">Back-in Parking Mode</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*e</td> 
+                <td align="left" class="cellrowborder" width="NaN%">Default Screen</td> 
+                <td align="center" class="cellrowborder" width="NaN%">-</td> 
+                <td align="center" class="cellrowborder" width="NaN%">-</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div>
+</div>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<p class="step3-heading">Exit parallel parking mode</p>
+<div class="fignone--bigImage">
+<img alt="A003LASC01" class="figure-graphic--bigImage" src="../images/a003lasc01.png"/>
+<div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="big-image-callout">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%">Parking Mode Selection:</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td align="left" class="cellrowborder" width="NaN%">S-IPA switch Pressed</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+                <td align="left" class="cellrowborder" width="NaN%">Exit Parallel Parking Mode</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+                <td align="left" class="cellrowborder" width="NaN%">Default Screen</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">BACK-IN PARKING MODE</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Back-in parking mode operation</p>
+<div class="fignone--bigImage">
+<img alt="A003MO3C01" class="figure-graphic--bigImage" src="../images/a003mo3c01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Empty Parking Space Detection</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Point at Which to Stop the Vehicle</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Desired Parking Space</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Approximately 1 m (3.28 ft.)</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*e</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Point at Which Automatic Operation of the Steering Wheel Begins</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*f</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Point at Which the Vehicle Needs to Be Reversed</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*g</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Point at Which the Direction of the Vehicle Needs to Be Changed</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">While keeping a distance of approximately 1 m (3.28 ft.) from the parking space, drive the vehicle at a vehicle speed of 30 km/h (19 mph) or less with drive (D) selected and stop the vehicle beside the center of the parking space.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">With the vehicle stopped, press the S-IPA switch to select parking assist mode. (The buzzer will then sound.)</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Depending on the speed or angle of the vehicle, the size of the parking space, the distance to the parking space, or vehicles surrounding the parking space, detection of an empty parking space by the ultrasonic sensors may not be possible.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Depending on the surroundings, the ultrasonic sensors may not be able to detect a desired parking space.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001148C.html#RM100000001148C">Click here</a>
+</p>
+</li> 
+           </ul> 
+          </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Following the guidance on the screen, drive the vehicle forward at a vehicle speed of 7 km/h (4 mph) or less. The S-IPA indicator light illuminates, the buzzer sounds and automatic operation of the steering wheel begins.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">The driver is required to operate the brakes to stop the vehicle.</p> 
+          </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">The buzzer sounds when the position at which the vehicle needs to be reversed is reached.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Following the guidance on the screen, select reverse (R) and start reversing the vehicle at a vehicle speed of 7 km/h (4 mph) or less.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">When the vehicle reaches the point where the direction of the vehicle needs to be changed, the buzzer sounds. Following the guidance on the screen, stop the vehicle and move the vehicle forward or backward.</p> 
+          </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">When the vehicle reaches the desired parking position, the buzzer sounds, the S-IPA indicator light turns off and automatic operation of the steering wheel ends.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">PARALLEL PARKING MODE</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Parallel parking mode operation</p>
+<div class="fignone--bigImage">
+<img alt="A003KPUC01" class="figure-graphic--bigImage" src="../images/a003kpuc01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Position Beside the Desired Parking Space</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Point at Which Automatic Operation of the Steering Wheel Begins</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Point at Which the Direction of the Vehicle Needs to Be Changed</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Empty Parking Space Detection</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*e</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Approximately 1 m (3.28 ft.)</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*f</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Desired Parking Space</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Stop the vehicle at the position beside the desired parking space. Then press the S-IPA switch to select parallel parking assist mode with a shift state other than park (P) selected and at a vehicle speed of 30 km/h (19 mph) or less. (The buzzer will then sound.)</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <p class="list1-li-title">
+<strong class="li-title-title">It is possible that parallel parking mode may operate in the following situations. Follow the guidance on the screen.</strong>
+</p> 
+            <li class="list1-item">
+<p class="list1-heading">The S-IPA switch is pressed when the vehicle has moved beyond the position just beside the desired parking space.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The S-IPA switch is pressed when the vehicle is still moving toward the position just beside the desired parking space.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The S-IPA switch is pressed while the vehicle is moving toward the point at which automatic operation of the steering wheel begins and with the shift status reverse (R) is selected.</p>
+</li> 
+           </ul> 
+          </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">While keeping a distance of approximately 1 m (3.28 ft.) from the desired parking space and keeping the vehicle parallel to the parking space, drive the vehicle forward at a vehicle speed of 30 km/h (19 mph) or less. If the side ultrasonic sensors detect that the parking space is suitable, the message "Space Detected Go Forward" will be displayed on the screen.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Depending on the speed or angle of the vehicle, the size of the parking space, the distance to the parking space, or vehicles surrounding the parking space, detection of an empty parking space by the side ultrasonic sensors may not be possible.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Depending on the surroundings, the side ultrasonic sensors may not be able to detect a desired parking space.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001148C.html#RM100000001148C">Click here</a>
+</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">If the side ultrasonic sensors detect that the parking space is not suitable, "Space Detected Go Forward" will not be displayed on the screen.</p>
+</li> 
+           </ul> 
+          </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Following the guidance on the screen, move the vehicle to the point at which automatic operation of the steering wheel begins (the buzzer will sound), then stop the vehicle and select reverse (R).</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">If the automatic operation of the steering wheel cannot be performed, the buzzer will not sound.</p> 
+          </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Following the guidance on the screen, move the vehicle backward at a vehicle speed of 7 km/h (4 mph) or less, the buzzer sounds, the S-IPA indicator light illuminates and automatic operation of the steering wheel begins.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">When the vehicle reaches a point where direction of the vehicle needs to be changed, the buzzer sounds. Following the guidance on the screen, stop the vehicle and move the vehicle forward or backward.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The driver is required to operate the brakes to stop the vehicle.</p>
+</li> 
+           </ul> 
+          </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">When the vehicle reaches the desired parking position, the buzzer sounds, the S-IPA indicator light turns off and automatic operation of the steering wheel ends.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">EXIT PARALLEL PARKING MODE</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Exit parallel parking mode operation</p>
+<div class="fignone--bigImage">
+<img alt="A003OCWC01" class="figure-graphic--bigImage" src="../images/a003ocwc01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Point at Which Automatic Operation of the Steering Wheel Begins</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Point at Which the Direction of the Vehicle Needs to Be Changed</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">While the vehicle is stopped with park (P) selected, press the S-IPA switch to select parallel parking departure assist mode. (The buzzer will then sound.)</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Following the guidance on the screen, operate the headlight dimmer switch assembly to select the direction of departure, then the recommended shift state will be displayed.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Following the guidance on the screen, select the recommended shift state, then the buzzer sounds, the S-IPA indicator light illuminates and automatic operation of the steering wheel begins.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">When the vehicle reaches a position where direction of the vehicle needs be changed, the buzzer sounds and a notice to move the vehicle forward or backward is displayed.</p> 
+          </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">When the vehicle reaches the position at which departure is possible, the buzzer sounds, the S-IPA indicator light turns off and automatic operation of the steering wheel ends.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">COMMUNICATION SYSTEM OUTLINE</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">CAN communication system</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">The simple intelligent parking assist system uses CAN communication for data communications between the clearance warning ECU assembly and each ECU.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">If a problem occurs in the CAN communication line, the clearance warning ECU assembly outputs a CAN communication malfunction DTC. (To check, use the GTS.)</p>
+<p class="step3-ptxt"> <a class="ptxt-xref" href="RM100000001148M.html#RM100000001148M">Click here</a>
+</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">If a CAN communication line malfunction DTC is output, repair the malfunction in the communication line and troubleshoot the simple intelligent parking assist system when data communication is normal.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Since the CAN communication line has its own length and route, it cannot be repaired temporarily with a bypass wire, etc.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

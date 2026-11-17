@@ -1,0 +1,1349 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/o Canister Pump Module), Diagnostic DTC:P059F73, P05A072" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290547" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/o Canister Pump Module)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001066Y" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P059F73, P05A072</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/o Canister Pump Module), Diagnostic DTC:P059F73, P05A072</h1>
+<div class="section" id="RM100000001066Y__RM100000001066Y_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P059F73</td> 
+       <td class="dtcname" headers="ID0EED">Active Grille Air Shutter "A" Actuator Stuck Closed</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P05A072</td> 
+       <td class="dtcname" headers="ID0EED">Active Grille Air Shutter "A" Actuator Stuck Open</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001066Y__RM100000001066Y_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The grille shutter system is composed of the radiator shutter sub-assembly and grille shutter ECU (swing grille actuator assembly).</p> 
+    <p class="content5-ptxt">When the certain vehicle conditions are met, the grille shutter system operates the swing grille actuator assembly to open and close the radiator shutter sub-assembly and control the volume of air flowing through the radiator assembly into the engine compartment. This results in increased thermal efficiency and increased fuel economy due to reduced aerodynamic drag. This control is performed based on signals received via CAN communication: vehicle speed signal, engine coolant temperature signal, hybrid inverter coolant temperature signal, ambient temperature signal, refrigerant pressure and brake (B) shift state request signal.</p> 
+    <p class="content5-ptxt">If the grille shutter ECU (swing grille actuator assembly) detects a malfunction in itself or any of the mechanical components of the grille shutter system, it will output a malfunction signal to the ECM and the ECM will store a DTC.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Control List
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0E4F" width="NaN%">Control</th> 
+        <th align="center" class="cellrowborder" id="ID0EDG" width="NaN%">Description</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0E4F " width="NaN%">Closing Operation Control</td> 
+        <td class="cellrowborder" headers="ID0EDG " width="NaN%">The grille shutter closes when certain conditions related to the vehicle speed, engine coolant temperature, inverter coolant temperature, ambient temperature and refrigerant pressure are met.</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0E4F " width="NaN%">Opening Operation Control</td> 
+        <td class="cellrowborder" headers="ID0EDG " width="NaN%">The grille shutter opens when certain conditions related to the vehicle speed, engine coolant temperature, inverter coolant temperature, ambient temperature and refrigerant pressure are met.</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0E4F " width="NaN%">Power Switch Off-linked Opening Operation Control</td> 
+        <td class="cellrowborder" headers="ID0EDG " width="NaN%">Power Switch Off-linked Opening Operation Control</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0E4F " width="NaN%">Power Switch On (IG) Closing/Opening Operation</td> 
+        <td class="cellrowborder" headers="ID0EDG " width="NaN%">If the detection conditions of a DTC are met during a trip, the next time the power switch is turned on (IG), a grille shutter opening and closing operation will be performed in order to judge if the malfunction still exists.</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0E4F " width="NaN%">Brake (B) Shift State-linked Opening Control</td> 
+        <td class="cellrowborder" headers="ID0EDG " width="NaN%">Opens the grille shutter to assist braking when brake (B) is selected.</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0E4F " width="NaN%">Snow Blockage Control Operation</td> 
+        <td class="cellrowborder" headers="ID0EDG " width="NaN%">If the radiator shutter sub-assembly becomes stuck closed due to being frozen or blocked by snow, grille shutter control will be suspended to protect the grille shutter motor (swing grille actuator assembly). If the vehicle is driven in a cold environment where the radiator shutter sub-assembly may be frozen and stuck closed, the malfunction threshold will be higher than usual.</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0E4F " width="NaN%">Retry Operation</td> 
+        <td class="cellrowborder" headers="ID0EDG " width="NaN%">If a mechanical malfunction is detected during a grille shutter operation, the operation will be attempted again.</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="fignone--bigImage">
+<img alt="A003L4WE02" class="figure-graphic--bigImage" src="../images/a003l4we02.png"/>
+</div> 
+    <div class="fignone--bigImage">
+<img alt="A003NA0E02" class="figure-graphic--bigImage" src="../images/a003na0e02.png"/>
+</div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EKEAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EQEAC" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EWEAC" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0E3EAC" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0ECFAC" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EIFAC" width="NaN%">Memory</th> 
+        <th align="center" class="cellrowborder" id="ID0EOFAC" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EKEAC " width="NaN%">P059F73</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQEAC " width="NaN%">Active Grille Air Shutter "A" Actuator Stuck Closed</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWEAC " width="NaN%"> <p class="ptxt">Both of the following conditions are met and the ECM receives a malfunction signal 17 times* (2 trip detection logic):</p> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">A grille shutter closing operation is stopped at a position outside of the specified position.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Grille shutter closing operation incorrect position stop counter exceeds the threshold. (The counter is reset when a grille shutter closing operation stops at the specified position.)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0E3EAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Radiator shutter sub-assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Swing grille actuator assembly</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ECFAC " width="NaN%">Does not come on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EIFAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EOFAC " width="NaN%">SAE Code: P059F</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EKEAC " width="NaN%">P05A072</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQEAC " width="NaN%">Active Grille Air Shutter "A" Actuator Stuck Open</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWEAC " width="NaN%"> <p class="ptxt">Both of the following conditions are met and the ECM receives a malfunction signal 17 times* (2 trip detection logic):</p> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">A grille shutter opening operation is stopped at a position outside of the specified position.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Grille shutter opening operation incorrect position stop counter exceeds the threshold. (The counter is reset when a grille shutter closing operation stops at the specified position.)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0E3EAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Radiator shutter sub-assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Swing grille actuator assembly</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ECFAC " width="NaN%">Does not come on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EIFAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EOFAC " width="NaN%">SAE Code: P05A0</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">*: For every 65 ms that the ECM receives a grille shutter system malfunction signal from the grille shutter ECU (swing grille actuator assembly) the ECM determines it has received the signal 1 time. If the ECM determines the malfunction signal has been received 17 consecutive times (the signal is received for approximately 1 second continuously), it will store a DTC.</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001066Y__RM100000001066Y_03">
+     
+    <p class="subpara-subparaName">MONITOR DESCRIPTION</p> 
+    <p class="content5-ptxt">If the grille shutter ECU (swing grille actuator assembly) detects that the grille shutter has stopped during an opening or closing operation, due to foreign matter or a malfunction, it will send a malfunction signal to the ECM and the ECM will store a DTC.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0ELOAC" width="NaN%">Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EROAC" width="NaN%">DTC No.</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ELOAC " width="NaN%">Closing Operation</td> 
+        <td align="center" class="cellrowborder" headers="ID0EROAC " width="NaN%">P059F73 (Active Grille Air Shutter "A" Actuator Stuck Closed)</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ELOAC " width="NaN%">Opening Operation</td> 
+        <td align="center" class="cellrowborder" headers="ID0EROAC " width="NaN%">P05A072 (Active Grille Air Shutter "A" Actuator Stuck Open)</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001066Y__RM100000001066Y_08">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Body Electrical / Grill Shutter / Active Test / Shutter Closing Operation Lock Detection / Data List / Shutter Operation Lock Detection Result for Active Test.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">According to the display on the GTS, perform the Active Test and read the value of Data List item Shutter Operation Lock Detection Result for Active Test.</p>
+<table class="spec">
+<tbody class="item-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0E4DAE" class="spec-title">OK</th> 
+        </tr> 
+        <tr class="spec-specitem"> 
+         <td class="specitem-ptxt" headers="ID0E4DAE">"Normal" is displayed.</td> 
+        </tr> 
+       </tbody>
+</table>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Body Electrical / Grill Shutter / Active Test / Shutter Opening Operation Lock Detection / Data List / Shutter Operation Lock Detection Result for Active Test.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">According to the display on the GTS, perform the Active Test and read the value of Data List item Shutter Operation Lock Detection Result for Active Test.</p>
+<table class="spec">
+<tbody class="item-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0ENFAE" class="spec-title">OK</th> 
+        </tr> 
+        <tr class="spec-specitem"> 
+         <td class="specitem-ptxt" headers="ID0ENFAE">"Normal" is displayed.</td> 
+        </tr> 
+       </tbody>
+</table>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001066Y__RM100000001066Y_09">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003KFUE09" class="figure-graphic--bigImage" src="../images/a003kfue09.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM100000001066Y__RM100000001066Y_10">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">In order to ensure safety, before performing troubleshooting or removing the swing grille actuator assembly or radiator shutter sub-assembly, change the grille shutter control mode to maintenance mode.</p> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">Read freeze frame data using the GTS. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air fuel ratio was lean or rich, and other data from the time the malfunction occurred.</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001066Y__RM100000001066Y_11">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001066Y__RM100000001066Y_11_0001">
+<p class="testgrp-heading">PERFORM UTILITY USING GTS (GRILL SHUTTER CONTROL MODE SWITCHING)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Grill Shutter / Utility / Grill Shutter Control Mode Switching.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Grill Shutter &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EGLAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EGLAE " width="NaN%">Grill Shutter Control Mode Switching</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, change the grille shutter control mode from normal mode to maintenance mode.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBQAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBQAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EERAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EERAE " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001066Y__RM100000001066Y_11_0002">
+<p class="testgrp-heading">INSPECT GRILLE SHUTTER (FOREIGN MATTER AND ICE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the area around the shutters and the links of the grille shutter for foreign matter and ice.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EUTAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EUTAE">No foreign matter or ice.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EOUAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EOUAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ERVAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERVAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERVAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">REMOVE FOREIGN MATTER OR ICE (CLEAN GRILLE SHUTTER)  <a class="res-right-fin-false-xref" href="#RM100000001066Y__RM100000001066Y_11_0012">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001066Y__RM100000001066Y_11_0003">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (GRILLE SHUTTER OPERATION)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Grill Shutter / Active Test / Shutter Closing Operation Lock Detection / Data List / Shutter Operation Lock Detection Result for Active Test.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Grill Shutter &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EO1AE" width="NaN%">Active Test Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EO1AE " width="NaN%">Shutter Closing Operation Lock Detection</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E12AE" width="NaN%">Data List Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E12AE " width="NaN%">Shutter Operation Lock Detection Result for Active Test</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, perform the Active Test and read the value of Data List item Shutter Operation Lock Detection Result for Active Test.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKCAG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EKCAG">"Normal" is displayed.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Grill Shutter / Active Test / Shutter Opening Operation Lock Detection / Data List / Shutter Operation Lock Detection Result for Active Test.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Grill Shutter &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EIEAG" width="NaN%">Active Test Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EIEAG " width="NaN%">Shutter Opening Operation Lock Detection</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EUFAG" width="NaN%">Data List Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUFAG " width="NaN%">Shutter Operation Lock Detection Result for Active Test</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, perform the Active Test and read the value of Data List item Shutter Operation Lock Detection Result for Active Test.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDMAG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EDMAG">"Normal" is displayed.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">When the value of Data List item Shutter Operation Lock Detection Result for Active Test is "Normal", it can be determined that the grille shutter system has returned to normal.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHNAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EHNAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EKOAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKOAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKOAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">PERFORM ACTIVE TEST USING GTS (SWING GRILLE ACTUATOR ASSEMBLY OPERATION)  <a class="res-right-fin-false-xref" href="#RM100000001066Y__RM100000001066Y_11_0007">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001066Y__RM100000001066Y_11_0004">
+<p class="testgrp-heading">CLEAR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EEWAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EEWAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EHXAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHXAG " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001066Y__RM100000001066Y_11_0005">
+<p class="testgrp-heading">PERFORM UTILITY USING GTS (GRILL SHUTTER CONTROL MODE SWITCHING)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Grill Shutter / Utility / Grill Shutter Control Mode Switching.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Grill Shutter &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ER2AG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ER2AG " width="NaN%">Grill Shutter Control Mode Switching</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, change the grille shutter control mode from maintenance mode to normal mode.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs and make sure that DTC B1333 is not output.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Grill Shutter &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXDBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EXDBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E1EBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1EBG " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NEXT</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001066Y__RM100000001066Y_11_0007">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (SWING GRILLE ACTUATOR ASSEMBLY OPERATION)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the radiator shutter sub-assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZT5E.html#RM100000000ZT5E">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the swing grille actuator assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZT5F.html#RM100000000ZT5F">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the swing grille actuator assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Grill Shutter / Active Test / Shutter Closing Operation Lock Detection.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Grill Shutter &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E2KBG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E2KBG " width="NaN%">Shutter Closing Operation Lock Detection</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, perform the Active Test and check the operation of the swing grille actuator assembly.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKQBG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EKQBG">Operation is normal.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Grill Shutter / Active Test / Shutter Opening Operation Lock Detection.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Grill Shutter &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EISBG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EISBG " width="NaN%">Shutter Opening Operation Lock Detection</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, perform the Active Test and check the operation of the swing grille actuator assembly.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXXBG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EXXBG">Operation is normal.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Grill Shutter Control Mode Switching and Grill Shutter Initialization" after replacing the swing grille actuator assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM100000000ZT4U.html#RM100000000ZT4U">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EGZBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EGZBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJ1BG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJ1BG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJ1BG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE SWING GRILLE ACTUATOR ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000ZT5F.html#RM100000000ZT5F">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001066Y__RM100000001066Y_11_0008">
+<p class="testgrp-heading">INSPECT RADIATOR SHUTTER SUB-ASSEMBLY (GRILLE SHUTTER OPERATION)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the radiator shutter sub-assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZT5E.html#RM100000000ZT5E">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the swing grille actuator assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZT5F.html#RM100000000ZT5F">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Manually open and close the radiator shutter sub-assembly and check that it moves smoothly.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E55BG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E55BG">Radiator shutter sub-assembly moves smoothly.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Grill Shutter Control Mode Switching and Grill Shutter Initialization" after replacing the swing grille actuator assembly or radiator shutter sub-assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM100000000ZT4U.html#RM100000000ZT4U">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EOAAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EOAAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ERBAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERBAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERBAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE SWING GRILLE ACTUATOR ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000ZT5F.html#RM100000000ZT5F">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE RADIATOR SHUTTER SUB-ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000ZT5E.html#RM100000000ZT5E">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001066Y__RM100000001066Y_11_0012">
+<p class="testgrp-heading">REMOVE FOREIGN MATTER OR ICE (CLEAN GRILLE SHUTTER)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove any foreign matter and/or ice from the area around the shutters and the links of the grille shutter.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EAFAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EAFAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDGAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDGAI " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001066Y__RM100000001066Y_11_0013">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (GRILLE SHUTTER OPERATION)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Grill Shutter / Active Test / Shutter Closing Operation Lock Detection / Data List / Shutter Operation Lock Detection Result for Active Test.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Grill Shutter &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ENKAI" width="NaN%">Active Test Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ENKAI " width="NaN%">Shutter Closing Operation Lock Detection</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EZLAI" width="NaN%">Data List Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZLAI " width="NaN%">Shutter Operation Lock Detection Result for Active Test</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, perform the Active Test and read the value of Data List item Shutter Operation Lock Detection Result for Active Test.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EISAI" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EISAI">"Normal" is displayed.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Grill Shutter / Active Test / Shutter Opening Operation Lock Detection / Data List / Shutter Operation Lock Detection Result for Active Test.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Grill Shutter &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EGUAI" width="NaN%">Active Test Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EGUAI " width="NaN%">Shutter Opening Operation Lock Detection</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ESVAI" width="NaN%">Data List Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ESVAI " width="NaN%">Shutter Operation Lock Detection Result for Active Test</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, perform the Active Test and read the value of Data List item Shutter Operation Lock Detection Result for Active Test.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EB3AI" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EB3AI">"Normal" is displayed.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">When the value of Data List item Shutter Operation Lock Detection Result for Active Test is "Normal", it can be determined that the grille shutter system has returned to normal.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EF4AI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EF4AI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EI5AI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EI5AI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EI5AI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 6  <a class="res-right-fin-false-xref" href="#RM100000001066Y__RM100000001066Y_11_0007">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001066Y__RM100000001066Y_11_0014">
+<p class="testgrp-heading">CLEAR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EGGBI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EGGBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJHBI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJHBI " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001066Y__RM100000001066Y_11_0015">
+<p class="testgrp-heading">PERFORM UTILITY USING GTS (GRILL SHUTTER CONTROL MODE SWITCHING)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Grill Shutter / Utility / Grill Shutter Control Mode Switching.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Grill Shutter &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ETLBI" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ETLBI " width="NaN%">Grill Shutter Control Mode Switching</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, change the grille shutter control mode from maintenance mode to normal mode.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs and make sure that DTC B1333 is not output.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Grill Shutter &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZTBI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZTBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E3UBI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3UBI " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NEXT</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

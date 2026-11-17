@@ -1,0 +1,1251 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C1241, C1242" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_54" name="servcatId"/> 
+  <meta content="Brake" name="servcatName"/> 
+  <meta content="_058045" name="sectionId"/> 
+  <meta content="BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS" name="sectionName"/> 
+  <meta content="_0295571" name="ttlId"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM10000000110J8" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>C1241, C1242</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C1241, C1242</h1>
+<div class="section" id="RM10000000110J8__RM10000000110J8_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C1241</td> 
+       <td class="dtcname" headers="ID0EED">Low or High Power Supply Voltage</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C1242</td> 
+       <td class="dtcname" headers="ID0EED">Open Circuit in IG1/IG2 Power Source Circuit</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM10000000110J8__RM10000000110J8_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">If a malfunction is detected in the power supply circuit, the skid control ECU (brake booster with master cylinder assembly) power source voltage drops, or there is insufficient voltage to operate the main relay, the skid control ECU (brake booster with master cylinder assembly) will store these DTCs.</p> 
+    <p class="content5-ptxt">If the auxiliary battery voltage is temporarily low, these DTCs may be stored.</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">DTC C1256 (Accumulator Low Pressure) may also be memorized if there is a drop in power source voltage.</p> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0ETG" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EZG" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0E6G" width="NaN%">INF Code</th> 
+        <th align="center" class="cellrowborder" id="ID0EFH" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0ELH" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0ERH" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ETG " width="NaN%">C1241</td> 
+        <td align="left" class="cellrowborder" headers="ID0EZG " width="NaN%">Low or High Power Supply Voltage</td> 
+        <td align="center" class="cellrowborder" headers="ID0E6G " width="NaN%"> <p class="ptxt">101</p> <p class="ptxt">102</p> <p class="ptxt">103</p> <p class="ptxt">551</p> <p class="ptxt">552</p> <p class="ptxt">554</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EFH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">INF Code: 101</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Either of the following is detected when the BS terminal voltage is 9.1 V or less:</p>
+</li> 
+            <br class="list2-li-list3"/>
+<ol class="li-list3-list3">
+<li class="list3-item"> <p class="li-list3-list3-heading">The brake is not applied for 3 seconds or more.</p> </li>
+<li class="list3-item"> <p class="li-list3-list3-heading">The brake is applied for 0.05 seconds or more.</p> </li>
+</ol> 
+           </ul> 
+          <li class="list1-item">
+<p class="list1-heading">INF Code: 102</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Any of the following is detected when the ECU internal voltage is 6.92 V or less:</p>
+</li> 
+            <br class="list2-li-list3"/>
+<ol class="li-list3-list3">
+<li class="list3-item"> <p class="li-list3-list3-heading">The relay output voltage is less than 3.5 V for 0.05 seconds or more, when the main relay operation command is on.</p> </li>
+<li class="list3-item"> <p class="li-list3-list3-heading">The stroke sensor value invalid for 0.2 seconds or more.</p> </li>
+<li class="list3-item"> <p class="li-list3-list3-heading">The reaction force pressure sensor value invalid for 0.2 seconds or more.</p> </li>
+<li class="list3-item"> <p class="li-list3-list3-heading">The servo pressure sensor power source voltage is 6.29 V or less, or 7.64 V or more for 0.06 seconds or more.</p> </li>
+<li class="list3-item"> <p class="li-list3-list3-heading">The servo pressure sensor value invalid for 0.2 seconds or more.</p> </li>
+<li class="list3-item"> <p class="li-list3-list3-heading">The reaction force pressure sensor power source voltage is 6.29 V or less, or 7.64 V or more for 0.06 seconds or more.</p> </li>
+</ol> 
+           </ul> 
+          <li class="list1-item">
+<p class="list1-heading">INF Code: 103</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">When the ECU internal voltage is 8.3 V or less, the accumulator pressure sensor value is invalid for 0.8 seconds or more.</p>
+</li> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Either of the following is detected when the ECU internal voltage is 6.9 V or less:</p>
+</li> 
+            <br class="list2-li-list3"/>
+<ol class="li-list3-list3">
+<li class="list3-item"> <p class="li-list3-list3-heading">When the accumulator pressure sensor value is 15 MPa (153 kgf/cm<sup class="item-ptxt">2</sup>, 2176 psi) or less, the pump motor does not operate for 1 second or more.</p> </li>
+<li class="list3-item"> <p class="li-list3-list3-heading">Both the motor relay 1 and 2 cannot be operated for 0.2 seconds or more.</p> </li>
+</ol> 
+           </ul> 
+          <li class="list1-item">
+<p class="list1-heading">INF Code: 551</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Either of the following is detected when the BS voltage of the ABS unit is 9.1 V or less:</p>
+</li> 
+            <br class="list2-li-list3"/>
+<ol class="li-list3-list3">
+<li class="list3-item"> <p class="li-list3-list3-heading">The brake is not applied for 3 seconds or more.</p> </li>
+<li class="list3-item"> <p class="li-list3-list3-heading">The brake is applied for 0.05 seconds or more.</p> </li>
+</ol> 
+           </ul> 
+          <li class="list1-item">
+<p class="list1-heading">INF Code: 552</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">The speed sensor power voltage is invalid for 60 seconds or more.</p>
+</li> 
+           </ul> 
+          <li class="list1-item">
+<p class="list1-heading">INF Code: 554</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">The voltage of IG1 or IG2 is 9.5 V or less for 10 seconds or more.</p>
+</li> 
+           </ul> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ELH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Improperly connected connector, deformation or corrosion of terminals</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Auxiliary battery</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid control system (Charging circuit)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Skid control ECU (brake booster with master cylinder assembly)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ERH " width="NaN%">Electronically controlled brake system DTC</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ETG " width="NaN%">C1242</td> 
+        <td align="left" class="cellrowborder" headers="ID0EZG " width="NaN%">Open Circuit in IG1/IG2 Power Source Circuit</td> 
+        <td align="center" class="cellrowborder" headers="ID0E6G " width="NaN%"> <p class="ptxt">111</p> <p class="ptxt">112</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EFH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">INF Code: 111</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">When the IG1 terminal voltage is less than 3.5 V, the IG2 terminal voltage is 9.5 V or more for 4 seconds or more.</p>
+</li> 
+           </ul> 
+          <li class="list1-item">
+<p class="list1-heading">INF Code: 112</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">When communication with the hybrid vehicle control ECU is normal or the vehicle speed is 10 km/h (6 mph) or more, and the IG1 terminal voltage is 9.5 V or more, the IG2 terminal voltage is less than 3.5 V for 4 seconds or more.</p>
+</li> 
+           </ul> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ELH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">INF Code: 111</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Open or short in IG1 circuit</p>
+</li> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Improperly connected connector, deformation or corrosion of terminals</p>
+</li> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Smart entry and start system (IG start circuit)</p>
+</li> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Auxiliary battery</p>
+</li> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Hybrid control system (Charging circuit)</p>
+</li> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Skid control ECU (brake booster with master cylinder assembly)</p>
+</li> 
+           </ul> 
+          <li class="list1-item">
+<p class="list1-heading">INF Code: 112</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Open or short in IG2 circuit</p>
+</li> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Improperly connected connector, deformation or corrosion of terminals</p>
+</li> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Smart entry and start system (IG start circuit)</p>
+</li> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Auxiliary battery</p>
+</li> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Hybrid control system (Charging circuit)</p>
+</li> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Skid control ECU (brake booster with master cylinder assembly)</p>
+</li> 
+           </ul> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ERH " width="NaN%">Electronically controlled brake system DTC</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       DTC Detection Conditions: C1241 INF Code: 101
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th class="cellrowborder" colspan="2" id="ID0EBLAE" rowspan="2"/> 
+        <th align="center" class="cellrowborder" colspan="2" id="ID0EJLAE">Vehicle Condition</th> 
+       </tr> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EVLAE" width="NaN%">Pattern 1</th> 
+        <th align="center" class="cellrowborder" id="ID0E2LAE" width="NaN%">Pattern 2</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EBLAE ID0EVLAE " width="NaN%">Diagnosis Condition</td> 
+        <td align="left" class="cellrowborder" headers="ID0EBLAE ID0E2LAE " width="NaN%">When the BS terminal voltage is 9.1 V or less.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EJLAE " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EJLAE " width="NaN%">○</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EBLAE ID0EVLAE " rowspan="2" width="NaN%">Malfunction Status</td> 
+        <td align="left" class="cellrowborder" headers="ID0EBLAE ID0E2LAE " width="NaN%">The brake is not applied.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EJLAE " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EJLAE " width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EBLAE ID0E2LAE " width="NaN%">The brake is applied.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EJLAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EJLAE " width="NaN%">○</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" colspan="2" headers="ID0EBLAE ID0EVLAE ID0E2LAE ">Detection Time</td> 
+        <td align="center" class="cellrowborder" headers="ID0EJLAE " width="NaN%">3 seconds or more</td> 
+        <td align="center" class="cellrowborder" headers="ID0EJLAE " width="NaN%">0.05 seconds or more</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" colspan="2" headers="ID0EBLAE ID0EVLAE ID0E2LAE ">Number of Trips</td> 
+        <td align="center" class="cellrowborder" headers="ID0EJLAE " width="NaN%">1 trip</td> 
+        <td align="center" class="cellrowborder" headers="ID0EJLAE " width="NaN%">1 trip</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">DTC will be output when conditions for either of the patterns in the table above are met.</p> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       DTC Detection Conditions: C1241 INF Code: 102
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th class="cellrowborder" colspan="2" id="ID0ENSAE" rowspan="2"/> 
+        <th align="center" class="cellrowborder" colspan="6" id="ID0EVSAE">Vehicle Condition</th> 
+       </tr> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EBTAE" width="NaN%">Pattern 1</th> 
+        <th align="center" class="cellrowborder" id="ID0EHTAE" width="NaN%">Pattern 2</th> 
+        <th align="center" class="cellrowborder" id="ID0ENTAE" width="NaN%">Pattern 3</th> 
+        <th align="center" class="cellrowborder" id="ID0ETTAE" width="NaN%">Pattern 4</th> 
+        <th align="center" class="cellrowborder" id="ID0EZTAE" width="NaN%">Pattern 5</th> 
+        <th align="center" class="cellrowborder" id="ID0E6TAE" width="NaN%">Pattern 6</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ENSAE ID0EBTAE " width="NaN%">Diagnosis Condition</td> 
+        <td align="left" class="cellrowborder" headers="ID0ENSAE ID0EHTAE " width="NaN%">When the ECU internal voltage is 6.92 V or less.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ENTAE " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ETTAE " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0EZTAE " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0E6TAE " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">○</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ENSAE ID0EBTAE " rowspan="6" width="NaN%">Malfunction Status</td> 
+        <td align="left" class="cellrowborder" headers="ID0ENSAE ID0EHTAE " width="NaN%">The relay output voltage is less than 3.5 V, when the main relay operation command is on.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ENTAE " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ETTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0EZTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0E6TAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0ENSAE ID0EHTAE " width="NaN%">The value of the stroke sensor is invalid.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ENTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ETTAE " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0EZTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0E6TAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ENSAE ID0EHTAE " width="NaN%">The value of the reaction force pressure sensor is invalid.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ENTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ETTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0EZTAE " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0E6TAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0ENSAE ID0EHTAE " width="NaN%">The servo pressure sensor power source voltage is 6.29 V or less, or 7.64 V or more.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ENTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ETTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0EZTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0E6TAE " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0ENSAE ID0EHTAE " width="NaN%">The value of the servo pressure sensor is invalid.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ENTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ETTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0EZTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0E6TAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0ENSAE ID0EHTAE " width="NaN%">The reaction force pressure sensor power source voltage is 6.29 V or less, or 7.64 V or more.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ENTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ETTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0EZTAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0E6TAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">○</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" colspan="2" headers="ID0ENSAE ID0EBTAE ID0EHTAE ">Detection Time</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ENTAE " width="NaN%">0.05 seconds or more</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ETTAE " width="NaN%">0.2 seconds or more</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0EZTAE " width="NaN%">0.2 seconds or more</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0E6TAE " width="NaN%">0.06 seconds or more</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">0.2 seconds or more</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">0.06 seconds or more</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" colspan="2" headers="ID0ENSAE ID0EBTAE ID0EHTAE ">Number of Trips</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ENTAE " width="NaN%">1 trip</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0ETTAE " width="NaN%">1 trip</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0EZTAE " width="NaN%">1 trip</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE ID0E6TAE " width="NaN%">1 trip</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">1 trip</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVSAE " width="NaN%">1 trip</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">DTC will be output when conditions for either of the patterns in the table above are met.</p> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       DTC Detection Conditions: C1241 INF Code: 103
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th class="cellrowborder" colspan="2" id="ID0EMDAG" rowspan="2"/> 
+        <th align="center" class="cellrowborder" colspan="3" id="ID0EUDAG">Vehicle Condition</th> 
+       </tr> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EAEAG" width="NaN%">Pattern 1</th> 
+        <th align="center" class="cellrowborder" id="ID0EGEAG" width="NaN%">Pattern 2</th> 
+        <th align="center" class="cellrowborder" id="ID0EMEAG" width="NaN%">Pattern 3</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EMDAG ID0EAEAG " rowspan="2" width="NaN%">Diagnosis Condition</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMDAG ID0EGEAG " width="NaN%">ECU internal voltage is 8.3 V or less.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG ID0EMEAG " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG " width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0EMDAG ID0EGEAG " width="NaN%">ECU internal voltage is 6.9 V or less.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG ID0EMEAG " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG " width="NaN%">○</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EMDAG ID0EAEAG " rowspan="3" width="NaN%">Malfunction Status</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMDAG ID0EGEAG " width="NaN%">The value of the accumulator pressure sensor is invalid.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG ID0EMEAG " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG " width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EMDAG ID0EGEAG " width="NaN%"> <p class="ptxt">When the accumulator pressure sensor value is 15 MPa (153 kgf/cm<sup class="ptxt">2</sup>, 2176 psi) or less, the pump motor does not operate.</p> </td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG ID0EMEAG " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG " width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0EMDAG ID0EGEAG " width="NaN%">Both the motor relay 1 and 2 cannot be operated.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG ID0EMEAG " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG " width="NaN%">○</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" colspan="2" headers="ID0EMDAG ID0EAEAG ID0EGEAG ">Detection Time</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG ID0EMEAG " width="NaN%">0.8 seconds or more</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG " width="NaN%">1 second or more</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG " width="NaN%">0.2 seconds or more</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" colspan="2" headers="ID0EMDAG ID0EAEAG ID0EGEAG ">Number of Trips</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG ID0EMEAG " width="NaN%">1 trip</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG " width="NaN%">1 trip</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUDAG " width="NaN%">1 trip</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">DTC will be output when conditions for either of the patterns in the table above are met.</p> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       DTC Detection Conditions: C1241 INF Code: 551
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th class="cellrowborder" colspan="2" id="ID0EGNAG" rowspan="2"/> 
+        <th align="center" class="cellrowborder" colspan="2" id="ID0EONAG">Vehicle Condition</th> 
+       </tr> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0E1NAG" width="NaN%">Pattern 1</th> 
+        <th align="center" class="cellrowborder" id="ID0EAOAG" width="NaN%">Pattern 2</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EGNAG ID0E1NAG " width="NaN%">Diagnosis Condition</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGNAG ID0EAOAG " width="NaN%">The BS voltage of the ABS unit is 9.1 V or less.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EONAG " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EONAG " width="NaN%">○</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EGNAG ID0E1NAG " rowspan="2" width="NaN%">Malfunction Status</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGNAG ID0EAOAG " width="NaN%">The brake is not applied.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EONAG " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0EONAG " width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EGNAG ID0EAOAG " width="NaN%">The brake is applied.</td> 
+        <td align="center" class="cellrowborder" headers="ID0EONAG " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0EONAG " width="NaN%">○</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" colspan="2" headers="ID0EGNAG ID0E1NAG ID0EAOAG ">Detection Time</td> 
+        <td align="center" class="cellrowborder" headers="ID0EONAG " width="NaN%">3 seconds or more</td> 
+        <td align="center" class="cellrowborder" headers="ID0EONAG " width="NaN%">0.05 seconds or more</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" colspan="2" headers="ID0EGNAG ID0E1NAG ID0EAOAG ">Number of Trips</td> 
+        <td align="center" class="cellrowborder" headers="ID0EONAG " width="NaN%">1 trip</td> 
+        <td align="center" class="cellrowborder" headers="ID0EONAG " width="NaN%">1 trip</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">DTC will be output when conditions for either of the patterns in the table above are met.</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110J8__RM10000000110J8_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003K5EE05" class="figure-graphic--bigImage" src="../images/a003k5ee05.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM10000000110J8__RM10000000110J8_04">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">After replacing the skid control ECU (brake booster with master cylinder assembly), perform linear solenoid valve offset learning, ABS holding solenoid valve learning, yaw rate and acceleration sensor zero point calibration and system information memorization after performing "Reset Memory".</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM10000000110JB.html#RM10000000110JB">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Inspect the fuses for circuits related to this system before performing the following procedure.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110J8__RM10000000110J8_05">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM10000000110J8__RM10000000110J8_05_0001">
+<p class="testgrp-heading">CHECK SMART ENTRY AND START SYSTEM (for Start Function)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if smart entry and start system (for start function) DTCs are output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZTA9.html#RM100000000ZTA9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Entry&amp;Start &gt; Trouble Codes<br class="test1Root-test1"/>Body Electrical &gt; Power Source Control &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EH4AG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EH4AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQ5AG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EV5AG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EQ5AG " width="NaN%">DTCs are not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EV5AG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EQ5AG " width="NaN%">DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EV5AG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>INSPECT SMART ENTRY AND START SYSTEM (for Start Function) <a class="content6-ptxt-xref" href="RM100000000ZTAI.html#RM100000000ZTAI">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110J8__RM10000000110J8_05_0002">
+<p class="testgrp-heading">CHECK DTC (HYBRID CONTROL SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if hybrid control system DTCs are output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001152V.html#RM100000001152V">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQFBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQFBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EZGBG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E5GBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EZGBG " width="NaN%">DTCs are not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5GBG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EZGBG " width="NaN%">DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5GBG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>INSPECT HYBRID CONTROL SYSTEM <a class="content6-ptxt-xref" href="RM1000000011530.html#RM1000000011530">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110J8__RM10000000110J8_05_0005">
+<p class="testgrp-heading">CHECK DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that no main relay malfunction DTCs are output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZNBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZNBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ECPBG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EHPBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0ECPBG " width="NaN%">Main relay malfunction DTCs are not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHPBG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0ECPBG " width="NaN%">Main relay malfunction DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHPBG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR CIRCUITS INDICATED BY OUTPUT DTCS <a class="content6-ptxt-xref" href="RM10000000110K1.html#RM10000000110K1">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110J8__RM10000000110J8_05_0007">
+<p class="testgrp-heading">CHECK AUXILIARY BATTERY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the auxiliary battery voltage.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXSBG" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EXSBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EEUBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EKUBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EQUBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEUBG " width="NaN%">Auxiliary battery</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKUBG " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQUBG " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEUBG " width="NaN%">Auxiliary battery</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKUBG " width="NaN%">Power switch on (READY)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQUBG " width="NaN%">11 to 15.5 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYWBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EYWBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E2XBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2XBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2XBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHARGE OR REPLACE AUXILIARY BATTERY </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110J8__RM10000000110J8_05_0009">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (POWER SOURCE TERMINAL)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HQOC64" class="figure-graphic" src="../images/b006hqoc64.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Skid Control ECU (Brake Booster with Master Cylinder Assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Make sure that there is no looseness at the locking part and the connecting part of the connector.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ER4BG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ER4BG">The connector is securely connected.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check both the connector case and the terminals for deformation and corrosion.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EB6BG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EB6BG">No deformation or corrosion.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHAAI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EHAAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EUBAI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E1BAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EACAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUBAI " width="NaN%">A32-15 (+BI1) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1BAI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EACAI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUBAI " width="NaN%">A32-5 (+BI2) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1BAI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EACAI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUBAI " width="NaN%">A32-52 (BS) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1BAI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EACAI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUBAI " width="NaN%">A32-23 (IG1) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1BAI " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EACAI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUBAI " width="NaN%">A32-9 (IG2) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1BAI " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EACAI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKGAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EKGAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ENHAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ENHAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ENHAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR (POWER SOURCE CIRCUIT) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110J8__RM10000000110J8_05_0011">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (GND TERMINAL)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003O8KC65" class="figure-graphic" src="../images/a003o8kc65.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Skid Control ECU (Brake Booster with Master Cylinder Assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBNAI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBNAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EOOAI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EUOAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E1OAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EOOAI " width="NaN%">A32-26 (GND1) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EUOAI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1OAI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EOOAI " width="NaN%">A32-39 (GND2) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EUOAI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1OAI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECRAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECRAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFSAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR (GND CIRCUIT) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM10000000110J8__RM10000000110J8_05_0013">
+<p class="testgrp-heading">RECONFIRM DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the same DTC is output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EH4AI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EH4AI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQ5AI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EV5AI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EQ5AI " width="NaN%">DTCs C1241 and C1242 are not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EV5AI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EQ5AI " width="NaN%">DTCs C1241 and/or C1242 are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EV5AI " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>USE SIMULATION METHOD TO CHECK <a class="content6-ptxt-xref" href="RM100000001145X.html#RM100000001145X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for LHD: <a class="content6-ptxt-xref" href="RM100000000Z7YC.html#RM100000000Z7YC">Click here</a> <br/>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for RHD: <a class="content6-ptxt-xref" href="RM100000000Z7YF.html#RM100000000Z7YF">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

@@ -1,0 +1,589 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="HYBRID CONTROL SYSTEM, Diagnostic DTC:P060A94" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296362" name="ttlId"/> 
+  <meta content="HYBRID CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001150W" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P060A94</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">HYBRID CONTROL SYSTEM, Diagnostic DTC:P060A94</h1>
+<div class="section" id="RM100000001150W__RM100000001150W_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P060A94</td> 
+       <td class="dtcname" headers="ID0EED">Hybrid/EV Powertrain Control Module Monitoring Processor Unexpected Operation</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001150W__RM100000001150W_01">
+     
+    <p class="subpara-subparaName">DTC SUMMARY</p> 
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000001150W__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">MALFUNCTION DESCRIPTION</p>
+<p class="step1-ptxt">The main CPU and sub CPU of the hybrid vehicle control ECU monitor their internal operation and each other for malfunctions.</p>
+<p class="step1-ptxt">The cause of this malfunction may be the following:</p>
+<br class="step1Root-step1"/>
+<ul class="step1-list1"> 
+       <p class="list1-li-title">
+<strong class="li-title-title">Hybrid vehicle control ECU internal malfunction</strong>
+</p> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Hybrid vehicle control ECU malfunction</p>
+</li> 
+      </ul>
+<br class="step1Root-step1"/>
+<ul class="step1-list1"> 
+       <p class="list1-li-title">
+<strong class="li-title-title">Vehicle speed sensor malfunction</strong>
+</p> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Discrepancy between motor resolver signal and actual vehicle speed</p>
+</li> 
+      </ul>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001150W__RM100000001150W_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The hybrid vehicle control ECU monitors its internal operation and will store these DTCs when it detects an internal malfunction.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EXAAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0E4AAC" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EDBAC" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EJBAC" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EPBAC" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EVBAC" width="NaN%">Warning Indicate</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EXAAC " width="NaN%">P060A94</td> 
+        <td align="left" class="cellrowborder" headers="ID0E4AAC " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor Unexpected Operation</td> 
+        <td align="left" class="cellrowborder" headers="ID0EDBAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">The sub CPU value received by the main CPU of the hybrid control ECU exceeds the threshold for a certain period of time.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">The hybrid vehicle control ECU detects an internal malfunction due to an abnormal calculation or sensor malfunction.</p>
+</li> 
+         </ul> <p class="ptxt">(1 trip detection logic)</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EJBAC " width="NaN%">Hybrid vehicle control ECU</td> 
+        <td align="left" class="cellrowborder" headers="ID0EPBAC " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EVBAC " width="NaN%"> <p class="ptxt">Master Warning Light:</p> <p class="ptxt">Comes on</p> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001150W__RM100000001150W_10">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">After repair has been completed, clear the DTC and then check that the vehicle has returned to normal by performing the following All Readiness check procedure.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM1000000011O0Q.html#RM1000000011O0Q">Click here</a>
+</p> 
+    </div> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) and turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for 2 minutes or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) and turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (READY) and wait for 10 seconds or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Hybrid Control / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows NORMAL, the system is normal.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows ABNORMAL, the system has a malfunction.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows INCOMPLETE or N/A, perform driving pattern again.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001150W__RM100000001150W_04">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001150W__RM100000001150W_04_0015">
+<p class="testgrp-heading">CHECK DTC OUTPUT (MOTOR GENERATOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Motor Generator / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Motor Generator &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXPAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EXPAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EABAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EGBAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EABAE " width="NaN%">No DTCs are output, or DTCs except the ones in the table below are also output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGBAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EABAE " width="NaN%">Any of the following DTCs are also output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGBAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tablenoborder">
+         <table class="test1-table">
+<thead align="left" class="test1-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EXDAE" width="NaN%">Malfunction Content</th> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0E4DAE">Relevant DTC</th> 
+           </tr> 
+          </thead>
+<tbody class="test1-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EXDAE " rowspan="3" width="NaN%">Sensor and actuator circuit malfunction</td> 
+            <td class="cellrowborder" headers="ID0E4DAE " width="NaN%">P0A3F16</td> 
+            <td class="cellrowborder" headers="ID0E4DAE " width="NaN%">Drive Motor "A" Position Sensor Circuit Voltage Below Threshold</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E4DAE " width="NaN%">P0A3F21</td> 
+            <td class="cellrowborder" headers="ID0E4DAE " width="NaN%">Drive Motor "A" Position Sensor Signal Amplitude &lt; Minimum</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E4DAE " width="NaN%">P0A3F22</td> 
+            <td class="cellrowborder" headers="ID0E4DAE " width="NaN%">Drive Motor "A" Position Sensor Signal Amplitude &lt; Maximum</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">P060A94 may be output as a result of the malfunction indicated by the DTCs above.</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ol class="li-list2-list2" type="i">
+<li class="list2-item">
+<p class="li-list2-list2-heading">The chart above is listed in inspection order of priority.</p>
+</li>
+<li class="list2-item">
+<p class="li-list2-list2-heading">Check DTCs that are output at the same time by following the listed order. (The main cause of the malfunction can be determined without performing unnecessary inspections.)</p>
+</li>
+</ol> 
+         </ul> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (MOTOR GENERATOR CONTROL SYSTEM) <a class="content6-ptxt-xref" href="RM100000001AKGG.html#RM100000001AKGG">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001150W__RM100000001150W_04_0014">
+<p class="testgrp-heading">CHECK DTC OUTPUT (ABS/VSC/TRC)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Chassis / ABS/VSC/TRC / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDOAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EDOAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ELPAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ERPAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ELPAE " width="NaN%">No DTCs are output, or DTCs except the ones in the table below are also output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ERPAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ELPAE " width="NaN%">Any of the following DTCs are also output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ERPAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tablenoborder">
+         <table class="test1-table">
+<thead align="left" class="test1-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0E4RAE">Relevant DTC</th> 
+           </tr> 
+          </thead>
+<tbody class="test1-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E4RAE " width="NaN%">C1401</td> 
+            <td class="cellrowborder" headers="ID0E4RAE " width="NaN%">Malfunction in Front Speed Sensor RH Circuit</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E4RAE " width="NaN%">C1402</td> 
+            <td class="cellrowborder" headers="ID0E4RAE " width="NaN%">Malfunction in Front Speed Sensor LH Circuit</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E4RAE " width="NaN%">C1405</td> 
+            <td class="cellrowborder" headers="ID0E4RAE " width="NaN%">Open or Short in Front Speed Sensor RH Circuit</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E4RAE " width="NaN%">C1406</td> 
+            <td class="cellrowborder" headers="ID0E4RAE " width="NaN%">Open or Short in Front Speed Sensor LH Circuit</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4RAE " width="NaN%">C1413</td> 
+            <td align="left" class="cellrowborder" headers="ID0E4RAE " width="NaN%">Front Speed Sensor RH Circuit Output</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4RAE " width="NaN%">C1414</td> 
+            <td align="left" class="cellrowborder" headers="ID0E4RAE " width="NaN%">Front Speed Sensor LH Circuit Output</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">P060A94 may be output as a result of the malfunction indicated by the DTCs above.</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ol class="li-list2-list2" type="i">
+<li class="list2-item">
+<p class="li-list2-list2-heading">The chart above is listed in inspection order of priority.</p>
+</li>
+<li class="list2-item">
+<p class="li-list2-list2-heading">Check DTCs that are output at the same time by following the listed order. (The main cause of the malfunction can be determined without performing unnecessary inspections.)</p>
+</li>
+</ol> 
+         </ul> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (ELECTRONICALLY CONTROLLED BRAKE SYSTEM) <a class="content6-ptxt-xref" href="RM10000000110K1.html#RM10000000110K1">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001150W__RM100000001150W_04_0009">
+<p class="testgrp-heading">CHECK DTC OUTPUT (HYBRID CONTROL)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EI4AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EI4AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EL5AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EL5AE " width="NaN%">P060A94 only is output.</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EL5AE " width="NaN%">DTCs except P060A94 are output.</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">DTCs except P060A94 are output.</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (HYBRID CONTROL SYSTEM) <a class="content6-ptxt-xref" href="RM100000001AGZH.html#RM100000001AGZH">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">P060A94 only is output.</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001150W__RM100000001150W_04_0011">
+<p class="testgrp-heading">CHECK FREEZE FRAME DATA (HYBRID CONTROL)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the freeze frame data of DTC P060A94.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBGAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBGAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJHAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EPHAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EJHAG " width="NaN%">Vehicle was stopped ("FR Wheel Speed" and "FL Wheel Speed" are between 0 and 1.4 km/h (0 and 1 mph)) but "Vehicle Speed" was 3 km/h (2 mph) or more</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPHAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EJHAG " width="NaN%">Vehicle was stopped ("FR Wheel Speed" and "FL Wheel Speed" are between 0 and 1.4 km/h (0 and 1 mph)) and "Vehicle Speed" was less than 3 km/h (2 mph)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPHAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO MOTOR RESOLVER CIRCUIT For the inspection method of the motor resolver circuit, refer to DTC P0A3F16. GO TO MOTOR RESOLVER CIRCUIT <a class="content6-ptxt-xref" href="RM1000000011548.html#RM1000000011548">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HYBRID VEHICLE CONTROL ECU <a class="content6-ptxt-xref" href="RM10000000115AK.html#RM10000000115AK">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

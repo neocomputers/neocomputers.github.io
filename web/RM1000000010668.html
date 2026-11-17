@@ -1,0 +1,965 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/o Canister Pump Module), Diagnostic DTC:P148F00" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290547" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/o Canister Pump Module)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000010668" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P148F00</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/o Canister Pump Module), Diagnostic DTC:P148F00</h1>
+<div class="section" id="RM1000000010668__RM1000000010668_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P148F00</td> 
+       <td class="dtcname" headers="ID0EED">Engine Coolant Pump Over Revolution</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM1000000010668__RM1000000010668_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The ECM controls the engine water pump assembly by calculating the necessary amount of coolant flow based on engine coolant temperature, engine speed and vehicle speed information. The speed of the engine water pump assembly is controlled steplessly using a duty cycle signal sent from the ECM. This optimal control enhances warm-up performance and reduces cooling losses, thus reducing the specific fuel consumption of the engine.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0E2F" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EBG" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EHG" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0ENG" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0ETG" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EZG" width="NaN%">Memory</th> 
+        <th align="center" class="cellrowborder" id="ID0E6G" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0E2F " width="NaN%">P148F00</td> 
+        <td align="left" class="cellrowborder" headers="ID0EBG " width="NaN%">Engine Coolant Pump Over Revolution</td> 
+        <td align="left" class="cellrowborder" headers="ID0EHG " width="NaN%"> <p class="ptxt">When both of the following conditions are met for 5 seconds or more (1 trip detection logic):</p> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Engine water pump assembly duty cycle is 85% or higher.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Actual engine water pump assembly speed exceeds the target for a certain amount of time.</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ENG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Lack of engine coolant</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Engine coolant leak</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Engine water pump assembly</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ETG " width="NaN%">Does not come on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EZG " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0E6G " width="NaN%">SAE Code: P148F</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000010668__RM1000000010668_11">
+     
+    <p class="subpara-subparaName">MONITOR DESCRIPTION</p> 
+    <p class="content5-ptxt">The ECM monitors the speed of the engine water pump assembly and stores a DTC when it determines that the engine water pump assembly rotates excessively based on the fact that the actual speed is higher than the target for a certain amount of time. (However, the MIL will not illuminate.)</p> 
+   </div>
+<div class="subpara" id="RM1000000010668__RM1000000010668_08">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">DTC P148F00 may be stored if the engine has continuously run with insufficient engine coolant. If the engine coolant is sufficient and DTC P148F00 recur when the vehicle is brought to the workshop, confirm whether engine coolant was added after the vehicle had been driven with insufficient engine coolant.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Read freeze frame data using the GTS. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air fuel ratio was lean or rich, and other data from the time the malfunction occurred.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000010668__RM1000000010668_10">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM1000000010668__RM1000000010668_10_0001">
+<p class="testgrp-heading">CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P148F00)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDLAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EDLAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMMAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ESMAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMMAC " width="NaN%">DTC P148F00 is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESMAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMMAC " width="NaN%">DTC P148F00 and other DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESMAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If any DTCs other than P148F00 are output, troubleshoot those DTCs first.</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART <a class="content6-ptxt-xref" href="RM100000001AMDR.html#RM100000001AMDR">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010668__RM1000000010668_10_0016">
+<p class="testgrp-heading">CHECK RESERVE SEALED TANK WITHOUT CAP (ENGINE COOLANT LEVEL)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the engine coolant level is between the FULL and LOW lines.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESAAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ESAAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E2BAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EBCAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2BAE " width="NaN%">Engine coolant level is below the LOW line</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBCAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2BAE " width="NaN%">Engine coolant level is above the LOW line</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBCAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">B</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 6  <a class="res-right-fin-false-xref" href="#RM1000000010668__RM1000000010668_10_0006">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010668__RM1000000010668_10_0004">
+<p class="testgrp-heading">CHECK FOR ENGINE COOLANT LEAKS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the areas around the engine and heater for engine coolant leaks.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If the engine oil is cloudy during the engine oil level gauge check, it means that engine coolant has entered the engine lubrication system.</p> 
+        </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E5FAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E5FAE">No leaks.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYGAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EYGAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E2HAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2HAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2HAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">REPAIR OR REPLACE MALFUNCTIONING PARTS, COMPONENT AND AREA  <a class="res-right-fin-false-xref" href="#RM1000000010668__RM1000000010668_10_0005">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010668__RM1000000010668_10_0015">
+<p class="testgrp-heading">ADD ENGINE COOLANT</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Fill the reservoir tank up to the FULL line with engine coolant.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Make sure not to add engine coolant when the engine is hot.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EILAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EILAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ELMAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELMAE " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">NEXT</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 6  <a class="res-right-fin-false-xref" href="#RM1000000010668__RM1000000010668_10_0006">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010668__RM1000000010668_10_0005">
+<p class="testgrp-heading">REPAIR OR REPLACE MALFUNCTIONING PARTS, COMPONENT AND AREA</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Repair any engine coolant leaks.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Add engine coolant and perform air bleeding after repair.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM100000000ZQ1Y.html#RM100000000ZQ1Y_01_0006">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EUPAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EUPAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EXQAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXQAE " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010668__RM1000000010668_10_0006">
+<p class="testgrp-heading">CLEAR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETXAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETXAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWYAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWYAE " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010668__RM1000000010668_10_0007">
+<p class="testgrp-heading">INSPECT ENGINE WATER PUMP ASSEMBLY</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">Perform this inspection indoors.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EV4AE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EV4AE " width="NaN%">Inspection Mode</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Start the engine.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Data List / Coolant Temperature and Electric Water Pump Speed.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Display the Data List items on the graph view.</p> 
+        </div>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E6DAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E6DAG " width="NaN%">Coolant Temperature</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E6DAG " width="NaN%">Electric Water Pump Speed</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Idle the engine for about 20 minutes and check Coolant Temperature, Electric Water Pump Speed using the GTS, and check the cooling fans.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETKAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETKAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E3LAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ECMAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E3LAG " width="NaN%"> <p class="ptxt">Either of the following conditions is met:</p> <br class="cellrowborder"/>
+                  <ul class="list1"> 
+                   <li class="list1-item">
+<p class="list1-heading">The engine coolant temperature becomes 95°C (203°F) or higher and the engine water pump assembly performs intermittent operation (5 seconds pause after 25 seconds operation).</p>
+</li> 
+                   <li class="list1-item">
+<p class="list1-heading">The engine water pump assembly does not start operating even after the engine coolant temperature becomes 95°C (203°F) or higher.*1, *2</p>
+</li> 
+                  </ul> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECMAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E3LAG " width="NaN%">The cooling fans start operating after the engine coolant temperature becomes 95°C (203°F) or less and a decrease in the engine coolant temperature is observed.*3</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECMAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">*1: Be careful when the cooling fans do not start operating even after the engine coolant temperature becomes 95°C (203°F) or higher because the engine coolant temperature increases rapidly. (Make sure to stop the engine if the engine coolant temperature becomes 105°C (221°F) or higher.)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">*2: If the ECM voltage is 14 V or higher and the engine water pump assembly is operated excessively due to insufficient coolant etc., the Electric Water Pump Speed will exceed 5300 rpm. Enter the following menus to check the voltage of the ECM: Powertrain / Engine / Data List / Battery Voltage.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">*3: When the engine is warmed up, the cooling fans operate and the engine coolant temperature will decrease. After the cooling fans begin operating, the engine coolant temperature will stabilize between 88 to 95°C (190 to 203°F).</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010668__RM1000000010668_10_0009">
+<p class="testgrp-heading">REPLACE ENGINE WATER PUMP ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Replace the engine water pump assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZQ21.html#RM100000000ZQ21">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKSAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EKSAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ENTAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ENTAG " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010668__RM1000000010668_10_0010">
+<p class="testgrp-heading">ADD ENGINE COOLANT</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Fill the reservoir tank up to the FULL line with engine coolant.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Make sure not to add engine coolant when the engine is hot.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHWAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EHWAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EKXAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKXAG " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010668__RM1000000010668_10_0017">
+<p class="testgrp-heading">CLEAR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EG5AG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EG5AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJ6AG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJ6AG " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM1000000010668__RM1000000010668_10_0011">
+<p class="testgrp-heading">CONFIRM WHETHER MALFUNCTION HAS BEEN SUCCESSFULLY REPAIRED</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">Perform this inspection indoors.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EIEBG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EIEBG " width="NaN%">Inspection Mode</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Start the engine.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Data List / Coolant Temperature and Electric Water Pump Speed.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EHKBG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EHKBG " width="NaN%">Coolant Temperature</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EHKBG " width="NaN%">Electric Water Pump Speed</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Idle the engine for about 20 minutes and check Coolant Temperature, Electric Water Pump Speed using the GTS, and check the cooling fans.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2QBG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E2QBG">The cooling fans start operating after the engine coolant temperature becomes 95°C (203°F) or less and a decrease in the engine coolant temperature is observed.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EVRBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EVRBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EYSBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYSBG " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NEXT</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

@@ -1,0 +1,753 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="POWER WINDOW CONTROL SYSTEM Driver Side Power Window does not Operate with Power Window Master Switch" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_59" name="servcatId"/> 
+  <meta content="Vehicle Exterior" name="servcatName"/> 
+  <meta content="_058068" name="sectionId"/> 
+  <meta content="WINDOW / GLASS" name="sectionName"/> 
+  <meta content="_0288264" name="ttlId"/> 
+  <meta content="POWER WINDOW CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000ZQZH" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Driver Side Power Window does not Operate with Power Window Master Switch</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">POWER WINDOW CONTROL SYSTEM<span class="topictitle1"> Driver Side Power Window does not Operate with Power Window Master Switch</span>
+</h1>
+<div class="subpara" id="RM100000000ZQZH__RM100000000ZQZH_05">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">When the power switch is on (IG), the power window regulator motor assembly (for driver door) is operated by the multiplex network master switch assembly. The power window regulator motor assembly (for driver door) has motor, regulator and ECU functions.</p> 
+   </div>
+<div class="subpara" id="RM100000000ZQZH__RM100000000ZQZH_06">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003NKDC01" class="figure-graphic--bigImage" src="../images/a003nkdc01.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM100000000ZQZH__RM100000000ZQZH_07">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">The power window control system uses the LIN communication system. Inspect the communication function by following How to Proceed with Troubleshooting. Troubleshoot the power window control system after confirming that the communication system is functioning properly.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZQZR.html#RM100000000ZQZR">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">If the power window regulator motor assembly (for driver door) has been replaced with a new one, initialize the power window control system.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZQZU.html#RM100000000ZQZU">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Inspect the fuses for circuits related to this system before performing the following procedure.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">If the main body ECU (multiplex network body ECU) is replaced, refer to Service Bulletin.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000ZQZH__RM100000000ZQZH_11">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000ZQZH__RM100000000ZQZH_11_0001">
+<p class="testgrp-heading">READ VALUE USING GTS (MAIN BODY)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Main Body / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Main Body &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EMEAC" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0ESEAC" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EYEAC" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0E5EAC" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0EEFAC" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMEAC " width="NaN%">Communication D-Door Motor</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESEAC " width="NaN%">Connection status between power window regulator motor assembly (for driver door) and main body ECU (multiplex network body ECU)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EYEAC " width="NaN%">STOP or OK</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5EAC " width="NaN%"> <p class="ptxt">STOP: Communication stopped</p> <p class="ptxt">OK: Normal communication</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EEFAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMEAC " width="NaN%">Communication Master SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESEAC " width="NaN%">Connection status between multiplex network master switch assembly and main body ECU (multiplex network body ECU)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EYEAC " width="NaN%">STOP or OK</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5EAC " width="NaN%"> <p class="ptxt">STOP: Communication stopped</p> <p class="ptxt">OK: Normal communication</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EEFAC " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Main Body &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EKNAC" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKNAC " width="NaN%">Communication D-Door Motor</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKNAC " width="NaN%">Communication Master SW</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EUDAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EUDAE">OK is displayed for each Data List item above.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EOEAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EOEAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ERFAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERFAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERFAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO LIN COMMUNICATION SYSTEM (Proceed to How to Proceed with Troubleshooting) <a class="content6-ptxt-xref" href="RM100000000ZR0J.html#RM100000000ZR0J">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZQZH__RM100000000ZQZH_11_0002">
+<p class="testgrp-heading">READ VALUE USING GTS (D-DOOR MOTOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / D-Door Motor / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; D-Door Motor &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ETKAE" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EZKAE" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0E6KAE" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EFLAE" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0ELLAE" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ETKAE " width="NaN%">D Door P/W Up SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EZKAE " width="NaN%">Driver door power window manual up switch signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0E6KAE " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0EFLAE " width="NaN%"> <p class="ptxt">OFF: Driver door power window manual up switch not being operated</p> <p class="ptxt">ON: Driver door power window manual up switch being operated</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0ELLAE " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ETKAE " width="NaN%">D Door P/W Down SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EZKAE " width="NaN%">Driver door power window manual down switch signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0E6KAE " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0EFLAE " width="NaN%"> <p class="ptxt">OFF: Driver door power window manual down switch not being operated</p> <p class="ptxt">ON: Driver door power window manual down switch being operated</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0ELLAE " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; D-Door Motor &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ERTAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ERTAE " width="NaN%">D Door P/W Up SW</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ERTAE " width="NaN%">D Door P/W Down SW</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1ZAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E1ZAE">On the GTS screen, ON or OFF is displayed accordingly.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EU1AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EU1AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EX2AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EX2AE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EX2AE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK HARNESS AND CONNECTOR (MULTIPLEX NETWORK MASTER SWITCH ASSEMBLY - POWER WINDOW REGULATOR MOTOR ASSEMBLY (FOR DRIVER DOOR))  <a class="res-right-fin-false-xref" href="#RM100000000ZQZH__RM100000000ZQZH_11_0006">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZQZH__RM100000000ZQZH_11_0003">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (D-DOOR MOTOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / D-Door Motor / Active Test.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Perform the Active Test according to the display on the GTS.</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+         <p class="ptxt">Be careful to avoid injuries as this test causes vehicle parts to move. During the Active Test, the jam protection function will not operate.</p> 
+        </div>
+<br class="test1Root-test1"/>Body Electrical &gt; D-Door Motor &gt; Active Test<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EZAAG" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0E6AAG" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EFBAG" width="NaN%">Control Range</th> 
+              <th align="center" class="cellrowborder" id="ID0ELBAG" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZAAG " width="NaN%">Power Window</td> 
+              <td align="center" class="cellrowborder" headers="ID0E6AAG " width="NaN%">Power window</td> 
+              <td align="center" class="cellrowborder" headers="ID0EFBAG " width="NaN%">OFF / DOWN / UP</td> 
+              <td align="center" class="cellrowborder" headers="ID0ELBAG " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; D-Door Motor &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ETGAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ETGAG " width="NaN%">Power Window</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESLAG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ESLAG">Driver door power window operates normally.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMMAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EMMAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPNAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPNAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPNAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE MAIN BODY ECU (MULTIPLEX NETWORK BODY ECU) <a class="content6-ptxt-xref" href="RM100000000ZQ1S.html#RM100000000ZQ1S">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE POWER WINDOW REGULATOR MOTOR ASSEMBLY (FOR DRIVER DOOR) <a class="content6-ptxt-xref" href="RM1000000011EF0.html#RM1000000011EF0">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZQZH__RM100000000ZQZH_11_0006">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (MULTIPLEX NETWORK MASTER SWITCH ASSEMBLY - POWER WINDOW REGULATOR MOTOR ASSEMBLY (FOR DRIVER DOOR))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">for LHD</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the K7 multiplex network master switch assembly connector.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the K2 power window regulator motor assembly (for driver door) connector.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Measure the resistance according to the value(s) in the table below.</p> 
+          <table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0EDSAG" class="spec-title">Standard Resistance</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0EDSAG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EQTAG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EWTAG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0E3TAG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EQTAG " width="NaN%">K7-20 (UP) - K2-10 (UP)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EWTAG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E3TAG " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EQTAG " width="NaN%">K7-20 (UP) or K2-10 (UP) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EWTAG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E3TAG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EQTAG " width="NaN%">K7-15 (DOWN) - K2-7 (DOWN)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EWTAG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E3TAG " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EQTAG " width="NaN%">K7-15 (DOWN) or K2-7 (DOWN) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EWTAG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E3TAG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table> </li>
+</ol>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">for RHD</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the J7 multiplex network master switch assembly connector.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the J2 power window regulator motor assembly (for driver door) connector.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Measure the resistance according to the value(s) in the table below.</p> 
+          <table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0ECZAG" class="spec-title">Standard Resistance</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0ECZAG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EP1AG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EV1AG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0E21AG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EP1AG " width="NaN%">J7-20 (UP) - J2-10 (UP)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EV1AG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E21AG " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EP1AG " width="NaN%">J7-20 (UP) or J2-10 (UP) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EV1AG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E21AG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EP1AG " width="NaN%">J7-15 (DOWN) - J2-7 (DOWN)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EV1AG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E21AG " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EP1AG " width="NaN%">J7-15 (DOWN) or J2-7 (DOWN) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EV1AG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E21AG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table> </li>
+</ol>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ER5AG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ER5AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EU6AG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EU6AG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EU6AG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZQZH__RM100000000ZQZH_11_0007">
+<p class="testgrp-heading">REPLACE MULTIPLEX NETWORK MASTER SWITCH ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Replace the multiplex network master switch assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000011EEO.html#RM1000000011EEO">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECDBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECDBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFEBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFEBG " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000ZQZH__RM100000000ZQZH_11_0008">
+<p class="testgrp-heading">CHECK MANUAL UP / DOWN FUNCTION (FOR DRIVER DOOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the driver door power window moves when the manual up and down functions of the multiplex network master switch assembly are operated.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZQZY.html#RM100000000ZQZY">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EAHBG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EAHBG">Driver door manual up and down functions are normal.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1HBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E1HBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E4IBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4IBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4IBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END (MULTIPLEX NETWORK MASTER SWITCH ASSEMBLY WAS DEFECTIVE) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE POWER WINDOW REGULATOR MOTOR ASSEMBLY (FOR DRIVER DOOR) <a class="content6-ptxt-xref" href="RM1000000011EF0.html#RM1000000011EF0">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

@@ -1,0 +1,512 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P012500" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290546" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000010626" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P012500</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P012500</h1>
+<div class="section" id="RM1000000010626__RM1000000010626_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P012500</td> 
+       <td class="dtcname" headers="ID0EED">Insufficient Coolant Temperature for Closed Loop Fuel Control</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM1000000010626__RM1000000010626_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">Refer to DTC P011511.</p> 
+    <p class="content5-ptxt"> <a class="ptxt-xref" href="RM1000000010621.html#RM1000000010621_01">Click here</a>
+</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EGG" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EMG" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0ESG" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EYG" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0E5G" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EEH" width="NaN%">Memory</th> 
+        <th align="center" class="cellrowborder" id="ID0EKH" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EGG " width="NaN%">P012500</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMG " width="NaN%">Insufficient Coolant Temperature for Closed Loop Fuel Control</td> 
+        <td align="left" class="cellrowborder" headers="ID0ESG " width="NaN%">The engine coolant temperature does not reach the closed loop enabling temperature for 20 minutes (this period varies with the engine coolant temperature at engine start) (2 trip detection logic).</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Engine cooling system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Engine coolant temperature sensor</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Water inlet with thermostat sub-assembly (thermostat)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0E5G " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EEH " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EKH " width="NaN%">SAE Code: P0125</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000010626__RM1000000010626_02">
+     
+    <p class="subpara-subparaName">MONITOR DESCRIPTION</p> 
+    <p class="content5-ptxt">The resistance of the engine coolant temperature sensor varies in proportion to the actual engine coolant temperature. The ECM supplies a constant voltage to the sensor and monitors the signal output voltage of the sensor. The signal output voltage varies according to the changing resistance of the sensor. After the engine is started, the engine coolant temperature is monitored by this signal. If the engine coolant temperature sensor indicates that the engine is not yet warm enough for closed loop fuel control, despite a specified period of time having elapsed since the engine was started, the ECM interprets this as a malfunction in the sensor or engine cooling system, illuminates the MIL and stores this DTC.</p> 
+    <p class="content5-ptxt">Example:</p> 
+    <p class="content5-ptxt">When the engine coolant temperature is -3.33°C (26°F) or higher at engine start: After approximately 108 seconds of running time, the engine coolant temperature sensor still indicates that the engine is not warm enough to begin closed-loop fuel (air fuel ratio feedback) control. The ECM interprets this as a malfunction in the sensor or cooling system and stores the DTC.</p> 
+   </div>
+<div class="subpara" id="RM1000000010626__RM1000000010626_03">
+     
+    <p class="subpara-subparaName">MONITOR STRATEGY</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Frequency of Operation</td> 
+        <td align="left" class="cellrowborder" width="NaN%">Once per driving cycle</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000010626__RM1000000010626_09">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Leave the vehicle outside overnight.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Data List / Coolant Temperature.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check that the engine coolant temperature is 10°C (50°F) or less.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Start the engine.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Wait 21 minutes or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Read the pending DTCs.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is output, the system is malfunctioning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is not output, perform the following procedure.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Input the DTC: P012500.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tablenoborder">
+       <table class="item-table">
+<thead align="left" class="item-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0E2NAC" width="NaN%">GTS Display</th> 
+          <th align="center" class="cellrowborder" id="ID0EBOAC" width="NaN%">Description</th> 
+         </tr> 
+        </thead>
+<tbody class="item-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E2NAC " width="NaN%">NORMAL</td> 
+          <td class="cellrowborder" headers="ID0EBOAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System normal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E2NAC " width="NaN%">ABNORMAL</td> 
+          <td class="cellrowborder" headers="ID0EBOAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System abnormal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E2NAC " width="NaN%">INCOMPLETE</td> 
+          <td class="cellrowborder" headers="ID0EBOAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment not completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Perform driving pattern after confirming DTC enabling conditions</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E2NAC " width="NaN%">N/A</td> 
+          <td class="cellrowborder" headers="ID0EBOAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Unable to perform DTC judgment</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Number of DTCs which do not fulfill DTC preconditions has reached ECU memory limit</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is NORMAL, the system is normal.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is ABNORMAL, the system is malfunctioning.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM1000000010626__RM1000000010626_08">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <p class="content5-ptxt">Refer to DTC P011511.</p> 
+    <p class="content5-ptxt"> <a class="ptxt-xref" href="RM1000000010621.html#RM1000000010621_07">Click here</a>
+</p> 
+   </div>
+<div class="subpara" id="RM1000000010626__RM1000000010626_06">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">If any of DTCs P011511, P011515 or P01152A are output simultaneously with DTC P012500, the engine coolant temperature sensor may have an open or a short circuit. Troubleshoot those DTCs first.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Read freeze frame data using the GTS. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air fuel ratio was lean or rich, and other data from the time the malfunction occurred.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000010626__RM1000000010626_10">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM1000000010626__RM1000000010626_10_0002">
+<p class="testgrp-heading">CHECK ANY OTHER DTCS OUTPUT (IN ADDITION DTC P012500)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELNAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELNAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EUOAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E1OAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUOAE " width="NaN%">DTC P012500 is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1OAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUOAE " width="NaN%">DTC P012500 and other DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1OAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If any DTCs other than P012500 are output, troubleshoot those DTCs first.</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART <a class="content6-ptxt-xref" href="RM100000001AMDC.html#RM100000001AMDC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010626__RM1000000010626_10_0004">
+<p class="testgrp-heading">INSPECT WATER INLET WITH THERMOSTAT SUB-ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the water inlet with thermostat sub-assembly (thermostat opening temperature).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZQ27.html#RM100000000ZQ27">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EETAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EETAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EHUAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHUAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHUAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE WATER INLET WITH THERMOSTAT SUB-ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000ZQ29.html#RM100000000ZQ29">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM1000000010626__RM1000000010626_10_0006">
+<p class="testgrp-heading">CHECK ENGINE COOLING SYSTEM</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check for defects in the engine cooling system that might cause the system to be too cold, such as abnormal cooling fan operation or any modifications.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the engine coolant temperature sensor.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EFYAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EFYAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EIZAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EIZAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EIZAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ENGINE COOLANT TEMPERATURE SENSOR <a class="content6-ptxt-xref" href="RM1000000010681.html#RM1000000010681">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE ENGINE COOLING SYSTEM </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

@@ -1,0 +1,786 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SEAT BELT WARNING SYSTEM(w/ Occupant Classification System) Rear Seat Belt Warning Light Malfunction" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058074" name="sectionId"/> 
+  <meta content="SEAT BELT" name="sectionName"/> 
+  <meta content="_0288591" name="ttlId"/> 
+  <meta content="SEAT BELT WARNING SYSTEM(w/ Occupant Classification System)" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000ZTCZ" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Rear Seat Belt Warning Light Malfunction</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SEAT BELT WARNING SYSTEM(w/ Occupant Classification System)<span class="topictitle1"> Rear Seat Belt Warning Light Malfunction</span>
+</h1>
+<div class="subpara" id="RM100000000ZTCZ__RM100000000ZTCZ_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The main body ECU (multiplex network body ECU) detects whether either the rear doors are open or closed based on the condition of the rear door courtesy light switch assemblies condition and then sends the rear door status signal to the combination meter assembly. The combination meter assembly detects rear seat belt state. The rear seat belt warning light on the combination meter assembly illuminates or turns off in accordance with the rear door state, vehicle speed and rear seat belt state.</p> 
+   </div>
+<div class="subpara" id="RM100000000ZTCZ__RM100000000ZTCZ_03">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003NCEE08" class="figure-graphic--bigImage" src="../images/a003ncee08.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM100000000ZTCZ__RM100000000ZTCZ_04">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1 nonmark"> 
+      <li class="list1-item">
+<p class="list1-nonmark-heading">The seat belt warning system uses the CAN communication system. First, confirm that there is no malfunction in the CAN communication system. Refer to the How to Proceed with Troubleshooting procedure.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZTCS.html#RM100000000ZTCS">Click here</a>
+</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000ZTCZ__RM100000000ZTCZ_05">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000ZTCZ__RM100000000ZTCZ_05_0001">
+<p class="testgrp-heading">READ VALUE USING GTS (REAR DOOR COURTESY LIGHT SWITCH)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Main Body / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Main Body &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EADAC" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EGDAC" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EMDAC" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0ESDAC" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0EYDAC" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EADAC " width="NaN%">RR Door Courtesy SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EGDAC " width="NaN%">Rear door courtesy light switch RH</td> 
+              <td align="center" class="cellrowborder" headers="ID0EMDAC " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESDAC " width="NaN%"> <p class="ptxt">ON: Rear door RH open</p> <p class="ptxt">OFF: Rear door RH closed</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EYDAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EADAC " width="NaN%">RL Door Courtesy SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EGDAC " width="NaN%">Rear door courtesy light switch LH</td> 
+              <td align="center" class="cellrowborder" headers="ID0EMDAC " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESDAC " width="NaN%"> <p class="ptxt">ON: Rear door LH open</p> <p class="ptxt">OFF: Rear door LH closed</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EYDAC " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Main Body &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E5LAC" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E5LAC " width="NaN%">RR Door Courtesy SW</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E5LAC " width="NaN%">RL Door Courtesy SW</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EICAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EICAE">ON or OFF appears on the GTS screen according to the rear door condition.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECDAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECDAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFEAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFEAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFEAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO LIGHTING SYSTEM <a class="content6-ptxt-xref" href="RM1000000011EV6.html#RM1000000011EV6">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTCZ__RM100000000ZTCZ_05_0003">
+<p class="testgrp-heading">CHECK REAR SEAT BELT WARNING</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003NBVC02" class="figure-graphic" src="../images/a003nbvc02.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td class="cellrowborder" width="NaN%">Rear Seat Belt Warning Light (Combination Meter Assembly)</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%">LH</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td class="cellrowborder" width="NaN%">RH</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Check the rear seat belt warning function.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZTCY.html#RM100000000ZTCY">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EWKAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EWKAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5LAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EEMAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E5LAE " width="NaN%">The rear seat belt warning lights operate normally</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEMAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E5LAE " width="NaN%">The rear seat belt warning lights (all seats) do not operate normally</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEMAE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E5LAE " width="NaN%">The rear seat belt warning light (RH) does not operate normally</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEMAE " width="NaN%">C</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E5LAE " width="NaN%">The rear seat belt warning light (LH) does not operate normally</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEMAE " width="NaN%">D</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>USE SIMULATION METHOD TO CHECK <a class="content6-ptxt-xref" href="RM100000001145X.html#RM100000001145X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE METER CIRCUIT PLATE <a class="content6-ptxt-xref" href="RM1000000011ATB.html#RM1000000011ATB">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">D</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">READ VALUE USING GTS (REAR SEAT BELT BUCKLE SWITCH (FOR LH))  <a class="res-right-fin-false-xref" href="#RM100000000ZTCZ__RM100000000ZTCZ_05_0031">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">C</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTCZ__RM100000000ZTCZ_05_0012">
+<p class="testgrp-heading">READ VALUE USING GTS (REAR SEAT BELT BUCKLE SWITCH (FOR RH))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Combination Meter / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EHUAE" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0ENUAE" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0ETUAE" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EZUAE" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0E6UAE" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EHUAE " width="NaN%">2nd-Row Seatbelt Buckle (R)</td> 
+              <td align="left" class="cellrowborder" headers="ID0ENUAE " width="NaN%">Rear RH seat belt buckle switch signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0ETUAE " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0EZUAE " width="NaN%"> <p class="ptxt">OFF: Rear RH seat belt fastened</p> <p class="ptxt">ON: Rear RH seat belt not fastened</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0E6UAE " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EY1AE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EY1AE " width="NaN%">2nd-Row Seatbelt Buckle (R)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ES6AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ES6AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E2AAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EBBAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E2AAG " width="NaN%">ON or OFF does not appear on the GTS screen according to the rear seat belt condition</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E2AAG " width="NaN%">ON or OFF appears on the GTS screen according to the rear seat belt condition</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE METER CIRCUIT PLATE <a class="content6-ptxt-xref" href="RM1000000011ATB.html#RM1000000011ATB">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTCZ__RM100000000ZTCZ_05_0013">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (METER CIRCUIT PLATE - REAR SEAT 3 POINT TYPE BELT ASSEMBLY RH - BODY GROUND)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I6 meter circuit plate connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the N23 rear seat 3 point type belt assembly RH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKFAG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EKFAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EXGAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E4GAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EDHAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXGAG " width="NaN%">I6-10 (RRSB) - N23-5 (RBR+)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E4GAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDHAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXGAG " width="NaN%">I6-10 (RRSB) or N23-5 (RBR+) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E4GAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDHAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXGAG " width="NaN%">N23-4 (RBR-) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E4GAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDHAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBKAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBKAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EELAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EELAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EELAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE REAR SEAT 3 POINT TYPE BELT ASSEMBLY RH <a class="content6-ptxt-xref" href="RM100000000ZTE1.html#RM100000000ZTE1">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTCZ__RM100000000ZTCZ_05_0031">
+<p class="testgrp-heading">READ VALUE USING GTS (REAR SEAT BELT BUCKLE SWITCH (FOR LH))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Combination Meter / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EHRAG" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0ENRAG" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0ETRAG" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EZRAG" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0E6RAG" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EHRAG " width="NaN%">2nd-Row Seatbelt Buckle (L)</td> 
+              <td align="left" class="cellrowborder" headers="ID0ENRAG " width="NaN%">Rear LH seat belt buckle switch signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0ETRAG " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0EZRAG " width="NaN%"> <p class="ptxt">OFF: Rear LH seat belt fastened</p> <p class="ptxt">ON: Rear LH seat belt not fastened</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0E6RAG " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EYXAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EYXAG " width="NaN%">2nd-Row Seatbelt Buckle (L)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ES3AG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ES3AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E14AG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EA5AG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E14AG " width="NaN%">ON or OFF does not appear on the GTS screen according to the rear seat belt condition</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EA5AG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E14AG " width="NaN%">ON or OFF appears on the GTS screen according to the rear seat belt condition</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EA5AG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE METER CIRCUIT PLATE <a class="content6-ptxt-xref" href="RM1000000011ATB.html#RM1000000011ATB">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000ZTCZ__RM100000000ZTCZ_05_0044">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (METER CIRCUIT PLATE - REAR SEAT 3 POINT TYPE BELT ASSEMBLY LH - BODY GROUND)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I6 meter circuit plate connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the N24 rear seat 3 point type belt assembly LH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJCBG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJCBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWDBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3DBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ECEBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDBG " width="NaN%">I6-12 (RLSB) - N24-5 (LBR+)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEBG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDBG " width="NaN%">I6-12 (RLSB) or N24-5 (LBR+) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEBG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDBG " width="NaN%">N24-4 (LBR-) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEBG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EAHBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EAHBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDIBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDIBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDIBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE REAR SEAT 3 POINT TYPE BELT ASSEMBLY LH <a class="content6-ptxt-xref" href="RM100000000ZTDX.html#RM100000000ZTDX">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

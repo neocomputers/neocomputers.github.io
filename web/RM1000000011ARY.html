@@ -1,0 +1,2100 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="METER / GAUGE SYSTEM Fuel Receiver Gauge Display Malfunction" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058040" name="sectionId"/> 
+  <meta content="METER / GAUGE / DISPLAY" name="sectionName"/> 
+  <meta content="_0297242" name="ttlId"/> 
+  <meta content="METER / GAUGE SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000011ARY" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Fuel Receiver Gauge Display Malfunction</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">METER / GAUGE SYSTEM<span class="topictitle1"> Fuel Receiver Gauge Display Malfunction</span>
+</h1>
+<div class="subpara" id="RM1000000011ARY__RM1000000011ARY_04">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM1000000011ARY__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">FUEL RECEIVER GAUGE OPERATION</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">OPERATION</p>
+<p class="step2-ptxt">The combination meter assembly (meter circuit plate) uses the fuel injection volume signal from the ECM and fuel sender gauge assembly to detect the amount of fuel remaining in the fuel tank assembly. The Hall IC built into the fuel sender gauge assembly changes the output voltage according to the amount of fuel remaining. The combination meter assembly (meter circuit plate) receives fuel injection volume signal from the ECM and detects the voltage output from the fuel sender gauge assembly and operates the fuel receiver gauge.</p>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">FUEL RECEIVER GAUGE READING</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">During normal driving:</p>
+<p class="step2-ptxt">As the fuel level in the fuel tank assembly changes when driving on a hill or applying the brakes, the fuel receiver gauge reading is updated according to the fuel injection volume during normal driving. However, as the fuel injection volume measurement has a margin of error, the value is indicated after correction by input values from the fuel sender gauge assembly.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">During refueling:</p>
+<p class="step2-ptxt">The fuel level in the fuel tank assembly rises rapidly when fuel is added. If the averaging process that is used during normal driving is used in this case, the fuel receiver gauge reading cannot be updated promptly. Therefore, when it is judged that fuel is being added to the vehicle based on the changes in the fuel level, output values from the fuel sender gauge assembly is immediately reflected in the fuel receiver gauge reading. This control is called refueling judgment.</p>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<div class="note">
+       <p class="notetitle">Note</p> 
+       <p class="ptxt">Add fuel with the power switch off to ensure safety and to enable refueling judgment so that an appropriate fuel receiver gauge reading will be obtained.</p> 
+      </div>
+<p class="step1-heading">REFUELING JUDGMENT CONDITIONS</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Normal judgment condition (When normal refueling method is used)</p>
+<p class="step2-ptxt">With the power switch off, the fuel sender gauge assembly detects a change of 5.0 liters (5.3 US qts, 4.4 Imp. qts) or more in the fuel level.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Other judgment conditions (When other refueling method is used)</p>
+<p class="step2-ptxt">Any of the following conditions is met:</p>
+<br class="step2Root-step2"/>
+<ul class="step2-list1"> 
+         <li class="list1-item">
+<p class="step2-list1-heading">With the vehicle and engine stopped and the power switch on (IG) or on (READY), the fuel sender gauge assembly detects a change of 5.0 liters (5.3 US qts, 4.4 Imp. qts) or more in the fuel level.</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">With the vehicle stopped, the power switch is on (READY), the fuel sender gauge assembly detects a change of 15.0 liters (15.9 US qts, 13.2 Imp. qts) or more in the fuel level.</p>
+</li> 
+        </ul>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">PRECAUTION FOR REFUELING</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">The fuel sender gauge assembly cannot detect changes in the fuel level within certain ranges (around points E and F). Therefore, even if 5.0 liters (5.3 US qts, 4.4 Imp. qts) or more of fuel is added, refueling judgment may not be performed and the fuel receiver gauge reading may not change when fuel level is within such ranges.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">The fuel sender gauge reading takes approximately 25 seconds to rise from point E to F. If the vehicle is driven while the fuel sender gauge reading is rising, the fuel sender gauge reading will stop rising. After the fuel sender gauge reading stops rising, normal fuel sender gauge reading operation begins. The fuel sender gauge reading takes approximately 16 minutes per 1 liter (1.1 US qts, 0.9 Imp. qts) to rise while the vehicle is being driven, and takes approximately 5 minutes per 1 liter (1.1 US qts, 0.9 Imp. qts) to rise while the vehicle is stopped.</p>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">FORCED RESET OF FUEL RECEIVER GAUGE</p>
+<p class="step1-ptxt">When driving at a vehicle speed of 1.8 km/h (1 mph) or more, if the output value from the fuel sender gauge assembly is different from the fuel receiver gauge reading by 15.0 liters (15.9 US qts, 13.2 Imp. qts) or more for approximately 5 minutes, the output value from the fuel sender gauge assembly is immediately reflected in the fuel receiver gauge reading to compensate for a situation when refueling judgment cannot be made.</p>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">PRECAUTION FOR DISCONNECTING CABLE FROM NEGATIVE (-) AUXILIARY BATTERY TERMINAL (w/Canister Pump Module)</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect and reconnect the cable to the negative (-) auxiliary battery terminal and then open and close the fuel lid before turning the power switch on (IG) to increase the accuracy of the fuel receiver gauge.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">w/ Canister Pump Module: The accuracy of the fuel receiver gauge changes depending on fuel tank deformation caused by internal pressure. Before turning the power switch on (IG), equalizing the fuel tank pressure with the ambient air pressure by opening and closing the fuel lid after disconnecting and reconnecting the cable to the negative (-) auxiliary battery terminal increases the accuracy of the fuel receiver gauge.</p> 
+        </div>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM1000000011ARY__RM1000000011ARY_01">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="B006HCAE07" class="figure-graphic--bigImage" src="../images/b006hcae07.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM1000000011ARY__RM1000000011ARY_06">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">When replacing the combination meter assembly, always replace it with a new one. If a combination meter assembly which was installed to another vehicle is used, the information stored in it will not match the information from the vehicle and a DTC may be stored.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Disconnect and reconnect the cable to the negative (-) auxiliary battery terminal and then open and close the fuel lid before turning the power switch on (IG) to increase the accuracy of the fuel receiver gauge (w/ Canister Pump Module).</p>
+<p class="item-ptxt">w/ Canister Pump Module: The accuracy of the fuel receiver gauge changes depending on fuel tank deformation caused by internal pressure. Before turning the power switch on (IG), equalizing the fuel tank pressure with the ambient air pressure by opening and closing the fuel lid after disconnecting and reconnecting the cable to the negative (-) auxiliary battery terminal increases the accuracy of the fuel receiver gauge.</p>
+</li> 
+     </ul> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">The fuel level warning light will come on when the fuel level is below 6.4 liters (6.8 US qts, 5.6 Imp. qts).</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000011ARY__RM1000000011ARY_05">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0019">
+<p class="testgrp-heading">CHECK SYMPTOMS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Ask the customer about the problem symptoms.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4IAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E4IAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFKAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ELKAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFKAC " width="NaN%">Malfunction occurs when adding fuel (Even after adding fuel, reading does not increase at all or increases very slowly, etc.)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELKAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFKAC " width="NaN%">Malfunction occurs during normal driving (The reading does not change, decreases quickly or decreases when the vehicle is not being driven, etc.) (The problem symptom recurs)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELKAC " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFKAC " width="NaN%">Malfunction occurs during normal driving (The reading does not change, decreases quickly or decreases when the vehicle is not being driven, etc.) (The problem symptom does not recur)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELKAC " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">B</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">PERFORM ACTIVE TEST USING GTS (FUEL METER OPERATION)  <a class="res-right-fin-false-xref" href="#RM1000000011ARY__RM1000000011ARY_05_0030">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">C</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK FOR DTC (SFI SYSTEM)  <a class="res-right-fin-false-xref" href="#RM1000000011ARY__RM1000000011ARY_05_0035">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0001">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (FUEL METER OPERATION)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter following menus: Body Electrical / Combination Meter / Active Test.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Perform the Active Test according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Active Test<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EJBAE" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EPBAE" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EVBAE" width="NaN%">Control Range</th> 
+              <th align="center" class="cellrowborder" id="ID0E2BAE" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EJBAE " width="NaN%">Fuel Meter Operation</td> 
+              <td align="left" class="cellrowborder" headers="ID0EPBAE " width="NaN%">Fuel receiver gauge</td> 
+              <td align="center" class="cellrowborder" headers="ID0EVBAE " width="NaN%">OFF, Sender E, Empty, Warning, 1/4, 1/2, 3/4, Full or Sender F</td> 
+              <td align="center" class="cellrowborder" headers="ID0E2BAE " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EDHAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EDHAE " width="NaN%">Fuel Meter Operation</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECMAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ECMAE">Fuel receiver gauge indication is normal.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E3MAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E3MAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E6NAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6NAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6NAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE COMBINATION METER ASSEMBLY (METER CIRCUIT PLATE) <a class="content6-ptxt-xref" href="RM1000000011ATC.html#RM1000000011ATC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0020">
+<p class="testgrp-heading">CHECK FOR DTC (SFI SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if SFI system DTCs are output.</p>
+<p class="test1-ptxt">w/ Canister Pump Module: <a class="ptxt-xref" href="RM1000000010619.html#RM1000000010619">Click here</a>
+</p>
+<p class="test1-ptxt">w/o Canister Pump Module: <a class="ptxt-xref" href="RM100000001064M.html#RM100000001064M">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2UAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2UAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDWAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJWAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDWAE " width="NaN%">DTCs are not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJWAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDWAE " width="NaN%">DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJWAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO SFI SYSTEM w/ Canister Pump Module: <a class="content6-ptxt-xref" href="RM100000001AMDC.html#RM100000001AMDC">Click here</a> <br/>GO TO SFI SYSTEM w/o Canister Pump Module: <a class="content6-ptxt-xref" href="RM100000001064M.html#RM100000001064M">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0021">
+<p class="testgrp-heading">CHECK FOR DTC (ELECTRONICALLY CONTROLLED BRAKE SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if electronically controlled brake system DTCs are output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ET4AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ET4AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E25AE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EB6AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E25AE " width="NaN%">DTCs are not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EB6AE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E25AE " width="NaN%">DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EB6AE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO ELECTRONICALLY CONTROLLED BRAKE SYSTEM <a class="content6-ptxt-xref" href="RM10000000110K1.html#RM10000000110K1">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0022">
+<p class="testgrp-heading">CHECK FUEL RECEIVER GAUGE OPERATION BY ADDING FUEL</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Record the fuel receiver gauge reading.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">If the fuel tank assembly is almost full, drain 20 liters (21.1 US qts, 17.6 Imp. qts) or more of fuel. (This is not necessary when the fuel tank assembly is sufficiently below full.)</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the cable from the negative (-) auxiliary battery terminal to reset the fuel receiver gauge.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Check that the power switch is turned off before disconnecting the cable from the negative (-) auxiliary battery terminal.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the cable to the negative (-) auxiliary battery terminal and turn the power switch on (IG).</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Disconnect and reconnect the cable to the negative (-) auxiliary battery terminal and then open and close the fuel lid before turning the power switch on (IG) to increase the accuracy of the fuel receiver gauge.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the fuel receiver gauge has been reset.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Drive the vehicle at 1.8 km/h (1 mph) or more, then select park (P) and turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Add 5.0 liters (5.3 US qts, 4.4 Imp. qts) or more of fuel, turn the power switch on (IG), and check that the fuel receiver gauge reading increases in proportion to the amount of fuel added.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENFAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENFAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EVGAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E2GAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVGAG " width="NaN%">Fuel receiver gauge reading increases in proportion to the amount of fuel added</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2GAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVGAG " width="NaN%">Fuel receiver gauge reading does not change even when fuel is added</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2GAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">B</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 7  <a class="res-right-fin-false-xref" href="#RM1000000011ARY__RM1000000011ARY_05_0002">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0023">
+<p class="testgrp-heading">INSPECT FUEL TANK ASSEMBLY</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">Inspect the fuel tank assembly for deformation, foreign matter or an improperly installed fuel receiver gauge, as this may be the cause of the fuel receiver gauge malfunction.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Visually check the fuel tank assembly for any abnormalities.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if there is an excessive amount of foreign matter in the fuel tank assembly.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check the installation condition of the fuel tank assembly and fuel sender gauge assembly.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EOLAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EOLAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWMAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3MAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWMAG " width="NaN%">Normal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3MAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWMAG " width="NaN%">Appearance of the fuel tank assembly is abnormal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3MAG " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWMAG " width="NaN%">There is an excessive amount of foreign matter in the fuel tank assembly</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3MAG " width="NaN%">C</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWMAG " width="NaN%">The fuel tank assembly or fuel sender gauge assembly is not installed correctly</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3MAG " width="NaN%">D</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUEL TANK ASSEMBLY w/ Canister Pump Module: <a class="content6-ptxt-xref" href="RM10000000112Q3.html#RM10000000112Q3">Click here</a> <br/>REPLACE FUEL TANK ASSEMBLY w/o Canister Pump Module: <a class="content6-ptxt-xref" href="RM10000000112Q6.html#RM10000000112Q6">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CLEAN INSIDE OF FUEL TANK ASSEMBLY </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">D</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>INSTALL FUEL TANK ASSEMBLY OR FUEL SENDER GAUGE ASSEMBLY CORRECTLY </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0002">
+<p class="testgrp-heading">READ VALUE USING GTS (FUEL INPUT)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter following menus: Body Electrical / Combination Meter / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EHVAG" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0ENVAG" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0ETVAG" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EZVAG" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0E6VAG" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EHVAG " width="NaN%">Fuel Input</td> 
+              <td align="left" class="cellrowborder" headers="ID0ENVAG " width="NaN%">Fuel input</td> 
+              <td align="center" class="cellrowborder" headers="ID0ETVAG " width="NaN%">Min.: 0 L, Max.: 127.5 L</td> 
+              <td align="left" class="cellrowborder" headers="ID0EZVAG " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <p class="list1-li-title">
+<strong class="li-title-title">w/ Canister Pump Module:</strong>
+</p> 
+                <li class="list1-item">
+<p class="list1-heading">Fuel receiver gauge indicates F: 38.3 L</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Fuel receiver gauge indicates 3/4: 29.8 L</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Fuel receiver gauge indicates 1/2: 21.3 L</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Fuel receiver gauge indicates 1/4: 12.8 L</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Fuel receiver gauge indicates E: 4.3 L</p>
+</li> 
+               </ul> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <p class="list1-li-title">
+<strong class="li-title-title">w/o Canister Pump Module:</strong>
+</p> 
+                <li class="list1-item">
+<p class="list1-heading">Fuel receiver gauge indicates F (1/1): 38.3 L</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Fuel receiver gauge indicates 3/4: 29.9 L</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Fuel receiver gauge indicates 1/2: 21.4 L</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Fuel receiver gauge indicates 1/4: 12.8 L</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Fuel receiver gauge indicates E (R): 4.3 L</p>
+</li> 
+               </ul> </td> 
+              <td align="center" class="cellrowborder" headers="ID0E6VAG " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E56AG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E56AG " width="NaN%">Fuel Input</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYEBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EYEBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EAGBG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EGGBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EAGBG " width="NaN%">Fuel level data displayed on the GTS is almost the same as the fuel receiver gauge indication</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGGBG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EAGBG " width="NaN%">Fuel level data displayed on the GTS differs from the fuel receiver gauge indication</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGGBG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE COMBINATION METER ASSEMBLY (METER CIRCUIT PLATE) <a class="content6-ptxt-xref" href="RM1000000011ATC.html#RM1000000011ATC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0060">
+<p class="testgrp-heading">INSPECT FUEL SENDER GAUGE ASSEMBLY (POWER SOURCE)</p>
+<div class="ie8fixer"/>
+<div class="fignone"> 
+       <img alt="B006IZDC21" class="figure-graphic" src="../images/b006izdc21.png"/> 
+       <div class="figure-p"> 
+        <div class="tablenoborder">
+         <table class="p-table">
+<tbody class="p-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+            <td class="cellrowborder" width="NaN%"> <p class="ptxt">Component with harness connected</p> <p class="ptxt">(Combination Meter Assembly (Meter Circuit Plate))</p> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div> 
+       </div> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDMBG" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EDMBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQNBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EWNBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3NBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQNBG " width="NaN%">I6-31 (FV) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWNBG " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3NBG " width="NaN%">4.5 to 5.5 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENPBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENPBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQQBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQQBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQQBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE COMBINATION METER ASSEMBLY (METER CIRCUIT PLATE) <a class="content6-ptxt-xref" href="RM1000000011ATC.html#RM1000000011ATC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0061">
+<p class="testgrp-heading">INSPECT FUEL SENDER GAUGE ASSEMBLY</p>
+<div class="ie8fixer"/>
+<div class="fignone"> 
+       <img alt="B006IZDC22" class="figure-graphic" src="../images/b006izdc22.png"/> 
+       <div class="figure-p"> 
+        <div class="tablenoborder">
+         <table class="p-table">
+<tbody class="p-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+            <td class="cellrowborder" width="NaN%"> <p class="ptxt">Component with harness connected</p> <p class="ptxt">(Combination Meter Assembly (Meter Circuit Plate))</p> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div> 
+       </div> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E6VBG" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E6VBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMXBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0ESXBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EYXBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMXBG " width="NaN%">I6-29 (FR) - I6-30 (FE&amp;B)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESXBG " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYXBG " width="NaN%">0.2 to 4.7 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKZBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EKZBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EN1BG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EN1BG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EN1BG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE COMBINATION METER ASSEMBLY (METER CIRCUIT PLATE) <a class="content6-ptxt-xref" href="RM1000000011ATC.html#RM1000000011ATC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0062">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (FUEL SUCTION TUBE WITH PUMP AND GAUGE ASSEMBLY - COMBINATION METER ASSEMBLY (METER CIRCUIT PLATE))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the N10 fuel suction tube with pump and gauge assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I6 combination meter assembly (meter circuit plate) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJ5BG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJ5BG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EW6BG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E36BG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EDAAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EW6BG " width="NaN%">N10-3 (FR) - I6-29 (FR)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E36BG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDAAI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EW6BG " width="NaN%">N10-2 (FE) - I6-30 (FE&amp;B)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E36BG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDAAI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EW6BG " width="NaN%">N10-1 (FV) - I6-31 (FV)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E36BG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDAAI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EW6BG " width="NaN%">N10-3 (FR) or I6-29 (FR) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E36BG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDAAI " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EW6BG " width="NaN%">N10-2 (FE) or I6-30 (FE&amp;B) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E36BG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDAAI " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EW6BG " width="NaN%">N10-1 (FV) or I6-31 (FV) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E36BG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDAAI " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDFAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EDFAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EGGAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EGGAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EGGAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0063">
+<p class="testgrp-heading">INSPECT FUEL SENDER GAUGE ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the fuel sender gauge assembly.</p>
+<p class="test1-ptxt">w/ Canister Pump Module: <a class="ptxt-xref" href="RM10000000112Q9.html#RM10000000112Q9">Click here</a>
+</p>
+<p class="test1-ptxt">w/o Canister Pump Module: <a class="ptxt-xref" href="RM10000000112QE.html#RM10000000112QE">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the fuel sender gauge assembly.</p>
+<p class="test1-ptxt">w/ Canister Pump Module: <a class="ptxt-xref" href="RM10000000112QB.html#RM10000000112QB">Click here</a>
+</p>
+<p class="test1-ptxt">w/o Canister Pump Module: <a class="ptxt-xref" href="RM10000000112QD.html#RM10000000112QD">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4KAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E4KAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EAMAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EAMAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EAMAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUEL SENDER GAUGE ASSEMBLY w/ Canister Pump Module: <a class="content6-ptxt-xref" href="RM10000000112Q9.html#RM10000000112Q9">Click here</a> <br/>REPLACE FUEL SENDER GAUGE ASSEMBLY w/o Canister Pump Module: <a class="content6-ptxt-xref" href="RM10000000112QE.html#RM10000000112QE">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0064">
+<p class="testgrp-heading">INSPECT FUEL SUCTION TUBE WITH PUMP AND GAUGE ASSEMBLY</p>
+<div class="ie8fixer"/>
+<div class="fignone"> 
+       <img alt="B006J5GC58" class="figure-graphic" src="../images/b006j5gc58.png"/> 
+       <div class="figure-p"> 
+        <div class="tablenoborder">
+         <table class="p-table">
+<tbody class="p-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+            <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Component without harness connected</p> <p class="ptxt">(Fuel Suction Tube with Pump and Gauge Assembly)</p> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div> 
+       </div> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E5RAI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E5RAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ELTAI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0ERTAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EXTAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELTAI " width="NaN%">N10-1 - A-3</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ERTAI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EXTAI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELTAI " width="NaN%">N10-2 - A-2</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ERTAI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EXTAI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELTAI " width="NaN%">N10-3 - A-1</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ERTAI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EXTAI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EVWAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EVWAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EYXAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYXAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYXAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE COMBINATION METER ASSEMBLY (METER CIRCUIT PLATE) <a class="content6-ptxt-xref" href="RM1000000011ATC.html#RM1000000011ATC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUEL SUCTION TUBE WITH PUMP AND GAUGE ASSEMBLY w/ Canister Pump Module: <a class="content6-ptxt-xref" href="RM10000000112PT.html#RM10000000112PT">Click here</a> <br/>REPLACE FUEL SUCTION TUBE WITH PUMP AND GAUGE ASSEMBLY w/o Canister Pump Module: <a class="content6-ptxt-xref" href="RM10000000112Q0.html#RM10000000112Q0">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0030">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (FUEL METER OPERATION)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter following menus: Body Electrical / Combination Meter / Active Test.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Perform the Active Test according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Active Test<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EG5AI" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EM5AI" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0ES5AI" width="NaN%">Control Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EY5AI" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EG5AI " width="NaN%">Fuel Meter Operation</td> 
+              <td align="left" class="cellrowborder" headers="ID0EM5AI " width="NaN%">Fuel receiver gauge</td> 
+              <td align="center" class="cellrowborder" headers="ID0ES5AI " width="NaN%">OFF, Sender E, Empty, Warning, 1/4, 1/2, 3/4, Full or Sender F</td> 
+              <td align="center" class="cellrowborder" headers="ID0EY5AI " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EAEBI" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EAEBI " width="NaN%">Fuel Meter Operation</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E6IBI" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E6IBI">Fuel receiver gauge indication is normal.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZJBI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZJBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E3KBI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3KBI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3KBI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE COMBINATION METER ASSEMBLY (METER CIRCUIT PLATE) <a class="content6-ptxt-xref" href="RM1000000011ATC.html#RM1000000011ATC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0031">
+<p class="testgrp-heading">CHECK FOR DTC (SFI SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if SFI system DTCs are output.</p>
+<p class="test1-ptxt">w/ Canister Pump Module: <a class="ptxt-xref" href="RM1000000010619.html#RM1000000010619">Click here</a>
+</p>
+<p class="test1-ptxt">w/o Canister Pump Module: <a class="ptxt-xref" href="RM100000001064M.html#RM100000001064M">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYRBI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EYRBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EATBI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EGTBI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EATBI " width="NaN%">DTCs are not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGTBI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EATBI " width="NaN%">DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGTBI " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO SFI SYSTEM w/ Canister Pump Module: <a class="content6-ptxt-xref" href="RM100000001AMDC.html#RM100000001AMDC">Click here</a> <br/>GO TO SFI SYSTEM w/o Canister Pump Module: <a class="content6-ptxt-xref" href="RM100000001AMDR.html#RM100000001AMDR">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0032">
+<p class="testgrp-heading">CHECK FOR DTC (ELECTRONICALLY CONTROLLED BRAKE SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if electronically controlled brake system DTCs are output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQ1BI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQ1BI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EY2BI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E52BI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EY2BI " width="NaN%">DTCs are not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E52BI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EY2BI " width="NaN%">DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E52BI " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO ELECTRONICALLY CONTROLLED BRAKE SYSTEM <a class="content6-ptxt-xref" href="RM10000000110K1.html#RM10000000110K1">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0033">
+<p class="testgrp-heading">CHECK FOR DTC (METER / GAUGE SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if meter / gauge system DTCs are output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000011ARQ.html#RM1000000011ARQ">Click here</a>
+</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E5CCI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E5CCI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EGECI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EMECI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EGECI " width="NaN%">DTCs are not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMECI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EGECI " width="NaN%">DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMECI " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC B1500 <a class="content6-ptxt-xref" href="RM1000000011ARW.html#RM1000000011ARW">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0034">
+<p class="testgrp-heading">INSPECT FUEL RECEIVER GAUGE</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the cable from the negative (-) auxiliary battery terminal to reset the fuel receiver gauge.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Check that the power switch is turned off before disconnecting the cable from the negative (-) auxiliary battery terminal.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the cable to the negative (-) auxiliary battery terminal and turn the power switch on (IG).</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Disconnect and reconnect the cable to the negative (-) auxiliary battery terminal and then open and close the fuel lid before turning the power switch on (IG) to increase the accuracy of the fuel receiver gauge.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the fuel receiver gauge reading corresponds with the amount of fuel remaining in the fuel tank assembly.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELJCI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELJCI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETKCI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EZKCI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETKCI " width="NaN%">Fuel receiver gauge reading corresponds with the amount of fuel remaining in the fuel tank assembly</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZKCI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETKCI " width="NaN%">Fuel receiver gauge reading does not correspond with the amount of fuel remaining in the fuel tank assembly</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZKCI " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">B</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 7  <a class="res-right-fin-false-xref" href="#RM1000000011ARY__RM1000000011ARY_05_0002">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0035">
+<p class="testgrp-heading">CHECK FOR DTC (SFI SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if SFI system DTCs are output.</p>
+<p class="test1-ptxt">w/ Canister Pump Module: <a class="ptxt-xref" href="RM1000000010619.html#RM1000000010619">Click here</a>
+</p>
+<p class="test1-ptxt">w/o Canister Pump Module: <a class="ptxt-xref" href="RM100000001AMDR.html#RM100000001AMDR">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EASCI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EASCI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EITCI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EOTCI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EITCI " width="NaN%">DTCs are not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOTCI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EITCI " width="NaN%">DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOTCI " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO SFI SYSTEM w/ Canister Pump Module: <a class="content6-ptxt-xref" href="RM100000001AMDC.html#RM100000001AMDC">Click here</a> <br/>GO TO SFI SYSTEM w/o Canister Pump Module: <a class="content6-ptxt-xref" href="RM100000001AMDR.html#RM100000001AMDR">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011ARY__RM1000000011ARY_05_0036">
+<p class="testgrp-heading">CHECK FOR DTC (ELECTRONICALLY CONTROLLED BRAKE SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if electronically controlled brake system DTCs are output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EY1CI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EY1CI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EA3CI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EG3CI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EA3CI " width="NaN%">DTCs are not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EG3CI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EA3CI " width="NaN%">DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EG3CI " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO ELECTRONICALLY CONTROLLED BRAKE SYSTEM <a class="content6-ptxt-xref" href="RM10000000110K1.html#RM10000000110K1">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM1000000011ARY__RM1000000011ARY_05_0037">
+<p class="testgrp-heading">INSPECT FUEL TANK ASSEMBLY</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">Inspect the fuel tank assembly for deformation, foreign matter or an improperly installed fuel receiver gauge, as this may be the cause of the fuel receiver gauge malfunction.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Visually check the fuel tank assembly for any abnormalities.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if there is an excessive amount of foreign matter in the fuel tank assembly.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check the installation condition of the fuel tank assembly and fuel sender gauge assembly.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2ADI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2ADI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDCDI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJCDI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDCDI " width="NaN%">Normal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJCDI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDCDI " width="NaN%">Appearance of the fuel tank assembly is abnormal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJCDI " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDCDI " width="NaN%">There is an excessive amount of foreign matter in the fuel tank assembly</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJCDI " width="NaN%">C</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDCDI " width="NaN%">The fuel tank assembly or fuel sender gauge assembly is not installed correctly</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJCDI " width="NaN%">D</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE COMBINATION METER ASSEMBLY (METER CIRCUIT PLATE) <a class="content6-ptxt-xref" href="RM1000000011ATC.html#RM1000000011ATC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUEL TANK ASSEMBLY w/ Canister Pump Module: <a class="content6-ptxt-xref" href="RM10000000112Q3.html#RM10000000112Q3">Click here</a> <br/>REPLACE FUEL TANK ASSEMBLY w/o Canister Pump Module: <a class="content6-ptxt-xref" href="RM10000000112Q6.html#RM10000000112Q6">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CLEAN INSIDE OF FUEL TANK ASSEMBLY </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">D</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>INSTALL FUEL TANK ASSEMBLY OR FUEL SENDER GAUGE ASSEMBLY CORRECTLY </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

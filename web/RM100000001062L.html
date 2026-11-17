@@ -1,0 +1,651 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P04417E, P04417F, P04419C" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290546" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001062L" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P04417E, P04417F, P04419C</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P04417E, P04417F, P04419C</h1>
+<div class="section" id="RM100000001062L__RM100000001062L_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P04417E</td> 
+       <td class="dtcname" headers="ID0EED">Evaporative Emission System Incorrect Purge Flow Actuator Stuck On</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P04417F</td> 
+       <td class="dtcname" headers="ID0EED">Evaporative Emission System Incorrect Purge Flow Actuator Stuck Off</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P04419C</td> 
+       <td class="dtcname" headers="ID0EED">Evaporative Emission System Incorrect Purge Flow Low/Insufficient Flow</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001062L__RM100000001062L_01">
+     
+    <p class="subpara-subparaName">DTC SUMMARY</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0ESG" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EYG" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0E5G" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EEH" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EKH" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EQH" width="NaN%">Memory</th> 
+        <th align="center" class="cellrowborder" id="ID0EWH" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ESG " width="NaN%">P04417E</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYG " width="NaN%">Evaporative Emission System Incorrect Purge Flow Actuator Stuck On</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5G " width="NaN%">The stabilized EVAP system pressure is higher than [second reference pressure x 0.2] and the purge VSV is judged as stuck on.</td> 
+        <td align="left" class="cellrowborder" headers="ID0EEH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Purge VSV</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Purge line</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Connector/wire harness (Purge VSV - ECM)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Canister pump module</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Canister (filter inside canister clogged)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Leak from EVAP system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EKH " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQH " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWH " width="NaN%">SAE Code: P0441</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ESG " width="NaN%">P04417F</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYG " width="NaN%">Evaporative Emission System Incorrect Purge Flow Actuator Stuck Off</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5G " width="NaN%">When the purge VSV is opened, the EVAP system pressure does not return to near atmospheric pressure and the purge VSV is judged as stuck off.</td> 
+        <td align="left" class="cellrowborder" headers="ID0EEH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Purge VSV</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Purge line</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Connector/wire harness (Purge VSV - ECM)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Canister pump module</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Canister (filter inside canister clogged)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Leak from EVAP system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EKH " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQH " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWH " width="NaN%">SAE Code: P0441</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ESG " width="NaN%">P04419C</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYG " width="NaN%">Evaporative Emission System Incorrect Purge Flow Low/Insufficient Flow</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5G " width="NaN%"> <p class="ptxt">The following conditions are met successively while the engine is running:</p> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Vacuum not created in EVAP system when purge VSV turned on (open).</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">EVAP system pressure change is less than 0.396 kPa (0.0574 psi) when vent valve is turned on (closed).</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Atmospheric pressure change before and after purge flow monitor is less than 0.1 kPa (0.01 psi).</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EEH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Purge VSV</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Purge line</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Connector/wire harness (Purge VSV - ECM)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Canister pump module</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Canister (filter inside canister clogged)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Leak from EVAP system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EKH " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQH " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWH " width="NaN%">SAE Code: P0441</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EBPAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EHPAC" width="NaN%">Monitoring Item</th> 
+        <th align="center" class="cellrowborder" id="ID0ENPAC" width="NaN%">Detection Timing</th> 
+        <th align="center" class="cellrowborder" id="ID0ETPAC" width="NaN%">Detection Logic</th> 
+        <th align="center" class="cellrowborder" id="ID0EZPAC" width="NaN%">SAE Code</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EBPAC " width="NaN%">P04417E</td> 
+        <td class="cellrowborder" headers="ID0EHPAC " width="NaN%">Purge VSV (Vacuum Switching Valve) stuck on (open)</td> 
+        <td class="cellrowborder" headers="ID0ENPAC " width="NaN%">While power switch off</td> 
+        <td align="center" class="cellrowborder" headers="ID0ETPAC " rowspan="3" width="NaN%">2 trip</td> 
+        <td align="center" class="cellrowborder" headers="ID0EZPAC " rowspan="3" width="NaN%">P0441</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EBPAC " width="NaN%">P04417F</td> 
+        <td class="cellrowborder" headers="ID0EHPAC " width="NaN%">Purge VSV stuck off (closed)</td> 
+        <td class="cellrowborder" headers="ID0ENPAC " width="NaN%">While power switch off</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EBPAC " width="NaN%">P04419C</td> 
+        <td class="cellrowborder" headers="ID0EHPAC " width="NaN%">Purge flow</td> 
+        <td class="cellrowborder" headers="ID0ENPAC " width="NaN%">While engine running</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001062L__RM100000001062L_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">Refer to EVAP (Evaporative Emission) System.</p> 
+    <p class="content5-ptxt"> <a class="ptxt-xref" href="RM100000001063S.html#RM100000001063S_07">Click here</a>
+</p> 
+   </div>
+<div class="subpara" id="RM100000001062L__RM100000001062L_04">
+     
+    <p class="subpara-subparaName">MONITOR DESCRIPTION</p> 
+    <p class="content5-ptxt">The 2 monitors, Key-off and Purge Flow, are used to detect malfunctions relating to DTCs P04417E, P04417F and P04419C. The key-off monitor is initiated by the ECM internal timer, known as the soak timer, 5 hours* after the power switch is turned off. The purge flow monitor runs while the engine is running.</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">*: If the engine coolant temperature is not less than 35°C (95°F) 5 hours after the power switch is turned off, the monitor check starts 2 hours later. If it is still not less than 35°C (95°F) 7 hours after the power switch is turned off, the monitor check starts 2.5 hours later.</p> 
+    </div> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">KEY-OFF MONITOR</p>
+</li>
+<br class="list1-li-list2"/>
+<ol class="li-list2-list2" type="a">
+<li class="list2-item">
+<p class="li-list2-list2-heading">Purge VSV stuck open</p>
+<p class="item-ptxt">In operation C, the leak detection pump creates negative pressure (vacuum) in the EVAP system. The EVAP system pressure is then measured by the ECM using the canister pressure sensor. If the stabilized system pressure is higher than [second reference pressure x 0.2], the ECM interprets this as the purge VSV (Vacuum Switching Valve) being stuck open. The ECM illuminates the MIL and stores the DTC (2 trip detection logic).</p>
+</li>
+<li class="list2-item clearer">
+<div class="ie8fixer"/>
+<p class="li-list2-list2-heading">Purge VSV stuck closed</p>
+<p class="item-ptxt">During sequence D, the canister pressure sensor measures the EVAP system pressure. The pressure measurement for purge VSV monitor is begun when the purge VSV is turned on (open) after the EVAP leak check. When the measured pressure indicates an increase of 0.3 kPa (0.04 psi) or higher, the purge VSV is functioning normally. If the pressure does not increase, the ECM interprets this as the purge VSV being stuck closed. The ECM illuminates the MIL and stores the DTC (2 trip detection logic).</p>
+<div class="fignone--bigImage">
+<img alt="B006IVAE01" class="figure-graphic--bigImage" src="../images/b006ivae01.png"/>
+</div>
+<div class="fignone--bigImage">
+<img alt="B006I0NE01" class="figure-graphic--bigImage" src="../images/b006i0ne01.png"/>
+</div>
+</li>
+</ol>
+<li class="list1-item clearer">
+<div class="ie8fixer"/>
+<p class="content5-list1-heading">PURGE FLOW MONITOR</p>
+<p class="item-ptxt">The purge flow monitor consists of 2 monitors. The 1st monitor is conducted every time and the 2nd monitor is activated if necessary.</p>
+<div class="fignone--bigImage">
+<img alt="B006I4EE23" class="figure-graphic--bigImage" src="../images/b006i4ee23.png"/>
+</div>
+</li>
+</ol> 
+    <br class="subpara"/>
+    <ul class="content5-list1"> 
+     <li class="list1-item">
+<p class="content5-list1-heading">The 1st monitor</p>
+<p class="item-ptxt">While the engine is running and the purge VSV is on (open), the ECM monitors the purge flow by measuring the EVAP pressure change. If negative pressure is not created, the ECM begins the 2nd monitor.</p>
+</li> 
+     <li class="list1-item">
+<p class="content5-list1-heading">The 2nd monitor</p>
+<p class="item-ptxt">The vent valve is turned on (closed) and the EVAP pressure is then measured. If the variation in the pressure is less than 0.396 kPa (0.0574 psi), the ECM interprets this as the Purge VSV being stuck closed. The ECM illuminates the MIL and stores DTC P04419C (2 trip detection logic).</p>
+</li> 
+    </ul> 
+    <p class="content5-ptxt">Atmospheric pressure check:</p> 
+    <p class="content5-ptxt">In order to ensure reliable malfunction detection, the variation in atmospheric pressure, before and after performing the purge flow monitor, is measured by the ECM.</p> 
+   </div>
+<div class="subpara" id="RM100000001062L__RM100000001062L_09">
+     
+    <p class="subpara-subparaName">MONITOR STRATEGY</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Required Sensors/Components</td> 
+        <td class="cellrowborder" width="NaN%"> <p class="ptxt">Purge VSV</p> <p class="ptxt">Canister pump module</p> </td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Frequency of Operation</td> 
+        <td class="cellrowborder" width="NaN%">Once per driving cycle</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001062L__RM100000001062L_11">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <br class="subpara"/>
+    <ul class="content5-topic"> 
+     <li class="topic-topic"> <strong class="topic-title">P04417E and P04417F</strong> 
+      <div class="note">
+       <p class="notetitle">Note</p> 
+       <br class="note"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">The Evaporative System Check (Automatic Mode) consists of 9 steps performed automatically by the GTS. It takes a maximum of approximately 40 minutes.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Do not perform the Evaporative System Check when the fuel tank is more than 90% full because the cut-off valve may be closed, making the fuel tank leak check unavailable.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Do not start the engine during this operation.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">When the temperature of the fuel is 35°C (95°F) or higher, a large amount of vapor will from and any check result will be inaccurate. When performing the Evaporative System Check, keep the fuel temperature less than 35°C (95°F).</p>
+</li> 
+       </ul> 
+      </div> <br class="topic-topic"/>
+      <ol class="topic-list1">
+<li class="list1-item">
+<p class="topic-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Enter the following menus: Powertrain / Engine / Utility / Evaporative System Check / Automatic Mode.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">After the Evaporative System Check is completed, check for All Readiness by entering the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Input the DTC: P04417E or P04417F.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Check the DTC judgment result.</p>
+<div class="tablenoborder">
+         <table class="item-table">
+<thead align="left" class="item-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EFTAE" width="NaN%">GTS Display</th> 
+            <th align="center" class="cellrowborder" id="ID0ELTAE" width="NaN%">Description</th> 
+           </tr> 
+          </thead>
+<tbody class="item-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EFTAE " width="NaN%">NORMAL</td> 
+            <td class="cellrowborder" headers="ID0ELTAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">System normal</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EFTAE " width="NaN%">ABNORMAL</td> 
+            <td class="cellrowborder" headers="ID0ELTAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">System abnormal</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EFTAE " width="NaN%">INCOMPLETE</td> 
+            <td class="cellrowborder" headers="ID0ELTAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">DTC judgment not completed</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Perform driving pattern after confirming DTC enabling conditions</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EFTAE " width="NaN%">N/A</td> 
+            <td class="cellrowborder" headers="ID0ELTAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Unable to perform DTC judgment</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Number of DTCs which do not fulfill DTC preconditions has reached ECU memory limit</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If the judgment result is NORMAL, the system is normal.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If the judgment result is ABNORMAL, the system is malfunctioning.</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+</ol> </li> 
+    </ul> 
+    <br class="subpara"/>
+    <ul class="content5-topic"> 
+     <li class="topic-topic"> <strong class="topic-title">P04419C</strong> <br class="topic-topic"/>
+      <ol class="topic-list1">
+<li class="list1-item">
+<p class="topic-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Start the engine and wait 15 minutes or more.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Read the pending DTCs.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If a pending DTC is output, the system is malfunctioning.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If a pending DTC is not output, perform the following procedure.</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Input the DTC: P04419C.</p>
+</li>
+<li class="list1-item">
+<p class="topic-list1-heading">Check the DTC judgment result.</p>
+<div class="tablenoborder">
+         <table class="item-table">
+<thead align="left" class="item-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0ECCAG" width="NaN%">GTS Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EICAG" width="NaN%">Description</th> 
+           </tr> 
+          </thead>
+<tbody class="item-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0ECCAG " width="NaN%">NORMAL</td> 
+            <td class="cellrowborder" headers="ID0EICAG " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">System normal</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0ECCAG " width="NaN%">ABNORMAL</td> 
+            <td class="cellrowborder" headers="ID0EICAG " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">System abnormal</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0ECCAG " width="NaN%">INCOMPLETE</td> 
+            <td class="cellrowborder" headers="ID0EICAG " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">DTC judgment not completed</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Perform driving pattern after confirming DTC enabling conditions</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0ECCAG " width="NaN%">N/A</td> 
+            <td class="cellrowborder" headers="ID0EICAG " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Unable to perform DTC judgment</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Number of DTCs which do not fulfill DTC preconditions has reached ECU memory limit</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If the judgment result is NORMAL, the system is normal.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If the judgment result is ABNORMAL, the system is malfunctioning.</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+</ol> </li> 
+    </ul> 
+   </div>
+<div class="subpara" id="RM100000001062L__RM100000001062L_13">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001062L__RM100000001062L_13_0003">
+<p class="testgrp-heading">CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P04417E, P04417F AND/OR P04419C)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKPAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EKPAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETQAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EZQAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETQAG " width="NaN%">DTC P04417E, P04417F or P04419C is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZQAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETQAG " width="NaN%">DTC P04417E, P04417F or P04419C and other DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZQAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If any DTCs other than DTC P04417E, P04417F or P04419C are output, troubleshoot those DTCs first.</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO EVAP SYSTEM <a class="content6-ptxt-xref" href="RM100000001063S.html#RM100000001063S">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART <a class="content6-ptxt-xref" href="RM100000001AMDC.html#RM100000001AMDC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

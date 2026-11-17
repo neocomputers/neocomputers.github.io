@@ -1,0 +1,489 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/o Canister Pump Module), Diagnostic DTC:P01152A" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290547" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/o Canister Pump Module)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001065F" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P01152A</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/o Canister Pump Module), Diagnostic DTC:P01152A</h1>
+<div class="section" id="RM100000001065F__RM100000001065F_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P01152A</td> 
+       <td class="dtcname" headers="ID0EED">Engine Coolant Temperature Sensor 1 Signal Stuck in Range</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001065F__RM100000001065F_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">Refer to DTC P011511.</p> 
+    <p class="content5-ptxt"> <a class="ptxt-xref" href="RM100000001065D.html#RM100000001065D_01">Click here</a>
+</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EGG" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EMG" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0ESG" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EYG" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0E5G" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EEH" width="NaN%">Memory</th> 
+        <th align="center" class="cellrowborder" id="ID0EKH" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EGG " width="NaN%">P01152A</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMG " width="NaN%">Engine Coolant Temperature Sensor 1 Signal Stuck in Range</td> 
+        <td align="left" class="cellrowborder" headers="ID0ESG " width="NaN%"> <p class="ptxt">Either of the following conditions is met (2 trip detection logic):</p> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">When engine is started cold and warmed up, the engine coolant temperature sensor value does not change.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">After the warmed up engine is stopped and then next cold engine start is performed, the engine coolant temperature sensor value does not change.</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EYG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Water inlet with thermostat sub-assembly (thermostat)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Engine coolant temperature sensor</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0E5G " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EEH " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EKH " width="NaN%">SAE Code: P0116</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001065F__RM100000001065F_02">
+     
+    <p class="subpara-subparaName">MONITOR DESCRIPTION</p> 
+    <br class="subpara"/>
+    <ul class="content5-topic"> 
+     <li class="topic-topic"> <strong class="topic-title">Engine Coolant Temperature Sensor Cold Start Monitor</strong> <p class="content5-topic-heading">When a cold engine start is performed and then the engine is warmed up, if the engine coolant temperature sensor value does not change, it is determined that a malfunction has occurred. If this is detected in 2 consecutive driving cycles, the MIL is illuminated and this DTC is stored.</p> </li> 
+    </ul> 
+    <br class="subpara"/>
+    <ul class="content5-topic"> 
+     <li class="topic-topic"> <strong class="topic-title">Engine Coolant Temperature Sensor Soak Monitor</strong> <p class="content5-topic-heading">If the engine coolant temperature sensor value does not change after the warmed up engine is stopped and then the next cold engine start is performed, it is determined that a malfunction has occurred. If this is detected in 2 consecutive driving cycles, the MIL is illuminated and this DTC is stored.</p> </li> 
+    </ul> 
+   </div>
+<div class="subpara" id="RM100000001065F__RM100000001065F_03">
+     
+    <p class="subpara-subparaName">MONITOR STRATEGY</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Required Sensors/Components</td> 
+        <td class="cellrowborder" width="NaN%">Engine coolant temperature sensor</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Frequency of Operation</td> 
+        <td class="cellrowborder" width="NaN%">Once per driving cycle</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001065F__RM100000001065F_09">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <div class="fignone--bigImage">
+<img alt="B006HE2E01" class="figure-graphic--bigImage" src="../images/b006he2e01.png"/>
+</div> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Data List / Coolant Temperature.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check that the engine coolant temperature is 60°C (140°F) or less.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) [A].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Start the engine and idle it for 5 minutes or more [B].</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">If the engine coolant temperature does not change by 5°C (9°F) or higher, the engine coolant temperature sensor is malfunctioning. It is not necessary to continue this procedure.</p> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes [C].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Read the pending DTCs.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is output, the system is malfunctioning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is not output, perform the following procedure.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Input the DTC: P01152A.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tablenoborder">
+       <table class="item-table">
+<thead align="left" class="item-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0E1PAC" width="NaN%">GTS Display</th> 
+          <th align="center" class="cellrowborder" id="ID0EBAAE" width="NaN%">Description</th> 
+         </tr> 
+        </thead>
+<tbody class="item-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E1PAC " width="NaN%">NORMAL</td> 
+          <td class="cellrowborder" headers="ID0EBAAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System normal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E1PAC " width="NaN%">ABNORMAL</td> 
+          <td class="cellrowborder" headers="ID0EBAAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System abnormal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E1PAC " width="NaN%">INCOMPLETE</td> 
+          <td class="cellrowborder" headers="ID0EBAAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment not completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Perform driving pattern after confirming DTC enabling conditions</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E1PAC " width="NaN%">N/A</td> 
+          <td class="cellrowborder" headers="ID0EBAAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Unable to perform DTC judgment</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Number of DTCs which do not fulfill DTC preconditions has reached ECU memory limit</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is NORMAL, the system is normal.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is ABNORMAL, the system is malfunctioning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is INCOMPLETE or N/A, perform steps [D] and [E].</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Press the EV/HV mode selection switch to select HV mode.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">With the engine running, drive the vehicle at 40 km/h (25 mph) or more for a total of 5 minutes or more [D].</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">When performing the confirmation driving pattern, obey all speed limits and traffic laws.</p> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">In the event of the drive pattern being interrupted (possibly due to factors such as traffic conditions), the drive pattern can be resumed.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the engine stops, further depress the accelerator pedal to restart the engine.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result again [E].</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">If the judgment result is INCOMPLETE or N/A, perform steps [D] and [E] again.</p> 
+      </div>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001065F__RM100000001065F_07">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">If any of DTCs P011511 or P011515 are output simultaneously with DTC P01152A, the engine coolant temperature sensor may have an open or a short circuit. Troubleshoot those DTCs first.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">When this DTC is output, check the engine coolant temperature using the GTS. Enter the following menus: Powertrain / Engine / Data List / Coolant Temperature. If the value of Coolant Temperature is lower than the actual engine coolant temperature, the engine coolant temperature sensor circuit may be malfunctioning. In this case, check the wire harnesses and connectors (and their connection condition) between the ECM and the engine coolant temperature sensor first.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Read freeze frame data using the GTS. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air fuel ratio was lean or rich, and other data from the time the malfunction occurred.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001065F__RM100000001065F_10">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001065F__RM100000001065F_10_0001">
+<p class="testgrp-heading">CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P01152A)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1RAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E1RAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDTAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJTAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDTAE " width="NaN%">DTC P01152A is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJTAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDTAE " width="NaN%">DTC P01152A and other DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJTAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If any DTCs other than P01152A are output, troubleshoot those DTCs first.</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART <a class="content6-ptxt-xref" href="RM100000001AMDR.html#RM100000001AMDR">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001065F__RM100000001065F_10_0003">
+<p class="testgrp-heading">INSPECT WATER INLET WITH THERMOSTAT SUB-ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the water inlet with thermostat sub-assembly (thermostat opening temperature).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZQ27.html#RM100000000ZQ27">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the engine coolant temperature sensor.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM100000001064I.html#RM100000001064I">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EIYAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EIYAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ELZAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELZAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELZAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ENGINE COOLANT TEMPERATURE SENSOR <a class="content6-ptxt-xref" href="RM1000000010681.html#RM1000000010681">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE WATER INLET WITH THERMOSTAT SUB-ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000ZQ29.html#RM100000000ZQ29">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

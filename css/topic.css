@@ -1,0 +1,718 @@
+/*
+  This style sheet is for the topic rendering in TD3
+  V2 - Oct 2009
+*/
+
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}img,body,html{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul {list-style:none;}caption,th {text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;}q:before,q:after{content:'';}
+
+.parts-xref {
+    margin-left: 20px;
+    background-color: #AC2224;
+	color: #fff;
+    text-decoration: none;
+    padding: 0px 4px;
+    line-height: 20px;
+	white-space: nowrap;
+}
+
+.parts-xref:hover {
+	color: #3c3c3c;
+}
+
+.parts-xref:active{
+    border-color: black white white black;
+}
+
+.e2e {
+  background-color: #FFFFFF;
+  font-size: 10pt;
+  font-weight: normal;
+  font-family: tahoma,arial,helvetica;
+  margin: 0px 0px 0px 0px;
+  padding:5px 0px 0px 5px; 
+}
+
+.section {
+	margin: 10px 0px 10px 0px;
+}
+
+.topictitle1{
+  background-color:#3C3C3C; 
+  color:#FFFFFF;  
+  font-size: 14pt;
+  font-weight: bold;
+  padding:10px 10px 10px 10px;
+  margin:0 0 10px 0;
+  line-height:29px;
+}
+
+/* section headings */
+p.descript-testgroup-testtitle, .subpara-subparaName, .ppr-section-ppr-para, .ppr-sec-title {
+  font-size: 14pt;
+  font-weight: bold;
+  color:#AC2224;
+  margin:0px 0px 5px 0px;
+}
+
+/* paragraphs */
+p.e2e {
+	margin: 0 10px 0 0px; 
+  color:#333333;  
+}
+p.s2-ptxt {
+  font-weight: bold;  
+}
+
+/* lists */
+.e2e ol {
+  font-weight: normal;
+  padding:0px 0px 0px 40px;
+  margin-top: 10px;
+  list-style-type:decimal;   
+}
+.e2e ul {
+  font-weight: normal;
+  padding:0px 0px 0px 40px;
+  list-style-type:disc;   
+}
+
+/* ASTD-2784 Change */
+.e2e li {
+	margin: 10px 0;
+}
+li.list1-item {
+	margin: 5px 0;
+}
+
+/*Start ASTD-2784 Change */
+li.step1Root-step1 {
+	clear:both;
+    padding: 8px 0 5px;
+}
+
+/* Changed by Infosys - RCA team Story 1823 START */
+li.step1Root-step1-SOURCE-UFX {
+	clear:both;
+    list-style-type: none;
+}
+li.clearer {
+	clear:both;
+}
+/*End ASTD-2784 Change */
+
+strong.li-title-title {
+	font-weight: bold;
+}
+/* Changed by Infosys - RCA team Story 1823 END */
+
+ol.s1, ol.step1, ol.testgrp {
+  font-weight: bold;  	
+}
+/* inner lists */
+ol.s2, ol.step2, ol.test1  {
+	color:#333333;
+	margin:0px 0px 0px 10px;
+  list-style-type:lower-alpha;
+  font-weight: bold;  
+}
+ol.s3, ol.step3, ol.test2 {
+  color:#333333;
+  margin:0px 0px 0px 10px;
+  list-style-type:lower-roman;
+  font-weight: bold;  
+}
+
+/* major list headings */
+p.result-action-ci-right-heading, p.results-action-ci-right-heading, p.s1-heading, p.step1-heading, p.testgrp-heading, td.res-right-fin-true-link p, td.res-right-fin-false-link p, p.subpara-subparaName  {
+
+	background-color:#3C3C3C;
+  border-bottom-color:#3C3C3C;
+  border-right-color:#3C3C3C;
+  
+  border-left-color:#3C3C3C;
+  border-top-color:#3C3C3C;
+        
+  border-style:solid;
+  border-width:2px 2px 2px 2px;
+  color:#FFFFFF;
+  font-weight: bold;      
+  padding:3px 5px 3px 10px;
+  clear:both; /* required for image alignment */
+}
+a.testtitle-xref, a.content6-ptxt-xref, a.heading-action-ci-right-xref, a.action-ci-fin-xref, td.res-right-fin-true-link a, td.res-right-fin-false-link a {
+  background-color:#AC2224;
+  color:#FFFFFF;  
+  margin:3px 5px 3px 10px;  
+  padding: 0 4px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Added as fix to visited bug */
+a.testtitle-xref:visited, a.content6-ptxt-xref:visited, a.heading-action-ci-right-xref:visited, a.action-ci-fin-xref:visited, td.res-right-fin-true-link a:visited, td.res-right-fin-false-link a:visited  {
+  background-color:#AC2224;
+  color:#FFFFFF;  
+  margin:3px 5px 3px 10px;  
+  padding: 0 4px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+
+/* notes tips and caution */
+div.tip {
+	margin: 10px 10px 10px 10px;
+  color:#262; /* previously #44bb00; */
+  font-weight: normal;    
+}
+.tiptitle {font-size: 12pt; font-weight: bold; margin:0px 0px 5px 0px;} 
+
+div.note {
+  margin: 10px 10px 10px 10px;
+  color:#555; /* previously #999; */
+  font-weight: normal;  	
+}
+.notetitle {font-size: 12pt; font-weight: bold; margin:0px 0px 5px 0px;} 
+
+div.caution {
+  margin: 10px 10px 10px 10px;
+  color:red;
+  font-weight: normal;    
+}
+.cautiontitle {font-size: 12pt; font-weight: bold; margin:0px 0px 5px 0px;}
+
+/* SST and Torque lists */
+dl.sst, dl.torque {
+  color:#AC2224;
+  margin:10px 10px 10px 10px;
+}
+dt.sst, dt.torque {
+  font-style:italic;
+}
+
+/* tables */
+
+div.tablenoborder {
+	width:auto;
+}
+
+/* ASTD-2784 Change */
+.e2e table {
+    border-collapse: collapse;
+    color: #444444;
+    margin: 10px 0;
+    padding: 0 0 0 5px;
+    width: auto;
+	max-width: 95%;
+}
+
+/* ASTD-2784 - explictly clear tables to work around the Firefox float bug */
+@-moz-document url-prefix() {
+    .e2e table {
+     clear:both;
+   }
+}
+
+.e2e caption{
+  text-align:left;
+  font-weight: bold;    
+}
+.tablenoborder caption {
+  text-align:left;
+  color:#444444;   
+}
+.dtc-dtc-head {
+  font-weight: bold;    	
+}
+
+.e2e th {
+  	text-align:left;  
+	padding: 10px 5px 10px 5px;
+	border-top: #CCC solid 1px;
+	border-bottom: #CCC solid 1px;
+	border-left: #CCC solid 1px;
+	border-right: #CCC solid 1px;
+	background-color:#eeeeee;
+}
+.e2e td {
+	text-align:left;
+	padding: 10px 5px 10px 5px;
+	border-top: #CCC solid 1px;
+	border-bottom: #CCC solid 1px;
+	border-left: #CCC solid 1px;
+	border-right: #CCC solid 1px;
+	font-weight:normal;
+}
+td.noborder {	
+	border-top: #CCC solid 0px;
+	border-bottom: #CCC solid 0px;
+	border-left: #CCC solid 0px;
+	border-right: #CCC solid 0px;
+	vertical-align:top;
+	
+}
+/* Changed by Infosys - RCA team Story 1998 START */
+td.result-action-ci-fin-cap, td.result-action-ci-fin {
+
+  background-color:#3C3C3C;
+  border-bottom-color:#3C3C3C;
+  border-right-color:#3C3C3C;
+  
+  border-left-color:#3C3C3C;
+  border-top-color:#3C3C3C;
+        
+  border-style:solid;
+  border-width:2px 2px 2px 2px;
+  color:#FFFFFF;
+  font-weight: bold;      
+  padding:3px 5px 3px 10px;
+  clear:both; /* required for image alignment */
+}
+/* Changed by Infosys - RCA team Story 1998 END */
+table.-dtc {
+  border-color:#333333;
+  border-style:solid;  
+  margin:20px 20px 20px 20px;	
+}
+table.s2-sst {
+  border-color:#333333;
+  border-style:solid;  
+  margin:0px 20px 20px 20px;
+}
+table.spec {
+  border-width:0px 0px 0px 0px;
+  width:auto;
+  margin:0;
+  padding:0;
+}
+
+.spec td{
+  margin:0;
+  padding: 5px 0;
+}
+
+td.spec-table table.tablenoborder
+{
+	margin: 0;
+	width:100%;
+}
+
+table.spec-with-table {
+  border-width:0px 0px 0px 0px;
+  width:50%;
+}
+
+.spec-table table.tablenoborder{
+  width:100%;
+  margin-left:0;
+}
+
+.spec-table table.table
+{
+	min-width:30%;
+}
+
+td.spec-table-item , th.spec-table-item{
+	padding: 5px 10px;
+}
+
+table.p-table {
+	width: 93%;
+	margin:0px 20px 8px 8px;
+	clear:both;
+	margin: 0 auto;
+}
+
+.spec-title th, .spec-subtitle td {
+  border-width:0px 0px 0px 0px;
+  border-style:none; 
+  text-align:left;
+}
+
+.spec-title th, caption{
+	margin-bottom:5px;
+}
+
+td.spec-table {
+  border-style:none;
+		
+}
+th.spec-title {
+	background-color:#FFF;
+		
+}
+
+/* ASTD-2870 change*/
+th.spec-title,
+td.spec-subtitle,
+td.specitem-ptxt 
+{
+  font-weight:bold;
+  color:#1B6384;
+  padding: 10px 0px 2px; 
+  border:none;
+}
+
+
+/* images */
+
+.e2e br.beforePng {
+  clear:both; 
+  font-size:0; 
+}
+.e2e img{
+	border:none;
+  border-color:#333333;
+  border-style:solid;  
+  border-width:1px;
+  margin:0px 20px 8px 8px;
+} 
+
+.e2e img.figure-graphic {
+  width:330px;
+  float:right;
+}
+.cellrowborder img {
+  margin:0px;
+  padding: 0px;
+  border-width:0px;	
+}
+div.fignone {
+  clear:both;
+  text-align:center;
+  margin:10px 0 10px 0px;
+  float: right;
+}
+
+/* Test results - the right and down arrows */
+/* right pointing */
+table.testgrp-res-right {
+  margin:0 0 0 100px;
+  border-style:none;
+  width:80%;
+  font-weight:bold;
+}
+
+td.result-result-cap, td.results-result-cap, td.res-right-fin-true-cap {
+  background-color:#FFFF99;
+  border-color:#DA944F;
+  width:200px;
+  border-width:1px 0 1px 1px;    
+  text-align:center;
+  padding:0px 0px 0px 0px;
+  }
+td.res-right-fin-false-cap {
+  background-color:#CCFF99;
+  border-color:#008000;
+  width:200px;
+  border-width:1px 0 1px 1px;    
+  text-align:center;
+  padding: 0px;
+}
+
+td.result-result, td.results-result, td.res-right-fin-true, td.res-right-fin-false {
+  width:20px;
+  border-style:none;
+  padding: 0 0 0 0;      
+}
+td.res-right-fin-false-link, td.res-right-fin-true-xtref, td.res-right-fin-false-xtref {
+  height:20px;
+  border-style:none;  	
+}
+
+td.res-right-fin-true-link {
+  height:20px;
+  border-style:none;  	
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+/* down pointing */
+
+table.testgrp-res-down {
+  margin:0 0 0 100px;
+  border-width:0px 0 0px 0px;      
+  border-style:none;
+  width:200px;
+  font-weight:bold;
+  padding:0px 0px 0px 0px;
+  margin-top: 13px;
+}
+/* ASTD-3894 - fix for the alignment of green arrows in diagnostic topics */
+li > table.testgrp-res-down, li > table.testgrp-res-right,
+li > .ie8fixer > table.testgrp-res-down, li > .ie8fixer > table.testgrp-res-right
+{
+	margin-left: 140px;
+}
+
+li li > table.testgrp-res-down, li li > table.testgrp-res-right,
+li li > .ie8fixer > table.testgrp-res-down, li li > .ie8fixer > table.testgrp-res-right
+{
+	margin-left: 90px;
+}
+
+
+li li li .testgrp-res-down, li li li .testgrp-res-right, li li .testgrp-res-down, li li .testgrp-res-right
+{
+	margin-left: 50px;
+}
+
+li li .test1 li .testgrp-res-down, li li .test1 li .testgrp-res-right
+{
+	margin-left: 40px;
+}
+
+td.res-down-fin-true-cap {
+  background-color:#FFFF99;
+  border-color:#DA944F;
+  border-width:1px 1px 0px 1px;    
+  text-align:center;
+  padding:0px 0px 0px 0px;  
+}
+td.result-result-ci-down-cap, td.results-result-ci-down-cap, td.res-down-fin-false-cap {
+  background-color:#CCFF99;
+  border-color:#008000;
+  width:200px;
+  border-width:1px 1px 0px 1px;    
+  text-align:center;
+  padding:0px 0px 0px 0px;    
+}
+td.result-result-ci-down, td.results-result-ci-down, td.res-down-fin-true , td.res-down-fin-false {
+  width:200px;
+  height:13px;
+  border-width:0px;
+  border-style:none;
+  padding:0px 0px 0px 0px;    
+}
+
+td.result-action-ci-right-link, td.results-action-ci-right-link, td.res-down-fin-true-link, td.res-down-fin-false-link, td.res-down-fin-true-xtref, td.res-down-fin-false-xtref {
+  border-width:0px;        
+  border-style:none;    
+  padding: 0px;
+}
+
+img.res-right {
+  margin:0px 0px -3px;
+  height:100%;
+  width:100%;
+  border-width:0px;
+}
+img.res-down {
+  margin:-1px 0 2px;
+  padding:0;
+  border-width:0px;
+	height:100%;
+  width:100%;
+}
+
+/* 	Links styling stays same regardless of viseted 	
+	Note: this has been moved here so we do not end up having two sets of css for DITA rendering */
+.res-right-fin-false-xref,
+.ptxt-xref {
+   color:#333;
+}
+p.subpara-InfoAdded {
+	color:#AC2224;
+	font-size: 14pt;
+  	font-weight: bold;
+}
+p.InfoAdded {
+	color:#AC2224;
+	font-size: 14pt;
+  	font-weight: bold;
+}
+
+
+.e2e img.InfoAdded {
+  margin:0px 0px 0px 0px;
+  border:none;
+  border-style:none;  
+  border-width:0px;
+}
+
+/* Changed by Infosys - RCA team Story 1809 */
+li.nolisttype{
+        list-style-type:none;   
+}
+
+/* Changed by Infosys - RCA team Story 2123 */
+table.step2-spec {
+  border-width:0px 0px 0px 0px;
+  border-collapse: collapse;
+  font-size: 10pt;
+  font-weight: normal;
+  font-style: normal;
+  width: 100%;
+}
+
+a.heading-ptxt-xref{
+  color:#FFFFFF;  
+  padding:3px 5px 3px 10px;  
+}
+
+.tiptitle
+ {
+ font-size: 12pt; 
+ font-weight: bold; 
+ margin:0px 0px 5px 0px;
+ }
+
+div.fignone--bigImage {
+  clear:both;
+  display:table;
+  width:auto;
+  text-align:center;
+  width:100%;
+  margin:10px 0 10px 0px;  
+}
+
+img.fignone--bigimage
+{
+	margin: 0 auto;
+}
+
+/* calculated to offset indentation of list items for big images 
+
+li div.fignone--bigImage
+{
+	margin-left:-40px;
+}
+
+li li div.fignone--bigImage
+{
+	margin-left:-80px;
+}
+
+li li li div.fignone--bigImage
+{
+	margin-left:-120px;
+}
+*/
+
+/* Start ASTD-3783 Changes */
+
+ol.testgroup {
+	font-weight:bold;
+}
+p.testgroup-heading, td.result-action-ci-fin-link, div.testgrp-testtitle-link > p.testgrp-heading{
+    background-color: #3C3C3C;
+    border-color: #3C3C3C;
+    border-style: solid;
+    border-width: 2px;
+    clear: both;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 3px 5px 3px 10px;
+}
+
+div.testgrp-testtitle-link > p.testgrp-heading{
+	margin-left:9%;
+	margin-right:11.25%;
+	font-size:medium;
+}
+
+/* Give the endpoint a similar margin to the step headings*/
+table.testgrp-res-right {
+	margin-top: 13px;
+}
+
+/* End ASTD-3783 Changes */
+
+/* ASTD-1812 change */
+.e2e table.tablenoborder, .fignone--bigImage+.tablenoborder > .tablenoborder, table.content4-table, table.content5-table, table.step1-table, table.step2-table, table.s1-table, table.s2-table, table.s3-table , table.step3-table  {	
+	width:auto;
+	vertical-align: middle;
+	margin-right: auto;
+  }
+  /* ASTD-3894 Changes for alignmnent of footer notes below table*/
+.e2e table.big-image-callout {
+	width:80%;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+.e2e table.big-table {
+	width:80%;
+	vertical-align: middle;
+  }
+
+  
+/* Improved use of whitespace in tables */  
+.e2e table ul { 
+	padding-left: 20px
+  }
+	
+.e2e table p {
+	margin-top:5px; 
+	margin-bottom:5px;
+  }
+  
+/* ASTD-3045 The nonmark attribute is now passed from source to front-end.  Remove list-style and override ul styles */
+.e2e ul.nonmark {
+    list-style-type: none;
+    font-weight: inherit;    
+    padding: 0;
+}
+
+/* Whitespace fixes.  Hide the <br> tags injected by Dita Open Toolkit... */  
+.e2e  br
+  {
+  display:none;
+ }
+ 
+ /* ...but explicitly include <br> tags in footnotes, as we want these on separate lines */
+.e2e  .footnote+br
+  {
+  display:inline;
+ } 
+ 
+ /* ...and explicitly space out para text */
+ .e2e p {
+	margin: 5px 0;
+ }
+  
+ .ie8fixer
+ {
+	float:none\9;
+ }
+ 
+ .figure-p
+ {
+	width:auto;
+	min-width:375px;
+	position:relative;
+	left:5px;
+ }
+
+.figure-p td, .figure-p th
+ {
+	max-width:300px;
+	text-align:center;
+	padding: 10px 10px;
+ }
+ 
+div.tablenoborder > table.p-table
+{
+	max-width:400px;
+}
+
+div.fignone--bigImage table.p-table 
+{
+	max-width:none;
+}
+
+.e2e table.result-table, .e2e .tablenoborder table.table-no-para-text {
+    width: 50%;
+}
+
+/* ASTD-2804 fix */
+
+.e2e li.whitespacer
+{
+	padding-bottom:1400px;
+}
+
+.testgrp-res-right br, .testgrp-res-down br {
+	display:inline
+}

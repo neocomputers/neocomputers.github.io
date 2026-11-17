@@ -1,0 +1,686 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="HYBRID BATTERY SYSTEM UTILITY" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0305508" name="ttlId"/> 
+  <meta content="HYBRID BATTERY SYSTEM" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="UTILITY" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000012KPS" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>HYBRID BATTERY SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">HYBRID BATTERY SYSTEM<span class="topictitle1"> UTILITY</span>
+</h1>
+<div class="subpara" id="RM1000000012KPS__RM1000000012KPS_z0">
+     
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">If the HV battery or an HV supply stack sub-assembly has been replaced, make sure to perform the following utilities in the following order: "Battery Diagnosis" then "Battery Status Info Update".</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">"Have Traction Battery Inspected" is displayed, perform "Battery Diagnosis" to diagnose the extent of deterioration of each HV battery cell.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">"Have Traction Battery Inspected" is cleared after "Battery Diagnosis" are performed and "There is no need to replace HV battery." is displayed.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">After the "Have Traction Battery Inspected" is displayed, if the traction battery is used continually without performing "Battery Diagnosis" for a few weeks*, use of the HV battery (input/output voltage) will be limited. If it is used more, the power switch on (READY) operation will be disabled.</p>
+<p class="item-ptxt">*: Timing may vary depending on vehicle usage.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">If the power switch cannot be turned on (READY), perform "Temporary Vehicle Start Up", "Battery Diagnosis".</p>
+</li> 
+     </ul> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">If "Have Traction Battery Inspected" is displayed, <a class="ptxt-xref" href="RM1000000012KPU.html#RM1000000012KPU">Click here</a>.</p> 
+    </div> 
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM1000000012KPS__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">Purpose</p>
+<div class="tablenoborder">
+       <table class="step1-table">
+<thead align="left" class="step1-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0EIH" width="NaN%"> <p class="ptxt">Utility Items</p> <p class="ptxt">(GTS Display)</p> </th> 
+          <th align="center" class="cellrowborder" id="ID0EZH" width="NaN%">Main Purpose</th> 
+          <th align="center" class="cellrowborder" id="ID0EAAAC" width="NaN%">Control Description</th> 
+         </tr> 
+        </thead>
+<tbody class="step1-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0EIH " width="NaN%">All Readiness</td> 
+          <td align="left" class="cellrowborder" headers="ID0EZH " width="NaN%">Check whether or not DTC judgment has been completed.</td> 
+          <td align="center" class="cellrowborder" headers="ID0EAAAC " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0EIH " width="NaN%">Diagnosis Related Information</td> 
+          <td class="cellrowborder" headers="ID0EZH " width="NaN%">Confirm the diagnosis related information</td> 
+          <td align="center" class="cellrowborder" headers="ID0EAAAC " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0EIH " width="NaN%">Battery Diagnosis</td> 
+          <td class="cellrowborder" headers="ID0EZH " width="NaN%">Discharge the HV battery and diagnose the extent of deterioration of each HV supply stack sub-assembly based on the SOC.</td> 
+          <td class="cellrowborder" headers="ID0EAAAC " width="NaN%">Forced discharging of HV battery</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0EIH " width="NaN%">Battery Status Info Update</td> 
+          <td align="left" class="cellrowborder" headers="ID0EZH " width="NaN%">Initialize the HV battery age information.</td> 
+          <td align="center" class="cellrowborder" headers="ID0EAAAC " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0EIH " width="NaN%">Temporary Vehicle Start Up</td> 
+          <td align="center" class="cellrowborder" headers="ID0EZH " width="NaN%">-</td> 
+          <td class="cellrowborder" headers="ID0EAAAC " width="NaN%">Temporarily enable the power switch on (Ready) operation which has been disabled due to continual usage of the vehicle without performing "Battery Diagnosis".</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0EIH " width="NaN%">High Voltage Fuse Accumulated Load History Reset</td> 
+          <td align="left" class="cellrowborder" headers="ID0EZH " width="NaN%">Initialize the load history of the high voltage fuse.</td> 
+          <td align="center" class="cellrowborder" headers="ID0EAAAC " width="NaN%">-</td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">ALL READINESS</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">With "All Readiness", you can check whether or not the DTC judgment has been completed by using the GTS.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">You should check "All Readiness" after simulating malfunction symptoms or for validation after finishing repairs.</p>
+</li> 
+       </ul> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the GTS on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Clear the DTCs even if no DTCs are stored.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch off and wait for at least 2 minutes.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the GTS on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Perform the DTC judgment driving pattern to run the DTC judgment.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Powertrain / HV Battery / Utility / All Readiness.</p>
+<br class="step2Root-step2"/>Powertrain &gt; HV Battery &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EEKAC" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EEKAC " width="NaN%">All Readiness</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Input the DTCs to be confirmed.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Check the DTC judgment result.</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E1PAC" width="NaN%">GTS Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EBAAE" width="NaN%">Description</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1PAC " width="NaN%">NORMAL</td> 
+            <td class="cellrowborder" headers="ID0EBAAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">System normal</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1PAC " width="NaN%">ABNORMAL</td> 
+            <td class="cellrowborder" headers="ID0EBAAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">System abnormal</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1PAC " width="NaN%">INCOMPLETE</td> 
+            <td class="cellrowborder" headers="ID0EBAAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">DTC judgment not completed</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Perform the driving pattern</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1PAC " width="NaN%">N/A</td> 
+            <td class="cellrowborder" headers="ID0EBAAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Unable to perform DTC judgment</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Number of DTCs which do not fulfill DTC preconditions has reached ECU memory limit</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch off.</p>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">DIAGNOSIS RELATED INFORMATION</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Check for diagnosis related information.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the GTS on.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Enter the following menus: Powertrain / HV Battery / Utility / Diagnosis Related Information.</p>
+<br class="step3Root-step3"/>Powertrain &gt; HV Battery &gt; Utility<div class="tablenoborder">
+             <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+               <tr> 
+                <th align="center" class="cellrowborder" id="ID0EZJAE" width="NaN%">Tester Display</th> 
+               </tr> 
+              </thead>
+<tbody class="gts-info-title-table-table"> 
+               <tr> 
+                <td align="left" class="cellrowborder" headers="ID0EZJAE " width="NaN%">Diagnosis Related Information</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check the Diagnosis Related Information, and then write them down.</p>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Clear diagnosis related information.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Clearing the DTCs will also clear the diagnosis related information.</p> 
+        </div>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the GTS on.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Enter the following menus: Powertrain / HV Battery / Trouble Codes.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Clear the DTCs.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the power switch off.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">BATTERY DIAGNOSIS</p>
+<div class="note">
+       <p class="notetitle">Note</p> 
+       <br class="note"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">Do not perform battery diagnosis while the hybrid system light is illuminated.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Perform battery diagnosis with the HV battery installed correctly.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Do not perform battery diagnosis while changing from inspection mode to another mode.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Make sure to turn the power switch off after battery diagnosis to prevent the auxiliary battery from being discharged.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the SOC (state of charge) learning has not been performed*1, perform battery diagnosis after plug-in charging the vehicle as specified.</p>
+</li> 
+        <br class="list1-li-list2"/>
+<ul class="li-list2-list2 nonmark"> 
+          <li class="list2-item">
+<p class="li-list2-list2-nonmark-heading">*1: Refer to "Procedure when Battery Diagnosis is Suspended".</p>
+</li> 
+         </ul> 
+       </ul> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch off and wait for 2 minutes or more.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Powertrain / HV Battery / Utility / Battery Diagnosis.</p>
+<br class="step2Root-step2"/>Powertrain &gt; HV Battery &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EBXAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EBXAE " width="NaN%">Battery Diagnosis</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Check items on the display and press "Next".</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">The screen transitions to the next screen and "Now diagnosing" is displayed.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">"Progress" is displayed as a reference to the estimated time to complete the diagnosis.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">To suspend battery diagnosis, press "Exit" and turn the power switch off.</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">When battery diagnosis is complete, the result will be displayed.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Check the diagnosis result.</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0ET5AE" width="NaN%">GTS Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EZ5AE" width="NaN%">Diagnosis Result</th> 
+            <th align="center" class="cellrowborder" id="ID0E65AE" width="NaN%">After performing diagnosis</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0ET5AE " width="NaN%">There is no need to replace the battery. Be sure to refer to the repair manual for procedures to take after this.</td> 
+            <td align="center" class="cellrowborder" headers="ID0EZ5AE " width="NaN%">Normal</td> 
+            <td align="left" class="cellrowborder" headers="ID0E65AE " width="NaN%">Perform "Battery Status Info Update".</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ET5AE " width="NaN%">Replace the hybrid vehicle supply stack sub-assemblies listed below.</td> 
+            <td align="center" class="cellrowborder" headers="ID0EZ5AE " width="NaN%">Replace</td> 
+            <td align="left" class="cellrowborder" headers="ID0E65AE " width="NaN%">Replace the listed HV supply stack sub-assemblies.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If "Have Traction Battery Inspected" is displayed on the multi-information display, the message will not be cleared even after it is determined that "There is no need to replace battery". It can be cleared only after performing "Battery Status Info Update".</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If the listed HV supply stack sub-assemblies are replaced, perform "Battery Status Info Update" after replacing them.</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch off.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Make sure to turn the power switch off after battery diagnosis to prevent the auxiliary battery from being discharged.</p> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">When the battery diagnosis is suspended because the diagnosis conditions are not met anymore, the reasons of suspension are displayed on the GTS. Perform "Battery Status Info Update" after checking the causes and troubleshoot the suspected area in accordance with instructions in the "Procedure when battery diagnosis is suspended" table.</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           Procedure when battery diagnostic is suspended
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E2DAG" width="NaN%">GTS Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EBEAG" width="NaN%"> <p class="ptxt">Reason for Diagnosis Suspension</p> <p class="ptxt">(Related Condition)</p> </th> 
+            <th align="center" class="cellrowborder" id="ID0ESEAG" width="NaN%">Procedure</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E2DAG " width="NaN%">The Battery Diagnosis is exiting as it did not complete properly. Discharge the battery until the SOC goes below the threshold value, then perform plug-in charging and execute this function again. Refer to the repair manual for details.</td> 
+            <td class="cellrowborder" headers="ID0EBEAG " width="NaN%">SOC (state of charge) learning has not completed.</td> 
+            <td class="cellrowborder" headers="ID0ESEAG " width="NaN%"> <br class="cellrowborder"/>
+             <ol class="list1" type="i">
+<li class="list1-item">
+<p class="list1-heading">Lower the SOC (state of charge) of the HV battery by driving the vehicle in EV mode until the mode changes to HV mode.</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">Make a note of the Data List items from "Hybrid Battery Temperature 1" to "Hybrid Battery Temperature 15".</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">If the lowest measured battery temperature is 10°C (50°F) or lower, drive the vehicle until the temperature exceeds 15°C (59°F).</p>
+<p class="item-ptxt">If "Have Traction Battery Inspected" is displayed on the multi-information display and the hybrid vehicle system cannot be started, perform "Temporary Vehicle Start Up" and drive the vehicle.</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">Perform plug-in charging.</p>
+<div class="note">
+                <p class="notetitle">Note</p> 
+                <p class="ptxt">Do not use the charging timer function.</p> 
+               </div>
+</li>
+<li class="list1-item">
+<p class="list1-heading">After plug-in charging, wait for 35 minutes or more, then turn the power switch on (IG) or on (READY). (Do not turn the power switch on (IG) or on (READY) for at least 35 minutes after plug-in charging. If the vehicle is not fully charged, perform the procedure from step 1 again.)</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">Leave the vehicle with the power switch on (IG) or on (READY) for 10 minutes or more, turn the power switch off, and then perform battery diagnosis.</p>
+</li>
+</ol> </td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E2DAG " width="NaN%">Communication error</td> 
+            <td class="cellrowborder" headers="ID0EBEAG " width="NaN%">The power switch was turned off or a GTS communication error occurred.</td> 
+            <td class="cellrowborder" headers="ID0ESEAG " width="NaN%"> <br class="cellrowborder"/>
+             <ol class="list1" type="i">
+<li class="list1-item">
+<p class="list1-heading">Turn the power switch on (IG), and then perform battery diagnosis again.</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">Check that the connector of the GTS is not disconnected from the DLC3, perform battery diagnosis again.</p>
+</li>
+</ol> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">BATTERY STATUS INFO UPDATE</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">If the HV battery or an HV supply stack sub-assembly has been replaced, make sure to perform "Battery Status Info Update" to initialize the HV battery age information stored in the battery ECU assembly and turn off the light on the combination meter assembly.</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch off and wait for 2 minutes or more.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Powertrain / HV Battery / Utility / Battery Status Info Update.</p>
+<br class="step2Root-step2"/>Powertrain &gt; HV Battery &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EHNAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EHNAG " width="NaN%">Battery Status Info Update</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch off.</p>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">TEMPORARY VEHICLE START UP</p>
+<div class="note">
+       <p class="notetitle">Note</p> 
+       <br class="note"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">Do not perform temporary vehicle start up while the master warning light is illuminated.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Perform only when "Vehicle Start Disabled Until Traction Battery Inspected" is displayed on the multi-information display and the vehicle cannot be started.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">"Vehicle Start Disabled Until Traction Battery Inspected" is not cleared even after "Temporary Vehicle Start Up" is performed.</p>
+</li> 
+       </ul> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Powertrain / HV Battery / Utility / Temporary Vehicle Start Up</p>
+<br class="step2Root-step2"/>Powertrain &gt; HV Battery &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EZVAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZVAG " width="NaN%">Temporary Vehicle Start Up</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">If once the power switch is turned on (READY) while depressing the brake pedal, "Temporary Vehicle Start Up" is not possible. Retry after turning the power switch off.</p> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Check items on the display and press "Next".</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">The screen transitions to the next screen and "Please wait" is displayed.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">The screen transitions to the next screen and "Now the vehicle is ready to start." is displayed.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If the power switch is turned off after "Temporary Vehicle Start Up", the vehicle will not be able to start again.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">The GTS can be disconnected after turning the power switch on (READY).</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (READY).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">When the condition to perform "Temporary Vehicle Start Up" is not met, the reasons for suspension are displayed on the GTS. Perform "Temporary Vehicle Start Up" again after checking the causes and troubleshooting the suspected area in accordance with instructions in the "Procedure when "Temporary Vehicle Start Up" is suspended" table.</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           Procedure when "Temporary Vehicle Start Up" is suspended
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EE5AG" width="NaN%">GTS Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EK5AG" width="NaN%"> <p class="ptxt">Reason for Temporary Vehicle Start Up Suspension</p> <p class="ptxt">(Related Condition)</p> </th> 
+            <th align="center" class="cellrowborder" id="ID0E25AG" width="NaN%">Procedure</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EE5AG " width="NaN%">Temporary Vehicle Start Up has failed. Confirm the following condition.</td> 
+            <td class="cellrowborder" headers="ID0EK5AG " width="NaN%">GTS communication error</td> 
+            <td class="cellrowborder" headers="ID0E25AG " width="NaN%">After checking that the connector of the GTS is not disconnected and the power switch is on (IG), perform "Temporary Vehicle Start Up" again.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">HIGH VOLTAGE FUSE ACCUMULATED LOAD HISTORY RESET</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">If the hybrid battery terminal block has been replaced, make sure to perform "High Voltage Fuse Accumulated Load History Reset" and then clear the DTCs.</p> 
+       <p class="ptxt">DTC P0A9563 will be stored again if do not perform "High Voltage Fuse Accumulated Load History Reset".</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Powertrain / HV Battery / Utility / High Voltage Fuse Accumulated Load History Reset.</p>
+<br class="step2Root-step2"/>Powertrain &gt; HV Battery &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EADBG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EADBG " width="NaN%">High Voltage Fuse Accumulated Load History Reset</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">According to the display on the GTS, perform High Voltage Fuse Accumulated Load History Reset and check that "High Voltage Fuse Accumulated Load History Reset is complete." is displayed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <br class="note"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Performing High Voltage Fuse Accumulated Load History Reset takes approximately 20 to 25 minutes.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Make sure to confirm that "High Voltage Fuse Accumulated Load History Reset is complete." is displayed on GTS.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If "High Voltage Fuse Accumulated Load History Reset has failed. Do you want to try again?" is displayed on the GTS, perform the procedure again.</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch off.</p>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

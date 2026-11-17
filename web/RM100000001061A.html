@@ -1,0 +1,578 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module) FREEZE FRAME DATA" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290546" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module)" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="FREEZE FRAME DATA" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="201701" name="paraTo"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001061A" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>SFI SYSTEM(w/ Canister Pump Module)</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/ Canister Pump Module)<span class="topictitle1"> FREEZE FRAME DATA</span>
+</h1>
+<div class="subpara" id="RM100000001061A__RM100000001061A_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000001061A__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">DESCRIPTION</p>
+<p class="step1-ptxt">The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was moving or stationary, whether the engine was warmed up or not, whether the air fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If it is impossible to replicate the problem even though a DTC is detected, confirm the freeze frame data.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Freeze frame data is available in long and short forms.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">PENDING FREEZE FRAME DATA</p>
+<div class="ie8fixer"/>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">Pending freeze frame data is stored when a 2 trip detection logic DTC is first detected during the first trip.</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the GTS on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Select a DTC in order to display its pending freeze frame data.</p>
+<br class="step2Root-step2"/>Powertrain &gt; Engine &gt; Trouble Codes<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Pending freeze frame data is cleared when any of the following occurs.</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Using the GTS, the DTCs cleared.</p>
+</li> 
+           </ul> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">The cable is disconnected from the negative (-) auxiliary battery terminal.</p>
+</li> 
+           </ul> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">40 trips with the engine fully warmed up have been performed after returning to normal. (Pending freeze frame data will not be cleared by only returning the system to normal.)</p>
+</li> 
+           </ul> 
+          <li class="list1-item">
+<p class="list1-heading">With previous pending freeze frame data stored, if pending freeze frame data is newly stored when a 2 trip detection logic DTC is detected in the first trip, the old freeze frame data will be replaced with the new data of the newly detected DTC in the next trip.</p>
+</li> 
+         </ul> 
+        </div>
+<div class="fignone--bigImage">
+<img alt="B006HV8E72" class="figure-graphic--bigImage" src="../images/b006hv8e72.png"/>
+</div>
+<div class="fignone--bigImage">
+<img alt="B006H80E60" class="figure-graphic--bigImage" src="../images/b006h80e60.png"/>
+</div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">LIST OF FREEZE FRAME DATA</p>
+<br class="step1Root-step1"/>Powertrain &gt; Engine<div class="tablenoborder">
+         <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E4HAC" width="NaN%">Tester Display</th> 
+           </tr> 
+          </thead>
+<tbody class="gts-info-title-table-table"> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Vehicle Speed</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Speed</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Calculate Load</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Vehicle Load</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Mass Air Flow Sensor</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Atmospheric Pressure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Intake Manifold Absolute Pressure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Coolant Temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Intake Air Temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Ambient Temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Run Time</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Radiator Coolant Temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">IG-ON Coolant Temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Initial Engine Coolant Temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">IG-ON Intake Air Temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Initial Engine Intake Air Temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Battery Voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">BATT Voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Position Sensor No.1 Voltage %</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Position Sensor No.2 Voltage %</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">System Guard</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Open Side Malfunction</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Request Position</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Sensor Position</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Position Sensor No.1 Voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Position Sensor No.2 Voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Position Command</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Position Sensor Open Position No.1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Position Sensor Open Position No.2</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Motor Current</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Motor Duty Ratio</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Motor Duty Ratio (Open)</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Motor Duty Ratio (Close)</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Position Sensor Fully Closed Learn Value</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">+BM Voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Actuator Power Supply</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Air Flow Learn Value (Area 1)</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Air Flow Learn Value (Area 2)</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Air Flow Learn Value (Area 3)</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Air Flow Learn Value (Calculated Value)</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Throttle Air Flow Learn Value (Atmosphere Pressure Offset Value)</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Low Revolution Control</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Stall Control F/B Flow</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">VSV for Vent Valve</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Vacuum Pump</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Injector Cylinder #1 (Port)</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Injection Volume Cylinder #1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Injection Volume</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Fuel Pump/Speed Status</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Current Fuel Type</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">EVAP (Purge) VSV</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Vapor Pressure Fuel Tank Sensor</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">EVAP Vapor Pressure (Wide)</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Fuel Filler Opener</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Fuel Vapor-Containment Valve</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Fuel Lid SW</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Fuel Lid Sensor SW</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Target Air-Fuel Ratio</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">A/F (O2) Lambda Sensor B1S1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">A/F (O2) Sensor Voltage B1S1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">A/F (O2) Sensor Current B1S1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">A/F (O2) Sensor Heater Duty Ratio B1S1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">O2 Sensor Voltage B1S2</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">O2 Sensor Impedance B1S2</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">O2 Sensor Heater B1S2</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">O2 Sensor Heater Current Value B1S2</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Short FT Bank 1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Long FT Bank 1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Total FT Bank 1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Fuel System Status Bank 1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Ignition Timing Cylinder #1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Knock F/B Value</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Knock Correct Learn Value</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Idle Spark Advance Control Cylinder #1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Idle Spark Advance Control Cylinder #2</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Idle Spark Advance Control Cylinder #3</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Idle Spark Advance Control Cylinder #4</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Mass Air Flow Circuit</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Target EGR Valve Position No.1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">EGR Step Position</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Clogged EGR Port Imbalance Ratio</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">VVT Advance Fail</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Intake VVT Hold Learn Value Bank 1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Intake VVT Change Angle Bank 1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Intake VVT OCV Control Duty Ratio Bank 1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Intake VVT Target Angle Bank 1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Catalyst Temperature B1S1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Catalyst Temperature B1S2</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">TC Terminal</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">MIL ON Run Distance</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Running Time from MIL ON</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Time after DTC Cleared</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Distance from DTC Cleared</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Warmup Cycle Cleared DTC</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Distance Traveled from Last Battery Cable Disconnect</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">IG OFF Elapsed Time</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Total Distance Traveled</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Ignition Trigger Count</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Misfire Count Cylinder #1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Misfire Count Cylinder #2</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Misfire Count Cylinder #3</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Misfire Count Cylinder #4</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">All Cylinders Misfire Count</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Misfire RPM</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Misfire Load</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Misfire Margin</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Catalyst OT Misfire Fuel Cut</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Catalyst OT Misfire Fuel Cut History</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Catalyst OT Misfire Fuel Cut Cylinder #1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Catalyst OT Misfire Fuel Cut Cylinder #2</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Catalyst OT Misfire Fuel Cut Cylinder #3</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Catalyst OT Misfire Fuel Cut Cylinder #4</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Start Hesitation</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Low Revolution for Engine Start</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">A/F Learn Value Idle Bank 1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">A/F Learn Value Low Bank 1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">A/F Learn Value Mid No.1 Bank 1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">A/F Learn Value Mid No.2 Bank 1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">A/F Learn Value High Bank 1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Cooling Fan Duty Ratio</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Speed Cylinder #1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Speed Cylinder #2</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Speed Cylinder #3</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Speed Cylinder #4</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Average Engine Speed of All Cylinder</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">A/F Sensor Determination (Worst Value) Bank 1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Speed Fluctuation Average (Worst Value) Cylinder #1</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Speed Fluctuation Average (Worst Value) Cylinder #2</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Speed Fluctuation Average (Worst Value) Cylinder #3</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Speed Fluctuation Average (Worst Value) Cylinder #4</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Requested Engine Torque</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">HV Target Engine Speed</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Actual Engine Torque</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Driving Time</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Request Engine Run Time</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Judge Time Engine Ignition</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Judge Time Engine Output</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Fuel Level</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">ISC Learning Value</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">ISC Learning</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">F/C for Engine Stop Req</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Independent</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Racing Operation</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Request Warm-up</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Engine Independent Control</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Electric Water Pump Target Speed</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Electric Water Pump Speed</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E4HAC " width="NaN%">Active Grille Air Shutter Position</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

@@ -1,0 +1,1332 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="HYBRID CONTROL SYSTEM Inverter Low-voltage Circuit" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296362" name="ttlId"/> 
+  <meta content="HYBRID CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001150T" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Inverter Low-voltage Circuit</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">HYBRID CONTROL SYSTEM<span class="topictitle1"> Inverter Low-voltage Circuit</span>
+</h1>
+<div class="subpara" id="RM100000001150T__RM100000001150T_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The cause of the malfunction may be the low-voltage circuit.</p> 
+    <p class="content5-ptxt">Check whether there is an open circuit in the inverter +B low-voltage power source system or a problem in the communication between the hybrid vehicle control ECU and inverter.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Related Parts Check
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0ENF" width="NaN%">Area</th> 
+        <th align="center" class="cellrowborder" id="ID0ETF" width="NaN%">Inspection</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ENF " width="NaN%">Inverter +B low-voltage power source system check</td> 
+        <td align="left" class="cellrowborder" headers="ID0ETF " width="NaN%">Check for inverter overcurrent malfunction.</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0ENF " width="NaN%">Communication malfunction between hybrid vehicle control ECU and MG-ECU inside inverter with converter assembly</td> 
+        <td class="cellrowborder" headers="ID0ETF " width="NaN%">Check for inverter overcurrent malfunction due to communication malfunction.</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0ENF " width="NaN%">Check for short to ground in inverter +B low-voltage power source system</td> 
+        <td align="center" class="cellrowborder" headers="ID0ETF " width="NaN%">-</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001150T__RM100000001150T_04">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="B006I89E08" class="figure-graphic--bigImage" src="../images/b006i89e08.png"/>
+</div> 
+    <div class="fignone--bigImage">
+<img alt="B006J6LE05" class="figure-graphic--bigImage" src="../images/b006j6le05.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM100000001150T__RM100000001150T_05">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <p class="content5-ptxt">This step is referenced from the procedures for each DTC.</p> 
+    <p class="content5-ptxt">If the inspection results below are normal, perform the next procedure for the referenced DTC.</p> 
+    
+    <div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+     <br class="caution"/>
+     <ul class="list1"> 
+      <li class="list1-li-figure"> 
+       <div class="fignone"> 
+        <img alt="B006HUP" class="figure-graphic" src="../images/b006hup.png"/> 
+       </div> </li> 
+      <li class="list1-item">
+<p class="list1-heading">Before the following operations are conducted, take precautions to prevent electric shock by turning the power switch off, wearing insulated gloves, and removing the service plug grip from HV battery.</p>
+</li> 
+      <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Inspecting the high-voltage system</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the inverter with converter assembly</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the HV battery</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the electric vehicle charger assembly</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the solar energy control unit</p>
+</li> 
+       </ul> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006IQP" class="figure-graphic" src="../images/b006iqp.png"/> 
+       </div>
+<p class="list1-heading">To prevent electric shock, make sure to remove the service plug grip to cut off the high voltage circuit before servicing the vehicle.</p>
+</li> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006HQC" class="figure-graphic" src="../images/b006hqc.png"/> 
+       </div>
+<p class="list1-heading">After removing the service plug grip from the HV battery, put it in your pocket to prevent other technicians from accidentally reconnecting it while you are working on the high-voltage system.</p>
+</li> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006IVPC05" class="figure-graphic" src="../images/b006ivpc05.png"/> 
+        <div class="figure-p"> 
+         <div class="tablenoborder">
+          <table class="p-table">
+<tbody class="p-table"> 
+            <tr> 
+             <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+             <td class="cellrowborder" width="NaN%">Without waiting for 10 minutes</td> 
+            </tr> 
+           </tbody>
+</table> 
+         </div> 
+        </div> 
+       </div>
+<p class="list1-heading">After removing the service plug grip, wait for at least 10 minutes before touching any of the high-voltage connectors or terminals. After waiting for 10 minutes, check the voltage at the terminals in the inspection point in the inverter with converter assembly. The voltage should be 0 V before beginning work.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM1000000011O0N.html#RM1000000011O0N">Click here</a>
+</p>
+<div class="tip">
+        <p class="tiptitle">Tech Tips</p> 
+        <p class="ptxt">Waiting for at least 10 minutes is required to discharge the high-voltage capacitor inside the inverter with converter assembly, the electric vehicle charger assembly and the solar energy control unit.</p> 
+       </div>
+</li> 
+     </ul> 
+    </div> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">After turning the power switch off, waiting time may be required before disconnecting the cable from the negative (-) auxiliary battery terminal. Therefore, make sure to read the disconnecting the cable from the negative (-) auxiliary battery terminal notices before proceeding with work.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM100000001AAN7.html#RM100000001AAN7">Click here</a>
+</p> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">After the power switch is turned off, even if the cable is disconnected from the negative (-) auxiliary battery terminal, voltage will continue to be supplied to terminal +B and terminal +B2 of the inverter with converter assembly by the inverter battery (backup power supply) for approximately 2 minutes.</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001150T__RM100000001150T_01">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001150T__RM100000001150T_01_0014">
+<p class="testgrp-heading">CHECK FUSE (PCU FR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HTPC01" class="figure-graphic" src="../images/b006htpc01.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">No. 1 Engine Room Relay Block and No. 1 Junction Block Assembly</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+              <td align="left" class="cellrowborder" width="NaN%">PCU FR Fuse</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Remove the PCU FR fuse from the No. 1 engine room relay block and No. 1 junction block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EWOAC" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EWOAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EEAAE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EKAAE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EQAAE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEAAE " width="NaN%">PCU FR fuse terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKAAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQAAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the PCU FR fuse.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENCAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENCAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQDAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQDAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQDAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK HARNESS AND CONNECTOR (INVERTER WITH CONVERTER ASSEMBLY - PCU FR FUSE)  <a class="res-right-fin-false-xref" href="#RM100000001150T__RM100000001150T_01_0015">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001150T__RM100000001150T_01_0007">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (INVERTER WITH CONVERTER ASSEMBLY POWER SOURCE CIRCUIT)</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the C33 inverter with converter assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HJTC04" class="figure-graphic" src="../images/b006hjtc04.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Inverter with Converter Assembly)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHKAE" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EHKAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EULAE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E1LAE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EAMAE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EULAE " width="NaN%">C33-24 (GND1) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1LAE " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAMAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EULAE " width="NaN%">C33-23 (GND2) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1LAE " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAMAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the cable to the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJPAE" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJPAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWQAE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3QAE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ECRAE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWQAE " width="NaN%">C33-6 (+B) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3QAE " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECRAE " width="NaN%">Same as auxiliary battery voltage</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWQAE " width="NaN%">C33-5 (+B2) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3QAE " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECRAE " width="NaN%">Same as auxiliary battery voltage</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Turning the power switch on (IG) with the inverter with converter assembly connector disconnected causes other DTCs to be stored. Clear the DTCs after performing this inspection.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the cable from the negative (-) auxiliary battery terminal and wait for 2 minutes or more.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the C33 inverter with converter assembly connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EVUAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EVUAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EYVAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYVAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYVAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE POWER SOURCE CIRCUIT </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001150T__RM100000001150T_01_0009">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (HYBRID VEHICLE CONTROL ECU - INVERTER WITH CONVERTER ASSEMBLY)</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the C33 inverter with converter assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A41 hybrid vehicle control ECU connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HTXC15" class="figure-graphic" src="../images/b006htxc15.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Inverter with Converter Assembly)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Hybrid Vehicle Control ECU)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EU4AE" class="spec-title">Standard Resistance (Check for Open)</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EU4AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EB6AE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EH6AE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EN6AE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EB6AE " width="NaN%">C33-20 (HMCH) - A41-4 (HMCH)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EH6AE " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EN6AE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EB6AE " width="NaN%">C33-19 (HMCL) - A41-14 (HMCL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EH6AE " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EN6AE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EWBAG" class="spec-title">Standard Resistance (Check for Short)</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EWBAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDDAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJDAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EPDAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDDAG " width="NaN%">C33-20 (HMCH) or A41-4 (HMCH) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJDAG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPDAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDDAG " width="NaN%">C33-19 (HMCL) or A41-14 (HMCL) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJDAG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPDAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the cable to the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYGAG" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EYGAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFIAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0ELIAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ERIAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFIAG " width="NaN%">C33-20 (HMCH) or A41-4 (HMCH) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELIAG " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ERIAG " width="NaN%">Below 1 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFIAG " width="NaN%">C33-19 (HMCL) or A41-14 (HMCL) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELIAG " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ERIAG " width="NaN%">Below 1 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Turning the power switch on (IG) with the hybrid vehicle control ECU and inverter with converter assembly connectors disconnected causes other DTCs to be stored. Clear the DTCs after performing this inspection.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the cable from the negative (-) auxiliary battery terminal and wait for 2 minutes or more.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the A41 hybrid vehicle control ECU connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the C33 inverter with converter assembly connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPMAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPMAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ESNAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESNAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESNAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001150T__RM100000001150T_01_0011">
+<p class="testgrp-heading">CHECK HYBRID VEHICLE CONTROL ECU</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A41 hybrid vehicle control ECU connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006ITRC01" class="figure-graphic--bigImage" src="../images/b006itrc01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Component without harness connected</p> <p class="ptxt">(Hybrid Vehicle Control ECU)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBUAG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBUAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EOVAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EUVAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E1VAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EOVAG " width="NaN%">4 (HMCH) - 14 (HMCL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EUVAG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1VAG " width="NaN%">80 to 170 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the A41 hybrid vehicle control ECU connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXXAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EXXAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E1YAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1YAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1YAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>INVERTER LOW-VOLTAGE CIRCUIT NORMAL (PERFORM NEXT STEP FOR REFERENCED DTC) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HYBRID VEHICLE CONTROL ECU <a class="content6-ptxt-xref" href="RM10000000115AK.html#RM10000000115AK">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001150T__RM100000001150T_01_0015">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (INVERTER WITH CONVERTER ASSEMBLY - PCU FR FUSE)</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the C33 inverter with converter assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HJTC03" class="figure-graphic" src="../images/b006hjtc03.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Inverter with Converter Assembly)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EN4AG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EN4AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E15AG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EA6AG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EG6AG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E15AG " width="NaN%">C33-6 (+B) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EA6AG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EG6AG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E15AG " width="NaN%">C33-5 (+B2) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EA6AG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EG6AG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the C33 inverter with converter assembly connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EEEBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EEEBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMFBG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ESFBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMFBG " width="NaN%">OK</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESFBG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMFBG " width="NaN%">NG (w/o Inverter Battery)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESFBG " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMFBG " width="NaN%">NG (w/ Inverter Battery)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESFBG " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">B</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">REPAIR OR REPLACE HARNESS OR CONNECTOR  <a class="res-right-fin-false-xref" href="#RM100000001150T__RM100000001150T_01_0023">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">C</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK HARNESS AND CONNECTOR (INVERTER BATTERY - BODY GROUND)  <a class="res-right-fin-false-xref" href="#RM100000001150T__RM100000001150T_01_0020">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001150T__RM100000001150T_01_0016">
+<p class="testgrp-heading">REFER TO REPLACE INVERTER WITH CONVERTER ASSEMBLY PARTS</p>
+<p class="content6-ptxt"> <a class="content6-ptxt-xref" href="RM100000001152V.html#RM100000001152V">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EWJBG" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EWJBG" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EZKBG" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EZKBG " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NEXT</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUSE (PCU FR) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001150T__RM100000001150T_01_0023">
+<p class="testgrp-heading">REPAIR OR REPLACE HARNESS OR CONNECTOR</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EYMBG" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EYMBG" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0E2NBG" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0E2NBG " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NEXT</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUSE (PCU FR) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001150T__RM100000001150T_01_0020">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (INVERTER BATTERY - BODY GROUND)</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the C33 inverter with converter assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the N76 inverter battery connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the PCU FR fuse from the No. 1 engine room relay block and No. 1 junction block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006IMAC02" class="figure-graphic" src="../images/b006imac02.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Inverter Battery)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJSBG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJSBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWTBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3TBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ECUBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWTBG " width="NaN%">N76-3 (ECU1) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3TBG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECUBG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWTBG " width="NaN%">N76-9 (ECU2) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3TBG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECUBG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWTBG " width="NaN%">N76-4 (ECU3) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3TBG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECUBG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWTBG " width="NaN%">N76-1 (+BO) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3TBG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECUBG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWTBG " width="NaN%">N76-7 (+BO2) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3TBG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECUBG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWTBG " width="NaN%">N76-8 (+BO3) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3TBG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECUBG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reinstall the PCU FR fuse.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the N76 inverter battery connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the C33 inverter with converter assembly connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EO3BG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EO3BG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ER4BG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ER4BG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ER4BG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">REPAIR OR REPLACE HARNESS OR CONNECTOR  <a class="res-right-fin-false-xref" href="#RM100000001150T__RM100000001150T_01_0017">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001150T__RM100000001150T_01_0021">
+<p class="testgrp-heading">REPLACE INVERTER BATTERY</p>
+<p class="content6-ptxt"> <a class="content6-ptxt-xref" href="RM10000000115AQ.html#RM10000000115AQ">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0ERAAI" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0ERAAI" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EUBAI" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EUBAI " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NEXT</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUSE (PCU FR) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001150T__RM100000001150T_01_0017">
+<p class="testgrp-heading">REPAIR OR REPLACE HARNESS OR CONNECTOR</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0ETDAI" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0ETDAI" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EWEAI" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EWEAI " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NEXT</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUSE (PCU FR) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

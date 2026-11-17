@@ -1,0 +1,1829 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="HYBRID CONTROL SYSTEM ECU Power Source Circuit" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296362" name="ttlId"/> 
+  <meta content="HYBRID CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001153A" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>ECU Power Source Circuit</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">HYBRID CONTROL SYSTEM<span class="topictitle1"> ECU Power Source Circuit</span>
+</h1>
+<div class="subpara" id="RM100000001153A__RM100000001153A_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">If the power switch is on (IG), the hybrid vehicle control ECU applies current to the MREL terminal to turn the IGCT SCENE relay on. This supplies power to the +B1 and +B2 terminals.</p> 
+   </div>
+<div class="subpara" id="RM100000001153A__RM100000001153A_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="B006IIUE02" class="figure-graphic--bigImage" src="../images/b006iiue02.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM100000001153A__RM100000001153A_05">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001153A__RM100000001153A_05_0001">
+<p class="testgrp-heading">CHECK HYBRID VEHICLE CONTROL ECU (+B1, +B2 VOLTAGE)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006I3NC82" class="figure-graphic--bigImage" src="../images/b006i3nc82.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Component with harness connected</p> <p class="ptxt">(Hybrid Vehicle Control ECU)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHCAC" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EHCAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EUDAC" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E1DAC" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EAEAC" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUDAC " width="NaN%">A41-11 (+B1) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1DAC " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAEAC " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUDAC " width="NaN%">I3-1 (+B2) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1DAC " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAEAC " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETGAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETGAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWHAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWHAC " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWHAC " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK HYBRID VEHICLE CONTROL ECU (MREL VOLTAGE)  <a class="res-right-fin-false-xref" href="#RM100000001153A__RM100000001153A_05_0003">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153A__RM100000001153A_05_0002">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (HYBRID VEHICLE CONTROL ECU - BODY GROUND)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I2 and I3 hybrid vehicle control ECU connectors.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006IRRC15" class="figure-graphic--bigImage" src="../images/b006irrc15.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Hybrid Vehicle Control ECU)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EFOAC" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EFOAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ESPAC" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EYPAC" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E5PAC" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESPAC " width="NaN%">I3-3 (E1) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYPAC " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5PAC " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESPAC " width="NaN%">I2-34 (E12) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYPAC " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5PAC " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESPAC " width="NaN%">I2-12 (E01) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYPAC " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5PAC " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESPAC " width="NaN%">I2-11 (E02) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYPAC " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5PAC " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESPAC " width="NaN%">I2-10 (E03) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYPAC " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5PAC " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the I2 and I3 hybrid vehicle control ECU connectors.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EUEAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EUEAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EXFAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXFAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXFAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO PROBLEM SYMPTOMS TABLE <a class="content6-ptxt-xref" href="RM1000000011O0R.html#RM1000000011O0R">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153A__RM100000001153A_05_0003">
+<p class="testgrp-heading">CHECK HYBRID VEHICLE CONTROL ECU (MREL VOLTAGE)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006I3NC83" class="figure-graphic--bigImage" src="../images/b006i3nc83.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Component with harness connected</p> <p class="ptxt">(Hybrid Vehicle Control ECU)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMMAE" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EMMAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EZNAE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E6NAE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EFOAE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZNAE " width="NaN%">A41-5 (MREL) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6NAE " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFOAE " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECQAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECQAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFRAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFRAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFRAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HYBRID VEHICLE CONTROL ECU <a class="content6-ptxt-xref" href="RM10000000115AK.html#RM10000000115AK">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153A__RM100000001153A_05_0006">
+<p class="testgrp-heading">CHECK FUSE (PM IGCT)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006JABC01" class="figure-graphic" src="../images/b006jabc01.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td class="cellrowborder" width="NaN%">No. 1 Engine Room Relay Block and No. 1 Junction Block Assembly</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+              <td class="cellrowborder" width="NaN%">PM IGCT Fuse</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Remove the PM IGCT fuse from the No. 1 engine room relay block and No. 1 junction block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHXAE" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EHXAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EUYAE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E1YAE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EAZAE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUYAE " width="NaN%">PM IGCT fuse terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1YAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAZAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the PM IGCT fuse.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E41AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E41AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EA3AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EA3AE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EA3AE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK HARNESS AND CONNECTOR (NO. 1 ENGINE ROOM RELAY BLOCK AND NO. 1 JUNCTION BLOCK ASSEMBLY - HYBRID VEHICLE CONTROL ECU)  <a class="res-right-fin-false-xref" href="#RM100000001153A__RM100000001153A_05_0012">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153A__RM100000001153A_05_0038">
+<p class="testgrp-heading">CHECK FUSE (IGCT SCENE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HH1C01" class="figure-graphic" src="../images/b006hh1c01.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td class="cellrowborder" width="NaN%">No. 1 Engine Room Relay Block and No. 1 Junction Block Assembly</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+              <td class="cellrowborder" width="NaN%">IGCT SCENE Fuse</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Remove the IGCT SCENE fuse from the No. 1 engine room relay block and No. 1 junction block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4BAG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E4BAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EKDAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EQDAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EWDAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKDAG " width="NaN%">IGCT SCENE fuse terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQDAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the IGCT SCENE fuse.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETFAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETFAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWGAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWGAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWGAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK HARNESS AND CONNECTOR (NO. 1 ENGINE ROOM RELAY BLOCK AND NO. 1 JUNCTION BLOCK ASSEMBLY - NO. 2 RELAY BLOCK ASSEMBLY)  <a class="res-right-fin-false-xref" href="#RM100000001153A__RM100000001153A_05_0039">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153A__RM100000001153A_05_0005">
+<p class="testgrp-heading">INSPECT RELAY (IGCT SCENE)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006IJNC01" class="figure-graphic" src="../images/b006ijnc01.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">No. 2 Relay Block Assembly</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+              <td align="left" class="cellrowborder" width="NaN%">IGCT SCENE Relay</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Remove the IGCT SCENE relay from the No. 2 relay block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006IH1N68" class="figure-graphic" src="../images/b006ih1n68.png"/> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECNAG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECNAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPOAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EVOAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E2OAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPOAG " rowspan="2" width="NaN%">3 - 5</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVOAG " width="NaN%">Auxiliary battery voltage not applied between terminals 1 and 2</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2OAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVOAG " width="NaN%">Auxiliary battery voltage applied between terminals 1 and 2</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2OAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the IGCT SCENE relay.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJRAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJRAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMSAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMSAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMSAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE RELAY (IGCT SCENE) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153A__RM100000001153A_05_0007">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (NO. 1 ENGINE ROOM RELAY BLOCK AND NO. 1 JUNCTION BLOCK ASSEMBLY - HYBRID VEHICLE CONTROL ECU)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A41 and I3 hybrid vehicle control ECU connectors.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the PM IGCT fuse from the No. 1 engine room relay block and No. 1 junction block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006IY7C01" class="figure-graphic--bigImage" src="../images/b006iy7c01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">No. 1 Engine Room Relay Block and No. 1 Junction Block Assembly</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+              <td align="left" class="cellrowborder" width="NaN%">PM IGCT Fuse</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Hybrid Vehicle Control ECU)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EE1AG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EE1AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ER2AG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EX2AG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E42AG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ER2AG " width="NaN%">PM IGCT fuse terminal 2 - A41-11 (+B1)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EX2AG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E42AG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ER2AG " width="NaN%">PM IGCT fuse terminal 2 - I3-1 (+B2)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EX2AG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E42AG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the A41 and I3 hybrid vehicle control ECU connectors.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the PM IGCT fuse.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E25AG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E25AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E56AG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E56AG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E56AG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153A__RM100000001153A_05_0008">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (NO. 1 ENGINE ROOM RELAY BLOCK AND NO. 1 JUNCTION BLOCK ASSEMBLY - NO. 2 RELAY BLOCK ASSEMBLY)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the IGCT SCENE fuse from the No. 1 engine room relay block and No. 1 junction block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the IGCT SCENE relay from the No. 2 relay block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006J99C01" class="figure-graphic--bigImage" src="../images/b006j99c01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">No. 1 Engine Room Relay Block and No. 1 Junction Block Assembly</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+              <td align="left" class="cellrowborder" width="NaN%">No. 2 Relay Block Assembly</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*3</td> 
+              <td align="left" class="cellrowborder" width="NaN%">IGCT SCENE Fuse</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*4</td> 
+              <td align="left" class="cellrowborder" width="NaN%">IGCT SCENE Relay</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELHBG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELHBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EYIBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E5IBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EEJBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYIBG " width="NaN%">IGCT SCENE fuse terminal 2 - IGCT SCENE relay terminal 3</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5IBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEJBG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the IGCT SCENE fuse and IGCT SCENE relay.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBLBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBLBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EEMBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEMBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEMBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153A__RM100000001153A_05_0009">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (NO. 2 RELAY BLOCK ASSEMBLY - NO. 1 ENGINE ROOM RELAY BLOCK AND NO. 1 JUNCTION BLOCK ASSEMBLY)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the PM IGCT fuse from the No. 1 engine room relay block and No. 1 junction block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the IGCT SCENE relay from the No. 2 relay block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006IHWC01" class="figure-graphic--bigImage" src="../images/b006ihwc01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">No. 1 Engine Room Relay Block and No. 1 Junction Block Assembly</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+              <td align="left" class="cellrowborder" width="NaN%">No. 2 Relay Block Assembly</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*3</td> 
+              <td align="left" class="cellrowborder" width="NaN%">PM IGCT Fuse</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*4</td> 
+              <td align="left" class="cellrowborder" width="NaN%">IGCT SCENE Relay</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ERTBG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ERTBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5UBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EEVBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EKVBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5UBG " width="NaN%">IGCT SCENE relay terminal 5 - PM IGCT fuse terminal 1</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEVBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKVBG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the PM IGCT fuse and IGCT SCENE relay.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHXBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EHXBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EKYBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKYBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKYBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153A__RM100000001153A_05_0046">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (NO. 2 RELAY BLOCK ASSEMBLY - HYBRID VEHICLE CONTROL ECU)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A41 hybrid vehicle control ECU connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the IGCT SCENE relay from the No. 2 relay block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006I3UC01" class="figure-graphic--bigImage" src="../images/b006i3uc01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">No. 2 Relay Block Assembly</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+              <td align="left" class="cellrowborder" width="NaN%">IGCT SCENE Relay</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Hybrid Vehicle Control ECU)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDAAI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EDAAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQBAI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EWBAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3BAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQBAI " width="NaN%">IGCT SCENE relay terminal 1 - A41-5 (MREL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWBAI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3BAI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQBAI " width="NaN%">IGCT SCENE relay terminal 1 - A41-5 (MREL) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWBAI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3BAI " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the IGCT SCENE relay.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the A41 hybrid vehicle control ECU connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1EAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E1EAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E4FAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4FAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4FAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153A__RM100000001153A_05_0047">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (NO. 2 RELAY BLOCK ASSEMBLY - BODY GROUND)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the IGCT SCENE relay from the No. 2 relay block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006J0QC01" class="figure-graphic" src="../images/b006j0qc01.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">No. 2 Relay Block Assembly</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+              <td align="left" class="cellrowborder" width="NaN%">IGCT SCENE Relay</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2LAI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2LAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EINAI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EONAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EUNAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EINAI " width="NaN%">IGCT SCENE relay terminal 2 - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EONAI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EUNAI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the IGCT SCENE relay.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ERPAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ERPAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EUQAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUQAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUQAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHECK FOR INTERMITTENT PROBLEMS <a class="content6-ptxt-xref" href="RM100000001152X.html#RM100000001152X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153A__RM100000001153A_05_0012">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (NO. 1 ENGINE ROOM RELAY BLOCK AND NO. 1 JUNCTION BLOCK ASSEMBLY - HYBRID VEHICLE CONTROL ECU)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A41 and I3 hybrid vehicle control ECU connectors.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the PM IGCT fuse from the No. 1 engine room relay block and No. 1 junction block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006IY7C01" class="figure-graphic--bigImage" src="../images/b006iy7c01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">No. 1 Engine Room Relay Block and No. 1 Junction Block Assembly</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+              <td align="left" class="cellrowborder" width="NaN%">PM IGCT Fuse</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Hybrid Vehicle Control ECU)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESYAI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ESYAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E6ZAI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EF1AI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EL1AI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6ZAI " width="NaN%">PM IGCT fuse terminal 2 or A41-11 (+B1) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EF1AI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EL1AI " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6ZAI " width="NaN%">PM IGCT fuse terminal 2 or I3-1 (+B2) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EF1AI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EL1AI " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the A41 and I3 hybrid vehicle control ECU connectors.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the PM IGCT fuse.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJ4AI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJ4AI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EM5AI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EM5AI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EM5AI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUSE (PM IGCT) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">REPAIR OR REPLACE HARNESS OR CONNECTOR  <a class="res-right-fin-false-xref" href="#RM100000001153A__RM100000001153A_05_0014">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153A__RM100000001153A_05_0039">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (NO. 1 ENGINE ROOM RELAY BLOCK AND NO. 1 JUNCTION BLOCK ASSEMBLY - NO. 2 RELAY BLOCK ASSEMBLY)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the IGCT SCENE and PM IGCT fuses from the No. 1 engine room relay block and No. 1 junction block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the IGCT SCENE relay from the No. 2 relay block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006JAJC01" class="figure-graphic--bigImage" src="../images/b006jajc01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">No. 1 Engine Room Relay Block and No. 1 Junction Block Assembly</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+              <td align="left" class="cellrowborder" width="NaN%">No. 2 Relay Block Assembly</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*3</td> 
+              <td align="left" class="cellrowborder" width="NaN%">IGCT SCENE Fuse</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*4</td> 
+              <td align="left" class="cellrowborder" width="NaN%">PM IGCT Fuse</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*5</td> 
+              <td align="left" class="cellrowborder" width="NaN%">IGCT SCENE Relay</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<div class="tablenoborder">
+         <table class="test1-table">
+<caption class="test1-table">
+           Standard Resistance:
+          </caption>
+<thead align="left" class="test1-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EMHBI" width="NaN%">Tester Connection</th> 
+            <th align="center" class="cellrowborder" id="ID0ESHBI" width="NaN%">Condition</th> 
+            <th align="center" class="cellrowborder" id="ID0EYHBI" width="NaN%">Specified Condition</th> 
+           </tr> 
+          </thead>
+<tbody class="test1-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EMHBI " width="NaN%">IGCT SCENE fuse terminal 2 or IGCT SCENE relay terminal 3 - Body ground and other terminals</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESHBI " width="NaN%">Always</td> 
+            <td align="center" class="cellrowborder" headers="ID0EYHBI " width="NaN%">10 kΩ or higher</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EMHBI " width="NaN%">IGCT SCENE relay terminal 5 or PM IGCT fuse terminal 1 - Body ground and other terminals</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESHBI " width="NaN%">Always</td> 
+            <td align="center" class="cellrowborder" headers="ID0EYHBI " width="NaN%">10 kΩ or higher</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the IGCT SCENE fuse, PM IGCT fuse and IGCT SCENE relay.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHKBI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EHKBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EKLBI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKLBI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKLBI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUSE (IGCT SCENE) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">REPAIR OR REPLACE HARNESS OR CONNECTOR  <a class="res-right-fin-false-xref" href="#RM100000001153A__RM100000001153A_05_0049">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153A__RM100000001153A_05_0014">
+<p class="testgrp-heading">REPAIR OR REPLACE HARNESS OR CONNECTOR</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0E5NBI" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0E5NBI" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EBPBI" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EBPBI " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NEXT</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUSE (PM IGCT) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001153A__RM100000001153A_05_0049">
+<p class="testgrp-heading">REPAIR OR REPLACE HARNESS OR CONNECTOR</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EARBI" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EARBI" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EDSBI" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EDSBI " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NEXT</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUSE (IGCT SCENE) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

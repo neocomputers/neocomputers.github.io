@@ -1,0 +1,162 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SPEED LIMITER SYSTEM SYSTEM DESCRIPTION" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058076" name="sectionId"/> 
+  <meta content="CRUISE CONTROL" name="sectionName"/> 
+  <meta content="_0282618" name="ttlId"/> 
+  <meta content="SPEED LIMITER SYSTEM" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="SYSTEM DESCRIPTION" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000YY2Z" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>SPEED LIMITER SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SPEED LIMITER SYSTEM<span class="topictitle1"> SYSTEM DESCRIPTION</span>
+</h1>
+<div class="subpara" id="RM100000000YY2Z__RM100000000YY2Z_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000000YY2Z__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">SPEED LIMITER SYSTEM</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Using this system, the driver can set a limit speed so that the vehicle speed does not exceed the set speed while driving. The hybrid vehicle control ECU regulates the vehicle speed so as not to exceed the set speed even if the driver attempts to accelerate the vehicle by using the accelerator pedal. During kick-down operation (on sudden acceleration), however, the vehicle can be accelerated beyond the set speed.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">If the actual vehicle speed is higher than the set speed, the hybrid vehicle control ECU operates the throttle motor to close the throttle valve or the motor generator to decrease the motor drive force by the appropriate amount, decreasing the vehicle speed.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">The hybrid vehicle control ECU receives speed limiter system on/off signals from the speed limiter switch.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">The hybrid vehicle control ECU receives -SET, +RES and CANCEL signals from the cruise control main switch.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">When the hybrid vehicle control ECU receives an on signal from the speed limiter switch, the hybrid vehicle control ECU will illuminate the speed limiter indicator on the main display.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">When a limit speed is set, the hybrid vehicle control ECU displays the set speed on the main display.</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E3G" width="NaN%">Control</th> 
+              <th align="center" class="cellrowborder" id="ID0ECH" width="NaN%">Operation</th> 
+              <th align="center" class="cellrowborder" id="ID0EIH" width="NaN%">Content</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0E3G " width="NaN%">Set Control</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECH " width="NaN%">Turn the speed limiter switch on and press the cruise control main switch to -SET while driving at 30 km/h or 20 mph or more</td> 
+              <td align="left" class="cellrowborder" headers="ID0EIH " width="NaN%">The hybrid vehicle control ECU stores the vehicle speed when the cruise control main switch is released, and limits the vehicle speed to the set speed*1</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0E3G " width="NaN%">Coast Control</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECH " width="NaN%">Press the cruise control main switch to -SET and hold it in that position while the speed limiter system is operating</td> 
+              <td align="left" class="cellrowborder" headers="ID0EIH " width="NaN%">The hybrid vehicle control ECU decreases the limit speed by 5 km/h or 5 mph*2</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0E3G " width="NaN%">Tap-down Control</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECH " width="NaN%">Press the cruise control main switch to -SET and then release it (after approximately 0.6 seconds) while the speed limiter system is operating</td> 
+              <td align="left" class="cellrowborder" headers="ID0EIH " width="NaN%">The hybrid vehicle control ECU decreases the limit speed by 1 km/h or 1 mph each time the switch is tapped</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0E3G " width="NaN%">Acceleration Control</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECH " width="NaN%">Press the cruise control main switch to +RES and hold it in that position while the speed limiter system is operating</td> 
+              <td align="left" class="cellrowborder" headers="ID0EIH " width="NaN%">The hybrid vehicle control ECU increases the limit speed by 5 km/h or 5 mph*2</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0E3G " width="NaN%">Tap-up Control</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECH " width="NaN%">Press the cruise control main switch to +RES and then release it (after approximately 0.6 seconds) while the speed limiter system is operating</td> 
+              <td align="left" class="cellrowborder" headers="ID0EIH " width="NaN%">The hybrid vehicle control ECU increases the limit speed by 1 km/h or 1 mph each time the switch is tapped</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0E3G " width="NaN%">Override Control</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECH " width="NaN%">Fully depress the accelerator pedal while the speed limiter system is operating</td> 
+              <td align="left" class="cellrowborder" headers="ID0EIH " width="NaN%">The hybrid vehicle control ECU determines that acceleration is needed and permits acceleration beyond the set speed*3</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0E3G " rowspan="2" width="NaN%">Cancel Control</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECH " width="NaN%"> <p class="ptxt">While the speed limiter system is operating, any of the following operations occur:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Pulling the cruise control main switch to CANCEL</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">VSC is turned off</p>
+</li> 
+               </ul> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIH " width="NaN%"> <p class="ptxt">The hybrid vehicle control ECU cancels speed limiter system operation</p> <p class="ptxt">(The stored vehicle limit speed in the hybrid vehicle control ECU is maintained)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ECH " width="NaN%"> <p class="ptxt">While the speed limiter system is operating, any of the following operations occur:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Turning the speed limiter switch off</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Turning the cruise control main switch on</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Malfunction in the hybrid control system is detected</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Problem with speed sensor signal circuit is detected</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Communication between skid control ECU (brake booster with master cylinder assembly) and hybrid vehicle control ECU stops</p>
+</li> 
+               </ul> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIH " width="NaN%"> <p class="ptxt">The hybrid vehicle control ECU cancels speed limiter system operation</p> <p class="ptxt">(The stored vehicle limit speed in the hybrid vehicle control ECU is not maintained)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0E3G " width="NaN%">Resume Control</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECH " width="NaN%">After the speed limiter system control of vehicle speed is canceled by pulling the cruise control main switch to CANCEL or VSC being turned off, press the cruise control main switch to +RES</td> 
+              <td align="left" class="cellrowborder" headers="ID0EIH " width="NaN%">The hybrid vehicle control ECU resumes speed limiter system control using the vehicle limit speed set when control was canceled</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0E3G " width="NaN%">Interrupt Control</td> 
+              <td align="center" class="cellrowborder" headers="ID0ECH " width="NaN%">Move the shift lever to R while the speed limiter system control is operating</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIH " width="NaN%">The limit speed cannot be changed by using the cruise control main switch</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0E3G " width="NaN%">Other Control</td> 
+              <td align="center" class="cellrowborder" headers="ID0ECH " width="NaN%">Turn the power switch off</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIH " width="NaN%">The limit speed stored in the hybrid vehicle control ECU is cleared</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<p class="footnote">*1: If the cruise control main switch is pressed to -SET while the vehicle is being driven at 30 km/h or 20 mph or less, or the vehicle is stopped, the hybrid vehicle control ECU limits the vehicle speed to 30 km/h or 20 mph.</p>
+<p class="footnote">*2: The hybrid vehicle control ECU stores the vehicle speed when the cruise control main switch is released and limits the vehicle speed to that stored speed.</p>
+<p class="footnote">*3: After acceleration, if the vehicle speed drops below the limit speed, the hybrid vehicle control ECU resumes limiting the vehicle speed to the limit speed.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

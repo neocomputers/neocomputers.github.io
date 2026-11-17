@@ -1,0 +1,713 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="HYBRID CONTROL SYSTEM Brake Override System" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296362" name="ttlId"/> 
+  <meta content="HYBRID CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000011O0S" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Brake Override System</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">HYBRID CONTROL SYSTEM<span class="topictitle1"> Brake Override System</span>
+</h1>
+<div class="subpara" id="RM1000000011O0S__RM1000000011O0S_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">When the vehicle is being driven with the accelerator pedal depressed, depressing the brake pedal without releasing the accelerator pedal will activate the brake override system to restrict driving torque. The conditions for activating the brake override system as well as the items that are controlled are explained below.</p> 
+    <div class="fignone--bigImage">
+<img alt="B006IWCE20" class="figure-graphic--bigImage" src="../images/b006iwce20.png"/>
+</div> 
+    <br class="subpara"/>
+    <ul class="content5-topic"> 
+     <li class="topic-topic"> <strong class="topic-title">Activation Conditions:</strong> <br class="topic-topic"/>
+      <ul class="topic-list1"> 
+       <li class="list1-item">
+<p class="topic-list1-heading">The accelerator pedal and brake pedal are depressed at the same time.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Brake override control may not be performed depending on the relationship between accelerator opening and vehicle speed.</p> 
+        </div>
+</li> 
+      </ul> </li> 
+    </ul> 
+    <br class="subpara"/>
+    <ul class="content5-topic"> 
+     <li class="topic-topic"> <strong class="topic-title">Items Controlled:</strong> <br class="topic-topic"/>
+      <ul class="topic-list1"> 
+       <li class="list1-item">
+<p class="topic-list1-heading">Controls driving force</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">When the control is operating, requested accelerator torque is controlled in accordance with the brake pedal stroke.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">When the driving force is reduced to a specified level because the accelerator pedal and brake pedal are depressed at the same time, an indicator is displayed on the meter. (Operation of the system can be confirmed when the indicator is displayed on the meter.)</p>
+</li> 
+         </ul> 
+        </div>
+</li> 
+      </ul> </li> 
+    </ul> 
+    <br class="subpara"/>
+    <ul class="content5-topic"> 
+     <li class="topic-topic"> <strong class="topic-title">Deactivation Conditions:</strong> <br class="topic-topic"/>
+      <ul class="topic-list1"> 
+       <li class="list1-item">
+<p class="topic-list1-heading">The accelerator pedal or brake pedal is released.</p>
+</li> 
+      </ul> </li> 
+    </ul> 
+   </div>
+<div class="subpara" id="RM1000000011O0S__RM1000000011O0S_02">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <br class="subpara"/>
+    <ul class="content5-topic"> 
+     <li class="topic-topic"> <strong class="topic-title">Inspection Method</strong> <p class="content5-topic-heading">Drive at 10 km/h (6 mph), depress the accelerator pedal by 1/2 to 3/4 and keep it in that position. Under these conditions, if driving torque is controlled when the brake pedal is depressed by the left foot of the driver, it can be confirmed that the brake override system has operated.</p> 
+      
+      <div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Perform this road test only in an appropriate safe location, in accordance with all local laws.</p> 
+       <p class="ptxt">Pay careful attention to the surroundings when performing the road test.</p> 
+      </div> 
+      <div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">The brake override system restricts driving torque if the brake pedal is depressed when driving with the accelerator pedal depressed. If a customer reports experiencing a loss of power (driving torque) after the accelerator and brake pedals have both been intentionally depressed, explain that this is not a malfunction, and depressing both the accelerator and brake pedals at the same time should be avoided.</p> 
+      </div> </li> 
+    </ul> 
+   </div>
+<div class="subpara" id="RM1000000011O0S__RM1000000011O0S_04">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM1000000011O0S__RM1000000011O0S_04_0001">
+<p class="testgrp-heading">CHECK DTC OUTPUT (HEALTH CHECK)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: System Select / Health Check.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EFGAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EFGAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ENHAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ETHAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0ENHAC " width="NaN%">No DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ETHAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0ENHAC " width="NaN%">DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ETHAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011O0S__RM1000000011O0S_04_0002">
+<p class="testgrp-heading">READ VALUE USING GTS (MASTER CYLINDER CONTROL TORQUE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Data List / Master Cylinder Control Torque.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EDNAC" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EDNAC " width="NaN%">Master Cylinder Control Torque</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EMDAE" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0ESDAE" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EYDAE" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0E5DAE" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0EEEAE" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMDAE " width="NaN%">Master Cylinder Control Torque</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESDAE " width="NaN%">Braking torque equivalent to master cylinder brake fluid pressure Total braking torque Master cylinder brake fluid pressure control torque = hydraulic brake control torque + rear regenerative brake torque</td> 
+              <td align="center" class="cellrowborder" headers="ID0EYDAE " width="NaN%">-</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5DAE " width="NaN%"> <p class="ptxt">Brake pedal depressed:</p> <p class="ptxt">Changes with the brake pedal pressure</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EEEAE " width="NaN%">Master cylinder pressure sensor</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EEJAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EEJAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMKAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ESKAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EMKAE " width="NaN%">Display changes according to brake pedal depression force.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESKAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EMKAE " width="NaN%">Display does not change according to brake pedal depression force.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESKAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHECK BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000Z7XW.html#RM100000000Z7XW">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011O0S__RM1000000011O0S_04_0003">
+<p class="testgrp-heading">READ VALUE USING GTS (ACCELERATOR POSITION SENSOR NO. 1 VOLTAGE %, ACCELERATOR POSITION SENSOR NO. 2 VOLTAGE %)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Data List / Accelerator Position Sensor No. 1 Voltage %, Accelerator Position Sensor No. 2 Voltage %.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EKQAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKQAE " width="NaN%">Accelerator Position Sensor No.1 Voltage %</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKQAE " width="NaN%">Accelerator Position Sensor No.2 Voltage %</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the value of "Accelerator Position Sensor No. 1 Voltage %" and "Accelerator Position Sensor No. 2 Voltage %" displayed on the GTS.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E5WAE" class="spec-title">Standard</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E5WAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EGYAE" width="NaN%">Inspection Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EMYAE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EGYAE " width="NaN%">Accelerator pedal fully released → fully depressed</td> 
+                 <td align="left" class="spec-table-item" headers="ID0EMYAE " width="NaN%">Value (%) changes with accelerator pedal operation</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ED1AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ED1AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EG2AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EG2AE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EG2AE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ACCELERATOR PEDAL SENSOR ASSEMBLY <a class="content6-ptxt-xref" href="RM10000000115BS.html#RM10000000115BS">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011O0S__RM1000000011O0S_04_0004">
+<p class="testgrp-heading">READ VALUE USING GTS (VEHICLE SPEED)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Data List / Vehicle Speed.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EKAAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKAAG " width="NaN%">Vehicle Speed</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the value of "Vehicle Speed" displayed on the GTS.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPFAG" class="spec-title">Standard</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPFAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EXGAG" width="NaN%">Inspection Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E4GAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EXGAG " width="NaN%">Vehicle stopped</td> 
+                 <td align="left" class="spec-table-item" headers="ID0E4GAG " width="NaN%">0 km/h (0 mph)</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EXGAG " width="NaN%"> <p class="ptxt">Vehicle being driven at a constant speed</p> <p class="ptxt">(16 to 64 km/h (10 to 40 mph))</p> </td> 
+                 <td align="left" class="spec-table-item" headers="ID0E4GAG " width="NaN%">No large fluctuations in displayed speed</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+         <p class="ptxt">Perform this road test only in an appropriate safe location, in accordance with all local laws.</p> 
+        </div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Data can be captured relatively easily by using the snapshot function in the Data List. Confirm the data after performing the drive test.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDKAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EDKAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EGLAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EGLAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EGLAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO METER / GAUGE SYSTEM (SPEED SIGNAL CIRCUIT) <a class="content6-ptxt-xref" href="RM1000000011AS6.html#RM1000000011AS6">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM1000000011O0S__RM1000000011O0S_04_0005">
+<p class="testgrp-heading">READ VALUE USING GTS (FR, FL, RR, RL WHEEL SPEED)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (READY).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Chassis / ABS/VSC/TRC / Data List / FR Wheel Speed, FL Wheel Speed, RR Wheel Speed and RL Wheel Speed.</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EJQAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EJQAG " width="NaN%">FR Wheel Speed</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EJQAG " width="NaN%">FL Wheel Speed</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EJQAG " width="NaN%">RR Wheel Speed</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EJQAG " width="NaN%">RL Wheel Speed</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the value of "FR Wheel Speed", "FL Wheel Speed", "RR Wheel Speed" and "RL Wheel Speed" displayed on the GTS.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2ZAG" class="spec-title">Standard</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2ZAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ED2AG" width="NaN%">Inspection Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJ2AG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ED2AG " width="NaN%">Vehicle stopped</td> 
+                 <td align="left" class="spec-table-item" headers="ID0EJ2AG " width="NaN%">0 km/h (0 mph)</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ED2AG " width="NaN%"> <p class="ptxt">Vehicle being driven at a constant speed</p> <p class="ptxt">(16 to 64 km/h (10 to 40 mph))</p> </td> 
+                 <td align="left" class="spec-table-item" headers="ID0EJ2AG " width="NaN%">No large fluctuations in displayed speed</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+         <p class="ptxt">Perform this road test only in an appropriate safe location, in accordance with all local laws.</p> 
+        </div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Data can be captured relatively easily by using the snapshot function in the Data List. Confirm the data after performing the drive test.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EP5AG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EP5AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ES6AG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ES6AG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ES6AG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>INSPECT FRONT OR REAR SPEED SENSOR <a class="content6-ptxt-xref" href="RM10000000110JQ.html#RM10000000110JQ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

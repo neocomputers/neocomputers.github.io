@@ -1,0 +1,790 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ENTRY AND START SYSTEM(for Entry Function) All Door Entry Lock/Unlock Functions do not Operate, but Wireless Functions Operate" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058032" name="sectionId"/> 
+  <meta content="THEFT DETERRENT / KEYLESS ENTRY" name="sectionName"/> 
+  <meta content="_0288580" name="ttlId"/> 
+  <meta content="ENTRY AND START SYSTEM(for Entry Function)" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000ZT9L" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>All Door Entry Lock/Unlock Functions do not Operate, but Wireless Functions Operate</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ENTRY AND START SYSTEM(for Entry Function)<span class="topictitle1"> All Door Entry Lock/Unlock Functions do not Operate, but Wireless Functions Operate</span>
+</h1>
+<div class="subpara" id="RM100000000ZT9L__RM100000000ZT9L_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">When the wireless operation can be used to lock and unlock the doors, communication between the electrical key and tire pressure monitoring system receiver assembly and certification ECU (smart key ECU assembly) is normal. If the entry lock and unlock functions do not operate, the entry cancel function may be set through the customize function, there may be communication problems between the electrical key transmitter sub-assembly and vehicle, or there may be wave interference.</p> 
+   </div>
+<div class="subpara" id="RM100000000ZT9L__RM100000000ZT9L_02">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">The entry and start system (for Entry Function) uses the LIN communication system and CAN communication system. Inspect the communication function by following How to Proceed with Troubleshooting. Troubleshoot the entry and start system (for Entry Function) after confirming that the communication systems are functioning properly.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZT9I.html#RM100000000ZT9I">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">When using the GTS with the power switch off, connect the GTS to the DLC3 and turn a courtesy light switch on and off at intervals of 1.5 seconds or less until communication between the GTS and the vehicle begins. Then select Model Code "KEY REGIST" under manual mode and enter the following menus: Body Electrical / Entry&amp;Start(CAN). While using the GTS, periodically turn a courtesy light switch on and off at intervals of 1.5 seconds or less to maintain communication between the GTS and the vehicle.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Check that there are no electrical key transmitter sub-assemblies in the vehicle.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Before performing the inspection, check that DTC B1242 (wireless door lock control) is not output.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZLMP.html#RM100000000ZLMP">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Before replacing the certification ECU (smart key ECU assembly) or electrical key transmitter sub-assembly, refer to Precaution.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZT98.html#RM100000000ZT98">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">After repair, confirm that no DTCs are output.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000ZT9L__RM100000000ZT9L_06">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000ZT9L__RM100000000ZT9L_06_0021">
+<p class="testgrp-heading">CHECK POWER DOOR LOCK CONTROL SYSTEM</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">When the door control switch on the multiplex network master switch assembly is operated, check that the doors unlock and lock according to the switch operation.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZLMA.html#RM100000000ZLMA">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EECAC" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EECAC">Door locks operate normally.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E5CAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E5CAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EBEAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EBEAC " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EBEAC " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO POWER DOOR LOCK CONTROL SYSTEM <a class="content6-ptxt-xref" href="RM100000000ZLMA.html#RM100000000ZLMA">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZT9L__RM100000000ZT9L_06_0003">
+<p class="testgrp-heading">CHECK WAVE ENVIRONMENT</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Move the electrical key transmitter sub-assembly as described below and perform the operation inspection.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">When the electrical key transmitter sub-assembly is brought near the front door outside handle assembly (for driver door) or electrical key antenna (outside luggage compartment), the possibility of wave interference decreases, and it can be determined if wave interference is causing the problem symptom.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If the inspection result is that the problem only occurs in certain locations or at certain times of day, the possibility of wave interference is high. Also, added vehicle components may cause wave interference. If installed, remove them and perform the operation check.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">There may be wave interference if the vehicle is near broadcasting antennas, large video displays, wireless garage door opener systems, wireless security cameras, home security systems, etc. In this case, move the vehicle to a different location and check if there is any improvement.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If a tool for checking radio waves, such as a signal strength meter, is available, move around the area while observing both the LF band (used by the vehicle antenna to form the detection area) and RF band (used by the electrical key transmitter sub-assembly for transmission) to check for locations where there is wave interference.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">The transmitting wave of the wireless function and entry function are the same, but the wave logic is different. As a result, it is possible that only the wireless function or only the entry function is affected by wave interference.</p>
+</li> 
+         </ul> 
+        </div>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003MYBC01" class="figure-graphic" src="../images/a003mybc01.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*A</td> 
+                <td align="left" class="cellrowborder" width="NaN%">for LHD</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*B</td> 
+                <td align="left" class="cellrowborder" width="NaN%">for RHD</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td class="cellrowborder" width="NaN%">Approximately 0.3 m (0.984 ft.)</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="test2-heading">Bring the electrical key transmitter sub-assembly approximately 0.3 m (0.984 ft.) from the front door outside handle assembly (for driver door) and perform a driver door entry lock and unlock operation check.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">Communication may not be possible if the electrical key transmitter sub-assembly is within 0.2 m (0.656 ft.) of the door handle.</p> 
+          </div>
+</li>
+<li class="test2Root-test2">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003L2SC01" class="figure-graphic" src="../images/a003l2sc01.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*A</td> 
+                <td align="left" class="cellrowborder" width="NaN%">for LHD</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*B</td> 
+                <td align="left" class="cellrowborder" width="NaN%">for RHD</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%">Approximately 0.3 m (0.984 ft.)</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="test2-heading">Bring the electrical key transmitter sub-assembly approximately 0.3 m (0.984 ft.) from the front door outside handle assembly (for front passenger door) and perform a front passenger door entry lock and unlock operation check.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">Communication may not be possible if the electrical key transmitter sub-assembly is within 0.2 m (0.656 ft.) of the door handle.</p> 
+          </div>
+</li>
+<li class="test2Root-test2">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003OQ5C06" class="figure-graphic" src="../images/a003oq5c06.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td class="cellrowborder" width="NaN%">Approximately 0.3 m (0.984 ft.)</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="test2-heading">Bring the electrical key transmitter sub-assembly approximately 0.3 m (0.984 ft.) from the electrical key antenna (outside luggage compartment) and perform an entry back door open function check.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">Communication may not be possible if the electrical key transmitter sub-assembly is within 0.2 m (0.656 ft.) of the rear bumper.</p> 
+          </div>
+</li>
+</ol>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPDAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPDAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EXEAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E4EAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EXEAE " width="NaN%">All operation checks fail</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E4EAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EXEAE " width="NaN%">All operation checks are normal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E4EAE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EXEAE " width="NaN%">Some operation checks are normal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E4EAE " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>AFFECTED BY WAVE INTERFERENCE </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO OTHER PROBLEM <a class="content6-ptxt-xref" href="RM100000000ZT9B.html#RM100000000ZT9B">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZT9L__RM100000000ZT9L_06_0004">
+<p class="testgrp-heading">CHECK KEY DIAGNOSTIC MODE</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the following antennas in key diagnostic mode.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Entry&amp;Start &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EEKAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EEKAE " width="NaN%">Communication Check(Key Diag Mode)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Select either channel 1 or channel 2 and perform key diagnostic mode inspection for each channel.</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003MYBC01" class="figure-graphic" src="../images/a003mybc01.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*A</td> 
+                <td align="left" class="cellrowborder" width="NaN%">for LHD</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*B</td> 
+                <td align="left" class="cellrowborder" width="NaN%">for RHD</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%">0.7 to 1 m (2.30 to 3.28 ft.)</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="test2-heading">Check the electrical key antenna (for driver door):</p>
+<p class="test2-ptxt">When the electrical key transmitter sub-assembly is brought within 0.7 to 1 m (2.30 to 3.28 ft.) of the front door outside handle assembly (for driver door), check that the wireless buzzer sounds.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Select either channel 1 or channel 2 and perform the key diagnostic mode inspection for each channel.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">If the buzzer sounds with [CH1] displayed but not with [CH2], the electrical key transmitter sub-assembly cannot be detected by channel 2 due to a malfunction, such as wave interference.</p>
+</li> 
+           </ul> 
+          </div>
+</li>
+<li class="test2Root-test2">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003L2SC01" class="figure-graphic" src="../images/a003l2sc01.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*A</td> 
+                <td class="cellrowborder" width="NaN%">for LHD</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*B</td> 
+                <td class="cellrowborder" width="NaN%">for RHD</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td class="cellrowborder" width="NaN%">0.7 to 1 m (2.30 to 3.28 ft.)</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="test2-heading">Check the electrical key antenna (for front passenger door):</p>
+<p class="test2-ptxt">When the electrical key transmitter sub-assembly is brought within 0.7 to 1 m (2.30 to 3.28 ft.) of the front door outside handle assembly (for front passenger door), check that the wireless buzzer sounds.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Select either channel 1 or channel 2 and perform the key diagnostic mode inspection for each channel.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">If the buzzer sounds with [CH1] displayed but not with [CH2], the electrical key transmitter sub-assembly cannot be detected by channel 2 due to a malfunction, such as wave interference.</p>
+</li> 
+           </ul> 
+          </div>
+</li>
+<li class="test2Root-test2">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003OQ5C06" class="figure-graphic" src="../images/a003oq5c06.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td class="cellrowborder" width="NaN%">0.7 to 1 m (2.30 to 3.28 ft.)</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="test2-heading">Check the electrical key antenna (outside luggage compartment):</p>
+<p class="test2-ptxt">When the electrical key transmitter sub-assembly is brought within 0.7 to 1 m (2.30 to 3.28 ft.) of the electrical key antenna (outside luggage compartment), check that the wireless buzzer sounds.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Select either channel 1 or channel 2 and perform the key diagnostic mode inspection for each channel.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">If the buzzer sounds with [CH1] displayed but not with [CH2], the electrical key transmitter sub-assembly cannot be detected by channel 2 due to a malfunction, such as wave interference.</p>
+</li> 
+           </ul> 
+          </div>
+<table class="spec">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0EQ2AE" class="spec-title">OK</th> 
+            </tr> 
+            <tr class="spec-specitem"> 
+             <td class="specitem-ptxt" headers="ID0EQ2AE">Wireless buzzer sounds.</td> 
+            </tr> 
+           </tbody>
+</table>
+</li>
+</ol>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EM3AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EM3AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EU4AE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E14AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EU4AE " width="NaN%">All diagnostic mode inspections fail</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E14AE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EU4AE " width="NaN%">Some diagnostic mode inspections fail (door)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E14AE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EU4AE " width="NaN%">Some diagnostic mode inspections fail (outside luggage compartment)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E14AE " width="NaN%">C</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EU4AE " width="NaN%">All diagnostic mode inspections are normal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E14AE " width="NaN%">D</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO OTHER PROBLEM <a class="content6-ptxt-xref" href="RM100000000ZT9B.html#RM100000000ZT9B">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO OTHER PROBLEM <a class="content6-ptxt-xref" href="RM100000000ZT9S.html#RM100000000ZT9S">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">D</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZT9L__RM100000000ZT9L_06_0017">
+<p class="testgrp-heading">CHECK ELECTRICAL KEY TRANSMITTER SUB-ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if there is another electrical key transmitter sub-assembly available that is already registered to the vehicle.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EIDAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EIDAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQEAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EWEAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EQEAG " width="NaN%">Another registered electrical key transmitter sub-assembly is not available</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWEAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EQEAG " width="NaN%">Another registered electrical key transmitter sub-assembly is available</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWEAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">B</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 6  <a class="res-right-fin-false-xref" href="#RM100000000ZT9L__RM100000000ZT9L_06_0023">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZT9L__RM100000000ZT9L_06_0005">
+<p class="testgrp-heading">ELECTRICAL KEY TRANSMITTER SUB-ASSEMBLY REGISTRATION (NEW ELECTRICAL KEY TRANSMITTER SUB-ASSEMBLY)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Register a new electrical key transmitter sub-assembly.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Refer to Service Bulletin.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETIAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETIAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWJAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWJAG " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000ZT9L__RM100000000ZT9L_06_0023">
+<p class="testgrp-heading">CHECK ENTRY LOCK OPERATION</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Using another registered electrical key transmitter sub-assembly, check that the entry function operates normally.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZT9F.html#RM100000000ZT9F">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ERMAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ERMAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EZNAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E6NAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EZNAG " width="NaN%">Entry function operates normally</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6NAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EZNAG " width="NaN%">Entry function does not operate normally</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6NAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END (ELECTRICAL KEY TRANSMITTER SUB-ASSEMBLY WAS DEFECTIVE) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

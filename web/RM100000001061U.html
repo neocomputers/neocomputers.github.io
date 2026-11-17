@@ -1,0 +1,572 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P006900" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290546" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001061U" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P006900</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P006900</h1>
+<div class="section" id="RM100000001061U__RM100000001061U_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P006900</td> 
+       <td class="dtcname" headers="ID0EED">Manifold Absolute Pressure - Barometric Pressure Correlation</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001061U__RM100000001061U_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The manifold absolute pressure sensor installed to the intake manifold detects the intake manifold pressure using a built-in sensor.</p> 
+    <p class="content5-ptxt">An atmospheric pressure sensor is built in the ECM. When the engine is stopped, the value of the manifold absolute pressure sensor and atmospheric pressure sensor will be approximately the same as the atmospheric pressure.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EAG" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EGG" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EMG" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0ESG" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EYG" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0E5G" width="NaN%">Memory</th> 
+        <th align="center" class="cellrowborder" id="ID0EEH" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EAG " width="NaN%">P006900</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGG " width="NaN%">Manifold Absolute Pressure - Barometric Pressure Correlation</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMG " width="NaN%">Difference between atmospheric pressure value of the absolute pressure sensor and atmospheric pressure sensor is higher than threshold value (2 trip detection logic).</td> 
+        <td align="left" class="cellrowborder" headers="ID0ESG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Manifold absolute pressure sensor</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EYG " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5G " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EEH " width="NaN%">SAE Code: P0069</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001061U__RM100000001061U_03">
+     
+    <p class="subpara-subparaName">MONITOR DESCRIPTION</p> 
+    <p class="content5-ptxt">Approximately 50 minutes after the power switch is turned off, the soak timer is activated and the values of the manifold absolute pressure sensor and atmospheric pressure sensor are compared. If the difference between the values of the manifold absolute pressure sensor and atmospheric pressure sensor is higher than a threshold value in consecutive driving cycles, the ECM will store this DTC.</p> 
+   </div>
+<div class="subpara" id="RM100000001061U__RM100000001061U_04">
+     
+    <p class="subpara-subparaName">MONITOR STRATEGY</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Required Sensors/Components (Main)</td> 
+        <td class="cellrowborder" width="NaN%"> <p class="ptxt">Manifold absolute pressure sensor</p> <p class="ptxt">ECM</p> </td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Required Sensors/Components (Related)</td> 
+        <td class="cellrowborder" width="NaN%"> <p class="ptxt">Mass air flow meter sub-assembly</p> <p class="ptxt">Engine coolant temperature sensor</p> </td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Frequency of Operation</td> 
+        <td class="cellrowborder" width="NaN%">Once per driving cycle</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001061U__RM100000001061U_06">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for at least 55 minutes.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Read the pending DTCs.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is output, the system is malfunctioning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is not output, perform the following procedure.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Input the DTC: P006900.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tablenoborder">
+       <table class="item-table">
+<thead align="left" class="item-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0EEMAC" width="NaN%">GTS Display</th> 
+          <th align="center" class="cellrowborder" id="ID0EKMAC" width="NaN%">Description</th> 
+         </tr> 
+        </thead>
+<tbody class="item-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0EEMAC " width="NaN%">NORMAL</td> 
+          <td class="cellrowborder" headers="ID0EKMAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System normal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0EEMAC " width="NaN%">ABNORMAL</td> 
+          <td class="cellrowborder" headers="ID0EKMAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System abnormal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0EEMAC " width="NaN%">INCOMPLETE</td> 
+          <td class="cellrowborder" headers="ID0EKMAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment not completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Perform driving pattern after confirming DTC enabling conditions</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0EEMAC " width="NaN%">N/A</td> 
+          <td class="cellrowborder" headers="ID0EKMAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Unable to perform DTC judgment</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Number of DTCs which do not fulfill DTC preconditions has reached ECU memory limit</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is NORMAL, the system is normal.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is ABNORMAL, the system is malfunctioning.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001061U__RM100000001061U_08">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">Read freeze frame data using the GTS. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air fuel ratio was lean or rich, and other data from the time the malfunction occurred.</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001061U__RM100000001061U_09">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001061U__RM100000001061U_09_0001">
+<p class="testgrp-heading">CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P006900)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBKAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBKAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EKLAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EQLAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKLAE " width="NaN%">DTC P006900 is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQLAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKLAE " width="NaN%">DTC P006900 and other DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQLAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If any DTCs other than P006900 are output, troubleshoot those DTCs first.</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART <a class="content6-ptxt-xref" href="RM100000001AMDC.html#RM100000001AMDC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001061U__RM100000001061U_09_0003">
+<p class="testgrp-heading">READ VALUE USING GTS (INTAKE MANIFOLD ABSOLUTE PRESSURE)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for at least 50 minutes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Data List / Intake Manifold Absolute Pressure.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EURAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EURAE " width="NaN%">Intake Manifold Absolute Pressure</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Using the following table, determine the normal atmospheric pressure for the current altitude and temperature.</p>
+<div class="fignone--bigImage">
+<img alt="B006IAL" class="figure-graphic--bigImage" src="../images/b006ial.png"/>
+</div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Standard atmospheric pressure is approximately 101 kPa(abs) [15 psi(abs)].</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">For every 100 m (328 ft.) increase in altitude, atmospheric pressure drops by approximately 1 kPa (0.1 psi). This varies depending on the weather.</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Compare the value of the Data List item Intake Manifold Absolute Pressure with the actual atmospheric pressure.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETYAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETYAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E3ZAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EC1AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3ZAE " width="NaN%">Approximately the same as the actual atmospheric pressure</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EC1AE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3ZAE " width="NaN%">Not approximately the same as the actual atmospheric pressure</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EC1AE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE MANIFOLD ABSOLUTE PRESSURE SENSOR <a class="content6-ptxt-xref" href="RM100000000ZW84.html#RM100000000ZW84">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001061U__RM100000001061U_09_0005">
+<p class="testgrp-heading">READ VALUE USING GTS (ATMOSPHERIC PRESSURE)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Data List / Atmospheric Pressure.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ER6AE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ER6AE " width="NaN%">Atmospheric Pressure</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Using the following table, determine the normal atmospheric pressure for the current altitude and temperature.</p>
+<div class="fignone--bigImage">
+<img alt="B006IAL" class="figure-graphic--bigImage" src="../images/b006ial.png"/>
+</div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Standard atmospheric pressure is approximately 101 kPa(abs) [15 psi(abs)].</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">For every 100 m (328 ft.) increase in altitude, atmospheric pressure drops by approximately 1 kPa (0.1 psi). This varies depending on the weather.</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Compare the value of the Data List item Atmospheric Pressure with the actual atmospheric pressure.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ERGAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ERGAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E1HAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EAIAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1HAG " width="NaN%">Approximately the same as the actual atmospheric pressure</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAIAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1HAG " width="NaN%">Not approximately the same as the actual atmospheric pressure</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAIAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHECK FOR INTERMITTENT PROBLEMS <a class="content6-ptxt-xref" href="RM1000000010614.html#RM1000000010614">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ECM <a class="content6-ptxt-xref" href="RM100000001067I.html#RM100000001067I">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

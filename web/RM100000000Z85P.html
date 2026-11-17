@@ -1,0 +1,529 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="NAVIGATION SYSTEM(for Radio and Display Type), Diagnostic DTC:B15F6" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_56" name="servcatId"/> 
+  <meta content="Audio / Visual / Telematics" name="servcatName"/> 
+  <meta content="_058037" name="sectionId"/> 
+  <meta content="NAVIGATION / MULTI INFO DISPLAY" name="sectionName"/> 
+  <meta content="_0284601" name="ttlId"/> 
+  <meta content="NAVIGATION SYSTEM(for Radio and Display Type)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000Z85P" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>B15F6</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">NAVIGATION SYSTEM(for Radio and Display Type), Diagnostic DTC:B15F6</h1>
+<div class="section" id="RM100000000Z85P__RM100000000Z85P_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">B15F6</td> 
+       <td class="dtcname" headers="ID0EED">Main Body ECU Vehicle Information Reading/Writing Process Malfunction</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000000Z85P__RM100000000Z85P_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">This DTC is stored when items controlled by the main body ECU (multiplex network body ECU) cannot be customized via the navigation system vehicle customization screen.</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">The main body ECU (multiplex network body ECU) controls the items for the following systems that are customizable via the navigation system vehicle customization screen:</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">Wireless door lock control system</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Lighting system (for Interior)</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Lighting system (for Exterior)</p>
+</li> 
+     </ul> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0E4G" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EDH" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EJH" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EPH" width="NaN%">Trouble Area</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0E4G " width="NaN%">B15F6</td> 
+        <td align="left" class="cellrowborder" headers="ID0EDH " width="NaN%">Main Body ECU Vehicle Information Reading/Writing Process Malfunction</td> 
+        <td align="left" class="cellrowborder" headers="ID0EJH " width="NaN%">Main body ECU (multiplex network body ECU) vehicle setting processing malfunction</td> 
+        <td align="left" class="cellrowborder" headers="ID0EPH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">CAN communication system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Wireless door lock control system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Lighting system (for Interior)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Lighting system (for Exterior)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Main body ECU (multiplex network body ECU)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Radio and display receiver assembly</p>
+</li> 
+         </ul> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000Z85P__RM100000000Z85P_06">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000Z85P__RM100000000Z85P_06_0001">
+<p class="testgrp-heading">CHECK CAN COMMUNICATION SYSTEM</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Use the GTS to check if the CAN communication system is functioning normally.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000011A35.html#RM1000000011A35">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBFAC" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EBFAC">CAN communication DTCs are not output.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2FAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2FAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5GAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5GAC " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5GAC " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO CAN COMMUNICATION SYSTEM <a class="content6-ptxt-xref" href="RM1000000011A35.html#RM1000000011A35">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000Z85P__RM100000000Z85P_06_0008">
+<p class="testgrp-heading">CHECK WIRELESS DOOR LOCK CONTROL SYSTEM</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the wireless door lock control system is malfunctioning.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZLMP.html#RM100000000ZLMP">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Customization may not be possible depending on the malfunction in the wireless door lock control system.</p> 
+        </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E3KAC" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E3KAC">No malfunctions are present in the wireless door lock control system.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EWLAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EWLAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EZMAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZMAC " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZMAC " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO WIRELESS DOOR LOCK CONTROL SYSTEM <a class="content6-ptxt-xref" href="RM100000000ZLMP.html#RM100000000ZLMP">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000Z85P__RM100000000Z85P_06_0010">
+<p class="testgrp-heading">CHECK LIGHTING SYSTEM (for Interior)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the lighting system (for Interior) is malfunctioning.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000011EV6.html#RM1000000011EV6">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Customization may not be possible depending on the malfunction in the lighting system (for Interior).</p> 
+        </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYAAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EYAAE">No malfunctions are present in the lighting system (for Interior).</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESBAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ESBAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EVCAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVCAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVCAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO LIGHTING SYSTEM (for Interior) <a class="content6-ptxt-xref" href="RM1000000011EV6.html#RM1000000011EV6">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000Z85P__RM100000000Z85P_06_0012">
+<p class="testgrp-heading">CHECK LIGHTING SYSTEM (for Exterior)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the lighting system (for Exterior) is malfunctioning.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000010ROZ.html#RM1000000010ROZ">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Customization may not be possible depending on the malfunction in the lighting system (for Exterior).</p> 
+        </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETGAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ETGAE">No malfunctions are present in the lighting system (for Exterior).</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENHAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENHAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQIAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQIAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQIAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO LIGHTING SYSTEM (for Exterior) <a class="content6-ptxt-xref" href="RM1000000010ROZ.html#RM1000000010ROZ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000Z85P__RM100000000Z85P_06_0003">
+<p class="testgrp-heading">CHECK CUSTOMIZE ITEMS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Make a note of the customizable items for each main body ECU (multiplex network body ECU) related system.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">The items shown as customizable via the navigation system vehicle customization screen can also be changed using the GTS. In the following steps, the GTS will be used.</p> 
+        </div>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2"> <p class="test2-heading">To match-up the items on the navigation system vehicle customization screen with the items on the GTS, check the customize parameters list for the wireless door lock control system related items that can be customized via the navigation system vehicle customization screen.</p> <p class="test2-ptxt"> <a class="ptxt-xref" href="RM100000000ZLMR.html#RM100000000ZLMR">Click here</a>
+</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">To match-up the items on the navigation system vehicle customization screen with the items on the GTS, check the customize parameters list for the lighting system (for Interior) related items that can be customized via the navigation system vehicle customization screen.</p> <p class="test2-ptxt"> <a class="ptxt-xref" href="RM1000000011EV2.html#RM1000000011EV2">Click here</a>
+</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">To match-up the items on the navigation system vehicle customization screen with the items on the GTS, check the customize parameters list for the lighting system (for Exterior) related items that can be customized via the navigation system vehicle customization screen.</p> <p class="test2-ptxt"> <a class="ptxt-xref" href="RM1000000010RP1.html#RM1000000010RP1">Click here</a>
+</p> </li>
+</ol>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Using the GTS, confirm that it is possible to change the settings of the customize parameters that are available for customization via the navigation system vehicle customization screen.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EWOAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EWOAE">The items available for customization via the navigation system vehicle customization screen can be customized successfully using the GTS.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQPAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQPAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETQAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETQAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETQAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE RADIO AND DISPLAY RECEIVER ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000Z83T.html#RM100000000Z83T">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE MAIN BODY ECU (MULTIPLEX NETWORK BODY ECU) <a class="content6-ptxt-xref" href="RM100000000ZQ1S.html#RM100000000ZQ1S">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

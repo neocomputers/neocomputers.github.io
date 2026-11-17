@@ -1,0 +1,626 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/o Canister Pump Module), Diagnostic DTC:P319300" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290547" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/o Canister Pump Module)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001066N" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P319300</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/o Canister Pump Module), Diagnostic DTC:P319300</h1>
+<div class="section" id="RM100000001066N__RM100000001066N_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P319300</td> 
+       <td class="dtcname" headers="ID0EED">Fuel Run Out</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001066N__RM100000001066N_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The ECM receives the low fuel level signal from the combination meter assembly (meter ECU) to detect if the vehicle is running out of fuel.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0E2F" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EBG" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EHG" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0ENG" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0ETG" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EZG" width="NaN%">Memory</th> 
+        <th align="center" class="cellrowborder" id="ID0E6G" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0E2F " width="NaN%">P319300</td> 
+        <td align="left" class="cellrowborder" headers="ID0EBG " width="NaN%">Fuel Run Out</td> 
+        <td align="left" class="cellrowborder" headers="ID0EHG " width="NaN%"> <p class="ptxt">All of the following conditions are met (1 trip detection logic):</p> <br class="cellrowborder"/>
+         <ol class="list1">
+<li class="list1-item">
+<p class="list1-heading">Power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">The ECM receives the fuel empty low level signal from the combination meter assembly (meter ECU).</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">DTC detection conditions of either DTC P319000 or P319100 are met.</p>
+</li>
+</ol> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ENG " width="NaN%">- (This DTC indicates that the vehicle ran out of fuel and does not indicate the malfunction of part.)</td> 
+        <td align="left" class="cellrowborder" headers="ID0ETG " width="NaN%">Does not come on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EZG " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0E6G " width="NaN%">SAE Code: P3193</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001066N__RM100000001066N_03">
+     
+    <p class="subpara-subparaName">MONITOR DESCRIPTION</p> 
+    <p class="content5-ptxt">This DTC indicates that the vehicle ran out of fuel. If the ECM receives the low fuel level signal from the combination meter assembly (meter ECU) and the DTC detection conditions of either DTC P319000 or P319100 are met while the power switch is on (IG) or the engine is operating, the ECM stores this DTC.</p> 
+   </div>
+<div class="subpara" id="RM100000001066N__RM100000001066N_04">
+     
+    <p class="subpara-subparaName">MONITOR STRATEGY</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Frequency of Operation</td> 
+        <td class="cellrowborder" width="NaN%">Continuous</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001066N__RM100000001066N_05">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">If the MIL or master warning light illuminates, immediately end the confirmation driving pattern. When DTCs P319000, P319100 and P319300 are output, the engine may stop. In this case, the HV battery will no longer be chargeable and the distance that the vehicle can be driven will be limited.</p> 
+    </div> 
+    <div class="fignone--bigImage">
+<img alt="B006ICAE21" class="figure-graphic--bigImage" src="../images/b006icae21.png"/>
+<div class="figure-p"> 
+      <div class="tablenoborder">
+       <table class="big-image-callout">
+<caption class="p-table">
+         
+        </caption>
+<tbody class="p-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+          <td align="left" class="cellrowborder" width="NaN%">40 km/h [Engine running]</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+          <td align="left" class="cellrowborder" width="NaN%">Power Switch on (READY)</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" width="NaN%">*3</td> 
+          <td align="left" class="cellrowborder" width="NaN%">Total engine operation time of 10 minutes or more</td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div> 
+     </div>
+</div> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Apply the parking brake firmly.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (READY).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Press the EV/HV mode selection switch to select HV mode.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Fully depress the accelerator pedal for 10 seconds with the vehicle stopped, park (P) selected and the brake pedal depressed [A].</p>
+<div class="note">
+       <p class="notetitle">Note</p> 
+       <p class="ptxt">As soon as the engine starts, release the accelerator pedal.</p> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Release the parking brake.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Drive the vehicle at an average of approximately 40 km/h (25 mph) or more until the total engine operation time is 10 minutes or more [B].</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">When performing the confirmation driving pattern, obey all speed limits and traffic laws.</p> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">It is not necessary to maintain the vehicle speed at 40 km/h (25 mph) throughout the road test.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the engine stops, further depress the accelerator pedal to restart the engine.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes [C].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Read the pending DTCs.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is output, the system is malfunctioning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is not output, perform the following procedure.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Input the DTC: P319300.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tablenoborder">
+       <table class="item-table">
+<thead align="left" class="item-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0ESBAE" width="NaN%">GTS Display</th> 
+          <th align="center" class="cellrowborder" id="ID0EYBAE" width="NaN%">Description</th> 
+         </tr> 
+        </thead>
+<tbody class="item-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ESBAE " width="NaN%">NORMAL</td> 
+          <td class="cellrowborder" headers="ID0EYBAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System normal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ESBAE " width="NaN%">ABNORMAL</td> 
+          <td class="cellrowborder" headers="ID0EYBAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System abnormal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ESBAE " width="NaN%">INCOMPLETE</td> 
+          <td class="cellrowborder" headers="ID0EYBAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment not completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Perform driving pattern after confirming DTC enabling conditions</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ESBAE " width="NaN%">N/A</td> 
+          <td class="cellrowborder" headers="ID0EYBAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Unable to perform DTC judgment</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Number of DTCs which do not fulfill DTC preconditions has reached ECU memory limit</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">If the judgment result is INCOMPLETE or N/A, perform the Confirmation Driving Pattern and check the DTC judgment result again.</p> 
+      </div>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001066N__RM100000001066N_06">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">Vehicle Control History may be stored in the hybrid vehicle control ECU if the engine is malfunctioning. Certain vehicle condition information is recorded when Vehicle Control History is stored. Reading the vehicle conditions recorded in both the freeze frame data and Vehicle Control History can be useful for troubleshooting.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001AIKT.html#RM100000001AIKT">Click here</a>
+</p>
+<p class="item-ptxt">(Select Powertrain in Health Check and then check the time stamp data.)</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001064M.html#RM100000001064M">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">If any "Engine Malfunction" Vehicle Control History item has been stored in the hybrid vehicle control ECU, make sure to clear it. However, as all Vehicle Control History items are cleared simultaneously, if any Vehicle Control History items other than "Engine Malfunction" are stored, make sure to perform any troubleshooting for them before clearing Vehicle Control History.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001AIKT.html#RM100000001AIKT">Click here</a>
+</p>
+</li> 
+     </ul> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">When DTCs P319000, P319100 and P319300 are output, the engine may stop.</p>
+<p class="item-ptxt">In this case, after adding fuel or performing repairs, clear the DTCs. Then turn the power switch off to return to the normal condition.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">When this DTC is output and the engine is stopped, the HV battery cannot be charged since the vehicle is driven with the motor only. If the vehicle continues to be driven under this condition, the HV battery will become depleted and the power switch will not be able to be turned on (READY).</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001066N__RM100000001066N_01">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001066N__RM100000001066N_01_0001">
+<p class="testgrp-heading">CHECK SHORTAGE OF FUEL</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the amount of fuel remaining.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EONAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EONAE">There is enough fuel.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">DTCs P319000, P319100 and/or P319300 may be output if the vehicle ran out of fuel in the past.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If not enough fuel is added, DTC P319000, P319100 or P319300 may be output again. If the engine cannot be started because the vehicle is out of fuel, add fuel until the fuel level warning light turns off.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJPAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJPAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMQAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMQAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMQAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">OK</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 3  <a class="res-right-fin-false-xref" href="#RM100000001066N__RM100000001066N_01_0009">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001066N__RM100000001066N_01_0006">
+<p class="testgrp-heading">REFILL FUEL</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Add fuel until the fuel level warning light turns off.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETTAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETTAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWUAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWUAE " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001066N__RM100000001066N_01_0009">
+<p class="testgrp-heading">CLEAR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ES2AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ES2AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EV3AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EV3AE " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001066N__RM100000001066N_01_0004">
+<p class="testgrp-heading">CHECK WHETHER DTC OUTPUT RECURS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Drive the vehicle in accordance with the driving pattern described in Confirmation Driving Pattern.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E3CAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E3CAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFEAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ELEAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFEAG " width="NaN%">DTCs are not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELEAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFEAG " width="NaN%">DTC P319000 or P319100 is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELEAG " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFEAG " width="NaN%">DTC P319000 or P319100 and other DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELEAG " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC P319000, P319100 <a class="content6-ptxt-xref" href="RM100000001AMDU.html#RM100000001AMDU">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART <a class="content6-ptxt-xref" href="RM100000001AMDR.html#RM100000001AMDR">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

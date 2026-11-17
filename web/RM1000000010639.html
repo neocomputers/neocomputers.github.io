@@ -1,0 +1,645 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P210900" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290546" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000010639" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P210900</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P210900</h1>
+<div class="section" id="RM1000000010639__RM1000000010639_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P210900</td> 
+       <td class="dtcname" headers="ID0EED">Throttle/Pedal Position Sensor "A" Minimum Stop Performance</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM1000000010639__RM1000000010639_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The idle speed is controlled by the Electronic Throttle Control System (ETCS). The ETCS is comprised of a throttle actuator, which operates the throttle valve, and a throttle position sensor, which detects the opening amount of the throttle valve. The ECM controls the throttle actuator to adjust the throttle valve opening amount so that the idle speed is maintained at the target idle speed.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0E2F" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EBG" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EHG" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0ENG" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0ETG" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EZG" width="NaN%">Memory</th> 
+        <th align="center" class="cellrowborder" id="ID0E6G" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0E2F " width="NaN%">P210900</td> 
+        <td align="left" class="cellrowborder" headers="ID0EBG " width="NaN%">Throttle/Pedal Position Sensor "A" Minimum Stop Performance</td> 
+        <td align="left" class="cellrowborder" headers="ID0EHG " width="NaN%">The ISC learned value is approximately 3 times larger than normal even though the actual intake air amount during idle is within the normal range (up to 1.5 times the normal amount) (1 trip detection logic).</td> 
+        <td align="left" class="cellrowborder" headers="ID0ENG " width="NaN%">Throttle body assembly</td> 
+        <td align="left" class="cellrowborder" headers="ID0ETG " width="NaN%">Does not come on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EZG " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0E6G " width="NaN%">SAE Code: P2109</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">The ISC learned value is the calculated intake air amount corresponding to the throttle opening amount necessary to maintain the idling speed.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">This malfunction is only detected once per trip. After it has been detected once, the system will not monitor for the malfunction for the rest of the trip.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">The system uses the throttle body assembly and mass air flow meter sub-assembly to detect this malfunction.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000010639__RM1000000010639_02">
+     
+    <p class="subpara-subparaName">MONITOR DESCRIPTION</p> 
+    <p class="content5-ptxt">If there are deposits in the throttle valve, a decrease in the ISC flow rate may cause engine stall or unstable idling. Therefore, the necessary ISC flow rate for idling is maintained using the ISC learned value and feedback. The ECM stores this DTC if the ISC learned value approaches its limit. The ECM begins monitoring for the DTC detection conditions when the following preconditions are met:</p> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">The mass air flow meter sub-assembly is normal.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Atmospheric pressure is 85 kPa(abs) [12.3 psi(abs)] or higher.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">The vehicle has been driven at a speed of 30 km/h (19 mph) or more at least once.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">The engine coolant temperature is 45°C (113°F) or less at engine start, the engine is warmed up and conditions for ISC learning are met, or the power switch has been turned on (READY) (including when the engine is running) for 1 hour or more, the engine is warmed up and conditions for ISC learning are met.</p>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM1000000010639__RM1000000010639_03">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">Since a pending DTC is not stored for this DTC, it takes time to confirm whether the malfunction has been successfully repaired by checking for this DTC. When confirming whether the malfunction has been successfully repaired, compare "ISC Learning Value" recorded in the freeze frame data with "ISC Learning Value" in the Data List after repairs have been made to save time.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Read freeze frame data using the GTS. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air fuel ratio was lean or rich, and other data from the time the malfunction occurred.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000010639__RM1000000010639_05">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM1000000010639__RM1000000010639_05_0001">
+<p class="testgrp-heading">CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P210900)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXLAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EXLAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EANAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EGNAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EANAC " width="NaN%">DTC P210900 is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGNAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EANAC " width="NaN%">DTC P210900 and other DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGNAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If any DTCs other than P210900 are output, troubleshoot those DTCs first.</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART <a class="content6-ptxt-xref" href="RM100000001AMDC.html#RM100000001AMDC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010639__RM1000000010639_05_0002">
+<p class="testgrp-heading">READ FREEZE FRAME DATA (ISC LEARNING VALUE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Using the GTS, check "ISC Learning Value" in the freeze frame data.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001AMDA.html#RM100000001AMDA">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Be sure to confirm that the freeze frame date item "ISC Learning Value" is the same as that used when confirming whether the malfunction has been successfully repaired.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E3CAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E3CAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E6DAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6DAE " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010639__RM1000000010639_05_0009">
+<p class="testgrp-heading">INSPECT THROTTLE BODY ASSEMBLY</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Check for foreign matter between the throttle valve and the housing.</p>
+<div class="fignone--bigImage">
+<img alt="B006IY5C10" class="figure-graphic--bigImage" src="../images/b006iy5c10.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Throttle Body Assembly</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Bore</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*3</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Throttle Valve</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Reference</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Throttle Body Assembly Cross-section Diagram</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+              <td align="left" class="cellrowborder" width="NaN%">When valve fully opened</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Deposits</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">The illustration is for reference only, actual parts may differ.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EFMAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EFMAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EONAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EUNAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EONAE " width="NaN%">Foreign matter between the throttle valve and housing</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EUNAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EONAE " width="NaN%">No foreign matter between the throttle valve and housing</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EUNAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the throttle body assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE THROTTLE BODY ASSEMBLY <a class="content6-ptxt-xref" href="RM100000001067E.html#RM100000001067E">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010639__RM1000000010639_05_0008">
+<p class="testgrp-heading">REMOVE FOREIGN MATTER (CLEAN THROTTLE BODY ASSEMBLY)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Clean off any deposits inside of the throttle body assembly.</p>
+<div class="fignone--bigImage">
+<img alt="B006HD6C01" class="figure-graphic--bigImage" src="../images/b006hd6c01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td class="cellrowborder" width="NaN%">Throttle Body Assembly</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+              <td class="cellrowborder" width="NaN%">Bore</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*3</td> 
+              <td class="cellrowborder" width="NaN%">Throttle Valve</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%">Reference</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td class="cellrowborder" width="NaN%">Throttle Body Assembly Cross-section Diagram</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+              <td class="cellrowborder" width="NaN%">When valve fully opened</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+              <td class="cellrowborder" width="NaN%">Do not directly apply cleaner</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*e</td> 
+              <td class="cellrowborder" width="NaN%">Deposits</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2"> <p class="test2-heading">Push open the throttle valve and wipe off any deposits from the valve and bore using a cloth soaked in non-residue solvent.</p> 
+          <div class="note">
+           <p class="notetitle">Note</p> 
+           <br class="note"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Make sure that the cloth or your fingers do not get caught in the valve.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Make sure that foreign matter does not enter the throttle valve.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Do not directly apply non-residue solvent to the throttle body assembly or wash the throttle body assembly. Cleaning solvent may leak into the motor from the shaft and cause problems such as rust or valve movement problems.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">If there is coating material on the edge of the throttle valve, be careful not to remove it.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Push the throttle valve open gently with your finger and check that the throttle valve moves smoothly.</p>
+</li> 
+           </ul> 
+          </div> 
+          <div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">If the throttle valve does not open smoothly, replace the throttle body assembly.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001067E.html#RM100000001067E">Click here</a>
+</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The illustration is for reference only, actual parts may differ.</p>
+</li> 
+           </ul> 
+          </div> </li>
+</ol>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E42AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E42AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EA4AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EA4AE " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM1000000010639__RM1000000010639_05_0004">
+<p class="testgrp-heading">READ VALUE USING GTS (ISC LEARNING VALUE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Perform "Inspection After Repair" after cleaning the throttle body assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Data List / ISC Learning Value.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E6BAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E6BAG " width="NaN%">ISC Learning Value</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, read the Data List.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EEHAG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EEHAG">The value of ISC Learning Value is half or less of ISC Learning Value recorded in the freeze frame data.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the throttle body assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETIAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETIAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWJAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWJAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWJAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE THROTTLE BODY ASSEMBLY <a class="content6-ptxt-xref" href="RM100000001067E.html#RM100000001067E">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

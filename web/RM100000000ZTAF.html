@@ -1,0 +1,760 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ENTRY AND START SYSTEM(for Start Function) Power Source Mode does not Change to ON (IG)" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058032" name="sectionId"/> 
+  <meta content="THEFT DETERRENT / KEYLESS ENTRY" name="sectionName"/> 
+  <meta content="_0288581" name="ttlId"/> 
+  <meta content="ENTRY AND START SYSTEM(for Start Function)" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000ZTAF" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Power Source Mode does not Change to ON (IG)</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ENTRY AND START SYSTEM(for Start Function)<span class="topictitle1"> Power Source Mode does not Change to ON (IG)</span>
+</h1>
+<div class="subpara" id="RM100000000ZTAF__RM100000000ZTAF_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">If the power switch is pressed with the electrical key transmitter sub-assembly in the cabin, the certification ECU (smart key ECU assembly) receives a signal and changes the power source mode.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Related Data List and Active Test Items
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EIF" width="NaN%">Problem Symptom</th> 
+        <th align="center" class="cellrowborder" id="ID0EOF" width="NaN%">Data List and Active Test</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EIF " width="NaN%">Power source mode does not change to on (IG) but does change to on (ACC)</td> 
+        <td class="cellrowborder" headers="ID0EOF " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <p class="list1-li-title">
+<strong class="li-title-title">Power Source Control</strong>
+</p> 
+          <li class="list1-item">
+<p class="list1-heading">Power Supply Condition</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">IG Circuit</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">IG Relay Monitor (Outside)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">IG Relay Monitor (Inside)</p>
+</li> 
+         </ul> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000ZTAF__RM100000000ZTAF_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <p class="content5-ptxt"> <a class="ptxt-xref" href="RM100000000ZTAN.html#RM100000000ZTAN_06_0110">Click here</a>
+</p> 
+   </div>
+<div class="subpara" id="RM100000000ZTAF__RM100000000ZTAF_03">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">When using the GTS with the power switch off, connect the GTS to the DLC3 and turn a courtesy light switch on and off at intervals of 1.5 seconds or less until communication between the GTS and the vehicle begins. Then select Model Code "KEY REGIST" under manual mode and enter the following menus: Body Electrical / Entry&amp;Start(CAN). While using the GTS, periodically turn a courtesy light switch on and off at intervals of 1.5 seconds or less to maintain communication between the GTS and the vehicle.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">The entry and start system (for Start Function) uses the LIN communication system and CAN communication system. Inspect the communication function by following How to Proceed with Troubleshooting. Troubleshoot the entry and start system (for Start Function) after confirming that the communication systems are functioning properly.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZTAI.html#RM100000000ZTAI">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Make sure that no DTCs are output. If any DTCs are output, proceed to Diagnostic Trouble Code Chart.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">If the entry and start system (for Start Function) has been canceled, enable the system before performing troubleshooting.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZTAH.html#RM100000000ZTAH">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Inspect the fuses of circuits related to this system before performing the following procedure.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Before replacing the certification ECU (smart key ECU assembly), refer to entry and start system (for Start Function) Precaution.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZTA5.html#RM100000000ZTA5">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">After completing repairs, confirm that the problem does not recur.</p>
+</li> 
+     </ul> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">When the cable is disconnected and reconnected to the negative (-) auxiliary battery terminal, the power source mode returns to the state it was in before the cable was disconnected.</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000ZTAF__RM100000000ZTAF_05">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000ZTAF__RM100000000ZTAF_05_0028">
+<p class="testgrp-heading">CHECK FOR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Using the GTS, check for certification ECU (smart key ECU assembly) DTCs.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Power Source Control &gt; Trouble Codes<br class="test1Root-test1"/>Body Electrical &gt; Entry&amp;Start &gt; Trouble Codes<br class="test1Root-test1"/>Body Electrical &gt; Starting Control &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EEAAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EEAAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMBAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ERBAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EMBAE " width="NaN%">DTCs are not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ERBAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EMBAE " width="NaN%">Entry and start system (for Start Function) DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ERBAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DIAGNOSTIC TROUBLE CODE CHART <a class="content6-ptxt-xref" href="RM100000000ZTAK.html#RM100000000ZTAK">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTAF__RM100000000ZTAF_05_0030">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) - INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I1 certification ECU (smart key ECU assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the 3A and 3D instrument panel junction block assembly connectors.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYFAE" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EYFAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFHAE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0ELHAE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ERHAE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFHAE " width="NaN%">I1-17 (IG1D) - 3A-17</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELHAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ERHAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFHAE " width="NaN%">3D-3 - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELHAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ERHAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFHAE " width="NaN%">I1-17 (IG1D) or 3A-17 - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELHAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ERHAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EOKAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EOKAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ERLAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERLAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERLAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTAF__RM100000000ZTAF_05_0032">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY - NO. 1 INTEGRATION RELAY)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the 1A No. 1 integration relay connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the 3F instrument panel junction block assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKPAE" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EKPAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EXQAE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E4QAE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EDRAE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXQAE " width="NaN%">3F-12 - 1A-2</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E4QAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDRAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXQAE " width="NaN%">3F-12 or 1A-2 - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E4QAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDRAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXQAE " width="NaN%">3F-13 - 1A-7</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E4QAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDRAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXQAE " width="NaN%">3F-13 or 1A-7 - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E4QAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDRAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXUAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EXUAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E1VAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1VAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1VAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTAF__RM100000000ZTAF_05_0036">
+<p class="testgrp-heading">CHECK INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY (IG1-NO. 1, IG1-NO. 2 RELAY)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the instrument panel junction block assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZQ1S.html#RM100000000ZQ1S">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="A003M1DC08" class="figure-graphic--bigImage" src="../images/a003m1dc08.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Component without harness connected</p> <p class="ptxt">(Instrument Panel Junction Block Assembly)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EW3AE" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EW3AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ED5AE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJ5AE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EP5AE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ED5AE " width="NaN%">3A-17 - 3D-3</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJ5AE " width="NaN%">20°C (68°F)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EP5AE " width="NaN%">130.92 to 190.69 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ED5AE " rowspan="2" width="NaN%">3K-1 - 3A-35</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJ5AE " width="NaN%">Auxiliary battery voltage applied between terminals 3A-17 and 3D-3</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EP5AE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJ5AE " width="NaN%">Auxiliary battery voltage not applied between terminals 3A-17 and 3D-3</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EP5AE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ED5AE " rowspan="2" width="NaN%">3K-1 - 3A-11</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJ5AE " width="NaN%">Auxiliary battery voltage applied between terminals 3A-17 and 3D-3</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EP5AE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJ5AE " width="NaN%">Auxiliary battery voltage not applied between terminals 3A-17 and 3D-3</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EP5AE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQCAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQCAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETDAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETDAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETDAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000ZQ1S.html#RM100000000ZQ1S">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTAF__RM100000000ZTAF_05_0038">
+<p class="testgrp-heading">INSPECT NO. 1 INTEGRATION RELAY (IG2 NO. 1, IG1 NO. 3 RELAY)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the No. 1 integration relay.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZQ1U.html#RM100000000ZQ1U">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the No. 1 integration relay.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZQ1W.html#RM100000000ZQ1W">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4HAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E4HAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EAJAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EAJAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EAJAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE NO. 1 INTEGRATION RELAY (IG2 NO. 1, IG1 NO. 3 RELAY) <a class="content6-ptxt-xref" href="RM100000000ZQ1U.html#RM100000000ZQ1U">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000ZTAF__RM100000000ZTAF_05_0042">
+<p class="testgrp-heading">CHECK CERTIFICATION ECU (SMART KEY ECU ASSEMBLY)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the I1 certification ECU (smart key ECU assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the instrument panel junction block assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZQ1Q.html#RM100000000ZQ1Q">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the No. 1 integration relay.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZQ1V.html#RM100000000ZQ1V">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003O5PC32" class="figure-graphic" src="../images/a003o5pc32.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Component with harness connected</p> <p class="ptxt">(Certification ECU (Smart Key ECU Assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJQAG" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJQAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWRAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3RAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ECSAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWRAG " width="NaN%">I1-17 (IG1D) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3RAG " width="NaN%">Power switch on (ACC) → Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECSAG " width="NaN%">1 V or less → 9 V or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EUTAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EUTAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EXUAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXUAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXUAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>USE SIMULATION METHOD TO CHECK <a class="content6-ptxt-xref" href="RM100000001145X.html#RM100000001145X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

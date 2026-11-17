@@ -1,0 +1,542 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="PLUG-IN CHARGE CONTROL SYSTEM Cannot Complete Charging by Scheduled Departure Time" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296365" name="ttlId"/> 
+  <meta content="PLUG-IN CHARGE CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000011O1T" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Cannot Complete Charging by Scheduled Departure Time</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">PLUG-IN CHARGE CONTROL SYSTEM<span class="topictitle1"> Cannot Complete Charging by Scheduled Departure Time</span>
+</h1>
+<div class="subpara" id="RM1000000011O1T__RM1000000011O1T_01">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM1000000011O1T__RM1000000011O1T_01_0012">
+<p class="testgrp-heading">CHECK DTC OUTPUT (HEALTH CHECK)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Health Check.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check DTCs.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ECAAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EIAAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ECAAC " width="NaN%">No DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EIAAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ECAAC " width="NaN%">DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EIAAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011O1T__RM1000000011O1T_01_0014">
+<p class="testgrp-heading">CHECK FOR VEHICLE CONTROL HISTORY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Plug-in Control / Utility / Vehicle Control History.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Plug-in Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ERFAC" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ERFAC " width="NaN%">Vehicle Control History (RoB)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Utility / Vehicle Control History.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EFLAC" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EFLAC " width="NaN%">Vehicle Control History (RoB)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for Vehicle Control History.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBAAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBAAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJBAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EPBAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EJBAE " width="NaN%">Vehicle Control History not stored</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPBAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EJBAE " width="NaN%">Vehicle Control History stored</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPBAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO VEHICLE CONTROL HISTORY PLUG-IN CHARGE CONTROL SYSTEM  <a class="ptxt-xref" href="RM1000000011O1I.html#RM1000000011O1I">Click here</a> HYBRID CONTROL SYSTEM  <a class="ptxt-xref" href="RM100000001AIKT.html#RM100000001AIKT">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM1000000011O1T__RM1000000011O1T_01_0005">
+<p class="testgrp-heading">SIMULATION TEST (SETTING CHARGE SCHEDULE)</p>
+<div class="note">
+       <p class="notetitle">Note</p> 
+       <br class="note"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">Make sure to use a known good AC power source.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Use the same 110 to 240 V power that the customer used to plug-in charge the vehicle.</p>
+</li> 
+       </ul> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">When setting a departure time, make sure to consider the current SOC of the HV battery.</p> 
+       <p class="ptxt">Setting the date (year/month/day) and time:</p> 
+       <br class="tip"/>
+       <ul class="list1 nonmark"> 
+        <li class="list1-item">
+<p class="list1-nonmark-heading">Using the steering pad switches, set the following on the multi-information display.</p>
+</li> 
+        <br class="list1-li-list2"/>
+<ul class="li-list2-list2 nonmark"> 
+          <li class="list2-item">
+<p class="li-list2-list2-nonmark-heading">Time:</p>
+<p class="item-ptxt">Set the time through the "Clock Setting" display.</p>
+</li> 
+          <li class="list2-item">
+<p class="li-list2-list2-nonmark-heading">Date (Year/Month/Day):</p>
+<p class="item-ptxt">Set the date (year/month/day) through the "Calendar" setting on the "Meter Customize" screen.</p>
+</li> 
+         </ul> 
+       </ul> 
+       <p class="ptxt">Timer charging operates in accordance with the set date (year/month/day) and time of the multi-information display, not with the time of the navigation receiver assembly.</p> 
+       <br class="tip"/>
+       <ul class="list1 nonmark"> 
+        <li class="list1-item">
+<p class="list1-nonmark-heading">The time of the multi-information display is not automatically adjusted for changes in time zone or daylight savings time.</p>
+</li> 
+       </ul> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Health Check.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear DTCs.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Plug-in Control / Utility / Vehicle Control History.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Plug-in Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EDNAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EDNAE " width="NaN%">Vehicle Control History (RoB)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear all Vehicle Control History items.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Utility / Vehicle Control History.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ECTAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ECTAE " width="NaN%">Vehicle Control History (RoB)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear all Vehicle Control History items.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Data List / Hybrid Battery SOC.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EBZAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EBZAE " width="NaN%">Hybrid Battery SOC</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, read the Data List and confirm that the SOC of the HV battery is less than 70%.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If the SOC of the HV battery is 70% or more, drive the vehicle in EV mode to discharge the HV battery until the SOC becomes less than 70%.</p> 
+        </div>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EZ6AE" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EAAAG" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EGAAG" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EMAAG" width="NaN%">Normal Condition</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZ6AE " width="NaN%">Hybrid Battery SOC</td> 
+              <td align="left" class="cellrowborder" headers="ID0EAAAG " width="NaN%">Hybrid battery SOC</td> 
+              <td align="left" class="cellrowborder" headers="ID0EGAAG " width="NaN%">0.00 to 100.00%</td> 
+              <td align="left" class="cellrowborder" headers="ID0EMAAG " width="NaN%">0.00 to 100.00%: Always</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the date and time displayed on the multi-information display are correct and adjust them if necessary.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">As timer charging is performed based on the time, year, month and day of the multi-information display, make sure that they are set correctly.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Using the multi-information display, set the charge schedule departure time.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the electric vehicle charger cable assembly to the vehicle and charge the HV battery using the timer charging until the set departure time.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Health Check.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check DTCs.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Plug-in Control / Utility / Vehicle Control History.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Plug-in Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EWIAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EWIAG " width="NaN%">Vehicle Control History (RoB)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Utility / Vehicle Control History.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EKOAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKOAG " width="NaN%">Vehicle Control History (RoB)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for Vehicle Control History.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the electric vehicle charger cable assembly.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2TAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2TAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDVAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJVAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EDVAG " width="NaN%">DTCs output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJVAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EDVAG " width="NaN%">No DTCs output, Vehicle Control History stored</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJVAG " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EDVAG " width="NaN%">DTCs and Vehicle Control History not stored and charging did not complete by set departure time</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJVAG " width="NaN%">C</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EDVAG " width="NaN%">DTCs and Vehicle Control History not stored and charging completed by set departure time</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJVAG " width="NaN%">D</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO VEHICLE CONTROL HISTORY PLUG-IN CHARGE CONTROL SYSTEM  <a class="ptxt-xref" href="RM1000000011O1I.html#RM1000000011O1I">Click here</a> HYBRID CONTROL SYSTEM  <a class="ptxt-xref" href="RM100000001AIKT.html#RM100000001AIKT">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>Analyze the cause according to the following table. Inspect auxiliary battery <a class="ptxt-xref" href="RM10000000106YX.html#RM10000000106YX">Click here</a> Full charge was prioritized (if a departure time is set using timer charging) Take appropriate action in accordance with the result of the cause analysis. </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">D</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CAUSE ANALYSIS (ENVIRONMENT/USER RELATED CAUSE) Perform cause analysis in the order of "Environment" and "User" categories as specified in the following tables. As the departure time setting is designed to complete charging by the set departure time, charging will be performed in a manner to complete charging before the set time. Interview customer and check the charging station. <a class="ptxt-xref" href="RM1000000011O1C.html#RM1000000011O1C">Click here</a> Explain to the customer that plug-in charging may take longer than normal if the supplied AC voltage is low. Interview customer and check the charging station. <a class="ptxt-xref" href="RM1000000011O1C.html#RM1000000011O1C">Click here</a> Plug-in charging may take longer than normal if the charging station has an electrical power management function. Refer to the user's manual for the charging station. Explain to the customer that if the temperature of the HV battery is changing, plug-in charging will take longer than normal. When the outside temperature is low, plug-in charging may take longer than normal due to the HV battery heater operation in order to ensure the EV driving distance. Explain to the customer that if an abnormally high temperature is detected on the power supply plug, the charging current may be reduced and the charging time will increase. Check if the electrical outlet is damaged or loose. Explain to the customer that timer charging operates in accordance with the set date (year/month/day) and time of the multi-information display not with the time of the navigation receiver assembly. Explain to the customer that as the time on the multi-information display is not automatically adjusted for changes in time zone or daylight savings time, it is necessary to adjust the time manually. Interview customer and provide instruction on usage. <a class="ptxt-xref" href="RM1000000011O1C.html#RM1000000011O1C">Click here</a> Refer to Owner's Manual. Interview customer and provide instruction on usage. <a class="ptxt-xref" href="RM1000000011O1C.html#RM1000000011O1C">Click here</a> Explain to the customer that when Charge Mode is set to "Start", charging will begin at the set time and if it is set to "Departure", charging will complete by the set time. Take appropriate action in accordance with the result of the cause analysis. </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

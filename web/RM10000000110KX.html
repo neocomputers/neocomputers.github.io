@@ -1,0 +1,780 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C146E, C146F" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_54" name="servcatId"/> 
+  <meta content="Brake" name="servcatName"/> 
+  <meta content="_058045" name="sectionId"/> 
+  <meta content="BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS" name="sectionName"/> 
+  <meta content="_0295571" name="ttlId"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM10000000110KX" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>C146E, C146F</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C146E, C146F</h1>
+<div class="section" id="RM10000000110KX__RM10000000110KX_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C146E</td> 
+       <td class="dtcname" headers="ID0EED">Open Circuit in ABS Solenoid Relay Circuit</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C146F</td> 
+       <td class="dtcname" headers="ID0EED">Short Circuit in ABS Solenoid Relay Circuit</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM10000000110KX__RM10000000110KX_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The ABS solenoid relay built into the skid control ECU (brake booster with master cylinder assembly) supplies power to the holding solenoid and reduction solenoid.</p> 
+    <p class="content5-ptxt">The ABS solenoid relay is operated 1.5 seconds after the power switch is turned on (IG), and is turned off if an open or short in the ABS solenoid is detected during self-diagnosis when the vehicle starts driving.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EJG" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EPG" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EVG" width="NaN%">INF Code</th> 
+        <th align="center" class="cellrowborder" id="ID0E2G" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EBH" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EHH" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EJG " width="NaN%">C146E</td> 
+        <td align="left" class="cellrowborder" headers="ID0EPG " width="NaN%">Open Circuit in ABS Solenoid Relay Circuit</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVG " width="NaN%">1135</td> 
+        <td align="left" class="cellrowborder" headers="ID0E2G " width="NaN%"> <p class="ptxt">Either of the following is detected:</p> <br class="cellrowborder"/>
+         <ol class="list1">
+<li class="list1-item">
+<p class="list1-heading">When the power switch is on (READY):</p>
+<p class="item-ptxt">When the IG1 terminal voltage is 9.5 V or more and operation of the ABS solenoid relay is requested, the ABS solenoid relay does not operate (+BS terminal voltage is less than 3.5 V) for 0.2 seconds or more.</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">When the power switch is off:</p>
+<p class="item-ptxt">When operation of the ABS solenoid relay is requested, the ABS solenoid relay does not operate (+BS terminal voltage is less than 3.5 V) for 0.2 seconds or more.</p>
+</li>
+</ol> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EBH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Wire harness or connector</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Skid control ECU (brake booster with master cylinder assembly)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EHH " width="NaN%">ABS DTC</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EJG " width="NaN%">C146F</td> 
+        <td align="left" class="cellrowborder" headers="ID0EPG " width="NaN%">Short Circuit in ABS Solenoid Relay Circuit</td> 
+        <td align="center" class="cellrowborder" headers="ID0EVG " width="NaN%">1136</td> 
+        <td align="left" class="cellrowborder" headers="ID0E2G " width="NaN%">When operation of the ABS solenoid relay is not requested, the ABS solenoid relay operates (+BS terminal voltage is 3.5 V or more) for 4.5 seconds or more.</td> 
+        <td align="left" class="cellrowborder" headers="ID0EBH " width="NaN%">Skid control ECU (brake booster with master cylinder assembly)</td> 
+        <td align="left" class="cellrowborder" headers="ID0EHH " width="NaN%">ABS DTC</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       DTC Detection Conditions: C146E INF Code: 1135
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th class="cellrowborder" colspan="2" id="ID0EWFAC" rowspan="2"/> 
+        <th align="center" class="cellrowborder" colspan="2" id="ID0E5FAC">Vehicle Condition</th> 
+       </tr> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EKGAC" width="NaN%">Pattern 1</th> 
+        <th align="center" class="cellrowborder" id="ID0EQGAC" width="NaN%">Pattern 2</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EWFAC ID0EKGAC " rowspan="2" width="NaN%">Diagnosis Condition</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWFAC ID0EQGAC " width="NaN%">The IG1 terminal voltage is 9.5 V or more with the power switch on (READY).</td> 
+        <td align="center" class="cellrowborder" headers="ID0E5FAC " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0E5FAC " width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0EWFAC ID0EQGAC " width="NaN%">When the power switch is off.</td> 
+        <td align="center" class="cellrowborder" headers="ID0E5FAC " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0E5FAC " width="NaN%">○</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EWFAC ID0EKGAC " rowspan="2" width="NaN%">Malfunction Status</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWFAC ID0EQGAC " width="NaN%">When operation of the ABS solenoid relay is requested, the ABS solenoid relay does not operate (+BS terminal voltage is less than 3.5 V).</td> 
+        <td align="center" class="cellrowborder" headers="ID0E5FAC " width="NaN%">○</td> 
+        <td align="center" class="cellrowborder" headers="ID0E5FAC " width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0EWFAC ID0EQGAC " width="NaN%">When operation of the ABS solenoid relay is requested, the ABS solenoid relay does not operate (+BS terminal voltage is less than 3.5 V).</td> 
+        <td align="center" class="cellrowborder" headers="ID0E5FAC " width="NaN%">-</td> 
+        <td align="center" class="cellrowborder" headers="ID0E5FAC " width="NaN%">○</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" colspan="2" headers="ID0EWFAC ID0EKGAC ID0EQGAC ">Detection Time</td> 
+        <td align="center" class="cellrowborder" headers="ID0E5FAC " width="NaN%">0.2 seconds or more</td> 
+        <td align="center" class="cellrowborder" headers="ID0E5FAC " width="NaN%">0.2 seconds or more</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" colspan="2" headers="ID0EWFAC ID0EKGAC ID0EQGAC ">Number of Trips</td> 
+        <td align="center" class="cellrowborder" headers="ID0E5FAC " width="NaN%">1 trip</td> 
+        <td align="center" class="cellrowborder" headers="ID0E5FAC " width="NaN%">1 trip</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">DTC will be output when conditions for either of the patterns in the table above are met.</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110KX__RM10000000110KX_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <p class="content5-ptxt">Refer to DTCs C1352, C1353, C1354, C1355, C1356, C1357, C1358 and C1359.</p> 
+    <p class="content5-ptxt"> <a class="ptxt-xref" href="RM10000000110KC.html#RM10000000110KC">Click here</a>
+</p> 
+   </div>
+<div class="subpara" id="RM10000000110KX__RM10000000110KX_03">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">After replacing the skid control ECU (brake booster with master cylinder assembly), perform linear solenoid valve offset learning, ABS holding solenoid valve learning, yaw rate and acceleration sensor zero point calibration and system information memorization after performing "Reset Memory".</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM10000000110JB.html#RM10000000110JB">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Inspect the fuses for circuits related to this system before performing the following procedure.</p>
+</li> 
+     </ul> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">When DTCs C1241 and/or C1417 are output together with C146E and/or C146F, inspect and repair the trouble areas indicated by C1241 and/or C1417 first.</p> 
+     <p class="ptxt">for C1241: <a class="ptxt-xref" href="RM10000000110J8.html#RM10000000110J8">Click here</a>
+</p> 
+     <p class="ptxt">for C1417: <a class="ptxt-xref" href="RM10000000110KK.html#RM10000000110KK">Click here</a>
+</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110KX__RM10000000110KX_04">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM10000000110KX__RM10000000110KX_04_0008">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (BS TERMINAL)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HQOC74" class="figure-graphic" src="../images/b006hqoc74.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Skid Control ECU (Brake Booster with Master Cylinder Assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Make sure that there is no looseness at the locking part and the connecting part of the connector.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMDAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EMDAE">The connector is securely connected.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check both the connector case and the terminals for deformation and corrosion.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E3EAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E3EAE">No deformation or corrosion.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBGAE" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBGAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EOHAE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EUHAE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E1HAE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EOHAE " width="NaN%">A32-52 (BS) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EUHAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1HAE " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMJAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EMJAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPKAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPKAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPKAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR (BS CIRCUIT) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110KX__RM10000000110KX_04_0009">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY - BRAKE ACTUATOR ASSEMBLY)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Make sure that there is no looseness at the locking part and the connecting part of the connector.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPNAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EPNAE">The connector is securely connected.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A33 brake actuator assembly connector (for LHD).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A34 brake actuator assembly connector (for RHD).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check both the connector case and the terminals for deformation and corrosion.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKPAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EKPAE">No deformation or corrosion.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPQAE" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPQAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<caption class="table">
+                for LHD
+               </caption>
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E6RAE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EFSAE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ELSAE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-14 (+BS) - A33-38 (+BS)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-14 (+BS) or A33-38 (+BS) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-48 (SFRH) - A33-8 (SFRH)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-48 (SFRH) or A33-8 (SFRH) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-49 (SFLH) - A33-37 (SFLH)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-49 (SFLH) or A33-37 (SFLH) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-50 (SRRH) - A33-11 (SRRH)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-50 (SRRH) or A33-11 (SRRH) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-51 (SRLH) - A33-34 (SRLH)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-51 (SRLH) or A33-34 (SRLH) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-44 (SFRR) - A33-2 (SFRR)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-44 (SFRR) or A33-2 (SFRR) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-45 (SFLR) - A33-31 (SFLR)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-45 (SFLR) or A33-31 (SFLR) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-46 (SRRR) - A33-5 (SRRR)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-46 (SRRR) or A33-5 (SRRR) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-47 (SRLR) - A33-28 (SRLR)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAE " width="NaN%">A32-47 (SRLR) or A33-28 (SRLR) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFSAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELSAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPQAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<caption class="table">
+                for RHD
+               </caption>
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EVAAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E2AAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EBBAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-14 (+BS) - A34-38 (+BS)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-14 (+BS) or A34-38 (+BS) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-48 (SFRH) - A34-37 (SFRH)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-48 (SFRH) or A34-37 (SFRH) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-49 (SFLH) - A34-8 (SFLH)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-49 (SFLH) or A34-8 (SFLH) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-50 (SRRH) - A34-34 (SRRH)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-50 (SRRH) or A34-34 (SRRH) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-51 (SRLH) - A34-11 (SRLH)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-51 (SRLH) or A34-11 (SRLH) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-44 (SFRR) - A34-31 (SFRR)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-44 (SFRR) or A34-31 (SFRR) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-45 (SFLR) - A34-2 (SFLR)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-45 (SFLR) or A34-2 (SFLR) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-46 (SRRR) - A34-28 (SRRR)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-46 (SRRR) or A34-28 (SRRR) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-47 (SRLR) - A34-5 (SRLR)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVAAG " width="NaN%">A32-47 (SRLR) or A34-5 (SRLR) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJOAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJOAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMPAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMPAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMPAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM10000000110KX__RM10000000110KX_04_0003">
+<p class="testgrp-heading">RECONFIRM DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the A33 brake actuator assembly connector (for LHD).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the A34 brake actuator assembly connector (for RHD).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (READY).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Perform a road test.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the same DTC is output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EP2AG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EP2AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EY3AG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E43AG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EY3AG " width="NaN%">DTCs C146E and C146F are not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E43AG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EY3AG " width="NaN%">DTCs C146E and/or C146F are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E43AG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If a speed signal of 20 km/h (12 mph) or more is sent to the skid control ECU (brake booster with master cylinder assembly) with the power switch on (IG) and the stop light switch assembly off, the ECU performs self diagnosis of the motor and solenoid circuits.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If the normal system code is output (no DTCs are output), slightly jiggle the connectors, wire harness, and fuses of the skid control ECU (brake booster with master cylinder assembly).</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If any DTCs are output while jiggling a connector or wire harness from the brake booster with master cylinder assembly, inspect and repair the connector or wire harness.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">The DTCs were probably output due to a bad connection of the connector terminal.</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>USE SIMULATION METHOD TO CHECK <a class="content6-ptxt-xref" href="RM100000001145X.html#RM100000001145X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for LHD: <a class="content6-ptxt-xref" href="RM100000000Z7YC.html#RM100000000Z7YC">Click here</a> <br/>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for RHD: <a class="content6-ptxt-xref" href="RM100000000Z7YF.html#RM100000000Z7YF">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

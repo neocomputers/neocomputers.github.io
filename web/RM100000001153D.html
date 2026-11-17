@@ -1,0 +1,2302 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="HYBRID CONTROL SYSTEM, Diagnostic DTC:P0D0700" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296362" name="ttlId"/> 
+  <meta content="HYBRID CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001153D" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P0D0700</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">HYBRID CONTROL SYSTEM, Diagnostic DTC:P0D0700</h1>
+<div class="section" id="RM100000001153D__RM100000001153D_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P0D0700</td> 
+       <td class="dtcname" headers="ID0EED">Hybrid/EV Battery Charging System Positive Contactor Stuck Closed</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001153D__RM100000001153D_10">
+     
+    <p class="subpara-subparaName">DTC SUMMARY</p> 
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000001153D__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">MALFUNCTION DESCRIPTION</p>
+<p class="step1-ptxt">The hybrid vehicle control ECU detects a stuck closed malfunction of a charge relay on the HV battery positive (+) terminal side.</p>
+<p class="step1-ptxt">The cause of this malfunction may be one of the following:</p>
+<br class="step1Root-step1"/>
+<ul class="step1-list1"> 
+       <p class="list1-li-title">
+<strong class="li-title-title">Electric vehicle charger voltage sensor (VCHG) internal circuit malfunction</strong>
+</p> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Voltage sensor (VCHG) malfunction</p>
+</li> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Electric vehicle charger assembly malfunction</p>
+</li> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Communication (wire harness) malfunction</p>
+</li> 
+      </ul>
+<br class="step1Root-step1"/>
+<ul class="step1-list1"> 
+       <p class="list1-li-title">
+<strong class="li-title-title">Solar energy control unit voltage sensor (VSOL) internal circuit malfunction*1</strong>
+</p> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Voltage sensor (VSOL) malfunction</p>
+</li> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Solar energy control unit malfunction</p>
+</li> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Communication (wire harness) malfunction</p>
+</li> 
+      </ul>
+<br class="step1Root-step1"/>
+<ul class="step1-list1"> 
+       <p class="list1-li-title">
+<strong class="li-title-title">High voltage system malfunction</strong>
+</p> 
+       <li class="list1-item">
+<p class="step1-list1-heading">No. 2 HV battery junction block assembly malfunction</p>
+</li> 
+      </ul>
+<br class="step1Root-step1"/>
+<ul class="step1-list1"> 
+       <p class="list1-li-title">
+<strong class="li-title-title">Low-voltage circuit (12 V) malfunction</strong>
+</p> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Hybrid vehicle control ECU malfunction</p>
+</li> 
+       <li class="list1-item">
+<p class="step1-list1-heading">No. 2 HV battery junction block assembly malfunction</p>
+</li> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Battery ECU assembly malfunction</p>
+</li> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Low voltage wire harness malfunction</p>
+</li> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Low voltage connector malfunction</p>
+</li> 
+      </ul>
+<p class="content5-ptxt">*1: w/ Solar Charging System</p>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001153D__RM100000001153D_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The CHRs (Charge Relays) are the relays that connect or disconnect the high-voltage system in accordance with commands from the battery ECU assembly.</p> 
+    <p class="content5-ptxt">There are 3 CHRs and 1 system main resistor. CHRB, CHRP, CHRG and the system main resistor are located in the No. 1 HV battery junction block assembly and HV No. 2 HV battery junction block assembly.</p> 
+    <p class="content5-ptxt">To connect to the high voltage power system, the vehicle will first turn on CHRP and CHRB to charge the vehicle through the system main resistor. Then, CHRP will be turned off after CHRG is turned on. To shut off the high voltage power system, CHRB and CHRG are turned off.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EWFAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0E3FAC" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0ECGAC" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EIGAC" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EOGAC" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EUGAC" width="NaN%">Warning Indicate</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EWFAC " width="NaN%">P0D0700</td> 
+        <td align="left" class="cellrowborder" headers="ID0E3FAC " width="NaN%">Hybrid/EV Battery Charging System Positive Contactor Stuck Closed</td> 
+        <td align="left" class="cellrowborder" headers="ID0ECGAC " width="NaN%"> <p class="ptxt">Even though the charge relay on the positive (+) side of the HV battery is off, the internal voltage of the electric vehicle charger assembly or solar energy control unit does not drop.</p> <p class="ptxt">(1 trip detection logic)</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EIGAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">No. 2 HV battery junction block assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Electric vehicle charger assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Solar energy control unit *1</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Wire harness or connector</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EOGAC " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUGAC " width="NaN%"> <p class="ptxt">Master Warning Light:</p> <p class="ptxt">Comes on</p> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <p class="content5-ptxt">*1: w/ Solar Charging System</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Related Data List
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EVLAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0E2LAC" width="NaN%">Data List</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EVLAC " width="NaN%">P0D0700</td> 
+        <td align="left" class="cellrowborder" headers="ID0E2LAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Voltage</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Charging Voltage for Hybrid Battery</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Smoothed Value of Solar Charge Hybrid Battery DC/DC Converter Input Voltage</p>
+</li> 
+         </ul> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001153D__RM100000001153D_08">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">After repair has been completed, clear the DTC and then check that the vehicle has returned to normal by performing the following All Readiness check procedure.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM1000000011O0Q.html#RM1000000011O0Q">Click here</a>
+</p> 
+    </div> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) and turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Hybrid Control / Data List.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check that "Hybrid Battery SOC" shows 70% or less.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for 2 minutes or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the electric vehicle charger cable assembly, and plug-in charge the vehicle for 3 minutes or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Disconnect the electric vehicle charger cable assembly and wait for 10 seconds or more.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">According to the display on the GTS, read the Data List and monitor the values of "Hybrid Battery Voltage" and "Charging Voltage for Hybrid Battery" for 3 minutes during plug-in charge. If the difference between "Hybrid Battery Voltage" and "Charging Voltage for Hybrid Battery" is always less than 100 V, the vehicle has returned to normal.</p> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) and turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Hybrid Control / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows NORMAL, the system is normal.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows ABNORMAL, the system has a malfunction.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows INCOMPLETE or N/A, perform driving pattern again.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001153D__RM100000001153D_11">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <p class="content5-ptxt">Refer to the wiring diagram for the P308F49.</p> 
+    <p class="content5-ptxt"> <a class="ptxt-xref" href="RM1000000011EKV.html#RM1000000011EKV_10">Click here</a>
+</p> 
+   </div>
+<div class="subpara" id="RM100000001153D__RM100000001153D_12">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    
+    <div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+     <br class="caution"/>
+     <ul class="list1"> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006HUP" class="figure-graphic" src="../images/b006hup.png"/> 
+       </div>
+<p class="list1-heading">Before the following operations are conducted, take precautions to prevent electric shock by turning the power switch off, wearing insulated gloves, and removing the service plug grip from HV battery.</p>
+</li> 
+      <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Inspecting the high-voltage system</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the inverter with converter assembly</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the HV battery</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the electric vehicle charger assembly.</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the solar energy control unit</p>
+</li> 
+       </ul> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006IQP" class="figure-graphic" src="../images/b006iqp.png"/> 
+       </div>
+<p class="list1-heading">To prevent electric shock, make sure to remove the service plug grip to cut off the high voltage circuit before servicing the vehicle.</p>
+</li> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006HQC" class="figure-graphic" src="../images/b006hqc.png"/> 
+       </div>
+<p class="list1-heading">After removing the service plug grip from the HV battery, put it in your pocket to prevent other technicians from accidentally reconnecting it while you are working on the high-voltage system.</p>
+</li> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006IVPC18" class="figure-graphic" src="../images/b006ivpc18.png"/> 
+        <div class="figure-p"> 
+         <div class="tablenoborder">
+          <table class="p-table">
+<tbody class="p-table"> 
+            <tr> 
+             <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+             <td class="cellrowborder" width="NaN%">Without waiting for 10 minutes</td> 
+            </tr> 
+           </tbody>
+</table> 
+         </div> 
+        </div> 
+       </div>
+<p class="list1-heading">After removing the service plug grip, wait for at least 10 minutes before touching any of the high-voltage connectors or terminals. After waiting for 10 minutes, check the voltage at the terminals in the inspection point in the inverter with converter assembly. The voltage should be 0 V before beginning work.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM1000000011O0N.html#RM1000000011O0N">Click here</a>
+</p>
+<div class="tip">
+        <p class="tiptitle">Tech Tips</p> 
+        <p class="ptxt">Waiting for at least 10 minutes is required to discharge the high-voltage capacitor inside the inverter with converter assembly.</p> 
+       </div>
+</li> 
+     </ul> 
+    </div> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">After turning the power switch off, waiting time may be required before disconnecting the cable from the negative (-) auxiliary battery terminal. Therefore, make sure to read the disconnecting the cable from the negative (-) auxiliary battery terminal notices before proceeding with work.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001AAN7.html#RM100000001AAN7">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">If the DTCs are cleared or the cable is disconnected from and reconnected to the negative (-) auxiliary battery terminal before performing repairs, connecting the electric vehicle charger cable assembly connector may cause a malfunction. Do not connect the electric vehicle charger cable assembly connector.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001153D__RM100000001153D_09">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0001">
+<p class="testgrp-heading">CHECK DTC OUTPUT (HYBRID CONTROL, HV BATTERY, PLUG-IN CONTROL AND SOLAR CHARGING CONTROL)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control, HV Battery, Plug-in Control and Solar Charging Control / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<br class="test1Root-test1"/>Powertrain &gt; HV Battery &gt; Trouble Codes<br class="test1Root-test1"/>Powertrain &gt; Plug-in Control &gt; Trouble Codes<br class="test1Root-test1"/>Powertrain &gt; Solar Charging Control &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EV4AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EV4AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E45AE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ED6AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E45AE " width="NaN%">P0D0700 only is output, or DTCs except the ones in the table below are also output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ED6AE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E45AE " width="NaN%">DTCs of hybrid control system in the tables below are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ED6AE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E45AE " width="NaN%">DTCs of hybrid battery system in the tables below are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ED6AE " width="NaN%">C</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E45AE " width="NaN%">DTCs of plug-in charge control system in the tables below are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ED6AE " width="NaN%">D</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E45AE " width="NaN%">DTCs of solar charging system in the tables below are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ED6AE " width="NaN%">E</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tablenoborder">
+         <table class="big-table">
+<thead align="left" class="test1-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EIDAG" width="NaN%">Malfunction Content</th> 
+            <th align="center" class="cellrowborder" id="ID0EODAG" width="NaN%">System</th> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0EUDAG">Relevant DTC</th> 
+           </tr> 
+          </thead>
+<tbody class="test1-table"> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EIDAG " rowspan="9" width="NaN%">Microcomputer malfunction</td> 
+            <td align="left" class="cellrowborder" headers="ID0EODAG " rowspan="5" width="NaN%">Hybrid control system</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">P060647</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Powertrain Control Module Processor Watchdog / Safety MCU Failure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">P060687</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Powertrain Control Module Processor to Monitoring Processor Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P060A47</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor Watchdog / Safety MCU Failure</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P060A87</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Powertrain Control Module Processor from Monitoring Processor Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P1C9E9F</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV System Reset Stuck Off</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EODAG " rowspan="3" width="NaN%">Plug-in charge control system</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P060B49</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Plug-in Control Module A/D Processing Internal Electronic Failure</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P0E5E87</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Plug-in Control Module Processor from Hybrid/EV Battery Charger Control Module Processor Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P1C1F49</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Battery Charger Control Module A/D Processing Internal Electronic Failure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EODAG " width="NaN%">Solar charging system</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">P1EDB49*1</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">Solar Charger Control Module A/D Processing Internal Electronic Failure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EIDAG " rowspan="8" width="NaN%">Communication system malfunction</td> 
+            <td class="cellrowborder" headers="ID0EODAG " rowspan="4" width="NaN%">Hybrid control system</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P0A1F94</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Battery Energy Control Module Unexpected Operation</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">U011187</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">Lost Communication with Hybrid/EV Battery Energy Control Module "A" Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">U019B87</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">Lost Communication with Hybrid/EV Battery Charger Control Module Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">U113A87*1</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">Lost Communication with Solar Charging Control Module Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EODAG " width="NaN%">Plug-in charge control system</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">U115087</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">Lost Communication with Hybrid Powertrain Control Module (Hybrid/EV Battery Local Bus) Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EODAG " rowspan="3" width="NaN%">Solar charging system</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">U010087*1</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">Lost Communication with ECM/PCM "A" Missing Message.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">U029387*1</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">Lost Communication with Hybrid/EV Powertrain Control Module Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">U115087*1</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">Lost Communication with Hybrid Powertrain Control Module (Hybrid/EV Battery Local Bus) Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EIDAG " rowspan="11" width="NaN%">Sensor and actuator circuit malfunction</td> 
+            <td class="cellrowborder" headers="ID0EODAG " width="NaN%">Hybrid control system</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P1EA41C*1</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Control Battery Voltage Sensor / Solar Charging Voltage Sensor Voltage Out of Range</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EODAG " rowspan="6" width="NaN%">Hybrid battery system</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P0D0A11</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Battery Charging System Positive Contactor Control Circuit Short to Ground</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P0D0A15</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Battery Charging System Positive Contactor Control Circuit Short to Auxiliary Battery or Open</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P0D1111</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Battery Charging System Negative Contactor Control Circuit Short to Ground</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P0D1115</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Battery Charging System Negative Contactor Control Circuit Short to Auxiliary Battery or Open</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P0E6D11</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Battery Charging System Precharge Contactor Control Circuit Short to Ground</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">P0E6D15</td> 
+            <td align="left" class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Battery Charging System Precharge Contactor Control Circuit Short to Auxiliary Battery or Open</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EODAG " rowspan="2" width="NaN%">Plug-in charge control system</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P0D4C12</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Battery Charger Hybrid/EV Battery Input Voltage Sensor Circuit Short to Auxiliary Battery</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P0D4C14</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Battery Charger Hybrid/EV Battery Input Voltage Sensor Circuit Short to Ground or Open</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EODAG " rowspan="2" width="NaN%">Solar charging system</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P1EA412*1</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Solar Charging Voltage Sensor Circuit Short to Auxiliary Battery</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P1EA414*1</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Solar Charging Voltage Sensor Circuit Short to Ground or Open</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EIDAG " rowspan="3" width="NaN%">System malfunction</td> 
+            <td class="cellrowborder" headers="ID0EODAG " rowspan="3" width="NaN%">Hybrid control system</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P0D0E73</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Battery Charging System Negative Contactor Control Actuator Stuck Closed</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P0D4C1C</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Battery Charger Hybrid/EV Battery Input Voltage Sensor Voltage Out of Range</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">P0E6A73</td> 
+            <td class="cellrowborder" headers="ID0EUDAG " width="NaN%">Hybrid/EV Battery Charging System Precharge Contactor Control Actuator Stuck Closed</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<p class="test1-ptxt">*1: w/ Solar Charging System</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">P0D0700 may be output as a result of the malfunction indicated by the DTCs above.</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ol class="li-list2-list2" type="i">
+<li class="list2-item">
+<p class="li-list2-list2-heading">The chart above is listed in inspection order of priority.</p>
+</li>
+<li class="list2-item">
+<p class="li-list2-list2-heading">Check DTCs that are output at the same time by following the listed order. (The main cause of the malfunction can be determined without performing unnecessary inspections.)</p>
+</li>
+</ol> 
+         </ul> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (HYBRID CONTROL SYSTEM) <a class="content6-ptxt-xref" href="RM100000001AGZH.html#RM100000001AGZH">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (HYBRID BATTERY SYSTEM) <a class="content6-ptxt-xref" href="RM1000000012KP0.html#RM1000000012KP0">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">D</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (PLUG-IN CHARGE CONTROL SYSTEM) <a class="content6-ptxt-xref" href="RM100000001159X.html#RM100000001159X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">E</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (SOLAR CHARGING SYSTEM) <a class="content6-ptxt-xref" href="RM1000000010T6N.html#RM1000000010T6N">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0006">
+<p class="testgrp-heading">CHECK FREEZE FRAME DATA (HYBRID CONTROL)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the freeze frame data of DTC P0D0700.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">In this step, read only the values of "0(s)", which means the moment the DTC has been confirmed, although other information before and after the moment is also displayed when reading the freeze frame data.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E25AG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E25AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDABG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJABG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EDABG " width="NaN%">Difference between "Hybrid Battery Voltage" and "Charging Voltage for Hybrid Battery" is always less than 100 V. (w/ Solar Charging System)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJABG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EDABG " width="NaN%">Difference between "Hybrid Battery Voltage" and "Charging Voltage for Hybrid Battery" is always less than 100 V. (w/o Solar Charging System)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJABG " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EDABG " width="NaN%">Difference between "Hybrid Battery Voltage" and "Charging Voltage for Hybrid Battery" is 100 V or more.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJABG " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">When the difference between "Charging Voltage for Hybrid Battery" and "Hybrid Battery Voltage" is large even though the charge relay of HV battery positive (+) terminal side is OFF, the electric vehicle charger assembly has a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">B</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 4  <a class="res-right-fin-false-xref" href="#RM100000001153D__RM100000001153D_09_0011">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ELECTRIC VEHICLE CHARGER ASSEMBLY <a class="content6-ptxt-xref" href="RM10000000115AT.html#RM10000000115AT">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0009">
+<p class="testgrp-heading">CHECK FREEZE FRAME DATA (HYBRID CONTROL)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the freeze frame data of DTC P0D0700.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">In this step, read only the values of "0(s)", which means the moment the DTC has been confirmed, although other information before and after the moment is also displayed when reading the freeze frame data.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2JBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2JBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDLBG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJLBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EDLBG " width="NaN%">Difference between "Hybrid Battery Voltage" and "Smoothed Value of Solar Charge Hybrid Battery DC/DC Converter Input Voltage" is always less than 100 V.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJLBG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EDLBG " width="NaN%">Difference between "Hybrid Battery Voltage" and "Smoothed Value of Solar Charge Hybrid Battery DC/DC Converter Input Voltage" is 100 V or more.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJLBG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">When the difference between "Smoothed Value of Solar Charge Hybrid Battery DC/DC Converter Input Voltage" and "Hybrid Battery Voltage" is large even though the charge relay of HV battery positive (+) terminal side is OFF, the solar energy control unit has a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE SOLAR ENERGY CONTROL UNIT <a class="content6-ptxt-xref" href="RM1000000011E8D.html#RM1000000011E8D">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0011">
+<p class="testgrp-heading">CHECK CONNECTOR CONNECTION CONDITION (BATTERY ECU ASSEMBLY CONNECTOR)</p>
+<div class="ie8fixer"/>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves and protective goggles.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the upper hybrid battery cover sub-assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000115BX.html#RM10000000115BX_01_0435">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006J82N05" class="figure-graphic" src="../images/b006j82n05.png"/> 
+        </div>
+<p class="test1-heading">Check the connector connections and contact pressure of the relevant terminal of the t14 battery ECU assembly connector.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145W.html#RM100000001145W">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETRBG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ETRBG">The connectors are connected securely and there are no contact pressure problems.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the upper hybrid battery cover sub-assembly.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EGTBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EGTBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJUBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJUBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJUBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">OK</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 6  <a class="res-right-fin-false-xref" href="#RM100000001153D__RM100000001153D_09_0014">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0012">
+<p class="testgrp-heading">CONNECT SECURELY</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EBXBG" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EBXBG" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EEYBG" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EEYBG " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0014">
+<p class="testgrp-heading">CHECK CONNECTOR CONNECTION CONDITION (NO. 2 HV BATTERY JUNCTION BLOCK ASSEMBLY CONNECTOR)</p>
+<div class="ie8fixer"/>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0ED1BG" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0ED1BG" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EG2BG" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EG2BG " width="NaN%">OK</td> 
+              </tr> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EG2BG " width="NaN%">NG</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves and protective goggles.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the upper hybrid battery cover sub-assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000115BX.html#RM10000000115BX_01_0435">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HEMN07" class="figure-graphic" src="../images/b006hemn07.png"/> 
+        </div>
+<p class="test1-heading">Check the connector connections and contact pressure of the relevant terminals of the t4 No. 2 HV battery junction block assembly connector.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145W.html#RM100000001145W">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EF6BG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EF6BG">The connectors are connected securely and there are no contact pressure problems.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the upper hybrid battery cover sub-assembly.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZAAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZAAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E3BAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3BAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3BAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">OK</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 8  <a class="res-right-fin-false-xref" href="#RM100000001153D__RM100000001153D_09_0017">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0015">
+<p class="testgrp-heading">CONNECT SECURELY</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EUEAI" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EUEAI" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EXFAI" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EXFAI " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0017">
+<p class="testgrp-heading">CHECK GROUND WIRE CONNECTION CONDITION (CHR ACTIVATION LOW-VOLTAGE CIRCUIT)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the installation condition of the ground wire NB.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EFIAI" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EFIAI">The ground wire NB is securely installed.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E6IAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E6IAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ECKAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ECKAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ECKAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">OK</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 10  <a class="res-right-fin-false-xref" href="#RM100000001153D__RM100000001153D_09_0020">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0019">
+<p class="testgrp-heading">CONNECT SECURELY</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0E1MAI" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0E1MAI" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0E4NAI" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0E4NAI " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0020">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (BATTERY ECU ASSEMBLY - NO. 2 HV BATTERY JUNCTION BLOCK ASSEMBLY)</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves and protective goggles.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the upper hybrid battery cover sub-assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000115BX.html#RM10000000115BX_01_0435">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the t4 No. 2 HV battery junction block assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the t14 battery ECU assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HFCC02" class="figure-graphic" src="../images/b006hfcc02.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Battery ECU Assembly)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 2 HV Battery Junction Block Assembly)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E3VAI" class="spec-title">Standard Resistance (Check for Open)</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E3VAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJXAI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EPXAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EVXAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJXAI " width="NaN%">t14-52 (CHRB) - t4-2 (CHRB)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPXAI " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVXAI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHZAI" class="spec-title">Standard Resistance (Check for Short)</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EHZAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EU1AI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E11AI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EA2AI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EU1AI " width="NaN%">t14-52 (CHRB) and t4-2 (CHRB) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E11AI " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EA2AI " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the t14 battery ECU assembly.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the t4 No. 2 HV battery junction block assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the upper hybrid battery cover sub-assembly.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ET4AI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ET4AI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EW5AI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EW5AI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EW5AI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">OK</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 12  <a class="res-right-fin-false-xref" href="#RM100000001153D__RM100000001153D_09_0023">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0021">
+<p class="testgrp-heading">REPAIR OR REPLACE HARNESS OR CONNECTOR</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EOBBI" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EOBBI" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0ERCBI" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0ERCBI " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0023">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (NO. 2 HV BATTERY JUNCTION BLOCK ASSEMBLY - BODY GROUND)</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves and protective goggles.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the upper hybrid battery cover sub-assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000115BX.html#RM10000000115BX_01_0435">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the t4 No. 2 HV battery junction block assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006IJ4C05" class="figure-graphic" src="../images/b006ij4c05.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 2 HV Battery Junction Block Assembly)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E6GBI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E6GBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMIBI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0ESIBI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EYIBI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMIBI " width="NaN%">t4-1 (GNDB) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESIBI " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYIBI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the t4 No. 2 HV battery junction block assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the upper hybrid battery cover sub-assembly.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELNBI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELNBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EOOBI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EOOBI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EOOBI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">OK</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 14  <a class="res-right-fin-false-xref" href="#RM100000001153D__RM100000001153D_09_0026">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0025">
+<p class="testgrp-heading">REPAIR OR REPLACE HARNESS OR CONNECTOR</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EGRBI" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EGRBI" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EJSBI" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EJSBI " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0026">
+<p class="testgrp-heading">INSPECT NO. 2 HV BATTERY JUNCTION BLOCK ASSEMBLY (CHRB)</p>
+<div class="ie8fixer"/>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves and protective goggles.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the upper hybrid battery cover sub-assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000115BX.html#RM10000000115BX_01_0435">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the t4 No. 2 HV battery junction block assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006HDOC10" class="figure-graphic--bigImage" src="../images/b006hdoc10.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Component without harness connected</p> <p class="ptxt">(No. 2 HV Battery Junction Block Assembly)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYZBI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EYZBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EF2BI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EL2BI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ER2BI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EF2BI " width="NaN%">t4-2 (CHRB) - t4-1 (GNDB)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EL2BI " width="NaN%">-40 to 80°C (-40 to 176°F)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ER2BI " width="NaN%">20.6 to 40.8 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the t4 No. 2 HV battery junction block assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the upper hybrid battery cover sub-assembly.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZ4BI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZ4BI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E35BI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E35BI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E35BI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">REPLACE NO. 2 HV BATTERY JUNCTION BLOCK ASSEMBLY  <a class="res-right-fin-false-xref" href="#RM100000001153D__RM100000001153D_09_0027">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0029">
+<p class="testgrp-heading">CHECK NO. 2 HV BATTERY JUNCTION BLOCK ASSEMBLY (CHRB)</p>
+<div class="ie8fixer"/>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves and protective goggles.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the upper hybrid battery cover sub-assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000115BX.html#RM10000000115BX_01_0435">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006J5H" class="figure-graphic" src="../images/b006j5h.png"/> 
+        </div>
+<p class="test1-heading">Disconnect the HV battery charger wire connector from the No. 2 HV battery junction block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006J1W" class="figure-graphic" src="../images/b006j1w.png"/> 
+        </div>
+<p class="test1-heading">Disconnect the HV battery high voltage connector from the No. 2 HV battery junction block assembly.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Insulate each disconnected high-voltage connector with insulating tape. Wrap the connector from the wire harness side to the end of the connector.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006HW4C07" class="figure-graphic--bigImage" src="../images/b006hw4c07.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Component without harness connected</p> <p class="ptxt">(No. 2 HV Battery Junction Block Assembly)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETICI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETICI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EAKCI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EGKCI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EMKCI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EAKCI " width="NaN%">U9-1 (DCHB) - j1-1 (+)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGKCI " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMKCI " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If a system main relay is stuck closed, inspect the No. 2 HV battery junction block assembly without removing it from the vehicle, in order to keep the relay closed.</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the HV battery high voltage connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the HV battery charger wire connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the upper hybrid battery cover sub-assembly.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EVNCI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EVNCI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ECPCI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EIPCI" width="NaN%">Judgment</th> 
+                 <th align="center" class="spec-table-item" id="ID0EOPCI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ECPCI " width="NaN%">OK</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EIPCI " width="NaN%">Past malfunction</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOPCI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ECPCI " width="NaN%">NG</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EIPCI " width="NaN%">Present malfunction</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOPCI " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">B</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">REPLACE NO. 2 HV BATTERY JUNCTION BLOCK ASSEMBLY  <a class="res-right-fin-false-xref" href="#RM100000001153D__RM100000001153D_09_0031">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0030">
+<p class="testgrp-heading">REPLACE NO. 2 HV BATTERY JUNCTION BLOCK ASSEMBLY</p>
+<p class="content6-ptxt"> <a class="content6-ptxt-xref" href="RM10000000115BX.html#RM10000000115BX">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EFTCI" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EFTCI" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EIUCI" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EIUCI " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">NEXT</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 19  <a class="res-right-fin-false-xref" href="#RM100000001153D__RM100000001153D_09_0036">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0027">
+<p class="testgrp-heading">REPLACE NO. 2 HV BATTERY JUNCTION BLOCK ASSEMBLY</p>
+<p class="content6-ptxt"> <a class="content6-ptxt-xref" href="RM10000000115BX.html#RM10000000115BX">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EWWCI" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EWWCI" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EZXCI" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EZXCI " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">NEXT</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 19  <a class="res-right-fin-false-xref" href="#RM100000001153D__RM100000001153D_09_0036">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153D__RM100000001153D_09_0031">
+<p class="testgrp-heading">REPLACE NO. 2 HV BATTERY JUNCTION BLOCK ASSEMBLY</p>
+<p class="content6-ptxt"> <a class="content6-ptxt-xref" href="RM10000000115BX.html#RM10000000115BX">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EH1CI" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EH1CI" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EK2CI" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EK2CI " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001153D__RM100000001153D_09_0036">
+<p class="testgrp-heading">CHECK BATTERY ECU ASSEMBLY (CHECK FOR NORMAL OPERATION)</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Install the service plug grip.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001152V.html#RM100000001152V">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Data List / Hybrid Battery SOC.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that "Hybrid Battery SOC" shows 70% or less.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ESADI" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ESADI " width="NaN%">Hybrid Battery SOC</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for 2 minutes or more.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the electric vehicle charger cable assembly, and plug-in charge the vehicle for 3 minutes or more.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the electric vehicle charger cable assembly and wait for 10 seconds or more.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Data List / Hybrid Battery Voltage and Charging Voltage for Hybrid Battery.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, read the Data List and monitor the values of "Hybrid Battery Voltage" and "Charging Voltage for Hybrid Battery" for 3 minutes during plug-in charge.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EHIDI" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EHIDI " width="NaN%">Hybrid Battery Voltage</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EHIDI " width="NaN%">Charging Voltage for Hybrid Battery</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQODI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQODI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EZPDI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E6PDI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EZPDI " width="NaN%">Difference between "Hybrid Battery Voltage" and "Charging Voltage for Hybrid Battery" is always less than 100 V.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6PDI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EZPDI " width="NaN%">Difference between "Hybrid Battery Voltage" and "Charging Voltage for Hybrid Battery" is 100 V or more.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6PDI " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE BATTERY ECU ASSEMBLY AND NO. 2 HV BATTERY JUNCTION BLOCK ASSEMBLY BATTERY ECU ASSEMBLY: <a class="content6-ptxt-xref" href="RM10000000115BB.html#RM10000000115BB">Click here</a> <br/>REPLACE BATTERY ECU ASSEMBLY AND NO. 2 HV BATTERY JUNCTION BLOCK ASSEMBLY NO. 2 HV BATTERY JUNCTION BLOCK ASSEMBLY: <a class="content6-ptxt-xref" href="RM10000000115BX.html#RM10000000115BX">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

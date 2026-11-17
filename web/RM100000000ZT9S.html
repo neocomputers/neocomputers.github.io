@@ -1,0 +1,1225 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ENTRY AND START SYSTEM(for Entry Function) Back Door Entry Lock and Unlock Functions do not Operate" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058032" name="sectionId"/> 
+  <meta content="THEFT DETERRENT / KEYLESS ENTRY" name="sectionName"/> 
+  <meta content="_0288580" name="ttlId"/> 
+  <meta content="ENTRY AND START SYSTEM(for Entry Function)" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000ZT9S" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Back Door Entry Lock and Unlock Functions do not Operate</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ENTRY AND START SYSTEM(for Entry Function)<span class="topictitle1"> Back Door Entry Lock and Unlock Functions do not Operate</span>
+</h1>
+<div class="subpara" id="RM100000000ZT9S__RM100000000ZT9S_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">If the entry lock and unlock functions do not operate for the back door only, the request code may not be being transmitted from the back door. If the entry functions for other doors operate properly, communication between the electrical key transmitter sub-assembly and electrical key and tire pressure monitoring system receiver assembly is normal. In this case, there may be a problem with request code transmission (communication between the certification ECU (smart key ECU assembly) and electrical key antenna (outside luggage compartment)) or there may be wave interference.</p> 
+   </div>
+<div class="subpara" id="RM100000000ZT9S__RM100000000ZT9S_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003NSGE20" class="figure-graphic--bigImage" src="../images/a003nsge20.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM100000000ZT9S__RM100000000ZT9S_03">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">The entry and start system (for Entry Function) uses the LIN communication system and CAN communication system. Inspect the communication function by following How to Proceed with Troubleshooting. Troubleshoot the entry and start system (for Entry Function) after confirming that the communication systems are functioning properly.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZT9I.html#RM100000000ZT9I">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">When using the GTS with the power switch off, connect the GTS to the DLC3 and turn a courtesy light switch on and off at intervals of 1.5 seconds or less until communication between the GTS and the vehicle begins. Then select Model Code "KEY REGIST" under manual mode and enter the following menus: Body Electrical / Entry&amp;Start(CAN). While using the GTS, periodically turn a courtesy light switch on and off at intervals of 1.5 seconds or less to maintain communication between the GTS and the vehicle.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Check that there are no electrical key transmitter sub-assemblies in the vehicle.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Before replacing the certification ECU (smart key ECU assembly), refer to Precaution.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZT98.html#RM100000000ZT98">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">After repair, confirm that no DTCs are output.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000ZT9S__RM100000000ZT9S_08">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000ZT9S__RM100000000ZT9S_08_0001">
+<p class="testgrp-heading">CHECK POWER DOOR LOCK CONTROL SYSTEM</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">When the door control switch on the multiplex network master switch assembly is operated, check that the doors unlock and lock according to the switch operation.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZLMA.html#RM100000000ZLMA">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EICAC" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EICAC">Door locks operate normally.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECDAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECDAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFEAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFEAC " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFEAC " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO POWER DOOR LOCK CONTROL SYSTEM <a class="content6-ptxt-xref" href="RM100000000ZLMD.html#RM100000000ZLMD">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZT9S__RM100000000ZT9S_08_0002">
+<p class="testgrp-heading">CHECK FOR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Entry&amp;Start &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EOKAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EOKAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWLAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3LAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EWLAC " width="NaN%">DTC B27A8 is not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3LAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EWLAC " width="NaN%">DTC B27A8 is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3LAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DIAGNOSTIC TROUBLE CODE CHART <a class="content6-ptxt-xref" href="RM100000000ZT99.html#RM100000000ZT99">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZT9S__RM100000000ZT9S_08_0003">
+<p class="testgrp-heading">CHECK WAVE ENVIRONMENT</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003OQ5C04" class="figure-graphic" src="../images/a003oq5c04.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%">Approximately 0.3 m (0.984 ft.)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Bring the electrical key transmitter sub-assembly approximately 0.3 m (0.984 ft.) from the electrical key antenna (outside luggage compartment) and perform an entry back door open/lock function check.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZT9F.html#RM100000000ZT9F">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Communication may not be possible if the electrical key transmitter sub-assembly is within 0.2 m (0.656 ft.) of the electrical key antenna (outside luggage compartment)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">When the electrical key transmitter sub-assembly is brought near the electrical key antenna (outside luggage compartment), the possibility of wave interference decreases, and it can be determined if wave interference is causing the problem symptom.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If the inspection result is that the problem only occurs in certain locations or at certain times of day, the possibility of wave interference is high. Also, added vehicle components may cause wave interference. If installed, remove them and perform the operation check.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">There may be wave interference if the vehicle is near broadcasting antennas, large video displays, wireless garage door opener systems, wireless security cameras, home security systems, etc. In this case, move the vehicle to a different location and check if there is any improvement.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If a tool for checking radio waves, such as a signal strength meter, is available, move around the area while observing both the LF band (used by the vehicle antenna to form the detection area) and RF band (used by the electrical key transmitter sub-assembly for transmission) to check for locations where there is wave interference.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">When checking the operation of the entry lock function several times, it can be operated up to 2 times consecutively. To operate the function 3 times or more consecutively, the doors need to be unlocked once. However, this is only for the entry lock function, other door lock operations, such as a wireless door lock operation can be performed consecutively.*</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2 nonmark"> 
+            <li class="list2-item">
+<p class="li-list2-list2-nonmark-heading">*: w/o Double Locking System</p>
+</li> 
+           </ul> 
+         </ul> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4EAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E4EAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFGAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EKGAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EFGAE " width="NaN%">Entry function does not operate normally</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKGAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EFGAE " width="NaN%">Entry function operates normally</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKGAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>AFFECTED BY WAVE INTERFERENCE </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZT9S__RM100000000ZT9S_08_0004">
+<p class="testgrp-heading">READ VALUE USING GTS (TR/B DOOR LOCK SW, TR/B DOOR UNLOCK SW)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Entry&amp;Start / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Entry&amp;Start &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EPMAE" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EVMAE" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0E2MAE" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EBNAE" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0EHNAE" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EPMAE " width="NaN%">Tr/B-Door Lock SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EVMAE " width="NaN%">Back door opener switch assembly (lock switch)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E2MAE " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBNAE " width="NaN%"> <p class="ptxt">ON: Back door opener switch assembly (lock switch) pressed</p> <p class="ptxt">OFF: Back door opener switch assembly (lock switch) not pressed</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EHNAE " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Displays whether the back door opener switch assembly (lock switch) is on or off.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Use this Data List item to help determine if there is a switch malfunction when the back door lock function does not operate.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EPMAE " width="NaN%">Tr/B-Door Unlock SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EVMAE " width="NaN%">Back door opener switch assembly (open switch)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E2MAE " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBNAE " width="NaN%"> <p class="ptxt">ON: Back door opener switch assembly (open switch) pressed</p> <p class="ptxt">OFF: Back door opener switch assembly (open switch) not pressed</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EHNAE " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Displays whether the back door opener switch assembly (open switch) is on or off.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Use this Data List item to help determine if there is a switch malfunction when the back door open function does not operate.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Entry&amp;Start &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EHXAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EHXAE " width="NaN%">Tr/B-Door Lock SW</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EHXAE " width="NaN%">Tr/B-Door Unlock SW</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQ4AE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EQ4AE">The GTS display changes correctly in response to the operation of the back door opener switch assembly.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EK5AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EK5AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EN6AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EN6AE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EN6AE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK HARNESS AND CONNECTOR (BACK DOOR OPENER SWITCH ASSEMBLY - CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) AND BODY GROUND)  <a class="res-right-fin-false-xref" href="#RM100000000ZT9S__RM100000000ZT9S_08_0012">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZT9S__RM100000000ZT9S_08_0005">
+<p class="testgrp-heading">CHECK KEY DIAGNOSTIC MODE</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the following antenna in key diagnostic mode.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Entry&amp;Start &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EKDAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKDAG " width="NaN%">Communication Check(Key Diag Mode)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003OQ5C05" class="figure-graphic" src="../images/a003oq5c05.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%">0.7 to 1 m (2.30 to 3.28 ft.)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Select either channel 1 or channel 2 and perform the key diagnostic mode inspection for each channel.</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2">
+<p class="test2-heading">Check the electrical key antenna (outside luggage compartment):</p>
+<p class="test2-ptxt">When the electrical key transmitter sub-assembly is brought within 0.7 to 1 m (2.30 to 3.28 ft.) of the electrical key antenna (outside luggage compartment), check that the wireless buzzer sounds.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Select either channel 1 or channel 2 and perform the key diagnostic mode inspection for each channel.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">If the buzzer sounds with [CH1] displayed but not with [CH2], the electrical key transmitter sub-assembly cannot be detected by channel 2 due to a malfunction, such as wave interference.</p>
+</li> 
+           </ul> 
+          </div>
+</li>
+</ol>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1LAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E1LAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ECNAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EINAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ECNAG " width="NaN%">Wireless buzzer does not sound</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EINAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ECNAG " width="NaN%">Wireless buzzer sounds</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EINAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZT9S__RM100000000ZT9S_08_0006">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (ELECTRICAL KEY ANTENNA (OUTSIDE LUGGAGE COMPARTMENT) - CERTIFICATION ECU (SMART KEY ECU ASSEMBLY))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the N54 certification ECU (smart key ECU assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the N27 electrical key antenna (outside luggage compartment) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENRAG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENRAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E1SAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EATAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EGTAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1SAG " width="NaN%">N54-13 (CLG8) - N27-2 (ANTE8)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EATAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGTAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1SAG " width="NaN%">N54-12 (CG8B) - N27-1 (CLGB)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EATAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGTAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1SAG " width="NaN%">N54-13 (CLG8) or N27-2 (ANTE8) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EATAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGTAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1SAG " width="NaN%">N54-12 (CG8B) or N27-1 (CLGB) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EATAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGTAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the N27 electrical key antenna (outside luggage compartment) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the N54 certification ECU (smart key ECU assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQXAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQXAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETYAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETYAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETYAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZT9S__RM100000000ZT9S_08_0028">
+<p class="testgrp-heading">INSPECT CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) (OUTPUT TO ELECTRICAL KEY ANTENNA (OUTSIDE LUGGAGE COMPARTMENT))</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Using an oscilloscope, check the waveform.</p>
+<div class="fignone--bigImage">
+<img alt="A003MTUC09" class="figure-graphic--bigImage" src="../images/a003mtuc09.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Component with harness connected</p> <p class="ptxt">(Certification ECU (Smart Key ECU Assembly))</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td class="cellrowborder" width="NaN%">Waveform 1</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EW5AG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EW5AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJABG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EPABG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EVABG" width="NaN%">Tool Setting</th> 
+                 <th align="center" class="spec-table-item" id="ID0E2ABG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJABG " width="NaN%">N54-13 (CLG8) - I1-18(E)</td> 
+                 <td align="left" class="spec-table-item" headers="ID0EPABG " width="NaN%"> <p class="ptxt">Procedure:</p> <br class="cellrowborder"/>
+                  <ol class="list1" type="i">
+<li class="list1-item">
+<p class="list1-heading">Power switch off</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">Electrical key transmitter sub-assembly brought outside vehicle</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">All doors closed</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">Back door opener switch assembly off → on</p>
+</li>
+</ol> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVABG " width="NaN%">2 V/DIV., 500 ms/DIV.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2ABG " width="NaN%"> <p class="ptxt">Pulse generation</p> <p class="ptxt">(See waveform 1)</p> </td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJABG " width="NaN%">N54-12 (CG8B) - I1-18(E)</td> 
+                 <td class="spec-table-item" headers="ID0EPABG " width="NaN%"> <p class="ptxt">Procedure:</p> <br class="cellrowborder"/>
+                  <ol class="list1" type="i">
+<li class="list1-item">
+<p class="list1-heading">Power switch off</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">Electrical key transmitter sub-assembly brought outside vehicle</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">All doors closed</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">Back door opener switch assembly off → on</p>
+</li>
+</ol> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVABG " width="NaN%">2 V/DIV., 500 ms/DIV.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2ABG " width="NaN%"> <p class="ptxt">Pulse generation</p> <p class="ptxt">(See waveform 1)</p> </td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETHBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETHBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWIBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWIBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWIBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ELECTRICAL KEY ANTENNA (OUTSIDE LUGGAGE COMPARTMENT) <a class="content6-ptxt-xref" href="RM10000000113XU.html#RM10000000113XU">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZT9S__RM100000000ZT9S_08_0008">
+<p class="testgrp-heading">CHECK ENTRY LOCK OPERATION</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect all connectors and check that the function operates normally.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZT9F.html#RM100000000ZT9F">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKMBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EKMBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ESNBG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EYNBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ESNBG " width="NaN%">Entry function does not operate normally</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYNBG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ESNBG " width="NaN%">Entry function operates normally</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYNBG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END (CONNECTOR WAS NOT CONNECTED SECURELY) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZT9S__RM100000000ZT9S_08_0012">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (BACK DOOR OPENER SWITCH ASSEMBLY - CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) AND BODY GROUND)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the N54 certification ECU (smart key ECU assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the R1 back door opener switch assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4RBG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E4RBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EKTBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EQTBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EWTBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKTBG " width="NaN%">N54-27 (TSW6) - R1-1 (L)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQTBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWTBG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKTBG " width="NaN%">N54-26 (TSW5) - R1-3 (UL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQTBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWTBG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKTBG " width="NaN%">R1-2 (E) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQTBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWTBG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKTBG " width="NaN%">N54-27 (TSW6) or R1-1 (L) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQTBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWTBG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKTBG " width="NaN%">N54-26 (TSW5) or R1-3 (UL) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQTBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWTBG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EAYBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EAYBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDZBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDZBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDZBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZT9S__RM100000000ZT9S_08_0013">
+<p class="testgrp-heading">INSPECT BACK DOOR OPENER SWITCH ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the back door opener switch assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000011377.html#RM1000000011377">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the back door opener switch assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000011376.html#RM1000000011376">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EH4BG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EH4BG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EK5BG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EK5BG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EK5BG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE BACK DOOR OPENER SWITCH ASSEMBLY <a class="content6-ptxt-xref" href="RM1000000011377.html#RM1000000011377">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000ZT9S__RM100000000ZT9S_08_0014">
+<p class="testgrp-heading">CHECK ENTRY LOCK OPERATION</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect all connectors and check that the function operates normally.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZT9F.html#RM100000000ZT9F">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E6BAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E6BAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EHDAI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ENDAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EHDAI " width="NaN%">Entry function does not operate normally</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ENDAI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EHDAI " width="NaN%">Entry function operates normally</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ENDAI " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END (CONNECTOR WAS NOT CONNECTED SECURELY) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

@@ -1,0 +1,1528 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="MOTOR GENERATOR CONTROL SYSTEM, Diagnostic DTC:P1CCC96" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296363" name="ttlId"/> 
+  <meta content="MOTOR GENERATOR CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001155H" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P1CCC96</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">MOTOR GENERATOR CONTROL SYSTEM, Diagnostic DTC:P1CCC96</h1>
+<div class="section" id="RM100000001155H__RM100000001155H_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P1CCC96</td> 
+       <td class="dtcname" headers="ID0EED">DC/DC Converter Enable Component Internal Failure</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001155H__RM100000001155H_06">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The DC/DC converter converts the DC 351.5 V of the HV battery into DC 12 V in order to supply power to areas such as the vehicle lighting system, audio system and various ECUs. Additionally, it charges the auxiliary battery.</p> 
+    <p class="content5-ptxt">A transistor bridge circuit initially converts DC 351.5 V into alternating current, and a transformer lowers the voltage.</p> 
+    <p class="content5-ptxt">The DC/DC converter controls the output voltage in order to keep a constant voltage at the terminals of the auxiliary battery.</p> 
+    <p class="content5-ptxt">Then, it is rectified and smoothed (into direct current) and converted into DC 12 V.</p> 
+    <p class="content5-ptxt">The motor generator control ECU sends a signal to the DC/DC converter to prohibit its control and receives signals indicating a normal or abnormal condition of the 12 V charging system via the NODD signal line.</p> 
+    <p class="content5-ptxt">If the DC/DC converter malfunctions, the vehicle will become inoperative. Therefore, the motor generator control ECU monitors the operation of the DC/DC converter and detects malfunctions.</p> 
+    <p class="content5-ptxt">This DTC is stored when the DC/DC converter circuit has a malfunction or its operation is prohibited by a fail-safe function, or the auxiliary battery voltage drops to 11 V or less with the power switch on (READY).</p> 
+    <p class="content5-ptxt">If a DC/DC converter malfunction occurs, DC/DC converter malfunction signals are sent from the DC/DC converter to the MG ECU via the NODD signal line.</p> 
+    <p class="content5-ptxt">This DTC may also be stored if a malfunction of the inverter cooling system (blockage, water pump malfunction, etc.) or a high-voltage insulation malfunction occurs.</p> 
+    <div class="fignone--bigImage">
+<img alt="B006HFRE08" class="figure-graphic--bigImage" src="../images/b006hfre08.png"/>
+</div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EMH" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0ESH" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EYH" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0E5H" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EFAAC" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0ELAAC" width="NaN%">Warning Indicate</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EMH " width="NaN%">P1CCC96</td> 
+        <td align="left" class="cellrowborder" headers="ID0ESH " width="NaN%">DC/DC Converter Enable Component Internal Failure</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYH " width="NaN%"> <p class="ptxt">Either of the following conditions is met:</p> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">The DC/DC converter is malfunctioning and the auxiliary battery voltage is 11 V or less.*</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">The DC/DC converter is malfunctioning for 120 seconds and the inverter coolant temperature is 70 °C or less.</p>
+</li> 
+         </ul> <p class="ptxt">(1 trip detection logic)</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0E5H " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Fusible link block assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Engine wire</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Inverter cooling system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Cooling fan system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Grille shutter system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Inverter with converter assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid vehicle transaxle assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Motor cable</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EFAAC " width="NaN%">Does not come on</td> 
+        <td align="left" class="cellrowborder" headers="ID0ELAAC " width="NaN%"> <p class="ptxt">Master Warning Light:</p> <p class="ptxt">Comes on</p> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">*: If the DC/DC converter is malfunctioning, its operation and charging will be stopped and the auxiliary battery voltage will drop.</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001155H__RM100000001155H_04">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <p class="content5-ptxt">Refer to the wiring diagram for the Generator High-voltage Circuit.</p> 
+    <p class="content5-ptxt"> <a class="ptxt-xref" href="RM100000001150S.html#RM100000001150S_04">Click here</a>
+</p> 
+    <p class="content5-ptxt">Refer to the wiring diagram for the Motor High-voltage Circuit.</p> 
+    <p class="content5-ptxt"> <a class="ptxt-xref" href="RM100000001150Q.html#RM100000001150Q_04">Click here</a>
+</p> 
+   </div>
+<div class="subpara" id="RM100000001155H__RM100000001155H_05">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    
+    <div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+     <br class="caution"/>
+     <ul class="list1"> 
+      <li class="list1-li-figure"> 
+       <div class="fignone"> 
+        <img alt="B006HUP" class="figure-graphic" src="../images/b006hup.png"/> 
+       </div> </li> 
+      <li class="list1-item">
+<p class="list1-heading">Before the following operations are conducted, take precautions to prevent electric shock by turning the power switch off, wearing insulated gloves, and removing the service plug grip from HV battery.</p>
+</li> 
+      <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Inspecting the high-voltage system</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the inverter with converter assembly</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the HV battery</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the electric vehicle charger assembly</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the solar energy control unit</p>
+</li> 
+       </ul> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006IQP" class="figure-graphic" src="../images/b006iqp.png"/> 
+       </div>
+<p class="list1-heading">To prevent electric shock, make sure to remove the service plug grip to cut off the high voltage circuit before servicing the vehicle.</p>
+</li> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006HQC" class="figure-graphic" src="../images/b006hqc.png"/> 
+       </div>
+<p class="list1-heading">After removing the service plug grip from the HV battery, put it in your pocket to prevent other technicians from accidentally reconnecting it while you are working on the high-voltage system.</p>
+</li> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006IVPC05" class="figure-graphic" src="../images/b006ivpc05.png"/> 
+        <div class="figure-p"> 
+         <div class="tablenoborder">
+          <table class="p-table">
+<tbody class="p-table"> 
+            <tr> 
+             <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+             <td class="cellrowborder" width="NaN%">Without waiting for 10 minutes</td> 
+            </tr> 
+           </tbody>
+</table> 
+         </div> 
+        </div> 
+       </div>
+<p class="list1-heading">After removing the service plug grip, wait for at least 10 minutes before touching any of the high-voltage connectors or terminals. After waiting for 10 minutes, check the voltage at the terminals in the inspection point in the inverter with converter assembly. The voltage should be 0 V before beginning work.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001155O.html#RM100000001155O">Click here</a>
+</p>
+<div class="tip">
+        <p class="tiptitle">Tech Tips</p> 
+        <p class="ptxt">Waiting for at least 10 minutes is required to discharge the high-voltage capacitor inside the inverter with converter assembly and the electric vehicle charger assembly.</p> 
+       </div>
+</li> 
+     </ul> 
+    </div> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">After turning the power switch off, waiting time may be required before disconnecting the cable from the negative (-) auxiliary battery terminal. Therefore, make sure to read the disconnecting the cable from the negative (-) auxiliary battery terminal notices before proceeding with work.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM100000001AAN7.html#RM100000001AAN7">Click here</a>
+</p> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">After repair, clear the DTCs, turn the power switch off and wait for 30 seconds or more and perform the following procedure to confirm that the auxiliary battery low voltage indicated by this DTC has been repaired.</p>
+</li> 
+      <br class="list1-li-list2"/>
+<ol class="li-list2-list2">
+<li class="list2-item">
+<p class="li-list2-list2-heading">Wait for 2 minutes with park (P) selected, the power switch on (READY) and the following conditions met, then confirm that Data List item "BATT Voltage (Hybrid control system)" is between 13.0 and 15.0 V.</p>
+<p class="item-ptxt">(If charging is not performed and the electrical load increases, +B voltage may not be steady and will gradually drop.)</p>
+</li>
+<br class="list2-li-list3"/>
+<ol class="li-list3-list3" type="a">
+<li class="list3-item"> <p class="li-list3-list3-heading">Headlight switch is in the HI position.</p> </li>
+<li class="list3-item"> <p class="li-list3-list3-heading">A/C blower fan switch is in the HI position.</p> </li>
+<li class="list3-item"> <p class="li-list3-list3-heading">Window defogger switch is turned on.</p> </li>
+</ol>
+</ol> 
+      <li class="list1-item">
+<p class="list1-heading">By performing the following procedure, the DC/DC converter function can be checked.</p>
+</li> 
+      <br class="list1-li-list2"/>
+<ol class="li-list2-list2">
+<li class="list2-item">
+<p class="li-list2-list2-heading">Connect the AC/DC 400 A probe to the positive (+) auxiliary battery cable.</p>
+</li>
+<br class="list2-li-list3"/>
+<ol class="li-list3-list3" type="a">
+<li class="list3-item"> <p class="li-list3-list3-heading">Turn the power switch on (READY) and leave the vehicle as is until the electric current flowing to the auxiliary battery becomes 10 A or less.</p> </li>
+<li class="list3-item"> <p class="li-list3-list3-heading">Turn the power switch on (READY) and turn the headlight switch and A/C blower fan switch to the HI position and the window defogger on.</p> </li>
+<li class="list3-item"> <p class="li-list3-list3-heading">Confirm that the current drawn from the auxiliary battery is 0 A or lower and the auxiliary battery voltage is between 12.5 and 15.0 V.</p> </li>
+</ol>
+</ol> 
+     </ul> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">This DTC may be also stored when a part other than the DC/DC converter is malfunctioning or depending on user operation.</p>
+</li> 
+     </ul> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">If this vehicle is used to jump start another vehicle with a discharged battery, a fuse may blow due to overcurrent or the DC/DC converter self-protection may be activated. Also, if this vehicle is jump started by a vehicle with a 24 V battery, the same malfunction may occur and this DTC may be stored. (The suspended DC/DC converter control will return to normal by clearing the DTCs and turning the power switch off.)</p>
+</li> 
+     </ul> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">Confirm that high electrical load equipment such as a high-capacitance audio device or electric kettle is used in the vehicle. (A fuse of the auxiliary battery may be blown due to overcurrent.)</p>
+</li> 
+     </ul> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">If the DC/DC converter is malfunctioning, the auxiliary battery cannot be charged. Therefore, once the power switch is turned off, it may be impossible to turn it on (READY) again if the auxiliary battery is completely discharged. In this case, charge the auxiliary battery. Be careful as charging is not performed during the inspection.</p>
+</li> 
+     </ul> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">If the power switch turns off immediately after it is turned on (READY), the auxiliary battery voltage may be low. Charge the auxiliary battery.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001155H__RM100000001155H_07">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001155H__RM100000001155H_07_0002">
+<p class="testgrp-heading">CHECK DTC OUTPUT</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine, Hybrid Control and Motor Generator / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<br class="test1Root-test1"/>Powertrain &gt; Motor Generator &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZUAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZUAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EBWAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EHWAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EBWAE " width="NaN%">P1CCC96 only is output, or DTCs except the ones in the table below are also output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHWAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EBWAE " width="NaN%">DTCs of hybrid control system in the table below are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHWAE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EBWAE " width="NaN%">DTCs of motor generator control system in the table below are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHWAE " width="NaN%">C</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EBWAE " width="NaN%">DTCs of SFI system in the table below are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHWAE " width="NaN%">D</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tablenoborder">
+         <table class="big-table">
+<caption class="test1-table">
+           Table 1
+          </caption>
+<thead align="left" class="test1-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E3ZAE" width="NaN%">Malfunction Content</th> 
+            <th align="center" class="cellrowborder" id="ID0EC1AE" width="NaN%">System</th> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0EI1AE">Relevant DTC</th> 
+           </tr> 
+          </thead>
+<tbody class="test1-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E3ZAE " rowspan="4" width="NaN%">Insulation Malfunction</td> 
+            <td class="cellrowborder" headers="ID0EC1AE " rowspan="4" width="NaN%">Hybrid control system</td> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">P1C7C49</td> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">Hybrid/EV Battery Voltage System Isolation (A/C Area) Internal Electronic Failure</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">P1C7D49</td> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">Hybrid/EV Battery Voltage System Isolation (Hybrid/EV Battery Area) Internal Electronic Failure</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">P1C7E49</td> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">Hybrid/EV Battery Voltage System Isolation (Transaxle Area) Internal Electronic Failure</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">P1C7F49</td> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">Hybrid/EV Battery Voltage System Isolation (Direct Current Area) Internal Electronic Failure</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E3ZAE " rowspan="6" width="NaN%">High Voltage Circuit Malfunction</td> 
+            <td align="left" class="cellrowborder" headers="ID0EC1AE " rowspan="6" width="NaN%">Hybrid control system</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI1AE " width="NaN%">P0AA649</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI1AE " width="NaN%">Hybrid/EV Battery Voltage System Isolation Internal Electronic Failure</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">P0AD911</td> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">Hybrid/EV Battery Positive Contactor Circuit Short to Ground</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">P0ADD11</td> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">Hybrid/EV Battery Negative Contactor Circuit Short to Ground</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">P0AE411</td> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">Hybrid/EV Battery Precharge Contactor Circuit Short to Ground</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">P1C8449</td> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">High Voltage Power Resource Circuit Short during Ready ON</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">P300449</td> 
+            <td class="cellrowborder" headers="ID0EI1AE " width="NaN%">High Voltage Power Resource Circuit Abort Pre-Charge</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tablenoborder">
+         <table class="big-table">
+<caption class="test1-table">
+           Table 2
+          </caption>
+<thead align="left" class="test1-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EHBAG" width="NaN%">Malfunction Content</th> 
+            <th align="center" class="cellrowborder" id="ID0ENBAG" width="NaN%">System</th> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0ETBAG">Relevant DTC</th> 
+           </tr> 
+          </thead>
+<tbody class="test1-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EHBAG " rowspan="16" width="NaN%">System malfunction</td> 
+            <td align="left" class="cellrowborder" headers="ID0ENBAG " rowspan="3" width="NaN%">Hybrid control system</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P0A9300</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Inverter "A" Cooling System</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P0C7396</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Motor Electronics Coolant Pump "A" Component Internal Failure</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P314A31</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Motor Electronics Coolant Pump "A" No Signal</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ENBAG " width="NaN%">Motor generator control system</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P0E5717</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">DC/DC Converter Voltage Sensor "A" (VL) Circuit Voltage Above Threshold</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ENBAG " rowspan="12" width="NaN%">SFI system</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P059F73</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Active Grille Air Shutter "A" Actuator Stuck Closed</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P05A072</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Active Grille Air Shutter "A" Actuator Stuck Open</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P05A074</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Active Grille Air Shutter "A" Actuator Slipping</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P05A211</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Active Grille Air Shutter "A" Circuit Short to Ground</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P05A212</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Active Grille Air Shutter "A" Circuit Short to Battery</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P05A213</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Active Grille Air Shutter "A" Circuit Open</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P05A27E</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Active Grille Air Shutter "A" Actuator Stuck On</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P05A27F</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Active Grille Air Shutter "A" Actuator Stuck Off</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P05B112</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Active Grille Air Shutter "B" Circuit Short to Battery</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P05B114</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Active Grille Air Shutter "B" Circuit Short to Ground or Open</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">P05B131</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Active Grille Air Shutter "B" No Signal</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">U028487</td> 
+            <td class="cellrowborder" headers="ID0ETBAG " width="NaN%">Lost Communication with Active Grille Air Shutter Module "A" Missing Message</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">P1CCC96 may be output as a result of the malfunction indicated by the DTCs above.</p> 
+         <br class="tip"/>
+         <ol class="list1" type="i">
+<li class="list1-item">
+<p class="list1-heading">The chart above is listed in inspection order of priority.</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">Check DTCs that are output at the same time by following the listed order. (The main cause of the malfunction can be determined without performing unnecessary inspections.)</p>
+</li>
+</ol> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (HYBRID CONTROL SYSTEM) <a class="content6-ptxt-xref" href="RM100000001AGZH.html#RM100000001AGZH">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (MOTOR GENERATOR CONTROL SYSTEM) <a class="content6-ptxt-xref" href="RM100000001AKGG.html#RM100000001AKGG">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">D</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (SFI SYSTEM) w/ Canister Pump Module: <a class="content6-ptxt-xref" href="RM100000001AMDC.html#RM100000001AMDC">Click here</a> <br/>GO TO DTC CHART (SFI SYSTEM) w/o Canister Pump Module: <a class="content6-ptxt-xref" href="RM100000001AMDR.html#RM100000001AMDR">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001155H__RM100000001155H_07_0011">
+<p class="testgrp-heading">CHECK FUSIBLE LINK (DC/DC)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HDDC01" class="figure-graphic" src="../images/b006hddc01.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td class="cellrowborder" width="NaN%">Fusible link block assembly</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Check the fusible link block assembly (DC/DC) for improper installation.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E6QAG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E6QAG">The fusible link block assembly is installed securely.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EESAG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EESAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ERTAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EXTAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E4TAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERTAG " width="NaN%">Fusible link block assembly terminal 1 - 2</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EXTAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E4TAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPVAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPVAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ESWAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESWAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESWAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUSIBLE LINK BLOCK ASSEMBLY (DC/DC) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001155H__RM100000001155H_07_0014">
+<p class="testgrp-heading">CHECK AMD TERMINAL VOLTAGE</p>
+<div class="ie8fixer"/>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the cable to the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HDVE03" class="figure-graphic" src="../images/b006hdve03.png"/> 
+        </div>
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EK1AG" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EK1AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EX2AG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E42AG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ED3AG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EX2AG " width="NaN%">D3-1 (AMD) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E42AG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ED3AG " width="NaN%">Same as auxiliary battery voltage</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EO5AG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EO5AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ER6AG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ER6AG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ER6AG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUSIBLE LINK BLOCK ASSEMBLY (DC/DC) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001155H__RM100000001155H_07_0016">
+<p class="testgrp-heading">CHECK AMD TERMINAL CONNECTION CONDITION</p>
+<div class="ie8fixer"/>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006IJE" class="figure-graphic" src="../images/b006ije.png"/> 
+        </div>
+<p class="test1-heading">Check that the bolts for the AMD terminal are tightened to the specified torque, the AMD terminal is connected securely, and there are no contact problems.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETDBG" class="spec-title">Torque</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ETDBG">T=8.0 N*m (82 kgf*cm, 71 in.*lbf)</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENEBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENEBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" colspan="2" id="ID0E1FBG">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ECGBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E1FBG " width="NaN%">There are no arc marks.</td> 
+                 <td align="left" class="spec-table-item" headers="ID0E1FBG " width="NaN%">The terminal is connected securely and there are no contact problems.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECGBG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E1FBG " width="NaN%">There are no arc marks.</td> 
+                 <td align="left" class="spec-table-item" headers="ID0E1FBG " width="NaN%">The terminal is not connected securely and there is a contact problem.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECGBG " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E1FBG " width="NaN%">There are arc marks.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1FBG " width="NaN%">-</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECGBG " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CONNECT SECURELY </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE MALFUNCTIONING PARTS </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001155H__RM100000001155H_07_0071">
+<p class="testgrp-heading">CHECK ENGINE WIRE</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the engine wire from the AMD terminal (inverter with converter assembly side and auxiliary battery side).</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006H8FC04" class="figure-graphic" src="../images/b006h8fc04.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Engine Wire</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EUMBG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EUMBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EBOBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EHOBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ENOBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EBOBG " width="NaN%">D3-1 (AMD) - D2-1 (AMD)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHOBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ENOBG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the engine wire.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKSBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EKSBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ENTBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ENTBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ENTBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ENGINE WIRE <a class="content6-ptxt-xref" href="RM10000000115AO.html#RM10000000115AO">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001155H__RM100000001155H_07_0105">
+<p class="testgrp-heading">CHECK COOLING SYSTEM</p>
+<p class="content6-ptxt"> <a class="content6-ptxt-xref" href="RM100000001150U.html#RM100000001150U">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0ESWBG" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0ESWBG" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EVXBG" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EVXBG " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001155H__RM100000001155H_07_0106">
+<p class="testgrp-heading">CHECK DC/DC CONVERTER FUNCTION</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">The current at the AMD terminal cannot be measured directly because of space limitations. Measure the current flowing at the auxiliary battery instead.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the AC/DC 400 A probe of the tester to the positive (+) auxiliary battery cable.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the service plug grip.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the cable to the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (READY) and leave the vehicle as it is until the electric current flowing to the auxiliary battery becomes 10 A or less.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If the power switch turns off immediately after it is turned on (READY), auxiliary battery voltage may be low. Recharge the auxiliary battery and perform this procedure again.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006I28C08" class="figure-graphic" src="../images/b006i28c08.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Probe Direction</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Current Flowing to Auxiliary Battery</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006I4FC08" class="figure-graphic" src="../images/b006i4fc08.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Probe Direction</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Current Flowing from Auxiliary Battery</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the current flowing from the auxiliary battery with the power switch on (READY), the headlight position switch and blower motor switch in the HI position, and the rear window defogger turned on.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EEBAI" class="spec-title">Standard Current</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EEBAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ERCAI" width="NaN%">Item</th> 
+                 <th align="center" class="spec-table-item" id="ID0EXCAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E4CAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERCAI " width="NaN%">Current flowing from auxiliary battery</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EXCAI " width="NaN%"> <p class="ptxt">Power switch on (READY)</p> <p class="ptxt">(The headlight position switch and blower motor switch are in the HI position, and the rear window defogger is turned on.)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0E4CAI " width="NaN%"> <p class="ptxt">0 A or less</p> <p class="ptxt">(no current from auxiliary battery)</p> </td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQFAI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQFAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E4GAI" width="NaN%">Item</th> 
+                 <th align="center" class="spec-table-item" id="ID0EDHAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJHAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4GAI " width="NaN%">Auxiliary battery voltage</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDHAI " width="NaN%"> <p class="ptxt">Power switch on (READY)</p> <p class="ptxt">(The headlight position switch and blower motor switch are in the HI position, and the rear window defogger is turned on.)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJHAI " width="NaN%">13 to 15 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ERJAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ERJAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EUKAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUKAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUKAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE INVERTER WITH CONVERTER ASSEMBLY <a class="content6-ptxt-xref" href="RM10000000115AO.html#RM10000000115AO">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001155H__RM100000001155H_07_0013">
+<p class="testgrp-heading">CHECK HIGH VOLTAGE INSULATION</p>
+<div class="ie8fixer"/>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the inverter cover from the inverter with converter assembly.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HLBE04" class="figure-graphic" src="../images/b006hlbe04.png"/> 
+        </div>
+<p class="test1-heading">Using a megohmmeter set to 500 V, measure the insulation resistance according to the value(s) in the table below.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Be sure to set the megohmmeter to 500 V when performing this test. Using a setting higher than 500 V can result in damage to the component being inspected.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ERPAI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ERPAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5QAI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EERAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EKRAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5QAI " width="NaN%">g2-1 (W) - Body ground and shield ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EERAI " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKRAI " width="NaN%">10 MΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5QAI " width="NaN%">g2-2 (U) - Body ground and shield ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EERAI " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKRAI " width="NaN%">10 MΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5QAI " width="NaN%">g2-3 (V) - Body ground and shield ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EERAI " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKRAI " width="NaN%">10 MΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5QAI " width="NaN%">g2-4 (W) - Body ground and shield ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EERAI " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKRAI " width="NaN%">10 MΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5QAI " width="NaN%">g2-5 (U) - Body ground and shield ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EERAI " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKRAI " width="NaN%">10 MΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5QAI " width="NaN%">g2-6 (V) - Body ground and shield ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EERAI " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKRAI " width="NaN%">10 MΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform this inspection while the motor cable are connected.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the inverter cover to the inverter with converter assembly.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENXAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENXAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQYAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQYAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQYAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HV CONVERTER KIT <a class="content6-ptxt-xref" href="RM1000000018L05.html#RM1000000018L05">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001155H__RM100000001155H_07_0108">
+<p class="testgrp-heading">CHECK GENERATOR HIGH-VOLTAGE CIRCUIT</p>
+<p class="content6-ptxt"> <a class="content6-ptxt-xref" href="RM100000001150S.html#RM100000001150S">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EV2AI" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EV2AI" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EY3AI" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EY3AI " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001155H__RM100000001155H_07_0109">
+<p class="testgrp-heading">CHECK MOTOR HIGH-VOLTAGE CIRCUIT</p>
+<p class="content6-ptxt"> <a class="content6-ptxt-xref" href="RM100000001150Q.html#RM100000001150Q">Click here</a>
+</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">If the "Motor High-voltage Circuit" inspection results are normal, perform the next step.</p> 
+      </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EM6AI" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EM6AI" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EPABI" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EPABI " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NEXT</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE INVERTER WITH CONVERTER ASSEMBLY <a class="content6-ptxt-xref" href="RM10000000115AO.html#RM10000000115AO">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

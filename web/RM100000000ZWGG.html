@@ -1,0 +1,799 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="POWER MIRROR CONTROL SYSTEM Mirror Heater does not Operate with Rear Defogger Switch" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_59" name="servcatId"/> 
+  <meta content="Vehicle Exterior" name="servcatName"/> 
+  <meta content="_058079" name="sectionId"/> 
+  <meta content="MIRROR (EXT)" name="sectionName"/> 
+  <meta content="_0289196" name="ttlId"/> 
+  <meta content="POWER MIRROR CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000ZWGG" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Mirror Heater does not Operate with Rear Defogger Switch</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">POWER MIRROR CONTROL SYSTEM<span class="topictitle1"> Mirror Heater does not Operate with Rear Defogger Switch</span>
+</h1>
+<div class="subpara" id="RM100000000ZWGG__RM100000000ZWGG_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">When the mirror heater switch (rear window defogger switch) on the air conditioning control assembly is pressed, the operation signal is sent to the air conditioning amplifier assembly via LIN communication. When the air conditioning amplifier assembly receives the signal, it turns on the defogger relay to operate the mirror heaters.</p> 
+   </div>
+<div class="subpara" id="RM100000000ZWGG__RM100000000ZWGG_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003LQAE02" class="figure-graphic--bigImage" src="../images/a003lqae02.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM100000000ZWGG__RM100000000ZWGG_03">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">Inspect the fuses for circuits related to this system before performing the following procedure.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">If the auxiliary battery voltage is low, the mirror heater function may not operate. In this case, check the Data List item "Battery Control Count (Body ECU)".</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000Z9N9.html#RM100000000Z9N9">Click here</a>
+</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000ZWGG__RM100000000ZWGG_13">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000ZWGG__RM100000000ZWGG_13_0001">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Air Conditioner / Active Test.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Perform the Active Test according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Air Conditioner &gt; Active Test<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EGDAC" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EMDAC" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0ESDAC" width="NaN%">Control Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EYDAC" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EGDAC " width="NaN%">Defogger Relay (Rear)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EMDAC " width="NaN%">Mirror Heater</td> 
+              <td align="center" class="cellrowborder" headers="ID0ESDAC " width="NaN%">OFF or ON</td> 
+              <td align="center" class="cellrowborder" headers="ID0EYDAC " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Air Conditioner &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EAJAC" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EAJAC " width="NaN%">Defogger Relay (Rear)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E6NAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E6NAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EHPAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ENPAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHPAC " width="NaN%">Mirror heater operation on both mirrors is not normal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ENPAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHPAC " width="NaN%">Mirror heater operation on RH side mirror is not normal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ENPAC " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHPAC " width="NaN%">Mirror heater operation on LH side mirror is not normal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ENPAC " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">B</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK HARNESS AND CONNECTOR (DEF RELAY - OUTER REAR VIEW MIRROR ASSEMBLY RH - BODY GROUND)  <a class="res-right-fin-false-xref" href="#RM100000000ZWGG__RM100000000ZWGG_13_0007">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">C</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK HARNESS AND CONNECTOR (DEF RELAY - OUTER REAR VIEW MIRROR ASSEMBLY LH - BODY GROUND)  <a class="res-right-fin-false-xref" href="#RM100000000ZWGG__RM100000000ZWGG_13_0012">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZWGG__RM100000000ZWGG_13_0002">
+<p class="testgrp-heading">CHECK WINDOW DEFOGGER SYSTEM</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the window defogger system operation.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000Z7PJ.html#RM100000000Z7PJ">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBEAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EBEAE">The window defogger system operates normally.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2EAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2EAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5FAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5FAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5FAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO WINDOW DEFOGGER SYSTEM <a class="content6-ptxt-xref" href="RM100000000Z7PD.html#RM100000000Z7PD">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZWGG__RM100000000ZWGG_13_0003">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (DEF RELAY - OUTER REAR VIEW MIRROR ASSEMBLY RH/LH - BODY GROUND)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the DEF relay from the NO. 2 relay block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the J8 outer rear view mirror assembly RH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the K8 outer rear view mirror assembly LH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EIKAE" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EIKAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EVLAE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E2LAE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EBMAE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVLAE " width="NaN%">DEF relay holder terminal-3 - J8-2 (+)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2LAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBMAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVLAE " width="NaN%">DEF relay holder terminal-3 - K8-2 (+)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2LAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBMAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVLAE " width="NaN%">DEF relay holder terminal-3 - Body Ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2LAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBMAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E6OAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E6OAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ECQAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ECQAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ECQAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>USE SIMULATION METHOD TO CHECK <a class="content6-ptxt-xref" href="RM100000001145X.html#RM100000001145X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZWGG__RM100000000ZWGG_13_0007">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (DEF RELAY - OUTER REAR VIEW MIRROR ASSEMBLY RH - BODY GROUND)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the DEF relay from the NO. 2 relay block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the J8 outer rear view mirror assembly RH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the K8 outer rear view mirror assembly LH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMUAE" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EMUAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EZVAE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E6VAE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EFWAE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZVAE " width="NaN%">DEF relay holder terminal-3 - J8-2 (+)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6VAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFWAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZVAE " width="NaN%">J8-8 (-) - Body Ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6VAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFWAE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZVAE " width="NaN%">J8-2 (+) - Body Ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6VAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFWAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZVAE " width="NaN%">DEF relay holder terminal-3 - Body Ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6VAE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFWAE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZZAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZZAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E31AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E31AE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E31AE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZWGG__RM100000000ZWGG_13_0009">
+<p class="testgrp-heading">INSPECT OUTER MIRROR RH</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the outer mirror RH.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZWH0.html#RM100000000ZWH0">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the outer mirror RH.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZWGY.html#RM100000000ZWGY">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EA6AE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EA6AE">Outer rear mirror RH is normal.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E16AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E16AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5AAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5AAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5AAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE OUTER REAR VIEW MIRROR ASSEMBLY RH <a class="content6-ptxt-xref" href="RM100000000ZWGU.html#RM100000000ZWGU">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE OUTER MIRROR RH <a class="content6-ptxt-xref" href="RM100000000ZWH0.html#RM100000000ZWH0">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZWGG__RM100000000ZWGG_13_0012">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (DEF RELAY - OUTER REAR VIEW MIRROR ASSEMBLY LH - BODY GROUND)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the DEF relay from the NO. 2 relay block assembly.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the K8 outer rear view mirror assembly LH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the J8 outer rear view mirror assembly RH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EOFAG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EOFAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E2GAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EBHAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EHHAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2GAG " width="NaN%">DEF relay holder terminal-3 - K8-2 (+)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBHAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHHAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2GAG " width="NaN%">K8-8 (-) - Body Ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBHAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHHAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2GAG " width="NaN%">K8-2 (+) - Body Ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBHAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHHAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2GAG " width="NaN%">DEF relay holder terminal-3 - Body Ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBHAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHHAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2KAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2KAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5LAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5LAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5LAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000ZWGG__RM100000000ZWGG_13_0013">
+<p class="testgrp-heading">INSPECT OUTER MIRROR LH</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the outer mirror LH.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZWH0.html#RM100000000ZWH0">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the outer mirror LH.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZWGY.html#RM100000000ZWGY">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECQAG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ECQAG">Outer rear mirror LH is normal.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E3QAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E3QAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E6RAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6RAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE OUTER REAR VIEW MIRROR ASSEMBLY LH <a class="content6-ptxt-xref" href="RM100000000ZWGU.html#RM100000000ZWGU">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE OUTER MIRROR LH <a class="content6-ptxt-xref" href="RM100000000ZWH0.html#RM100000000ZWH0">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

@@ -1,0 +1,1259 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="HYBRID CONTROL SYSTEM, Diagnostic DTC:P0A3611, P0A3615" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296362" name="ttlId"/> 
+  <meta content="HYBRID CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001152B" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P0A3611, P0A3615</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">HYBRID CONTROL SYSTEM, Diagnostic DTC:P0A3611, P0A3615</h1>
+<div class="section" id="RM100000001152B__RM100000001152B_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P0A3611</td> 
+       <td class="dtcname" headers="ID0EED">Generator Temperature Sensor Circuit Short to Ground</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P0A3615</td> 
+       <td class="dtcname" headers="ID0EED">Generator Temperature Sensor Circuit Short to Auxiliary Battery or Open</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001152B__RM100000001152B_10">
+     
+    <p class="subpara-subparaName">DTC SUMMARY</p> 
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000001152B__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">MALFUNCTION DESCRIPTION</p>
+<p class="step1-ptxt">These DTCs are stored when the generator temperature sensor output is abnormal. The cause of this malfunction may be one of the following:</p>
+<br class="step1Root-step1"/>
+<ul class="step1-list1"> 
+       <p class="list1-li-title">
+<strong class="li-title-title">Hybrid vehicle control ECU internal malfunction</strong>
+</p> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Hybrid vehicle control ECU malfunction</p>
+</li> 
+      </ul>
+<br class="step1Root-step1"/>
+<ul class="step1-list1"> 
+       <p class="list1-li-title">
+<strong class="li-title-title">Generator temperature sensor malfunction</strong>
+</p> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Internal generator temperature sensor malfunction</p>
+</li> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Open or short in generator temperature sensor</p>
+</li> 
+      </ul>
+<br class="step1Root-step1"/>
+<ul class="step1-list1"> 
+       <p class="list1-li-title">
+<strong class="li-title-title">Wire harness between the generator temperature sensor and hybrid vehicle control ECU</strong>
+</p> 
+       <li class="list1-item">
+<p class="step1-list1-heading">The connectors are not connected properly</p>
+</li> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Foreign matter or water on the connector terminals</p>
+</li> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Open or short in wire harness</p>
+</li> 
+      </ul>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">If any of these DTCs are stored, the generator temperature sensor is malfunctioning and the self-protection function may not operate. Therefore under certain high load driving condition, the temperature of the generator (MG1) becomes high. If the self-protection function does not operate, the generator (MG1) may malfunction and cause the vehicle to enter fail-safe mode.</p> 
+      </div>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001152B__RM100000001152B_07">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The resistance of the thermistor built into the generator temperature sensor changes in accordance with changes in generator (MG1) temperature. The lower the generator (MG1) temperature, the higher the thermistor resistance. Conversely, the higher the generator (MG1) temperature, the lower the resistance.</p> 
+    <div class="fignone"> 
+     <img alt="B006IX6E17" class="figure-graphic" src="../images/b006ix6e17.png"/> 
+     <div class="figure-p"> 
+      <div class="tablenoborder">
+       <table class="p-table">
+<caption class="p-table">
+         
+        </caption>
+<tbody class="p-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+          <td align="left" class="cellrowborder" width="NaN%">Resistance (kΩ)</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+          <td align="left" class="cellrowborder" width="NaN%">Temperature (°C (°F))</td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EWFAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0E3FAC" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0ECGAC" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EIGAC" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EOGAC" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EUGAC" width="NaN%">Warning Indicate</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EWFAC " width="NaN%">P0A3611</td> 
+        <td align="left" class="cellrowborder" headers="ID0E3FAC " width="NaN%">Generator Temperature Sensor Circuit Short to Ground</td> 
+        <td align="left" class="cellrowborder" headers="ID0ECGAC " width="NaN%"> <p class="ptxt">Short to ground in the generator temperature sensor circuit</p> <p class="ptxt">(1 trip detection logic)</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EIGAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Wire harness or connector</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid vehicle control ECU</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid vehicle generator assembly (Generator temperature sensor)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EOGAC " width="NaN%">Come on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUGAC " width="NaN%"> <p class="ptxt">Master Warning Light:</p> <p class="ptxt">Comes on</p> </td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EWFAC " width="NaN%">P0A3615</td> 
+        <td align="left" class="cellrowborder" headers="ID0E3FAC " width="NaN%">Generator Temperature Sensor Circuit Short to Auxiliary Battery or Open</td> 
+        <td align="left" class="cellrowborder" headers="ID0ECGAC " width="NaN%"> <p class="ptxt">Open or short to +B in the generator temperature sensor circuit</p> <p class="ptxt">(1 trip detection logic)</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EIGAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Wire harness or connector</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid vehicle control ECU</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid vehicle generator assembly (Generator temperature sensor)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EOGAC " width="NaN%">Come on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUGAC " width="NaN%"> <p class="ptxt">Master Warning Light:</p> <p class="ptxt">Comes on</p> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Related Data List
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0ELOAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EROAC" width="NaN%">Data List</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ELOAC " width="NaN%">P0A3611</td> 
+        <td align="left" class="cellrowborder" headers="ID0EROAC " rowspan="2" width="NaN%">Generator Temperature</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ELOAC " width="NaN%">P0A3615</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">After confirming that DTC P0A3611 or P0A3615 is output, use the GTS to check "Generator Temperature" in the Data List.</p> 
+     <div class="tablenoborder">
+      <table class="big-table">
+<thead align="left" class="table"> 
+        <tr> 
+         <th align="center" class="cellrowborder" id="ID0E5AAE" width="NaN%">Displayed Temperature</th> 
+         <th align="center" class="cellrowborder" id="ID0EEBAE" width="NaN%">Malfunction</th> 
+        </tr> 
+       </thead>
+<tbody class="table"> 
+        <tr> 
+         <td align="center" class="cellrowborder" headers="ID0E5AAE " width="NaN%">-40°C (-40°F)</td> 
+         <td align="center" class="cellrowborder" headers="ID0EEBAE " width="NaN%">Open circuit or short to +B</td> 
+        </tr> 
+        <tr> 
+         <td align="center" class="cellrowborder" headers="ID0E5AAE " width="NaN%">215°C (419°F)</td> 
+         <td align="center" class="cellrowborder" headers="ID0EEBAE " width="NaN%">Short circuit or short to ground</td> 
+        </tr> 
+       </tbody>
+</table> 
+     </div> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001152B__RM100000001152B_09">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">After repair has been completed, clear the DTC and then check that the vehicle has returned to normal by performing the following All Readiness check procedure.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM1000000011O0Q.html#RM1000000011O0Q">Click here</a>
+</p> 
+    </div> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) and turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for 2 minutes or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) and turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">With power switch on (IG) and wait for 5 seconds or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Hybrid Control / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows NORMAL, the system is normal.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows ABNORMAL, the system has a malfunction.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows INCOMPLETE or N/A, perform driving pattern again.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001152B__RM100000001152B_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003NACE33" class="figure-graphic--bigImage" src="../images/a003nace33.png"/>
+<div class="figure-p"> 
+      <div class="tablenoborder">
+       <table class="big-image-callout">
+<caption class="p-table">
+         
+        </caption>
+<tbody class="p-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+          <td align="left" class="cellrowborder" width="NaN%">ADC</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+          <td align="left" class="cellrowborder" width="NaN%">No. 1 Engine Room Relay Block and No. 1 Junction Block Assembly Connector</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+          <td align="left" class="cellrowborder" width="NaN%">Generator Temperature Sensor (Hybrid Vehicle Transaxle Assembly)</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+          <td align="left" class="cellrowborder" width="NaN%">Hybrid Vehicle Control ECU</td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div> 
+     </div>
+</div> 
+   </div>
+<div class="subpara" id="RM100000001152B__RM100000001152B_08">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001152B__RM100000001152B_08_0034">
+<p class="testgrp-heading">CHECK CONNECTOR CONNECTION CONDITION (HYBRID VEHICLE CONTROL ECU CONNECTOR)</p>
+<div class="ie8fixer"/>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0E2MAE" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0E2MAE" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EDOAE" width="NaN%">Result</th> 
+               <th align="center" class="spec-table-item" id="ID0EJOAE" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="left" class="spec-table-item" headers="ID0EDOAE " width="NaN%">OK</td> 
+               <td align="center" class="spec-table-item" headers="ID0EJOAE " width="NaN%">A</td> 
+              </tr> 
+              <tr> 
+               <td align="left" class="spec-table-item" headers="ID0EDOAE " width="NaN%">NG (The connector is not connected securely.)</td> 
+               <td align="center" class="spec-table-item" headers="ID0EJOAE " width="NaN%">B</td> 
+              </tr> 
+              <tr> 
+               <td align="left" class="spec-table-item" headers="ID0EDOAE " width="NaN%">NG (The terminals are not making secure contact or are deformed, or water or foreign matter exists in the connector.)</td> 
+               <td align="center" class="spec-table-item" headers="ID0EJOAE " width="NaN%">C</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Check the connection condition of the Hybrid vehicle control ECU connectors and the contact pressure of each terminal. Check the terminals for deformation, and check the connector for water ingress and foreign matter.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145W.html#RM100000001145W">Click here</a>
+</p>
+<div class="fignone--bigImage">
+<img alt="B006HM7C01" class="figure-graphic--bigImage" src="../images/b006hm7c01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*A</td> 
+              <td align="left" class="cellrowborder" width="NaN%">for LHD</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*B</td> 
+              <td align="left" class="cellrowborder" width="NaN%">for RHD</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHUAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EHUAE">- The connector is connected securely.</td> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EHUAE">- The terminals are not deformed and are connected securely.</td> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EHUAE">- No water or foreign matter in the connector.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXVAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EXVAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E6WAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EFXAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E6WAE " width="NaN%">OK</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFXAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E6WAE " width="NaN%">NG (The connector is not connected securely.)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFXAE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E6WAE " width="NaN%">NG (The terminals are not making secure contact or are deformed, or water or foreign matter exists in the connector.)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFXAE " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CONNECT SECURELY </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001152B__RM100000001152B_08_0031">
+<p class="testgrp-heading">CHECK CONNECTOR CONNECTION CONDITION (GENERATOR TEMPERATURE SENSOR CONNECTOR)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003OY6" class="figure-graphic" src="../images/a003oy6.png"/> 
+        </div>
+<p class="test1-heading">Check the connection condition of the generator temperature sensor connector and the contact pressure of each terminal. Check the terminals for deformation, and check the connector for water ingress and foreign matter.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145W.html#RM100000001145W">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EY2AE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EY2AE">- The connector is connected securely.</td> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EY2AE">- The terminals are not deformed and are connected securely.</td> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EY2AE">- No water or foreign matter in the connector.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EW4AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EW4AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E55AE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EE6AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E55AE " width="NaN%">OK</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EE6AE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E55AE " width="NaN%">NG (The connector is not connected securely.)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EE6AE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E55AE " width="NaN%">NG (The terminals are not making secure contact or are deformed, or water or foreign matter exists in the connector.)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EE6AE " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CONNECT SECURELY </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001152B__RM100000001152B_08_0003">
+<p class="testgrp-heading">READ VALUE USING GTS (GENERATOR TEMPERATURE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Data List / Generator Temperature.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EHFAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EHFAG " width="NaN%">Generator Temperature</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBKAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBKAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJLAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EPLAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EJLAG " width="NaN%">-40°C (-40°F)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPLAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EJLAG " width="NaN%">215°C (419°F)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPLAG " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EJLAG " width="NaN%">Same as actual temperature</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPLAG " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">B</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">INSPECT HYBRID VEHICLE TRANSAXLE ASSEMBLY (GENERATOR TEMPERATURE SENSOR)  <a class="res-right-fin-false-xref" href="#RM100000001152B__RM100000001152B_08_0041">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001152B__RM100000001152B_08_0039">
+<p class="testgrp-heading">INSPECT HYBRID VEHICLE TRANSAXLE ASSEMBLY (GENERATOR TEMPERATURE SENSOR)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003OY6" class="figure-graphic" src="../images/a003oy6.png"/> 
+        </div>
+<p class="test1-heading">Disconnect the C8 generator temperature sensor connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003O4MC03" class="figure-graphic" src="../images/a003o4mc03.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Component without harness connected</p> <p class="ptxt">(Generator Temperature Sensor (Hybrid Vehicle Transaxle Assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EFTAG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EFTAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ESUAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EYUAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E5UAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESUAG " width="NaN%">5(GMT) - 4(GMTG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYUAG " width="NaN%">Power switch OFF</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5UAG " width="NaN%">0.3338 to 1487 kΩ</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the C8 generator temperature sensor connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2WAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2WAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5XAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5XAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5XAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HYBRID VEHICLE TRANSAXLE ASSEMBLY <a class="content6-ptxt-xref" href="RM10000000113Q3.html#RM10000000113Q3">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001152B__RM100000001152B_08_0029">
+<p class="testgrp-heading">CHECK HYBRID VEHICLE CONTROL ECU</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Connect terminals 48 (GMT) and 47 (GMTG) of the A41 hybrid vehicle control ECU.</p>
+<div class="fignone--bigImage">
+<img alt="A003MA0C67" class="figure-graphic--bigImage" src="../images/a003ma0c67.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Component with harness connected</p> <p class="ptxt">(to Hybrid Vehicle Control ECU)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Data List / Generator Temperature.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EPABG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EPABG " width="NaN%">Generator Temperature</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJFBG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJFBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWGBG" width="NaN%">Tester Display</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3GBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ECHBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWGBG " width="NaN%">Generator Temperature</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3GBG " width="NaN%"> <p class="ptxt">Terminals A41-48 (GMT) and A41-47 (GMTG) connected</p> <p class="ptxt">Power switch on (IG)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECHBG " width="NaN%">215°C (419°F)</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKJBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EKJBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ENKBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ENKBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ENKBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HYBRID VEHICLE CONTROL ECU <a class="content6-ptxt-xref" href="RM10000000115AK.html#RM10000000115AK">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001152B__RM100000001152B_08_0041">
+<p class="testgrp-heading">INSPECT HYBRID VEHICLE TRANSAXLE ASSEMBLY (GENERATOR TEMPERATURE SENSOR)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003OY6" class="figure-graphic" src="../images/a003oy6.png"/> 
+        </div>
+<p class="test1-heading">Disconnect the C8 generator temperature sensor connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003O4MC03" class="figure-graphic" src="../images/a003o4mc03.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Component without harness connected</p> <p class="ptxt">(Generator Temperature Sensor (Hybrid Vehicle Transaxle Assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZQBG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZQBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EGSBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EMSBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ESSBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EGSBG " width="NaN%">5(GMT) - 4(GMTG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMSBG " width="NaN%">Power switch OFF</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESSBG " width="NaN%">0.3338 to 1487 kΩ</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the C8 generator temperature sensor connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPUBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPUBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ESVBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESVBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESVBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HYBRID VEHICLE TRANSAXLE ASSEMBLY <a class="content6-ptxt-xref" href="RM10000000113Q3.html#RM10000000113Q3">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001152B__RM100000001152B_08_0030">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (GENERATOR TEMPERATURE SENSOR - HYBRID VEHICLE CONTROL ECU CONNECTOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the C8 generator temperature sensor connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A41 hybrid vehicle control ECU connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003MM9C08" class="figure-graphic" src="../images/a003mm9c08.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Generator Temperature Sensor)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Hybrid Vehicle Control ECU)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ERZBG" class="spec-title">Standard Resistance (Check for Open)</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ERZBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E51BG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EE2BG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EK2BG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E51BG " width="NaN%">C8-5 (GMT) - A41-48 (GMT)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EE2BG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EK2BG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E51BG " width="NaN%">C8-4 (GMTG) - A41-47 (GMTG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EE2BG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EK2BG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ES4BG" class="spec-title">Standard Resistance (Check for Short)</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ES4BG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E65BG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EF6BG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EL6BG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E65BG " width="NaN%">C8-5 (GMT) or A41-48 (GMT) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EF6BG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EL6BG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E65BG " width="NaN%">C8-4 (GMTG) or A41-47 (GMTG) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EF6BG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EL6BG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the A41 hybrid vehicle control ECU.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the C8 generator temperature sensor connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQFAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQFAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETGAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETGAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETGAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HYBRID VEHICLE CONTROL ECU <a class="content6-ptxt-xref" href="RM10000000115AK.html#RM10000000115AK">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

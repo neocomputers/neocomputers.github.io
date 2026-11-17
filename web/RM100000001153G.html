@@ -1,0 +1,941 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="HYBRID CONTROL SYSTEM, Diagnostic DTC:P0D4C1C" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296362" name="ttlId"/> 
+  <meta content="HYBRID CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001153G" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P0D4C1C</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">HYBRID CONTROL SYSTEM, Diagnostic DTC:P0D4C1C</h1>
+<div class="section" id="RM100000001153G__RM100000001153G_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P0D4C1C</td> 
+       <td class="dtcname" headers="ID0EED">Hybrid/EV Battery Charger Hybrid/EV Battery Input Voltage Sensor Voltage Out of Range</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001153G__RM100000001153G_09">
+     
+    <p class="subpara-subparaName">DTC SUMMARY</p> 
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000001153G__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">MALFUNCTION DESCRIPTION</p>
+<p class="step1-ptxt">The charging voltage sensor (VCHG) built into the electric vehicle charger assembly detects the output voltage of the high-voltage DC circuit of the electric vehicle charger assembly. This information is output to the hybrid vehicle control ECU which compares the charging voltage (VCHG) with the HV battery voltage (VB). If the difference between them is large, the hybrid vehicle control ECU detects a malfunction.</p>
+<p class="step1-ptxt">The cause of this malfunction may be one of the following:</p>
+<br class="step1Root-step1"/>
+<ul class="step1-list1"> 
+       <p class="list1-li-title">
+<strong class="li-title-title">Electric vehicle charger assembly VCHG sensor internal circuit malfunction</strong>
+</p> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Electric vehicle charger assembly malfunction</p>
+</li> 
+      </ul>
+<br class="step1Root-step1"/>
+<ul class="step1-list1"> 
+       <p class="list1-li-title">
+<strong class="li-title-title">Battery ECU assembly VB sensor internal circuit malfunction</strong>
+</p> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Battery ECU assembly malfunction</p>
+</li> 
+      </ul>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001153G__RM100000001153G_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The electric vehicle charger assembly sends charging voltage sensor signals to the hybrid vehicle control ECU via CAN communication.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EXAAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0E4AAC" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EDBAC" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EJBAC" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EPBAC" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EVBAC" width="NaN%">Warning Indicate</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EXAAC " width="NaN%">P0D4C1C</td> 
+        <td align="left" class="cellrowborder" headers="ID0E4AAC " width="NaN%">Hybrid/EV Battery Charger Hybrid/EV Battery Input Voltage Sensor Voltage Out of Range</td> 
+        <td align="left" class="cellrowborder" headers="ID0EDBAC " width="NaN%"> <p class="ptxt">The difference between the charging voltage (VCHG) and the HV battery voltage (VB) is large during plug-in charging.</p> <p class="ptxt">(1 trip detection logic)</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EJBAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Battery ECU assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Electric vehicle charger assembly</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EPBAC " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EVBAC " width="NaN%"> <p class="ptxt">Master Warning Light:</p> <p class="ptxt">Comes on</p> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Related Data List
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0E2FAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EBGAC" width="NaN%">Data List</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0E2FAC " width="NaN%">P0D4C1C</td> 
+        <td align="left" class="cellrowborder" headers="ID0EBGAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Voltage</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Charging Voltage for Hybrid Battery</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">AC Charging Precharge Relay Drive Request</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">AC Charging Precharge Relay Status</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">AC Charging Positive Relay Drive Request</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">AC Charging Positive Relay Status</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">AC Charging Negative Relay Drive Request</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">AC Charging Negative Relay Status</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">VL-Voltage before Boosting</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">SMRP Status</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">SMRP Control Status</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">SMRB Status</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">SMRB Control Status</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">SMRG Status</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">SMRG Control Status</p>
+</li> 
+         </ul> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <p class="content5-ptxt">The following items can be helpful when performing repairs:</p> 
+    <br class="subpara"/>
+    <ul class="content5-list1"> 
+     <p class="list1-li-title">
+<strong class="li-title-title">Data List</strong>
+</p> 
+     <li class="list1-item">
+<p class="content5-list1-heading">Charger Input Power</p>
+</li> 
+     <li class="list1-item">
+<p class="content5-list1-heading">Hybrid Battery Current</p>
+</li> 
+    </ul> 
+   </div>
+<div class="subpara" id="RM100000001153G__RM100000001153G_08">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">After repair has been completed, clear the DTC and then check that the vehicle has returned to normal by performing the following All Readiness check procedure.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM1000000011O0Q.html#RM1000000011O0Q">Click here</a>
+</p> 
+    </div> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) and turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Hybrid Control / Data List.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check that "Hybrid Battery SOC" shows 70% or less.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for 2 minutes or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the electric vehicle charger cable assembly, plug-in charge the vehicle for 30 seconds or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Disconnect the electric vehicle charger cable assembly and wait for 10 seconds or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) and turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Hybrid Control / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows NORMAL, the system is normal.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows ABNORMAL, the system has a malfunction.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows INCOMPLETE or N/A, perform driving pattern again.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001153G__RM100000001153G_10">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001153G__RM100000001153G_10_0001">
+<p class="testgrp-heading">CHECK DTC OUTPUT (HYBRID CONTROL, HV BATTERY)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Before completing the repair, do not turn the power switch on (READY) because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control and HV Battery / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<br class="test1Root-test1"/>Powertrain &gt; HV Battery &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECNAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECNAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EKOAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EQOAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EKOAE " width="NaN%">P0D4C1C only is output, or DTCs except the ones in the table below are also output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQOAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EKOAE " width="NaN%">DTCs of hybrid control system in the tables below are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQOAE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EKOAE " width="NaN%">DTCs of hybrid battery system in the tables below are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQOAE " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tablenoborder">
+         <table class="big-table">
+<thead align="left" class="test1-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EURAE" width="NaN%">Malfunction Content</th> 
+            <th align="center" class="cellrowborder" id="ID0E1RAE" width="NaN%">System</th> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0EASAE">Relevant DTC</th> 
+           </tr> 
+          </thead>
+<tbody class="test1-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EURAE " rowspan="11" width="NaN%">System malfunction</td> 
+            <td class="cellrowborder" headers="ID0E1RAE " width="NaN%">Hybrid control system</td> 
+            <td class="cellrowborder" headers="ID0EASAE " width="NaN%">P1AC413</td> 
+            <td class="cellrowborder" headers="ID0EASAE " width="NaN%">Hybrid/EV Battery Stack 1 Current Interrupt Device Circuit Open</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E1RAE " rowspan="10" width="NaN%">Hybrid battery system</td> 
+            <td class="cellrowborder" headers="ID0EASAE " width="NaN%">P1AC413</td> 
+            <td class="cellrowborder" headers="ID0EASAE " width="NaN%">Hybrid/EV Battery Stack 1 Current Interrupt Device Circuit Open</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EASAE " width="NaN%">P1AC49E</td> 
+            <td class="cellrowborder" headers="ID0EASAE " width="NaN%">Hybrid/EV Battery Stack 1 Current Interrupt Device Stuck On</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EASAE " width="NaN%">P1AC513</td> 
+            <td class="cellrowborder" headers="ID0EASAE " width="NaN%">Hybrid/EV Battery Stack 2 Current Interrupt Device Circuit Open</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EASAE " width="NaN%">P1AC59E</td> 
+            <td align="left" class="cellrowborder" headers="ID0EASAE " width="NaN%">Hybrid/EV Battery Stack 2 Current Interrupt Device Stuck On</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EASAE " width="NaN%">P1AC613</td> 
+            <td align="left" class="cellrowborder" headers="ID0EASAE " width="NaN%">Hybrid/EV Battery Stack 3 Current Interrupt Device Circuit Open</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EASAE " width="NaN%">P1AC69E</td> 
+            <td align="left" class="cellrowborder" headers="ID0EASAE " width="NaN%">Hybrid/EV Battery Stack 3 Current Interrupt Device Stuck On</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EASAE " width="NaN%">P1AC713</td> 
+            <td align="left" class="cellrowborder" headers="ID0EASAE " width="NaN%">Hybrid/EV Battery Stack 4 Current Interrupt Device Circuit Open</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EASAE " width="NaN%">P1AC79E</td> 
+            <td align="left" class="cellrowborder" headers="ID0EASAE " width="NaN%">Hybrid/EV Battery Stack 4 Current Interrupt Device Stuck On</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EASAE " width="NaN%">P1AC813</td> 
+            <td align="left" class="cellrowborder" headers="ID0EASAE " width="NaN%">Hybrid/EV Battery Stack 5 Current Interrupt Device Circuit Open</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EASAE " width="NaN%">P1AC89E</td> 
+            <td class="cellrowborder" headers="ID0EASAE " width="NaN%">Hybrid/EV Battery Stack 5 Current Interrupt Device Stuck On</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">P0D4C1C may be output as a result of the malfunction indicated by the DTCs above.</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ol class="li-list2-list2" type="i">
+<li class="list2-item">
+<p class="li-list2-list2-heading">The chart above is listed in inspection order of priority.</p>
+</li>
+<li class="list2-item">
+<p class="li-list2-list2-heading">Check DTCs that are output at the same time by following the listed order. (The main cause of the malfunction can be determined without performing unnecessary inspections.)</p>
+</li>
+</ol> 
+         </ul> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (HYBRID CONTROL SYSTEM) <a class="content6-ptxt-xref" href="RM100000001AGZH.html#RM100000001AGZH">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (HYBRID BATTERY SYSTEM) <a class="content6-ptxt-xref" href="RM1000000012KP0.html#RM1000000012KP0">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153G__RM100000001153G_10_0004">
+<p class="testgrp-heading">CHECK DTC OUTPUT (HYBRID CONTROL, HV BATTERY AND PLUG-IN CONTROL)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control, HV Battery and Plug-in Control / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<br class="test1Root-test1"/>Powertrain &gt; HV Battery &gt; Trouble Codes<br class="test1Root-test1"/>Powertrain &gt; Plug-in Control &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXGAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EXGAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E6HAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EFIAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E6HAG " width="NaN%">P0D4C1C only is output, or DTCs except the ones in the table below are also output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFIAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E6HAG " width="NaN%">DTCs of hybrid control system in the tables below are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFIAG " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E6HAG " width="NaN%">DTCs of hybrid battery system in the tables below are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFIAG " width="NaN%">C</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E6HAG " width="NaN%">DTCs of plug-in charge control system in the tables below are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFIAG " width="NaN%">D</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tablenoborder">
+         <table class="big-table">
+<thead align="left" class="test1-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EZLAG" width="NaN%">Malfunction Content</th> 
+            <th align="center" class="cellrowborder" id="ID0E6LAG" width="NaN%">System</th> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0EFMAG">Relevant DTC</th> 
+           </tr> 
+          </thead>
+<tbody class="test1-table"> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EZLAG " rowspan="6" width="NaN%">Microcomputer malfunction</td> 
+            <td align="left" class="cellrowborder" headers="ID0E6LAG " width="NaN%">Hybrid control system</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">P0A1F94</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid/EV Battery Energy Control Module Unexpected Operation</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E6LAG " rowspan="3" width="NaN%">Hybrid battery system</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">P060A47</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid/EV Battery Energy Control Module Monitoring Processor Watchdog / Safety MCU Failure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">P060B16</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid/EV Battery Energy Control Module A/D Processing Circuit Voltage Below Threshold</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">P060B49</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid/EV Battery Energy Control Module A/D Processing Internal Electronic Failure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E6LAG " rowspan="2" width="NaN%">Plug-in charge control system</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">P060B49</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">Plug-in Control Module A/D Processing Internal Electronic Failure</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">P1C1F49</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid/EV Battery Charger Control Module A/D Processing Internal Electronic Failure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EZLAG " width="NaN%">Power source circuit malfunction</td> 
+            <td align="left" class="cellrowborder" headers="ID0E6LAG " width="NaN%">Plug-in charge control system</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">P1CED1C</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Plug-in Control ECU Power Supply (+12.5V) Circuit Voltage Out of Range</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EZLAG " rowspan="6" width="NaN%">Communication system malfunction</td> 
+            <td class="cellrowborder" headers="ID0E6LAG " rowspan="2" width="NaN%">Hybrid control system</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">U011187</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Lost Communication with Hybrid/EV Battery Energy Control Module "A" Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">U019B87</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Lost Communication with Hybrid/EV Battery Charger Control Module Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E6LAG " rowspan="2" width="NaN%">Hybrid battery system</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">P060687</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid/EV Battery Energy Control Module Processor to Monitoring Processor Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">P060A87</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid/EV Battery Energy Control Module Processor from Monitoring Processor Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E6LAG " rowspan="2" width="NaN%">Plug-in charge control system</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">P0E5E87</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Plug-in Control Module Processor from Hybrid/EV Battery Charger Control Module Processor Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">U029387</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Lost Communication with Hybrid/EV Powertrain Control Module Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EZLAG " rowspan="10" width="NaN%">Sensor and actuator circuit malfunction</td> 
+            <td class="cellrowborder" headers="ID0E6LAG " width="NaN%">Hybrid control system</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">P0B231C</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid/EV Battery "A" Voltage Sensor Voltage Out of Range</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E6LAG " rowspan="7" width="NaN%">Hybrid battery system</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">P0E2D00</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid/EV Battery Energy Control Module Hybrid/EV Battery Monitor Performance</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">P1A001C</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid Battery Stack 2 Cell Voltage Detection Voltage Out of Range</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">P1A051C</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid Battery Stack 3 Cell Voltage Detection Voltage Out of Range</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">P1A0A1C</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid Battery Stack 4 Cell Voltage Detection Voltage Out of Range</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">P1A101C</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid Battery Stack 5 Cell Voltage Detection Voltage Out of Range</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">P1AFD1C</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Flying Capacitor/Internal Control Module Hybrid/EV Battery Monitor Voltage Out of Range</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">P301A1C</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid Battery Stack 1 Cell Voltage Detection Voltage Out of Range</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E6LAG " rowspan="2" width="NaN%">Plug-in charge control system</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">P0D4C12</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid/EV Battery Charger Hybrid/EV Battery Input Voltage Sensor Circuit Short to Auxiliary Battery</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">P0D4C14</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid/EV Battery Charger Hybrid/EV Battery Input Voltage Sensor Circuit Short to Ground or Open</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EZLAG " rowspan="5" width="NaN%">System malfunction</td> 
+            <td class="cellrowborder" headers="ID0E6LAG " rowspan="2" width="NaN%">Hybrid control system</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">P308F49</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">High Voltage Charging Circuit Short during Pre-Charge</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">P321D17</td> 
+            <td class="cellrowborder" headers="ID0EFMAG " width="NaN%">Charger Circuit Voltage Above Threshold</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E6LAG " rowspan="3" width="NaN%">Hybrid battery system</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">P0D0A15</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid/EV Battery Charging System Positive Contactor Control Circuit Short to Auxiliary Battery or Open</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">P0D1115</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid/EV Battery Charging System Negative Contactor Control Circuit Short to Auxiliary Battery or Open</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">P0E6D15</td> 
+            <td align="left" class="cellrowborder" headers="ID0EFMAG " width="NaN%">Hybrid/EV Battery Charging System Precharge Contactor Control Circuit Short to Auxiliary Battery or Open</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">P0D4C1C may be output as a result of the malfunction indicated by the DTCs above.</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ol class="li-list2-list2" type="i">
+<li class="list2-item">
+<p class="li-list2-list2-heading">The chart above is listed in inspection order of priority.</p>
+</li>
+<li class="list2-item">
+<p class="li-list2-list2-heading">Check DTCs that are output at the same time by following the listed order. (The main cause of the malfunction can be determined without performing unnecessary inspections.)</p>
+</li>
+</ol> 
+         </ul> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (HYBRID CONTROL SYSTEM) <a class="content6-ptxt-xref" href="RM100000001AGZH.html#RM100000001AGZH">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (HYBRID BATTERY SYSTEM) <a class="content6-ptxt-xref" href="RM1000000012KP0.html#RM1000000012KP0">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">D</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (PLUG-IN CHARGE CONTROL SYSTEM) <a class="content6-ptxt-xref" href="RM100000001159X.html#RM100000001159X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001153G__RM100000001153G_10_0011">
+<p class="testgrp-heading">SIMULATION TEST</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the Techstream to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the freeze frame data of DTC P0D4C1C.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs and freeze frame data.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Data List / Hybrid Battery SOC.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that "Hybrid Battery SOC" shows 70% or less.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E6KBG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E6KBG " width="NaN%">Hybrid Battery SOC</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for 2 minutes or more.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Start the remote air conditioning system.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the electric vehicle charger cable assembly, plug-in charge the vehicle for 30 seconds or more.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Performing this procedure may cause DTCs other than P0D4C1C to be stored.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If DTC P0D4C1C is output, read and compare the values of "Charging Voltage for Hybrid Battery", "Hybrid Battery Voltage" and "VL-Voltage before Boosting" in the freeze frame data.</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the electric vehicle charger cable assembly and wait for 10 seconds or more.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the freeze frame data of DTC P0D4C1C.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHWBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EHWBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPXBG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EVXBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EPXBG " width="NaN%">P0D4C1C is output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVXBG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EPXBG " width="NaN%">P0D4C1C is not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVXBG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ELECTRIC VEHICLE CHARGER ASSEMBLY <a class="content6-ptxt-xref" href="RM10000000115AT.html#RM10000000115AT">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001153G__RM100000001153G_10_0013">
+<p class="testgrp-heading">CHECK FREEZE FRAME DATA (HYBRID CONTROL)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the Techstream to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the freeze frame data of DTC P0D4C1C.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EW6BG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EW6BG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E6AAI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EFBAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E6AAI " width="NaN%"> <p class="ptxt">When all of the following conditions are met.</p> <br class="cellrowborder"/>
+                  <ol class="list1" type="i">
+<li class="list1-item">
+<p class="list1-heading">Difference between "Hybrid Battery Voltage" and "Charging Voltage for Hybrid Battery" is 33 V or more.</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">Difference between "Hybrid Battery Voltage" and "VL-Voltage before Boosting" is 50 V or more.</p>
+</li>
+</ol> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFBAI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E6AAI " width="NaN%">Except above</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFBAI " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE BATTERY ECU ASSEMBLY <a class="content6-ptxt-xref" href="RM10000000115BB.html#RM10000000115BB">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ELECTRIC VEHICLE CHARGER ASSEMBLY <a class="content6-ptxt-xref" href="RM10000000115AT.html#RM10000000115AT">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

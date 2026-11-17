@@ -1,0 +1,3088 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="PRE-CRASH SAFETY SYSTEM, Diagnostic DTC:C1A4B" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058078" name="sectionId"/> 
+  <meta content="PRE-CRASH SAFETY" name="sectionName"/> 
+  <meta content="_0284504" name="ttlId"/> 
+  <meta content="PRE-CRASH SAFETY SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM10000000111OY" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>C1A4B</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">PRE-CRASH SAFETY SYSTEM, Diagnostic DTC:C1A4B</h1>
+<div class="section" id="RM10000000111OY__RM10000000111OY_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C1A4B</td> 
+       <td class="dtcname" headers="ID0EED">Stop Light Relay Circuit</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM10000000111OY__RM10000000111OY_06">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The skid control ECU (brake booster with master cylinder assembly) sends a stop light operation request signal to the stop light relay (stop light switch assembly). If the skid control ECU (brake booster with master cylinder assembly) detects a malfunction in the stop light relay circuit, the driving support ECU assembly stores DTC C1A4B.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EMF" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0ESF" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EYF" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0E5F" width="NaN%">Trouble Area</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EMF " width="NaN%">C1A4B</td> 
+        <td align="left" class="cellrowborder" headers="ID0ESF " width="NaN%">Stop Light Relay Circuit</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYF " width="NaN%"> <p class="ptxt">Both of the following conditions are met:</p> <br class="cellrowborder"/>
+         <ol class="list1">
+<li class="list1-item">
+<p class="list1-heading">All of the following conditions are met:</p>
+</li>
+<br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">3 seconds have elapsed since the power switch was turned to ON.</p>
+</li> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">The auxiliary battery voltage is 10 V or more for 3 seconds or more.</p>
+</li> 
+           </ul>
+<li class="list1-item">
+<p class="list1-heading">All of the following conditions are met for 1 second or more:</p>
+</li>
+<br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">Communication between the driving support ECU assembly and skid control ECU (brake booster with master cylinder assembly) is normal.</p>
+</li> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">The driving support ECU assembly receives a stop light relay circuit malfunction signal from the skid control ECU (brake booster with master cylinder assembly)</p>
+</li> 
+           </ul>
+</ol> 
+         <div class="tip">
+          <p class="tiptitle">Tech Tips</p> 
+          <p class="ptxt">The skid control ECU (brake booster with master cylinder assembly) will detect a stop light relay circuit malfunction if any of the following conditions are met:</p> 
+          <br class="tip"/>
+          <ul class="list1"> 
+           <li class="list1-item">
+<p class="list1-heading">When the voltage at the IG1 terminal is between 11 V and 14 V and the stop light illumination output (STPO) signal is on, a signal has not been input to the STP terminal continuously for 0.3 seconds or more.</p>
+</li> 
+           <li class="list1-item">
+<p class="list1-heading">When the voltage at the IG1 terminal is between 11 V and 14 V and the stop light illumination output (STPO) signal is off, the input signals at the STP terminal and STP2 terminal differ continuously for 0.3 seconds or more.</p>
+</li> 
+          </ul> 
+         </div> </td> 
+        <td align="left" class="cellrowborder" headers="ID0E5F " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Skid control ECU (Brake booster with master cylinder assembly)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Stop light relay (Stop light switch assembly)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Rear combination light assembly LH</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Rear combination light assembly RH</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Center stop light set</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">hybrid vehicle control ECU</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">certification ECU (smart key ECU assembly)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Harness or connector</p>
+</li> 
+         </ul> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000111OY__RM10000000111OY_07">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003KY2E06" class="figure-graphic--bigImage" src="../images/a003ky2e06.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM10000000111OY__RM10000000111OY_08">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">Inspect the fuses for circuits related to this system before performing the following procedure.</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000111OY__RM10000000111OY_09">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0001">
+<p class="testgrp-heading">INSPECT TERMINAL VOLTAGE (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) CONNECTOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003P2IC09" class="figure-graphic" src="../images/a003p2ic09.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Skid control ECU (Brake booster with master cylinder assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EVMAC" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EVMAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ECOAC" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EIOAC" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EOOAC" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ECOAC " rowspan="2" width="NaN%">A32-37 (STP2) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EIOAC " width="NaN%">Brake pedal depressed</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOOAC " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EIOAC " width="NaN%">Brake pedal released</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOOAC " width="NaN%">Below 1.5 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ECOAC " width="NaN%">A32-22 (STPO) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EIOAC " width="NaN%">Power switch ON</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOOAC " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ECOAC " rowspan="2" width="NaN%">A32-12 (STP) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EIOAC " width="NaN%">Brake pedal depressed</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOOAC " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EIOAC " width="NaN%">Brake pedal released</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOOAC " width="NaN%">Below 1.5 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1CAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E1CAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDEAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJEAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EDEAE " width="NaN%">The voltage is as specified for every terminal.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJEAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EDEAE " width="NaN%">Only the voltage at terminal STP2 is not as specified.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJEAE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EDEAE " width="NaN%">Only the voltage at terminal STPO is not as specified.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJEAE " width="NaN%">C</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EDEAE " width="NaN%">Only the voltage at terminal STP is not as specified.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJEAE " width="NaN%">D</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EDEAE " width="NaN%">The voltage at both terminal STPO and terminal STP are not as specified.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJEAE " width="NaN%">E</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">B</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">INSPECT TERMINAL VOLTAGE (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) CONNECTOR)  <a class="res-right-fin-false-xref" href="#RM10000000111OY__RM10000000111OY_09_0010">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">C</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY))  <a class="res-right-fin-false-xref" href="#RM10000000111OY__RM10000000111OY_09_0025">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">D</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">INSPECT TERMINAL VOLTAGE (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) CONNECTOR)  <a class="res-right-fin-false-xref" href="#RM10000000111OY__RM10000000111OY_09_0030">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">E</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">INSPECT STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY) (POWER SOURCE CIRCUIT)  <a class="res-right-fin-false-xref" href="#RM10000000111OY__RM10000000111OY_09_0049">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0002">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (STOP LIGHT RELAY)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, perform the Active Test Stop Light Relay.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110K0.html#RM10000000110K0">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Active Test<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E6LAE" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EFMAE" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0ELMAE" width="NaN%">Control Range</th> 
+              <th align="center" class="cellrowborder" id="ID0ERMAE" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E6LAE " width="NaN%">Stop Light Relay</td> 
+              <td align="left" class="cellrowborder" headers="ID0EFMAE " width="NaN%">Stop light relay (Stop light switch assembly)</td> 
+              <td align="left" class="cellrowborder" headers="ID0ELMAE " width="NaN%">ON / OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ERMAE " width="NaN%">Test possible at vehicle speed of 0 km/h (0 mph)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EZRAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZRAE " width="NaN%">Stop Light Relay</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYWAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EYWAE">The stop lights turn on and off correctly in response to the operation of the Active Test.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESXAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ESXAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EVYAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVYAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EVYAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">INSPECT SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY)  <a class="res-right-fin-false-xref" href="#RM10000000111OY__RM10000000111OY_09_0009">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0003">
+<p class="testgrp-heading">CHECK FOR DTCS (PRE-CRASH SAFETY SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000Z7CK.html#RM100000000Z7CK">Click here</a>
+</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Pre-Crash 2 &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, perform the Active Test Stop Light Relay.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110K0.html#RM10000000110K0">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Active Test<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EDBAG" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EJBAG" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EPBAG" width="NaN%">Control Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EVBAG" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EDBAG " width="NaN%">Stop Light Relay</td> 
+              <td align="left" class="cellrowborder" headers="ID0EJBAG " width="NaN%">Stop light relay (Stop light switch assembly)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EPBAG " width="NaN%">ON / OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0EVBAG " width="NaN%">Test possible at vehicle speed of 0 km/h (0 mph)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E4GAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E4GAG " width="NaN%">Stop Light Relay</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000Z7CK.html#RM100000000Z7CK">Click here</a>
+</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Pre-Crash 2 &gt; Trouble Codes<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESPAG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ESPAG">DTC C1A4B is not output</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMQAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EMQAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPRAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPRAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPRAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>USE SIMULATION METHOD TO CHECK <a class="content6-ptxt-xref" href="RM100000001145X.html#RM100000001145X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) for LHD: <a class="ptxt-xref" href="RM100000000Z7YB.html#RM100000000Z7YB">Click here</a> for RHD: <a class="ptxt-xref" href="RM100000000Z7YE.html#RM100000000Z7YE">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0009">
+<p class="testgrp-heading">INSPECT SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, perform the Active Test Stop Light Relay.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110K0.html#RM10000000110K0">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Active Test<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EMXAG" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0ESXAG" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EYXAG" width="NaN%">Control Range</th> 
+              <th align="center" class="cellrowborder" id="ID0E5XAG" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMXAG " width="NaN%">Stop Light Relay</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESXAG " width="NaN%">Stop light relay (Stop light switch assembly)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EYXAG " width="NaN%">ON / OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5XAG " width="NaN%">Test possible at vehicle speed of 0 km/h (0 mph)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EG4AG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EG4AG " width="NaN%">Stop Light Relay</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003OMVC51" class="figure-graphic" src="../images/a003omvc51.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Component with harness connected</p> <p class="ptxt">(Stop light relay (stop light switch assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Do not disconnect the stop light relay (stop light switch assembly) connector.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1CBG" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E1CBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EHEBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0ENEBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ETEBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHEBG " width="NaN%">A38-4 (ACC) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ENEBG " width="NaN%"> <p class="ptxt">Power switch on (IG)</p> <p class="ptxt">(Active test ON)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0ETEBG " width="NaN%">Below 1.5 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZIBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZIBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E3JBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3JBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3JBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY) <a class="content6-ptxt-xref" href="RM1000000010FKQ.html#RM1000000010FKQ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) for LHD: <a class="ptxt-xref" href="RM100000000Z7YB.html#RM100000000Z7YB">Click here</a> for RHD: <a class="ptxt-xref" href="RM100000000Z7YE.html#RM100000000Z7YE">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0010">
+<p class="testgrp-heading">INSPECT TERMINAL VOLTAGE (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) CONNECTOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003P2IC10" class="figure-graphic" src="../images/a003p2ic10.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Skid control ECU (Brake booster with master cylinder assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EFRBG" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EFRBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ESSBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EYSBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E5SBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESSBG " width="NaN%">A32-37 (STP2) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYSBG " width="NaN%">Brake pedal released</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5SBG " width="NaN%">Below 1.5 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2UBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2UBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5VBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5VBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5VBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY))  <a class="res-right-fin-false-xref" href="#RM10000000111OY__RM10000000111OY_09_0018">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0011">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - CERTIFICATION ECU (SMART KEY ECU ASSEMBLY))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the N54 certification ECU (smart key ECU assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EC1BG" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EC1BG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EP2BG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EV2BG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E22BG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EP2BG " width="NaN%">A32-37 (STP2) or N54-25 (STP1) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EV2BG " width="NaN%">Brake pedal depressed</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E22BG " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the N54 certification ECU (smart key ECU assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ED5BG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ED5BG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EG6BG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EG6BG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EG6BG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0012">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - HYBRID VEHICLE CONTROL ECU)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A41 hybrid vehicle control ECU connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELDAI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELDAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EYEAI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E5EAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EEFAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYEAI " width="NaN%">A32-37 (STP2) or A41-7 (STP) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5EAI " width="NaN%">Brake pedal depressed</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEFAI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A41 hybrid vehicle control ECU connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMHAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EMHAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPIAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPIAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPIAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HYBRID VEHICLE CONTROL ECU <a class="content6-ptxt-xref" href="RM10000000115AJ.html#RM10000000115AJ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0015">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A38 stop light relay (stop light switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZMAI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZMAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EGOAI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EMOAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ESOAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EGOAI " width="NaN%">A32-37 (STP2) - A38-3 (L)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMOAI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESOAI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EGOAI " width="NaN%">A32-37 (STP2) or A38-3 (L) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMOAI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESOAI " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A38 stop light relay (stop light switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQRAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQRAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETSAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETSAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETSAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY) <a class="content6-ptxt-xref" href="RM1000000010FKQ.html#RM1000000010FKQ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0018">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A38 stop light relay (stop light switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4WAI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E4WAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EKYAI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EQYAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EWYAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKYAI " width="NaN%">A32-37 (STP2) or A38-3 (L) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQYAI " width="NaN%">Brake pedal released</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWYAI " width="NaN%">Below 1.5 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A38 stop light relay (stop light switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E51AI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E51AI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EB3AI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EB3AI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EB3AI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY) <a class="content6-ptxt-xref" href="RM1000000010FKQ.html#RM1000000010FKQ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0020">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - CERTIFICATION ECU (SMART KEY ECU ASSEMBLY))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the N54 certification ECU (smart key ECU assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELABI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELABI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EYBBI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E5BBI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EECBI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYBBI " width="NaN%">A32-37 (STP2) or N54-25 (STP1) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5BBI " width="NaN%">Brake pedal released</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EECBI " width="NaN%">Below 1.5 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the N54 certification ECU (smart key ECU assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMEBI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EMEBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPFBI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPFBI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPFBI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0022">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - HYBRID VEHICLE CONTROL ECU)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A41 hybrid vehicle control ECU connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETJBI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETJBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EALBI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EGLBI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EMLBI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EALBI " width="NaN%">A32-37 (STP2) or A41-7 (STP) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGLBI " width="NaN%">Brake pedal released</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMLBI " width="NaN%">Below 1.5 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A41 hybrid vehicle control ECU connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EUNBI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EUNBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EXOBI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXOBI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXOBI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HYBRID VEHICLE CONTROL ECU <a class="content6-ptxt-xref" href="RM10000000115AJ.html#RM10000000115AJ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0025">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A38 stop light relay (stop light switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBTBI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBTBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EOUBI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EUUBI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E1UBI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EOUBI " width="NaN%">A32-22 (STPO) - A38-4 (ACC)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EUUBI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1UBI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A38 stop light relay (stop light switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECXBI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECXBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFYBI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFYBI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFYBI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0029">
+<p class="testgrp-heading">INSPECT STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY) (POWER SOURCE CIRCUIT)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003KHVC99" class="figure-graphic" src="../images/a003khvc99.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Stop light relay (Stop light switch assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Disconnect the A38 stop light relay (stop light switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EH5BI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EH5BI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EU6BI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E16BI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EAACI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EU6BI " width="NaN%">A38-6 (B) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E16BI " width="NaN%">Power switch ON</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAACI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EU6BI " width="NaN%">A38-7 (B) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E16BI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAACI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETCCI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETCCI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EAECI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EGECI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EMECI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EAECI " width="NaN%">A38-2 (GND) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGECI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMECI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A38 stop light relay (stop light switch assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJGCI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJGCI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMHCI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMHCI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMHCI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY) <a class="content6-ptxt-xref" href="RM1000000010FKQ.html#RM1000000010FKQ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0030">
+<p class="testgrp-heading">INSPECT TERMINAL VOLTAGE (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) CONNECTOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003P2IC11" class="figure-graphic" src="../images/a003p2ic11.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Skid control ECU (Brake booster with master cylinder assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EVNCI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EVNCI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ECPCI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EIPCI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EOPCI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ECPCI " width="NaN%">A32-12 (STP) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EIPCI " width="NaN%">Brake pedal released</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOPCI " width="NaN%">Below 1.5 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELRCI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELRCI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EOSCI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EOSCI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EOSCI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY))  <a class="res-right-fin-false-xref" href="#RM10000000111OY__RM10000000111OY_09_0040">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0031">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - REAR COMBINATION LIGHT ASSEMBLY LH)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the N37 rear combination light assembly LH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESWCI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ESWCI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E6XCI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EFYCI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ELYCI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6XCI " width="NaN%">A32-12 (STP) or N37-3 (STP) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFYCI " width="NaN%">Brake pedal depressed</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELYCI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the N37 rear combination light assembly LH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ET1CI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ET1CI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EW2CI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EW2CI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EW2CI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE REAR COMBINATION LIGHT ASSEMBLY LH <a class="content6-ptxt-xref" href="RM1000000010FJT.html#RM1000000010FJT">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0032">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - REAR COMBINATION LIGHT ASSEMBLY RH)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the N36 rear combination light assembly RH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EAADI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EAADI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ENBDI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0ETBDI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EZBDI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ENBDI " width="NaN%">A32-12 (STP) or N36-3 (STP) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ETBDI " width="NaN%">Brake pedal depressed</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZBDI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the N36 rear combination light assembly RH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBEDI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBEDI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EEFDI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEFDI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEFDI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE REAR COMBINATION LIGHT ASSEMBLY RH <a class="content6-ptxt-xref" href="RM1000000010FJT.html#RM1000000010FJT">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0033">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - CENTER STOP LIGHT SET)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the R7 center stop light set connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EOJDI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EOJDI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E2KDI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EBLDI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EHLDI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2KDI " width="NaN%">A32-12 (STP) or R7-1 (B) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBLDI " width="NaN%">Brake pedal depressed</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHLDI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the R7 center stop light set connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPNDI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPNDI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ESODI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESODI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESODI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CENTER STOP LIGHT SET <a class="content6-ptxt-xref" href="RM1000000010FKB.html#RM1000000010FKB">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0034">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A38 stop light relay (stop light switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E3SDI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E3SDI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJUDI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EPUDI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EVUDI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJUDI " width="NaN%">A32-12 (STP) - A38-1 (OUT)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPUDI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVUDI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJUDI " width="NaN%">A32-12 (STP) or A38-1 (OUT) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPUDI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVUDI " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A38 stop light relay (stop light switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETXDI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETXDI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWYDI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWYDI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWYDI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY) <a class="content6-ptxt-xref" href="RM1000000010FKQ.html#RM1000000010FKQ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0040">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A38 stop light relay (stop light switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EA4DI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EA4DI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EN5DI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0ET5DI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EZ5DI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EN5DI " width="NaN%">A32-12 (STP) or A38-1 (OUT) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ET5DI " width="NaN%">Brake pedal released</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZ5DI " width="NaN%">Below 1.5 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A38 stop light relay (stop light switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECBAK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECBAK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFCAK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFCAK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFCAK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY) <a class="content6-ptxt-xref" href="RM1000000010FKQ.html#RM1000000010FKQ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0041">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - REAR COMBINATION LIGHT ASSEMBLY LH)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the N37 rear combination light assembly LH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPGAK" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPGAK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E3HAK" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0ECIAK" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EIIAK" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3HAK " width="NaN%">A32-12 (STP) or N37-3 (STP) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECIAK " width="NaN%">Brake pedal released</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EIIAK " width="NaN%">Below 1.5 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the N37 rear combination light assembly LH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQKAK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQKAK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETLAK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETLAK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETLAK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE REAR COMBINATION LIGHT ASSEMBLY LH <a class="content6-ptxt-xref" href="RM1000000010FJT.html#RM1000000010FJT">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0042">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - REAR COMBINATION LIGHT ASSEMBLY RH)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the N36 rear combination light assembly RH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4PAK" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E4PAK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EKRAK" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EQRAK" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EWRAK" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKRAK " width="NaN%">A32-12 (STP) or N36-3 (STP) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQRAK " width="NaN%">Brake pedal released</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWRAK " width="NaN%">Below 1.5 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the N36 rear combination light assembly RH connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E5TAK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E5TAK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EBVAK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EBVAK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EBVAK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE REAR COMBINATION LIGHT ASSEMBLY RH <a class="content6-ptxt-xref" href="RM1000000010FJT.html#RM1000000010FJT">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0043">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - CENTER STOP LIGHT SET)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the R7 center stop light set connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELZAK" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELZAK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EY1AK" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E51AK" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EE2AK" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EY1AK " width="NaN%">A32-12 (STP) or R7-1 (B) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E51AK " width="NaN%">Brake pedal released</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EE2AK " width="NaN%">Below 1.5 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the R7 center stop light set connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EM4AK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EM4AK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EP5AK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EP5AK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EP5AK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CENTER STOP LIGHT SET <a class="content6-ptxt-xref" href="RM1000000010FKB.html#RM1000000010FKB">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000111OY__RM10000000111OY_09_0049">
+<p class="testgrp-heading">INSPECT STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY) (POWER SOURCE CIRCUIT)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003KHVC99" class="figure-graphic" src="../images/a003khvc99.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Stop light relay (Stop light switch assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Disconnect the A38 stop light relay (stop light switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXEBK" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EXEBK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EEGBK" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EKGBK" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EQGBK" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEGBK " width="NaN%">A38-6 (B) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKGBK " width="NaN%">Power switch ON</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQGBK " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEGBK " width="NaN%">A38-7 (B) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKGBK " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQGBK " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDJBK" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EDJBK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQKBK" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EWKBK" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3KBK" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQKBK " width="NaN%">A38-2 (GND) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWKBK " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3KBK " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A38 stop light relay (stop light switch assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZMBK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZMBK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E3NBK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3NBK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3NBK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM10000000111OY__RM10000000111OY_09_0050">
+<p class="testgrp-heading">CHECK WIRE HARNESS AND CONNECTOR (SKID CONTROL ECU (BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY) - STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A38 stop light relay (stop light switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EASBK" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EASBK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ENTBK" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0ETTBK" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EZTBK" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ENTBK " width="NaN%">A32-22 (STPO) or A38-4 (ACC) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ETTBK " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZTBK " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A38 stop light relay (stop light switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBWBK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBWBK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EEXBK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEXBK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEXBK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE STOP LIGHT RELAY (STOP LIGHT SWITCH ASSEMBLY) <a class="content6-ptxt-xref" href="RM1000000010FKQ.html#RM1000000010FKQ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

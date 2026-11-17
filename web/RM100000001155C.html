@@ -1,0 +1,725 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="MOTOR GENERATOR CONTROL SYSTEM, Diagnostic DTC:P1CAD49, P1C651F, P1CB038" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296363" name="ttlId"/> 
+  <meta content="MOTOR GENERATOR CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001155C" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P1CAD49, P1C651F, P1CB038</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">MOTOR GENERATOR CONTROL SYSTEM, Diagnostic DTC:P1CAD49, P1C651F, P1CB038</h1>
+<div class="section" id="RM100000001155C__RM100000001155C_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P1CAD49</td> 
+       <td class="dtcname" headers="ID0EED">Drive Motor "A" Position Sensor Internal Electronic Failure</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P1C651F</td> 
+       <td class="dtcname" headers="ID0EED">Generator Control Module Circuit Intermittent</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P1CB038</td> 
+       <td class="dtcname" headers="ID0EED">Drive Motor "A" Position Sensor REF Signal Frequency Incorrect</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001155C__RM100000001155C_06">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The motor generator control ECU (MG ECU), which is built into the inverter with converter assembly, monitors its internal operation and detects malfunctions.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0ESG" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EYG" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0E5G" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EEH" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EKH" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EQH" width="NaN%">Warning Indicate</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ESG " width="NaN%">P1C651F</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYG " width="NaN%">Generator Control Module Circuit Intermittent</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5G " width="NaN%"> <p class="ptxt">Excitation signal (REF signal) for resolver angle detection cycle malfunction detected when DTC P0C7917, P0D3319, P1C5D19 or P1C5F19 is stored.</p> <p class="ptxt">(1 trip detection logic)</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EEH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Inverter with converter assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid vehicle transaxle assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Wire harness or connector</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EKH " width="NaN%">Does not come on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQH " width="NaN%"> <p class="ptxt">Master Warning Light:</p> <p class="ptxt">Does not come on</p> </td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ESG " width="NaN%">P1CAD49</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYG " width="NaN%">Drive Motor "A" Position Sensor Internal Electronic Failure</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5G " width="NaN%"> <p class="ptxt">Motor resolver angle malfunction:</p> <p class="ptxt">The difference between the resolver angle for control and estimated resolver angle exceeds the allowable limit.</p> <p class="ptxt">(1 trip detection logic)</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EEH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Inverter with converter assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid vehicle transaxle assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Wire harness or connector</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EKH " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQH " width="NaN%"> <p class="ptxt">Master Warning Light:</p> <p class="ptxt">Comes on</p> </td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ESG " width="NaN%">P1CB038</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYG " width="NaN%">Drive Motor "A" Position Sensor REF Signal Frequency Incorrect</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5G " width="NaN%"> <p class="ptxt">Resolver REF signal cycle malfunction:</p> <p class="ptxt">Excitation signal (REF signal) for resolver angle detection cycle malfunction</p> <p class="ptxt">(1 trip detection logic)</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EEH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Inverter with converter assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid vehicle transaxle assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Wire harness or connector</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EKH " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQH " width="NaN%"> <p class="ptxt">Master Warning Light:</p> <p class="ptxt">Comes on</p> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">Although the DTC titles generator control module, these DTCs relate to the motor control module.</p> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Related Data List
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0ECLAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EILAC" width="NaN%">Data List</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ECLAC " width="NaN%">P1CAD49</td> 
+        <td align="left" class="cellrowborder" headers="ID0EILAC " rowspan="2" width="NaN%">Motor Revolution</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ECLAC " width="NaN%">P1CB038</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001155C__RM100000001155C_25">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">After repair has been completed, clear the DTC and then check that the vehicle has returned to normal by performing the following All Readiness check procedure.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM100000001155M.html#RM100000001155M">Click here</a>
+</p> 
+    </div> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) and turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for 2 minutes or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) and turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">With power switch on (IG) and wait for 5 seconds or more.*</p>
+<p class="item-ptxt">*: Lightly wiggle the connectors and wire harnesses up and down and right and left.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (READY) with park (P) selected and wait for 5 seconds or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Press the HV/EV mode switch to enter HV drive mode.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Depress the accelerator pedal of the vehicle with the engine stopped and park (P) selected to start the engine.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Keep the engine running for 5 seconds or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Select drive (D) and drive the vehicle forward for 5 m (16 ft.) or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Select reverse (R) and drive the vehicle backward for 5 m (16 ft.) or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Motor Generator / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows NORMAL, the system is normal.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows ABNORMAL, the system has a malfunction.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows INCOMPLETE or N/A, perform driving pattern again.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001155C__RM100000001155C_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <p class="content5-ptxt">Refer to the wiring diagram for DTC P1CAC49.</p> 
+    <p class="content5-ptxt"> <a class="ptxt-xref" href="RM100000001155B.html#RM100000001155B_05">Click here</a>
+</p> 
+   </div>
+<div class="subpara" id="RM100000001155C__RM100000001155C_03">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    
+    <div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+     <br class="caution"/>
+     <ul class="list1"> 
+      <li class="list1-li-figure"> 
+       <div class="fignone"> 
+        <img alt="B006HUP" class="figure-graphic" src="../images/b006hup.png"/> 
+       </div> </li> 
+      <li class="list1-item">
+<p class="list1-heading">Before the following operations are conducted, take precautions to prevent electric shock by turning the power switch off, wearing insulated gloves, and removing the service plug grip from HV battery.</p>
+</li> 
+      <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Inspecting the high-voltage system</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the inverter with converter assembly</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the HV battery</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the electric vehicle charger assembly</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the solar energy control unit</p>
+</li> 
+       </ul> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006IQP" class="figure-graphic" src="../images/b006iqp.png"/> 
+       </div>
+<p class="list1-heading">To prevent electric shock, make sure to remove the service plug grip to cut off the high voltage circuit before servicing the vehicle.</p>
+</li> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006HQC" class="figure-graphic" src="../images/b006hqc.png"/> 
+       </div>
+<p class="list1-heading">After removing the service plug grip from the HV battery, put it in your pocket to prevent other technicians from accidentally reconnecting it while you are working on the high-voltage system.</p>
+</li> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006IVPC05" class="figure-graphic" src="../images/b006ivpc05.png"/> 
+        <div class="figure-p"> 
+         <div class="tablenoborder">
+          <table class="p-table">
+<tbody class="p-table"> 
+            <tr> 
+             <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+             <td class="cellrowborder" width="NaN%">Without waiting for 10 minutes</td> 
+            </tr> 
+           </tbody>
+</table> 
+         </div> 
+        </div> 
+       </div>
+<p class="list1-heading">After removing the service plug grip, wait for at least 10 minutes before touching any of the high-voltage connectors or terminals. After waiting for 10 minutes, check the voltage at the terminals in the inspection point in the inverter with converter assembly. The voltage should be 0 V before beginning work.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001155O.html#RM100000001155O">Click here</a>
+</p>
+<div class="tip">
+        <p class="tiptitle">Tech Tips</p> 
+        <p class="ptxt">Waiting for at least 10 minutes is required to discharge the high-voltage capacitor inside the inverter with converter assembly and the electric vehicle charger assembly.</p> 
+       </div>
+</li> 
+     </ul> 
+    </div> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">After turning the power switch off, waiting time may be required before disconnecting the cable from the negative (-) auxiliary battery terminal. Therefore, make sure to read the disconnecting the cable from the negative (-) auxiliary battery terminal notices before proceeding with work.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM100000001AAN7.html#RM100000001AAN7">Click here</a>
+</p> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">If the problem symptom cannot be reproduced, performing a road test on a road on which the vehicle tends to vibrate will make it easier to reproduce the symptom.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">If the resolver is malfunctioning, the vehicle may not drive smoothly.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">When inspecting the connectors, if it is difficult to judge if a connector was disconnected, deformed or improperly secured, disconnect and reconnect the connector and then check for DTCs again. Check if the same DTC is output. If the same DTC is not output, improper connection of connectors is suspected.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">As a malfunction detection threshold may be exceeded when performing the vibration or heat connector inspections, make sure to perform the following inspection to check that the DTC was not stored due to the malfunction of a part.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001155C__RM100000001155C_13">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001155C__RM100000001155C_13_0001">
+<p class="testgrp-heading">CHECK DTC OUTPUT (MOTOR GENERATOR CONTROL)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Motor Generator / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Motor Generator &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EIVAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EIVAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQWAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EWWAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EQWAE " width="NaN%">P1CAD49, P1CB038 or P1C651F only is output, or DTCs except the ones in the table below are also output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWWAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EQWAE " width="NaN%">Any of the following DTCs are also output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWWAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tablenoborder">
+         <table class="test1-table">
+<thead align="left" class="test1-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0ECZAE">Relevant DTC</th> 
+           </tr> 
+          </thead>
+<tbody class="test1-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">P0A3F16</td> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">Drive Motor "A" Position Sensor Circuit Voltage Below Threshold</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">P0A4B16</td> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">Generator Position Sensor Circuit Voltage Below Threshold</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">P0C5013</td> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">Drive Motor "A" Position Sensor Circuit "A" Circuit Open</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">P0C5016</td> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">Drive Motor "A" Position Sensor Circuit "A" Circuit Voltage Below Threshold</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">P0C5017</td> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">Drive Motor "A" Position Sensor Circuit "A" Circuit Voltage Above Threshold</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">P0C5A13</td> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">Drive Motor "A" Position Sensor Circuit "B" Circuit Open</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">P0C5A16</td> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">Drive Motor "A" Position Sensor Circuit "B" Circuit Voltage Below Threshold</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">P0C5A17</td> 
+            <td class="cellrowborder" headers="ID0ECZAE " width="NaN%">Drive Motor "A" Position Sensor Circuit "B" Circuit Voltage Above Threshold</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (MOTOR GENERATOR CONTROL SYSTEM) <a class="content6-ptxt-xref" href="RM100000001AKGG.html#RM100000001AKGG">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001155C__RM100000001155C_13_0003">
+<p class="testgrp-heading">CHECK CONNECTOR CONNECTION CONDITION (INVERTER WITH CONVERTER ASSEMBLY CONNECTOR)</p>
+<div class="ie8fixer"/>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EB6AE" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EB6AE" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EKAAG" width="NaN%">Result</th> 
+               <th align="center" class="spec-table-item" id="ID0EQAAG" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="left" class="spec-table-item" headers="ID0EKAAG " width="NaN%">OK</td> 
+               <td align="center" class="spec-table-item" headers="ID0EQAAG " width="NaN%">A</td> 
+              </tr> 
+              <tr> 
+               <td align="left" class="spec-table-item" headers="ID0EKAAG " width="NaN%">NG (The connector is not connected securely.)</td> 
+               <td align="center" class="spec-table-item" headers="ID0EQAAG " width="NaN%">B</td> 
+              </tr> 
+              <tr> 
+               <td align="left" class="spec-table-item" headers="ID0EKAAG " width="NaN%">NG (The terminals are not making secure contact or are deformed, or water or foreign matter exists in the connector.)</td> 
+               <td align="center" class="spec-table-item" headers="ID0EQAAG " width="NaN%">C</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006IZQ" class="figure-graphic" src="../images/b006izq.png"/> 
+        </div>
+<p class="test1-heading">Check the connection condition of the low voltage connectors of the inverter with converter assembly and the contact pressure of each terminal. Check the terminals for deformation, and the connector for water and foreign matter.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145W.html#RM100000001145W">Click here</a>
+</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Before disconnecting the connector, confirm that it is properly connected by checking that the claws of the lock levers are engaged and that the connector cannot be pulled off.</p> 
+        </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENFAG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ENFAG">- The connector is connected securely.</td> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ENFAG">- The terminals are not deformed and are connected securely.</td> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ENFAG">- No water or foreign matter in the connector.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4GAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E4GAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFIAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ELIAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EFIAG " width="NaN%">OK</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELIAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EFIAG " width="NaN%">NG (The connector is not connected securely.)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELIAG " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EFIAG " width="NaN%">NG (The terminals are not making secure contact or are deformed, or water or foreign matter exists in the connector.)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELIAG " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">When connecting the connector, connect it with the lock levers raised. Rotate each lock lever downward and make sure that the connector is securely connected. When a lock lever is fully lowered, a click will be heard as its claw engages. After the click is heard, pull up on the connector to confirm that it is securely connected.</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CONNECT SECURELY </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001155C__RM100000001155C_13_0054">
+<p class="testgrp-heading">CHECK GENERATOR RESOLVER CIRCUIT</p>
+<p class="content6-ptxt"> <a class="content6-ptxt-xref" href="RM100000001150R.html#RM100000001150R">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EZMAG" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EZMAG" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0E3NAG" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0E3NAG " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001155C__RM100000001155C_13_0055">
+<p class="testgrp-heading">CHECK MOTOR RESOLVER CIRCUIT</p>
+<p class="content6-ptxt"> <a class="content6-ptxt-xref" href="RM100000001150P.html#RM100000001150P">Click here</a>
+</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">If the "Motor Resolver Circuit" inspection results are normal, perform the next step.</p> 
+      </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EQQAG" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EQQAG" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0ETRAG" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0ETRAG " width="NaN%">NEXT</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NEXT</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REFER TO REPLACE INVERTER WITH CONVERTER ASSEMBLY PARTS <a class="content6-ptxt-xref" href="RM100000001155N.html#RM100000001155N">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

@@ -1,0 +1,660 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="MOTOR GENERATOR CONTROL SYSTEM FREEZE FRAME DATA" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296363" name="ttlId"/> 
+  <meta content="MOTOR GENERATOR CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="FREEZE FRAME DATA" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001155U" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>MOTOR GENERATOR CONTROL SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">MOTOR GENERATOR CONTROL SYSTEM<span class="topictitle1"> FREEZE FRAME DATA</span>
+</h1>
+<div class="subpara" id="RM100000001155U__RM100000001155U_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000001155U__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">FREEZE FRAME DATA</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">The motor generator control ECU records vehicle and driving condition information as freeze frame data the moment a DTC is stored. It can be used for estimating or duplicating the vehicle conditions that were present when the malfunction occurred.</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the GTS on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Powertrain / Hybrid Control / Trouble Codes.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Select a DTC in order to display its freeze frame data.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Check the freeze frame data recorded with the DTC.</p>
+<br class="step2Root-step2"/>Powertrain &gt; Motor Generator<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EUH" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0E1H" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EBAAC" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EHAAC" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Calculate Load</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Calculate load (value increases in proportion to increase in load)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.0%, Max.: 100.0%</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Coolant Temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Engine coolant temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -40°C (-40°F), Max.: 215°C (419°F)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EHAAC " width="NaN%">Cold or warmed-up engine</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Engine Speed</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Engine speed</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0 rpm, Max.: 16383 rpm</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Vehicle Speed</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Vehicle speed</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0 km/h (0 mph), Max.: 255 km/h (158 mph)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EHAAC " width="NaN%">Stopped, or driving (at low, medium, or high speeds)</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Intake Air Temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Intake air temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -40°C (-40°F), Max.: 140°C (284°F)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Throttle Position Sensor No.1 Voltage %</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Throttle position sensor</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.0%, Max.: 100.0%</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Engine Run Time</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Elapsed time after starting engine</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0 sec, Max.: 65535 sec</td> 
+              <td align="left" class="cellrowborder" headers="ID0EHAAC " width="NaN%">After the power switch is turned on (READY), elapsed time from initial engine start until the power switch is turned off.</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">MIL ON Run Distance</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Drive distance from MIL on</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0 km (0 mile), Max.: 65535 km (40723 mile)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Warmup Cycle Cleared DTC</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Warmup cycles after DTCs cleared</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0, Max.: 255</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Distance from DTC Cleared</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Distance driven after DTCs cleared</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0 km (0 mile), Max.: 65535 km (40723 mile)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Battery Voltage</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Auxiliary battery voltage</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.00 V, Max.: 16.00 V</td> 
+              <td align="left" class="cellrowborder" headers="ID0EHAAC " width="NaN%">Auxiliary battery and DC/DC converter condition</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Ambient Temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Ambient air temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -40°C (-40°F), Max.: 215°C (419°F)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Running Time from MIL ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Running time from MIL on</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0 min, Max.: 65535 min</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Time after DTC Cleared</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Time after DTCs cleared</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0 min, Max.: 65535 min</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Shift SW Status (N,P Range)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Shift lever position sensor</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Hybrid/EV Battery System Voltage</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">HV battery voltage</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.00 V, Max.: 1023.98 V</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Hybrid/EV Battery System Current</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">HV battery current</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -3276.8 A, Max.: 3276.7 A</td> 
+              <td align="left" class="cellrowborder" headers="ID0EHAAC " width="NaN%"> <p class="ptxt">HV battery charge/discharge status</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Amount of current during discharge is displayed with positive values</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Amount of current during charge is displayed with negative values</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Boosting Converter Temperature(Upper)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Boost converter temperature (Upper)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0°C (32°F), Max.: 255°C (491°F)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Boosting Converter Temperature 1(Lower)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Boost converter temperature (Lower)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0°C (32°F), Max.: 255°C (491°F)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Boosting Converter Temperature 2(Lower)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Boost converter temperature 2 (Lower)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0°C (32°F), Max.: 255°C (491°F)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor Inverter Temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor inverter temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0°C (32°F), Max.: 255°C (491°F)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor U Current(Lower Resolution)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor U current (Lower resolution)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -3276.8 A, Max.: 3276.7 A</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor V Current(Lower Resolution)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor V current (Lower resolution)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -3276.8 A, Max.: 3276.7 A</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor W Current(Lower Resolution)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor W current (Lower resolution)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -3276.8 A, Max.: 3276.7 A</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generator U Current(Lower Resolution)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator U current (Lower resolution)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -3276.8 A, Max.: 3276.7 A</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generator V Current(Lower Resolution)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator V current (Lower resolution)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -3276.8 A, Max.: 3276.7 A</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generator W Current(Lower Resolution)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator W current (Lower resolution)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -3276.8 A, Max.: 3276.7 A</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor ECU Power Supply (For 31V)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor generator control ECU power supply (for 31V)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.00 V, Max.: 4.98 V</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor ECU Power Supply (For AD0)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor generator control ECU power supply (for AD0)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.00 V, Max.: 4.98 V</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor ECU Power Supply (For 2.5V)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor generator control ECU power supply (for 2.5V)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.00 V, Max.: 4.98 V</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor ECU Power Supply (For 2.5V Sub)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor generator control ECU power supply (for 2.5V sub)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.00 V, Max.: 4.98 V</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">DC/DC Converter Operation State</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">DC/DC converter operation state</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.00 V, Max.: 4.98 V</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">DC/DC Converter Output Signal</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">DC/DC converter output signal</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.00 V, Max.: 4.98 V</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">DC/DC Converter Output Signal Duty</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">DC/DC converter output signal duty</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.0 %, Max.: 100.0 %</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor Revolution</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor (MG2) speed (detected by resolver sensor)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -32768 rpm, Max.: 32767 rpm</td> 
+              <td align="left" class="cellrowborder" headers="ID0EHAAC " width="NaN%"> <p class="ptxt">Motor (MG2) speed</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Forward rotation appears as "+"</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Backward rotation appears as "-"</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor Torque</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor (MG2) torque value</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -4096.000 Nm, Max.: 4095.875 Nm</td> 
+              <td align="left" class="cellrowborder" headers="ID0EHAAC " width="NaN%"> <p class="ptxt">When motor (MG2) rotates in "+" direction:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Torque appears as "+" while motor (MG2) discharges</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Torque appears as "-" while motor (MG2) charges</p>
+</li> 
+               </ul> <p class="ptxt">When motor (MG2) rotates in "-" direction:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Torque appears as "-" while motor (MG2) discharges</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Torque appears as "+" while motor (MG2) charges</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor Control Mode</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor control mode</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0, Max.: 65535</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor Carrier Frequency</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor carrier frequency</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">0.75 kHz, 1.25 kHz, 2.5 kHz, 3.75 kHz, 5 kHz, 10 kHz</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor Inverter Shut Down Signal</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor inverter shutdown signal</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0, Max.: 255</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generator Revolution</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator (MG1) speed (detected by resolver sensor)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -32768 rpm, Max.: 32767 rpm</td> 
+              <td align="left" class="cellrowborder" headers="ID0EHAAC " width="NaN%"> <p class="ptxt">Generator (MG1) speed</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Forward rotation appears as "+"</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Backward rotation appears as "-"</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generator Torque</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator (MG1) torque value</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -4096.000 Nm, Max.: 4095.875 Nm</td> 
+              <td align="left" class="cellrowborder" headers="ID0EHAAC " width="NaN%"> <p class="ptxt">When generator (MG1) rotates in "+" direction:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Torque appears as "+" while generator (MG1) discharges</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Torque appears as "-" while generator (MG1) charges</p>
+</li> 
+               </ul> <p class="ptxt">When generator (MG1) rotates in "-" direction:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Torque appears as "-" while generator (MG1) discharges</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Torque appears as "+" while generator (MG1) charges</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generator Control Mode</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator control mode</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0, Max.: 65535</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generator Carrier Frequency</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator carrier frequency</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">0.75 kHz, 1.25 kHz, 2.5 kHz, 3.75 kHz, 5 kHz, 10 kHz</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generator Inverter Shut Down Signal</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator (MG1) inverter shutdown signal</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0, Max.: 255</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Inverter Coolant Temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Coolant (for inverter) temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -40°C (-40°F), Max.: 215°C (419°F)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Inverter Input Current</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Inverter input current</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -3276.8 A, Max.: 3276.7 A</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Inverter Water Pump Duty</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Inverter water pump motor driver request duty</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0 %, Max.: 100 %</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Inverter Water Pump Revolution</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Inverter water pump assembly speed</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0 rpm, Max.: 65535 rpm</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Reactor Temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Reactor temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -40°C (-40°F), Max.: 215°C (419°F)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Collinear Graphic Engine Revolution</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Col-linear graphic engine revolution</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0 rpm, Max.: 65535 rpm</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor Resolver After Offset</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor resolver offset value</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.000 deg, Max.: 358.593 deg</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor Resolver Offset Value</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor Resolver Offset Value</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -250.000 deg, Max.: 249.992 deg</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generator Resolver After Offset</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator resolver offset value</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.000 deg, Max.: 358.593 deg</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generator Resolver Offset Value</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator resolver offset value</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -250.000 deg, Max.: 249.992 deg</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">VL Voltage</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">High voltage before it is boosted</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.0 V, Max.: 6553.5 V</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">VH Voltage</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">High voltage after it is boosted</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.0 V, Max.: 6553.5 V</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Boosting Converter PWM Duty</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Boost converter PWM duty</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0 %, Max.: 100 %</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Boosting Converter Control Mode</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Boost converter control mode</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0, Max.: 255</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Boosting Converter Carrier Frequency</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Boost converter signal carrier frequency</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">9.55 kHz, 9.13 kHz, 8.71 kHz, 8.29 kHz, 7.87 kHz, 7.45 kHz, 4.8 kHz</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Boosting Converter Shut Down Signal</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Boost converter shutdown signal</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0, Max.: 255</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generate Request Torque</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator (MG1) torque request value</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -4096.000 Nm, Max.: 4095.875 Nm</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Shift Position</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Shift position</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">P/R/N/D/B</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor Temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor (MG2) temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -40°C (-40°F), Max.: 215°C (419°F)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generator Temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator (MG1) temperature</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -40°C (-40°F), Max.: 215°C (419°F)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Short Wave Highest Value</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Waveform voltage in abnormal insulation detection circuit in battery ECU assembly</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.00 V, Max.: 4.98 V</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Fail Safe Mode</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Fail safe mode</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -128, Max.: 127</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Accelerator Position</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Accelerator pedal opening angle</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0 %, Max.: 100.0 %</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">IGCT Voltage</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">IGCT voltage</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0.00 V, Max.: 4.98 V</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">WIN Control Limit Power</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Charge control wattage sent from battery ECU assembly to hybrid vehicle control ECU</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -327.68 kW, Max.: 327.67 kW</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">WOUT Control Limit Power</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Discharge control wattage sent from battery ECU assembly to hybrid vehicle control ECU</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: -327.68 kW, Max.: 327.67 kW</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Engine Control Mode</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Engine control mode</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Stop, Stop Process, Startup Process, Running</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Emergency Shutdown Signal</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Inverter emergency shutdown</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Ready ON Status</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">State of system (READY)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">SMR Status</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">SMR status</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generator Resolver Offset Complete Status</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator resolver learning complete status</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generator Inverter High Current(GFINV)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator (MG1) inverter high current</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Generator Inverter Shut Down Status</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Generator (MG1) inverter shutdown status</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor Resolver Offset Complete Status</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor resolver learning complete status</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">PTC Heater Activate Permission Status/Prohibition Signal(IDH)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">PTC heater</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">DC/DC Converter Terminate Signal</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">DC/DC converter stop request signal</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor Inverter High Current(MFINV)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor inverter high current</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Motor Inverter Shut Down Status</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Motor inverter shutdown</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Inverter Input High Voltage(OVH)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Inverter input high voltage</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Boosting Converter Input High Voltage(OVL)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Boost converter input high voltage</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Boosting Converter Input High Current(CFINV)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Boost converter input high current</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Boosting Converter Shut Down Status</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Boost converter shutdown</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">ON or OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUH " width="NaN%">Total Distance Traveled</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1H " width="NaN%">Drive total distance</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBAAC " width="NaN%">Min.: 0 km (0 mile), Max.: 16777215 km (10425361 mile)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EHAAC " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

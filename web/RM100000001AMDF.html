@@ -1,0 +1,3508 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P013611, P013613, P013614, P013615, P013617, P013623, P013A00" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290546" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201801" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001AMDF" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P013611, P013613, P013614, P013615, P013617, P013623, P013A00</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P013611, P013613, P013614, P013615, P013617, P013623, P013A00</h1>
+<div class="section" id="RM100000001AMDF__RM100000001AMDF_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P013611</td> 
+       <td class="dtcname" headers="ID0EED">O2 Sensor Circuit Bank 1 Sensor 2 Circuit Short to Ground</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P013613</td> 
+       <td class="dtcname" headers="ID0EED">O2 Sensor Circuit Bank 1 Sensor 2 Circuit Open</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P013614</td> 
+       <td class="dtcname" headers="ID0EED">O2 Sensor Circuit Bank 1 Sensor 2 Circuit Short to Ground or Open</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P013615</td> 
+       <td class="dtcname" headers="ID0EED">O2 Sensor Circuit Bank 1 Sensor 2 Circuit Short to Battery or Open</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P013617</td> 
+       <td class="dtcname" headers="ID0EED">O2 Sensor Circuit Bank 1 Sensor 2 Circuit Voltage Above Threshold</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P013623</td> 
+       <td class="dtcname" headers="ID0EED">O2 Sensor Circuit Bank 1 Sensor 2 Signal Stuck Low</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P013A00</td> 
+       <td class="dtcname" headers="ID0EED">O2 Sensor Slow Response - Rich to Lean Bank 1 Sensor 2</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001AMDF__RM100000001AMDF_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">In order to obtain a high purification rate of the carbon monoxide (CO), hydrocarbon (HC) and nitrogen oxide (NOx) components in the exhaust gas, a TWC (Three-Way Catalytic Converter) is used. For the most efficient use of the TWC, the air fuel ratio must be precisely controlled so that it is always close to the stoichiometric air fuel ratio. For the purpose of helping the ECM to deliver accurate air fuel ratio control, a heated oxygen sensor is used.</p> 
+    <p class="content5-ptxt">The heated oxygen sensor is located behind the TWC, and detects the oxygen concentration in the exhaust gas. Since the sensor is integrated with the heater that heats the sensing portion, it is possible to detect the oxygen concentration even when the intake air volume is low (the exhaust gas temperature is low).</p> 
+    <p class="content5-ptxt">When the air fuel ratio becomes lean, the oxygen concentration in the exhaust gas is high. The heated oxygen sensor informs the ECM that the post-TWC air fuel ratio is lean (low voltage, i.e. less than 0.45 V).</p> 
+    <p class="content5-ptxt">Conversely, when the air fuel ratio is richer than the stoichiometric air fuel ratio, the oxygen concentration in the exhaust gas is low. The heated oxygen sensor informs the ECM that the post-TWC air fuel ratio is rich (high voltage, i.e. higher than 0.45 V). The heated oxygen sensor has the property of changing its output voltage drastically when the air fuel ratio is close to the stoichiometric air fuel ratio.</p> 
+    <p class="content5-ptxt">The ECM uses the supplementary information from the heated oxygen sensor to determine whether the air fuel ratio after the TWC is rich or lean, and adjusts the fuel injection duration accordingly. Thus, if the heated oxygen sensor is working improperly due to an internal malfunction, the ECM is unable to compensate for deviations in the primary air fuel ratio control.</p> 
+    <div class="fignone--bigImage">
+<img alt="B006HCTE01" class="figure-graphic--bigImage" src="../images/b006hcte01.png"/>
+</div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0ESBAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EYBAC" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0E5BAC" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EECAC" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EKCAC" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EQCAC" width="NaN%">Memory</th> 
+        <th align="center" class="cellrowborder" id="ID0EWCAC" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ESBAC " width="NaN%">P013611</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYBAC " width="NaN%">O2 Sensor Circuit Bank 1 Sensor 2 Circuit Short to Ground</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5BAC " width="NaN%"> <p class="ptxt">Low impedance:</p> <br class="cellrowborder"/>
+         <ul class="list1 nonmark"> 
+          <li class="list1-item">
+<p class="list1-nonmark-heading">Heated oxygen sensor impedance is less than 5 Ω for 30 seconds or more when ECM presumes sensor is warmed up and operating normally (2 trip detection logic)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EECAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Heated oxygen sensor (sensor 2) circuit</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Heated oxygen sensor (sensor 2)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Air fuel ratio sensor (sensor 1)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Gas leak from exhaust system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">EGR valve assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV valve and hose</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Intake system</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EKCAC " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQCAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWCAC " width="NaN%">SAE Code: P0136</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ESBAC " width="NaN%">P013613</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYBAC " width="NaN%">O2 Sensor Circuit Bank 1 Sensor 2 Circuit Open</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5BAC " width="NaN%"> <p class="ptxt">Abnormal output voltage:</p> <br class="cellrowborder"/>
+         <ul class="list1 nonmark"> 
+          <li class="list1-item">
+<p class="list1-nonmark-heading">During active air fuel ratio control, heated oxygen sensor voltage does not increase to 0.71 V or higher for certain amount of time (2 trip detection logic)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EECAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Heated oxygen sensor (sensor 2) circuit</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Heated oxygen sensor (sensor 2)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Air fuel ratio sensor (sensor 1)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Gas leak from exhaust system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">EGR valve assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV valve and hose</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Intake system</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EKCAC " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQCAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWCAC " width="NaN%">SAE Code: P0136</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ESBAC " width="NaN%">P013614</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYBAC " width="NaN%">O2 Sensor Circuit Bank 1 Sensor 2 Circuit Short to Ground or Open</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5BAC " width="NaN%"> <p class="ptxt">High impedance:</p> <br class="cellrowborder"/>
+         <ul class="list1 nonmark"> 
+          <li class="list1-item">
+<p class="list1-nonmark-heading">Heated oxygen sensor impedance is 15 kΩ or higher for 90 seconds or more when ECM presumes sensor to be warmed up and operating normally (2 trip detection logic)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EECAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Heated oxygen sensor (sensor 2) circuit</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Heated oxygen sensor (sensor 2)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Air fuel ratio sensor (sensor 1)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Gas leak from exhaust system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">EGR valve assembly</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EKCAC " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQCAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWCAC " width="NaN%">SAE Code: P0137</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ESBAC " width="NaN%">P013615</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYBAC " width="NaN%">O2 Sensor Circuit Bank 1 Sensor 2 Circuit Short to Battery or Open</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5BAC " width="NaN%"> <p class="ptxt">Extremely high voltage (short):</p> <br class="cellrowborder"/>
+         <ul class="list1 nonmark"> 
+          <li class="list1-item">
+<p class="list1-nonmark-heading">Heated oxygen sensor output voltage exceeds 1.2 V for 10 seconds or more (2 trip detection logic)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EECAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Heated oxygen sensor (sensor 2) circuit</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Heated oxygen sensor (sensor 2)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EKCAC " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQCAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWCAC " width="NaN%">SAE Code: P0138</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ESBAC " width="NaN%">P013617</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYBAC " width="NaN%">O2 Sensor Circuit Bank 1 Sensor 2 Circuit Voltage Above Threshold</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5BAC " width="NaN%"> <p class="ptxt">Low voltage (open):</p> <br class="cellrowborder"/>
+         <ul class="list1 nonmark"> 
+          <li class="list1-item">
+<p class="list1-nonmark-heading">During active air fuel ratio control, following conditions (a) and (b) met for certain amount of time (2 trip detection logic)</p>
+<p class="item-ptxt">(a) Heated oxygen sensor output voltage less than 0.21 V</p>
+<p class="item-ptxt">(b) Target air fuel ratio rich</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EECAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Heated oxygen sensor (sensor 2) circuit</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Heated oxygen sensor (sensor 2)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Air fuel ratio sensor (sensor 1)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Gas leak from exhaust system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">EGR valve assembly</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EKCAC " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQCAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWCAC " width="NaN%">SAE Code: P0137</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ESBAC " width="NaN%">P013623</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYBAC " width="NaN%">O2 Sensor Circuit Bank 1 Sensor 2 Signal Stuck Low</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5BAC " width="NaN%">Heated oxygen sensor (sensor 2) voltage does not drop to less than 0.2 V immediately after fuel cut starts (2 trip detection logic).</td> 
+        <td align="left" class="cellrowborder" headers="ID0EECAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Heated oxygen sensor (sensor 2) circuit</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Heated oxygen sensor (sensor 2)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Gas leak from exhaust system</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EKCAC " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQCAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWCAC " width="NaN%">SAE Code: P0139</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ESBAC " width="NaN%">P013A00</td> 
+        <td align="left" class="cellrowborder" headers="ID0EYBAC " width="NaN%">O2 Sensor Slow Response - Rich to Lean Bank 1 Sensor 2</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5BAC " width="NaN%">Heated oxygen sensor (sensor 2) voltage does not drop from 0.35 V to 0.2 V immediately after fuel cut starts (1 trip detection logic).</td> 
+        <td align="left" class="cellrowborder" headers="ID0EECAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Heated oxygen sensor (sensor 2) circuit</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Heated oxygen sensor (sensor 2)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Gas leak from exhaust system</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EKCAC " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EQCAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWCAC " width="NaN%">SAE Code: P013A</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001AMDF__RM100000001AMDF_02">
+     
+    <p class="subpara-subparaName">MONITOR DESCRIPTION</p> 
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000001AMDF__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">Active Air fuel Ratio Control</p>
+<p class="step1-ptxt">The ECM usually performs air fuel ratio feedback control so that the air fuel ratio sensor output indicates a near stoichiometric air fuel ratio. This vehicle includes active air fuel ratio control in addition to regular air fuel ratio control. The ECM performs active air fuel ratio control to detect any deterioration in the Three-Way Catalytic Converter (TWC) and any malfunctions of the heated oxygen sensor (refer to the diagram below).</p>
+<p class="step1-ptxt">Active air fuel ratio control is performed for approximately 30 seconds while driving with a warm engine. During active air fuel ratio control, the air fuel ratio is forcibly regulated to become lean or rich by the ECM. If the ECM detects a malfunction, a DTC is stored.</p>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">Abnormal Heated Oxygen Sensor Output Voltage (DTC P013613)</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">While the ECM is performing active air fuel ratio control, the air fuel ratio is forcibly regulated to become rich or lean. If the sensor is not functioning properly, the variation in output voltage is small. For example, when the heated oxygen sensor voltage does not increase to 0.71 V or higher during active air fuel ratio control, the ECM determines that the sensor output voltage is abnormal and stores DTC P013613.</p>
+<div class="fignone--bigImage">
+<img alt="B006IDFE01" class="figure-graphic--bigImage" src="../images/b006idfe01.png"/>
+</div>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">Open in Heated Oxygen Sensor Circuit (DTC P013617)</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">During active air fuel ratio control, the ECM calculates the Oxygen Storage Capacity (OSC)* of the Three-Way Catalytic Converter (TWC) by forcibly regulating the air fuel ratio to become rich or lean.</p>
+<p class="step1-ptxt">If the heated oxygen sensor has an open circuit, or the output voltage of the sensor noticeably decreases, the OSC indicates an extraordinarily high value. Even if the ECM attempts to continue regulating the air fuel ratio to become rich or lean, the heated oxygen sensor output will not change.</p>
+<p class="step1-ptxt">While performing active air fuel ratio control, when the target air fuel ratio is rich and the heated oxygen sensor output voltage is less than 0.21 V (lean), the ECM interprets this as an abnormally low sensor output voltage and stores DTC P013617.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">*: The TWC has the capability to store oxygen. The OSC and the emission purification capacity of the TWC are mutually related. The ECM determines whether the catalyst has deteriorated based on the calculated OSC value.</p> 
+       <p class="ptxt"> <a class="ptxt-xref" href="RM100000001062J.html#RM100000001062J_01">Click here</a>
+</p> 
+      </div>
+<div class="fignone--bigImage">
+<img alt="B006IODE65" class="figure-graphic--bigImage" src="../images/b006iode65.png"/>
+</div>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">High or Low Impedance of Heated Oxygen Sensor (DTCs P013611 or P013614)</p>
+<div class="ie8fixer"/>
+<div class="fignone"> 
+       <img alt="B006IU0E05" class="figure-graphic" src="../images/b006iu0e05.png"/> 
+      </div>
+<p class="step1-ptxt">During normal air fuel ratio feedback control, there are small variations in the exhaust gas oxygen concentration. In order to continuously monitor the slight variation of the heated oxygen sensor signal while the engine is running, the impedance* of the sensor is measured by the ECM. The ECM determines that there is a malfunction in the sensor when the measured impedance deviates from the standard range.</p>
+<p class="step1-ptxt">*: The effective resistance in an alternating current electrical circuit.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">The impedance cannot be measured using an ohmmeter.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">DTC P013611 indicates the deterioration of the heated oxygen sensor. The ECM stores the DTC by calculating the impedance of the sensor when the typical enabling conditions are satisfied (2 driving cycles).</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">DTC P013614 indicates an open or short circuit in the heated oxygen sensor (2 driving cycles). The ECM stores the DTC when the impedance of the sensor exceeds the threshold 15 kΩ.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">Extremely High Heated Oxygen Sensor Output Voltage (DTC P013615)</p>
+<p class="step1-ptxt">The ECM continuously monitors the heated oxygen sensor output voltage while the engine is running.</p>
+<p class="step1-ptxt">DTC P013615 is stored if the heated oxygen sensor voltage output is 1.2 V or higher for 10 seconds or more.</p>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">Abnormal Heated Oxygen Sensor Output Voltage During Fuel-cut (DTC P013623)</p>
+<p class="step1-ptxt">The sensor output voltage drops to less than 0.2 V (extremely lean status) immediately when the vehicle decelerates and fuel cut is operating. If the voltage does not drop to less than 0.2 V for 6 seconds or more, the ECM determines that the sensor response has deteriorated, illuminates the MIL and stores a DTC.</p>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">Abnormal Heated Oxygen Sensor Output Voltage During Fuel-cut from Rich Condition (DTC P013A00)</p>
+<p class="step1-ptxt">If the sensor output voltage does not drop from 0.35 to 0.2 V immediately when the vehicle decelerates and fuel cut is operating, the ECM illuminates the MIL and stores a DTC.</p>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001AMDF__RM100000001AMDF_03">
+     
+    <p class="subpara-subparaName">MONITOR STRATEGY</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Required Sensors/Components (Main)</td> 
+        <td align="left" class="cellrowborder" width="NaN%">Heated oxygen sensor (sensor 2)</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Required Sensors/Components (Related)</td> 
+        <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Crankshaft position sensor</p> <p class="ptxt">Engine coolant temperature sensor</p> <p class="ptxt">Mass air flow meter sub-assembly</p> <p class="ptxt">Throttle position sensor</p> <p class="ptxt">Air fuel ratio sensor</p> </td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Frequency of Operation</td> 
+        <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Once per driving cycle: Active air fuel ratio control detection, heated oxygen sensor abnormal voltage during fuel cut</p> <p class="ptxt">Continuous: Other</p> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001AMDF__RM100000001AMDF_04">
+     
+    <p class="subpara-subparaName">TYPICAL ENABLING CONDITIONS</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P013611: Heated Oxygen Sensor Circuit Continuity Check (Circuit Short)
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Auxiliary battery voltage</td> 
+        <td align="left" class="cellrowborder" width="NaN%">11 V or higher</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Estimated heated oxygen sensor temperature</td> 
+        <td align="left" class="cellrowborder" width="NaN%">Less than 700°C (1292°F)</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P013613 and P013617: Heated Oxygen Sensor Voltage Check (Voltage Malfunction and Low Voltage)
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Auxiliary battery voltage</td> 
+        <td align="left" class="cellrowborder" width="NaN%">11 V or higher</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Intake air temperature</td> 
+        <td align="left" class="cellrowborder" width="NaN%">-10°C (14°F) or higher</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Engine coolant temperature</td> 
+        <td align="left" class="cellrowborder" width="NaN%">75°C (167°F) or higher</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Atmospheric pressure</td> 
+        <td align="left" class="cellrowborder" width="NaN%">76 kPa(abs) [11 psi(abs)] or higher</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Idling</td> 
+        <td align="left" class="cellrowborder" width="NaN%">Off</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Engine speed</td> 
+        <td align="left" class="cellrowborder" width="NaN%">Less than 4500 rpm</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Air fuel ratio sensor status</td> 
+        <td align="left" class="cellrowborder" width="NaN%">Activated</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Fuel system status</td> 
+        <td align="left" class="cellrowborder" width="NaN%">Closed loop</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Engine load</td> 
+        <td align="left" class="cellrowborder" width="NaN%">10% or higher, and less than 80%</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P013614: Heated Oxygen Sensor Circuit Continuity Check (Circuit Open)
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Auxiliary battery voltage</td> 
+        <td class="cellrowborder" width="NaN%">11 V or higher</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Estimated heated oxygen sensor temperature</td> 
+        <td class="cellrowborder" width="NaN%">450°C (842°F) or higher, and less than 750°C (1382°F)</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P013615: Heated Oxygen Sensor Circuit Continuity Check (Out of Range)
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Auxiliary battery voltage</td> 
+        <td class="cellrowborder" width="NaN%">11 V or higher</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Time after engine start</td> 
+        <td class="cellrowborder" width="NaN%">2 seconds or more</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P013623: Heated Oxygen Sensor Response Rate During Fuel Cut
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Engine coolant temperature</td> 
+        <td class="cellrowborder" width="NaN%">75°C (167°F) or higher</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Estimate catalyst temperature</td> 
+        <td class="cellrowborder" width="NaN%">450°C (842°F) or higher</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Fuel cut</td> 
+        <td class="cellrowborder" width="NaN%">On</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P013A00: Heated Oxygen Sensor Response Rate during Fuel Cut from Rich Condition
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Auxiliary battery voltage</td> 
+        <td align="left" class="cellrowborder" width="NaN%">11 V or higher</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Engine coolant temperature</td> 
+        <td class="cellrowborder" width="NaN%">75°C (167°F) or higher</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Estimate catalyst temperature</td> 
+        <td class="cellrowborder" width="NaN%">450°C (842°F) or higher</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Fuel cut</td> 
+        <td class="cellrowborder" width="NaN%">On</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001AMDF__RM100000001AMDF_05">
+     
+    <p class="subpara-subparaName">TYPICAL MALFUNCTION THRESHOLDS</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P013611: Heated Oxygen Sensor Circuit Continuity Check (Circuit Short)
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Duration of following condition</td> 
+        <td class="cellrowborder" width="NaN%">30 seconds or more</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Heated oxygen sensor impedance</td> 
+        <td class="cellrowborder" width="NaN%">Less than 5 Ω</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P013613: Heated Oxygen Sensor Voltage Check (Voltage Malfunction)
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">All of the following conditions (a), (b) and (c) met</td> 
+        <td align="left" class="cellrowborder" width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">(a) OSC (Oxygen Storage Capacity) of catalyst</td> 
+        <td align="left" class="cellrowborder" width="NaN%">1.9 g or more</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">(b) Commanded air fuel ratio</td> 
+        <td align="left" class="cellrowborder" width="NaN%">14.4 or less</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">(c) Heated oxygen sensor voltage</td> 
+        <td align="left" class="cellrowborder" width="NaN%">0.21 V or higher, and less than 0.71 V</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P013614: Heated Oxygen Sensor Circuit Continuity Check (Circuit Open)
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Duration of following condition</td> 
+        <td class="cellrowborder" width="NaN%">90 seconds or more</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Heated oxygen sensor impedance</td> 
+        <td class="cellrowborder" width="NaN%">15 kΩ or higher</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P013615: Heated Oxygen Sensor Circuit Continuity Check (Out of Range)
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Duration of following condition</td> 
+        <td class="cellrowborder" width="NaN%">10 seconds or more</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Heated oxygen sensor voltage</td> 
+        <td class="cellrowborder" width="NaN%">1.2 V or higher</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P013617: Heated Oxygen Sensor Voltage Check (Low Voltage)
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">All of the following conditions (a), (b) and (c) met</td> 
+        <td class="cellrowborder" width="NaN%">-</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">(a) OSC (Oxygen Storage Capacity) of catalyst</td> 
+        <td class="cellrowborder" width="NaN%">1.9 g or more</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">(b) Commanded air fuel ratio</td> 
+        <td class="cellrowborder" width="NaN%">14.4 or less</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">(c) Heated oxygen sensor voltage</td> 
+        <td class="cellrowborder" width="NaN%">Less than 0.21 V</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P013623: Heated Oxygen Sensor Response Rate During Fuel Cut
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Duration until heated oxygen sensor voltage drops to 0.2 V during fuel cut</td> 
+        <td align="left" class="cellrowborder" width="NaN%">6 seconds or more</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P013A00: Heated Oxygen Sensor Response Rate during Fuel Cut from Rich Condition
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Duration that heated oxygen sensor voltage drops from 0.35 to 0.2 V during fuel cut (Normalized)</td> 
+        <td class="cellrowborder" width="NaN%">1 or more</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001AMDF__RM100000001AMDF_09">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">This confirmation driving pattern is used for the "Perform Confirmation Driving Pattern" procedure of the following diagnostic troubleshooting procedure.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Performing this confirmation driving pattern will activate the heated oxygen sensor monitor (the catalyst monitor is performed simultaneously). This is very useful for verifying the completion of a repair.</p>
+</li> 
+     </ul> 
+    </div> 
+    <br class="subpara"/>
+    <ul class="content5-topic"> 
+     <li class="topic-topic"> <strong class="topic-title">P013611, P013613, P013614, P013615 and P013617</strong> </li> 
+    </ul> 
+    <div class="fignone--bigImage">
+<img alt="B006HP1E41" class="figure-graphic--bigImage" src="../images/b006hp1e41.png"/>
+</div> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item clearer">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) [A].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Start the engine and warm it up until the engine coolant temperature is 75°C (167°F) or higher [B].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Press the EV/HV mode selection switch to select HV mode.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">With the engine running, drive the vehicle at 75 to 120 km/h (46 to 75 mph) for 10 minutes or more [C].</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">When performing the confirmation driving pattern, obey all speed limits and traffic laws.</p> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">If the engine stops, further depress the accelerator pedal to restart the engine.</p> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes [D].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Read the pending DTCs.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is output, the system is malfunctioning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is not output, perform the following procedure.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Input the DTC: P013611, P013613, P013614, P013615 or P013617.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tablenoborder">
+       <table class="item-table">
+<thead align="left" class="item-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0ETDBG" width="NaN%">GTS Display</th> 
+          <th align="center" class="cellrowborder" id="ID0EZDBG" width="NaN%">Description</th> 
+         </tr> 
+        </thead>
+<tbody class="item-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ETDBG " width="NaN%">NORMAL</td> 
+          <td class="cellrowborder" headers="ID0EZDBG " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System normal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ETDBG " width="NaN%">ABNORMAL</td> 
+          <td class="cellrowborder" headers="ID0EZDBG " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System abnormal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ETDBG " width="NaN%">INCOMPLETE</td> 
+          <td class="cellrowborder" headers="ID0EZDBG " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment not completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Perform driving pattern after confirming DTC enabling conditions</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ETDBG " width="NaN%">N/A</td> 
+          <td class="cellrowborder" headers="ID0EZDBG " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Unable to perform DTC judgment</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Number of DTCs which do not fulfill DTC preconditions has reached ECU memory limit</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is NORMAL, the system is normal.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is ABNORMAL, the system is malfunctioning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is INCOMPLETE or N/A, perform steps [C] and [D] again.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+</ol> 
+    <br class="subpara"/>
+    <ul class="content5-topic"> 
+     <li class="topic-topic"> <strong class="topic-title">P013623 and P013A00</strong> </li> 
+    </ul> 
+    <div class="fignone--bigImage">
+<img alt="B006IR1E45" class="figure-graphic--bigImage" src="../images/b006ir1e45.png"/>
+</div> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item clearer">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Start the engine and warm it up until the engine coolant temperature is 75°C (167°F) or higher with park (P) selected [A].</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">In order to keep the idle stable, turn off the A/C and all other electric loads and do not perform any shift operations.</p> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Press the EV/HV mode selection switch to select HV mode.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">With the engine running, drive the vehicle at approximately 75 km/h (46 mph) for 10 minutes or more [B].</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">When performing the confirmation driving pattern, obey all speed limits and traffic laws.</p> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">Drive the vehicle while keeping the engine load as constant as possible.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the engine stops, further depress the accelerator pedal to restart the engine.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">With brake (B) selected and the engine running, drive the vehicle at 75 km/h (46 mph), and then decelerate the vehicle by releasing the accelerator pedal for 5 seconds or more to perform the fuel-cut [C].</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">When performing the confirmation driving pattern, obey all speed limits and traffic laws.</p> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">If the engine stops, further depress the accelerator pedal to restart the engine.</p> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Repeat step [C] 2 times or more in one driving cycle.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes / Pending.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Read the pending DTCs [D].</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is output, the system is malfunctioning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is not output, perform the following procedure.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Input the DTC: P013623 or P013A00.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tablenoborder">
+       <table class="item-table">
+<thead align="left" class="item-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0E4WBG" width="NaN%">GTS Display</th> 
+          <th align="center" class="cellrowborder" id="ID0EDXBG" width="NaN%">Description</th> 
+         </tr> 
+        </thead>
+<tbody class="item-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E4WBG " width="NaN%">NORMAL</td> 
+          <td class="cellrowborder" headers="ID0EDXBG " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System normal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E4WBG " width="NaN%">ABNORMAL</td> 
+          <td class="cellrowborder" headers="ID0EDXBG " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System abnormal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E4WBG " width="NaN%">INCOMPLETE</td> 
+          <td class="cellrowborder" headers="ID0EDXBG " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment not completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Perform driving pattern after confirming DTC enabling conditions</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E4WBG " width="NaN%">N/A</td> 
+          <td class="cellrowborder" headers="ID0EDXBG " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Unable to perform DTC judgment</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Number of DTCs which do not fulfill DTC preconditions has reached ECU memory limit</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is NORMAL, the system is normal.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is ABNORMAL, the system is malfunctioning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is INCOMPLETE or N/A, drive the vehicle with brake (B) selected, and then perform step [C] again.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001AMDF__RM100000001AMDF_08">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="B006IINE07" class="figure-graphic--bigImage" src="../images/b006iine07.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM100000001AMDF__RM100000001AMDF_10">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">Malfunctioning areas can be identified by performing the Active Test "Control the Injection Volume for A/F Sensor". This Active Test can help to determine whether the air fuel ratio sensor, heated oxygen sensor and other potential trouble areas are malfunctioning.</p> 
+     <p class="ptxt">The following procedure describes how to perform the Active Test "Control the Injection Volume for A/F Sensor" using the GTS.</p> 
+    </div> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Start the engine and warm it up until the engine coolant temperature is 75°C (167°F) or higher.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Idle the engine for 5 minutes or more with park (P) selected.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Active Test / Control the Injection Volume for A/F Sensor / Data List / A/F (O2) Sensor Voltage B1S1 and O2 Sensor Voltage B1S2.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Perform the Active Test with the engine idling (change the fuel injection volume).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Monitor the output voltage of the air fuel ratio sensor (A/F (O2) Sensor Voltage B1S1) and heated oxygen sensor (O2 Sensor Voltage B1S2) displayed on the GTS.</p>
+</li>
+</ol> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">The Active Test "Control the Injection Volume for A/F Sensor" can be used to lower the fuel injection volume by 12.5% or increase the injection volume by 12.5%.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Each sensor reacts in accordance with the increase and decrease in the fuel injection volume.</p>
+</li> 
+     </ul> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Standard
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EBGAI" width="NaN%">GTS Display (Sensor)</th> 
+        <th align="center" class="cellrowborder" id="ID0EHGAI" width="NaN%">Injection Volume</th> 
+        <th align="center" class="cellrowborder" id="ID0ENGAI" width="NaN%">Status</th> 
+        <th align="center" class="cellrowborder" id="ID0ETGAI" width="NaN%">Voltage</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EBGAI " rowspan="2" width="NaN%"> <p class="ptxt">A/F (O2) Sensor Voltage B1S1</p> <p class="ptxt">(Air fuel ratio)</p> </td> 
+        <td align="center" class="cellrowborder" headers="ID0EHGAI " width="NaN%">12.5%</td> 
+        <td align="center" class="cellrowborder" headers="ID0ENGAI " width="NaN%">Rich</td> 
+        <td align="center" class="cellrowborder" headers="ID0ETGAI " width="NaN%">Below 3.1 V</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EHGAI " width="NaN%">-12.5%</td> 
+        <td align="center" class="cellrowborder" headers="ID0ENGAI " width="NaN%">Lean</td> 
+        <td align="center" class="cellrowborder" headers="ID0ETGAI " width="NaN%">Higher than 3.4 V</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EBGAI " rowspan="2" width="NaN%"> <p class="ptxt">O2 Sensor Voltage B1S2</p> <p class="ptxt">(Heated oxygen)</p> </td> 
+        <td align="center" class="cellrowborder" headers="ID0EHGAI " width="NaN%">12.5%</td> 
+        <td align="center" class="cellrowborder" headers="ID0ENGAI " width="NaN%">Rich</td> 
+        <td align="center" class="cellrowborder" headers="ID0ETGAI " width="NaN%">Higher than 0.55 V</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EHGAI " width="NaN%">-12.5%</td> 
+        <td align="center" class="cellrowborder" headers="ID0ENGAI " width="NaN%">Lean</td> 
+        <td align="center" class="cellrowborder" headers="ID0ETGAI " width="NaN%">Below 0.4 V</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">The air fuel ratio sensor has an output delay of a few seconds and the heated oxygen sensor has a maximum output delay of approximately 20 seconds.</p> 
+    </div> 
+    <div class="fignone--bigImage">
+<img alt="B006IV5E54" class="figure-graphic--bigImage" src="../images/b006iv5e54.png"/>
+</div> 
+    <p class="content5-ptxt">Performing the Active Test "Control the Injection Volume for A/F Sensor" allows the output voltage of the air fuel ratio sensor and heated oxygen sensor to be checked and graphed.</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">Inspect the fuses for circuits related to this system before performing the following procedure.</p> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">Sensor 1 refers to the sensor closest to the engine assembly.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Sensor 2 refers to the sensor farthest away from the engine assembly.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Read freeze frame data using the GTS. Freeze frame data records the engine condition when malfunctions are detected. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air fuel ratio was lean or rich, and other data from the time the malfunction occurred.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001AMDF__RM100000001AMDF_14">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0001">
+<p class="testgrp-heading">READ OUTPUT DTC (DTC P013611, P013613, P013614, P013615, P013617, P013623 OR P013A00)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPTAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPTAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EYUAI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E5UAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYUAI " width="NaN%">P013615 is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5UAI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYUAI " width="NaN%">P013614 or P013617 is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5UAI " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYUAI " width="NaN%">P013611 or P013613 is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5UAI " width="NaN%">C</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYUAI " width="NaN%">P013623 or P013A00 is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5UAI " width="NaN%">D</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYUAI " width="NaN%">P013611, P013613, P013614, P013615, P013617, P013623 or P013A00 and other DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5UAI " width="NaN%">E</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If any DTCs other than P013611, P013613, P013614, P013615, P013617, P013623 or P013A00 are output, troubleshoot those DTCs first.</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">B</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 11  <a class="res-right-fin-false-xref" href="#RM100000001AMDF__RM100000001AMDF_14_0015">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">C</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">PERFORM ACTIVE TEST USING GTS (CONTROL THE INJECTION VOLUME FOR A/F SENSOR)  <a class="res-right-fin-false-xref" href="#RM100000001AMDF__RM100000001AMDF_14_0007">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">D</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK FOR EXHAUST GAS LEAK  <a class="res-right-fin-false-xref" href="#RM100000001AMDF__RM100000001AMDF_14_0027">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">E</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART <a class="content6-ptxt-xref" href="RM100000001AMDC.html#RM100000001AMDC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0002">
+<p class="testgrp-heading">INSPECT HEATED OXYGEN SENSOR (CHECK FOR SHORT)</p>
+<div class="ie8fixer"/>
+<div class="fignone"> 
+       <img alt="B006HU4C02" class="figure-graphic" src="../images/b006hu4c02.png"/> 
+       <div class="figure-p"> 
+        <div class="tablenoborder">
+         <table class="p-table">
+<tbody class="p-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+            <td class="cellrowborder" width="NaN%"> <p class="ptxt">Component without harness connected</p> <p class="ptxt">(Heated Oxygen Sensor)</p> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div> 
+       </div> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the heated oxygen sensor connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EA5AI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EA5AI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EN6AI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0ET6AI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EZ6AI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EN6AI " width="NaN%">2 (+B) - 4 (E2)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ET6AI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZ6AI " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EN6AI " width="NaN%">2 (+B) - 3 (OX1B)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ET6AI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZ6AI " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the heated oxygen sensor.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EWCBI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EWCBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EZDBI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZDBI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZDBI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HEATED OXYGEN SENSOR <a class="content6-ptxt-xref" href="RM100000001068C.html#RM100000001068C">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0004">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (CHECK FOR SHORT)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for 5 minutes or more.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the ECM connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYHBI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EYHBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EGJBI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EMJBI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ESJBI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EGJBI " width="NaN%">C31-56 (HT1B) - C31-99 (OX1B)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMJBI " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESJBI " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EELBI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EELBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EHMBI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHMBI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHMBI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ECM <a class="content6-ptxt-xref" href="RM100000001067I.html#RM100000001067I">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR (HEATED OXYGEN SENSOR - ECM) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0007">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (CONTROL THE INJECTION VOLUME FOR A/F SENSOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EVRBI" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EVRBI " width="NaN%">Inspection Mode</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Start the engine and warm it up until the engine coolant temperature is 75°C (167°F) or higher.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Idle the engine for 5 minutes or more with park (P) selected.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Active Test / Control the Injection Volume for A/F Sensor / Data List / O2 Sensor Voltage B1S2.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E6XBI" width="NaN%">Active Test Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E6XBI " width="NaN%">Control the Injection Volume for A/F Sensor</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ELZBI" width="NaN%">Data List Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ELZBI " width="NaN%">O2 Sensor Voltage B1S2</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Change the fuel injection volume using the GTS, and monitor the output voltage of the heated oxygen sensor (O2 Sensor Voltage B1S2) displayed on the GTS.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">The Active Test "Control the Injection Volume for A/F Sensor" can be used to lower the fuel injection volume by 12.5% or increase the injection volume by 12.5%.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">The heated oxygen sensor has a maximum output delay of approximately 20 seconds.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2ACI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E2ACI">Fluctuates between 0.4 V or less, and 0.55 V or higher.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EVBCI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EVBCI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EYCCI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYCCI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYCCI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK FOR EXHAUST GAS LEAK  <a class="res-right-fin-false-xref" href="#RM100000001AMDF__RM100000001AMDF_14_0015">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0008">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (CONTROL THE INJECTION VOLUME FOR A/F SENSOR)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EAICI" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EAICI " width="NaN%">Inspection Mode</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Start the engine and warm it up until the engine coolant temperature is 75°C (167°F) or higher.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Idle the engine for 5 minutes or more with park (P) selected.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Active Test / Control the Injection Volume for A/F Sensor / Data List / A/F (O2) Sensor Voltage B1S1 and O2 Sensor Voltage B1S2.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EKOCI" width="NaN%">Active Test Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKOCI " width="NaN%">Control the Injection Volume for A/F Sensor</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EWPCI" width="NaN%">Data List Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EWPCI " width="NaN%">A/F (O2) Sensor Voltage B1S1</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EWPCI " width="NaN%">O2 Sensor Voltage B1S2</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Change the fuel injection volume using the GTS, and monitor the output voltage of the air fuel ratio sensor (A/F (O2) Sensor Voltage B1S1) and heated oxygen sensor (O2 Sensor Voltage B1S2) displayed on the GTS.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">The Active Test "Control the Injection Volume for A/F Sensor" can be used to lower the fuel injection volume by 12.5% or increase the injection volume by 12.5%.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">The air fuel ratio sensor is displayed as A/F (O2) Sensor Voltage B1S1, and the heated oxygen sensor is displayed as O2 Sensor Voltage B1S2 on the GTS.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">The air fuel ratio sensor has an output delay of a few seconds and the heated oxygen sensor has a maximum output delay of approximately 20 seconds.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If the sensor output voltage does not change (almost no reaction) while performing the Active Test, the sensor may be malfunctioning.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELZCI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELZCI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EZ1CI" width="NaN%">GTS Display (Sensor)</th> 
+                 <th align="center" class="spec-table-item" id="ID0E61CI" width="NaN%">Voltage Variation</th> 
+                 <th align="center" class="spec-table-item" id="ID0EF2CI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZ1CI " rowspan="3" width="NaN%">A/F (O2) Sensor Voltage B1S1 (Air fuel ratio)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E61CI " width="NaN%">Alternates between higher and less than 3.3 V</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EF2CI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E61CI " width="NaN%">Remains at higher than 3.3 V</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EF2CI " rowspan="2" width="NaN%">NG</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E61CI " width="NaN%">Remains at less than 3.3 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">A normal heated oxygen sensor voltage (O2 Sensor Voltage B1S2) reacts in accordance with increases and decreases in the fuel injection volume. When the air fuel ratio sensor voltage (A/F (O2) Sensor Voltage B1S1) remains at either less or higher than 3.3 V despite the heated oxygen sensor indicating a normal reaction, the air fuel ratio sensor is malfunctioning.</p> 
+        </div>
+<div class="fignone--bigImage">
+<img alt="B006IROE01" class="figure-graphic--bigImage" src="../images/b006iroe01.png"/>
+</div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHECK ENGINE TO DETERMINE CAUSE OF EXTREMELY RICH OR LEAN ACTUAL AIR FUEL RATIO (FUEL INJECTOR ASSEMBLY, FUEL SYSTEM, INTAKE SYSTEM, ETC.) <a class="content6-ptxt-xref" href="RM100000001062A.html#RM100000001062A">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0048">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (CONTROL THE EGR STEP POSITION)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EJCDI" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EJCDI " width="NaN%">Inspection Mode</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Start the engine and warm it up until the engine coolant temperature is 75°C (167°F) or higher.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">The A/C switch and all accessories should be off.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Active Test / Control the EGR Step Position / Data List / Intake Manifold Absolute Pressure and Engine Independent.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ESIDI" width="NaN%">Active Test Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ESIDI " width="NaN%">Control the EGR Step Position</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E5JDI" width="NaN%">Data List Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E5JDI " width="NaN%">Intake Manifold Absolute Pressure</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E5JDI " width="NaN%">Engine Independent</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Confirm that the value of Data List item Engine Independent is "Operate" then check the value of Intake Manifold Absolute Pressure while performing the Active Test.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <br class="note"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Do not leave the EGR valve open for 10 seconds or more during the Active Test.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Be sure to return the EGR valve to step 0 when the Active Test is completed.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Do not open the EGR valve 30 steps or more during the Active Test.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EITDI" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EITDI">The value of Intake Manifold Absolute Pressure changes in response to the EGR step position when the value of Engine Independent is "Operate".</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECUDI" class="spec-title">Standard</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECUDI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQVDI" rowspan="2" width="NaN%">-</th> 
+                 <th align="center" class="spec-table-item" colspan="2" id="ID0EXVDI">Control the EGR Step Position (Active Test)</th> 
+                </tr> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDWDI" width="NaN%">0 Steps</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJWDI" width="NaN%">0 to 30 Steps</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQVDI ID0EDWDI " width="NaN%"> <p class="ptxt">Intake Manifold Absolute Pressure</p> <p class="ptxt">(Data List)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EXVDI ID0EJWDI " width="NaN%">(EGR valve is fully closed)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EXVDI " width="NaN%">Intake Manifold Absolute Pressure value is at least +10 kPa (1.45 psi) higher than when EGR valve is fully closed</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If the value of Data List item Engine Independent is "Not Opr" when the engine is idling, charge control is being performed. Perform the Active Test after charge control is complete ("Operate" is displayed).</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">While performing the Active Test, if the increase in the value of Intake Manifold Absolute Pressure is small, the EGR valve assembly may be malfunctioning.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Even if the EGR valve assembly is malfunctioning, rough idling or an increase in the value of Intake Manifold Absolute Pressure may occur while performing the Active Test. However, the amount that the value of Intake Manifold Absolute Pressure increases will be smaller than normal.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESZDI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ESZDI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EV1DI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EV1DI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EV1DI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">OK</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 8  <a class="res-right-fin-false-xref" href="#RM100000001AMDF__RM100000001AMDF_14_0010">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0036">
+<p class="testgrp-heading">INSPECT EGR VALVE ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the EGR valve assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZW7X.html#RM100000000ZW7X">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the EGR valve is stuck open.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ES5DI" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ES5DI">EGR valve is tightly closed.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the EGR valve assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECAAK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECAAK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFBAK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFBAK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFBAK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE EGR VALVE ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000ZW7X.html#RM100000000ZW7X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0010">
+<p class="testgrp-heading">REPLACE AIR FUEL RATIO SENSOR</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Replace the air fuel ratio sensor.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000010688.html#RM1000000010688">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the air fuel ratio sensor.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EOFAK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EOFAK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ERGAK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERGAK " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0057">
+<p class="testgrp-heading">CLEAR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENNAK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENNAK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQOAK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQOAK " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0012">
+<p class="testgrp-heading">CHECK WHETHER DTC OUTPUT RECURS (DTC P013611 OR P013613)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Drive the vehicle in accordance with the driving pattern described in Confirmation Driving Pattern.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EESAK" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EESAK " width="NaN%">All Readiness</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Input the DTC: P013611 or P013613.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the DTC judgment result is NORMAL. If the DTC judgment result is INCOMPLETE, perform the confirmation drive pattern again but increase the vehicle speed.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKXAK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EKXAK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETYAK" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EZYAK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETYAK " width="NaN%"> <p class="ptxt">NORMAL</p> <p class="ptxt">(DTCs are not output)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZYAK " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETYAK " width="NaN%"> <p class="ptxt">ABNORMAL</p> <p class="ptxt">(DTC P013611 or P013613 is output)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZYAK " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the heated oxygen sensor.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HEATED OXYGEN SENSOR <a class="content6-ptxt-xref" href="RM100000001068C.html#RM100000001068C">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0015">
+<p class="testgrp-heading">CHECK FOR EXHAUST GAS LEAK</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check for exhaust gas leaks.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZ4AK" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EZ4AK">No gas leaks in exhaust system.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after repairing or replacing the exhaust system.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EI6AK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EI6AK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ELABK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELABK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELABK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE EXHAUST SYSTEM </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0017">
+<p class="testgrp-heading">INSPECT HEATED OXYGEN SENSOR (HEATER RESISTANCE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the heated oxygen sensor.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001068A.html#RM100000001068A">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the heated oxygen sensor.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EOEBK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EOEBK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ERFBK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERFBK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERFBK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HEATED OXYGEN SENSOR <a class="content6-ptxt-xref" href="RM100000001068C.html#RM100000001068C">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0019">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (HEATED OXYGEN SENSOR - ECM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the heated oxygen sensor connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the ECM connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQJBK" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQJBK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5KBK" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EELBK" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EKLBK" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5KBK " width="NaN%">C9-1 (HT1B) - C31-56 (HT1B)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EELBK " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKLBK " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5KBK " width="NaN%">C9-3 (OX1B) - C31-99 (OX1B)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EELBK " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKLBK " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5KBK " width="NaN%">C9-4 (E2) - C31-131 (EX1B)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EELBK " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKLBK " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5KBK " width="NaN%">C9-1 (HT1B) or C31-56 (HT1B) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EELBK " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKLBK " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5KBK " width="NaN%">C9-3 (OX1B) or C31-99 (OX1B) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EELBK " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKLBK " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EUPBK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EUPBK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EXQBK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXQBK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXQBK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0050">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (CONTROL THE EGR STEP POSITION)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E6VBK" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E6VBK " width="NaN%">Inspection Mode</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Start the engine and warm it up until the engine coolant temperature is 75°C (167°F) or higher.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">The A/C switch and all accessories should be off.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Active Test / Control the EGR Step Position / Data List / Intake Manifold Absolute Pressure and Engine Independent.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EI3BK" width="NaN%">Active Test Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EI3BK " width="NaN%">Control the EGR Step Position</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EU4BK" width="NaN%">Data List Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EU4BK " width="NaN%">Intake Manifold Absolute Pressure</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EU4BK " width="NaN%">Engine Independent</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Confirm that the value of Data List item Engine Independent is "Operate" then check the value of Intake Manifold Absolute Pressure while performing the Active Test.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <br class="note"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Do not leave the EGR valve open for 10 seconds or more during the Active Test.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Be sure to return the EGR valve to step 0 when the Active Test is completed.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Do not open the EGR valve 30 steps or more during the Active Test.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E5GCK" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E5GCK">The value of Intake Manifold Absolute Pressure changes in response to the EGR step position when the value of Engine Independent is "Operate".</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYHCK" class="spec-title">Standard</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EYHCK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EGJCK" rowspan="2" width="NaN%">-</th> 
+                 <th align="center" class="spec-table-item" colspan="2" id="ID0ENJCK">Control the EGR Step Position (Active Test)</th> 
+                </tr> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EZJCK" width="NaN%">0 Steps</th> 
+                 <th align="center" class="spec-table-item" id="ID0E6JCK" width="NaN%">0 to 30 Steps</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EGJCK ID0EZJCK " width="NaN%"> <p class="ptxt">Intake Manifold Absolute Pressure</p> <p class="ptxt">(Data List)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0ENJCK ID0E6JCK " width="NaN%">(EGR valve is fully closed)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ENJCK " width="NaN%">Intake Manifold Absolute Pressure value is at least +10 kPa (1.45 psi) higher than when EGR valve is fully closed</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If the value of Data List item Engine Independent is "Not Opr" when the engine is idling, charge control is being performed. Perform the Active Test after charge control is complete ("Operate" is displayed).</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">While performing the Active Test, if the increase in the value of Intake Manifold Absolute Pressure is small, the EGR valve assembly may be malfunctioning.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Even if the EGR valve assembly is malfunctioning, rough idling or an increase in the value of Intake Manifold Absolute Pressure may occur while performing the Active Test. However, the amount that the value of Intake Manifold Absolute Pressure increases will be smaller than normal.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EINCK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EINCK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ELOCK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELOCK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELOCK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">OK</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 16  <a class="res-right-fin-false-xref" href="#RM100000001AMDF__RM100000001AMDF_14_0021">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0039">
+<p class="testgrp-heading">INSPECT EGR VALVE ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the EGR valve assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZW7X.html#RM100000000ZW7X">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the EGR valve is stuck open.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EISCK" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EISCK">EGR valve is tightly closed.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the EGR valve assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXTCK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EXTCK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E1UCK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1UCK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1UCK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE EGR VALVE ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000ZW7X.html#RM100000000ZW7X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0021">
+<p class="testgrp-heading">REPLACE HEATED OXYGEN SENSOR</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Replace the heated oxygen sensor.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001068C.html#RM100000001068C">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the heated oxygen sensor.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDZCK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EDZCK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EG1CK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EG1CK " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0058">
+<p class="testgrp-heading">CLEAR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECBDK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECBDK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFCDK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFCDK " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0023">
+<p class="testgrp-heading">CHECK WHETHER DTC OUTPUT RECURS (DTC P013611, P013613, P013614, P013615 OR P013617)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Drive the vehicle in accordance with the driving pattern described in Confirmation Driving Pattern.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EZFDK" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZFDK " width="NaN%">All Readiness</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Input the DTC: P013611, P013613, P013614, P013615 or P013617.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the DTC judgment result is NORMAL. If the DTC judgment result is INCOMPLETE, perform the confirmation drive pattern again but increase the vehicle speed.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E6KDK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E6KDK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EIMDK" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EOMDK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EIMDK " width="NaN%"> <p class="ptxt">NORMAL</p> <p class="ptxt">(DTCs are not output)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOMDK " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EIMDK " width="NaN%"> <p class="ptxt">ABNORMAL</p> <p class="ptxt">(DTC P013611, P013613, P013614, P013615 or P013617 is output)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOMDK " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the air fuel ratio sensor.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE AIR FUEL RATIO SENSOR <a class="content6-ptxt-xref" href="RM1000000010688.html#RM1000000010688">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0027">
+<p class="testgrp-heading">CHECK FOR EXHAUST GAS LEAK</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check for exhaust gas leaks.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EORDK" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EORDK">No gas leaks in exhaust system.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after repairing or replacing the exhaust system.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4SDK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E4SDK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EAUDK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EAUDK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EAUDK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE EXHAUST SYSTEM </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0029">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (CHECK FOR SHORT)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for 5 minutes or more.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the ECM connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZXDK" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZXDK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EHZDK" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0ENZDK" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ETZDK" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHZDK " width="NaN%">C31-56 (HT1B) - C31-99 (OX1B)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ENZDK " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ETZDK " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EF2DK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EF2DK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EI3DK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EI3DK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EI3DK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR (HEATED OXYGEN SENSOR - ECM) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDF__RM100000001AMDF_14_0059">
+<p class="testgrp-heading">CLEAR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXDEK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EXDEK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E1EEK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1EEK " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001AMDF__RM100000001AMDF_14_0054">
+<p class="testgrp-heading">CHECK WHETHER DTC OUTPUT RECURS (DTC P013623 OR P013A00)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Drive the vehicle in accordance with the driving pattern described in Confirmation Driving Pattern.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EOIEK" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EOIEK " width="NaN%">All Readiness</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Input the DTC: P013623 or P013A00.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the DTC judgment result is NORMAL. If the DTC judgment result is INCOMPLETE, perform the confirmation drive pattern again but increase the vehicle speed.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EUNEK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EUNEK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E4OEK" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EDPEK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4OEK " width="NaN%"> <p class="ptxt">NORMAL</p> <p class="ptxt">(DTCs are not output)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDPEK " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4OEK " width="NaN%"> <p class="ptxt">ABNORMAL</p> <p class="ptxt">(DTC P013623 or P013A00 is output)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDPEK " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the heated oxygen sensor.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHECK FOR INTERMITTENT PROBLEMS <a class="content6-ptxt-xref" href="RM1000000010614.html#RM1000000010614">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HEATED OXYGEN SENSOR <a class="content6-ptxt-xref" href="RM100000001068C.html#RM100000001068C">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

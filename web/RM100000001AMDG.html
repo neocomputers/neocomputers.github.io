@@ -1,0 +1,4856 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P030000, P030027, P030085, P030100, P030200, P030300, P030400" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290546" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201801" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001AMDG" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P030000, P030027, P030085, P030100, P030200, P030300, P030400</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P030000, P030027, P030085, P030100, P030200, P030300, P030400</h1>
+<div class="section" id="RM100000001AMDG__RM100000001AMDG_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P030000</td> 
+       <td class="dtcname" headers="ID0EED">Random/Multiple Cylinder Misfire Detected</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P030027</td> 
+       <td class="dtcname" headers="ID0EED">Random/Multiple Cylinder Misfire Detected (Emission) Signal Rate of Change Above Threshold</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P030085</td> 
+       <td class="dtcname" headers="ID0EED">Random / Multiple Cylinder Misfire Detected (Over Temperature) Signal Above Allowable Range</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P030100</td> 
+       <td class="dtcname" headers="ID0EED">Cylinder 1 Misfire Detected</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P030200</td> 
+       <td class="dtcname" headers="ID0EED">Cylinder 2 Misfire Detected</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P030300</td> 
+       <td class="dtcname" headers="ID0EED">Cylinder 3 Misfire Detected</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P030400</td> 
+       <td class="dtcname" headers="ID0EED">Cylinder 4 Misfire Detected</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001AMDG__RM100000001AMDG_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">When the engine misfires, high concentrations of hydrocarbons (HC) enter the exhaust gas. Extremely high hydrocarbon concentration levels can cause an increase in exhaust emission levels. Extremely high concentrations of hydrocarbons can also cause increases in the three-way catalytic converter temperature, which may cause damage to the three-way catalytic converter. To prevent this increase in emissions and to limit the possibility of thermal damage, the ECM monitors the misfire count. When the temperature of the three-way catalytic converter reaches the point of thermal degradation, the ECM blinks the MIL. To monitor misfires, the ECM uses both the camshaft position sensor and the crankshaft position sensor. The camshaft position sensor is used to identify any misfiring cylinders and the crankshaft position sensor is used to measure variations in the crankshaft rotation speed. Misfires are counted when the crankshaft rotation speed variations exceed predetermined thresholds. If the misfire count exceeds the threshold levels, and could cause emission control system performance deterioration, the ECM illuminates the MIL and stores a DTC.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EQAAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EWAAC" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0E3AAC" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0ECBAC" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EIBAC" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EOBAC" width="NaN%">Memory</th> 
+        <th align="center" class="cellrowborder" id="ID0EUBAC" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">P030000</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Random/Multiple Cylinder Misfire Detected</td> 
+        <td align="left" class="cellrowborder" headers="ID0E3AAC " width="NaN%"> <p class="ptxt">Simultaneous misfiring of several cylinders occurs and one of the following conditions is met (2 trip detection logic):</p> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">A misfire occurs that may damage the three-way catalytic converter (MIL blinks immediately when detected).</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">An emission deterioration misfire occurs (MIL illuminates).</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Open or short in engine wire harness</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Connector connection</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Vacuum hose connections</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Ignition system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel injector assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Mass air flow meter sub-assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Engine coolant temperature sensor</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Compression pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Valve timing</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV valve and hose</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV hose connections</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Intake system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">EGR valve assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">Comes on/Blinks*</p> <p class="ptxt">*: The MIL flashes when a catalyst-damaging misfire is detected.</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EOBAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUBAC " width="NaN%">SAE Code: P0300</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">P030027</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Random/Multiple Cylinder Misfire Detected (Emission) Signal Rate of Change Above Threshold</td> 
+        <td align="left" class="cellrowborder" headers="ID0E3AAC " width="NaN%">An emission deterioration misfire occurs (2 trip detection logic).</td> 
+        <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Open or short in engine wire harness</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Connector connection</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Vacuum hose connections</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Ignition system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel injector assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Mass air flow meter sub-assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Engine coolant temperature sensor</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Compression pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Valve timing</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV valve and hose</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV hose connections</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Intake system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">EGR valve assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EOBAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUBAC " width="NaN%">SAE Code: -</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">P030085</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Random / Multiple Cylinder Misfire Detected (Over Temperature) Signal Above Allowable Range</td> 
+        <td align="left" class="cellrowborder" headers="ID0E3AAC " width="NaN%">A misfire occurs that may damage the three-way catalytic converter (2 trip detection logic).</td> 
+        <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Open or short in engine wire harness</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Connector connection</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Vacuum hose connections</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Ignition system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel injector assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Mass air flow meter sub-assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Engine coolant temperature sensor</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Compression pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Valve timing</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV valve and hose</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV hose connections</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Intake system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">EGR valve assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">Comes on/Blinks*</p> <p class="ptxt">*: The MIL flashes when a catalyst-damaging misfire is detected.</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EOBAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUBAC " width="NaN%">SAE Code: -</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">P030100</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Cylinder 1 Misfire Detected</td> 
+        <td align="left" class="cellrowborder" headers="ID0E3AAC " width="NaN%"> <p class="ptxt">Misfiring of a specific cylinder occurs and one of the following conditions is met (2 trip detection logic):</p> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">A misfire occurs that may damage the three-way catalytic converter (MIL blinks immediately when detected).</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">An emission deterioration misfire occurs (MIL illuminates).</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Open or short in engine wire harness</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Connector connection</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Vacuum hose connections</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Ignition system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel injector assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Mass air flow meter sub-assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Engine coolant temperature sensor</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Compression pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Valve timing</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV valve and hose</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV hose connections</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Intake system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">EGR valve assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">Comes on/Blinks*</p> <p class="ptxt">*: The MIL flashes when a catalyst-damaging misfire is detected.</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EOBAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUBAC " width="NaN%">SAE Code: P0301</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">P030200</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Cylinder 2 Misfire Detected</td> 
+        <td align="left" class="cellrowborder" headers="ID0E3AAC " width="NaN%"> <p class="ptxt">Misfiring of a specific cylinder occurs and one of the following conditions is met (2 trip detection logic):</p> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">A misfire occurs that may damage the three-way catalytic converter (MIL blinks immediately when detected).</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">An emission deterioration misfire occurs (MIL illuminates).</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Open or short in engine wire harness</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Connector connection</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Vacuum hose connections</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Ignition system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel injector assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Mass air flow meter sub-assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Engine coolant temperature sensor</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Compression pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Valve timing</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV valve and hose</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV hose connections</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Intake system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">EGR valve assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">Comes on/Blinks*</p> <p class="ptxt">*: The MIL flashes when a catalyst-damaging misfire is detected.</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EOBAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUBAC " width="NaN%">SAE Code: P0302</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">P030300</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Cylinder 3 Misfire Detected</td> 
+        <td align="left" class="cellrowborder" headers="ID0E3AAC " width="NaN%"> <p class="ptxt">Misfiring of a specific cylinder occurs and one of the following conditions is met (2 trip detection logic):</p> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">A misfire occurs that may damage the three-way catalytic converter (MIL blinks immediately when detected).</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">An emission deterioration misfire occurs (MIL illuminates).</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Open or short in engine wire harness</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Connector connection</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Vacuum hose connections</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Ignition system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel injector assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Mass air flow meter sub-assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Engine coolant temperature sensor</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Compression pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Valve timing</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV valve and hose</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV hose connections</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Intake system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">EGR valve assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">Comes on/Blinks*</p> <p class="ptxt">*: The MIL flashes when a catalyst-damaging misfire is detected.</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EOBAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUBAC " width="NaN%">SAE Code: P0303</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">P030400</td> 
+        <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Cylinder 4 Misfire Detected</td> 
+        <td align="left" class="cellrowborder" headers="ID0E3AAC " width="NaN%"> <p class="ptxt">Misfiring of a specific cylinder occurs and one of the following conditions is met (2 trip detection logic):</p> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">A misfire occurs that may damage the three-way catalytic converter (MIL blinks immediately when detected).</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">An emission deterioration misfire occurs (MIL illuminates).</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Open or short in engine wire harness</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Connector connection</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Vacuum hose connections</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Ignition system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel injector assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Fuel pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Mass air flow meter sub-assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Engine coolant temperature sensor</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Compression pressure</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Valve timing</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV valve and hose</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">PCV hose connections</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Intake system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">EGR valve assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">Comes on/Blinks*</p> <p class="ptxt">*: The MIL flashes when a catalyst-damaging misfire is detected.</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EOBAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUBAC " width="NaN%">SAE Code: P0304</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <p class="content5-ptxt">When DTCs for misfiring cylinders are randomly stored, but DTC P030000 is not stored, it indicates that misfires have been detected in different cylinders at different times. DTC P030000 is only stored when several misfiring cylinders are detected at the same time.</p> 
+   </div>
+<div class="subpara" id="RM100000001AMDG__RM100000001AMDG_02">
+     
+    <p class="subpara-subparaName">MONITOR DESCRIPTION</p> 
+    <p class="content5-ptxt">The ECM illuminates the MIL and stores a DTC when either one of the following conditions, which could cause emission deterioration, is detected (2 trip detection logic).</p> 
+    <br class="subpara"/>
+    <ul class="content5-list1"> 
+     <li class="list1-item">
+<p class="content5-list1-heading">Within the first 1000 crankshaft revolutions after the engine starts, an excessive number of misfires (approximately 10 to 50 misfires per 1000 crankshaft revolutions) occurs once.</p>
+</li> 
+     <li class="list1-item">
+<p class="content5-list1-heading">An excessive number of misfires (approximately 10 to 70 misfires per 1000 crankshaft revolutions) occurs a total of 4 times.</p>
+</li> 
+    </ul> 
+    <p class="content5-ptxt">The ECM flashes the MIL (immediate detection logic) and stores a DTC (2 trip detection logic) when either one of the following conditions, which could cause damage to the three-way catalytic converter, is detected.</p> 
+    <br class="subpara"/>
+    <ul class="content5-list1"> 
+     <li class="list1-item">
+<p class="content5-list1-heading">At a high engine speed, a sufficient amount of misfires to damage the catalyst occurring within 200 crankshaft revolutions is detected once.</p>
+</li> 
+     <li class="list1-item">
+<p class="content5-list1-heading">At a normal engine speed, a sufficient amount of misfires to damage the catalyst occurring within 200 crankshaft revolutions is detected 3 times.</p>
+</li> 
+    </ul> 
+   </div>
+<div class="subpara" id="RM100000001AMDG__RM100000001AMDG_03">
+     
+    <p class="subpara-subparaName">MONITOR STRATEGY</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Required Sensors/Components (Main)</td> 
+        <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Crankshaft position sensor</p> <p class="ptxt">Camshaft position sensor</p> </td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Required Sensors/Components (Related)</td> 
+        <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Engine coolant temperature</p> <p class="ptxt">Intake air temperature sensor (mass air flow meter sub-assembly)</p> <p class="ptxt">Mass air flow meter sub-assembly</p> </td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Frequency of Operation</td> 
+        <td align="left" class="cellrowborder" width="NaN%">Continuous</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001AMDG__RM100000001AMDG_04">
+     
+    <p class="subpara-subparaName">TYPICAL ENABLING CONDITIONS</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Misfire
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Either of the following conditions is met</td> 
+        <td class="cellrowborder" width="NaN%">(a) or (b)</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">(a) Engine coolant temperature at engine start</td> 
+        <td class="cellrowborder" width="NaN%">Higher than -7°C (19°F)</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">(b) Engine coolant temperature</td> 
+        <td class="cellrowborder" width="NaN%">Higher than 20°C (68°F)</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Monitor Period of Emission-related Misfire
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">First 1000 revolutions after engine start, or during check mode</td> 
+        <td class="cellrowborder" width="NaN%">Crankshaft 1000 revolutions</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Except above</td> 
+        <td class="cellrowborder" width="NaN%">Crankshaft 1000 revolutions x 4</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Monitor Period of Catalyst-damaging Misfire (MIL Blinks)
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">All of the following conditions 1, 2, 3 and 4 are met</td> 
+        <td class="cellrowborder" width="NaN%">Crankshaft 200 revolutions x 3</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Except above (MIL blinks immediately)</td> 
+        <td class="cellrowborder" width="NaN%">Crankshaft 200 revolutions</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">1. Driving cycles</td> 
+        <td class="cellrowborder" width="NaN%">1st</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">2. Check mode</td> 
+        <td class="cellrowborder" width="NaN%">Off</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">3. Engine speed</td> 
+        <td class="cellrowborder" width="NaN%">Less than 2800 rpm</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">4. Engine load</td> 
+        <td class="cellrowborder" width="NaN%">Less than 60%</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001AMDG__RM100000001AMDG_05">
+     
+    <p class="subpara-subparaName">TYPICAL MALFUNCTION THRESHOLDS</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Monitor Period of Emission-related Misfire
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Misfire rate</td> 
+        <td align="left" class="cellrowborder" width="NaN%">1.9609% or higher</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Monitor Period of Catalyst-damaging Misfire (MIL Blinks)
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Number of misfires per 200 revolutions</td> 
+        <td align="left" class="cellrowborder" width="NaN%">108 or more (varies with engine speed and engine load)</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001AMDG__RM100000001AMDG_08">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Record the DTC(s) and freeze frame data.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">Do not start the engine.</p> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Using the GTS, change the ECM from normal mode to check mode.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001061B.html#RM100000001061B">Click here</a>
+</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Start the engine.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Read the misfire counts of each cylinder (Misfire Count Cylinder #1 to Misfire Count Cylinder #4) with the engine idling. If a value is displayed for any misfire count, skip the following confirmation driving pattern.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Drive the vehicle so that the vehicle conditions displayed in Misfire RPM and Misfire Load of the Data List are the same as the freeze frame data. Perform this step several times.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">In order to store misfire DTCs, it is necessary to operate the vehicle for the period of time shown in the table below, confirm the Misfire RPM and Misfire Load in the Data List.</p> 
+       <div class="tablenoborder">
+        <table class="table">
+<thead align="left" class="table"> 
+          <tr> 
+           <th align="center" class="cellrowborder" id="ID0EGBBG" width="NaN%">Engine speed</th> 
+           <th align="center" class="cellrowborder" id="ID0EMBBG" width="NaN%">Duration</th> 
+          </tr> 
+         </thead>
+<tbody class="table"> 
+          <tr> 
+           <td align="center" class="cellrowborder" headers="ID0EGBBG " width="NaN%">Idling</td> 
+           <td align="center" class="cellrowborder" headers="ID0EMBBG " width="NaN%">4.5 minutes or more</td> 
+          </tr> 
+          <tr> 
+           <td align="center" class="cellrowborder" headers="ID0EGBBG " width="NaN%">1000</td> 
+           <td align="center" class="cellrowborder" headers="ID0EMBBG " width="NaN%">4.5 minutes or more</td> 
+          </tr> 
+          <tr> 
+           <td align="center" class="cellrowborder" headers="ID0EGBBG " width="NaN%">2000</td> 
+           <td align="center" class="cellrowborder" headers="ID0EMBBG " width="NaN%">2.5 minutes or more</td> 
+          </tr> 
+          <tr> 
+           <td align="center" class="cellrowborder" headers="ID0EGBBG " width="NaN%">3000</td> 
+           <td align="center" class="cellrowborder" headers="ID0EMBBG " width="NaN%">1.5 minutes or more</td> 
+          </tr> 
+         </tbody>
+</table> 
+       </div> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check whether misfires have occurred by checking for DTCs and freeze frame data.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">Do not turn the power switch off until the output DTC(s) and freeze frame data have been recorded. When the ECM returns to normal mode (default), the stored DTC(s), freeze frame data and other data are cleared.</p> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Record the DTC(s), freeze frame data and misfire counts.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001AMDG__RM100000001AMDG_07">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <br class="subpara"/>
+    <ul class="content5-list1"> 
+     <li class="list1-item">
+<p class="content5-list1-heading">Refer to DTC P010012 for the mass air flow meter sub-assembly circuit.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001061O.html#RM100000001061O_07">Click here</a>
+</p>
+</li> 
+     <li class="list1-item">
+<p class="content5-list1-heading">Refer to Fuel Injector Circuit.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001063Y.html#RM100000001063Y_02">Click here</a>
+</p>
+</li> 
+    </ul> 
+   </div>
+<div class="subpara" id="RM100000001AMDG__RM100000001AMDG_09">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">Inspect the fuses for circuits related to this system before performing the following procedure.</p> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">If any DTCs other than misfire DTCs are output, troubleshoot those DTCs first.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">If the misfire does not recur when the vehicle is brought to the workshop, reproduce the conditions stored in the ECM as freeze frame data.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">If the misfire still cannot be reproduced even though the conditions stored in the ECM as freeze frame data have been reproduced, one of the following factors is considered to be a possible cause of the problem:</p>
+</li> 
+      <br class="list1-li-list2"/>
+<ol class="li-list2-list2">
+<li class="list2-item">
+<p class="li-list2-list2-heading">There was insufficient fuel in the tank.</p>
+</li>
+<li class="list2-item">
+<p class="li-list2-list2-heading">Improper fuel was used.</p>
+</li>
+<li class="list2-item">
+<p class="li-list2-list2-heading">The spark plugs have been contaminated.</p>
+</li>
+<li class="list2-item">
+<p class="li-list2-list2-heading">The problem requires further diagnosis.</p>
+</li>
+</ol> 
+      <li class="list1-item">
+<p class="list1-heading">After finishing repairs, check the misfire counts of the cylinders (Misfire Count Cylinder #1 to Misfire Count Cylinder #4).</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Be sure to confirm that no misfiring cylinder DTCs are stored again by conducting the confirmation driving pattern after finishing repairs.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">When one of Short FT B1S1, Long FT B1S1 in the freeze frame data is outside the range of +/-20%, the air fuel ratio may be rich (-20% or less) or lean (+20% or higher).</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">When Coolant Temperature in the freeze frame data is less than 75°C (167°F), the misfires have occurred only while warming up the engine.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Vehicle body vibration caused by an extremely imbalanced drive wheel may cause misfire DTCs to be stored.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Read freeze frame data using the GTS. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air fuel ratio was lean or rich, and other data from the time the malfunction occurred.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001AMDG__RM100000001AMDG_13">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0001">
+<p class="testgrp-heading">CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO MISFIRE DTCS)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELTBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELTBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EUUBG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E1UBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUUBG " width="NaN%">DTC P030000, P030027, P030085, P030100, P030200, P030300 and/or P030400 are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1UBG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EUUBG " width="NaN%">DTC P030000, P030027, P030085, P030100, P030200, P030300 and/or P030400 and other DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1UBG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If any DTCs other than P030000, P030027, P030085, P030100, P030200, P030300 and/or P030400 are output, troubleshoot those DTCs first.</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART <a class="content6-ptxt-xref" href="RM100000001AMDC.html#RM100000001AMDC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0002">
+<p class="testgrp-heading">CHECK PCV HOSE CONNECTIONS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the PCV hose connections.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZW8T.html#RM100000000ZW8T">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EEZBG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EEZBG">PCV valve and hose are correctly connected and are not damaged.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E5ZBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E5ZBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EB2BG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EB2BG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EB2BG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE PCV HOSE </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0003">
+<p class="testgrp-heading">READ VALUE USING GTS (MISFIRE RPM AND MISFIRE LOAD)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Data List / Misfire RPM and Misfire Load.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E56BG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E56BG " width="NaN%">Misfire RPM</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E56BG " width="NaN%">Misfire Load</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read and note the Misfire RPM and Misfire Load values.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">The Misfire RPM and Misfire Load values indicate the vehicle conditions under which the misfire occurred.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4GAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E4GAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EAIAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EAIAI " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0006">
+<p class="testgrp-heading">READ VALUE USING GTS (MISFIRE COUNT)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EVMAI" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EVMAI " width="NaN%">Inspection Mode</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Data List / Misfire Count Cylinder #1 to Misfire Count Cylinder #4.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EJSAI" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EJSAI " width="NaN%">Misfire Count Cylinder #1</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EJSAI " width="NaN%">Misfire Count Cylinder #2</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EJSAI " width="NaN%">Misfire Count Cylinder #3</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EJSAI " width="NaN%">Misfire Count Cylinder #4</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Start the engine and allow the engine to idle.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read each value for Misfire Count Cylinder #1 to Misfire Count Cylinder #4 displayed on the GTS. If no misfire counts occur in any cylinders, perform procedure [A] and [B] and then check the misfire counts again.</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2"> <p class="test2-heading">Drive the vehicle with the Misfire RPM and Misfire Load noted in the "Read Value Using GTS (Misfire RPM and Misfire Load)" procedures above [A].</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Read the Misfire Count Cylinder #1 to Misfire Count Cylinder #4 or DTCs displayed on the GTS [B].</p> </li>
+</ol>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EC4AI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EC4AI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EL5AI" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ER5AI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EL5AI " width="NaN%">Most misfires occur in only 1 or 2 cylinders</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ER5AI " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EL5AI " width="NaN%">3 cylinders or more have equal misfire counts</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ER5AI " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If it is difficult to reproduce misfires for each cylinder, check the Data List item called Misfire Margin. Try to find vehicle driving conditions that lower the Misfire Margin value. Values above 30% are considered normal.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If the freeze frame data record of the engine coolant temperature is less than 75°C (167°F), the misfire may be detected only when the engine is cold.</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">B</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK INTAKE SYSTEM  <a class="res-right-fin-false-xref" href="#RM100000001AMDG__RM100000001AMDG_13_0017">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0007">
+<p class="testgrp-heading">INSPECT SPARK PLUG</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the spark plug of the misfiring cylinder.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the spark plug.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBEBI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBEBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EEFBI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEFBI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEFBI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE SPARK PLUG <a class="content6-ptxt-xref" href="RM100000001067X.html#RM100000001067X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0009">
+<p class="testgrp-heading">CHECK FOR SPARKS (SPARK TEST)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Perform a spark test.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000010TMZ.html#RM1000000010TMZ_01_0003">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If the result of the spark test is normal, proceed to the next step.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Perform "Inspection After Repair" after repairing or replacing the ignition system.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EEKBI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EEKBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EHLBI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHLBI " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0008">
+<p class="testgrp-heading">CHECK CYLINDER COMPRESSION PRESSURE</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the cylinder compression pressure of the misfiring cylinder.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000114UB.html#RM10000000114UB_01_0010">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after repairing or replacing the engine assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXOBI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EXOBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E1PBI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1PBI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1PBI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHECK ENGINE TO DETERMINE CAUSE OF LOW COMPRESSION </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0010">
+<p class="testgrp-heading">CHECK TERMINAL VOLTAGE (#10, #20, #30 AND/OR #40)</p>
+<div class="ie8fixer"/>
+<div class="fignone"> 
+       <img alt="B006HRVC04" class="figure-graphic" src="../images/b006hrvc04.png"/> 
+       <div class="figure-p"> 
+        <div class="tablenoborder">
+         <table class="p-table">
+<tbody class="p-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+            <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to ECM)</p> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div> 
+       </div> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the ECM connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E3VBI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E3VBI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJXBI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EPXBI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EVXBI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJXBI " width="NaN%">C31-98 (#10) - C31-57 (E01)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPXBI " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVXBI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJXBI " width="NaN%">C31-95 (#20) - C31-57 (E01)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPXBI " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVXBI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJXBI " width="NaN%">C31-96 (#30) - C31-57 (E01)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPXBI " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVXBI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJXBI " width="NaN%">C31-97 (#40) - C31-57 (E01)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPXBI " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVXBI " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJ2BI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJ2BI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EM3BI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EM3BI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EM3BI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHECK FUEL INJECTOR CIRCUIT <a class="content6-ptxt-xref" href="RM100000001063Y.html#RM100000001063Y">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0011">
+<p class="testgrp-heading">CHECK FUEL INJECTOR ASSEMBLY OF MISFIRING CYLINDER</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the fuel injector assembly (whether fuel volume is high or low, and whether injection pattern is poor).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000112PH.html#RM10000000112PH">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the fuel injector assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EVACI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EVACI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EYBCI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYBCI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYBCI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUEL INJECTOR ASSEMBLY <a class="content6-ptxt-xref" href="RM10000000112PJ.html#RM10000000112PJ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0012">
+<p class="testgrp-heading">CHECK INTAKE SYSTEM</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the intake system for vacuum leaks.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZW8V.html#RM100000000ZW8V">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMFCI" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EMFCI">No leaks from intake system.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after repairing or replacing the intake system.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2GCI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2GCI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5HCI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5HCI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5HCI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE INTAKE SYSTEM </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0013">
+<p class="testgrp-heading">CHECK FUEL PRESSURE</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the fuel pressure.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000112PD.html#RM10000000112PD_01_0002">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMLCI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EMLCI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPMCI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPMCI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPMCI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 41  <a class="res-right-fin-false-xref" href="#RM100000001AMDG__RM100000001AMDG_13_0098">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0076">
+<p class="testgrp-heading">READ VALUE USING GTS (COOLANT TEMPERATURE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Data List / Coolant Temperature.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EQRCI" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQRCI " width="NaN%">Coolant Temperature</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List twice, when the engine is both cold and warmed up.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EVWCI" class="spec-title">Standard</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EVWCI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDYCI" width="NaN%">GTS Display</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJYCI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EPYCI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDYCI " rowspan="2" width="NaN%">Coolant Temperature</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJYCI " width="NaN%">Cold engine</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPYCI " width="NaN%">Same as ambient air temperature</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJYCI " width="NaN%">Warm engine</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPYCI " width="NaN%">Between 75 and 100°C (167 and 212°F)</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the engine coolant temperature sensor.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EH2CI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EH2CI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EK3CI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EK3CI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EK3CI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ENGINE COOLANT TEMPERATURE SENSOR <a class="content6-ptxt-xref" href="RM1000000010681.html#RM1000000010681">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0093">
+<p class="testgrp-heading">READ VALUE USING GTS (INTAKE AIR TEMPERATURE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Data List / Intake Air Temperature.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ENBDI" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ENBDI " width="NaN%">Intake Air Temperature</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, read the Data List.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESGDI" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ESGDI">Same as actual intake air temperature.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the mass air flow meter sub-assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBIDI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBIDI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EEJDI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEJDI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEJDI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE MASS AIR FLOW METER SUB-ASSEMBLY <a class="content6-ptxt-xref" href="RM100000001067M.html#RM100000001067M">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0077">
+<p class="testgrp-heading">READ VALUE USING GTS (MASS AIR FLOW SENSOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ESODI" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ESODI " width="NaN%">Inspection Mode</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Start the engine.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Data List / Engine Speed, Mass Air Flow Sensor and Coolant Temperature.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ERUDI" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ERUDI " width="NaN%">Engine Speed</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ERUDI " width="NaN%">Mass Air Flow Sensor</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ERUDI " width="NaN%">Coolant Temperature</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Allow the engine to idle until Coolant Temperature is 75°C (167°F) or higher.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read Mass Air Flow Sensor with the engine speed at 2500 rpm.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">During charge control, the engine speed is set at idle. Therefore, the engine speed will not increase when the accelerator pedal is depressed. In this case, read the Data List after charge control has completed.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJ4DI" class="spec-title">Standard</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJ4DI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EX5DI" width="NaN%">GTS Display</th> 
+                 <th align="center" class="spec-table-item" id="ID0E45DI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ED6DI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EX5DI " width="NaN%">Mass Air Flow Sensor</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E45DI " width="NaN%"> <p class="ptxt">Engine warmed up</p> <p class="ptxt">Shift position: P</p> <p class="ptxt">A/C: Off</p> <p class="ptxt">Engine Speed: 2500 rpm</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0ED6DI " width="NaN%">Between 4.5 and 8.5 gm/sec</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELBAK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELBAK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EOCAK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EOCAK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EOCAK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 34  <a class="res-right-fin-false-xref" href="#RM100000001AMDG__RM100000001AMDG_13_0027">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0091">
+<p class="testgrp-heading">CHECK VALVE TIMING (CHECK FOR LOOSE TIMING CHAIN AND JUMPED TEETH)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Remove the cylinder head cover sub-assembly.</p>
+<div class="fignone--bigImage">
+<img alt="B006HZ1C01" class="figure-graphic--bigImage" src="../images/b006hz1c01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%">39.5°</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Timing Mark</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+              <td class="cellrowborder" width="NaN%">"0" Timing Mark</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Groove</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the crankshaft pulley and align its groove with the "0" timing mark of the timing chain or belt cover sub-assembly.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the timing marks of the camshaft timing gear assembly and camshaft timing sprocket are at the positions shown in the illustration.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If the timing marks are not as shown, turn the crankshaft one revolution clockwise.</p> 
+        </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EEKAK" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EEKAK">Timing marks on camshaft timing gear assembly and camshaft timing sprocket are at the positions shown in the illustration.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If the result is not as specified, check for mechanical malfunctions that may have affected the valve timing, such as a jumped tooth or stretching of the timing chain.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EILAK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EILAK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ELMAK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELMAK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELMAK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 31  <a class="res-right-fin-false-xref" href="#RM100000001AMDG__RM100000001AMDG_13_0073">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0084">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (CONTROL THE EGR STEP POSITION)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EXRAK" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EXRAK " width="NaN%">Inspection Mode</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Start the engine and warm it up until the engine coolant temperature is 75°C (167°F) or higher.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">The A/C switch and all accessories should be off.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Active Test / Control the EGR Step Position / Data List / Intake Manifold Absolute Pressure and Engine Independent.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EAYAK" width="NaN%">Active Test Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EAYAK " width="NaN%">Control the EGR Step Position</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EMZAK" width="NaN%">Data List Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMZAK " width="NaN%">Intake Manifold Absolute Pressure</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMZAK " width="NaN%">Engine Independent</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Confirm that the value of Data List item Engine Independent is "Operate" then check the value of Intake Manifold Absolute Pressure while performing the Active Test.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <br class="note"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Do not leave the EGR valve open for 10 seconds or more during the Active Test.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Be sure to return the EGR valve to step 0 when the Active Test is completed.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Do not open the EGR valve 30 steps or more during the Active Test.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EWCBK" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EWCBK">The value of Intake Manifold Absolute Pressure changes in response to the EGR step position when the value of Engine Independent is "Operate".</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQDBK" class="spec-title">Standard</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQDBK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5EBK" rowspan="2" width="NaN%">-</th> 
+                 <th align="center" class="spec-table-item" colspan="2" id="ID0EFFBK">Control the EGR Step Position (Active Test)</th> 
+                </tr> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ERFBK" width="NaN%">0 Steps</th> 
+                 <th align="center" class="spec-table-item" id="ID0EXFBK" width="NaN%">0 to 30 Steps</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5EBK ID0ERFBK " width="NaN%"> <p class="ptxt">Intake Manifold Absolute Pressure</p> <p class="ptxt">(Data List)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFFBK ID0EXFBK " width="NaN%">(EGR valve is fully closed)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFFBK " width="NaN%">Intake Manifold Absolute Pressure value is at least +10 kPa (1.45 psi) higher than when EGR valve is fully closed</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If the value of Data List item Engine Independent is "Not Opr" when the engine is idling, charge control is being performed. Perform the Active Test after charge control is complete ("Operate" is displayed).</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">While performing the Active Test, if the increase in the value of Intake Manifold Absolute Pressure is small, the EGR valve assembly may be malfunctioning.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Even if the EGR valve assembly is malfunctioning, rough idling or an increase in the value of Intake Manifold Absolute Pressure may occur while performing the Active Test. However, the amount that the value of Intake Manifold Absolute Pressure increases will be smaller than normal.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EAJBK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EAJBK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDKBK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDKBK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDKBK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">OK</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 34  <a class="res-right-fin-false-xref" href="#RM100000001AMDG__RM100000001AMDG_13_0027">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0063">
+<p class="testgrp-heading">INSPECT EGR VALVE ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the EGR valve assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZW7X.html#RM100000000ZW7X">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the EGR valve is stuck open.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EAOBK" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EAOBK">EGR valve is tightly closed.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the EGR valve assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPPBK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPPBK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ESQBK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESQBK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESQBK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">OK</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 34  <a class="res-right-fin-false-xref" href="#RM100000001AMDG__RM100000001AMDG_13_0027">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE EGR VALVE ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000ZW7X.html#RM100000000ZW7X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0017">
+<p class="testgrp-heading">CHECK INTAKE SYSTEM</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the intake system for vacuum leaks.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZW8V.html#RM100000000ZW8V">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKUBK" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EKUBK">No leaks from intake system.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after repairing or replacing the intake system.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZVBK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZVBK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E3WBK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3WBK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3WBK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE INTAKE SYSTEM </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0018">
+<p class="testgrp-heading">CHECK FUEL PRESSURE</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the fuel pressure.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000112PD.html#RM10000000112PD_01_0002">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EK1BK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EK1BK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EN2BK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EN2BK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EN2BK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">INSPECT FUEL PUMP  <a class="res-right-fin-false-xref" href="#RM100000001AMDG__RM100000001AMDG_13_0098">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0082">
+<p class="testgrp-heading">READ VALUE USING GTS (COOLANT TEMPERATURE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Data List / Coolant Temperature.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EKACK" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKACK " width="NaN%">Coolant Temperature</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List twice, when the engine is both cold and warmed up.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPFCK" class="spec-title">Standard</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPFCK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E4GCK" width="NaN%">GTS Display</th> 
+                 <th align="center" class="spec-table-item" id="ID0EDHCK" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJHCK" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4GCK " rowspan="2" width="NaN%">Coolant Temperature</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDHCK " width="NaN%">Cold engine</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJHCK " width="NaN%">Same as ambient air temperature</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDHCK " width="NaN%">Warm engine</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJHCK " width="NaN%">Between 75 and 100°C (167 and 212°F)</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the engine coolant temperature sensor.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBKCK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBKCK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EELCK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EELCK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EELCK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ENGINE COOLANT TEMPERATURE SENSOR <a class="content6-ptxt-xref" href="RM1000000010681.html#RM1000000010681">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0095">
+<p class="testgrp-heading">READ VALUE USING GTS (INTAKE AIR TEMPERATURE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Data List / Intake Air Temperature.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EHQCK" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EHQCK " width="NaN%">Intake Air Temperature</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, read the Data List.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMVCK" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EMVCK">Same as actual intake air temperature.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the mass air flow meter sub-assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2WCK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2WCK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5XCK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5XCK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5XCK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE MASS AIR FLOW METER SUB-ASSEMBLY <a class="content6-ptxt-xref" href="RM100000001067M.html#RM100000001067M">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0083">
+<p class="testgrp-heading">READ VALUE USING GTS (MASS AIR FLOW SENSOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EM4CK" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EM4CK " width="NaN%">Inspection Mode</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Start the engine.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Data List / Engine Speed, Mass Air Flow Sensor and Coolant Temperature.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ELDDK" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ELDDK " width="NaN%">Engine Speed</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ELDDK " width="NaN%">Mass Air Flow Sensor</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ELDDK " width="NaN%">Coolant Temperature</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Allow the engine to idle until Coolant Temperature is 75°C (167°F) or higher.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read Mass Air Flow Sensor with the engine speed at 2500 rpm.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">During charge control, the engine speed is set at idle. Therefore, the engine speed will not increase when the accelerator pedal is depressed. In this case, read the Data List after charge control has completed.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDMDK" class="spec-title">Standard</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EDMDK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ERNDK" width="NaN%">GTS Display</th> 
+                 <th align="center" class="spec-table-item" id="ID0EXNDK" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E4NDK" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERNDK " width="NaN%">Mass Air Flow Sensor</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EXNDK " width="NaN%"> <p class="ptxt">Engine warmed up</p> <p class="ptxt">Shift position: P</p> <p class="ptxt">A/C: Off</p> <p class="ptxt">Engine Speed: 2500 rpm</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0E4NDK " width="NaN%">Between 4.5 and 8.5 gm/sec</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EEQDK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EEQDK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EHRDK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHRDK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHRDK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 34  <a class="res-right-fin-false-xref" href="#RM100000001AMDG__RM100000001AMDG_13_0027">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0092">
+<p class="testgrp-heading">CHECK VALVE TIMING (CHECK FOR LOOSE TIMING CHAIN AND JUMPED TEETH)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Remove the cylinder head cover sub-assembly.</p>
+<div class="fignone--bigImage">
+<img alt="B006HZ1C01" class="figure-graphic--bigImage" src="../images/b006hz1c01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%">39.5°</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Timing Mark</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+              <td class="cellrowborder" width="NaN%">"0" Timing Mark</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Groove</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the crankshaft pulley and align its groove with the "0" timing mark of the timing chain or belt cover sub-assembly.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the timing marks of the camshaft timing gear assembly and camshaft timing sprocket are at the positions shown in the illustration.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If the timing marks are not as shown, turn the crankshaft one revolution clockwise.</p> 
+        </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4YDK" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E4YDK">Timing marks on camshaft timing gear assembly and camshaft timing sprocket are at the positions shown in the illustration.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If the result is not as specified, check for mechanical malfunctions that may have affected the valve timing, such as a jumped tooth or stretching of the timing chain.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EB1DK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EB1DK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EE2DK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EE2DK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EE2DK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK ENGINE MECHANICAL SYSTEM  <a class="res-right-fin-false-xref" href="#RM100000001AMDG__RM100000001AMDG_13_0073">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0085">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (CONTROL THE EGR STEP POSITION)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EMAEK" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMAEK " width="NaN%">Inspection Mode</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Start the engine and warm it up until the engine coolant temperature is 75°C (167°F) or higher.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">The A/C switch and all accessories should be off.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Active Test / Control the EGR Step Position / Data List / Intake Manifold Absolute Pressure and Engine Independent.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EVGEK" width="NaN%">Active Test Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EVGEK " width="NaN%">Control the EGR Step Position</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EBIEK" width="NaN%">Data List Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EBIEK " width="NaN%">Intake Manifold Absolute Pressure</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EBIEK " width="NaN%">Engine Independent</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Confirm that the value of Data List item Engine Independent is "Operate" then check the value of Intake Manifold Absolute Pressure while performing the Active Test.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <br class="note"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Do not leave the EGR valve open for 10 seconds or more during the Active Test.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Be sure to return the EGR valve to step 0 when the Active Test is completed.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Do not open the EGR valve 30 steps or more during the Active Test.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELREK" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ELREK">The value of Intake Manifold Absolute Pressure changes in response to the EGR step position when the value of Engine Independent is "Operate".</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EFSEK" class="spec-title">Standard</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EFSEK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETTEK" rowspan="2" width="NaN%">-</th> 
+                 <th align="center" class="spec-table-item" colspan="2" id="ID0E1TEK">Control the EGR Step Position (Active Test)</th> 
+                </tr> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EGUEK" width="NaN%">0 Steps</th> 
+                 <th align="center" class="spec-table-item" id="ID0EMUEK" width="NaN%">0 to 30 Steps</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETTEK ID0EGUEK " width="NaN%"> <p class="ptxt">Intake Manifold Absolute Pressure</p> <p class="ptxt">(Data List)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1TEK ID0EMUEK " width="NaN%">(EGR valve is fully closed)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1TEK " width="NaN%">Intake Manifold Absolute Pressure value is at least +10 kPa (1.45 psi) higher than when EGR valve is fully closed</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If the value of Data List item Engine Independent is "Not Opr" when the engine is idling, charge control is being performed. Perform the Active Test after charge control is complete ("Operate" is displayed).</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">While performing the Active Test, if the increase in the value of Intake Manifold Absolute Pressure is small, the EGR valve assembly may be malfunctioning.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Even if the EGR valve assembly is malfunctioning, rough idling or an increase in the value of Intake Manifold Absolute Pressure may occur while performing the Active Test. However, the amount that the value of Intake Manifold Absolute Pressure increases will be smaller than normal.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EVXEK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EVXEK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EYYEK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYYEK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYYEK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">OK</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 26  <a class="res-right-fin-false-xref" href="#RM100000001AMDG__RM100000001AMDG_13_0022">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0066">
+<p class="testgrp-heading">INSPECT EGR VALVE ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the EGR valve assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZW7X.html#RM100000000ZW7X">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the EGR valve is stuck open.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EV3EK" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EV3EK">EGR valve is tightly closed.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the EGR valve assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EE5EK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EE5EK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EH6EK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EH6EK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EH6EK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE EGR VALVE ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000ZW7X.html#RM100000000ZW7X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0022">
+<p class="testgrp-heading">INSPECT SPARK PLUG</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the spark plug of the misfiring cylinder.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000010TMZ.html#RM1000000010TMZ_01_0002">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the spark plug.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQDFK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQDFK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETEFK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETEFK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETEFK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE SPARK PLUG <a class="content6-ptxt-xref" href="RM100000001067X.html#RM100000001067X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0023">
+<p class="testgrp-heading">CHECK FOR SPARKS (SPARK TEST)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Perform a spark test.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000010TMZ.html#RM1000000010TMZ_01_0003">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If the result of the spark test is normal, proceed to the next step.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Perform "Inspection After Repair" after repairing or replacing the ignition system.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETJFK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETJFK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWKFK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWKFK " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0024">
+<p class="testgrp-heading">CHECK CYLINDER COMPRESSION PRESSURE</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the cylinder compression pressure of the misfiring cylinder.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000114UB.html#RM10000000114UB_01_0010">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after repairing or replacing the engine assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EGOFK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EGOFK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJPFK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJPFK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJPFK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHECK ENGINE TO DETERMINE CAUSE OF LOW COMPRESSION </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0025">
+<p class="testgrp-heading">CHECK TERMINAL VOLTAGE (#10, #20, #30 AND/OR #40)</p>
+<div class="ie8fixer"/>
+<div class="fignone"> 
+       <img alt="B006HRVC04" class="figure-graphic" src="../images/b006hrvc04.png"/> 
+       <div class="figure-p"> 
+        <div class="tablenoborder">
+         <table class="p-table">
+<tbody class="p-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+            <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to ECM)</p> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div> 
+       </div> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the ECM connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELVFK" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELVFK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EYWFK" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E5WFK" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EEXFK" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYWFK " width="NaN%">C31-98 (#10) - C31-57 (E01)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5WFK " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEXFK " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYWFK " width="NaN%">C31-95 (#20) - C31-57 (E01)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5WFK " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEXFK " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYWFK " width="NaN%">C31-96 (#30) - C31-57 (E01)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5WFK " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEXFK " width="NaN%">11 to 14 V</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYWFK " width="NaN%">C31-97 (#40) - C31-57 (E01)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5WFK " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEXFK " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EY1FK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EY1FK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E22FK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E22FK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E22FK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHECK FUEL INJECTOR CIRCUIT <a class="content6-ptxt-xref" href="RM100000001063Y.html#RM100000001063Y">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0026">
+<p class="testgrp-heading">CHECK FUEL INJECTOR ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the fuel injector assembly (whether fuel volume is high or low, and whether injection pattern is poor).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000112PH.html#RM10000000112PH">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the fuel injector assembly.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EEAGK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EEAGK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EHBGK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHBGK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHBGK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">OK</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 34  <a class="res-right-fin-false-xref" href="#RM100000001AMDG__RM100000001AMDG_13_0027">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUEL INJECTOR ASSEMBLY <a class="content6-ptxt-xref" href="RM10000000112PJ.html#RM10000000112PJ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0073">
+<p class="testgrp-heading">CHECK ENGINE MECHANICAL SYSTEM</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check for mechanical malfunctions that affect the valve timing, such as a jumped tooth or stretching of the timing chain.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after repairing or replacing the engine mechanical system.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJFGK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJFGK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMGGK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMGGK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMGGK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE MALFUNCTIONING PARTS, COMPONENT AND AREA </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0101">
+<p class="testgrp-heading">CLEAR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2NGK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2NGK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5OGK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5OGK " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0080">
+<p class="testgrp-heading">CHECK WHETHER DTC OUTPUT RECURS (MISFIRE DTCS)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Drive the vehicle in accordance with the driving pattern described in Confirmation Driving Pattern.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ESSGK" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ESSGK " width="NaN%">All Readiness</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Input the DTC: P030000, P030027, P030085, P030100, P030200, P030300 or P030400.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check the DTC judgment result.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYXGK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EYXGK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EBZGK" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EHZGK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EBZGK " width="NaN%"> <p class="ptxt">NORMAL</p> <p class="ptxt">(DTCs are not output)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHZGK " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EBZGK " width="NaN%"> <p class="ptxt">ABNORMAL</p> <p class="ptxt">(DTC P030000, P030027, P030085, P030100, P030200, P030300 and/or P030400 is output)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHZGK " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHECK FOR INTERMITTENT PROBLEMS <a class="content6-ptxt-xref" href="RM1000000010614.html#RM1000000010614">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">B</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0027">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (MASS AIR FLOW METER SUB-ASSEMBLY CONNECTOR CONNECTION)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the connection and terminal contact pressure of connectors and wire harnesses between the mass air flow meter sub-assembly and ECM.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001145W.html#RM100000001145W">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Repair any problems.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EH5GK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EH5GK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EK6GK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EK6GK " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0102">
+<p class="testgrp-heading">CLEAR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EGGHK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EGGHK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJHHK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJHHK " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0028">
+<p class="testgrp-heading">CHECK WHETHER DTC OUTPUT RECURS (MISFIRE DTCS)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Drive the vehicle in accordance with the driving pattern described in Confirmation Driving Pattern.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E4KHK" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E4KHK " width="NaN%">All Readiness</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Input the DTC: P030000, P030027, P030085, P030100, P030200, P030300 or P030400.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check the DTC judgment result.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDQHK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EDQHK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMRHK" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ESRHK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMRHK " width="NaN%"> <p class="ptxt">NORMAL</p> <p class="ptxt">(DTCs are not output)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESRHK " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMRHK " width="NaN%"> <p class="ptxt">ABNORMAL</p> <p class="ptxt">(DTC P030000, P030027, P030085, P030100, P030200, P030300 and/or P030400 is output)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0ESRHK " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">B</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0029">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (MASS AIR FLOW METER SUB-ASSEMBLY - ECM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the mass air flow meter sub-assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the ECM connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENWHK" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENWHK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E2XHK" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EBYHK" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EHYHK" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2XHK " width="NaN%">C5-3 (VG) - C31-137 (VG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBYHK " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHYHK " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2XHK " width="NaN%">C5-2 (E2G) - C31-104 (E2G)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBYHK " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHYHK " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2XHK " width="NaN%">C5-3 (VG) or C31-137 (VG) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBYHK " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHYHK " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EF2HK" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EF2HK" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EI3HK" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EI3HK " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EI3HK " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0030">
+<p class="testgrp-heading">REPLACE MASS AIR FLOW METER SUB-ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Replace the mass air flow meter sub-assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001067M.html#RM100000001067M">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If the results of the inspections performed in steps 14 and 22 (READ VALUE USING GTS (MASS AIR FLOW SENSOR)) indicated no problem, proceed to the next step without replacing the mass air flow meter sub-assembly.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Perform "Inspection After Repair" after replacing the mass air flow meter sub-assembly.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDBAM" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EDBAM" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EGCAM" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EGCAM " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0103">
+<p class="testgrp-heading">CLEAR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECJAM" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECJAM" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFKAM" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFKAM " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001AMDG__RM100000001AMDG_13_0031">
+<p class="testgrp-heading">CONFIRM WHETHER MALFUNCTION HAS BEEN SUCCESSFULLY REPAIRED</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Drive the vehicle in accordance with the driving pattern described in Confirmation Driving Pattern.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EZNAM" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZNAM " width="NaN%">All Readiness</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Input the DTC: P030000, P030027, P030085, P030100, P030200, P030300 or P030400.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check the DTC judgment result.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E6SAM" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E6SAM" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EIUAM" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EOUAM" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EIUAM " width="NaN%"> <p class="ptxt">NORMAL</p> <p class="ptxt">(DTCs are not output)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOUAM " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EIUAM " width="NaN%"> <p class="ptxt">ABNORMAL</p> <p class="ptxt">(DTC P030000, P030027, P030085, P030100, P030200, P030300 and/or P030400 is output)</p> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOUAM " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ECM <a class="content6-ptxt-xref" href="RM100000001067I.html#RM100000001067I">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001AMDG__RM100000001AMDG_13_0098">
+<p class="testgrp-heading">INSPECT FUEL PUMP</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the fuel pump.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000112PR.html#RM10000000112PR">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the fuel pump.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM1000000010617.html#RM1000000010617">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZZAM" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZZAM" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E31AM" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E31AM " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E31AM " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE FUEL LINE </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FUEL PUMP <a class="content6-ptxt-xref" href="RM10000000112PT.html#RM10000000112PT">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

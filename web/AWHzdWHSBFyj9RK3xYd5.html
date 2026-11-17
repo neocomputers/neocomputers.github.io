@@ -1,0 +1,238 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="PRE-CRASH SAFETY SYSTEM UTILITY" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058078" name="sectionId"/> 
+  <meta content="PRE-CRASH SAFETY" name="sectionName"/> 
+  <meta content="_0284504" name="ttlId"/> 
+  <meta content="PRE-CRASH SAFETY SYSTEM" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="UTILITY" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000Z7CG" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>PRE-CRASH SAFETY SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">PRE-CRASH SAFETY SYSTEM<span class="topictitle1"> UTILITY</span>
+</h1>
+<div class="subpara" id="RM100000000Z7CG__RM100000000Z7CG_z0">
+     
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">When replacing a millimeter wave radar sensor assembly, replace it with a new one. When the millimeter wave radar sensor assembly is replaced with a new one, it stores the country specification information received from the driving support ECU assembly.</p>
+<p class="item-ptxt">If a millimeter wave radar sensor assembly which was installed to another vehicle is used, the information stored in the millimeter wave radar sensor assembly will not match the information from the vehicle and a DTC may be stored.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">If the millimeter wave radar sensor assembly has been replaced or removed/installed, be sure to perform Front Beam Axis Adjustment. If not performed, DTC C1A14 will be stored when the system is turned on.</p>
+</li> 
+     </ul> 
+    </div> 
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000000Z7CG__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">Control Mode</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">This mode is used to check the operation of the pre-crash safety system when reproducing situations when the pre-crash safety system operated unnecessarily.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Operating the pre-crash brake assist control or pre-crash braking control when reproducing problem symptoms may lead to a dangerous situation. To avoid this, do not attempt to operate the pre-crash braking control, only operate the pre-crash warning control (buzzer and warning message) when reproducing the problem symptoms.</p>
+<div class="tablenoborder">
+          <table class="item-table">
+<thead align="left" class="item-table"> 
+            <tr> 
+             <th class="cellrowborder" id="ID0EPG" width="NaN%">PCS Control Operated</th> 
+             <th class="cellrowborder" id="ID0EUG" width="NaN%">Buzzer Sound</th> 
+            </tr> 
+           </thead>
+<tbody class="item-table"> 
+            <tr> 
+             <td class="cellrowborder" headers="ID0EPG " width="NaN%">Pre-crash warning control</td> 
+             <td class="cellrowborder" headers="ID0EUG " width="NaN%">Intermittent (Long)</td> 
+            </tr> 
+            <tr> 
+             <td class="cellrowborder" headers="ID0EPG " width="NaN%">Pre-crash brake assist control</td> 
+             <td class="cellrowborder" headers="ID0EUG " width="NaN%">Intermittent (Short)</td> 
+            </tr> 
+            <tr> 
+             <td class="cellrowborder" headers="ID0EPG " width="NaN%">Pre-crash braking control</td> 
+             <td class="cellrowborder" headers="ID0EUG " width="NaN%">Continuous</td> 
+            </tr> 
+           </tbody>
+</table> 
+         </div>
+</li> 
+       </ul> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Body Electrical / Pre-Crash 2 / Utility / Control Mode.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Perform Control Mode according to the display on the GTS.</p>
+<br class="step2Root-step2"/>Body Electrical &gt; Pre-Crash 2 &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EXCAC" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EXCAC " width="NaN%">Control Mode</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">Front Beam Axis Adjustment</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">Front Beam Axis Adjustment of the millimeter wave radar sensor assembly is performed using the GTS.</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Perform Front Beam Axis Adjustment according to the display on the GTS.</p>
+<p class="step2-ptxt"> <a class="ptxt-xref" href="RM100000000ZWFS.html#RM100000000ZWFS">Click here</a>
+</p>
+<br class="step2Root-step2"/>Body Electrical &gt; Pre-Crash 2 &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ERJAC" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ERJAC " width="NaN%">Front Beam Axis Adjustment</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">Front Beam Axis Misalignment Reading</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">The amount of misalignment of the millimeter wave radar sensor assembly can be checked using the GTS.</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Perform Front Beam Axis Misalignment Reading according to the display on the GTS.</p>
+<p class="step2-ptxt"> <a class="ptxt-xref" href="RM100000000ZWFS.html#RM100000000ZWFS">Click here</a>
+</p>
+<br class="step2Root-step2"/>Body Electrical &gt; Pre-Crash 2 &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EMAAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMAAE " width="NaN%">Front Beam Axis Misalignment Reading</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">Front Beam Axis Offset Reading</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">The offset of the millimeter wave radar sensor assembly can be checked using the GTS.</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Perform Front Beam Axis Offset Reading according to the display on the GTS.</p>
+<p class="step2-ptxt"> <a class="ptxt-xref" href="RM100000000ZWFS.html#RM100000000ZWFS">Click here</a>
+</p>
+<br class="step2Root-step2"/>Body Electrical &gt; Pre-Crash 2 &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EGHAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EGHAE " width="NaN%">Front Beam Axis Offset Reading</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">History Clear</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">If the status of any history data is "ON", clear the history data.</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Body Electrical / Pre-Crash 2 / Utility / History Clear.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Perform History Clear according to the display on the GTS.</p>
+<br class="step2Root-step2"/>Body Electrical &gt; Pre-Crash 2 &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ELOAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ELOAE " width="NaN%">History Clear</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

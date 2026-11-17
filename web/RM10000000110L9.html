@@ -1,0 +1,299 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C14C3" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_54" name="servcatId"/> 
+  <meta content="Brake" name="servcatName"/> 
+  <meta content="_058045" name="sectionId"/> 
+  <meta content="BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS" name="sectionName"/> 
+  <meta content="_0295571" name="ttlId"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM10000000110L9" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>C14C3</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C14C3</h1>
+<div class="section" id="RM10000000110L9__RM10000000110L9_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C14C3</td> 
+       <td class="dtcname" headers="ID0EED">Servo Pressure Sensor Zero Point Malfunction</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM10000000110L9__RM10000000110L9_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The Servo pressure sensor detects and outputs the brake fluid pressure generated in the wheel cylinder according to the vehicle condition to the skid control ECU (brake booster with master cylinder assembly).</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EWF" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0E3F" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0ECG" width="NaN%">INF Code</th> 
+        <th align="center" class="cellrowborder" id="ID0EIG" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EOG" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EUG" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EWF " width="NaN%">C14C3</td> 
+        <td align="left" class="cellrowborder" headers="ID0E3F " width="NaN%">Servo Pressure Sensor Zero Point Malfunction</td> 
+        <td align="center" class="cellrowborder" headers="ID0ECG " width="NaN%">424</td> 
+        <td align="left" class="cellrowborder" headers="ID0EIG " width="NaN%"> <p class="ptxt">When the brake pedal is not depressed, the servo pressure sensor output value is -0.63 MPa (-6.4 kgf/cm<sup class="ptxt">2</sup>, -91.4 psi) or less or 1.53 MPa (15.6 kgf/cm<sup class="ptxt">2</sup>, 222 psi) or more for 3 seconds or more.</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EOG " width="NaN%">Skid control ECU (brake booster with master cylinder assembly)</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUG " width="NaN%">Electronically controlled brake system DTC</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110L9__RM10000000110L9_03">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">After replacing the skid control ECU (brake booster with master cylinder assembly), perform linear solenoid valve offset learning, ABS holding solenoid valve learning, yaw rate and acceleration sensor zero point calibration and system information memorization after performing "Reset Memory".</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM10000000110JB.html#RM10000000110JB">Click here</a>
+</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110L9__RM10000000110L9_04">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM10000000110L9__RM10000000110L9_04_0001">
+<p class="testgrp-heading">READ VALUE USING GTS (SERVO PRESSURE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Select the Data List on the GTS.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110K0.html#RM10000000110K0">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EFFAC" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0ELFAC" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0ERFAC" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EXFAC" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0E4FAC" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EFFAC " width="NaN%">Servo Pressure</td> 
+              <td align="left" class="cellrowborder" headers="ID0ELFAC " width="NaN%">Pressure value of servo</td> 
+              <td align="left" class="cellrowborder" headers="ID0ERFAC " width="NaN%">Min.: 0.00 MPa, Max.: 24.48 MPa</td> 
+              <td align="left" class="cellrowborder" headers="ID0EXFAC " width="NaN%">Brake pedal released: 0.00 to 2.10 MPa</td> 
+              <td align="left" class="cellrowborder" headers="ID0E4FAC " width="NaN%">Brake pedal is being depressed: Changes in proportion to the depression force of the brake pedal</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ELLAC" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ELLAC " width="NaN%">Servo Pressure</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the servo pressure sensor output value is within 0.00 to 1.53 MPa when the brake pedal not depressed.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ERAAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ERAAE">The servo pressure sensor output value is within 0.00 to 1.53 MPa.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If the servo pressure sensor output value is within 0.00 to 1.53 MPa, the skid control ECU (brake booster with master cylinder assembly) automatically performs zero point calibration every time the power switch is turned on (IG).</p> 
+         <p class="ptxt">Therefore, if the servo pressure sensor output value is not within 0.00 to 1.53 MPa, replace the skid control ECU (brake booster with master cylinder assembly) with a new one.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1BAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E1BAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E4CAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4CAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4CAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for LHD: <a class="content6-ptxt-xref" href="RM100000000Z7YC.html#RM100000000Z7YC">Click here</a> <br/>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for RHD: <a class="content6-ptxt-xref" href="RM100000000Z7YF.html#RM100000000Z7YF">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM10000000110L9__RM10000000110L9_04_0004">
+<p class="testgrp-heading">RECONFIRM DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the same DTC is output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Trouble Codes<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Even if the DTC is cleared, it will immediately be output again if the servo pressure sensor zero point malfunction remains.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EROAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EROAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E1PAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E6PAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E1PAE " width="NaN%">DTC C14C3 is not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6PAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E1PAE " width="NaN%">DTC C14C3 is output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6PAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>USE SIMULATION METHOD TO CHECK <a class="content6-ptxt-xref" href="RM100000001145X.html#RM100000001145X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for LHD: <a class="content6-ptxt-xref" href="RM100000000Z7YC.html#RM100000000Z7YC">Click here</a> <br/>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for RHD: <a class="content6-ptxt-xref" href="RM100000000Z7YF.html#RM100000000Z7YF">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

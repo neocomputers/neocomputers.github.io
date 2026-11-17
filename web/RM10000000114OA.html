@@ -1,0 +1,152 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="CAN COMMUNICATION SYSTEM SYSTEM DESCRIPTION" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_57" name="servcatId"/> 
+  <meta content="Power Source / Network" name="servcatName"/> 
+  <meta content="_058034" name="sectionId"/> 
+  <meta content="NETWORKING" name="sectionName"/> 
+  <meta content="_0296329" name="ttlId"/> 
+  <meta content="CAN COMMUNICATION SYSTEM" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="SYSTEM DESCRIPTION" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM10000000114OA" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>CAN COMMUNICATION SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">CAN COMMUNICATION SYSTEM<span class="topictitle1"> SYSTEM DESCRIPTION</span>
+</h1>
+<div class="subpara" id="RM10000000114OA__RM10000000114OA_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM10000000114OA__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">BRIEF DESCRIPTION</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">The Controller Area Network (CAN) is a serial data communication system for real time application. It is a vehicle multiplex communication system which has a high communication speed and the ability to detect malfunctions.</p>
+<div class="fignone--bigImage">
+<img alt="A003LEDE01" class="figure-graphic--bigImage" src="../images/a003lede01.png"/>
+</div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Using the CANH and CANL bus lines as a pair, CAN communication is performed using a voltage differential. (A base voltage is applied to the pair of lines and a voltage differential is created when communicating.)</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Many ECUs or sensors installed to the vehicle operate by sharing information and communicating with each other.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">2 resistors which are necessary for communication are used in a CAN bus main line.</p>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">DEFINITION OF TERMS</p>
+<div class="ie8fixer"/>
+<div class="fignone--bigImage">
+<img alt="A003K2CE01" class="figure-graphic--bigImage" src="../images/a003k2ce01.png"/>
+</div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Central bus</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">The central bus is a term used to describe all buses directly connected to the central gateway ECU (network gateway ECU).</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">A bus is displayed as Bus on the "Communication Bus Check" screen of the GTS.</p> 
+          </div>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Sub bus</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">A sub bus is a bus that has a gateway function equipped ECU in order to communicate with the central bus and other sub buses.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">A sub bus is displayed as Sub bus on the "Communication Bus Check" screen of the GTS.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">When Sub bus is selected on the "Communication Bus Check" screen, ECUs and sensors connected to non-CAN networks such as LIN may also be displayed in addition to the ECUs and sensors connected to sub buses in the CAN network.</p>
+</li> 
+           </ul> 
+          </div>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Local bus</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">A local bus is a bus that does not have the ability to communicate with other buses. ECUs and sensors on a local bus can only communicate with other ECUs and sensors on the same bus.</p>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">CAN J/C</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">A CAN junction connector is a connector that connects branch lines to a main bus.</p>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Main bus</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">A main bus line is the wire harness that runs between the 2 terminating resistors of a bus.</p>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Branch</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">A branch line is a wire harness that connects an ECU or sensor to a main bus line.</p>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Terminating resistors</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Terminating resistors which maintain a stable signal inside the CAN bus are installed. 2 resistors of 120 Ω each located at each end of the bus are necessary.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

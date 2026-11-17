@@ -1,0 +1,422 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C1439, C1445" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_54" name="servcatId"/> 
+  <meta content="Brake" name="servcatName"/> 
+  <meta content="_058045" name="sectionId"/> 
+  <meta content="BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS" name="sectionName"/> 
+  <meta content="_0295571" name="ttlId"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM10000000110KU" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>C1439, C1445</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C1439, C1445</h1>
+<div class="section" id="RM10000000110KU__RM10000000110KU_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C1439</td> 
+       <td class="dtcname" headers="ID0EED">Steering Angle Sensor Initialization Incomplete</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C1445</td> 
+       <td class="dtcname" headers="ID0EED">Vehicle Driven with Steering Angle Sensor not Initialized</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM10000000110KU__RM10000000110KU_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The skid control ECU (brake booster with master cylinder assembly) acquires the steering angle sensor zero point every time the power switch on (READY) and the vehicle is driven at 35 km/h (22 mph) or more for approximately 5 seconds. The skid control ECU (brake booster with master cylinder assembly) also stores the previous zero point.</p> 
+    <p class="content5-ptxt">If front wheel alignment or the steering wheel position is adjusted without disconnecting the cable from the negative (-) auxiliary battery terminal, or if the yaw rate and acceleration sensor zero point is not acquired after the adjustments have been completed, the skid control ECU (brake booster with master cylinder assembly) detects the difference between the previous zero point and newly acquired zero point and stores this DTC to indicate a poor adjustment.</p> 
+    <p class="content5-ptxt">Warning operation for the steering angle sensor zero point malfunction will be canceled by turning the power switch off.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EOG" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EUG" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0E1G" width="NaN%">INF Code</th> 
+        <th align="center" class="cellrowborder" id="ID0EAH" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EGH" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EMH" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EOG " width="NaN%">C1439</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUG " width="NaN%">Steering Angle Sensor Initialization Incomplete</td> 
+        <td align="center" class="cellrowborder" headers="ID0E1G " width="NaN%">752</td> 
+        <td align="left" class="cellrowborder" headers="ID0EAH " width="NaN%">The steering angle sensor zero point is lost (due to instability of supplied power, etc.) and cannot be acquired by the skid control ECU (brake booster with master cylinder assembly).</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Steering angle sensor</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Yaw rate sensor (airbag sensor assembly)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EMH " width="NaN%">VSC DTC</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EOG " width="NaN%">C1445</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUG " width="NaN%">Vehicle Driven with Steering Angle Sensor not Initialized</td> 
+        <td align="center" class="cellrowborder" headers="ID0E1G " width="NaN%">753</td> 
+        <td align="left" class="cellrowborder" headers="ID0EAH " width="NaN%">Steering angle sensor zero point calibration cannot be obtained when the vehicle is driven without a record of steering angle sensor zero point calibration at a speed of 15 km/h (9 mph) or more for 60 seconds or more without the brake pedal being depressed.</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Steering angle sensor</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Yaw rate sensor (airbag sensor assembly)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EMH " width="NaN%">VSC DTC</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110KU__RM10000000110KU_01">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM10000000110KU__RM10000000110KU_01_0001">
+<p class="testgrp-heading">CHECK DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG) again and check that no CAN communication system DTC is output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001AAUK.html#RM100000001AAUK">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (READY).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Drive the vehicle at a speed of 35 km/h (22 mph), turn the steering wheel to the right and left, and check that no speed sensor and/or yaw rate and acceleration sensor DTCs are output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Trouble Codes<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">When CAN communication system DTCs are output, repair the CAN communication system before repairing each corresponding sensor.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If there is a malfunction in the speed sensor or the yaw rate and acceleration sensor (airbag sensor assembly), an abnormal value may be output although the steering angle sensor is normal.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If the speed sensor and the yaw rate and acceleration sensor (airbag sensor assembly) DTCs are output simultaneously, repair these malfunctions and inspect the steering angle sensor.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If DTC C1439 and/or C1445 is not output again, the DTC may have been stored due to a temporary loss of the steering angle zero point calibration, such as when the power source voltage drops.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E3PAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E3PAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EGBAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EMBAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EGBAE " width="NaN%">DTCs C1439 and/or C1445 are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMBAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EGBAE " width="NaN%">CAN communication system DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMBAE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EGBAE " width="NaN%">Speed sensor, yaw rate and acceleration sensor and/or steering angle sensor DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMBAE " width="NaN%">C</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EGBAE " width="NaN%">DTCs C1439 and C1445 are not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMBAE " width="NaN%">D</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>INSPECT CAN COMMUNICATION SYSTEM <a class="content6-ptxt-xref" href="RM1000000011A35.html#RM1000000011A35">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR CIRCUITS INDICATED BY OUTPUT DTCS <a class="content6-ptxt-xref" href="RM10000000110K1.html#RM10000000110K1">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">D</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>USE SIMULATION METHOD TO CHECK <a class="content6-ptxt-xref" href="RM100000001145X.html#RM100000001145X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110KU__RM10000000110KU_01_0002">
+<p class="testgrp-heading">CHECK STEERING ANGLE SENSOR ZERO POINT CALIBRATION</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Drive the vehicle straight ahead at 35 km/h (22 mph) or more for at least 5 seconds.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the centered position of the steering wheel is correctly set while driving straight ahead.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHHAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EHHAE">The steering wheel is centered correctly.</td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If the front wheel alignment and steering position are adjusted as a result of an off-center steering wheel, acquire the yaw rate and acceleration sensor zero point again after the adjustments are completed.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELIAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELIAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EOJAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EOJAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EOJAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>ADJUST FRONT WHEEL ALIGNMENT OR STEERING POSITION <a class="content6-ptxt-xref" href="RM100000000Z1NJ.html#RM100000000Z1NJ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM10000000110KU__RM10000000110KU_01_0003">
+<p class="testgrp-heading">RECONFIRM DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (READY).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Drive the vehicle at a speed of 35 km/h (22 mph) or more and turn the steering wheel to the right and left.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the same DTC is output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EWUAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EWUAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E6VAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EFWAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E6VAE " width="NaN%">DTCs C1439 and C1445 are not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFWAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E6VAE " width="NaN%">Yaw rate and acceleration sensor and/or steering angle sensor DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFWAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If DTCs C1439 and/or C1445 are not output again, the DTC may have been stored due to a temporary loss of the steering angle zero point calibration, such as when the power source voltage drops.</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR CIRCUITS INDICATED BY OUTPUT DTCS <a class="content6-ptxt-xref" href="RM10000000110K1.html#RM10000000110K1">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

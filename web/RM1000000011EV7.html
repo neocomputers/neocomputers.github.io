@@ -1,0 +1,662 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="LIGHTING SYSTEM Front Door Courtesy Switch Circuit" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058066" name="sectionId"/> 
+  <meta content="LIGHTING (INT)" name="sectionName"/> 
+  <meta content="_0298039" name="ttlId"/> 
+  <meta content="LIGHTING SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000011EV7" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Front Door Courtesy Switch Circuit</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">LIGHTING SYSTEM<span class="topictitle1"> Front Door Courtesy Switch Circuit</span>
+</h1>
+<div class="subpara" id="RM1000000011EV7__RM1000000011EV7_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The main body ECU (multiplex network body ECU) detects the condition of the front door courtesy light switch assembly.</p> 
+   </div>
+<div class="subpara" id="RM1000000011EV7__RM1000000011EV7_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003K96E01" class="figure-graphic--bigImage" src="../images/a003k96e01.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM1000000011EV7__RM1000000011EV7_08">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">Before replacing the main body ECU (multiplex network body ECU), refer to Service Bulletin.</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000011EV7__RM1000000011EV7_06">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM1000000011EV7__RM1000000011EV7_06_0021">
+<p class="testgrp-heading">READ VALUE USING GTS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Main Body / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Main Body &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EJCAC" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EPCAC" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EVCAC" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0E2CAC" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0EBDAC" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EJCAC " width="NaN%">FR Door Courtesy SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EPCAC " width="NaN%">Front door courtesy light switch assembly RH signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EVCAC " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0E2CAC " width="NaN%"> <p class="ptxt">OFF: Front door RH closed</p> <p class="ptxt">ON: Front door RH open</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EBDAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EJCAC " width="NaN%">FL Door Courtesy SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EPCAC " width="NaN%">Front door courtesy light switch assembly LH signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EVCAC " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0E2CAC " width="NaN%"> <p class="ptxt">OFF: Front door LH closed</p> <p class="ptxt">ON: Front door LH open</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EBDAC " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Main Body &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EHLAC" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EHLAC " width="NaN%">FR Door Courtesy SW</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EHLAC " width="NaN%">FL Door Courtesy SW</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ERBAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ERBAE">Normal conditions listed above are displayed.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELCAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELCAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETDAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EZDAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETDAE " width="NaN%">OK</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZDAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETDAE " width="NaN%">"FR Door Courtesy SW" is not normal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZDAE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETDAE " width="NaN%">"FL Door Courtesy SW" is not normal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZDAE " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>PROCEED TO NEXT SUSPECTED AREA SHOWN IN PROBLEM SYMPTOMS TABLE <a class="content6-ptxt-xref" href="RM1000000011EV4.html#RM1000000011EV4">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">C</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">INSPECT FRONT DOOR COURTESY LIGHT SWITCH ASSEMBLY LH  <a class="res-right-fin-false-xref" href="#RM1000000011EV7__RM1000000011EV7_06_0050">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">B</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011EV7__RM1000000011EV7_06_0045">
+<p class="testgrp-heading">INSPECT FRONT DOOR COURTESY LIGHT SWITCH ASSEMBLY RH</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the front door courtesy light switch assembly RH.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000010FJ0.html#RM1000000010FJ0">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the front door courtesy light switch assembly RH.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000010FJ2.html#RM1000000010FJ2">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EIJAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EIJAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ELKAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELKAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELKAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FRONT DOOR COURTESY LIGHT SWITCH ASSEMBLY RH <a class="content6-ptxt-xref" href="RM1000000010FJ0.html#RM1000000010FJ0">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011EV7__RM1000000011EV7_06_0046">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (FRONT DOOR COURTESY LIGHT SWITCH ASSEMBLY RH - MAIN BODY ECU (MULTIPLEX NETWORK BODY ECU))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">for LHD</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the I18 main body ECU (multiplex network body ECU) connector.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the J5 courtesy light assembly RH connector.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Measure the resistance according to the value(s) in the table below.</p> 
+          <table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0EZOAE" class="spec-title">Standard Resistance</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0EZOAE" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EGQAE" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EMQAE" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0ESQAE" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EGQAE " width="NaN%">N43-1 - I18-27 (FRCY)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EMQAE " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0ESQAE " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EGQAE " width="NaN%">N43-1, I18-27 (FRCY) or J5-1 (B) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EMQAE " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0ESQAE " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table> </li>
+</ol>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">for RHD</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the I18 main body ECU (multiplex network body ECU) connector.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the J5 courtesy light assembly RH connector.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Measure the resistance according to the value(s) in the table below.</p> 
+          <table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0EXUAE" class="spec-title">Standard Resistance</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0EXUAE" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EEWAE" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EKWAE" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0EQWAE" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EEWAE " width="NaN%">N43-1 - I18-27 (FRCY)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EKWAE " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EQWAE " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EEWAE " width="NaN%">N43-1, I18-27 (FRCY), J5-1 (B) or A32-24 (CTY) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EKWAE " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EQWAE " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table> </li>
+</ol>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1YAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E1YAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E4ZAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4ZAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4ZAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE MAIN BODY ECU (MULTIPLEX NETWORK BODY ECU) <a class="content6-ptxt-xref" href="RM100000000ZQ1S.html#RM100000000ZQ1S">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011EV7__RM1000000011EV7_06_0050">
+<p class="testgrp-heading">INSPECT FRONT DOOR COURTESY LIGHT SWITCH ASSEMBLY LH</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the front door courtesy light switch assembly LH.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000010FJ0.html#RM1000000010FJ0">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the front door courtesy light switch assembly LH.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000010FJ2.html#RM1000000010FJ2">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EH5AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EH5AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EK6AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EK6AE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EK6AE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FRONT DOOR COURTESY LIGHT SWITCH ASSEMBLY LH <a class="content6-ptxt-xref" href="RM1000000010FJ0.html#RM1000000010FJ0">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM1000000011EV7__RM1000000011EV7_06_0052">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (FRONT DOOR COURTESY LIGHT SWITCH ASSEMBLY LH - MAIN BODY ECU (MULTIPLEX NETWORK BODY ECU))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">for LHD</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the I18 main body ECU (multiplex network body ECU) connector.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the K5 courtesy light assembly LH connector.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the A32 skid control ECU (brake booster with master cylinder assembly) connector.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Measure the resistance according to the value(s) in the table below.</p> 
+          <table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0EEEAG" class="spec-title">Standard Resistance</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0EEEAG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0ERFAG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EXFAG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0E4FAG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0ERFAG " width="NaN%">N6-1 - I18-6 (FLCY)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EXFAG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E4FAG " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0ERFAG " width="NaN%">N6-1, I18-6 (FLCY), K5-1 (B) or A32-24 (CTY) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EXFAG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E4FAG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table> </li>
+</ol>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">for RHD</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the I18 main body ECU (multiplex network body ECU) connector.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the K5 courtesy light assembly LH connector.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Measure the resistance according to the value(s) in the table below.</p> 
+          <table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0EXJAG" class="spec-title">Standard Resistance</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0EXJAG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EELAG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EKLAG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0EQLAG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EELAG " width="NaN%">N6-1 - I18-6 (FLCY)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EKLAG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EQLAG " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EELAG " width="NaN%">N6-1, I18-6 (FLCY) or K5-1 (B) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EKLAG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EQLAG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table> </li>
+</ol>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1NAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E1NAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E4OAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4OAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4OAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE MAIN BODY ECU (MULTIPLEX NETWORK BODY ECU) <a class="content6-ptxt-xref" href="RM100000000ZQ1S.html#RM100000000ZQ1S">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

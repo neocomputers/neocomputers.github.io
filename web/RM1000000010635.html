@@ -1,0 +1,409 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P160400" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290546" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000010635" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P160400</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/ Canister Pump Module), Diagnostic DTC:P160400</h1>
+<div class="section" id="RM1000000010635__RM1000000010635_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P160400</td> 
+       <td class="dtcname" headers="ID0EED">Startability Malfunction</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM1000000010635__RM1000000010635_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">If the engine does not start or it takes a long time for the engine to start, despite the ECM receiving the engine start request signal from the hybrid vehicle control ECU via CAN communication, this DTC will be stored.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EWF" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0E3F" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0ECG" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EIG" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0EOG" width="NaN%">Memory</th> 
+        <th align="center" class="cellrowborder" id="ID0EUG" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EWF " width="NaN%">P160400</td> 
+        <td align="left" class="cellrowborder" headers="ID0E3F " width="NaN%">Startability Malfunction</td> 
+        <td align="left" class="cellrowborder" headers="ID0ECG " width="NaN%"> <p class="ptxt">Either of the following conditions is met (1 trip detection logic):</p> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">The engine speed is less than 500 rpm with the engine start signal on for a certain amount of time (refer to the illustration below).</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">After the engine starts (engine speed is 500 rpm or more), the engine speed drops to 200 rpm or less.</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EIG " width="NaN%">Does not come on</td> 
+        <td align="left" class="cellrowborder" headers="ID0EOG " width="NaN%">DTC Stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUG " width="NaN%">SAE Code: P1604</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="fignone--bigImage">
+<img alt="B006IRLE09" class="figure-graphic--bigImage" src="../images/b006irle09.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM1000000010635__RM1000000010635_02">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">DTC P160400</p>
+</li> 
+      <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">In contrast to normal malfunction diagnosis for components, circuits and systems, DTC P160400 is used to determine the malfunctioning area from the problem symptoms and freeze frame data when the user mentions problems such as starting difficulty.</p>
+<p class="item-ptxt">As this DTC can be stored as a result of certain user actions, even if the DTC is output, if the customer makes no mention of problems, clear the DTC without performing any troubleshooting and return the vehicle to the customer.</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">If any other DTCs are output, perform troubleshooting for those DTCs first.</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Since DTC P160400 is different from other DTCs, the following procedure is shown as a reference.</p>
+</li> 
+       </ul> 
+      <li class="list1-item">
+<p class="list1-heading">DATA LIST / FREEZE FRAME DATA</p>
+</li> 
+      <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Read freeze frame data using the GTS. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air fuel ratio was lean or rich, and other data from the time the malfunction occurred.</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">When confirming the freeze frame data, be sure to check all multi freeze frame data.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001AMDA.html#RM100000001AMDA">Click here</a>
+</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">When confirming the freeze frame data, if there are multiple items related to the cause of the malfunction, perform troubleshooting for all related items.</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Try to start the vehicle under the conditions recorded in the freeze frame data which were present when the malfunction occurred. Confirm the data at this time and compare it with the freeze frame data.</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">If the malfunction does not recur, carefully check the vehicle conditions from when the malfunction occurred using freeze frame data.</p>
+</li> 
+       </ul> 
+      <li class="list1-item">
+<p class="list1-heading">PRECAUTIONS</p>
+</li> 
+      <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">When performing inspections, jiggle the relevant wire harnesses and connectors in an attempt to reproduce malfunctions that do not always occur.</p>
+</li> 
+       </ul> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000010635__RM1000000010635_04">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM1000000010635__RM1000000010635_04_0001">
+<p class="testgrp-heading">CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P160400)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EGOAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EGOAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPPAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EVPAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPPAC " width="NaN%">DTC P160400 is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVPAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPPAC " width="NaN%">DTC P160400 and other DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVPAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If any DTCs other than P160400 are output, troubleshoot those DTCs first.</p> 
+        </div>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART <a class="content6-ptxt-xref" href="RM100000001AMDC.html#RM100000001AMDC">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM1000000010635__RM1000000010635_04_0006">
+<p class="testgrp-heading">CHECK FREEZE FRAME DATA</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">Using freeze frame data, confirm the conditions the moment the DTC was stored and after the DTC was stored. This information can be useful when troubleshooting.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check the following freeze frame data item to check the state of the auxiliary battery when the freeze frame data was recorded.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E1FAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E1FAE " width="NaN%">BATT Voltage</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check the following freeze frame data item to check the engine was cranking when the freeze frame data was recorded.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E3KAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E3KAE " width="NaN%">Engine Speed</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check the following freeze frame data items to check temperature data recorded when the engine did not start normally.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E5PAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E5PAE " width="NaN%">Coolant Temperature</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E5PAE " width="NaN%">Intake Air Temperature</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check the following freeze frame data items to check the engine operating conditions recorded when the engine started.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EKWAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKWAE " width="NaN%">Mass Air Flow Sensor</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKWAE " width="NaN%">Intake Manifold Absolute Pressure</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKWAE " width="NaN%">Throttle Position Sensor No.1 Voltage %</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKWAE " width="NaN%">Throttle Position Sensor No.2 Voltage %</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKWAE " width="NaN%">Injector Cylinder #1 (Port)</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKWAE " width="NaN%">Target EGR Valve Position No.1</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKWAE " width="NaN%">ISC Learning Value</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Use this information to perform a simulation test.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Compare the "Normal Condition" information in the Data List table with the freeze frame data listed above and with the simulation test results to determine the cause of the malfunction.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1CAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E1CAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDEAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJEAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDEAG " width="NaN%">The cause of the malfunction can be determined</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJEAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDEAG " width="NaN%">The cause of the malfunction cannot be determined</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJEAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE MALFUNCTIONING PARTS </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHECK FOR INTERMITTENT PROBLEMS <a class="content6-ptxt-xref" href="RM1000000010614.html#RM1000000010614">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

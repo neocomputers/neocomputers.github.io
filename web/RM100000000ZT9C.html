@@ -1,0 +1,2488 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ENTRY AND START SYSTEM(for Entry Function) SYSTEM DESCRIPTION" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058032" name="sectionId"/> 
+  <meta content="THEFT DETERRENT / KEYLESS ENTRY" name="sectionName"/> 
+  <meta content="_0288580" name="ttlId"/> 
+  <meta content="ENTRY AND START SYSTEM(for Entry Function)" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="SYSTEM DESCRIPTION" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000ZT9C" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>ENTRY AND START SYSTEM(for Entry Function)</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ENTRY AND START SYSTEM(for Entry Function)<span class="topictitle1"> SYSTEM DESCRIPTION</span>
+</h1>
+<div class="subpara" id="RM100000000ZT9C__RM100000000ZT9C_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000000ZT9C__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">MULTI CHANNEL FUNCTION</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">The electrical key transmitter sub-assembly and electrical key and tire pressure monitoring system receiver assembly can operate on two different RF channels. When an electrical key transmitter sub-assembly is brought within an exterior detection area, key verification begins. If key verification fails due to wave interference, the channel will be switched and key verification will be performed again.</p>
+<p class="step2-ptxt">The multi channel system begins verification using the channel on which the last verification was successfully performed. When verification fails, the system switches to the other channel.</p>
+<div class="fignone--bigImage">
+<img alt="A003OE2C05" class="figure-graphic--bigImage" src="../images/a003oe2c05.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Exterior detection areas are created using LF waves (emitted from the vehicle at intervals of 0.25 seconds) to receive a response from the electrical key transmitter sub-assembly.</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">When the electrical key transmitter sub-assembly is brought into an exterior detection area, it receives LF waves from the vehicle. Using RF waves, the electrical key transmitter sub-assembly responds to the vehicle.</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Upon receiving the response from the electrical key transmitter sub-assembly, the certification ECU (smart key ECU assembly) activates the electrical key antennas (outside) one by one. Using LF waves, the certification ECU (smart key ECU assembly) determines which exterior detection area the electrical key transmitter sub-assembly is in.</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+              <td align="left" class="cellrowborder" width="NaN%">The electrical key transmitter sub-assembly receives the LF waves from the vehicle and responds using RF waves. (The certification ECU (smart key ECU assembly) recognizes which exterior detection area the electrical key transmitter sub-assembly is in.)</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*e</td> 
+              <td align="left" class="cellrowborder" width="NaN%">The certification ECU (smart key ECU assembly) sends registered key ID information to the electrical key transmitter sub-assembly using LF waves. (Up to 7 key IDs can be registered.)</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*f</td> 
+              <td align="left" class="cellrowborder" width="NaN%">The electrical key transmitter sub-assembly sends the key ID information using RF waves. When the certification ECU (smart key ECU assembly) receives it, verification completes.</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*g</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Wave interference (Channel switching)</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<p class="step2-ptxt">The multi channel system changes the channels when the RF band (*b, *d and *f) is interrupted by wave interference. Refer to the table below to confirm when the system changes the channels.</p>
+<div class="tablenoborder">
+         <table class="big-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EADAC" width="NaN%"/> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0EGDAC">*b or *d is NG</th> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0EODAC">*f is NG</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EADAC " width="NaN%">Condition</td> 
+            <td align="center" class="cellrowborder" headers="ID0EGDAC " width="NaN%">RF waves cannot be received</td> 
+            <td align="center" class="cellrowborder" headers="ID0EGDAC " width="NaN%">RF waves cannot be received properly</td> 
+            <td align="center" class="cellrowborder" headers="ID0EODAC " width="NaN%">RF waves cannot be received</td> 
+            <td align="center" class="cellrowborder" headers="ID0EODAC " width="NaN%">RF waves cannot be received properly</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EADAC " width="NaN%">Channel switching</td> 
+            <td align="center" class="cellrowborder" headers="ID0EGDAC " width="NaN%">The channels will not be switched.</td> 
+            <td align="center" class="cellrowborder" headers="ID0EGDAC " width="NaN%">The channels will be switched.</td> 
+            <td align="center" class="cellrowborder" headers="ID0EODAC " width="NaN%">The channels will not be switched.</td> 
+            <td align="center" class="cellrowborder" headers="ID0EODAC " width="NaN%">The channels will be switched*.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<br class="step2Root-step2"/>
+<ul class="step2-list1 nonmark"> 
+         <li class="list1-item">
+<p class="step2-list1-nonmark-heading">*: The channels are not switched during vehicle interior verification after an entry lock operation is performed.</p>
+</li> 
+        </ul>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">BASIC PRECAUTIONS</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">DTCs and Data Lists of ECUs related to the entry and start system can be checked using the GTS.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Check for DTCs using the following procedure. If any DTCs are output, diagnose those DTCs first.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Enter the following menus: Body Electrical / Entry&amp;Start, Power Source Control or Starting Control / Trouble Codes.</p>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">When using the GTS with the power switch off, connect the GTS to the DLC3 and turn a courtesy light switch on and off at intervals of 1.5 seconds or less until communication between the GTS and the vehicle begins. Then select Model Code "KEY REGIST" under manual mode and enter the following menus: Body Electrical / Entry&amp;Start(CAN). While using the GTS, periodically turn a courtesy light switch on and off at intervals of 1.5 seconds or less to maintain communication between the GTS and the vehicle.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">If the entry and start system has been canceled by a customize setting, enable the entry and start system.</p>
+<p class="step2-ptxt"> <a class="ptxt-xref" href="RM100000000ZT9N.html#RM100000000ZT9N">Click here</a>
+</p>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">DIAGRAM OF ENTRY AND START SYSTEM</p>
+<div class="ie8fixer"/>
+<div class="fignone--bigImage">
+<img alt="A003OBLE04" class="figure-graphic--bigImage" src="../images/a003oble04.png"/>
+</div>
+<div class="fignone--bigImage">
+<img alt="A003L5NE03" class="figure-graphic--bigImage" src="../images/a003l5ne03.png"/>
+</div>
+<div class="fignone--bigImage">
+<img alt="A003KR6E03" class="figure-graphic--bigImage" src="../images/a003kr6e03.png"/>
+</div>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">SYSTEM DESCRIPTION</p>
+<p class="step1-ptxt">The following pattern will be used: "Operation" indicates user operation using the entry and start system with push-button start. "Expected operation of the vehicle" indicates how a known good vehicle will react in accordance with each operation. "Suspected Area/Diagnosis" indicates suspected malfunctioning areas and tips for performing diagnosis if the vehicle did not react as expected.</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Example: Operation No.</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Operation</td> 
+            <td align="center" class="cellrowborder" width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Expected operation of the vehicle</td> 
+            <td align="center" class="cellrowborder" width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Waveform or Output Value</td> 
+            <td align="center" class="cellrowborder" width="NaN%">-</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tablenoborder">
+         <table class="step2-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E5PAC" width="NaN%">Suspected Area</th> 
+            <th align="center" class="cellrowborder" id="ID0EFAAE" width="NaN%">Diagnosis</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E5PAC " width="NaN%">-</td> 
+            <td align="center" class="cellrowborder" headers="ID0EFAAE " width="NaN%">-</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">DIAGNOSIS IN ACCORDANCE WITH USER OPERATION</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Operation 1</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Operation</td> 
+            <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Turn the power switch off and lock all the doors, then take the electrical key transmitter sub-assembly approximately 3 m (9.84 ft.) or more away from the vehicle.</p> 
+             <div class="tip">
+              <p class="tiptitle">Tech Tips</p> 
+              <p class="ptxt">The detection area of each electrical key antenna (outside) is formed by emitting a periodic LF band request signal every 0.25 seconds. The detection area formed by each front door outside handle assembly (electrical key antenna) and rear door outside handle assembly (electrical key antenna) has a detection range of approximately 0.7 m (2.30 ft.).</p> 
+             </div> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Waveform or Output Value</td> 
+            <td align="left" class="cellrowborder" width="NaN%">Pulse generation (N54-17 (CLG1) - I1-18 (E)*)</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<br class="step2Root-step2"/>
+<ul class="step2-list1 nonmark"> 
+         <li class="list1-item">
+<p class="step2-list1-nonmark-heading">*: <a class="ptxt-xref" href="RM100000000ZTA2.html#RM100000000ZTA2">Click here</a>
+</p>
+</li> 
+        </ul>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Operation 2</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Operation</td> 
+            <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Bring the electrical key transmitter sub-assembly within 0.7 m (2.30 ft.) of the driver door.</p> 
+             <div class="tip">
+              <p class="tiptitle">Tech Tips</p> 
+              <p class="ptxt">The system will enter in unlock standby mode when the electrical key transmitter sub-assembly is brought into the detection area and the key ID code sent by the electrical key transmitter sub-assembly matches the key ID code stored by the certification ECU (smart key ECU assembly). The door unlocks if the unlock sensor is touched by hand with the system in unlock standby mode.</p> 
+             </div> <p class="ptxt">Signal transmission: Certification ECU (smart key ECU assembly) → Door outside handle assembly (electrical key antenna) → Electrical key transmitter sub-assembly → Electrical key and tire pressure monitoring system receiver assembly → Certification ECU (smart key ECU assembly) → Main body ECU (multiplex network body ECU)</p> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Expected operation of the vehicle</td> 
+            <td align="left" class="cellrowborder" width="NaN%">The LED of the electrical key transmitter sub-assembly starts blinking. If it does not, check the suspected areas in the following table.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Waveform or Output Value</td> 
+            <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Pulse generation (N54-17 (CLG1) - I1-18 (E)*)</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Pulse generation (N54-18 (RCO) - I1-18 (E)*)</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Pulse generation (N54-19 (RDAM) - I1-18 (E)*)</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Pulse generation (N54-20 (CSEL) - I1-18 (E)*)</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<br class="step2Root-step2"/>
+<ul class="step2-list1 nonmark"> 
+         <li class="list1-item">
+<p class="step2-list1-nonmark-heading">*: <a class="ptxt-xref" href="RM100000000ZTA2.html#RM100000000ZTA2">Click here</a>
+</p>
+</li> 
+        </ul>
+<div class="tablenoborder">
+         <table class="step2-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EILAE" width="NaN%">Suspected Area</th> 
+            <th align="center" class="cellrowborder" id="ID0ENLAE" width="NaN%">Diagnosis</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EILAE " width="NaN%">Electrical key transmitter sub-assembly</td> 
+            <td class="cellrowborder" headers="ID0ENLAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">The key ID code sent by the electrical key transmitter sub-assembly does not match the key ID code stored in the certification ECU (smart key ECU assembly). Use another electrical key transmitter sub-assembly to check the operation.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the LED of the electrical key transmitter sub-assembly does not blink when it is brought within 0.7 m (2.30 ft.) of the front door outside handle assembly (for driver door), perform the following procedure.</p>
+<p class="item-ptxt">Press the lock and unlock switches of the electrical key transmitter sub-assembly to check the operation. If the doors can be locked and unlocked, that means the detection area has not been formed. Parts other than the electrical key transmitter sub-assemblies, front door outside handle assemblies and rear door outside handle assemblies may be malfunctioning.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the electrical key transmitter sub-assembly is malfunctioning, the hybrid control system cannot be started and the power switch cannot be turned on (ACC) or on (IG). Under normal conditions, the entry warning light is displayed on the multi-information display in the combination meter assembly when the power switch is pressed with the electrical key transmitter sub-assembly in the driver seat area, the shift lever in P and the brake pedal released. If the driver door cannot be opened, use the mechanical key installed in the electrical key transmitter sub-assembly to open the door.</p>
+</li> 
+             </ul> 
+             <div class="tip">
+              <p class="tiptitle">Tech Tips</p> 
+              <br class="tip"/>
+              <ul class="list1"> 
+               <li class="list1-item">
+<p class="list1-heading">Before replacing the electrical key transmitter sub-assembly, check if the transmitter battery is depleted.</p>
+</li> 
+               <li class="list1-item">
+<p class="list1-heading">If the driver door cannot be opened, use the mechanical key installed in the electrical key transmitter sub-assembly to open the door.</p>
+</li> 
+              </ul> 
+             </div> </td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EILAE " width="NaN%">Transmitter battery is depleted</td> 
+            <td class="cellrowborder" headers="ID0ENLAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Press and hold the lock switch of the electrical key transmitter sub-assembly for 5 seconds and check the number of times that the LED of the electrical key transmitter sub-assembly blinks. If the LED of the electrical key transmitter sub-assembly does not blink or blinks only once or twice, the transmitter battery may be depleted. If the LED of the electrical key transmitter sub-assembly does not blink at all, the electrical key transmitter sub-assembly may be malfunctioning.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the transmitter battery voltage at the time the electrical key transmitter sub-assembly sends a signal drops to 2.2 V or less, "Yes" is displayed for "Key Low Battery" in the Data List.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the transmitter battery voltage drops to 2.0 V or lower, operation cannot be assured.</p>
+<div class="tip">
+                <p class="tiptitle">Tech Tips</p> 
+                <p class="ptxt">The output of the electrical key transmitter sub-assembly will decrease if it is in low temperatures.</p> 
+               </div>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">When the transmitter battery is depleted, the hybrid control system cannot be started and the power switch cannot be turned on (ACC) or on (IG). If the electrical key transmitter sub-assembly is held near the power switch, the hybrid control system can be started.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Make sure that the transmitter battery type and installation direction are correct.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EILAE " width="NaN%">Wave Interference</td> 
+            <td class="cellrowborder" headers="ID0ENLAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the problem occurs in certain locations or times of day, the possibility of wave interference is high.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">When the electrical key transmitter sub-assembly is malfunctioning, the transmitter battery is depleted, an electrical key transmitter sub-assembly from another vehicle has been used or wave interference is suspected. "Yes" may be displayed for any of the following Data List items: "Unmatch Code or Form", "No Response", "ID Code Difference" or "Unmatched Vehicle-ID"</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EILAE " width="NaN%">Certification ECU (smart key ECU assembly)</td> 
+            <td align="center" class="cellrowborder" headers="ID0ENLAE " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EILAE " width="NaN%">Main body ECU (multiplex network body ECU)</td> 
+            <td align="center" class="cellrowborder" headers="ID0ENLAE " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EILAE " width="NaN%">Front door outside handle assembly</td> 
+            <td class="cellrowborder" headers="ID0ENLAE " width="NaN%"> <p class="ptxt">Vehicle exterior detection area is not formed properly.</p> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the LED of the electrical key transmitter sub-assembly does not blink when it is brought within 0.7 m (2.30 ft.) of the front door outside handle assembly (for driver door), but blinks when it is brought within 0.7 m (2.30 ft.) of the front door outside handle assembly (for front passenger door), the front door outside handle assembly of the driver door may be malfunctioning.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Even if the vehicle exterior detection area is not formed properly, the power switch can be turned on (ACC) and the hybrid control system can be started.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Formation of the vehicle exterior detection area can be confirmed by using the GTS.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZT9F.html#RM100000000ZT9F">Click here</a>
+</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Even if the vehicle exterior detection area is not formed properly, the doors can be unlocked by pressing the unlock switch of the electrical key transmitter sub-assembly.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EILAE " width="NaN%">Electrical key and tire pressure monitoring system receiver assembly</td> 
+            <td class="cellrowborder" headers="ID0ENLAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the electrical key and tire pressure monitoring system receiver assembly is malfunctioning, it is not possible to unlock the front passenger door and rear door.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the electrical key and tire pressure monitoring system receiver assembly is malfunctioning, it is not possible to unlock the doors by a wireless unlock operation.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the electrical key and tire pressure monitoring system receiver assembly is malfunctioning, the hybrid control system cannot be started and the power switch cannot be turned on (ACC) or on (IG) unless in an emergency.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Formation of the vehicle exterior detection area can be confirmed by using the GTS.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZT9F.html#RM100000000ZT9F">Click here</a>
+</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EILAE " width="NaN%">Auxiliary battery is discharged</td> 
+            <td class="cellrowborder" headers="ID0ENLAE " width="NaN%">It may be possible to tell whether the auxiliary battery is discharged by operating the horn.</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EILAE " width="NaN%">Others</td> 
+            <td class="cellrowborder" headers="ID0ENLAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the entry and start system function has been canceled through the customize function, the detection area cannot be formed, therefore the LED of the electrical key transmitter sub-assembly will not blink even if the electrical key transmitter sub-assembly is brought near a front door outside handle assembly or rear door outside handle assembly.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">In the entry and start system, if the electrical key transmitter sub-assembly is constantly in the exterior detection area of one of the doors, the transmitter battery could be drained. For this reason, if this state continues for longer than 10 minutes, the entry and start system automatically deactivates the exterior detection area that the electrical key transmitter sub-assembly is in.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the electrical key transmitter sub-assembly is in transmitter battery saving mode, even if it receives LF waves from the vehicle, it will not respond using RF waves, therefore the LED of the electrical key transmitter sub-assembly will not blink.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the electrical key transmitter sub-assembly is left in the vehicle and the doors are locked using another electrical key transmitter sub-assembly, the LED of the electrical key transmitter sub-assembly will not blink even if it is brought near a front door outside handle assembly.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Operation 3</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Operation</td> 
+            <td align="left" class="cellrowborder" width="NaN%">Touch the unlock sensor of the front door outside handle assembly (for driver door) with the electrical key transmitter sub-assembly in the exterior detection area.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Expected operation of the vehicle</td> 
+            <td align="left" class="cellrowborder" width="NaN%">While the doors are unlocked, the answer-back is performed at the same time. If they do not, check the suspected areas in the following table.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Waveform or Output Value</td> 
+            <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Pulse generation (N54-17 (CLG1) - I1-18 (E)*)</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Tester connection (instrument panel junction block assembly (ACT-) - body ground)*</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<br class="step2Root-step2"/>
+<ul class="step2-list1 nonmark"> 
+         <li class="list1-item">
+<p class="step2-list1-nonmark-heading">*: <a class="ptxt-xref" href="RM100000000ZTA2.html#RM100000000ZTA2">Click here</a>
+</p>
+</li> 
+        </ul>
+<div class="tablenoborder">
+         <table class="step2-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EDAAG" width="NaN%">Suspected Area</th> 
+            <th align="center" class="cellrowborder" id="ID0EIAAG" width="NaN%">Diagnosis</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EDAAG " width="NaN%">The suspected parts below overlap with the parts covered in operation 2 for when the LED of the electrical key transmitter sub-assembly does not blink.</td> 
+            <td align="center" class="cellrowborder" headers="ID0EIAAG " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EDAAG " width="NaN%">Front door outside handle assembly (unlock sensor)</td> 
+            <td class="cellrowborder" headers="ID0EIAAG " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the doors can be unlocked by touching the unlock sensor of the front door outside handle assembly (for front passenger door) door while carrying the electrical key transmitter sub-assembly, the unlock sensor of the front door outside handle assembly (for driver door) may be malfunctioning.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Under normal conditions, "ON" is displayed for the Data List item "D-Door Touch Sensor" when the unlock sensor is touched.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EDAAG " width="NaN%">Door lock/unlock mechanism</td> 
+            <td class="cellrowborder" headers="ID0EIAAG " width="NaN%">If a door cannot be locked/unlocked by operating the door control switch on the door in the cabin, the door lock mechanism is malfunctioning.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Operation 4</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Operation</td> 
+            <td align="left" class="cellrowborder" width="NaN%">After getting into the vehicle while carrying the electrical key transmitter sub-assembly, close the door and press the power switch once with the shift lever in P while not depressing the brake pedal.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Expected operation of the vehicle</td> 
+            <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">The security indicator light turns off, and then the immobiliser function is canceled, allowing the vehicle to be driven.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">The parking lock is unlocked.</p>
+</li> 
+             </ul> <p class="ptxt">If any of the preceding do not happen, check the suspected areas in the following table.</p> 
+             <div class="tip">
+              <p class="tiptitle">Tech Tips</p> 
+              <p class="ptxt">When the power switch is pressed, the indoor electrical key antennas form the key detection area inside the vehicle and detect the electrical key transmitter sub-assembly in the cabin. The electrical key transmitter sub-assembly sends a key ID code upon receiving a request signal and the LED of the electrical key transmitter sub-assembly illuminates for a short time. After pressing the power switch, if the key ID code sent by the electrical key transmitter sub-assembly matches the key ID code stored by the certification ECU (smart key ECU assembly), the ACC relay turns on and entry warning light is displayed on the multi-information display in the combination meter assembly. After the power source mode has changed, and L code and S code verification has been completed, the parking lock will be unlocked and the immobiliser will be disabled. The Data List item "Immobiliser" will then change from "Set" to "Unset".</p> 
+              <p class="ptxt">Signal transmission: Certification ECU (smart key ECU assembly) → Indoor electrical key antenna → Electrical key transmitter sub-assembly → Electrical key and tire pressure monitoring system receiver assembly → Certification ECU (smart key ECU assembly)</p> 
+             </div> 
+             <div class="tip">
+              <p class="tiptitle">Tech Tips</p> 
+              <p class="ptxt">The interior detection area is formed when any of the following conditions are met:</p> 
+              <br class="tip"/>
+              <ul class="list1"> 
+               <li class="list1-item">
+<p class="list1-heading">Any door is opened.</p>
+</li> 
+               <li class="list1-item">
+<p class="list1-heading">Any of the doors have been opened and closed (formed within approximately 30 seconds).</p>
+</li> 
+               <li class="list1-item">
+<p class="list1-heading">The brake pedal has been depressed (formed within approximately 30 seconds).</p>
+</li> 
+               <li class="list1-item">
+<p class="list1-heading">The power switch is pressed.</p>
+</li> 
+              </ul> 
+             </div> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Waveform or Output Value</td> 
+            <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Pulse generation (N54-19 (RDAM) - I1-18 (E)*)</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Pulse generation (I1-8 (CLG5) - I1-18 (E)*)</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Pulse generation (I1-17 (IG1D) - I1-18 (E)*)</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<br class="step2Root-step2"/>
+<ul class="step2-list1 nonmark"> 
+         <li class="list1-item">
+<p class="step2-list1-nonmark-heading">*: <a class="ptxt-xref" href="RM100000000ZTA2.html#RM100000000ZTA2">Click here</a>
+</p>
+</li> 
+        </ul>
+<div class="tablenoborder">
+         <table class="step2-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EULAG" width="NaN%">Suspected Area</th> 
+            <th align="center" class="cellrowborder" id="ID0EZLAG" width="NaN%">Diagnosis</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EULAG " width="NaN%">Certification ECU (smart key ECU assembly)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EZLAG " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EULAG " width="NaN%">Wave Interference</td> 
+            <td class="cellrowborder" headers="ID0EZLAG " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If malfunctions occur at a specific location/time, wave interference may be the cause.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If wave interference is suspected in the cabin, disconnect the connectors of all electronic devices which are not standard equipment, or remove the electronic devices and check for electrical noise.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EULAG " width="NaN%">Indoor electrical key antenna assemblies that form the interior detection areas</td> 
+            <td class="cellrowborder" headers="ID0EZLAG " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the interior detection area is not formed properly, the hybrid control system cannot be started and the power switch cannot be turned on (ACC) or on (IG). In an emergency the electrical key transmitter sub-assembly can be held near the power switch to the start hybrid control system.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Using the GTS, enter key diagnostic mode to forcibly form the interior detection area. If the electrical key transmitter sub-assembly is brought near the area, short beeps will sound.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZT9F.html#RM100000000ZT9F">Click here</a>
+</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EULAG " width="NaN%">Power switch</td> 
+            <td class="cellrowborder" headers="ID0EZLAG " width="NaN%">Under normal conditions, after the power switch is pressed, "ON" is displayed for the Data List items "Start Switch1" and "Start Switch2".</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EULAG " width="NaN%">ID code box (immobiliser code ECU)</td> 
+            <td class="cellrowborder" headers="ID0EZLAG " width="NaN%">In order to unlock the parking lock, it is necessary for "OK" to be displayed for the Data List item "S Code Check". If "OK" is displayed for "S Code Check", the certification ECU (smart key ECU assembly) code and ID code box (immobiliser code ECU) code match.</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EULAG " width="NaN%">Hybrid vehicle control ECU</td> 
+            <td class="cellrowborder" headers="ID0EZLAG " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If "OK" is displayed for the Data List item "L Code Check" when the power switch is turned on (ACC), power will be supplied to the parking lock motor for approximately 10 seconds. Then the ECU will send an unlock signal to the parking lock motor and the Data List item "Unlock Request Receive" will temporarily change from "NG" to "OK". After the parking lock is unlocked, the ECU receives the unlocked signal from the parking lock motor and the Data List item "Steering Unlock" changes from "Unset" to "Set".</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">In order for the parking lock to be unlocked, it is necessary that "OK" be displayed for the Data List item "L Code Check" (the ID code stored in the hybrid vehicle control ECU assembly matches that of the ID code box (immobiliser code ECU))</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Operation 5</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Operation</td> 
+            <td align="left" class="cellrowborder" width="NaN%">Depress the brake pedal with the shift lever in P while carrying an electrical key transmitter sub-assembly.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Expected operation of the vehicle</td> 
+            <td align="left" class="cellrowborder" width="NaN%">The entry warning light appears on the multi-information display. If it does not, check the suspected areas in the following table.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tablenoborder">
+         <table class="step2-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E1UAG" width="NaN%">Suspected Area</th> 
+            <th align="center" class="cellrowborder" id="ID0EAVAG" width="NaN%">Diagnosis</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E1UAG " width="NaN%">Stop light switch assembly</td> 
+            <td class="cellrowborder" headers="ID0EAVAG " width="NaN%">If the brake pedal is depressed, "ON" is displayed for the Data List item "Stop Light Switch1".</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0E1UAG " width="NaN%">Certification ECU (smart key ECU assembly)</td> 
+            <td class="cellrowborder" headers="ID0EAVAG " width="NaN%"> <p class="ptxt">Start function-Terminals of ECU</p> <p class="ptxt"> <a class="ptxt-xref" href="RM100000000ZTA2.html#RM100000000ZTA2">Click here</a>
+</p> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Operation 6</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Operation</td> 
+            <td align="left" class="cellrowborder" width="NaN%">After getting into the vehicle while carrying the electrical key transmitter sub-assembly, press the power switch with the park (P) while depressing the brake pedal.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Expected operation of the vehicle</td> 
+            <td align="left" class="cellrowborder" width="NaN%">The hybrid control system starts. If it does not, check the suspected areas in the following table.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tablenoborder">
+         <table class="step2-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EYZAG" width="NaN%">Suspected Area</th> 
+            <th align="center" class="cellrowborder" id="ID0E4ZAG" width="NaN%">Diagnosis</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EYZAG " width="NaN%">Auxiliary battery is discharged</td> 
+            <td class="cellrowborder" headers="ID0E4ZAG " width="NaN%">Whether the auxiliary battery is discharged or not can be checked easily by operating the horn.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Operation 7</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Operation</td> 
+            <td align="left" class="cellrowborder" width="NaN%">Press the power switch.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Expected operation of the vehicle</td> 
+            <td align="left" class="cellrowborder" width="NaN%">The hybrid control system stops, the entry warning light illuminates and then turns off and the security indicator light changes from off to blinking.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Operation 9</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Operation</td> 
+            <td align="left" class="cellrowborder" width="NaN%">Touch the lock sensor of the front door outside handle assembly (for driver door) while carrying the electrical key transmitter sub-assembly.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">Expected operation of the vehicle</td> 
+            <td align="left" class="cellrowborder" width="NaN%">The door lock and the answer-back is performed simultaneously.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">AUXILIARY BATTERY SAVING FUNCTION</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">When the entry and start system is operating, the vehicle performs key detection operations every 0.25 seconds. Therefore, if the vehicle is left as is for a long period of time, the auxiliary battery may become fully discharged. The following controls help reduce the rate at which the battery is discharged.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">If the entry and start system is not operated for 5 days or more, periodic signal transmission from the electrical key antennas stops. However, the doors can still be unlocked by touching the unlock sensor of a front door outside handle assembly.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">If the entry and start system is not operated for 14 days or more, the lock and unlock sensors of the front door outside handle assembly (for front passenger door) will be disabled. Therefore, only the unlock sensor of the front door outside handle assembly (for driver door) can be used to unlock the doors.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">If 10 minutes or more elapse while the electrical key transmitter sub-assembly is in an exterior detection area, the front door outside handle assembly (electrical key antenna) detecting the electrical key transmitter sub-assembly will stop operating.</p>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">To restore operation of the entry and start system, perform any of the following operations.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">While carrying the electrical key transmitter sub-assembly, touch the lock or unlock sensor of the front door outside handle assembly (for driver door) and perform a door lock or unlock operation.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Lock or unlock the doors using the wireless function.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Insert the mechanical key into the door key cylinder of the driver door and lock or unlock the doors.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">WIRELESS BUZZER VOLUME ADJUSTMENT FUNCTION*</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">The volume of the wireless buzzer can be changed through the customize function.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">The volume of the following wireless buzzer operations cannot be adjusted.</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Warning function buzzer operations</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Customize function buzzer operations</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Buzzer operations for key diagnostic mode using the GTS</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Key registration buzzer operations</p>
+</li> 
+         </ul> 
+        </div>
+<br class="step2Root-step2"/>
+<ul class="step2-list1 nonmark"> 
+         <li class="list1-item">
+<p class="step2-list1-nonmark-heading">*: w/ Wireless Door Lock Buzzer Answer-back Function</p>
+</li> 
+        </ul>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">WARNING FUNCTION</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Warning</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: When the hybrid control system is running and a shift state other than park (P) is selected, the driver gets out of the vehicle.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">There are 2 patterns for this situation.</p>
+</li> 
+           <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+             <li class="list2-item">
+<p class="li-list2-list2-heading">Pattern 1:</p>
+<p class="item-ptxt">When the hybrid control system is running and a shift state other than park (P) is selected, the driver opens the door and attempts to get out of the vehicle.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+               <table class="item-table">
+<tbody class="item-table"> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                  <td class="cellrowborder" width="NaN%">Prevention of sudden acceleration, vehicle theft deterrent, prevention of vehicle roll-away</td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(All conditions are met)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is on (ACC) or on (IG).</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">A shift state other than park (P) is selected.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The driver door is opened.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">No vehicle speed is detected.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds continuously.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">"Shift to P Before Exiting Vehicle" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is turned off.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">Park (P) is selected.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The driver door is closed.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The vehicle speed is 5 km/h (3 mph) or more.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                </tbody>
+</table> 
+              </div>
+</li> 
+            </ul> 
+           <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+             <li class="list2-item">
+<p class="li-list2-list2-heading">Pattern 2:</p>
+<p class="item-ptxt">Under the situation of pattern 1, the driver closes the door and attempts to leave the vehicle while holding the electrical key transmitter sub-assembly.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+               <table class="item-table">
+<tbody class="item-table"> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                  <td class="cellrowborder" width="NaN%">Prevention of sudden acceleration, vehicle theft deterrent, prevention of vehicle roll-away</td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(All conditions are met)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is on (ACC) or on (IG).</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">A shift state other than park (P) is selected.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The driver door is opened → closed.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is not in the vehicle.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">No vehicle speed is detected.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds continuously.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The wireless buzzer sounds continuously.*</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">"Shift to P Before Exiting Vehicle"(A) and "Key Not Detected Check Key Location"(B) are displayed alternately on the multi-information display in the combination meter assembly.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <p class="ptxt">Warning stop conditions for (A)</p> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">Park (P) is selected.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The vehicle speed is 5 km/h (3 mph).</p>
+</li> 
+                   </ul> <p class="ptxt">Warning stop conditions for (B)</p> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is turned off.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is returned to the vehicle.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                </tbody>
+</table> 
+              </div>
+</li> 
+             <br class="list2-li-list3"/>
+<ul class="li-list3-list3 nonmark"> 
+               <li class="list3-item"> <p class="li-list3-list3-nonmark-heading">*: w/ Wireless Door Lock Buzzer Answer-back Function</p> </li> 
+              </ul> 
+            </ul> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: The key reminder sounds.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">There are 3 patterns for this situation.</p>
+</li> 
+           <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+             <li class="list2-item">
+<p class="li-list2-list2-heading">Pattern 1:</p>
+<p class="item-ptxt">When park (P) is selected and the parking lock is unlocked, the driver opens the door and attempts to get out of the vehicle.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+               <table class="item-table">
+<tbody class="item-table"> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                  <td class="cellrowborder" width="NaN%">Vehicle theft deterrent</td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" rowspan="2" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(Warning starts when condition 1 is met or condition 2 is met for 1 second)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <p class="ptxt">Condition 1</p> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is on (ACC).</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The driver door is opened.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The remote climate control system operation is suspended.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td class="cellrowborder" width="NaN%"> <p class="ptxt">Condition 2</p> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is off.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The parking lock is unlocked.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The driver door is opened.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds continuously at short and even intervals.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is turned on (IG).</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The driver door is closed.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is turned off and the parking lock is locked.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The remote climate control system begins operating.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                </tbody>
+</table> 
+              </div>
+</li> 
+            </ul> 
+           <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+             <li class="list2-item">
+<p class="li-list2-list2-heading">Pattern 2:</p>
+<p class="item-ptxt">Under the situation of pattern 1, the driver closes the driver door and attempts to leave the vehicle while carrying the electrical key transmitter sub-assembly.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+               <table class="item-table">
+<tbody class="item-table"> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                  <td class="cellrowborder" width="NaN%">Vehicle theft deterrent</td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(All conditions are met)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is on (ACC) or on (IG).</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">Park (P) is selected.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The driver door is opened → closed.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is not in the vehicle.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">No vehicle speed is detected.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds once.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The wireless buzzer sounds 3 times.*</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">"Key Not Detected Check Key Location" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(Either condition is met)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is turned off.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is returned to the vehicle.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                </tbody>
+</table> 
+              </div>
+</li> 
+             <br class="list2-li-list3"/>
+<ul class="li-list3-list3 nonmark"> 
+               <li class="list3-item"> <p class="li-list3-list3-nonmark-heading">*: w/ Wireless Door Lock Buzzer Answer-back Function</p> </li> 
+              </ul> 
+            </ul> 
+           <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+             <li class="list2-item">
+<p class="li-list2-list2-heading">Pattern 3:</p>
+<p class="item-ptxt">Under the situation of pattern 2, the driver touches the lock sensor on the door outside handle assembly.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+               <table class="item-table">
+<tbody class="item-table"> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                  <td class="cellrowborder" width="NaN%">Vehicle theft deterrent</td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(All conditions are met)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is on (ACC) or on (IG).</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">Park (P) is selected.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is not in the interior detection areas.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is in the exterior detection areas.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The lock sensor is on.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">No vehicle speed is detected.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds once.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The wireless buzzer sounds continuously.*</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">"Turn Power Off"(A) and "Key Not Detected Check Key Location"(B) are displayed alternately on the multi-information display in the combination meter assembly.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">5 seconds have elapsed after the warning started (only wireless buzzer stops).*</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">Any door is opened (only wireless buzzer stops).*</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">Any door is closed (only wireless buzzer stops).*</p>
+</li> 
+                   </ul> <p class="ptxt">Warning stop conditions for (A)</p> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">60 seconds have elapsed after the warning started.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is off.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">A shift state other than park (P) is selected.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The vehicle speed is 5 km/h (3 mph).</p>
+</li> 
+                   </ul> <p class="ptxt">Warning stop conditions for (B)</p> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is off.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is returned to the vehicle.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                </tbody>
+</table> 
+              </div>
+</li> 
+             <br class="list2-li-list3"/>
+<ul class="li-list3-list3 nonmark"> 
+               <li class="list3-item"> <p class="li-list3-list3-nonmark-heading">*: w/ Wireless Door Lock Buzzer Answer-back Function</p> </li> 
+              </ul> 
+            </ul> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: A passenger gets out of the vehicle while carrying the electrical key transmitter sub-assembly.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">When the power switch is on (ACC) or on (IG), a passenger opens a door other than the driver door and attempts to get out of the vehicle while holding the electrical key transmitter sub-assembly.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+             <table class="item-table">
+<tbody class="item-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                <td class="cellrowborder" width="NaN%">Preventing vehicle from becoming impossible to restart</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(All conditions are met)</p> </td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The power switch is on (ACC) or on (IG).</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">A door other than the driver door is opened → closed.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is not in the vehicle.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">No vehicle speed is detected.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds once.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The wireless buzzer sounds 3 times.*</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">"Key Not Detected Check Key Location" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(Either condition is met)</p> </td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The power switch is turned off.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is returned to the vehicle.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li> 
+           <br class="list1-li-list2"/>
+<ul class="li-list2-list2 nonmark"> 
+             <li class="list2-item">
+<p class="li-list2-list2-nonmark-heading">*: w/ Wireless Door Lock Buzzer Answer-back Function</p>
+</li> 
+            </ul> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: The electrical key transmitter sub-assembly is not in the interior or exterior detection areas.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">The driver attempts to turn the power switch on (IG) when the electrical key transmitter sub-assembly is not in the cabin, or attempts to change the power source mode by touching the electrical key transmitter sub-assembly to the power switch.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+             <table class="item-table">
+<tbody class="item-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                <td class="cellrowborder" width="NaN%">User confusion prevention</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(All conditions are met)</p> </td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The immobiliser system is set.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is not in the vehicle or the transmitter battery is depleted. (Interior verification failed or verification failed when the transmitter battery is depleted and the electrical key transmitter sub-assembly was touched to the power switch.)</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">There is no history of unlocking the doors using the mechanical key and no history of verification failure when the power switch is pressed.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds once.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">"Key Not Detected Check Key Location" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">15 seconds have elapsed after the warning started.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is returned to the vehicle. (Interior verification succeed or verification succeed when the transmitter battery is depleted and the electrical key transmitter sub-assembly was touched to the power switch.)</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The driver door is opened using the door outside handle and 30 seconds have elapsed.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: The vehicle is driven without a registered electrical key transmitter sub-assembly.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+             <table class="item-table">
+<tbody class="item-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                <td align="left" class="cellrowborder" width="NaN%">Preventing vehicle from becoming impossible to restart</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(All conditions are met)</p> </td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The power switch is on (IG).</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">Warning for when a passenger gets out of the vehicle while carrying the electrical key transmitter sub-assembly is operating.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The vehicle speed is 5 km/h (3 mph) or more.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is not in the vehicle.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds nine times.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">"Key Not Detected Check Key Location" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(Either condition is met)</p> </td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is returned to the vehicle.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The power switch is turned off.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: The electrical key transmitter sub-assembly is left in the vehicle.</p>
+<p class="step3-ptxt">The lock sensor on a door outside handle assembly is touched to perform an entry lock operation with the electrical key transmitter sub-assembly left in the vehicle.</p>
+<p class="step3-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+              <td class="cellrowborder" width="NaN%">Vehicle theft deterrent</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(All conditions are met)</p> </td> 
+              <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">The power switch is off.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">All doors are closed.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is in the vehicle.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">The lock sensor on a door outside handle assembly is on (touched).</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Any door is unlocked.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">No vehicle speed is detected.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+              <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">The wireless buzzer sounds continuously.*</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">"Key Detected in Vehicle" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+              <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">5 seconds have elapsed after the wireless buzzer is activated (only wireless buzzer stops).*</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">The power switch is on (ACC) or on (IG).</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">The vehicle speed is 5 km/h (3 mph) or more.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Any door is opened (only wireless buzzer stops).*</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">The doors are locked.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">60 seconds have elapsed after the warning started.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">*: w/ Wireless Door Lock Buzzer Answer-back Function</p>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: Door is ajar.*</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">The lock sensor on a door outside handle assembly is touched to perform an entry lock operation with a door open.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+             <table class="item-table">
+<tbody class="item-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                <td class="cellrowborder" width="NaN%">Vehicle theft deterrent</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(All conditions are met)</p> </td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The power switch is off.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">Any door other than the door that locked using the entry lock function is open.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The lock sensor is on or lock switch is pressed on the electrical key transmitter sub-assembly.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is in the exterior detection areas.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The wireless buzzer sounds continuously.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">5 seconds have elapsed after the wireless buzzer is activated.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The power switch is on (ACC) or on (IG).</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">All doors are closed.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The doors are unlocked by a wireless door unlock operation.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The doors are unlocked by a the entry unlock operation.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">Any of the doors are opened.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li> 
+          </ul>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">*: w/ Door Ajar Warning Buzzer Function</p>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: The electrical key transmitter sub-assembly is locked inside the vehicle.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">The electrical key transmitter sub-assembly is locked inside the vehicle.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+             <table class="item-table">
+<tbody class="item-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                <td class="cellrowborder" width="NaN%">Vehicle theft deterrent</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" rowspan="2" width="NaN%">Warning Start Condition</td> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Condition 1 (All conditions are met)</p> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">With a door open, the lock knob is locked and then the door is closed with the door handle being pulled or the power back door is closed and locked by the power back door entry reservation lock function.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is in the vehicle.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">No vehicle speed is detected.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Condition 2 (All conditions are met)*1</p> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The power switch is off.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">All doors are closed and locked.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">Lock operation other than entry lock operation is performed.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is inside vehicle (matching code is detected in vehicle interior).</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds once.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The wireless buzzer sounds continuously.*2</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">"Key Detected in Vehicle" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">5 seconds have elapsed after the wireless buzzer is activated (only wireless buzzer stops).*2</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">60 seconds have elapsed after the warning started.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The power source mode is changed to a mode other than off.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">Any door is opened (only wireless buzzer stops).*2</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The doors are locked.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The vehicle speed is 5 km/h (3 mph) or more.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li> 
+          </ul>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">*1: w/ Double Locking System</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">*2: w/ Wireless Door Lock Buzzer Answer-back Function</p>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: The transmitter battery is weak.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">The vehicle is driven using an electrical key transmitter sub-assembly that has a low transmitter battery.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+             <table class="item-table">
+<tbody class="item-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                <td class="cellrowborder" width="NaN%">Preventing vehicle from becoming impossible to restart, usability function</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" rowspan="2" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(Either Condition 1 or 2 is met)</p> </td> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Condition 1 (All conditions are met)</p> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The power switch is turned off after being left on (IG) for more than 20 minutes.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The transmitter battery voltage is low.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is in the vehicle.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">No vehicle speed is detected.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Condition 2 (All conditions are met)</p> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The hybrid control system is off → the hybrid control system is started</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The transmitter battery voltage is low.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is in the vehicle.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">No vehicle speed is detected.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">Condition 1 has been met. (In the past)</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds once.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">"Key Battery Low Replace Key Battery" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(Either condition is met)</p> </td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">15 seconds have elapsed after the warning started.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The vehicle speed is 5 km/h (3 mph) or more.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: The entry and start system is malfunctioning.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">A malfunction that interferes with the vehicle speed signal malfunction is detected.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+             <table class="item-table">
+<tbody class="item-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                <td class="cellrowborder" width="NaN%">Malfunction detection</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The vehicle speed is judged as abnormal or vehicle speed signal communication is malfunctioning.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds once.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">"Smart Entry &amp; Start System Malfunction See Owner's Manual" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(Either condition is met)</p> </td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">15 seconds have elapsed after the warning started.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The system returns to normal.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: The hybrid control system does not start. (Situation A)</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">When the driver door is opened using the mechanical key and the power switch is pressed, the electrical key transmitter sub-assembly cannot be detected in the vehicle, or when the power switch is pressed, the electrical key transmitter sub-assembly cannot be detected two times in a row.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+             <table class="item-table">
+<tbody class="item-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                <td class="cellrowborder" width="NaN%">Usability function</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The immobiliser system is set.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is not in the vehicle.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">Key code verification error occurs when the power switch is pressed twice or the driver door key-linked unlock operation is performed.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds once.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">"Depress Brake Pedal and Touch Power Switch with Key" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">60 seconds have elapsed after the warning started.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is in the vehicle. (Interior verification succeed or verification succeed when the transmitter battery is depleted and the electrical key transmitter sub-assembly was touched to the power switch.)</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The driver door is opened using the front door outside handle assembly (for driver door) and 30 seconds have elapsed.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: Immobiliser system certification completion occurs.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">When the transmitter battery is depleted, the entry and start system is canceled or wave interference occurs, the electrical key transmitter sub-assembly is touched to the power switch.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+             <table class="item-table">
+<tbody class="item-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                <td align="left" class="cellrowborder" width="NaN%">Usability function</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Warning Start Condition</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">Electrical key transmitter sub-assembly certification result is OK.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds once.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">"Depress Brake Pedal and Push Power Switch to Start" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">10 seconds have elapsed after the warning started.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly is detected by the vehicle.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The hybrid control system is started.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The vehicle can be driven.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The immobiliser system is set and key recognition is stopped or the key cannot be recognized.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: The hybrid control system does not start. (Situation B)</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">There are two patterns for this situation.</p>
+</li> 
+           <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+             <li class="list2-item">
+<p class="li-list2-list2-heading">Pattern 1:</p>
+<p class="item-ptxt">The hybrid control system might be started (when the driver gets in the vehicle, or the power switch is turned on (ACC)).</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+               <table class="item-table">
+<tbody class="item-table"> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                  <td class="cellrowborder" width="NaN%">Usability function</td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(Either condition is met)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">After the doors are unlocked from outside the vehicle with the power switch off, the driver door is opened.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">With the brake pedal not depressed, the power switch is turned on (ACC).</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning description</p> <p class="ptxt">(Not displayed while the opening image is displayed.)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">"Depress Brake Pedal and Push Power Switch to Start" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">19 seconds have elapsed after the warning started.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The hybrid control system is started.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The doors are locked from outside the vehicle.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The doors are locked by a wireless door lock operation from inside the vehicle.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                </tbody>
+</table> 
+              </div>
+</li> 
+             <li class="list2-item">
+<p class="li-list2-list2-heading">Pattern 2:</p>
+<p class="item-ptxt">The hybrid control system might be started (when the power switch is on (IG)).</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+               <table class="item-table">
+<tbody class="item-table"> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                  <td class="cellrowborder" width="NaN%">Usability function</td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(Either condition is met)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">With the brake pedal not depressed, the power switch is turned on (IG) (the hybrid control system is not started).</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is on (IG) (the hybrid control system is not started) and the shift state is changed from a state other than park (P) to park (P).</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">"Depress Brake Pedal and Push Power Switch to Start" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                  <td class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power source mode is changed to any mode other than on (IG).</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The vehicle speed is 5 km/h (3 mph) or more.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">A shift state other than park (P) is selected.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                </tbody>
+</table> 
+              </div>
+</li> 
+            </ul> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: The power switch cannot be turned off.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">There are 2 patterns for this situation.</p>
+</li> 
+           <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+             <li class="list2-item">
+<p class="li-list2-list2-heading">Pattern 1:</p>
+<p class="item-ptxt">A warning message appears on the multi-information display when the driver attempts to turn the power switch off with a shift state other than park (P) selected.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+               <table class="item-table">
+<tbody class="item-table"> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                  <td align="left" class="cellrowborder" width="NaN%">Prevention of auxiliary battery discharge, prevention of vehicle roll-away</td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Warning Start Condition</td> 
+                  <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is turned off with a shift state other than park (P) selected. (Excluding an emergency stop by pressing the power switch 3 times quickly or pressing and holding the power switch for 2 seconds or more.)</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                  <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds once.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">"Shift to P Before Exiting Vehicle" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(Either condition is met)</p> </td> 
+                  <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The shift lever is moved to P.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The power source mode is changed to a mode other than on (ACC).</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                </tbody>
+</table> 
+              </div>
+</li> 
+             <li class="list2-item">
+<p class="li-list2-list2-heading">Pattern 2:</p>
+<p class="item-ptxt">Under the situation of pattern 1, park (P) is selected.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+               <table class="item-table">
+<tbody class="item-table"> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                  <td align="left" class="cellrowborder" width="NaN%">Prevention of auxiliary battery discharge</td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Warning Start Condition</td> 
+                  <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">Park (P) is selected.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                  <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds once.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">"Turn Power Off" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(Either condition is met)</p> </td> 
+                  <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power source mode is changed to a mode other than on (ACC).</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">A shift state other than park (P) is selected.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                </tbody>
+</table> 
+              </div>
+</li> 
+            </ul> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: Auto power off operation occurs.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">A warning message appears on the multi-information display when an automatic power off operation occurs.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+             <table class="item-table">
+<tbody class="item-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                <td align="left" class="cellrowborder" width="NaN%">Usability function</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(All conditions are met)</p> </td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">Park (P) is selected.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The power switch is on (ACC) or on (IG).</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">No vehicle speed is detected and the hybrid control system is stopped.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The power source mode is changed to off by automatic power off function. (20 minutes have elapsed with the power switch on (ACC) or 1 hour has elapsed with the power switch on (IG).)</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">"Auto Power OFF to Conserve Battery" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(Either condition is met)</p> </td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">10 seconds have elapsed after the warning started.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The power switch is turned on (ACC) or on (IG).</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: An electrical key transmitter sub-assembly has been registered.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">A warning message appears on the multi-information display when an electrical key transmitter sub-assembly has been registered to the vehicle.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+             <table class="item-table">
+<tbody class="item-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                <td align="left" class="cellrowborder" width="NaN%">Usability function</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(All conditions are met)</p> </td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The power switch is off.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The driver door is unlocked and opened.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">"A New Key has been Registered Contact Your Dealer for Details" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">60 seconds have elapsed after the warning started.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">10 days have elapsed since the warning was first displayed.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">All doors are closed and locked.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The power switch is on (IG).</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: The shift position is in a position other than P or N with the hybrid control system stopped.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">There are 2 patterns for this situation.</p>
+</li> 
+           <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+             <li class="list2-item">
+<p class="li-list2-list2-heading">Pattern 1:</p>
+<p class="item-ptxt">A warning message appears on the multi-information display when the a shift state other than park (P) or neutral (N) is selected while the power switch is on (ACC) or on (IG).</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+               <table class="item-table">
+<tbody class="item-table"> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                  <td align="left" class="cellrowborder" width="NaN%">Prevention of vehicle roll-away</td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(All conditions are met)</p> </td> 
+                  <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is on (IG).</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">No vehicle speed is detected.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">A shift state other than park (P) or neutral (N).</p>
+<div class="tip">
+                      <p class="tiptitle">Tech Tips</p> 
+                      <p class="ptxt">If the shift state is attempted to be changed to drive (D) or reverse (R), neutral (N) will be selected.</p> 
+                     </div>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                  <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds once.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">"Hybrid System Stopped Shift to P" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                  <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">Park (P) or neutral (N).</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is turned off.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The vehicle speed is 5 km/h (3 mph) or more.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                </tbody>
+</table> 
+              </div>
+</li> 
+             <li class="list2-item">
+<p class="li-list2-list2-heading">Pattern 2:</p>
+<p class="item-ptxt">A warning message appears on the multi-information display when the neutral (N) is selected while the power switch is on (IG).</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+               <table class="item-table">
+<tbody class="item-table"> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                  <td align="left" class="cellrowborder" width="NaN%">Usability function</td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(All conditions are met)</p> </td> 
+                  <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is on (IG).</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The vehicle speed is detected.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The hybrid control system is ready to be started.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">Neutral (N) is selected.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                  <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">"Shift to P Position to Start" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                 <tr> 
+                  <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                  <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                   <ul class="list1"> 
+                    <li class="list1-item">
+<p class="list1-heading">The power switch is turned off, on (ACC) or on (READY).</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The vehicle speed is 5 km/h (3 mph) or more.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">The hybrid control system is not ready to be started.</p>
+</li> 
+                    <li class="list1-item">
+<p class="list1-heading">A shift state other than neutral (N) is selected.</p>
+</li> 
+                   </ul> </td> 
+                 </tr> 
+                </tbody>
+</table> 
+              </div>
+</li> 
+            </ul> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Situation: The vehicle is moving with the power switch on (IG) and the hybrid control system is stopped.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">A warning message appears on the multi-information display if the vehicle begins moving when the power switch is on (IG) and the hybrid control system is stopped.</p>
+<p class="item-ptxt">In this situation, the following control is performed:</p>
+<div class="tablenoborder">
+             <table class="item-table">
+<tbody class="item-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Reason for warning</td> 
+                <td align="left" class="cellrowborder" width="NaN%">Prevention of vehicle roll-away</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Start Condition</p> <p class="ptxt">(All conditions are met)</p> </td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The power switch is on (IG).</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The hybrid control system is stopped.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The vehicle speed is 2 km/h (1 mph) or more.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">A shift state other than park (P) or neutral (N) is selected.</p>
+<div class="tip">
+                    <p class="tiptitle">Tech Tips</p> 
+                    <p class="ptxt">If the shift state is attempted to be changed to drive (D) or reverse (R), neutral (N) will be selected.</p> 
+                   </div>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">Warning description</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The buzzer in the combination meter assembly sounds continuously.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">"Hybrid System Stopped Stop in a Safe Place" is displayed on the multi-information display in the combination meter assembly.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%"> <p class="ptxt">Warning Stop Condition</p> <p class="ptxt">(One condition is met)</p> </td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">The shift lever is moved to N.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The power switch is turned off.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">The hybrid control system is started.</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">No vehicle speed is detected.</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li> 
+          </ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

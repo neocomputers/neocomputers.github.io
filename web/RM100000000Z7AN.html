@@ -1,0 +1,483 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="LANE DEPARTURE ALERT SYSTEM(w/ Steering Control) TERMINALS OF ECU" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058076" name="sectionId"/> 
+  <meta content="CRUISE CONTROL" name="sectionName"/> 
+  <meta content="_0284502" name="ttlId"/> 
+  <meta content="LANE DEPARTURE ALERT SYSTEM(w/ Steering Control)" name="ttlName"/> 
+  <meta content="U" name="paraCategory"/> 
+  <meta content="TERMINALS OF ECU" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000Z7AN" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>LANE DEPARTURE ALERT SYSTEM(w/ Steering Control)</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">LANE DEPARTURE ALERT SYSTEM(w/ Steering Control)<span class="topictitle1"> TERMINALS OF ECU</span>
+</h1>
+<div class="subpara" id="RM100000000Z7AN__RM100000000Z7AN_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000000Z7AN__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK FORWARD RECOGNITION CAMERA</p>
+<div class="note">
+       <p class="notetitle">Note</p> 
+       <br class="note"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">DTCs may be output when connectors are disconnected during inspection. Therefore, be sure to clear the DTCs using the GTS once the inspection has been completed.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Do not apply excessive force to the O6 forward recognition camera connector.</p>
+</li> 
+       </ul> 
+      </div>
+<div class="fignone--bigImage">
+<img alt="B006HL7E70" class="figure-graphic--bigImage" src="../images/b006hl7e70.png"/>
+</div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the O6 forward recognition camera connector.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Measure the voltage and resistance according to the value(s) in the table below.</p>
+<div class="tablenoborder">
+         <table class="big-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EDH" width="NaN%">Terminal No. (Symbol)</th> 
+            <th align="center" class="cellrowborder" id="ID0EJH" width="NaN%">Wiring Color</th> 
+            <th align="center" class="cellrowborder" id="ID0EPH" width="NaN%">Terminal Description</th> 
+            <th align="center" class="cellrowborder" id="ID0EVH" width="NaN%">Condition</th> 
+            <th align="center" class="cellrowborder" id="ID0E2H" width="NaN%">Specified Condition</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EDH " rowspan="2" width="NaN%">O6-7 (IGB) - O6-10 (GND)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EJH " rowspan="2" width="NaN%">LG - W-B</td> 
+            <td align="center" class="cellrowborder" headers="ID0EPH " rowspan="2" width="NaN%">Power source</td> 
+            <td align="center" class="cellrowborder" headers="ID0EVH " width="NaN%">Power switch on (IG)</td> 
+            <td align="center" class="cellrowborder" headers="ID0E2H " width="NaN%">11 to 14 V</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EVH " width="NaN%">Power switch off</td> 
+            <td align="center" class="cellrowborder" headers="ID0E2H " width="NaN%">Below 1 V</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EDH " width="NaN%">O6-10 (GND) - Body ground</td> 
+            <td align="center" class="cellrowborder" headers="ID0EJH " width="NaN%">W-B - Body ground</td> 
+            <td align="center" class="cellrowborder" headers="ID0EPH " width="NaN%">Ground</td> 
+            <td align="center" class="cellrowborder" headers="ID0EVH " width="NaN%">Always</td> 
+            <td align="center" class="cellrowborder" headers="ID0E2H " width="NaN%">Below 1 Ω</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Reconnect the O6 forward recognition camera connector.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Check for pulses according to the value(s) in the table below.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If the waveform is not similar to that shown in the illustration, a malfunction of a CAN bus line, terminating resistor, or the forward recognition camera is suspected.</p> 
+        </div>
+<div class="tablenoborder">
+         <table class="big-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EKFAC" width="NaN%">Terminal No. (Symbol)</th> 
+            <th align="center" class="cellrowborder" id="ID0EQFAC" width="NaN%">Wiring Color</th> 
+            <th align="center" class="cellrowborder" id="ID0EWFAC" width="NaN%">Terminal Description</th> 
+            <th align="center" class="cellrowborder" id="ID0E3FAC" width="NaN%">Condition</th> 
+            <th align="center" class="cellrowborder" id="ID0ECGAC" width="NaN%">Specified Condition</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EKFAC " width="NaN%">O6-5 (CA1P) - O6-10 (GND)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQFAC " width="NaN%">GR - W-B</td> 
+            <td align="center" class="cellrowborder" headers="ID0EWFAC " width="NaN%">CAN communication signal</td> 
+            <td align="center" class="cellrowborder" headers="ID0E3FAC " width="NaN%">Power switch on (IG)</td> 
+            <td align="center" class="cellrowborder" headers="ID0ECGAC " width="NaN%"> <p class="ptxt">Pulse generation</p> <p class="ptxt">(See waveform 1)</p> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EKFAC " width="NaN%">O6-11 (CA1N) - O6-10 (GND)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQFAC " width="NaN%">W - W-B</td> 
+            <td align="center" class="cellrowborder" headers="ID0EWFAC " width="NaN%">CAN communication signal</td> 
+            <td align="center" class="cellrowborder" headers="ID0E3FAC " width="NaN%">Power switch on (IG)</td> 
+            <td align="center" class="cellrowborder" headers="ID0ECGAC " width="NaN%"> <p class="ptxt">Pulse generation</p> <p class="ptxt">(See waveform 2)</p> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EKFAC " width="NaN%">O6-6 (CANH) - O6-10 (GND)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQFAC " width="NaN%">G - W-B</td> 
+            <td align="center" class="cellrowborder" headers="ID0EWFAC " width="NaN%">CAN communication signal</td> 
+            <td align="center" class="cellrowborder" headers="ID0E3FAC " width="NaN%">Power switch on (IG)</td> 
+            <td align="center" class="cellrowborder" headers="ID0ECGAC " width="NaN%"> <p class="ptxt">Pulse generation</p> <p class="ptxt">(See waveform 1)</p> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EKFAC " width="NaN%">O6-12 (CANL) - O6-10 (GND)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQFAC " width="NaN%">W - W-B</td> 
+            <td align="center" class="cellrowborder" headers="ID0EWFAC " width="NaN%">CAN communication signal</td> 
+            <td align="center" class="cellrowborder" headers="ID0E3FAC " width="NaN%">Power switch on (IG)</td> 
+            <td align="center" class="cellrowborder" headers="ID0ECGAC " width="NaN%"> <p class="ptxt">Pulse generation</p> <p class="ptxt">(See waveform 2)</p> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="B006I8KE97" class="figure-graphic" src="../images/b006i8ke97.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<caption class="p-table">
+               
+              </caption>
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%">1 V/DIV.</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td align="left" class="cellrowborder" width="NaN%">10 μsec./DIV.</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="step3-heading">WAVEFORM 1</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EMNAC" width="NaN%">Item</th> 
+              <th align="center" class="cellrowborder" id="ID0ESNAC" width="NaN%">Content</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EMNAC " width="NaN%">Terminal Name</td> 
+              <td align="center" class="cellrowborder" headers="ID0ESNAC " width="NaN%"> <p class="ptxt">Between O6-5 (CA1P) and O6-10 (GND)</p> <p class="ptxt">Between O6-6 (CANH) and O6-10 (GND)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EMNAC " width="NaN%">Tester Range</td> 
+              <td align="center" class="cellrowborder" headers="ID0ESNAC " width="NaN%">1 V/DIV., 10 μsec./DIV.</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EMNAC " width="NaN%">Condition</td> 
+              <td align="center" class="cellrowborder" headers="ID0ESNAC " width="NaN%">Power switch on (IG)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">The waveform varies depending on the CAN communication signal.</p> 
+          </div>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="B006HXVE89" class="figure-graphic" src="../images/b006hxve89.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<caption class="p-table">
+               
+              </caption>
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%">1 V/DIV.</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td align="left" class="cellrowborder" width="NaN%">10 μsec./DIV.</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="step3-heading">WAVEFORM 2</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EZDAE" width="NaN%">Item</th> 
+              <th align="center" class="cellrowborder" id="ID0E6DAE" width="NaN%">Content</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EZDAE " width="NaN%">Terminal Name</td> 
+              <td align="center" class="cellrowborder" headers="ID0E6DAE " width="NaN%"> <p class="ptxt">Between O6-11 (CA1N) and O6-10 (GND)</p> <p class="ptxt">Between O6-12 (CANL) and O6-10 (GND)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EZDAE " width="NaN%">Tester Range</td> 
+              <td align="center" class="cellrowborder" headers="ID0E6DAE " width="NaN%">1 V/DIV., 10 μsec./DIV.</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EZDAE " width="NaN%">Condition</td> 
+              <td align="center" class="cellrowborder" headers="ID0E6DAE " width="NaN%">Power switch on (IG)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">The waveform varies depending on the CAN communication signal.</p> 
+          </div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK DRIVING SUPPORT ECU ASSEMBLY</p>
+<div class="fignone--bigImage">
+<img alt="B006HZUE39" class="figure-graphic--bigImage" src="../images/b006hzue39.png"/>
+</div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Measure the voltage and resistance according to the value(s) in the table below.</p>
+<div class="tablenoborder">
+         <table class="big-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EXLAE" width="NaN%">Terminal No. (Symbol)</th> 
+            <th align="center" class="cellrowborder" id="ID0E4LAE" width="NaN%">Wiring Color</th> 
+            <th align="center" class="cellrowborder" id="ID0EDMAE" width="NaN%">Terminal Description</th> 
+            <th align="center" class="cellrowborder" id="ID0EJMAE" width="NaN%">Condition</th> 
+            <th align="center" class="cellrowborder" id="ID0EPMAE" width="NaN%">Specified Condition</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EXLAE " rowspan="2" width="NaN%">I41-7 (B) - I41-28 (GND)</td> 
+            <td align="center" class="cellrowborder" headers="ID0E4LAE " rowspan="2" width="NaN%"> <p class="ptxt">P - W-B *1</p> <p class="ptxt">B - W-B *2</p> </td> 
+            <td align="center" class="cellrowborder" headers="ID0EDMAE " rowspan="2" width="NaN%">Power source</td> 
+            <td align="center" class="cellrowborder" headers="ID0EJMAE " width="NaN%">Power switch on (IG)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EPMAE " width="NaN%">11 to 14 V</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EJMAE " width="NaN%">Power switch off</td> 
+            <td align="center" class="cellrowborder" headers="ID0EPMAE " width="NaN%">Below 1 V</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EXLAE " rowspan="2" width="NaN%">I41-23 (SPSW) - I41-28 (GND)</td> 
+            <td align="center" class="cellrowborder" headers="ID0E4LAE " rowspan="2" width="NaN%">GR - W-B</td> 
+            <td align="center" class="cellrowborder" headers="ID0EDMAE " rowspan="2" width="NaN%"> <p class="ptxt">Steering pad switch signal</p> <p class="ptxt">(Lane departure alert main switch signal)</p> </td> 
+            <td align="center" class="cellrowborder" headers="ID0EJMAE " width="NaN%"> <p class="ptxt">Power switch off</p> <p class="ptxt">Lane departure alert main switch off</p> </td> 
+            <td align="center" class="cellrowborder" headers="ID0EPMAE " width="NaN%">1 MΩ or higher</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EJMAE " width="NaN%"> <p class="ptxt">Power switch off</p> <p class="ptxt">Lane departure alert main switch on</p> </td> 
+            <td align="center" class="cellrowborder" headers="ID0EPMAE " width="NaN%">228 to 252 Ω</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EXLAE " width="NaN%">I41-28 (GND) - Body ground</td> 
+            <td align="center" class="cellrowborder" headers="ID0E4LAE " width="NaN%">W-B - Body ground</td> 
+            <td align="center" class="cellrowborder" headers="ID0EDMAE " width="NaN%">Ground</td> 
+            <td align="center" class="cellrowborder" headers="ID0EJMAE " width="NaN%">Always</td> 
+            <td align="center" class="cellrowborder" headers="ID0EPMAE " width="NaN%">Below 1 Ω</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<p class="footnote">*1: for LHD</p>
+<p class="footnote">*2: for RHD</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Check for pulses according to the value(s) in the table below.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If the waveform is not similar to that shown in the illustration, a malfunction of a CAN bus line, terminating resistor, or the driving support ECU assembly is suspected.</p> 
+        </div>
+<div class="tablenoborder">
+         <table class="big-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E5UAE" width="NaN%">Terminal No. (Symbol)</th> 
+            <th align="center" class="cellrowborder" id="ID0EEVAE" width="NaN%">Wiring Color</th> 
+            <th align="center" class="cellrowborder" id="ID0EKVAE" width="NaN%">Terminal Description</th> 
+            <th align="center" class="cellrowborder" id="ID0EQVAE" width="NaN%">Condition</th> 
+            <th align="center" class="cellrowborder" id="ID0EWVAE" width="NaN%">Specified Condition</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E5UAE " width="NaN%">I41-8 (CA1P) - I41-28 (GND)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EEVAE " width="NaN%">LG - W-B</td> 
+            <td align="center" class="cellrowborder" headers="ID0EKVAE " width="NaN%">CAN communication signal</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQVAE " width="NaN%">Power switch on (IG)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EWVAE " width="NaN%"> <p class="ptxt">Pulse generation</p> <p class="ptxt">(See waveform 1)</p> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E5UAE " width="NaN%">I41-9 (CA1N) - I41-28 (GND)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EEVAE " width="NaN%">W - W-B</td> 
+            <td align="center" class="cellrowborder" headers="ID0EKVAE " width="NaN%">CAN communication signal</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQVAE " width="NaN%">Power switch on (IG)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EWVAE " width="NaN%"> <p class="ptxt">Pulse generation</p> <p class="ptxt">(See waveform 2)</p> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E5UAE " width="NaN%">I41-10 (CA2H) - I41-28 (GND)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EEVAE " width="NaN%">G - W-B</td> 
+            <td align="center" class="cellrowborder" headers="ID0EKVAE " width="NaN%">CAN communication signal</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQVAE " width="NaN%">Power switch on (IG)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EWVAE " width="NaN%"> <p class="ptxt">Pulse generation</p> <p class="ptxt">(See waveform 1)</p> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E5UAE " width="NaN%">I41-11 (CA2L) - I41-28 (GND)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EEVAE " width="NaN%">W - W-B</td> 
+            <td align="center" class="cellrowborder" headers="ID0EKVAE " width="NaN%">CAN communication signal</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQVAE " width="NaN%">Power switch on (IG)</td> 
+            <td align="center" class="cellrowborder" headers="ID0EWVAE " width="NaN%"> <p class="ptxt">Pulse generation</p> <p class="ptxt">(See waveform 2)</p> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="B006I8KE97" class="figure-graphic" src="../images/b006i8ke97.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<caption class="p-table">
+               
+              </caption>
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%">1 V/DIV.</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td align="left" class="cellrowborder" width="NaN%">10 μsec./DIV.</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="step3-heading">WAVEFORM 1</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EA4AE" width="NaN%">Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EG4AE" width="NaN%">Content</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EA4AE " width="NaN%">Terminal Name</td> 
+              <td align="center" class="cellrowborder" headers="ID0EG4AE " width="NaN%"> <p class="ptxt">Between I41-8 (CA1P) - I41-28 (GND)</p> <p class="ptxt">Between I41-10 (CA2H) - I41-28 (GND)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EA4AE " width="NaN%">Tester Range</td> 
+              <td align="center" class="cellrowborder" headers="ID0EG4AE " width="NaN%">1 V/DIV., 10 μsec./DIV.</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EA4AE " width="NaN%">Condition</td> 
+              <td align="center" class="cellrowborder" headers="ID0EG4AE " width="NaN%">Power switch on (IG)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">The waveform varies depending on the CAN communication signal.</p> 
+          </div>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="B006HXVE89" class="figure-graphic" src="../images/b006hxve89.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<caption class="p-table">
+               
+              </caption>
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%">1 V/DIV.</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td align="left" class="cellrowborder" width="NaN%">10 μsec./DIV.</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="step3-heading">WAVEFORM 2</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ENDAG" width="NaN%">Item</th> 
+              <th align="center" class="cellrowborder" id="ID0ETDAG" width="NaN%">Content</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ENDAG " width="NaN%">Terminal Name</td> 
+              <td align="center" class="cellrowborder" headers="ID0ETDAG " width="NaN%"> <p class="ptxt">Between I41-9 (CA1N) - I41-28 (GND)</p> <p class="ptxt">Between I41-11 (CA2L) - I41-28 (GND)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ENDAG " width="NaN%">Tester Range</td> 
+              <td align="center" class="cellrowborder" headers="ID0ETDAG " width="NaN%">1 V/DIV., 10 μsec./DIV.</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ENDAG " width="NaN%">Condition</td> 
+              <td align="center" class="cellrowborder" headers="ID0ETDAG " width="NaN%">Power switch on (IG)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">The waveform varies depending on the CAN communication signal.</p> 
+          </div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

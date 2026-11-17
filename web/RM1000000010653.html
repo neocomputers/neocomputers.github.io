@@ -1,0 +1,858 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/o Canister Pump Module), Diagnostic DTC:P003012, P003013, P101A9E" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290547" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/o Canister Pump Module)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000010653" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P003012, P003013, P101A9E</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/o Canister Pump Module), Diagnostic DTC:P003012, P003013, P101A9E</h1>
+<div class="section" id="RM1000000010653__RM1000000010653_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P003012</td> 
+       <td class="dtcname" headers="ID0EED">HO2S Heater Control Bank 1 Sensor 1 Circuit Short to Battery</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P003013</td> 
+       <td class="dtcname" headers="ID0EED">HO2S Heater Control Bank 1 Sensor 1 Circuit Open</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P101A9E</td> 
+       <td class="dtcname" headers="ID0EED">A/F Sensor Heater Performance Bank 1 Sensor 1 Stuck On</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM1000000010653__RM1000000010653_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">Refer to DTC P21951D.</p> 
+    <p class="content5-ptxt"> <a class="ptxt-xref" href="RM100000001066G.html#RM100000001066G_01">Click here</a>
+</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">Although the DTC titles say oxygen sensor, these DTCs relate to the air fuel ratio sensor.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">When any of these DTCs are stored, the ECM enters fail-safe mode. The ECM turns off the air fuel ratio sensor heater in fail-safe mode. Fail-safe mode continues until the power switch is turned off.</p>
+</li> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<p class="list1-heading">The ECM has a pulse width modulated control circuit to adjust the current through the heater. The air fuel ratio sensor heater circuit uses a relay on the +B side of the circuit.</p>
+<div class="fignone--bigImage">
+<img alt="B006HB5E05" class="figure-graphic--bigImage" src="../images/b006hb5e05.png"/>
+</div>
+</li> 
+     </ul> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0E4AAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EDBAC" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EJBAC" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EPBAC" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EVBAC" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0E2BAC" width="NaN%">Memory</th> 
+        <th align="center" class="cellrowborder" id="ID0EBCAC" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0E4AAC " width="NaN%">P003012</td> 
+        <td align="left" class="cellrowborder" headers="ID0EDBAC " width="NaN%">HO2S Heater Control Bank 1 Sensor 1 Circuit Short to Battery</td> 
+        <td align="left" class="cellrowborder" headers="ID0EJBAC " width="NaN%">The air fuel ratio sensor heater current is the specified value or higher while the heater is operating (1 trip detection logic).</td> 
+        <td align="left" class="cellrowborder" headers="ID0EPBAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Short in air fuel ratio sensor (sensor 1) heater circuit</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Air fuel ratio sensor (sensor 1)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EVBAC " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0E2BAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EBCAC " width="NaN%">SAE Code: P0032</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0E4AAC " width="NaN%">P003013</td> 
+        <td align="left" class="cellrowborder" headers="ID0EDBAC " width="NaN%">HO2S Heater Control Bank 1 Sensor 1 Circuit Open</td> 
+        <td align="left" class="cellrowborder" headers="ID0EJBAC " width="NaN%">The air fuel ratio sensor heater current is less than the specified value while the heater is operating (1 trip detection logic).</td> 
+        <td align="left" class="cellrowborder" headers="ID0EPBAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Open or short in air fuel ratio sensor (sensor 1) heater circuit</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Air fuel ratio sensor (sensor 1)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EVBAC " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0E2BAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EBCAC " width="NaN%">SAE Code: P0031</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0E4AAC " width="NaN%">P101A9E</td> 
+        <td align="left" class="cellrowborder" headers="ID0EDBAC " width="NaN%">A/F Sensor Heater Performance Bank 1 Sensor 1 Stuck On</td> 
+        <td align="left" class="cellrowborder" headers="ID0EJBAC " width="NaN%">The air fuel ratio sensor heater current is higher than the specified value while the heater is not operating (1 trip detection logic).</td> 
+        <td align="left" class="cellrowborder" headers="ID0EPBAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Short in air fuel ratio sensor (sensor 1) heater circuit</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Air fuel ratio sensor (sensor 1)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ECM</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EVBAC " width="NaN%">Comes on</td> 
+        <td align="left" class="cellrowborder" headers="ID0E2BAC " width="NaN%">DTC stored</td> 
+        <td align="left" class="cellrowborder" headers="ID0EBCAC " width="NaN%">SAE Code: P101D</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000010653__RM1000000010653_12">
+     
+    <p class="subpara-subparaName">MONITOR DESCRIPTION</p> 
+    <p class="content5-ptxt">The ECM uses information from the air fuel ratio sensor to regulate the air fuel ratio and keep it close to the stoichiometric air fuel ratio. This maximizes the ability of the three-way catalytic converter to purify the exhaust gases.</p> 
+    <p class="content5-ptxt">The air fuel ratio sensor detects oxygen levels in the exhaust gas and transmits the information to the ECM. The inner surface of the sensor element is exposed to the outside air. The outer surface of the sensor element is exposed to the exhaust gas. The sensor element is made of platinum-coated zirconia and includes an integrated heating element.</p> 
+    <p class="content5-ptxt">The zirconia element generates a small voltage when there is a large difference in the oxygen concentrations between the exhaust gas and outside air. The platinum coating amplifies this voltage generation.</p> 
+    <p class="content5-ptxt">The air fuel ratio sensor is more efficient when heated. When the exhaust gas temperature is low, the sensor cannot generate a useful voltage without supplementary heating. The ECM regulates the supplementary heating using a duty-cycle approach to adjust the average current in the sensor heater element. If the heater current is outside the normal range, the signal transmitted by the air fuel ratio sensor becomes inaccurate. As a result, the ECM is unable to regulate the air fuel ratio properly.</p> 
+    <p class="content5-ptxt">When the current in the air fuel ratio sensor heater is outside the normal operating range, the ECM interprets this as a malfunction of the sensor heater and stores a DTC.</p> 
+   </div>
+<div class="subpara" id="RM1000000010653__RM1000000010653_13">
+     
+    <p class="subpara-subparaName">MONITOR STRATEGY</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Required Sensors/Components</td> 
+        <td class="cellrowborder" width="NaN%">Air fuel ratio sensor (sensor 1) heater</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Frequency of Operation</td> 
+        <td class="cellrowborder" width="NaN%">Continuous</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000010653__RM1000000010653_14">
+     
+    <p class="subpara-subparaName">TYPICAL ENABLING CONDITIONS</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P003012
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Output duty cycle</td> 
+        <td class="cellrowborder" width="NaN%">Higher than 0%</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P003013
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" width="NaN%">Output duty cycle</td> 
+        <td class="cellrowborder" width="NaN%">30% or higher</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       P101A9E
+      </caption>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" width="NaN%">Output duty cycle</td> 
+        <td align="left" class="cellrowborder" width="NaN%">Less than 60%</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000010653__RM1000000010653_17">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <div class="fignone--bigImage">
+<img alt="B006I78E76" class="figure-graphic--bigImage" src="../images/b006i78e76.png"/>
+</div> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) [A].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Put the engine in Inspection Mode (Maintenance Mode).</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001145U.html#RM100000001145U">Click here</a>
+</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Start the engine and idle it for 5 minutes or more [B].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">With the vehicle stationary, depress the accelerator pedal and maintain an engine speed of 2500 rpm for 1 minute [C].</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">During charge control, the engine speed is set at idle. Therefore, the engine speed will not increase when the accelerator pedal is depressed. In this case, perform steps [C] and [D] after charge control has completed.</p> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Idle the engine for 5 minutes or more [D].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes [E].</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Read the pending DTCs.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is output, the system is malfunctioning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If a pending DTC is not output, perform the following procedure.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Input the DTC: P003012, P003013 or P101A9E.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tablenoborder">
+       <table class="item-table">
+<thead align="left" class="item-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0ECLAE" width="NaN%">GTS Display</th> 
+          <th align="center" class="cellrowborder" id="ID0EILAE" width="NaN%">Description</th> 
+         </tr> 
+        </thead>
+<tbody class="item-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ECLAE " width="NaN%">NORMAL</td> 
+          <td class="cellrowborder" headers="ID0EILAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System normal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ECLAE " width="NaN%">ABNORMAL</td> 
+          <td class="cellrowborder" headers="ID0EILAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">System abnormal</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ECLAE " width="NaN%">INCOMPLETE</td> 
+          <td class="cellrowborder" headers="ID0EILAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTC judgment not completed</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Perform driving pattern after confirming DTC enabling conditions</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ECLAE " width="NaN%">N/A</td> 
+          <td class="cellrowborder" headers="ID0EILAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Unable to perform DTC judgment</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Number of DTCs which do not fulfill DTC preconditions has reached ECU memory limit</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is NORMAL, the system is normal.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is ABNORMAL, the system is malfunctioning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result is INCOMPLETE or N/A, perform steps [B] through [E] again.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM1000000010653__RM1000000010653_07">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <p class="content5-ptxt">Refer to DTC P21951D.</p> 
+    <p class="content5-ptxt"> <a class="ptxt-xref" href="RM100000001066G.html#RM100000001066G_07">Click here</a>
+</p> 
+   </div>
+<div class="subpara" id="RM1000000010653__RM1000000010653_08">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">Inspect the fuses for circuits related to this system before performing the following procedure.</p> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">The operation of the air fuel ratio sensor heater can be checked by referring to the Data List item A/F (O2) Sensor Heater Duty Ratio B1S1.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001AMDQ.html#RM100000001AMDQ">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Sensor 1 refers to the sensor closest to the engine assembly.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Sensor 2 refers to the sensor farthest away from the engine assembly.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Change the fuel injection volume using the Active Test "Control the Injection Volume for A/F Sensor" and monitor the air fuel ratio sensor output voltage  <a class="ptxt-xref" href="RM100000001065J.html#RM100000001065J">Click here</a>. If the air fuel ratio sensor output voltage does not change (almost no reaction) while performing the Active Test, the air fuel ratio sensor may be malfunctioning.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Read freeze frame data using the GTS. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air fuel ratio was lean or rich, and other data from the time the malfunction occurred.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000010653__RM1000000010653_19">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM1000000010653__RM1000000010653_19_0001">
+<p class="testgrp-heading">INSPECT AIR FUEL RATIO SENSOR (HEATER RESISTANCE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the air fuel ratio sensor.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000010686.html#RM1000000010686">Click here</a>
+</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Perform "Inspection After Repair" after replacing the air fuel ratio sensor.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM100000001064I.html#RM100000001064I">Click here</a>
+</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENZAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENZAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQ1AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQ1AE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQ1AE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE AIR FUEL RATIO SENSOR <a class="content6-ptxt-xref" href="RM1000000010688.html#RM1000000010688">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010653__RM1000000010653_19_0002">
+<p class="testgrp-heading">CHECK TERMINAL VOLTAGE (POWER SOURCE OF AIR FUEL RATIO SENSOR)</p>
+<div class="ie8fixer"/>
+<div class="fignone"> 
+       <img alt="B006HGRC27" class="figure-graphic" src="../images/b006hgrc27.png"/> 
+       <div class="figure-p"> 
+        <div class="tablenoborder">
+         <table class="p-table">
+<tbody class="p-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+            <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Air Fuel Ratio Sensor)</p> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div> 
+       </div> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the air fuel ratio sensor connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2AAG" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2AAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EICAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EOCAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EUCAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EICAG " width="NaN%">C24-2 (+B) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOCAG " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EUCAG " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EGEAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EGEAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJFAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJFAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJFAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR (NO. 1 INTEGRATION RELAY - AIR FUEL RATIO SENSOR) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010653__RM1000000010653_19_0003">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (AIR FUEL RATIO SENSOR - ECM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the air fuel ratio sensor connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the ECM connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECJAG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECJAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQKAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EWKAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3KAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQKAG " width="NaN%">C24-1 (HA1A) - C31-27 (HA1A)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWKAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3KAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQKAG " width="NaN%">C24-1 (HA1A) or C31-27 (HA1A) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWKAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3KAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EENAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EENAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EHOAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHOAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EHOAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010653__RM1000000010653_19_0022">
+<p class="testgrp-heading">CLEAR DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EWVAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EWVAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EZWAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZWAG " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM1000000010653__RM1000000010653_19_0004">
+<p class="testgrp-heading">CHECK WHETHER DTC OUTPUT RECURS (DTC P003012, P003013 OR P101A9E)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Drive the vehicle in accordance with the driving pattern described in Confirmation Driving Pattern.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E63AG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E63AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EI5AG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EO5AG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EI5AG " width="NaN%">DTCs are not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EO5AG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EI5AG " width="NaN%">DTC P003012, P003013 or P101A9E is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EO5AG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHECK FOR INTERMITTENT PROBLEMS <a class="content6-ptxt-xref" href="RM100000001064F.html#RM100000001064F">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ECM <a class="content6-ptxt-xref" href="RM100000001067I.html#RM100000001067I">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

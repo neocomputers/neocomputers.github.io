@@ -1,0 +1,1932 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="HYBRID CONTROL SYSTEM DIAGNOSIS SYSTEM" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296362" name="ttlId"/> 
+  <meta content="HYBRID CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="DIAGNOSIS SYSTEM" name="paraName"/> 
+  <meta content="201801" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001AGZA" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>HYBRID CONTROL SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">HYBRID CONTROL SYSTEM<span class="topictitle1"> DIAGNOSIS SYSTEM</span>
+</h1>
+<div class="subpara" id="RM100000001AGZA__RM100000001AGZA_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000001AGZA__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">DESCRIPTION</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">The hybrid vehicle control ECU has a self-diagnosis system. If the computer, hybrid control system, or a component is not working properly, the ECU records the conditions that relate to the fault. The ECU also illuminates the master warning light in the combination meter assembly and provides other appropriate messages on the multi-information display, such as the HV system warning message, HV battery warning message, or discharge warning message.</p>
+<div class="fignone--bigImage">
+<img alt="B006JBCC01" class="figure-graphic--bigImage" src="../images/b006jbcc01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*A</td> 
+              <td align="left" class="cellrowborder" width="NaN%">for LHD</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*B</td> 
+              <td align="left" class="cellrowborder" width="NaN%">for RHD</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%">MIL</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Charge Warning Light</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+              <td align="left" class="cellrowborder" width="NaN%">READY Light</td> 
+              <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Master Warning Light</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*e</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Multi-information Display</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">The master warning light will illuminate when the hybrid control system is malfunctioning and the light will blink when in inspection mode.</p> 
+        </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">2 TRIP DETECTION LOGIC</p>
+<br class="step1Root-step1"/>
+<ul class="step1-list1 nonmark"> 
+       <p class="list1-li-title">
+<strong class="li-title-title">Following is the description for storage of DTC using "2 trip detection logic".</strong>
+</p> 
+       <li class="list1-item">
+<p class="step1-list1-nonmark-heading">When a malfunction is first detected, the malfunction is temporarily stored in the hybrid vehicle control ECU memory (1st trip). If the same malfunction is detected during the next drive cycle, the MIL is illuminated (2nd trip).</p>
+</li> 
+      </ul>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">FREEZE FRAME DATA</p>
+<br class="step1Root-step1"/>
+<ul class="step1-list1 nonmark"> 
+       <li class="list1-item">
+<p class="step1-list1-nonmark-heading">The hybrid vehicle control ECU records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was moving or stationary, whether the engine was warmed up or not, as well as other data recorded at the time of a malfunction.</p>
+</li> 
+      </ul>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">AUXILIARY BATTERY VOLTAGE</p>
+<table class="spec-with-table"/>
+<br class="step1Root-step1"/>
+<ul class="step1-list1 nonmark"> 
+       <li class="list1-item">
+<p class="step1-list1-nonmark-heading">If voltage is below 11 V, recharge or replace the auxiliary battery.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After turning the power switch off, waiting time may be required before disconnecting the cable from the negative (-) auxiliary battery terminal. Therefore, make sure to read the disconnecting the cable from the negative (-) auxiliary battery terminal notices before proceeding with work.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM100000001AAN7.html#RM100000001AAN7">Click here</a>
+</p> 
+        </div>
+</li> 
+      </ul>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">MIL (Malfunction Indicator Lamp)</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">The MIL is illuminated when the power switch is first turned on (IG), before the READY light comes on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">When the READY indicator turns on, the MIL should turn off. If the MIL remains illuminated, the diagnosis system has detected a malfunction or abnormality in the system.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If the MIL is not illuminated when the power switch is first turned on (IG), check the MIL circuit.</p> 
+         <p class="ptxt">for SFI System (w/ Canister Pump Module): <a class="ptxt-xref" href="RM100000001063V.html#RM100000001063V">Click here</a>
+</p> 
+         <p class="ptxt">for SFI System (w/o Canister Pump Module): <a class="ptxt-xref" href="RM100000001066V.html#RM100000001066V">Click here</a>
+</p> 
+        </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">RELEVANT SYSTEMS CHECK</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">The inspection areas and outline of the inspection for each circuit are listed below.</p>
+<div class="fignone--bigImage">
+<img alt="B006IBXE02" class="figure-graphic--bigImage" src="../images/b006ibxe02.png"/>
+</div>
+<div class="tablenoborder">
+       <table class="step1-table">
+<caption class="step1-table">
+         Inspection Details of Relevant Systems
+        </caption>
+<thead align="left" class="step1-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0EMMAC" width="NaN%">System to be Inspected</th> 
+          <th align="center" class="cellrowborder" id="ID0ESMAC" width="NaN%">Malfunction Possibility</th> 
+          <th align="center" class="cellrowborder" id="ID0EYMAC" width="NaN%">Inspection Content</th> 
+         </tr> 
+        </thead>
+<tbody class="step1-table"> 
+         <tr> 
+          <td align="left" class="cellrowborder" headers="ID0EMMAC " width="NaN%">Motor Resolver Circuit</td> 
+          <td class="cellrowborder" headers="ID0ESMAC " width="NaN%">Motor resolver signal</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1 nonmark"> 
+            <li class="list1-item">
+<p class="list1-nonmark-heading">Open or short circuit in the motor resolver, connectors or cables</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="left" class="cellrowborder" headers="ID0EMMAC " width="NaN%">Motor High-voltage Circuit</td> 
+          <td class="cellrowborder" headers="ID0ESMAC " width="NaN%">Motor (MG2) output</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1 nonmark"> 
+            <li class="list1-item">
+<p class="list1-nonmark-heading">Open or short circuit in the motor (MG2), connectors or cables</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="left" class="cellrowborder" headers="ID0EMMAC " width="NaN%">Generator Resolver Circuit</td> 
+          <td class="cellrowborder" headers="ID0ESMAC " width="NaN%">Generator resolver signal</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1 nonmark"> 
+            <li class="list1-item">
+<p class="list1-nonmark-heading">Open or short circuit in the generator resolver, connectors or cables</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="left" class="cellrowborder" headers="ID0EMMAC " width="NaN%">Generator High-voltage Circuit</td> 
+          <td class="cellrowborder" headers="ID0ESMAC " width="NaN%">Generator (MG1) output</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1 nonmark"> 
+            <li class="list1-item">
+<p class="list1-nonmark-heading">Open or short circuit in the generator (MG1), connectors or cables</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="left" class="cellrowborder" headers="ID0EMMAC " width="NaN%">Inverter Low-voltage Circuit</td> 
+          <td class="cellrowborder" headers="ID0ESMAC " width="NaN%">Power supply voltage from +B or communication between hybrid vehicle control ECU and motor generator control ECU</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Open or short circuit in communication line between hybrid vehicle control ECU and motor generator control ECU</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Open or short circuit in the +B or ground lines</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Fuse is blown</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="left" class="cellrowborder" headers="ID0EMMAC " width="NaN%">HV Battery High-voltage Line Circuit</td> 
+          <td class="cellrowborder" headers="ID0ESMAC " width="NaN%">High voltage power supply from HV battery</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1 nonmark"> 
+            <li class="list1-item">
+<p class="list1-nonmark-heading">Open or short circuit in the system main relay, connectors or cables</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="left" class="cellrowborder" headers="ID0EMMAC " width="NaN%">Cooling System</td> 
+          <td class="cellrowborder" headers="ID0ESMAC " width="NaN%">Temperature abnormally high</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Grille blockage</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Whether coolant is present</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Whether there is a possibility that coolant was frozen when malfunction occurs</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Cooling hose blockage</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">HV radiator fan operation</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="left" class="cellrowborder" headers="ID0EMMAC " width="NaN%">Shutdown Signal Circuit</td> 
+          <td class="cellrowborder" headers="ID0ESMAC " width="NaN%">Shutdown signal</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAC " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1 nonmark"> 
+            <li class="list1-item">
+<p class="list1-nonmark-heading">Open or short circuit in shutdown signal communication line between hybrid vehicle control ECU and motor generator ECU</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">DTC PRIORITY LEVEL AND TROUBLE AREAS</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ul class="step1-list1"> 
+       <li class="list1-item">
+<p class="step1-list1-heading">Each DTC diagnostic procedure for the hybrid control system consists of a combination of the various relevant system (circuit) inspections.</p>
+</li> 
+       <li class="list1-item">
+<p class="step1-list1-heading">When multiple DTCs are output, performing each diagnostic procedure in order of priority can lead to a more accurate diagnosis.</p>
+</li> 
+      </ul>
+<div class="fignone--bigImage">
+<img alt="B006INRE02" class="figure-graphic--bigImage" src="../images/b006inre02.png"/>
+</div>
+<div class="tablenoborder">
+       <table class="big-table">
+<caption class="step1-table">
+         Inspection Details of Relevant Systems
+        </caption>
+<thead align="left" class="step1-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0ERMAE" rowspan="3" width="NaN%">DTC No.</th> 
+          <th align="center" class="cellrowborder" id="ID0EYMAE" rowspan="3" width="NaN%">Detection Item</th> 
+          <th align="center" class="cellrowborder" colspan="5" id="ID0E6MAE">Order of Priority</th> 
+          <th align="center" class="cellrowborder" id="ID0EHNAE" rowspan="3" width="NaN%">Inspection Pattern</th> 
+         </tr> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0ESNAE" width="NaN%">1</th> 
+          <th align="center" class="cellrowborder" id="ID0EYNAE" width="NaN%">2</th> 
+          <th align="center" class="cellrowborder" id="ID0E5NAE" width="NaN%">3</th> 
+          <th align="center" class="cellrowborder" id="ID0EEOAE" width="NaN%">4</th> 
+          <th align="center" class="cellrowborder" id="ID0EKOAE" width="NaN%">5</th> 
+         </tr> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0EUOAE" width="NaN%">Microcomputer Malfunction</th> 
+          <th align="center" class="cellrowborder" id="ID0E1OAE" width="NaN%">Power Source Circuit Malfunction</th> 
+          <th align="center" class="cellrowborder" id="ID0EAPAE" width="NaN%">Communication System Malfunction</th> 
+          <th align="center" class="cellrowborder" id="ID0EGPAE" width="NaN%">Sensor and Actuator Circuit Malfunction</th> 
+          <th align="center" class="cellrowborder" id="ID0EMPAE" width="NaN%">System Malfunction</th> 
+         </tr> 
+        </thead>
+<tbody class="step1-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P056014</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">System Voltage (BATT) Circuit Short to Ground or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P060647</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Processor Watchdog / Safety MCU Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P060687</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Processor to Monitoring Processor Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P060694</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Processor Unexpected Operation</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P060A29</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor Signal Invalid</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P060A44</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor Data Memory Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P060A45</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor Program Memory Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P060A47</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor Watchdog / Safety MCU Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P060A49</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor Internal Electronic Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P060A87</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Processor from Monitoring Processor Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P060A94</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor Unexpected Operation</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P060B1C</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module A/D Processing Voltage Out of Range</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P060B49</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module A/D Processing Internal Electronic Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P060B71</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module A/D Processing Actuator Stuck</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P062F44</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module EEPROM Data Memory Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P06881F</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">ECM/PCM Power Relay Sense Circuit Intermittent</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P085011</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Park/Neutral Switch Circuit Short to Ground</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P085015</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Park/Neutral Switch Circuit Short to Auxiliary Battery or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P08A662</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Gear Lever Position Sensor Signal Compare Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0A0A13</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">High Voltage System Interlock Circuit Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0A0A92</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">High Voltage System Interlock Performance or Incorrect Operation</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0A1B49</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Drive Motor "A" Control Module Internal Electronic Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0A1B94</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Drive Motor "A" Control Module Unexpected Operation</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0A1F94</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Energy Control Module Unexpected Operation</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0A2A11</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Drive Motor "A" Temperature Sensor Circuit Short to Ground</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0A2A15</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Drive Motor "A" Temperature Sensor Circuit Short to Auxiliary Battery or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0A2A1C</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Drive Motor "A" Temperature Sensor Voltage Out of Range</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0A2A1F</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Drive Motor "A" Temperature Sensor Circuit Intermittent</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0A3611</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Generator Temperature Sensor Circuit Short to Ground</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0A3615</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Generator Temperature Sensor Circuit Short to Auxiliary Battery or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0A361C</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Generator Temperature Sensor Voltage Out of Range</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0A361F</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Generator Temperature Sensor Circuit Intermittent</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0A9300</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Inverter "A" Cooling System Performance</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">B</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0AA000</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Positive Contactor Circuit Stuck Closed</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0AA073</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Positive and Negative Contactor Actuator Stuck Closed</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0AA373</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Negative Contactor Actuator Stuck Closed</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0AA649</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Voltage System Isolation Internal Electronic Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0AA716</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Voltage Isolation Sensor Circuit Voltage Below Threshold</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0AA717</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Voltage Isolation Sensor Circuit Voltage Above Threshold</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0AA749</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Voltage Isolation Sensor Circuit Internal Electronic Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0ABF00</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Current Sensor "A" Circuit Range/Performance</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0AD911</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Positive Contactor Circuit Short to Ground</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0AD915</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Positive Contactor Circuit Short to Auxiliary Battery or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0ADD11</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Negative Contactor Circuit Short to Ground</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0ADD15</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Negative Contactor Circuit Short to Auxiliary Battery or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0AE173</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Precharge Contactor Actuator Stuck Closed</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0AE411</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Precharge Contactor Circuit Short to Ground</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0AE415</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Precharge Contactor Circuit Short to Auxiliary Battery or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0B231C</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery "A" Voltage Sensor Voltage Out of Range</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0C7396</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Motor Electronics Coolant Pump "A" Component Internal Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0C7600</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery System Discharge Time Too Long</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0D0700</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Charging System Positive Contactor Stuck Closed</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0D0773</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Charging System Positive/Negative Contactor Actuator Stuck Closed</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0D0E73</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Charging System Negative Contactor Control Actuator Stuck Closed</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0D2D1C</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Drive Motor "A" Inverter Voltage Sensor Voltage Out of Range</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0D4C1C</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Charger Hybrid/EV Battery Input Voltage Sensor Voltage Out of Range</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0D5E00</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Charger Hybrid/EV System Discharge Time Too Long</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0E311C</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Boosting Converter Voltage Sensor "A" Voltage Out of Range</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0E619E</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Charger Enable Circuit Stuck On</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P0E6A73</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Charging System Precharge Contactor Control Actuator Stuck Closed</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P160600</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Collision detected or Collision Sensor Connection (Open)</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P160604</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Collision detected or Collision Sensor Connection (Open) System Internal Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P183411</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Gear Lever Y Position Sensor 1 Circuit Short to Ground</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P183415</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Gear Lever Y Position Sensor 1 Circuit Short to Auxiliary Battery or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P183A11</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Gear Lever Y Position Sensor 2 Circuit Short to Ground</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P183A15</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Gear Lever Y Position Sensor 2 Circuit Short to Auxiliary Battery or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P183F12</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Gear Lever X Position Sensor 1 Circuit Short to Auxiliary Battery</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P183F14</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Gear Lever X Position Sensor 1 Circuit Short to Ground or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P184512</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Gear Lever X Position Sensor 2 Circuit Short to Auxiliary Battery</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P184514</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Gear Lever X Position Sensor 2 Circuit Short to Ground or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1AC413</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Stack 1 Current Interrupt Device Circuit Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C2979</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">One Way Clutch Mechanical Linkage Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C2D62</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery "A" Voltage Sensor/Boosting Converter Voltage Sensor "A" Signal Compare Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C6A9F</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Motor Shutdown Stuck Off</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C6C9F</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Generator Shutdown Stuck Off</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C7779</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Engine Failed to Start Mechanical Linkage Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C7C49</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Voltage System Isolation (A/C Area) Internal Electronic Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C7D49</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Voltage System Isolation (Hybrid/EV Battery Area) Internal Electronic Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C7E49</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Voltage System Isolation (Transaxle Area) Internal Electronic Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C7F49</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Voltage System Isolation (Direct Current Area) Internal Electronic Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C8149</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">High Voltage Power Resource Circuit Consumption Circuit Short</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C8249</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">High Voltage Power Resource Circuit Over Loading</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C8349</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">High Voltage Power Resource Circuit Voltage Sensor after Boosting Malfunction</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C8449</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">High Voltage Power Resource Circuit Short during Ready ON</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C8679</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Transmission (Input) Mechanical Linkage Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C8779</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Generator Mechanical Linkage Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C8879</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Planetary Gear Mechanical Linkage Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1C9E9F</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV System Reset Stuck Off</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1CD800</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Processor or Monitoring Processor Charging Permission Signal Internal Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1CD900</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Processor and Monitoring Processor Charging Permission Signal Stuck On</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1CDA00</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Processor and Monitoring Processor Charging Permission Signal Stuck Off</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1CE213</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">PCU Interlock Circuit Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1CE292</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">PCU Interlock Performance or Incorrect Operation</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1CE31C</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor A/D Processing Voltage Out of Range</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1CE349</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor A/D Processing Internal Electronic Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1CE371</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor A/D Processing Actuator Stuck</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1CF749</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Voltage System Isolation (Charger Area) Internal Electronic Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1CFA12</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">IGB Signal Circuit Short to Auxiliary Battery</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1EA09E</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Solar Charger Enable Circuit Stuck On</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1EA41C</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Control Battery Voltage Sensor / Solar Charging Voltage Sensor Voltage Out of Range</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1EA917</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Solar Charging Control Module Circuit Voltage Above Threshold</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1EC900</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Processor or Monitoring Processor Solar Charging Permission Signal Internal Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1ECA00</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Processor and Monitoring Processor Solar Charging Permission Signal Stuck On</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P1ECB00</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Powertrain Control Module Processor and Monitoring Processor Solar Charging Permission Signal Stuck Off</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P212012</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Throttle/Pedal Position Sensor/Switch "D" Circuit Short to Auxiliary Battery</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P212014</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Throttle/Pedal Position Sensor/Switch "D" Circuit Short to Ground or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P21201C</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Throttle/Pedal Position Sensor/Switch "D" Voltage Out of Range</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P21201F</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Throttle/Pedal Position Sensor/Switch "D" Circuit Intermittent</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P212512</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Throttle/Pedal Position Sensor/Switch "E" Circuit Short to Auxiliary Battery</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P212514</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Throttle/Pedal Position Sensor/Switch "E" Circuit Short to Ground or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P21251C</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Throttle/Pedal Position Sensor/Switch "E" Voltage Out of Range</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P21251F</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Throttle/Pedal Position Sensor/Switch "E" Circuit Intermittent</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P213800</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Throttle/Pedal Position Sensor/Switch "D"/"E" Voltage Correlation</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P21382B</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Throttle/Pedal Position Sensor/Switch "D"/"E" Signal Cross Coupled</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P253012</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">IG2 Signal Circuit Short to Auxiliary Battery</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P260031</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Motor/Generator Coolant Pump "A" Control Circuit No Signal</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P260096</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Motor/Generator Coolant Pump "A" Control Circuit Component Internal Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P26009E</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Motor/Generator Coolant Pump "A" Control Circuit Stuck On</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P272C81</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Park Pawl Motor Invalid Serial Data Received</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P274A11</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Transmission Fluid Temperature Sensor "C" Circuit Short to Ground</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P274A15</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Transmission Fluid Temperature Sensor "C" Circuit Short to Auxiliary Battery or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P274A1C</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Transmission Fluid Temperature Sensor "C" Voltage Out of Range</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P274A1F</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Transmission Fluid Temperature Sensor "C" Circuit Intermittent</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P300449</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">High Voltage Power Resource Circuit Short during Pre-Charge</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P308F49</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">High Voltage Charging Circuit Short during Pre-Charge</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P309F49</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">High Voltage Charging Circuit Consumption Circuit Short</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P310711</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Airbag System Control Module Circuit Short to Ground</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P310715</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Airbag System Control Module Circuit Short to Auxiliary Battery or Open</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P310764</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Airbag System Control Module Signal Plausibility Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P312387</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Drive Motor Control Module "A" from Hybrid/EV Control Module Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P314779</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Transmission (Shaft) Mechanical Linkage Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P314A31</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Motor Electronics Coolant Pump "A" No Signal</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P31B300</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Voltage High</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P320F00</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">AC Charging Overpower</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P321D17</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Charger Circuit Voltage Above Threshold</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P321E9F</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Motor/Generator Shutdown Signal Stuck Off</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P33B99F</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Motor/Generator Shutdown Signal (Hybrid/EV Side) Stuck Off</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P33BF9F</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Motor/Generator Shutdown Signal (MG Side) Stuck Off</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">P33CF49</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Hybrid/EV Battery Voltage System Isolation Internal Electronic Failure Abnormal Area Detection Failure</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U010087</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with ECM/PCM "A" Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U010487</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Cruise Control Module Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U011087</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Drive Motor Control Module "A" Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U011187</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Hybrid/EV Battery Energy Control Module "A" Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U012287</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Vehicle Dynamics Control Module Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U012987</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Brake System Control Module Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U014000</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Body Control Module (Sub) Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U014087</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Body Control Module Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U015187</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Restraints Control Module Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U016487</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with HVAC Control Module Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U019B87</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Hybrid/EV Battery Charger Control Module Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U029387</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Hybrid/EV Powertrain Control Module Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U042481</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">HVAC Control Module to Hybrid Powertrain Control Module Invalid Serial Data Received</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U110787</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Power Management Module Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U113A87</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Solar Charging Control Module Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U117087</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Brake System Control Module (Secondary CAN Line) Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0ERMAE ID0ESNAE ID0EUOAE " width="NaN%">U117587</td> 
+          <td align="left" class="cellrowborder" headers="ID0EYMAE ID0EYNAE ID0E1OAE " width="NaN%">Lost Communication with Hybrid/EV Battery Energy Control Module "A" (Powertrain Bus) Missing Message</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0E5NAE ID0EAPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EEOAE ID0EGPAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE ID0EKOAE ID0EMPAE " width="NaN%">○</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0E6MAE " width="NaN%">-</td> 
+          <td align="center" class="cellrowborder" headers="ID0EHNAE " width="NaN%">-</td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">The "Example of Multiple DTCs being Output" below is only one example of a malfunction condition. Therefore, a determination should not be made based on this alone.</p> 
+       <br class="tip"/>
+       <ol class="list1" type="a">
+<p class="list1-li-title">
+<strong class="li-title-title">Example of Multiple DTCs being Output:</strong>
+</p>
+<li class="list1-item">
+<p class="list1-heading">The power supply of the microcomputer decreases while the vehicle is being driven.</p>
+</li>
+<br class="list1-li-list2"/>
+<ol class="li-list2-list2" type="i">
+<li class="list2-item">
+<p class="li-list2-list2-heading">DTCs are detected and the vehicle behavior is as follows.</p>
+</li>
+</ol>
+<br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+          <li class="list2-li-title"> <strong class="li-title-title">Detected DTCs</strong> </li> 
+          <li class="list2-item">
+<p class="li-list2-list2-heading">P060B1C (Hybrid/EV Powertrain Control Module A/D Processing Voltage Out of Range): Microcomputer malfunction*</p>
+</li> 
+          <li class="list2-item">
+<p class="li-list2-list2-heading">P06881F (ECM/PCM Power Relay Sense Circuit Intermittent): Power source circuit malfunction*</p>
+</li> 
+          <li class="list2-item">
+<p class="li-list2-list2-heading">P0AA749 (Hybrid/EV Battery Voltage Isolation Sensor Circuit Internal Electronic Failure): Sensor and actuator circuit malfunction*</p>
+</li> 
+          <li class="list2-item">
+<p class="li-list2-list2-heading">P0B231C (Hybrid/EV Battery "A" Voltage Sensor Voltage Out of Range): Sensor and actuator circuit malfunction*</p>
+</li> 
+          <li class="list2-item">
+<p class="li-list2-list2-heading">P1C9E9F (Hybrid/EV System Reset Stuck Off): System malfunction*</p>
+</li> 
+          <br class="list2-li-list3"/>
+<ul class="li-list3-list3 nonmark"> 
+            <li class="list3-item"> <p class="li-list3-list3-nonmark-heading">*: Check the priority level in the "DTC Order of Priority" chart above.</p> </li> 
+           </ul> 
+         </ul>
+<br class="list1-li-list2"/>
+<ul class="li-list2-list2 nonmark"> 
+          <li class="list2-li-title"> <strong class="li-title-title">Vehicle Behavior</strong> </li> 
+          <li class="list2-item">
+<p class="li-list2-list2-nonmark-heading">System stopped</p>
+</li> 
+         </ul>
+<li class="list1-item">
+<p class="list1-heading">The inspection order of priority is: Microcomputer circuit → power source circuit → communication circuit → sensor and actuator circuit → system circuit. Therefore, check the repair procedure for P060B1C.</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">Follow the repair procedures and replace the hybrid vehicle control ECU. Finish the repair.</p>
+</li>
+</ol> 
+       <p class="ptxt">It is possible to check only the specified malfunctioning parts without having to check irrelevant parts.</p> 
+      </div>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

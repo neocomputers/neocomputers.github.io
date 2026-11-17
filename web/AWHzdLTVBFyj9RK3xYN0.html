@@ -1,0 +1,571 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="INTELLIGENT CLEARANCE SONAR SYSTEM SYSTEM DESCRIPTION" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_56" name="servcatId"/> 
+  <meta content="Audio / Visual / Telematics" name="servcatName"/> 
+  <meta content="_058038" name="sectionId"/> 
+  <meta content="PARK ASSIST / MONITORING" name="sectionName"/> 
+  <meta content="_0292667" name="ttlId"/> 
+  <meta content="INTELLIGENT CLEARANCE SONAR SYSTEM" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="SYSTEM DESCRIPTION" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001147F" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>INTELLIGENT CLEARANCE SONAR SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">INTELLIGENT CLEARANCE SONAR SYSTEM<span class="topictitle1"> SYSTEM DESCRIPTION</span>
+</h1>
+<div class="subpara" id="RM100000001147F__RM100000001147F_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000001147F__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">FUNCTION OF COMPONENTS</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">The intelligent clearance sonar system consists of the following components:</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E1E" width="NaN%">Component</th> 
+            <th align="center" class="cellrowborder" id="ID0EAF" width="NaN%">Function</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%">Clearance Warning ECU Assembly</td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Sends the drive force request signals and control status signals to the hybrid vehicle control ECU and skid control ECU.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Sends the multi-information display request signals and ICS OFF indicator light illumination request signals to the meter circuit plate.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Determines the distance between an obstruction and the vehicle based on the signals from the front center ultrasonic sensor, front corner ultrasonic sensor, rear center ultrasonic sensor and rear corner ultrasonic sensor.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Sounds the No. 1 clearance warning buzzer and No. 2 clearance warning buzzer in accordance with the control status.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%"> <p class="ptxt">Steering Pad Switch Assembly</p> <p class="ptxt">- Multi-information Switch</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%">Enables, disables or cuts off the operation of the intelligent clearance sonar system by transmitting the switch operation signal to the meter circuit plate.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%">ECM</td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%">Sends the engine speed signal to the clearance warning ECU assembly via CAN communication.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%">Hybrid Vehicle Control ECU</td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Sends the accelerator pedal opening angle signal, shift status signal and drive force signal to the clearance warning ECU assembly via CAN communication.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Receives the drive force request signals and control status signals from the clearance warning ECU assembly via CAN communication.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%"> <p class="ptxt">Meter Circuit Plate</p> <p class="ptxt">- Multi-information Display</p> <p class="ptxt">- ICS OFF Indicator</p> <p class="ptxt">- Meter buzzer</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Sends the vehicle speed signal to the clearance warning ECU assembly via CAN communication.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Receives information from ultrasonic sensors via the clearance warning ECU assembly and displays it on the multi-information display.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Receives the multi-information display request signals via CAN communication and displays the control status of the intelligent clearance sonar system on the multi-information display.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Illuminates the ICS OFF indicator light when the intelligent clearance sonar system is off and blinks it when the intelligent clearance sonar system is malfunctioning.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Sends the intelligent clearance sonar system on/off signal to the clearance warning ECU assembly via CAN communication. The intelligent clearance sonar system can be turned on or off using the steering pad switch assembly.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Sounds the meter buzzer when the intelligent clearance sonar system is operating or malfunctioning.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%">Combination Meter Mirror ECU*</td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%">Displays the control status of the intelligent clearance sonar system based on the signals received from the clearance warning ECU assembly via CAN communication.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%">Stop Light Switch Assembly</td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%">Detects if the brake pedal is depressed and outputs a signal to the skid control ECU.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%">Skid Control ECU</td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Sends the master cylinder pressure signal and wheel speed signals to the clearance warning ECU assembly via CAN communication.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Receives the drive force request signal and control status signal from the clearance warning ECU assembly via CAN communication.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%">Steering Sensor</td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%">Sends the steering angle signal to the clearance warning ECU assembly via CAN communication.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%">Airbag ECU Assembly</td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%">Sends the yaw rate and acceleration sensor (airbag ECU assembly) signal to the clearance warning ECU assembly via CAN communication.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Front Speed Sensor (LH/RH)</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Rear Axle Hub and Bearing Assembly (LH/RH)</p>
+<p class="item-ptxt">- Rear Speed Sensor (LH/RH)</p>
+</li> 
+             </ul> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%">Sends the wheel speed signals to the skid control ECU.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Shift Lever Position Sensor</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">P Position Switch (Transmission Shift Main Switch)</p>
+</li> 
+             </ul> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%">Sends the shift state signal to the hybrid vehicle control ECU.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Front Center Ultrasonic Sensor (LH/RH)</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Front Corner Ultrasonic Sensor (LH/RH)</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Rear Center Ultrasonic Sensor (LH/RH)</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Rear Corner Ultrasonic Sensor (LH/RH)</p>
+</li> 
+             </ul> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%">Detects the distance between the vehicle and an obstacle.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">No. 1 Clearance Warning Buzzer</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">No. 2 Clearance Warning Buzzer</p>
+</li> 
+             </ul> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%">Sounds upon receiving signals from the Clearance Warning ECU Assembly.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%">Accelerator Pedal Sensor Assembly</td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%">Sends the accelerator pedal opening angle signal to the hybrid vehicle control ECU.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%">Main Body ECU (Multiplex Network Body ECU)</td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%">Sends the driver seat belt signal to the clearance warning ECU assembly.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0E1E " width="NaN%">Air Conditioning Amplifier Assembly</td> 
+            <td align="left" class="cellrowborder" headers="ID0EAF " width="NaN%">Sends the ambient temperature signal to the clearance warning ECU assembly.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<br class="step2Root-step2"/>
+<ul class="step2-list1 nonmark"> 
+         <li class="list1-item">
+<p class="step2-list1-nonmark-heading">*: w/ Headup Display System</p>
+</li> 
+        </ul>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">OPERATION CONDITIONS (Intelligent Clearance Sonar System)</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Driving torque restriction control</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Initiation Condition (When all of the following conditions are met, the driving torque restriction control is performed.)</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1"> 
+           <li class="list1-item">
+<p class="step3-list1-heading">The intelligent clearance sonar system is turned on.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">An obstruction is detected by an ultrasonic sensor.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">The vehicle speed is 15 km/h (9 mph) or less.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Collision is avoidable if emergency braking is performed by the driver.</p>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Cancellation Condition (When any of the following conditions are met, driving torque restriction control is cancelled.)</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1"> 
+           <li class="list1-item">
+<p class="step3-list1-heading">The intelligent clearance sonar system is turned off.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">No obstruction is detected by the ultrasonic sensors.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">A possible collision is avoided.</p>
+</li> 
+          </ul>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Brake Control</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Initiation Condition (When all of the following conditions are met, brake control is performed.)</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1"> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Driving torque restriction control is performed.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">A collision is likely even if emergency braking is performed by the driver.</p>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Cancellation Condition (When any of the following conditions are met, driving torque restriction control is cancelled.)</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1"> 
+           <li class="list1-item">
+<p class="step3-list1-heading">The intelligent clearance sonar system is turned off.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">The brake pedal is depressed after the vehicle is stopped by brake control.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Approximately 2 seconds have elapsed since the vehicle was stopped by brake control.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">No obstruction is detected by the ultrasonic sensors.</p>
+</li> 
+          </ul>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<div class="ie8fixer"/>
+<p class="step2-heading">Others</p>
+<br class="step2Root-step2"/>
+<ul class="step2-list1 nonmark"> 
+         <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<p class="step2-list1-nonmark-heading">When brake control is performed, the intelligent clearance sonar system turns off automatically. The intelligent clearance sonar system turns on again when no obstructions are detected by the ultrasonic sensors, the shift lever is moved to reverse (R) with drive (D) selected or is moved to drive (D) with reverse (R) selected, the engine switch is turned off and then turned on (IG), or by using settings screen on the multi-information display.</p>
+<div class="fignone--bigImage">
+<p class="figcap">Figure 1. Intelligent clearance sonar system operation</p>
+<img alt="A003L5KE01" class="figure-graphic--bigImage" src="../images/a003l5ke01.png"/>
+</div>
+</li> 
+        </ul>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CASES OF UNNECESSARY INTELLIGENT CLEARANCE SONAR SYSTEM OPERATION</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<div class="ie8fixer"/>
+<p class="step2-heading">In the following situations, the intelligent clearance sonar system may operate even when there is no possibility of a collision:</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<div class="ie8fixer"/>
+<p class="step3-heading">Environmental influence</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1"> 
+           <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+             <img alt="A003LBT" class="figure-graphic" src="../images/a003lbt.png"/> 
+            </div>
+<p class="step3-list1-heading">There is an obstacle on the shoulder of the road (when the vehicle is driven in a narrow tunnel, on a narrow bridge or on a narrow road).</p>
+</li> 
+           <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+             <img alt="A003M5O" class="figure-graphic" src="../images/a003m5o.png"/> 
+            </div>
+<p class="step3-list1-heading">The vehicle is being driven on grass or a gravel road.</p>
+</li> 
+           <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+             <img alt="A003N1M" class="figure-graphic" src="../images/a003n1m.png"/> 
+            </div>
+<p class="step3-list1-heading">The vehicle is driven toward a banner or flag, a low-hanging branch or a boom barrier (such as those used at railroad crossings, toll gates and parking lots).</p>
+<div class="tip">
+             <p class="tiptitle">Tech Tips</p> 
+             <p class="ptxt">Even if the intelligent clearance sonar system operates while on a railroad crossing, brake control will be automatically be canceled after approximately 2 seconds. Brake control can also be canceled by depressing the brake pedal. After brake control is canceled, depress the accelerator pedal to drive out of the railroad crossing.</p> 
+            </div>
+</li> 
+           <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+             <img alt="A003OD6" class="figure-graphic" src="../images/a003od6.png"/> 
+            </div>
+<p class="step3-list1-heading">The vehicle is close to other vehicles while being parallel parked.</p>
+</li> 
+           <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+             <img alt="A003NZ0" class="figure-graphic" src="../images/a003nz0.png"/> 
+            </div>
+<p class="step3-list1-heading">The vehicle is being driven on a steep slope.</p>
+</li> 
+           <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+             <img alt="A003MP6" class="figure-graphic" src="../images/a003mp6.png"/> 
+            </div>
+<p class="step3-list1-heading">There are objects located lower than the ultrasonic sensors.</p>
+</li> 
+           <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+             <img alt="A003O2A" class="figure-graphic" src="../images/a003o2a.png"/> 
+            </div>
+<p class="step3-list1-heading">The vehicle is being driven on a narrow road.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">There is a rut or hole in the surface of the road.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">When the vehicle is driven on a metal cover (grating), such as those used for drainage ditches.</p>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003MBS" class="figure-graphic" src="../images/a003mbs.png"/> 
+          </div>
+<p class="step3-heading">Influence from the weather</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1"> 
+           <li class="list1-item">
+<p class="step3-list1-heading">In severe weather such as fog, snow or a sandstorm.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Foreign matter such as snow, ice or mud is attached to an ultrasonic sensor. (The system returns to normal when the foreign matter is removed.)</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">When there is a downpour, or water is splashing on the vehicle.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Water is covering an ultrasonic sensor due to a flooded road.</p>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Influence from other ultrasonic waves</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1"> 
+           <li class="list1-item">
+<p class="step3-list1-heading">When ultrasonic waves are received from the horn or parking sonar system of another vehicle, a motorcycle engine, or the air brakes of a large vehicle.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Electronic components such as a backlit license plate (especially fluorescent types), fog lights, a fender pole or a wireless antenna are installed near an ultrasonic sensor.</p>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003P79" class="figure-graphic" src="../images/a003p79.png"/> 
+          </div>
+<p class="step3-heading">Changes in the vehicle.</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1"> 
+           <li class="list1-item">
+<p class="step3-list1-heading">The height of the vehicle has drastically changed due to loading (the nose tilts up or down).</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">The vehicle is significantly tilted.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">An ultrasonic sensor is misaligned due to a collision, etc.</p>
+</li> 
+          </ul>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003OCQ" class="figure-graphic" src="../images/a003ocq.png"/> 
+          </div>
+<p class="step3-heading">Others</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1"> 
+           <li class="list1-item">
+<p class="step3-list1-heading">The vehicle is being loaded onto a ship, truck or other transport vessel.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">The vehicle is being operated on a drum tester such as a speedometer tester, brake/speedometer combination tester or chassis dynamometer.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">When the vehicle is being towed.</p>
+</li> 
+          </ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">MULTI-INFORMATION DISPLAY AND HEADUP DISPLAY (w/ Headup Display System)</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Intelligent clearance sonar system display</p>
+<br class="step2Root-step2"/>
+<ul class="step2-list1"> 
+         <li class="list1-item">
+<p class="step2-list1-heading">The intelligent clearance sonar system uses the multi-information display in the meter circuit plate, the combination meter mirror ECU and ICS OFF indicator light to indicate the operation status of the system.</p>
+</li> 
+        </ul>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Intelligent clearance sonar system operation status display</p>
+<br class="step2Root-step2"/>
+<ul class="step2-list1 nonmark"> 
+         <li class="list1-item">
+<p class="step2-list1-nonmark-heading">When the operation conditions are met, the clearance warning ECU assembly sends display or illumination request signals to the meter circuit plate, combination meter mirror ECU and ICS OFF indicator light. The clearance warning ECU assembly also sends buzzer sound request signals to the meter circuit plate.</p>
+</li> 
+        </ul>
+<div class="fignone--bigImage">
+<img alt="A003MHHE01" class="figure-graphic--bigImage" src="../images/a003mhhe01.png"/>
+</div>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Intelligent clearance sonar system warning display</p>
+<br class="step2Root-step2"/>
+<ul class="step2-list1 nonmark"> 
+         <li class="list1-item">
+<p class="step2-list1-nonmark-heading">When operation of the intelligent clearance sonar system is temporarily suspended due to a malfunction or dirty ultrasonic sensor, a message is displayed on the multi-information display in the meter circuit plate, the ICS OFF indicator light blinks and the buzzer sounds.</p>
+</li> 
+        </ul>
+<div class="fignone--bigImage">
+<img alt="A003O2XE03" class="figure-graphic--bigImage" src="../images/a003o2xe03.png"/>
+</div>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Intelligent clearance sonar system off display</p>
+<br class="step2Root-step2"/>
+<ul class="step2-list1 nonmark"> 
+         <li class="list1-item">
+<p class="step2-list1-nonmark-heading">When the intelligent clearance sonar system is off, the ICS OFF indicator light illuminates.</p>
+</li> 
+        </ul>
+<div class="fignone--bigImage">
+<img alt="A003MS4C03" class="figure-graphic--bigImage" src="../images/a003ms4c03.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*A</td> 
+              <td align="left" class="cellrowborder" width="NaN%">for LHD</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%">ICS OFF Indicator</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<div class="fignone--bigImage">
+<img alt="A003L3NC03" class="figure-graphic--bigImage" src="../images/a003l3nc03.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*A</td> 
+              <td align="left" class="cellrowborder" width="NaN%">for RHD</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%">ICS OFF Indicator</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

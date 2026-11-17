@@ -1,0 +1,2223 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="CAN COMMUNICATION SYSTEM TERMINALS OF ECU" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_57" name="servcatId"/> 
+  <meta content="Power Source / Network" name="servcatName"/> 
+  <meta content="_058034" name="sectionId"/> 
+  <meta content="NETWORKING" name="sectionName"/> 
+  <meta content="_0296329" name="ttlId"/> 
+  <meta content="CAN COMMUNICATION SYSTEM" name="ttlName"/> 
+  <meta content="U" name="paraCategory"/> 
+  <meta content="TERMINALS OF ECU" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM10000000114OD" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>CAN COMMUNICATION SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">CAN COMMUNICATION SYSTEM<span class="topictitle1"> TERMINALS OF ECU</span>
+</h1>
+<div class="subpara" id="RM10000000114OD__RM10000000114OD_z0">
+     
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">After turning the power switch off, waiting time may be required before disconnecting the cable from the negative (-) auxiliary battery terminal. Therefore, make sure to read the disconnecting the cable from the negative (-) auxiliary battery terminal notices before proceeding with work.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001AAN7.html#RM100000001AAN7">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Before measuring the resistance of the CAN bus, turn the power switch off and leave the vehicle for 1 minute or more without operating the key or any switches, or opening or closing the doors. After that, disconnect the cable from the negative (-) auxiliary battery terminal and leave the vehicle for 1 minute or more before measuring the resistance.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">This section describes the standard values for all CAN related components.</p>
+</li> 
+     </ul> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">The systems (ECUs and sensors) that use CAN communication vary depending on the vehicle and optional equipment. Check which systems (ECUs and sensors) are installed to the vehicle.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001AAUK.html#RM100000001AAUK">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Operating the power switch, any other switches or a door triggers related ECU and sensor communication on the CAN. This communication will cause the resistance value to change.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Even after DTCs are cleared, if a DTC is stored again after driving the vehicle for a while, the malfunction may be occurring due to vibration of the vehicle. In such a case, wiggling the ECUs or wire harness while performing the inspection below may help determine the cause of the malfunction.</p>
+</li> 
+     </ul> 
+    </div> 
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM10000000114OD__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">NO. 1 CAN JUNCTION CONNECTOR (w/o Occupant Classification System)</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<div class="ie8fixer"/>
+<p class="step2-heading">Check the No. 1 CAN junction connector.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<p class="step3-heading">Connection diagram</p>
+<div class="fignone--bigImage">
+<img alt="B006IJYC18" class="figure-graphic--bigImage" src="../images/b006ijyc18.png"/>
+<div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="big-image-callout">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 1 CAN Junction Connector)</p> </td> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Swing Grille Actuator Assembly</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">to Clearance Warning ECU Assembly</p> <p class="ptxt">(w/ Simple Intelligent Parking Assist System)</p> </td> 
+                <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Forward Recognition Camera</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*e</td> 
+                <td class="cellrowborder" width="NaN%">to Millimeter Wave Radar Sensor Assembly</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*f</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Driving Support ECU Assembly</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*g</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to No. 8 CAN Junction Connector</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*h</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Central Gateway ECU (Network Gateway ECU)</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div>
+</div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check the connection diagram of the components which are connected to the No. 1 CAN junction connector.</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EKHAC" width="NaN%">Terminal No. (Symbol)</th> 
+              <th align="center" class="cellrowborder" id="ID0EQHAC" width="NaN%">Wiring Color</th> 
+              <th align="center" class="cellrowborder" id="ID0EWHAC" width="NaN%">Connected to</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EKHAC " width="NaN%">I73-2 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQHAC " width="NaN%">B</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWHAC " rowspan="2" width="NaN%"> <p class="ptxt">Swing grille actuator assembly</p> <p class="ptxt">(for Bus 1)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EKHAC " width="NaN%">I73-12 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQHAC " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EKHAC " width="NaN%">I73-3 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQHAC " width="NaN%">LG</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWHAC " rowspan="2" width="NaN%"> <p class="ptxt">Clearance warning ECU assembly*</p> <p class="ptxt">(for Bus 1)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EKHAC " width="NaN%">I73-13 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQHAC " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EKHAC " width="NaN%">I73-4 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQHAC " width="NaN%">R</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWHAC " rowspan="2" width="NaN%"> <p class="ptxt">Forward recognition camera</p> <p class="ptxt">(for Bus 1)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EKHAC " width="NaN%">I73-14 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQHAC " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EKHAC " width="NaN%">I73-5 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQHAC " width="NaN%">BE</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWHAC " rowspan="2" width="NaN%"> <p class="ptxt">Millimeter wave radar sensor assembly</p> <p class="ptxt">(for Bus 1)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EKHAC " width="NaN%">I73-15 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQHAC " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EKHAC " width="NaN%">I73-6 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQHAC " width="NaN%">G</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWHAC " rowspan="2" width="NaN%"> <p class="ptxt">Driving support ECU assembly</p> <p class="ptxt">(for Bus 1)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EKHAC " width="NaN%">I73-16 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQHAC " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EKHAC " width="NaN%">I73-7 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQHAC " width="NaN%">BE</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWHAC " rowspan="2" width="NaN%"> <p class="ptxt">No. 8 CAN junction connector</p> <p class="ptxt">(for Bus 1)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EKHAC " width="NaN%">I73-17 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQHAC " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EKHAC " width="NaN%">I73-8 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQHAC " width="NaN%">SB</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWHAC " rowspan="2" width="NaN%"> <p class="ptxt">Central gateway ECU (network gateway ECU)</p> <p class="ptxt">(for Bus 1)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EKHAC " width="NaN%">I73-18 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQHAC " width="NaN%">W</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">*: w/ Simple Intelligent Parking Assist System</p>
+</li> 
+          </ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">NO. 1 CAN JUNCTION CONNECTOR (w/ Occupant Classification System)</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<div class="ie8fixer"/>
+<p class="step2-heading">Check the No. 1 CAN junction connector.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<p class="step3-heading">Connection diagram</p>
+<div class="fignone--bigImage">
+<img alt="B006J8YC53" class="figure-graphic--bigImage" src="../images/b006j8yc53.png"/>
+<div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="big-image-callout">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 1 CAN Junction Connector)</p> </td> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Swing Grille Actuator Assembly</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Central Gateway ECU (Network Gateway ECU)</td> 
+                <td align="center" class="cellrowborder" width="NaN%">-</td> 
+                <td align="center" class="cellrowborder" width="NaN%">-</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div>
+</div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check the connection diagram of the components which are connected to the No. 1 CAN junction connector.</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ELKAE" width="NaN%">Terminal No. (Symbol)</th> 
+              <th align="center" class="cellrowborder" id="ID0ERKAE" width="NaN%">Wiring Color</th> 
+              <th align="center" class="cellrowborder" id="ID0EXKAE" width="NaN%">Connected to</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ELKAE " width="NaN%">I74-1 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0ERKAE " width="NaN%">B</td> 
+              <td align="left" class="cellrowborder" headers="ID0EXKAE " rowspan="2" width="NaN%"> <p class="ptxt">Swing grille actuator assembly</p> <p class="ptxt">(for Bus 1)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ELKAE " width="NaN%">I74-12 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0ERKAE " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ELKAE " width="NaN%">I74-2 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0ERKAE " width="NaN%">BE</td> 
+              <td align="left" class="cellrowborder" headers="ID0EXKAE " rowspan="2" width="NaN%"> <p class="ptxt">Central gateway ECU (network gateway ECU)</p> <p class="ptxt">(for Bus 1)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ELKAE " width="NaN%">I74-13 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0ERKAE " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ELKAE " width="NaN%">I74-3 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0ERKAE " width="NaN%">SB</td> 
+              <td align="left" class="cellrowborder" headers="ID0EXKAE " rowspan="2" width="NaN%"> <p class="ptxt">Central gateway ECU (network gateway ECU)</p> <p class="ptxt">(for Bus 1)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ELKAE " width="NaN%">I74-14 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0ERKAE " width="NaN%">W</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">NO. 2 CAN JUNCTION CONNECTOR</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<div class="ie8fixer"/>
+<p class="step2-heading">Check the No. 2 CAN junction connector.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<p class="step3-heading">Connection diagram</p>
+<div class="fignone--bigImage">
+<img alt="B006J8YC70" class="figure-graphic--bigImage" src="../images/b006j8yc70.png"/>
+<div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="big-image-callout">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 2 CAN Junction Connector)</p> </td> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Central Gateway ECU (Network Gateway ECU)</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Hybrid Vehicle Control ECU</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Inverter with Converter Assembly</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*e</td> 
+                <td class="cellrowborder" width="NaN%">to No. 7 CAN Junction Connector</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*f</td> 
+                <td class="cellrowborder" width="NaN%">to Brake Booster with Master Cylinder Assembly</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*g</td> 
+                <td class="cellrowborder" width="NaN%">to No. 5 CAN Junction Connector</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*h</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Airbag Sensor Assembly</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*i</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Steering Sensor</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*j</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Power Steering ECU Assembly</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div>
+</div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check the connection diagram of the components which are connected to the No. 2 CAN junction connector.</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EDZAE" width="NaN%">Terminal No. (Symbol)</th> 
+              <th align="center" class="cellrowborder" id="ID0EJZAE" width="NaN%">Wiring Color</th> 
+              <th align="center" class="cellrowborder" id="ID0EPZAE" width="NaN%">Connected to</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-1 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">LG</td> 
+              <td align="left" class="cellrowborder" headers="ID0EPZAE " rowspan="2" width="NaN%"> <p class="ptxt">Central gateway ECU (network gateway ECU)</p> <p class="ptxt">(for Bus 2)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-12 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-2 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">L</td> 
+              <td align="left" class="cellrowborder" headers="ID0EPZAE " rowspan="2" width="NaN%"> <p class="ptxt">Hybrid vehicle control ECU</p> <p class="ptxt">(for Bus 2)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-13 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-3 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">GR</td> 
+              <td align="left" class="cellrowborder" headers="ID0EPZAE " rowspan="2" width="NaN%"> <p class="ptxt">Inverter with converter assembly</p> <p class="ptxt">(for Bus 2)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-14 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-4 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">B</td> 
+              <td align="left" class="cellrowborder" headers="ID0EPZAE " rowspan="2" width="NaN%"> <p class="ptxt">No. 7 CAN junction connector</p> <p class="ptxt">(for Bus 2)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-15 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-5 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">P</td> 
+              <td align="left" class="cellrowborder" headers="ID0EPZAE " rowspan="2" width="NaN%"> <p class="ptxt">Brake booster with master cylinder assembly</p> <p class="ptxt">(for Bus 2)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-16 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-7 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">G</td> 
+              <td align="left" class="cellrowborder" headers="ID0EPZAE " rowspan="2" width="NaN%"> <p class="ptxt">No. 5 CAN junction connector</p> <p class="ptxt">(for Bus 4)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-18 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-8 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">R</td> 
+              <td align="left" class="cellrowborder" headers="ID0EPZAE " rowspan="2" width="NaN%"> <p class="ptxt">Airbag sensor assembly</p> <p class="ptxt">(for Bus 4)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-19 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-9 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">SB</td> 
+              <td align="left" class="cellrowborder" headers="ID0EPZAE " rowspan="2" width="NaN%"> <p class="ptxt">Brake booster with master cylinder assembly</p> <p class="ptxt">(for Bus 4)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-20 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-10 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">BE</td> 
+              <td align="left" class="cellrowborder" headers="ID0EPZAE " rowspan="2" width="NaN%"> <p class="ptxt">Steering sensor</p> <p class="ptxt">(for Bus 4)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-21 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-11 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">V</td> 
+              <td align="left" class="cellrowborder" headers="ID0EPZAE " rowspan="2" width="NaN%"> <p class="ptxt">Power steering ECU assembly</p> <p class="ptxt">(for Bus 4)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EDZAE " width="NaN%">I75-22 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EJZAE " width="NaN%">W</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">NO. 3 CAN JUNCTION CONNECTOR</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<div class="ie8fixer"/>
+<p class="step2-heading">Check the No. 3 CAN junction connector.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<p class="step3-heading">Connection diagram</p>
+<div class="fignone--bigImage">
+<img alt="B006J8YC55" class="figure-graphic--bigImage" src="../images/b006j8yc55.png"/>
+<div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="big-image-callout">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 3 CAN Junction Connector)</p> </td> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Meter Circuit Plate</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Main Body ECU (Multiplex Network Body ECU)</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to No. 1 Headlight ECU Sub-assembly LH</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*e</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Air Conditioning Amplifier Assembly</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*f</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Certification ECU (Smart Key ECU Assembly)</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*g</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Central Gateway ECU (Network Gateway ECU)</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*h</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">to Combination Meter Mirror ECU</p> <p class="ptxt">(w/ Headup Display System)</p> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div>
+</div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check the connection diagram of the components which are connected to the No. 3 CAN junction connector.</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EISAG" width="NaN%">Terminal No. (Symbol)</th> 
+              <th align="center" class="cellrowborder" id="ID0EOSAG" width="NaN%">Wiring Color</th> 
+              <th align="center" class="cellrowborder" id="ID0EUSAG" width="NaN%">Connected to</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EISAG " width="NaN%">I76-1 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOSAG " width="NaN%">V</td> 
+              <td align="left" class="cellrowborder" headers="ID0EUSAG " rowspan="2" width="NaN%"> <p class="ptxt">Meter circuit plate</p> <p class="ptxt">(for Bus 5)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EISAG " width="NaN%">I76-12 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOSAG " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EISAG " width="NaN%">I76-2 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOSAG " width="NaN%">SB</td> 
+              <td align="left" class="cellrowborder" headers="ID0EUSAG " rowspan="2" width="NaN%"> <p class="ptxt">Main body ECU (multiplex network body ECU)</p> <p class="ptxt">(for Bus 5)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EISAG " width="NaN%">I76-13 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOSAG " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EISAG " width="NaN%">I76-3 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOSAG " width="NaN%">L</td> 
+              <td align="left" class="cellrowborder" headers="ID0EUSAG " rowspan="2" width="NaN%"> <p class="ptxt">No. 1 headlight ECU sub-assembly LH</p> <p class="ptxt">(for Bus 5)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EISAG " width="NaN%">I76-14 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOSAG " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EISAG " width="NaN%">I76-4 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOSAG " width="NaN%">BE</td> 
+              <td align="left" class="cellrowborder" headers="ID0EUSAG " rowspan="2" width="NaN%"> <p class="ptxt">Air conditioning amplifier assembly</p> <p class="ptxt">(for Bus 5)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EISAG " width="NaN%">I76-15 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOSAG " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EISAG " width="NaN%">I76-5 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOSAG " width="NaN%">R</td> 
+              <td align="left" class="cellrowborder" headers="ID0EUSAG " rowspan="2" width="NaN%"> <p class="ptxt">Certification ECU (smart key ECU assembly)</p> <p class="ptxt">(for Bus 5)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EISAG " width="NaN%">I76-16 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOSAG " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EISAG " width="NaN%">I76-6 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOSAG " width="NaN%">B</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUSAG " rowspan="2" width="NaN%"> <p class="ptxt">Central gateway ECU (network gateway ECU)</p> <p class="ptxt">(for Bus 5)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EISAG " width="NaN%">I76-17 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOSAG " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EISAG " width="NaN%">I76-7 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOSAG " width="NaN%">P</td> 
+              <td align="left" class="cellrowborder" headers="ID0EUSAG " rowspan="2" width="NaN%"> <p class="ptxt">Combination meter mirror ECU*</p> <p class="ptxt">(for Bus 5)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EISAG " width="NaN%">I76-18 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOSAG " width="NaN%">W</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">*: w/ Headup Display System</p>
+</li> 
+          </ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">NO. 4 CAN JUNCTION CONNECTOR</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<div class="ie8fixer"/>
+<p class="step2-heading">Check the No. 4 CAN junction connector.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<p class="step3-heading">Connection diagram</p>
+<div class="fignone--bigImage">
+<img alt="B006J8YC86" class="figure-graphic--bigImage" src="../images/b006j8yc86.png"/>
+<div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="big-image-callout">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 4 CAN Junction Connector)</p> </td> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <br class="cellrowborder"/>
+                 <ul class="list1"> 
+                  <li class="list1-item">
+<p class="list1-heading">to Navigation Receiver Assembly</p>
+<p class="item-ptxt">(for Navigation Receiver Type)</p>
+</li> 
+                  <li class="list1-item">
+<p class="list1-heading">to Radio and Display Receiver Assembly</p>
+<p class="item-ptxt">(for Radio and Display Type)</p>
+</li> 
+                 </ul> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Central Gateway ECU (Network Gateway ECU)</td> 
+                <td align="center" class="cellrowborder" width="NaN%">-</td> 
+                <td align="center" class="cellrowborder" width="NaN%">-</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div>
+</div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check the connection diagram of the components which are connected to the No. 4 CAN junction connector.</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ENGBG" width="NaN%">Terminal No. (Symbol)</th> 
+              <th align="center" class="cellrowborder" id="ID0ETGBG" width="NaN%">Wiring Color</th> 
+              <th align="center" class="cellrowborder" id="ID0EZGBG" width="NaN%">Connected to</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ENGBG " width="NaN%">I77-1 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0ETGBG " width="NaN%">L</td> 
+              <td align="left" class="cellrowborder" headers="ID0EZGBG " rowspan="2" width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Navigation receiver assembly*1</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Radio and display receiver assembly*2</p>
+</li> 
+               </ul> <p class="ptxt">(for Bus 3)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ENGBG " width="NaN%">I77-12 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0ETGBG " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ENGBG " width="NaN%">I77-3 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0ETGBG " width="NaN%">G</td> 
+              <td align="left" class="cellrowborder" headers="ID0EZGBG " rowspan="2" width="NaN%"> <p class="ptxt">Central gateway ECU (network gateway ECU)</p> <p class="ptxt">(for Bus 3)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ENGBG " width="NaN%">I77-14 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0ETGBG " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ENGBG " width="NaN%">I77-4 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0ETGBG " width="NaN%">V</td> 
+              <td align="left" class="cellrowborder" headers="ID0EZGBG " rowspan="2" width="NaN%"> <p class="ptxt">Central gateway ECU (network gateway ECU)</p> <p class="ptxt">(for Bus 3)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ENGBG " width="NaN%">I77-15 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0ETGBG " width="NaN%">W</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="step3Root-step3"/>
+<ul class="step3-list1"> 
+           <li class="list1-item">
+<p class="step3-list1-heading">*1: for Navigation Receiver Type</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">*2: for Radio and Display Type</p>
+</li> 
+          </ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">NO. 5 CAN JUNCTION CONNECTOR</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<div class="ie8fixer"/>
+<p class="step2-heading">Check the No. 5 CAN junction connector.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<p class="step3-heading">Connection diagram</p>
+<div class="fignone--bigImage">
+<img alt="B006J8YC59" class="figure-graphic--bigImage" src="../images/b006j8yc59.png"/>
+<div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="big-image-callout">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 5 CAN Junction Connector)</p> </td> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to No. 2 CAN Junction Connector</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Central Gateway ECU (Network Gateway ECU)</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to ECM</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*e</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Hybrid Vehicle Control ECU</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*f</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">to Occupant Detection ECU</p> <p class="ptxt">(w/ Occupant Classification System)</p> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div>
+</div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check the connection diagram of the components which are connected to the No. 5 CAN junction connector.</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EOVBG" width="NaN%">Terminal No. (Symbol)</th> 
+              <th align="center" class="cellrowborder" id="ID0EUVBG" width="NaN%">Wiring Color</th> 
+              <th align="center" class="cellrowborder" id="ID0E1VBG" width="NaN%">Connected to</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOVBG " width="NaN%">I78-1 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUVBG " width="NaN%">G</td> 
+              <td align="center" class="cellrowborder" headers="ID0E1VBG " rowspan="2" width="NaN%"> <p class="ptxt">No. 2 CAN junction connector</p> <p class="ptxt">(for Bus 4)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOVBG " width="NaN%">I78-12 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUVBG " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOVBG " width="NaN%">I78-2 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUVBG " width="NaN%">LG</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1VBG " rowspan="2" width="NaN%"> <p class="ptxt">Central gateway ECU (network gateway ECU)</p> <p class="ptxt">(for Bus 4)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOVBG " width="NaN%">I78-13 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUVBG " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOVBG " width="NaN%">I78-3 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUVBG " width="NaN%">SB</td> 
+              <td align="center" class="cellrowborder" headers="ID0E1VBG " rowspan="2" width="NaN%"> <p class="ptxt">ECM</p> <p class="ptxt">(for Bus 4)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOVBG " width="NaN%">I78-14 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUVBG " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOVBG " width="NaN%">I78-4 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUVBG " width="NaN%">G</td> 
+              <td align="center" class="cellrowborder" headers="ID0E1VBG " rowspan="2" width="NaN%"> <p class="ptxt">Hybrid vehicle control ECU</p> <p class="ptxt">(for Bus 4)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOVBG " width="NaN%">I78-15 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUVBG " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOVBG " width="NaN%">I78-5 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUVBG " width="NaN%">L</td> 
+              <td align="center" class="cellrowborder" headers="ID0E1VBG " rowspan="2" width="NaN%"> <p class="ptxt">Occupant detection ECU*</p> <p class="ptxt">(for Bus 4)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOVBG " width="NaN%">I78-16 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUVBG " width="NaN%">W</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">*: w/ Occupant Classification System</p>
+</li> 
+          </ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">NO. 7 CAN JUNCTION CONNECTOR</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<div class="ie8fixer"/>
+<p class="step2-heading">Check the No. 7 CAN junction connector.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<p class="step3-heading">Connection diagram</p>
+<div class="fignone--bigImage">
+<img alt="B006I2JC07" class="figure-graphic--bigImage" src="../images/b006i2jc07.png"/>
+<div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="big-image-callout">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 7 CAN Junction Connector)</p> </td> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to ECM</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Battery ECU Assembly</td> 
+                <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Electric Vehicle Charger Assembly</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*e</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">to Solar Energy Control Unit</p> <p class="ptxt">(w/ Solar Charging System)</p> </td> 
+                <td align="center" class="cellrowborder" width="NaN%">*f</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to No. 2 CAN Junction Connector</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div>
+</div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check the connection diagram of the components which are connected to the No. 7 CAN junction connector.</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EOGAI" width="NaN%">Terminal No. (Symbol)</th> 
+              <th align="center" class="cellrowborder" id="ID0EUGAI" width="NaN%">Wiring Color</th> 
+              <th align="center" class="cellrowborder" id="ID0E1GAI" width="NaN%">Connected to</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOGAI " width="NaN%">N94-1 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUGAI " width="NaN%">R</td> 
+              <td align="center" class="cellrowborder" headers="ID0E1GAI " rowspan="2" width="NaN%"> <p class="ptxt">ECM</p> <p class="ptxt">(for Bus 2)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOGAI " width="NaN%">N94-12 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUGAI " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOGAI " width="NaN%">N94-3 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUGAI " width="NaN%">GR</td> 
+              <td align="center" class="cellrowborder" headers="ID0E1GAI " rowspan="2" width="NaN%"> <p class="ptxt">Battery ECU assembly</p> <p class="ptxt">(for Bus 2)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOGAI " width="NaN%">N94-14 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUGAI " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOGAI " width="NaN%">N94-4 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUGAI " width="NaN%">L</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1GAI " rowspan="2" width="NaN%"> <p class="ptxt">Electric vehicle charger assembly</p> <p class="ptxt">(for Bus 2)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOGAI " width="NaN%">N94-15 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUGAI " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOGAI " width="NaN%">N94-5 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUGAI " width="NaN%">V</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1GAI " rowspan="2" width="NaN%"> <p class="ptxt">Solar energy control unit*</p> <p class="ptxt">(for Bus 2)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOGAI " width="NaN%">N94-16 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUGAI " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOGAI " width="NaN%">N94-6 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUGAI " width="NaN%">B</td> 
+              <td align="center" class="cellrowborder" headers="ID0E1GAI " rowspan="2" width="NaN%"> <p class="ptxt">No. 2 CAN junction connector</p> <p class="ptxt">(for Bus 2)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOGAI " width="NaN%">N94-17 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUGAI " width="NaN%">W</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">*: w/ Solar Charging System</p>
+</li> 
+          </ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">NO. 8 CAN JUNCTION CONNECTOR (w/o Occupant Classification System)</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<div class="ie8fixer"/>
+<p class="step2-heading">Check the No. 8 CAN junction connector.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<p class="step3-heading">Connection diagram</p>
+<div class="fignone--bigImage">
+<img alt="B006IJYC20" class="figure-graphic--bigImage" src="../images/b006ijyc20.png"/>
+<div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="big-image-callout">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 8 CAN Junction Connector)</p> </td> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Central Gateway ECU (Network Gateway ECU)</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+                <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">to Blind Spot Monitor Sensor LH</p> <p class="ptxt">(w/ Blind Spot Monitor System)</p> </td> 
+                <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to Rear Television Camera Assembly</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*e</td> 
+                <td align="left" class="cellrowborder" width="NaN%">to No. 1 CAN Junction Connector</td> 
+                <td align="center" class="cellrowborder" width="NaN%">-</td> 
+                <td align="center" class="cellrowborder" width="NaN%">-</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div>
+</div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check the connection diagram of the components which are connected to the No. 8 CAN junction connector.</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EOXAI" width="NaN%">Terminal No. (Symbol)</th> 
+              <th align="center" class="cellrowborder" id="ID0EUXAI" width="NaN%">Wiring Color</th> 
+              <th align="center" class="cellrowborder" id="ID0E1XAI" width="NaN%">Connected to</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOXAI " width="NaN%">N95-4 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUXAI " width="NaN%">P</td> 
+              <td align="center" class="cellrowborder" headers="ID0E1XAI " rowspan="2" width="NaN%"> <p class="ptxt">Central gateway ECU (network gateway ECU)</p> <p class="ptxt">(for Bus 1)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOXAI " width="NaN%">N95-14 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUXAI " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOXAI " width="NaN%">N95-5 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUXAI " width="NaN%">B</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1XAI " rowspan="2" width="NaN%"> <p class="ptxt">Blind spot monitor sensor LH*</p> <p class="ptxt">(for Bus 1)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOXAI " width="NaN%">N95-15 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUXAI " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOXAI " width="NaN%">N95-6 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUXAI " width="NaN%">LG</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1XAI " rowspan="2" width="NaN%"> <p class="ptxt">Rear television camera assembly</p> <p class="ptxt">(for Bus 1)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOXAI " width="NaN%">N95-16 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUXAI " width="NaN%">W</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOXAI " width="NaN%">N95-7 (CANH)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUXAI " width="NaN%">BE</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1XAI " rowspan="2" width="NaN%"> <p class="ptxt">No. 1 CAN junction connector</p> <p class="ptxt">(for Bus 1)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EOXAI " width="NaN%">N95-17 (CANL)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUXAI " width="NaN%">W</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="step3Root-step3"/>
+<ul class="step3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="step3-list1-nonmark-heading">*: w/ Blind Spot Monitor System</p>
+</li> 
+          </ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">DLC3</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006IWVC04" class="figure-graphic--bigImage" src="../images/b006iwvc04.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">DLC3</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CENTRAL GATEWAY ECU (NETWORK GATEWAY ECU)</p>
+<div class="ie8fixer"/>
+<div class="fignone--bigImage">
+<img alt="B006IHDC13" class="figure-graphic--bigImage" src="../images/b006ihdc13.png"/>
+<div class="figure-p"> 
+        <div class="tablenoborder">
+         <table class="big-image-callout">
+<tbody class="p-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+            <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Component without harness connected</p> <p class="ptxt">(Central Gateway ECU (Network Gateway ECU))</p> </td> 
+            <td align="center" class="cellrowborder" width="NaN%">-</td> 
+            <td align="center" class="cellrowborder" width="NaN%">-</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div> 
+       </div>
+</div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the I62 central gateway ECU (network gateway ECU) connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006ITJC15" class="figure-graphic--bigImage" src="../images/b006itjc15.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Central Gateway ECU (Network Gateway ECU))</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">STEERING SENSOR</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the I58 steering sensor connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006I3WC10" class="figure-graphic" src="../images/b006i3wc10.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Steering Sensor)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">HYBRID VEHICLE CONTROL ECU</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM1000000011533.html#RM1000000011533">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the I2 and I3 hybrid vehicle control ECU connectors.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006J9VC02" class="figure-graphic--bigImage" src="../images/b006j9vc02.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Hybrid Vehicle Control ECU)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">INVERTER WITH CONVERTER ASSEMBLY</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000001155S.html#RM100000001155S">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the C33 inverter with converter assembly connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006HAFC02" class="figure-graphic--bigImage" src="../images/b006hafc02.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">DLC3</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Inverter with Converter Assembly)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">BATTERY ECU ASSEMBLY</p>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM1000000012KPN.html#RM1000000012KPN">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the t14 battery ECU assembly connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HSPC04" class="figure-graphic" src="../images/b006hspc04.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Battery ECU Assembly)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">ELECTRIC VEHICLE CHARGER ASSEMBLY</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM1000000011O1D.html#RM1000000011O1D">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the N74 electric vehicle charger assembly connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006HFJC01" class="figure-graphic--bigImage" src="../images/b006hfjc01.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">DLC3</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Electric Vehicle Charger Assembly)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">SOLAR ENERGY CONTROL UNIT (w/ Solar Charging System)</p>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM1000000010T6J.html#RM1000000010T6J">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the N71 and N73 solar energy control unit connectors.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HJ8C02" class="figure-graphic" src="../images/b006hj8c02.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Solar Energy Control Unit)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">ECM</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<br class="step1Root-step1"/>
+<ul class="step1-list1"> 
+       <li class="list1-item">
+<p class="step1-list1-heading">w/ Canister Pump Module</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM1000000010610.html#RM1000000010610">Click here</a>
+</p>
+</li> 
+       <li class="list1-item">
+<p class="step1-list1-heading">w/o Canister Pump Module</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001064K.html#RM100000001064K">Click here</a>
+</p>
+</li> 
+      </ul>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2 clearer">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the A31 and C31 ECM connectors.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006H6UC05" class="figure-graphic--bigImage" src="../images/b006h6uc05.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to ECM)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">METER CIRCUIT PLATE</p>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM1000000011ASD.html#RM1000000011ASD">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the I6 meter circuit plate connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006J21C16" class="figure-graphic" src="../images/b006j21c16.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Meter Circuit Plate)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table"/>
+<br class="step2Root-step2"/>
+<ul class="step2-list1"> 
+         <li class="list1-item">
+<p class="step2-list1-heading">*1: for LHD</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">*2: for RHD</p>
+</li> 
+        </ul>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">COMBINATION METER MIRROR ECU (w/ Headup Display System)</p>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM1000000011ASZ.html#RM1000000011ASZ">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the G8 combination meter mirror ECU connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006I79C03" class="figure-graphic" src="../images/b006i79c03.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Combination Meter Mirror ECU)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY</p>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM10000000110JX.html#RM10000000110JX">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the A32 brake booster with master cylinder assembly connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006I2EC11" class="figure-graphic" src="../images/b006i2ec11.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Brake Booster with Master Cylinder Assembly)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">MAIN BODY ECU (MULTIPLEX NETWORK BODY ECU)</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM1000000010RP3.html#RM1000000010RP3">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the I18 main body ECU (multiplex network body ECU) connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006HQ3C03" class="figure-graphic--bigImage" src="../images/b006hq3c03.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">DLC3</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Main Body ECU (Multiplex Network Body ECU))</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CERTIFICATION ECU (SMART KEY ECU ASSEMBLY)</p>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000000ZTAS.html#RM100000000ZTAS">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the I1 certification ECU (smart key ECU assembly) connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006IF9C11" class="figure-graphic" src="../images/b006if9c11.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Certification ECU (Smart Key ECU Assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">POWER STEERING ECU ASSEMBLY</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000000Z9MS.html#RM100000000Z9MS">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the I21 and I57 power steering ECU assembly connectors.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006H8QC02" class="figure-graphic--bigImage" src="../images/b006h8qc02.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Power Steering ECU Assembly)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CLEARANCE WARNING ECU ASSEMBLY (w/ Simple Intelligent Parking Assist System)</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000001148K.html#RM100000001148K">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the I28 clearance warning ECU assembly connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006I9FC02" class="figure-graphic--bigImage" src="../images/b006i9fc02.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">DLC3</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Clearance Warning ECU Assembly)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">AIRBAG SENSOR ASSEMBLY</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000000Z8VO.html#RM100000000Z8VO">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the I59 airbag sensor assembly connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006HBJC02" class="figure-graphic--bigImage" src="../images/b006hbjc02.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">DLC3</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Airbag Sensor Assembly)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">AIR CONDITIONING AMPLIFIER ASSEMBLY</p>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000000ZL7M.html#RM100000000ZL7M">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the I61 air conditioning amplifier assembly connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006IMFC10" class="figure-graphic" src="../images/b006imfc10.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Air Conditioning Amplifier Assembly)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">NAVIGATION RECEIVER ASSEMBLY (for Navigation Receiver Type)</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000000Z88G.html#RM100000000Z88G">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the I33 and I34 navigation receiver assembly connectors.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006HE0C03" class="figure-graphic--bigImage" src="../images/b006he0c03.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Navigation Receiver Assembly)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">RADIO AND DISPLAY RECEIVER ASSEMBLY (for Radio and Display Type)</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<br class="step1Root-step1"/>
+<ul class="step1-list1"> 
+       <li class="list1-item">
+<p class="step1-list1-heading">for Audio and Visual System</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000Z8IE.html#RM100000000Z8IE">Click here</a>
+</p>
+</li> 
+       <li class="list1-item">
+<p class="step1-list1-heading">for Navigation System</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZAN5.html#RM100000000ZAN5">Click here</a>
+</p>
+</li> 
+      </ul>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2 clearer">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the I96 and I97 radio and display receiver assembly connectors.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006HE0C04" class="figure-graphic--bigImage" src="../images/b006he0c04.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Radio and Display Receiver Assembly)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">SWING GRILLE ACTUATOR ASSEMBLY (w/ Occupant Classification System)</p>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000000ZT4K.html#RM100000000ZT4K">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the A28 swing grille actuator assembly connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006I9UC10" class="figure-graphic" src="../images/b006i9uc10.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Swing Grille Actuator Assembly)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">SWING GRILLE ACTUATOR ASSEMBLY (w/o Occupant Classification System)</p>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000000ZT4K.html#RM100000000ZT4K">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the A29 swing grille actuator assembly connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006I3YC14" class="figure-graphic" src="../images/b006i3yc14.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Swing Grille Actuator Assembly)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">BLIND SPOT MONITOR SENSOR LH (w/ Blind Spot Monitor System)</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000001149E.html#RM100000001149E">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the N50 blind spot monitor sensor LH connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006HG3C04" class="figure-graphic--bigImage" src="../images/b006hg3c04.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">DLC3</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Blind Spot Monitor Sensor LH)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">DRIVING SUPPORT ECU ASSEMBLY (w/ Toyota Safety Sense)</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000000Z7CI.html#RM100000000Z7CI">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the I41 driving support ECU assembly connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006IUXC03" class="figure-graphic--bigImage" src="../images/b006iuxc03.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">DLC3</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Driving Support ECU Assembly)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">FORWARD RECOGNITION CAMERA (w/ Toyota Safety Sense)</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000000Z79U.html#RM100000000Z79U">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the O6 forward recognition camera connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006IIFC03" class="figure-graphic--bigImage" src="../images/b006iifc03.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">DLC3</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Forward Recognition Camera)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">MILLIMETER WAVE RADAR SENSOR ASSEMBLY (w/ Toyota Safety Sense)</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000000Z1IO.html#RM100000000Z1IO">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the A2 millimeter wave radar sensor assembly connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006HYLC02" class="figure-graphic--bigImage" src="../images/b006hylc02.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">DLC3</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Millimeter Wave Radar Sensor Assembly)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">OCCUPANT DETECTION ECU (w/ Occupant Classification System)</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000000Z8X4.html#RM100000000Z8X4">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the a5 occupant detection ECU connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006ILUC03" class="figure-graphic--bigImage" src="../images/b006iluc03.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">DLC3</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Occupant Detection ECU)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">NO. 1 HEADLIGHT ECU SUB-ASSEMBLY LH</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM1000000010RP3.html#RM1000000010RP3">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the A15 No. 1 headlight ECU sub-assembly LH connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006HC2C02" class="figure-graphic--bigImage" src="../images/b006hc2c02.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">DLC3</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 1 Headlight ECU Sub-assembly LH)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">REAR TELEVISION CAMERA ASSEMBLY (w/ Parking Assist Monitor System)</p>
+<div class="ie8fixer"/>
+<p class="step1-ptxt">Refer to Terminals of ECU.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM1000000010LR0.html#RM1000000010LR0">Click here</a>
+</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Disconnect the R4 rear television camera assembly connector.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<div class="fignone--bigImage">
+<img alt="B006IGGC02" class="figure-graphic--bigImage" src="../images/b006iggc02.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">DLC3</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Rear Television Camera Assembly)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<table class="spec-with-table"/>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

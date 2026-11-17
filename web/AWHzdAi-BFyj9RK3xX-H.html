@@ -1,0 +1,129 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="FORWARD RECOGNITION CAMERA SYSTEM SYSTEM DIAGRAM" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058076" name="sectionId"/> 
+  <meta content="CRUISE CONTROL" name="sectionName"/> 
+  <meta content="_0284501" name="ttlId"/> 
+  <meta content="FORWARD RECOGNITION CAMERA SYSTEM" name="ttlName"/> 
+  <meta content="U" name="paraCategory"/> 
+  <meta content="SYSTEM DIAGRAM" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000Z79P" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>FORWARD RECOGNITION CAMERA SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">FORWARD RECOGNITION CAMERA SYSTEM<span class="topictitle1"> SYSTEM DIAGRAM</span>
+</h1>
+<div class="subpara" id="RM100000000Z79P__RM100000000Z79P_z0">
+     
+    <div class="fignone--bigImage">
+<img alt="B006I3FE02" class="figure-graphic--bigImage" src="../images/b006i3fe02.png"/>
+</div> 
+    <div class="fignone--bigImage">
+<img alt="B006INSE02" class="figure-graphic--bigImage" src="../images/b006inse02.png"/>
+</div> 
+    <div class="fignone--bigImage">
+<img alt="B006HMFE07" class="figure-graphic--bigImage" src="../images/b006hmfe07.png"/>
+</div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Communication Table
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0ESF" width="NaN%">Sender</th> 
+        <th align="center" class="cellrowborder" id="ID0EYF" width="NaN%">Receiver</th> 
+        <th align="center" class="cellrowborder" id="ID0E5F" width="NaN%">Signal</th> 
+        <th align="center" class="cellrowborder" id="ID0EEG" width="NaN%">Line</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0ESF " width="NaN%">Forward Recognition Camera</td> 
+        <td class="cellrowborder" headers="ID0EYF " width="NaN%">Main Body ECU (Multiplex Network Body ECU)</td> 
+        <td class="cellrowborder" headers="ID0E5F " width="NaN%">Automatic high beam control signal</td> 
+        <td align="center" class="cellrowborder" headers="ID0EEG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0ESF " width="NaN%">Driving Support ECU Assembly</td> 
+        <td class="cellrowborder" headers="ID0EYF " width="NaN%">Forward Recognition Camera</td> 
+        <td class="cellrowborder" headers="ID0E5F " width="NaN%">PCS control information signal</td> 
+        <td align="center" class="cellrowborder" headers="ID0EEG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0ESF " width="NaN%">Hybrid Vehicle Control ECU</td> 
+        <td class="cellrowborder" headers="ID0EYF " width="NaN%">Forward Recognition Camera</td> 
+        <td class="cellrowborder" headers="ID0E5F " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Shift position signal (P, R, N, D)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Engine type information signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Vehicle specification information (2WD/4WD information, conventional/ hybrid information)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Cruise control system control signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0EEG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0ESF " width="NaN%">Main Body ECU (Multiplex Network Body ECU)</td> 
+        <td class="cellrowborder" headers="ID0EYF " width="NaN%">Forward Recognition Camera</td> 
+        <td class="cellrowborder" headers="ID0E5F " width="NaN%">Vehicle specification information (destination)</td> 
+        <td align="center" class="cellrowborder" headers="ID0EEG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0ESF " width="NaN%">Skid Control ECU (Brake Booster with Master Cylinder Assembly)</td> 
+        <td class="cellrowborder" headers="ID0EYF " width="NaN%">Forward Recognition Camera</td> 
+        <td class="cellrowborder" headers="ID0E5F " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Vehicle speed signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Stop light switch signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Vehicle yaw rate sensor zero point malfunction signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Vehicle stability control system operation signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Vehicle stability control system malfunction signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0EEG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0ESF " width="NaN%">Yaw Rate Sensor (Airbag Sensor Assembly)</td> 
+        <td class="cellrowborder" headers="ID0EYF " width="NaN%">Forward Recognition Camera</td> 
+        <td class="cellrowborder" headers="ID0E5F " width="NaN%">Vehicle yaw rate sensor signal</td> 
+        <td align="center" class="cellrowborder" headers="ID0EEG " width="NaN%">CAN</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+</div>
+
+</html>

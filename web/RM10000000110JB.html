@@ -1,0 +1,362 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM INITIALIZATION" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_54" name="servcatId"/> 
+  <meta content="Brake" name="servcatName"/> 
+  <meta content="_058045" name="sectionId"/> 
+  <meta content="BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS" name="sectionName"/> 
+  <meta content="_0295571" name="ttlId"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="INITIALIZATION" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM10000000110JB" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>ELECTRONICALLY CONTROLLED BRAKE SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ELECTRONICALLY CONTROLLED BRAKE SYSTEM<span class="topictitle1"> INITIALIZATION</span>
+</h1>
+<div class="subpara" id="RM10000000110JB__RM10000000110JB_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM10000000110JB__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">DESCRIPTION</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Always perform linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization after the skid control ECU (brake booster with master cylinder assembly), brake pedal stroke sensor assembly, brake pedal, brake booster pump assembly or brake actuator assembly is replaced.</p>
+<p class="step2-ptxt">Follow the procedure to perform initialization.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After performing linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization, learning cannot be performed again until the data stored during learning has been cleared. When replacing a part, always perform learning after clearing data stored during previous learning.</p> 
+        </div>
+<div class="tablenoborder">
+         <table class="step2-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EJF" width="NaN%">Part to be Replaced</th> 
+            <th align="center" class="cellrowborder" id="ID0EPF" width="NaN%">Necessary Operation</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EJF " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Skid control ECU (Brake booster with master cylinder assembly)</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Brake actuator assembly</p>
+</li> 
+             </ul> </td> 
+            <td class="cellrowborder" headers="ID0EPF " width="NaN%"> <br class="cellrowborder"/>
+             <ol class="list1" type="i">
+<li class="list1-item">
+<p class="list1-heading">Bleed air.</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">Clear the data stored during previous linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization.</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">Perform linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization.</p>
+</li>
+</ol> </td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EJF " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Brake pedal stroke sensor assembly</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Brake pedal</p>
+</li> 
+             </ul> </td> 
+            <td class="cellrowborder" headers="ID0EPF " width="NaN%"> <br class="cellrowborder"/>
+             <ol class="list1" type="i">
+<li class="list1-item">
+<p class="list1-heading">Clear the data stored during previous linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization.</p>
+</li>
+<li class="list1-item">
+<p class="list1-heading">Perform linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization.</p>
+</li>
+</ol> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">PERFORM LINEAR SOLENOID VALVE OFFSET LEARNING, ABS HOLDING SOLENOID VALVE LEARNING, BRAKE PEDAL STROKE SENSOR ASSEMBLY ZERO POINT CALIBRATION AND SYSTEM INFORMATION MEMORIZATION</p>
+<div class="note">
+       <p class="notetitle">Note</p> 
+       <br class="note"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">After replacing the skid control ECU (brake booster with master cylinder assembly), brake pedal stroke sensor assembly, brake pedal or brake actuator assembly, perform linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization after performing "Reset Memory".</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">After replacing the skid control ECU (brake booster with master cylinder assembly) or brake actuator assembly, linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization will be automatically performed during the brake bleeding procedure.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000Z7XZ.html#RM100000000Z7XZ">Click here</a>
+</p>
+</li> 
+       </ul> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">Brake pedal stroke sensor assembly zero point calibration will automatically be performed during linear solenoid valve offset learning and ABS holding solenoid valve learning.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">When entering test mode, the skid control ECU (brake booster with master cylinder assembly) communicates with the driving support ECU assembly to judge whether the vehicle is equipped with the pre-crash safety system. Therefore, do not exit test mode within 5 seconds of entering test mode (w/ Pre-crash Safety System).</p>
+</li> 
+       </ul> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">To ensure that linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization completes successfully, ensure that the following conditions are met before proceeding:</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">The auxiliary battery voltage is 11 to 15.5 V when the power switch is on (READY).</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">The brake actuator (brake booster with master cylinder assembly) is not hot.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">The brake actuator assembly is not hot.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">If the brake actuator (brake booster with master cylinder assembly) or brake actuator assembly is hot, wait until it cools down before performing linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization.</p> 
+          </div>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Clear the data stored during previous linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the power switch off.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check that the steering wheel is centered.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check that park (P) is selected.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the GTS on.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Using the GTS, clear the data stored during previous linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization. Enter the following menus: Chassis / ABS/VSC/TRC / Utility / Reset Memory.</p>
+<br class="step3Root-step3"/>Chassis &gt; ABS/VSC/TRC &gt; Utility<div class="tablenoborder">
+             <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+               <tr> 
+                <th align="center" class="cellrowborder" id="ID0ERLAC" width="NaN%">Tester Display</th> 
+               </tr> 
+              </thead>
+<tbody class="gts-info-title-table-table"> 
+               <tr> 
+                <td align="left" class="cellrowborder" headers="ID0ERLAC " width="NaN%">Reset Memory</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+<div class="note">
+           <p class="notetitle">Note</p> 
+           <p class="ptxt">Always perform yaw rate and acceleration sensor zero point calibration after performing "Reset Memory" as the data stored during yaw rate and acceleration sensor zero point calibration is cleared when "Reset Memory" is performed.</p> 
+          </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the power switch off.</p>
+<div class="note">
+           <p class="notetitle">Note</p> 
+           <p class="ptxt">If the power switch is turned on (IG) for more than 15 seconds with park (P) selected after the zero point of the yaw rate and acceleration sensor has been cleared, only the zero point of the yaw rate sensor will be stored. If the vehicle is driven under these conditions, the skid control ECU (brake booster with master cylinder assembly) will store the zero point calibration for the acceleration sensor as not being completed. The skid control ECU (brake booster with master cylinder assembly) will then also indicate this as a malfunction of the VSC system using the indicator light.</p> 
+          </div>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Perform linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the power switch off.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check that the steering wheel is centered.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check that park (P) is selected.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check that the parking brake is released.</p>
+<div class="note">
+           <p class="notetitle">Note</p> 
+           <br class="note"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">If the parking brake is not released, linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization cannot be performed.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">If the parking brake is applied during linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration or system information memorization, the learning process will be suspended until the parking brake is released.</p>
+</li> 
+           </ul> 
+          </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the power switch on (IG) with the brake pedal released.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the GTS on.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Switch the skid control ECU (brake booster with master cylinder assembly) to Test Mode using the GTS. Enter the following menus: Chassis / ABS/VSC/TRC / Utility / ECB* Utility / Linear Valve Offset.</p>
+<p class="step3-ptxt">*: Electronically Controlled Brake System</p>
+<br class="step3Root-step3"/>Chassis &gt; ABS/VSC/TRC &gt; Utility<div class="tablenoborder">
+             <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+               <tr> 
+                <th align="center" class="cellrowborder" id="ID0EJGAE" width="NaN%">Tester Display</th> 
+               </tr> 
+              </thead>
+<tbody class="gts-info-title-table-table"> 
+               <tr> 
+                <td align="left" class="cellrowborder" headers="ID0EJGAE " width="NaN%">ECB Utility</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Leave the vehicle stationary without depressing the brake pedal for approximately 4 minutes.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check that the blink interval of the brake warning light / yellow (minor malfunction) changes from 1 second to 0.25 seconds within the first half (approximately 2 minutes) to indicate that linear solenoid valve offset learning is complete, and that the blink interval of the ABS warning light changes from 1 second to 0.25 seconds within the second half (approximately 2 minutes) to indicate that ABS holding solenoid valve learning is complete.</p>
+<div class="note">
+           <p class="notetitle">Note</p> 
+           <br class="note"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Do not drive the vehicle or depress the brake pedal during linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration or system information memorization.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">If Test Mode is entered with a shift state other than park (P) selected, the yaw rate and acceleration sensor zero point calibration will not be completed and a DTC will be stored.</p>
+</li> 
+           </ul> 
+          </div>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">An auxiliary battery voltage of 10 V or more is required during learning.</p>
+<p class="item-ptxt">If the auxiliary battery voltage drops below 10 V, learning may be canceled.</p>
+<p class="item-ptxt">The time required for learning changes depending on the auxiliary battery voltage.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">If linear solenoid valve offset learning is canceled, DTC C1345 (Linear Solenoid Valve Offset Learning undone) is stored. In this case, perform learning again after turning the power switch off.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">If ABS holding solenoid valve learning is canceled, DTC C1349 (Pressure Holding Solenoid Valve Learning Undone) is stored. In this case, perform learning again after turning the power switch off.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Learning is performed in the order of linear solenoid valve offset learning, then ABS holding solenoid valve learning. During learning, the brake warning light / yellow (minor malfunction) and ABS warning light change as shown in the table below.</p>
+<div class="tablenoborder">
+              <table class="big-table">
+<thead align="left" class="item-table"> 
+                <tr> 
+                 <th align="center" class="cellrowborder" id="ID0EIPAE" width="NaN%">Linear Solenoid Valve Offset Learning Condition</th> 
+                 <th align="center" class="cellrowborder" id="ID0EOPAE" width="NaN%">ABS Holding Solenoid Valve Learning Condition</th> 
+                 <th align="center" class="cellrowborder" id="ID0EUPAE" width="NaN%">Brake warning light / yellow (minor malfunction)</th> 
+                 <th align="center" class="cellrowborder" id="ID0E1PAE" width="NaN%">ABS warning light</th> 
+                </tr> 
+               </thead>
+<tbody class="item-table"> 
+                <tr> 
+                 <td align="center" class="cellrowborder" headers="ID0EIPAE " width="NaN%">Learning not complete</td> 
+                 <td align="center" class="cellrowborder" headers="ID0EOPAE " width="NaN%">Learning not performed</td> 
+                 <td align="center" class="cellrowborder" headers="ID0EUPAE " width="NaN%">Blinks at 1 second intervals</td> 
+                 <td align="center" class="cellrowborder" headers="ID0E1PAE " width="NaN%">Blinks at 0.25 second intervals</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="cellrowborder" headers="ID0EIPAE " rowspan="2" width="NaN%">Learning complete</td> 
+                 <td align="center" class="cellrowborder" headers="ID0EOPAE " width="NaN%">Learning not complete</td> 
+                 <td align="center" class="cellrowborder" headers="ID0EUPAE " width="NaN%">Blinks at 0.25 second intervals</td> 
+                 <td align="center" class="cellrowborder" headers="ID0E1PAE " width="NaN%">Blinks at 1 second intervals</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="cellrowborder" headers="ID0EOPAE " width="NaN%">Learning complete</td> 
+                 <td align="center" class="cellrowborder" headers="ID0EUPAE " width="NaN%">Blinks at 0.25 second intervals</td> 
+                 <td align="center" class="cellrowborder" headers="ID0E1PAE " width="NaN%">Blinks at 0.25 second intervals</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">When linear solenoid valve offset learning, ABS holding solenoid valve learning, brake pedal stroke sensor assembly zero point calibration and system information memorization are complete, the ABS warning light and brake warning light / yellow (minor malfunction) indicate that the system is in Test Mode (blink at 0.25 second intervals).</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Do not exit test mode within 5 seconds of entering test mode. If test mode is exited within 5 seconds of entering test mode, DTC U1104 may be stored. If DTC U1104 is output after exiting test mode, enter test mode again, wait at least 5 seconds, then recheck for DTCs (w/ Pre-crash Safety System).</p>
+</li> 
+           </ul> 
+          </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check that "complete" is displayed for Test Mode (Signal Check) items "Learning of Stroke Sensor Zero Point" and "Memory of System Information".</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Perform zero point calibration of the yaw rate and acceleration sensor.</p>
+<p class="step3-ptxt"> <a class="ptxt-xref" href="RM10000000110JA.html#RM10000000110JA">Click here</a>
+</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Return to normal mode from Test Mode following the GTS directions.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">Refer to the GTS operator's manual for further details.</p> 
+          </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the power switch off and disconnect the GTS.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

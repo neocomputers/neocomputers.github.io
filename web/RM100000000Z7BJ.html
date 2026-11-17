@@ -1,0 +1,457 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="LANE DEPARTURE ALERT SYSTEM(w/ Steering Control) Indicator Circuit" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058076" name="sectionId"/> 
+  <meta content="CRUISE CONTROL" name="sectionName"/> 
+  <meta content="_0284502" name="ttlId"/> 
+  <meta content="LANE DEPARTURE ALERT SYSTEM(w/ Steering Control)" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000Z7BJ" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Indicator Circuit</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">LANE DEPARTURE ALERT SYSTEM(w/ Steering Control)<span class="topictitle1"> Indicator Circuit</span>
+</h1>
+<div class="subpara" id="RM100000000Z7BJ__RM100000000Z7BJ_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The forward recognition camera sends indicator illumination request signals to the combination meter assembly via CAN communication.</p> 
+   </div>
+<div class="subpara" id="RM100000000Z7BJ__RM100000000Z7BJ_02">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000Z7BJ__RM100000000Z7BJ_02_0011">
+<p class="testgrp-heading">READ VALUE USING GTS (CAN BUS CHECK)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: System Select / Can Bus Check.</p>
+<br class="test1Root-test1"/>CAN Bus Check<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPBAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPBAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EYCAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E5CAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EYCAC " width="NaN%">All of the ECUs and sensors that are currently connected to the CAN communication system are displayed</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5CAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EYCAC " width="NaN%">None of the ECUs and sensors that are currently connected to the CAN communication system are displayed, or some of them are not displayed</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5CAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO CAN COMMUNICATION SYSTEM <a class="content6-ptxt-xref" href="RM1000000011A35.html#RM1000000011A35">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000Z7BJ__RM100000000Z7BJ_02_0014">
+<p class="testgrp-heading">CHECK FOR DTCs (HEALTH CHECK)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: System Select / Health Check.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check DTCs.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKIAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EKIAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ESJAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EYJAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ESJAC " width="NaN%">No DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYJAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ESJAC " width="NaN%">DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYJAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000Z7BJ__RM100000000Z7BJ_02_0012">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (METER DISPLAY 1)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Combination Meter / Active Test.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, perform the Active Test.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Active Test<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E3PAC" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EDAAE" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EJAAE" width="NaN%">Control Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EPAAE" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E3PAC " width="NaN%">Meter Display 1</td> 
+              <td align="left" class="cellrowborder" headers="ID0EDAAE " width="NaN%">Multi-information display</td> 
+              <td align="left" class="cellrowborder" headers="ID0EJAAE " width="NaN%">OFF or All</td> 
+              <td align="center" class="cellrowborder" headers="ID0EPAAE " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EXFAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EXFAE " width="NaN%">Meter Display 1</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBLAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBLAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EKMAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EQMAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EKMAE " width="NaN%">The multi-information display in the combination meter assembly turns on or off according to the operation of the Active Test.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQMAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EKMAE " width="NaN%">The multi-information display in the combination meter assembly does not turn on or off according to the operation of the Active Test.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQMAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO METER / GAUGE SYSTEM <a class="content6-ptxt-xref" href="RM1000000011ARR.html#RM1000000011ARR">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000Z7BJ__RM100000000Z7BJ_02_0013">
+<p class="testgrp-heading">READ VALUE USING GTS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Chassis / LKA/LDA / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Chassis &gt; LKA/LDA &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E6SAE" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EFTAE" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0ELTAE" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0ERTAE" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0EXTAE" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E6SAE " width="NaN%">LDA Control</td> 
+              <td align="left" class="cellrowborder" headers="ID0EFTAE " width="NaN%">Control status of lane departure alert system</td> 
+              <td align="left" class="cellrowborder" headers="ID0ELTAE " width="NaN%">Prohibit or Permit</td> 
+              <td align="left" class="cellrowborder" headers="ID0ERTAE " width="NaN%"> <p class="ptxt">Prohibit: Control prohibited</p> <p class="ptxt">Permit: Control permitted</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EXTAE " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Chassis &gt; LKA/LDA &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EQZAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQZAE " width="NaN%">LDA Control</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EK5AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EK5AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ET6AE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EZ6AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ET6AE " width="NaN%">The lane departure alert indicator illuminates and turns on according to the operation of the lane departure alert main switch</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZ6AE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ET6AE " width="NaN%">The lane departure alert indicator does not illuminate but the Data List item LDA Control changes according to the operation of the lane departure alert main switch</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZ6AE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0ET6AE " width="NaN%">The lane departure alert indicator does not illuminate and the Data List item LDA Control does not change according to the operation of the lane departure alert main switch</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZ6AE " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>PROCEED TO NEXT SUSPECTED AREA SHOWN IN PROBLEM SYMPTOMS TABLE <a class="content6-ptxt-xref" href="RM100000000Z7AM.html#RM100000000Z7AM">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE COMBINATION METER ASSEMBLY (METER CIRCUIT PLATE) <a class="content6-ptxt-xref" href="RM1000000011ATA.html#RM1000000011ATA">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FORWARD RECOGNITION CAMERA <a class="content6-ptxt-xref" href="RM100000000ZWFL.html#RM100000000ZWFL">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

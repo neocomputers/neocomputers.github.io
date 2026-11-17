@@ -1,0 +1,271 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C1232, C1243, C1245" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_54" name="servcatId"/> 
+  <meta content="Brake" name="servcatName"/> 
+  <meta content="_058045" name="sectionId"/> 
+  <meta content="BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS" name="sectionName"/> 
+  <meta content="_0295571" name="ttlId"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM10000000110K8" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>C1232, C1243, C1245</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C1232, C1243, C1245</h1>
+<div class="section" id="RM10000000110K8__RM10000000110K8_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C1232</td> 
+       <td class="dtcname" headers="ID0EED">Deceleration Sensor</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C1243</td> 
+       <td class="dtcname" headers="ID0EED">Deceleration Sensor Stuck</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C1245</td> 
+       <td class="dtcname" headers="ID0EED">Abnormal Output in Deceleration Sensor</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM10000000110K8__RM10000000110K8_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The airbag sensor assembly has a built-in yaw rate and acceleration sensor and detects the vehicle condition using 2 circuits (GL1, GL2).</p> 
+    <p class="content5-ptxt">The skid control ECU (brake booster with master cylinder assembly) receives signals from the yaw rate and acceleration sensor (airbag sensor assembly) via the CAN communication system.</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">When a malfunction occurs in the communication line to the yaw rate and acceleration sensor (airbag sensor assembly), U0124 (Lost Communication With Lateral Acceleration Sensor Module) is output.</p> 
+     <p class="ptxt">If a DTC related to the CAN communication line is output, first troubleshoot the CAN communication line.</p> 
+    </div> 
+    <p class="content5-ptxt">A DTC may be stored if either of the following is detected:</p> 
+    <br class="subpara"/>
+    <ul class="content5-list1"> 
+     <li class="list1-item">
+<p class="content5-list1-heading">Incorrect installation of acceleration sensor (airbag sensor assembly).</p>
+</li> 
+     <li class="list1-item">
+<p class="content5-list1-heading">Abnormal acceleration sensor (airbag sensor assembly) signal.</p>
+</li> 
+    </ul> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EIAAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EOAAC" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EUAAC" width="NaN%">INF Code</th> 
+        <th align="center" class="cellrowborder" id="ID0E1AAC" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EABAC" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EGBAC" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EIAAC " width="NaN%">C1232</td> 
+        <td align="left" class="cellrowborder" headers="ID0EOAAC " width="NaN%">Deceleration Sensor</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUAAC " width="NaN%"> <p class="ptxt">562</p> <p class="ptxt">563</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0E1AAC " width="NaN%">When the vehicle speed is 10 km/h (6 mph) or more, the acceleration sensor output value does not change for 30 seconds or more.</td> 
+        <td align="left" class="cellrowborder" headers="ID0EABAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Acceleration sensor (airbag sensor assembly) installed improperly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Acceleration sensor (airbag sensor assembly)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EGBAC " width="NaN%">ABS DTC</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EIAAC " width="NaN%">C1243</td> 
+        <td align="left" class="cellrowborder" headers="ID0EOAAC " width="NaN%">Deceleration Sensor Stuck</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUAAC " width="NaN%"> <p class="ptxt">561</p> <p class="ptxt">564</p> <p class="ptxt">565</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0E1AAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">INF Code: 561</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">The acceleration sensor output value does not change 16 times or more before the vehicle speed reaches 0 km/h (0 mph) from 30 km/h (19 mph).</p>
+</li> 
+           </ul> 
+          <li class="list1-item">
+<p class="list1-heading">INF Code: 564</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">The longitudinal and lateral output values of the acceleration sensor are not within the specified range for 60 seconds or more.</p>
+</li> 
+           </ul> 
+          <li class="list1-item">
+<p class="list1-heading">INF Code: 565</p>
+</li> 
+          <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+            <li class="list2-item">
+<p class="li-list2-list2-heading">The lateral output value of the acceleration sensor is not within the specified range for 60 seconds or more.</p>
+</li> 
+           </ul> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EABAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Acceleration sensor (airbag sensor assembly) installed improperly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Acceleration sensor (airbag sensor assembly)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EGBAC " width="NaN%">ABS DTC</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EIAAC " width="NaN%">C1245</td> 
+        <td align="left" class="cellrowborder" headers="ID0EOAAC " width="NaN%">Abnormal Output in Deceleration Sensor</td> 
+        <td align="center" class="cellrowborder" headers="ID0EUAAC " width="NaN%">581</td> 
+        <td align="left" class="cellrowborder" headers="ID0E1AAC " width="NaN%">When the vehicle speed is 30 km/h (19 mph) or more, the difference between the deceleration value from the acceleration sensor and deceleration value calculated from the change in vehicle speed exceeds 0.35 G for 60 seconds or more.</td> 
+        <td align="left" class="cellrowborder" headers="ID0EABAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Acceleration sensor (airbag sensor assembly) installed improperly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Acceleration sensor (airbag sensor assembly)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EGBAC " width="NaN%">ABS DTC</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110K8__RM10000000110K8_04">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">After replacing or reinstalling the yaw rate and acceleration sensor (airbag sensor assembly), perform yaw rate and acceleration sensor zero point calibration after clearing previously calibrated data.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM10000000110JA.html#RM10000000110JA">Click here</a>
+</p> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">When U0124 and/or U0126 is output together with C1232, C1243 and/or C1245, inspect and repair the trouble areas indicated by U0124 and/or U0126 first.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM10000000110JF.html#RM10000000110JF">Click here</a>
+</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110K8__RM10000000110K8_01">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM10000000110K8__RM10000000110K8_01_0002">
+<p class="testgrp-heading">CHECK AIRBAG SENSOR ASSEMBLY INSTALLATION</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the yaw rate and acceleration sensor (airbag sensor assembly) has been installed properly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001ABAI.html#RM100000001ABAI">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E3PAC" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E3PAC">The yaw rate and acceleration sensor (airbag sensor assembly) is tightened to the specified torque.</td> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E3PAC">The yaw rate and acceleration sensor (airbag sensor assembly) is not tilted.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECBAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECBAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFCAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFCAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EFCAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE AIRBAG SENSOR ASSEMBLY <a class="content6-ptxt-xref" href="RM100000001ABAH.html#RM100000001ABAH">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>INSTALL AIRBAG SENSOR ASSEMBLY CORRECTLY <a class="content6-ptxt-xref" href="RM100000001ABAI.html#RM100000001ABAI">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

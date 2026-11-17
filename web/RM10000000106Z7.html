@@ -1,0 +1,351 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="CHARGING SYSTEM, Diagnostic DTC:P058A01" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_57" name="servcatId"/> 
+  <meta content="Power Source / Network" name="servcatName"/> 
+  <meta content="_058052" name="sectionId"/> 
+  <meta content="2ZR-FXE BATTERY / CHARGING" name="sectionName"/> 
+  <meta content="_0290644" name="ttlId"/> 
+  <meta content="CHARGING SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM10000000106Z7" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P058A01</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">CHARGING SYSTEM, Diagnostic DTC:P058A01</h1>
+<div class="section" id="RM10000000106Z7__RM10000000106Z7_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P058A01</td> 
+       <td class="dtcname" headers="ID0EED">Auxiliary Battery Monitor Module Range/Performance</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM10000000106Z7__RM10000000106Z7_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The battery state sensor assembly detects the auxiliary voltage, current and temperature of the auxiliary battery. The battery state sensor assembly calculates State of Charge (SOC) based on the voltage and current of the auxiliary battery and sends it to the hybrid vehicle control ECU. Based on the signals received, the hybrid vehicle control ECU adjusts the charging voltage of the DC/DC converter.</p> 
+    <p class="content5-ptxt">The battery state sensor assembly calculates the auxiliary battery temperature based on changes in resistance of a built-in thermistor and sends it to the hybrid vehicle control ECU. The hybrid vehicle control ECU reduces the amount of charging current based on this signal in order to protect the auxiliary battery.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0E2F" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EBG" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EHG" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0ENG" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0ETG" width="NaN%">Warning Indicate</th> 
+        <th align="center" class="cellrowborder" id="ID0EZG" width="NaN%">Memory</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0E2F " width="NaN%">P058A01</td> 
+        <td align="left" class="cellrowborder" headers="ID0EBG " width="NaN%">Auxiliary Battery Monitor Module Range/Performance</td> 
+        <td align="left" class="cellrowborder" headers="ID0EHG " width="NaN%"> <p class="ptxt">Any of the following conditions is met with the power switch on (IG). (1 trip detection logic):</p> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Current is 999.939 A or more, or -1000 A or less for 3.2 seconds or more.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">The difference between the maximum and minimum current is 0.0305 A or less for 100 seconds or more.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">A current detection circuit malfunction signal is received.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">The auxiliary battery temperature is 105°C (221°F) or more or -40°C (-40°F) or less for 3.2 seconds or more.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">A temperature detection circuit malfunction signal is received.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Voltage is 15.98 V or more, or 6.0 V or less for 3.2 seconds or more.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">A voltage detection circuit malfunction signal is received.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">A writing error occurs in the auxiliary battery state sensor internal memory (battery identification data).</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ENG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Battery state sensor assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Auxiliary battery</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Wire harness or connector</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ETG " width="NaN%">Charge warning is not displayed</td> 
+        <td align="left" class="cellrowborder" headers="ID0EZG " width="NaN%">DTC stored</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000106Z7__RM10000000106Z7_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003MVZE25" class="figure-graphic--bigImage" src="../images/a003mvze25.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM10000000106Z7__RM10000000106Z7_06">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">Inspect the fuses for circuits related to this system before performing the following procedure.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">When P162B87 (Lost Communication with Battery Monitor Module Missing Message) is output at the same time, perform troubleshooting for P162B87 (Lost Communication with Battery Monitor Module Missing Message) first.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM10000000106Z8.html#RM10000000106Z8">Click here</a>
+</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000106Z7__RM10000000106Z7_05">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM10000000106Z7__RM10000000106Z7_05_0024">
+<p class="testgrp-heading">CHECK BATTERY STATE SENSOR ASSEMBLY INSTALLATION CONDITION</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check installation condition of the battery state sensor assembly.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBJAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBJAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EEKAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEKAC " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEKAC " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>INSTALL THE BATTERY STATE SENSOR ASSEMBLY CORRECTLY <a class="content6-ptxt-xref" href="RM1000000011E87.html#RM1000000011E87">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM10000000106Z7__RM10000000106Z7_05_0019">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (POWER SOURCE CIRCUIT)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the battery state sensor assembly connector is securely connected.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKNAC" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EKNAC">The connector is securely connected.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the C19 battery state sensor assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check the connector case and terminals for deformation or corrosion.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1OAC" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E1OAC">No deformation or corrosion.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003K2VC66" class="figure-graphic" src="../images/a003k2vc66.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Battery State Sensor Assembly)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJCAE" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJCAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWDAE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3DAE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ECEAE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAE " width="NaN%">C19-1 (+B) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAE " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAE " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EUFAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EUFAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EXGAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXGAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXGAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE BATTERY STATE SENSOR ASSEMBLY <a class="content6-ptxt-xref" href="RM1000000011E89.html#RM1000000011E89">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR (BATTERY STATE SENSOR ASSEMBLY - AUXILIARY BATTERY) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

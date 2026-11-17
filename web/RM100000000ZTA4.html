@@ -1,0 +1,321 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ENTRY AND START SYSTEM(for Entry Function) Touching Unlock Sensor for Certain Period of Time does not Unlock All Doors" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058032" name="sectionId"/> 
+  <meta content="THEFT DETERRENT / KEYLESS ENTRY" name="sectionName"/> 
+  <meta content="_0288580" name="ttlId"/> 
+  <meta content="ENTRY AND START SYSTEM(for Entry Function)" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000ZTA4" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Touching Unlock Sensor for Certain Period of Time does not Unlock All Doors</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ENTRY AND START SYSTEM(for Entry Function)<span class="topictitle1"> Touching Unlock Sensor for Certain Period of Time does not Unlock All Doors</span>
+</h1>
+<div class="subpara" id="RM100000000ZTA4__RM100000000ZTA4_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">If the entry unlock function of the driver door cannot be operated by touching and holding the unlock sensor of the driver door, but can be operated through other methods, it can be determined that the request code is being transmitted properly from the driver door. In this case, the certification ECU (smart key ECU assembly) may be malfunctioning.</p> 
+   </div>
+<div class="subpara" id="RM100000000ZTA4__RM100000000ZTA4_01">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000ZTA4__RM100000000ZTA4_01_0001">
+<p class="testgrp-heading">CHECK CUSTOMIZE SETTING (WIRELESS BUZZER RESP)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Customize Setting / Wireless Door Lock.</p>
+<br class="test1Root-test1"/>Entry &amp; Start<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EOAAC" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EUAAC" width="NaN%">Description</th> 
+              <th align="center" class="cellrowborder" id="ID0E1AAC" width="NaN%">Default</th> 
+              <th align="center" class="cellrowborder" id="ID0EABAC" width="NaN%">Setting</th> 
+              <th align="center" class="cellrowborder" id="ID0EGBAC" width="NaN%">ECU</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EOAAC " width="NaN%">Door Unlock Sensor Touch Time Adjust</td> 
+              <td align="center" class="cellrowborder" headers="ID0EUAAC " width="NaN%">Function that sets the length of time the unlock sensor on the door outside handle assembly (for driver door) must be touched to unlock all of the doors</td> 
+              <td align="center" class="cellrowborder" headers="ID0E1AAC " width="NaN%">Middle</td> 
+              <td align="left" class="cellrowborder" headers="ID0EABAC " width="NaN%">00:OFF,01:Short,10:Middle,11:Long</td> 
+              <td align="center" class="cellrowborder" headers="ID0EGBAC " width="NaN%">Certification ECU (smart key ECU assembly)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EFHAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EFHAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ENIAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ETIAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ENIAC " width="NaN%">The customize setting is set to Short, Middle or Long.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ETIAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ENIAC " width="NaN%">The customize setting is set to OFF.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ETIAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>PERFORM CUSTOMIZE SETTING <a class="content6-ptxt-xref" href="RM100000000ZT9N.html#RM100000000ZT9N">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTA4__RM100000000ZTA4_01_0002">
+<p class="testgrp-heading">CHECK ENTRY UNLOCK FUNCTION (OPERATION CHECK)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Open and close the driver door.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">With the electrical key transmitter sub-assembly outside of the vehicle, press the lock switch of the electrical key transmitter sub-assembly to lock all of the doors.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Hold the electrical key transmitter sub-assembly at the same height as the door outside handle assembly and approximately 0.3 m (0.984 ft.) from the driver door.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the LED of the electrical key transmitter sub-assembly blinks.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003M1LC01" class="figure-graphic" src="../images/a003m1lc01.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%">Unlock Sensor (Backside)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Touch and hold the unlock sensor on the door outside handle assembly (for driver door) for 2.5 seconds or more.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">When checking the operation of the unlock sensor again, make sure to perform the procedure from step (a).</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that all of the doors unlock.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESAAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ESAAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E1BAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EACAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1BAE " width="NaN%">All of the doors do not unlock.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EACAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1BAE " width="NaN%">Any door does not unlock.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EACAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO POWER DOOR LOCK CONTROL SYSTEM <a class="content6-ptxt-xref" href="RM100000000ZT9B.html#RM100000000ZT9B">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000ZTA4__RM100000000ZTA4_01_0003">
+<p class="testgrp-heading">CHECK POWER DOOR LOCK CONTROL SYSTEM</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">When the door control switch on the multiplex network master switch assembly is operated, check that the doors unlock and lock according to the switch operation.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZLMA.html#RM100000000ZLMA">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EAGAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EAGAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EIHAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EOHAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EIHAE " width="NaN%">The door locks operate normally.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOHAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EIHAE " width="NaN%">The door locks do not operate normally.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOHAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO POWER DOOR LOCK CONTROL SYSTEM <a class="content6-ptxt-xref" href="RM100000000ZLMD.html#RM100000000ZLMD">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

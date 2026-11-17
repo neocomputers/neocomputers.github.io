@@ -1,0 +1,149 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SPEED LIMITER SYSTEM SYSTEM DIAGRAM" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058076" name="sectionId"/> 
+  <meta content="CRUISE CONTROL" name="sectionName"/> 
+  <meta content="_0282618" name="ttlId"/> 
+  <meta content="SPEED LIMITER SYSTEM" name="ttlName"/> 
+  <meta content="U" name="paraCategory"/> 
+  <meta content="SYSTEM DIAGRAM" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000YY2Y" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>SPEED LIMITER SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SPEED LIMITER SYSTEM<span class="topictitle1"> SYSTEM DIAGRAM</span>
+</h1>
+<div class="subpara" id="RM100000000YY2Y__RM100000000YY2Y_z0">
+     
+    <div class="fignone--bigImage">
+<img alt="A003L7CE01" class="figure-graphic--bigImage" src="../images/a003l7ce01.png"/>
+</div> 
+    <div class="fignone--bigImage">
+<img alt="A003OYLE01" class="figure-graphic--bigImage" src="../images/a003oyle01.png"/>
+</div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Communication Table
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EFF" width="NaN%">Sender</th> 
+        <th align="center" class="cellrowborder" id="ID0ELF" width="NaN%">Receiver</th> 
+        <th align="center" class="cellrowborder" id="ID0ERF" width="NaN%">Signal</th> 
+        <th align="center" class="cellrowborder" id="ID0EXF" width="NaN%">Line</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EFF " width="NaN%">Hybrid Vehicle Control ECU</td> 
+        <td align="center" class="cellrowborder" headers="ID0ELF " width="NaN%">Combination Meter Assembly</td> 
+        <td align="left" class="cellrowborder" headers="ID0ERF " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Adjustable speed limiter over speed buzzer request signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Control vehicle speed unit signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">ACC ASL Display ID1 signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Adjustable speed limiter control vehicle speed signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0EXF " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EFF " width="NaN%">Hybrid Vehicle Control ECU</td> 
+        <td align="center" class="cellrowborder" headers="ID0ELF " width="NaN%">Driving support ECU assembly</td> 
+        <td align="center" class="cellrowborder" headers="ID0ERF " width="NaN%">Under adjustable speed limiter limitation range signal</td> 
+        <td align="center" class="cellrowborder" headers="ID0EXF " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EFF " width="NaN%">Combination Meter Assembly</td> 
+        <td align="center" class="cellrowborder" headers="ID0ELF " width="NaN%">Hybrid Vehicle Control ECU</td> 
+        <td align="center" class="cellrowborder" headers="ID0ERF " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Unit change signal 2 (Km/mile)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Speed tolerance A signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Speed tolerance B signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0EXF " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EFF " width="NaN%">Skid Control ECU (Brake Booster with Master Cylinder Assembly)</td> 
+        <td align="center" class="cellrowborder" headers="ID0ELF " width="NaN%">Hybrid Vehicle Control ECU</td> 
+        <td align="center" class="cellrowborder" headers="ID0ERF " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Under TRC control signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Driver operate brake torque (on D/S shaft) signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Control torque valid flag signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">FR wheel speed sensor error signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">FL wheel speed sensor error signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">RR wheel speed sensor error signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">RL wheel speed sensor error signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Under VSC control signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Vehicle speed (SP1) signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Abnormality to which VSC warning lamp lights signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">VSC/ECB test mode flag signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">TRC OFF lamp signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">VSC OFF lamp signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0EXF " width="NaN%">CAN</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+</div>
+
+</html>

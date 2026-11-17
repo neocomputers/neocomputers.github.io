@@ -1,0 +1,2193 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="AIRBAG SYSTEM VEHICLE CONTROL HISTORY" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058075" name="sectionId"/> 
+  <meta content="SUPPLEMENTAL RESTRAINT SYSTEMS" name="sectionName"/> 
+  <meta content="_0284803" name="ttlId"/> 
+  <meta content="AIRBAG SYSTEM" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="VEHICLE CONTROL HISTORY" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000Z8X2" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>AIRBAG SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">AIRBAG SYSTEM<span class="topictitle1"> VEHICLE CONTROL HISTORY</span>
+</h1>
+<div class="subpara" id="RM100000000Z8X2__RM100000000Z8X2_z0">
+     
+    <a href="http://zatonevkredit.ru/repair_manuals/ppr/ppr_rm100000000z8x2.xml#rm100000000z8x2.xml">
+<img src="../img/ppr.png"/>
+</a> 
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000000Z8X2__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">Function Overview</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">The vehicle control history is a function that records control data (record data) when triggered by specific vehicle behavior. When DTCs are not detected according to information provided by customers, by checking the vehicle control history, it is possible to gain a quantitative grasp on diagnostic information and the history can be used as a reference to proceed with malfunction diagnosis.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">The vehicle control history is recorded in different storage areas designated by trigger group and it is possible to save up to 140 items in total. If storage space runs out, the data is cleared from the oldest data first for the respective storage area and new data is recorded.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Each trigger receives time information from the main body ECU (time elapsed since power switch turned on (IG)) or the navigation system* (absolute time).</p>
+<br class="step2Root-step2"/>
+<ul class="step2-list1 nonmark"> 
+         <li class="list1-item">
+<p class="step2-list1-nonmark-heading">*: Only for factory-installed navigation systems (factory option)</p>
+</li> 
+        </ul>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Data is recorded in the airbag sensor assembly EEPROM. Even if the negative (-) auxiliary battery terminal is disconnected, the vehicle control history does not disappear. Also, data cannot be cleared using the GTS.</p>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">Notices for Use</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Vehicle control history is used as support information during malfunction diagnosis for each system and cannot be used to determine the actual cause of a problem.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Judgment of each trigger is based on signals from sensors and actuators (recognition value of each ECU). Therefore, make sure to inspect and adjust systems related to each trigger when using the vehicle control history.</p>
+<p class="step2-ptxt">Basic Flow</p>
+<div class="fignone--bigImage">
+<img alt="A003NXQE03" class="figure-graphic--bigImage" src="../images/a003nxqe03.png"/>
+</div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">Trigger Item</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Using the GTS, enter the following menus: Body Electrical / SRS Airbag / Utility / Vehicle Control History.</p>
+<br class="step2Root-step2"/>Body Electrical &gt; SRS Airbag &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EICAC" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EICAC " width="NaN%">Vehicle Control History</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tablenoborder">
+         <table class="big-table">
+<caption class="step2-table">
+           Trigger Item Chart
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E1HAC" width="NaN%">Related System</th> 
+            <th align="center" class="cellrowborder" id="ID0EAIAC" width="NaN%">Storage Area Group (storage limit)</th> 
+            <th align="center" class="cellrowborder" id="ID0EGIAC" width="NaN%">Trigger Item Name</th> 
+            <th align="center" class="cellrowborder" id="ID0EMIAC" width="NaN%">Trigger Description</th> 
+            <th align="center" class="cellrowborder" id="ID0ESIAC" width="NaN%">Remarks</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1HAC " rowspan="3" width="NaN%">Engine control/Hybrid control/Automatic transmission</td> 
+            <td align="center" class="cellrowborder" headers="ID0EAIAC " rowspan="2" width="NaN%"> <p class="ptxt">Area 2</p> <p class="ptxt">(Approximately 42 times)</p> </td> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">Accelerator pedal opening angle signal is high during low speed</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">An accelerator high position signal condition continues for a certain period of time while in the low speed range.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">Accelerator pedal opening angle signal is high immediately after brake pedal is released</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">An accelerator high position signal is received while in the low speed range after there is a change from brake input condition to brake and accelerator pedal released condition.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EAIAC " width="NaN%"> <p class="ptxt">Area 7</p> <p class="ptxt">(Approximately 12 times)</p> </td> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">Accelerator high position in mid to high speed</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">An accelerator high position signal condition continues for a certain period of time while in the mid to high speed range.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1HAC " rowspan="5" width="NaN%">Engine control/Hybrid control/Automatic transmission</td> 
+            <td align="center" class="cellrowborder" headers="ID0EAIAC " rowspan="5" width="NaN%"> <p class="ptxt">Area 3</p> <p class="ptxt">(Approximately 40 times)</p> </td> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">Accelerator pedal opening angle is medium or higher immediately after shifting to R</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">An accelerator mid to high position signal is received while in the low speed range immediately after the shift lever is moved to R during an accelerator low position signal condition.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Excluding hybrid vehicles</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">Accelerator pedal opening angle is medium or higher immediately after shifting to forward position</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">An accelerator mid to high position signal is received while in the low speed range immediately after the shift lever is moved to a forward position (a position other than P, N or R) during an accelerator low position signal condition.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Excluding hybrid vehicles</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">Accelerator pedal opening angle is medium or higher immediately after shifting to driving position</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">An accelerator mid to high position signal is received while in the low speed range immediately after the shift lever is moved to a driving position (a position other than P or N) during an accelerator low position signal condition.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only hybrid vehicles</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">R position signal input during medium or higher accelerator signal input</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">An accelerator mid to high position signal condition while the shift lever is in R continues for a certain period of time after the shift lever is moved to R during an accelerator mid to high position signal condition.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Excluding hybrid vehicles</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">Forward position signal input during medium or higher accelerator signal input</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">An accelerator mid to high position signal condition continues for a certain period of time while in a forward position (a position other than P, N or R) after shifting to a forward position (a position other than P, N, or R) during an accelerator mid to high position signal condition.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Excluding hybrid vehicles</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1HAC " rowspan="4" width="NaN%">Engine control/Hybrid control/Automatic transmission</td> 
+            <td align="center" class="cellrowborder" headers="ID0EAIAC " rowspan="4" width="NaN%"> <p class="ptxt">Area 3</p> <p class="ptxt">(Approximately 40 times)</p> </td> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">Driving position signal input during medium or higher accelerator signal input</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">The shift lever is moved to a driving position (a position other than P or N) during an accelerator mid to high position signal condition.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only hybrid vehicles</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">Accelerator signal and brake signal input simultaneously</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">An accelerator mid to high position signal condition and brake input condition simultaneously continue for a certain period of time.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">Medium or higher accelerator signal input immediately after switching to D or R</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">The shift lever is moved to D (or R) during an accelerator low signal condition after the shift lever is moved to R (or D). After that, an accelerator mid to high position signal is received.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">Medium or higher accelerator signal input during N</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">An accelerator mid to high position signal is received while in a low speed range after the shift lever is moved to N.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1HAC " rowspan="5" width="NaN%">Brake control</td> 
+            <td align="center" class="cellrowborder" headers="ID0EAIAC " rowspan="3" width="NaN%"> <p class="ptxt">Area 5</p> <p class="ptxt">(Approximately 5 times)</p> </td> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">VSC operation history</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">When VSC operation starts.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with VSC</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">TRC operation history</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">When TRC operation starts.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with TRC</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">ABS operation history</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">When ABS operation starts.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EAIAC " rowspan="2" width="NaN%"> <p class="ptxt">Area 1</p> <p class="ptxt">(Approximately 4 times)</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EGIAC " width="NaN%">Sudden braking history</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">Detects forward and backward acceleration above a certain level.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with VSC</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">Sudden turning history</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">Detects lateral acceleration above a certain level.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with VSC</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1HAC " width="NaN%">Cruise control</td> 
+            <td align="center" class="cellrowborder" headers="ID0EAIAC " width="NaN%"> <p class="ptxt">Area 4</p> <p class="ptxt">(Approximately 15 times)</p> </td> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">Accelerator pedal opening angle signal is high during cruise control operation</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">An accelerator high position signal condition continues for a certain period of time during cruise control.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with cruise control</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1HAC " rowspan="11" width="NaN%">Pre-collision</td> 
+            <td align="center" class="cellrowborder" headers="ID0EAIAC " rowspan="11" width="NaN%"> <p class="ptxt">Area 6</p> <p class="ptxt">(Approximately 6 times)</p> </td> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">PCS operation history (warning buzzer operation)</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">PCS (warning buzzer) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with PCS</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EGIAC " width="NaN%">PCS operation history (warning brake operation)</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMIAC " width="NaN%">PCS (brake alarm) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with PCS (w/ Driver Monitor Camera)</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EGIAC " width="NaN%">PCS operation history (pre-collision brake assist operation)</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMIAC " width="NaN%">PCS (PCS brake assist) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with PCS</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EGIAC " width="NaN%">PCS operation history (prior brake operation)</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMIAC " width="NaN%">PCS (preliminary braking) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with PCS</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EGIAC " width="NaN%">PCS operation history (pre-collision brake operation)</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMIAC " width="NaN%">PCS (PCS brake) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with PCS</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EGIAC " width="NaN%">PCS operation history (pre-collision seat belt operation)</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMIAC " width="NaN%">PCS (PCS seat belt) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with PCS</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">PCS operation history (pre-pump operation)</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">PCS (PCS brake assist standby) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with PCS</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">PCS operation history (PBR operation)</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">PCS (stop light illumination) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with PCS</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">PCS operation history (PBH operation)</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">PCS (after operation brake hold) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with PCS</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">PCS operation history (avoidance support)</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">PCS (evasion support) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with PCS</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EGIAC " width="NaN%">PCS operation history (when acceleration above certain amount is detected)</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMIAC " width="NaN%">Forward and backward acceleration above a certain amount is detected.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with PCS</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1HAC " width="NaN%">Lane departure alert/Lane-keeping assist</td> 
+            <td align="center" class="cellrowborder" headers="ID0EAIAC " width="NaN%"> <p class="ptxt">Area 8</p> <p class="ptxt">(Approximately 6 times)</p> </td> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">Torque sensor signal above certain amount is detected during LKA/LDA operation</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">When the LKA/LDA system is ON, a torque sensor signal above a certain amount is detected.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with LKA/LDA (w/ Steering Control)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1HAC " rowspan="6" width="NaN%">Intelligent clearance sonar</td> 
+            <td align="center" class="cellrowborder" headers="ID0EAIAC " rowspan="6" width="NaN%"> <p class="ptxt">Area 9</p> <p class="ptxt">(Approximately 6 times)</p> </td> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">ICS operation history (output limit)</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">ICS (output restriction) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with ICS</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">ICS operation history (max output limit)</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">ICS (maximum output restriction) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with ICS</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">ICS operation history (brake control)</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">ICS (brake control) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with ICS</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">ICS operation history (stop)</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">ICS (vehicle stop) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with ICS</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">ICS operation history (regression)</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">ICS (return) operates.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with ICS</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EGIAC " width="NaN%">ICS operation history (temporarily not available)</td> 
+            <td class="cellrowborder" headers="ID0EMIAC " width="NaN%">ICS is temporarily not available.</td> 
+            <td align="center" class="cellrowborder" headers="ID0ESIAC " width="NaN%">Only for vehicles with ICS</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">Record Data Items</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">When a trigger is detected, the vehicle status (ECU data) before and after the trigger are simultaneously recorded as record data.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Recording time and record data differ for each trigger.</p>
+<p class="step2-ptxt">When not "PCS/ICS Operation History"</p>
+<div class="fignone--bigImage">
+<img alt="A003LK2E06" class="figure-graphic--bigImage" src="../images/a003lk2e06.png"/>
+</div>
+<p class="step2-ptxt">When "PCS/ICS Operation History"</p>
+<div class="fignone--bigImage">
+<img alt="A003MIBE09" class="figure-graphic--bigImage" src="../images/a003mibe09.png"/>
+</div>
+<div class="tablenoborder">
+         <table class="big-table">
+<caption class="step2-table">
+           Record Data Specifications
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0EI2AE" rowspan="2">Trigger Item</th> 
+            <th align="center" class="cellrowborder" colspan="5" id="ID0ER2AE">Record Data</th> 
+           </tr> 
+           <tr> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0E42AE">Before Detection</th> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0EF3AE">After Detection</th> 
+            <th align="center" class="cellrowborder" id="ID0EN3AE" rowspan="2" width="NaN%">Sampling Cycle (sec.)</th> 
+           </tr> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EY3AE" width="NaN%">ID No.</th> 
+            <th align="center" class="cellrowborder" id="ID0E53AE" width="NaN%">Item</th> 
+            <th align="center" class="cellrowborder" id="ID0EE4AE" width="NaN%">Recording Time (sec.)</th> 
+            <th align="center" class="cellrowborder" id="ID0EK4AE" width="NaN%">Number of Points</th> 
+            <th align="center" class="cellrowborder" id="ID0EQ4AE" width="NaN%">Recording Time (sec.)</th> 
+            <th align="center" class="cellrowborder" id="ID0EW4AE" width="NaN%">Number of Points</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">2</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Accelerator pedal opening angle signal is high during low speed</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " width="NaN%">7.5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " width="NaN%">15</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " width="NaN%">7.5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " width="NaN%">16</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " width="NaN%">0.5</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">3</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Accelerator high position in mid to high speed</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " width="NaN%">7.5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " width="NaN%">15</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " width="NaN%">7.5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " width="NaN%">16</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " width="NaN%">0.5</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">4</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Accelerator pedal opening angle signal is high immediately after brake pedal is released</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " width="NaN%">7.5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " width="NaN%">15</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " width="NaN%">7.5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " width="NaN%">16</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " width="NaN%">0.5</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">5-1</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Accelerator pedal opening angle is medium or higher immediately after shifting to R</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " rowspan="3" width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " rowspan="3" width="NaN%">10</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " rowspan="3" width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " rowspan="3" width="NaN%">11</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " rowspan="3" width="NaN%">0.5</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">5-2</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Accelerator pedal opening angle is medium or higher immediately after shifting to forward position</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">5-3</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Accelerator pedal opening angle is medium or higher immediately after shifting to driving position</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">6-1</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">R position signal input during medium or higher accelerator signal input</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " rowspan="3" width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " rowspan="3" width="NaN%">10</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " rowspan="3" width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " rowspan="3" width="NaN%">11</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " rowspan="3" width="NaN%">0.5</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">6-2</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Forward position signal input during medium or higher accelerator signal input</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">6-3</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Driving position signal input during medium or higher accelerator signal input</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">8</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Accelerator signal and brake signal input simultaneously</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " width="NaN%">10</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " width="NaN%">11</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " width="NaN%">0.5</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">9</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Medium or higher accelerator signal input immediately after switching to D or R</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " width="NaN%">10</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " width="NaN%">11</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " width="NaN%">0.5</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">10</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Medium or higher accelerator signal input during N</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " width="NaN%">10</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " width="NaN%">11</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " width="NaN%">0.5</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">12</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">VSC operation history</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " width="NaN%">34</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " width="NaN%">35</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " width="NaN%">0.15</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">13</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">TRC operation history</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " width="NaN%">34</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " width="NaN%">35</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " width="NaN%">0.15</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">14</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">ABS operation history</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " width="NaN%">34</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " width="NaN%">35</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " width="NaN%">0.15</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">15</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Sudden braking history</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " width="NaN%">34</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " width="NaN%">35</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " width="NaN%">0.15</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">16</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Sudden turning history</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " width="NaN%">34</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " width="NaN%">35</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " width="NaN%">0.15</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">17</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Accelerator pedal opening angle signal is high during cruise control operation</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " width="NaN%">10</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " width="NaN%">11</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " width="NaN%">0.5</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">18-1</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">PCS operation history (warning buzzer operation)</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " rowspan="11" width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " rowspan="11" width="NaN%">10</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " rowspan="11" width="NaN%">4</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " rowspan="11" width="NaN%">9</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " rowspan="11" width="NaN%">0.5</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">18-2</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">PCS operation history (warning brake operation)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">18-3</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">PCS operation history (pre-collision brake assist operation)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">18-4</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">PCS operation history (prior brake operation)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">18-5</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">PCS operation history (pre-collision brake operation)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">18-6</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">PCS operation history (pre-collision seat belt operation)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">18-7</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">PCS operation history (pre-pump operation)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">18-8</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">PCS operation history (PBR operation)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">18-9</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">PCS operation history (PBH operation)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">18-10</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">PCS operation history (avoidance support)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">18-11</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">PCS operation history (when acceleration above certain amount is detected)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">19</td> 
+            <td align="left" class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">Torque sensor signal above certain amount is detected during LKA/LDA operation</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " width="NaN%">8</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " width="NaN%">40</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " width="NaN%">0</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " width="NaN%">1</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " width="NaN%">0.2</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">20-1</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">ICS operation history (output limit)</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EE4AE " rowspan="6" width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0E42AE ID0EK4AE " rowspan="6" width="NaN%">10</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EQ4AE " rowspan="6" width="NaN%">5</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EF3AE ID0EW4AE " rowspan="6" width="NaN%">11</td> 
+            <td align="center" class="cellrowborder" headers="ID0ER2AE ID0EN3AE " rowspan="6" width="NaN%">0.5</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">20-2</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">ICS operation history (max output limit)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">20-3</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">ICS operation history (brake control)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">20-4</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">ICS operation history (stop)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">20-5</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">ICS operation history (regression)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EI2AE ID0EY3AE " width="NaN%">20-6</td> 
+            <td class="cellrowborder" headers="ID0EI2AE ID0E53AE " width="NaN%">ICS operation history (temporarily not available)</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           Record Data Chart
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EEBBG" width="NaN%">Item Name</th> 
+            <th align="center" class="cellrowborder" id="ID0EKBBG" width="NaN%">Trigger ID No.</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Vehicle Speed</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Accelerator Opening Ratio</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Engine RPM Data</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Cruise Control</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Shift Position Signal</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Brake SW</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Brake Oil Pressure</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Yaw Rate Sensor Signal</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Longitudinal G Sensor Signal</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Lateral G Sensor Signal</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Throttle Opening Ratio</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Command Value of Fuel Injection Amount</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Steering Signal</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Received Data Invalid Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Trigger Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Temporarily Not Available (Dirt)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Temporarily Not Available (Low Voltage)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Request Driving Force Control Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Request Braking Control Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Controlled Object Distance</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Controlled Object 1 Position (X)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Controlled Object 1 Position (Y)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Recognition Sensor (Controlled Object 1)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Recognition Level (Controlled Object 1)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Controlled Object 2 Position (X)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Controlled Object 2 Position (Y)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Recognition Sensor (Controlled Object 2)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Recognition Level (Controlled Object 2)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Controlled Object 3 Position (X)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Controlled Object 3 Position (Y)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Recognition Sensor (Controlled Object 3)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ICS Recognition Level (Controlled Object 3)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Power Train Mode</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">SNOW Mode</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Valid/Invalid of Driving Mode</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">VSC OFF Lamp</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">TRC OFF Lamp</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Valid/Invalid of TRC/VSC OFF Lamp</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">EV Mode</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Valid/Invalid of EV Mode</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Shift Gear</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Engine Load Factor</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">READY Signal</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Gear Position Signal</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Turbine RPM/Input Shaft RPM</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Under VSC Control</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">12, 13, 14, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Under ABS Control</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">12, 13, 14, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Under VDM Control</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">12, 13, 14, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Under TRC Operation Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">12, 13, 14, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">FR Wheel Speed</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">12, 13, 14, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">FL Wheel Speed</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">12, 13, 14, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">RR Wheel Speed</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">12, 13, 14, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">RL Wheel Speed</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">12, 13, 14, 15, 16</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Cruise System</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Driving Force Demand Judgment Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Cruise Control Master Switch Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">DSS Judgment Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Cruise Control Res/Accel SW</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Cruise Control Set/Coast SW</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Cruise Control Cancel SW</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Cruise Control Brake SW</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Cruise Control D Signal</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Cruise Control Main SW</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Cruise Control Set Speed</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Vehicle Speed (during Cruise Control)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Cruise Control Request Value</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ACC Target Distance</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ACC Target Condition</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ACC Relative Speed</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">17</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Reception Data Invalid Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ALM Request Flag 2</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ALM Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">ABK Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PBA Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">FPB Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PB Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PSB Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Prefill Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Stop Lamp Lighting Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Brake Hold Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Collision Avoidance Assist Request Flag 1</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Collision Avoidance Assist Request Flag 2</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Collision Avoidance Assist Request Flag 3</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS SW</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Display (Diag Condition)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Display (Milli Wave Dirt)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Display (Temporarily not available)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Display (Sensor Recognition Status)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Display (Milli-Meter Wave Radar Low Voltage Status)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Display (Camera Backlight Status)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Display (Milli-Meter Wave Radar Alignment Flag)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Display (Object Recognition Status)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Display (Control Status 1)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Display (Control Status 2)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Target Distance</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Target Relative Velocity</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Target Lateral Position</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Target Object Number</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Relative Acceleration for Control Target</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Predicted Time to Collision 1 for Control Target</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Predicted Time to Collision 2 for Control Target</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Predicted Time to Collision Status for Control Target</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Sensor Recognition Status for Control Target</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Type of the Object for Control Target</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS ALM Mode Status</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS ALM Status</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Guard Status C</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Guard Status B</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">PCS Guard Status A</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Sensor Recognition Status (Horizontal Axis Offset Status of Milli-Meter Wave Radar)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Sensor Recognition Status (Vertical Axis Offset Status of Milli-Meter Wave Radar)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Estimated Curve Radius</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Detection of Certain Level of Acceleration</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">LKA DDR Trigger Signal</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">19</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Invalid of LKA DDR Data</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">19</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Steering Wheel Release Condition</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">19</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Steering Operation of LKA</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">19</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Steering Operation of LDA</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">19</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">LKA Control Condition (EPS Control)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">19</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">LKA Control Condition</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">19</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Turn Signal Operation</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">19</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">EPS Torque Sensor Value</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">12, 13, 14, 15, 16, 19</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">HV Recognition Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Diesel Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Sensor Type Identification (Yaw Rate Sensor)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Sensor Type Identification (G Sensor)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Sensor Type Identification (G Sensor Layout)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Sensor Type Identification (Security)</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">Yaw G Sensor Installation Information</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">2, 4, 3, 5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18-1, 18-2, 18-3, 18-4, 18-5, 18-6, 18-7, 18-8, 18-9, 18-10, 18-11, 19, 20-1, 20-2, 20-3, 20-4, 20-5, 20-6</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EEBBG " width="NaN%">DSC Operation Flag</td> 
+            <td class="cellrowborder" headers="ID0EKBBG " width="NaN%">5-1, 5-2, 5-3, 6-1, 6-2, 6-3, 8, 9, 10</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tablenoborder">
+         <table class="big-table">
+<caption class="step2-table">
+           Record Data Item Chart
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E56AI" width="NaN%">Tester Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EEABI" width="NaN%">Measurement Item</th> 
+            <th align="center" class="cellrowborder" id="ID0EKABI" width="NaN%">Range</th> 
+            <th align="center" class="cellrowborder" id="ID0EQABI" width="NaN%">Diagnostic Note</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Vehicle Speed</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Vehicle speed at main driven wheels</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%">0 to 200 km/h</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the vehicle speed is 200 km/h or more, "200 km/h" is displayed.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Accelerator Opening Ratio</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Accelerator pedal opening angle</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%">0.0 to 100.0%</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Engine RPM Data</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Number of crankshaft revolutions in 1 minute</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%">0 to 12800 rpm</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Cruise Control</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Cruise control condition</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: Cruise control operating</p> <p class="ptxt">OFF: Cruise control not operating or not equipped</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the vehicle is not equipped with cruise control, OFF is displayed.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Shift Position Signal</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Shift lever position</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%">N / D / R / P / 5 / 4 / 3 / 2 / LO / B / SD / S-Mode / Undetermined</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Brake SW</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Stop light switch condition</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: Stop lights illuminated</p> <p class="ptxt">OFF: Stop lights not illuminated</p> </td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Brake Oil Pressure</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Brake fluid pressure inside master cylinder</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%">0.000 to 12.144 MPa</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Yaw Rate Sensor Signal</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Angular velocity of the vehicle when turning</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%">-61.000 to 61.000 deg/s</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">A positive value is displayed when turning left.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value is 61 deg/s or more, "61.000 deg/s" is displayed.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value is -61 deg/s or less, "-61.000 deg/s" is displayed.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Longitudinal G Sensor Signal</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Longitudinal acceleration measured by acceleration sensor for VSC system</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">-8.97250 to 8.97250 m/s<sup class="ptxt">2</sup>
+</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">A positive value is displayed when acceleration is increasing.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value is 8.9725 m/s<sup class="item-ptxt">2</sup>or more, "8.97250 m/s<sup class="item-ptxt">2</sup>" is displayed.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value is -8.9725 m/s<sup class="item-ptxt">2</sup>or less, "-8.97250 m/s<sup class="item-ptxt">2</sup>" is displayed.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Lateral G Sensor Signal</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Lateral acceleration measured by acceleration sensor for VSC system</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">-8.97250 to 8.97250 m/s<sup class="ptxt">2</sup>
+</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">A positive value is displayed when turning left.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value is 8.9725 m/s<sup class="item-ptxt">2</sup>or more, "8.97250 m/s<sup class="item-ptxt">2</sup>" is displayed.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value is -8.9725 m/s<sup class="item-ptxt">2</sup>or less, "-8.97250 m/s<sup class="item-ptxt">2</sup>" is displayed.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Throttle Opening Ratio</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Throttle valve opening amount</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%">0.0 to 100.0%</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">"Invalid" is displayed for non-gasoline vehicles.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Command Value of Fuel Injection Amount</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Commanded fuel injection volume</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">0.0 to 120.0 mm<sup class="ptxt">3</sup>/st</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">"Invalid" is displayed for non-diesel vehicles.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value is 120 mm<sup class="item-ptxt">3</sup>/st or more, "120.0 mm<sup class="item-ptxt">3</sup>/st" is displayed.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Steering Signal</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Steering angle</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%">-567.0 to 567.0 deg</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">A positive value is displayed when the steering wheel is turned left.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value is 567 deg or more, "567.0 deg" is displayed.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value is -567 deg or less, "-567.0 deg" is displayed.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">As the steering wheel must be turned for the steering angle sensor to obtain an initial value, if the steering wheel is not operated after the power switch is turned on (IG), an invalid value will be displayed.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Received Data Invalid Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Existence of ICS related data</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Valid / Invalid</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Trigger Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Existence of ICS trigger conditions (Trigger ID 20-1, 20-2, 20-3, 20-4, 20-5, 20-6)</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">OFF / Output Limit / Max Output Limit / Brake Control / Stop / Regression / Temporarily Not Available</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If ICS has not operated, "OFF" is displayed.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Temporarily Not Available (Dirt)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">ICS temporarily disabled (dirt, etc. on sensor)</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Available / Not Available</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Temporarily Not Available (Low Voltage)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">ICS temporarily disabled (sensor voltage)</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Available / Not Available</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Request Driving Force Control Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Driving force suppression control operation</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Request Braking Control Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Braking control operation</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Controlled Object Distance</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Distance to detected object</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">0.00 to 3.78 m</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Controlled Object 1 Position (X)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">X-axis position of detected object</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">0.00 to 3.78 m</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Different values will be displayed for each detected object 1 to 3.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Controlled Object 1 Position (Y)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Y-axis position of detected object</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">-3.84 to 3.72 m</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Different values will be displayed for each detected object 1 to 3.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Recognition Sensor (Controlled Object 1)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Position of sensor which detected object</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">W/O / Send LH Center to LH Corner / Send LH Center to RH Center / Send RH Center to RH Corner / Send RH Center to LH Center / Send LH Corner to LH Center / Send RH Corner to RH Center</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Different values will be displayed for each detected object 1 to 3.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Recognition Level (Controlled Object 1)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Length of time the object was detected (level)</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Without Level / Level 1 / Level 2 / Level 3</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">The higher the level is, the longer the object was detected.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Different values will be displayed for each detected object 1 to 3.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Controlled Object 2 Position (X)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">X-axis position of detected object</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">0.00 to 3.78 m</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Different values will be displayed for each detected object 1 to 3.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Controlled Object 2 Position (Y)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Y-axis position of detected object</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">-3.84 to 3.72 m</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Different values will be displayed for each detected object 1 to 3.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Recognition Sensor (Controlled Object 2)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Position of sensor which detected object</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">W/O / Send LH Center to LH Corner / Send LH Center to RH Center / Send RH Center to RH Corner / Send RH Center to LH Center / Send LH Corner to LH Center / Send RH Corner to RH Center</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Different values will be displayed for each detected object 1 to 3.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Recognition Level (Controlled Object 2)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Length of time the object was detected (level)</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Without Level / Level 1 / Level 2 / Level 3</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">The higher the level is, the longer the object was detected.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Different values will be displayed for each detected object 1 to 3.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Controlled Object 3 Position (X)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">X-axis position of detected object</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">0.00 to 3.78 m</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Different values will be displayed for each detected object 1 to 3.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Controlled Object 3 Position (Y)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Y-axis position of detected object</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">-3.84 to 3.72 m</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Different values will be displayed for each detected object 1 to 3.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Recognition Sensor (Controlled Object 3)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Position of sensor which detected object</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">W/O / Send LH Center to LH Corner / Send LH Center to RH Center / Send RH Center to RH Corner / Send RH Center to LH Center / Send LH Corner to LH Center / Send RH Corner to RH Center</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Different values will be displayed for each detected object 1 to 3.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ICS Recognition Level (Controlled Object 3)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Length of time the object was detected (level)</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Without Level / Level 1 / Level 2 / Level 3</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">The higher the level is, the longer the object was detected.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "ICS Received Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Different values will be displayed for each detected object 1 to 3.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Power Train Mode</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Current driving mode</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Normal / Power / Eco</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">SNOW Mode</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">SNOW mode indicator status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: SNOW mode indicator illuminated</p> <p class="ptxt">OFF: SNOW mode indicator not illuminated</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Valid/Invalid of Driving Mode" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Valid/Invalid of Driving Mode</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Validity of SNOW mode information</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Valid / Invalid</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">VSC OFF Lamp</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">VSC OFF indicator status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: VSC OFF indicator illuminated</p> <p class="ptxt">OFF: VSC OFF indicator not illuminated</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Valid/Invalid of TRC/VSC OFF Lamp" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">TRC OFF Lamp</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">TRC OFF indicator status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: TRC OFF indicator illuminated</p> <p class="ptxt">OFF: TRC OFF indicator not illuminated</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Valid/Invalid of TRC/VSC OFF Lamp" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Valid/Invalid of TRC/VSC OFF Lamp</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Validity of TRC OFF indicator and VSC OFF indicator information</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Valid / Invalid</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">EV Mode</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">EV mode indicator status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: EV MODE indicator illuminated</p> <p class="ptxt">OFF: EV MODE indicator not illuminated</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Valid/Invalid of EV Mode" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Valid/Invalid of EV Mode</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Validity of EV mode information</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Valid / Invalid</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Shift Gear</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Selected gear (or range) displayed on meter when shift lever in M (or S)</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">OFF: Not displayed on meter</p> <p class="ptxt">1st to 8th: Gear/range displayed on meter</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">The gear displayed may differ from the actual selected gear.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Engine Load Factor</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Engine load</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">0.0 to 100.0%</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">"Invalid" is displayed for hybrid vehicles and diesel vehicles.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">READY Signal</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Driving possible</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: Driving possible message displayed</p> <p class="ptxt">OFF: Driving possible message not displayed</p> </td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">"Invalid" is displayed for gasoline vehicles and diesel vehicles.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Gear Position Signal</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Current gear</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">1st / 2nd / 3rd / 4th / 5th / 6th / 7th / 8th</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">"Invalid" is displayed for hybrid vehicles.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">"1" is always displayed for vehicles with a CVT.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Turbine RPM/Input Shaft RPM</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Torque converter output shaft speed (transmission input shaft speed)</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">0 to 12650 rpm</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Under VSC Control</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Operation of VSC</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: Operating</p> <p class="ptxt">OFF: Not operating or not equipped</p> </td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Under ABS Control</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Operation of ABS</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: Operating</p> <p class="ptxt">OFF: Not operating or not equipped</p> </td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Under VDM Control</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Operation of VDIM</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: Operating</p> <p class="ptxt">OFF: Not operating or not equipped</p> </td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Under TRC Operation Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Operation of TRC</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: Operating</p> <p class="ptxt">OFF: Not operating or not equipped</p> </td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">FR Wheel Speed</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Front right wheel speed</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">-327.68 to 327.65 km/h</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value is 327.65 km/h or more, "327.65 km" is displayed.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">FL Wheel Speed</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Front left wheel speed</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">-327.68 to 327.66 km/h</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value is 327.65 km/h or more, "327.65 km" is displayed.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">RR Wheel Speed</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Rear right wheel speed</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">-327.68 to 327.66 km/h</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value is 327.65 km/h or more, "327.65 km" is displayed.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">RL Wheel Speed</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Rear left wheel speed</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">-327.68 to 327.66 km/h</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value is 327.65 km/h or more, "327.65 km" is displayed.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Cruise System</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Malfunction of cruise control system</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Normal / Fault / Invalid</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Driving Force Demand Judgment Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Driving force demand</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Driving Force / Non-Driving Force</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">A fixed value is displayed for each vehicle.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Cruise Control Master Switch Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Master control which determines vehicle speed while cruise control operating (powertrain/DSS (Driving Support System))</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Power Train / DSS</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "Cruise System" is "Fault" or "Invalid", this item will be invalid.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">A fixed value is displayed for each vehicle.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">DSS Judgment Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Existence of DSS (Driving Support System)</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Yes / No</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Cruise System" is "Fault" or "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Cruise Control Res/Accel SW</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Cruise control RES/+ (ACCEL) switch status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Cruise System" is "Fault" or "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Cruise Control Set/Coast SW</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Cruise control SET/- (COAST) switch status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Cruise System" is "Fault" or "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Cruise Control Cancel SW</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Cruise control CANCEL switch status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Cruise System" is "Fault" or "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Cruise Control Brake SW</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Stop light switch status while cruise control operating</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Cruise System" is "Fault" or "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Cruise Control D Signal</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Shift lever in D while cruise control operating</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Cruise System" is "Fault" or "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Cruise Control Main SW</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Cruise control main switch status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Cruise System" is "Fault" or "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Cruise Control Set Speed</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Set vehicle speed for cruise control</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">0 to 255 km/h</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Cruise System" is "Fault" or "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Vehicle Speed (during Cruise Control)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Vehicle speed while cruise control operating</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">0 to 255 km/h</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Cruise System" is "Fault" or "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Cruise Control Request Value</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Cruise control system requested throttle valve opening angle (when value of "Driving Force Demand Judgment Flag" is "Non-Driving Force") or driving force (when value of "Driving Force Demand Judgment Flag" is "Driving Force")</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">Throttle Valve Opening Angle: 0.0 to 127.5%</p> <p class="ptxt">Driving Force: -12800 to 12700 N</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">The displayed values for this item and "Driving Force Demand Judgment Flag" will differ.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "Cruise System" is "Fault" or "Invalid", this item will be invalid.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ACC Target Distance</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Distance to target preceding vehicle while in ACC (Dynamic Radar Cruise Control) vehicle-to-vehicle distance control mode</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">0 to 251 m</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Cruise System" is "Fault" or "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ACC Target Condition</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">ACC (Dynamic Radar Cruise Control) system control status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Forward Vehicle / No Forward Vehicle / Constant Speed Mode / Radar Failure</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Cruise System" is "Fault" or "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ACC Relative Speed</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Relative speed of target preceding vehicle while in ACC (Dynamic Radar Cruise Control) vehicle to vehicle distance control mode</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">-128 to 127 km/h</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">A negative value will be displayed when approaching the target preceding vehicle.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "Cruise System" is "Fault" or "Invalid", this item will be invalid.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Reception Data Invalid Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Validity of PCS related data</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Valid / Invalid</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ALM Request Flag 2</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS warning operation command 2 from driving support ECU to skid control buzzer and combination meter assembly</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ALM Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS warning operation command 1 from driving support ECU to skid control buzzer and combination meter assembly</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">ABK Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Brake request warning command from driving support ECU to skid control ECU</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Only displayed for vehicles with a driver monitor camera.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PBA Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS brake assist command from driving support ECU to skid control ECU</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">OFF / PBA1 ON / PBA2 ON / PBA3 ON</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">FPB Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS brake (preliminary braking) command from driving support ECU to skid control ECU</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PB Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS brake (operation) command from driving support ECU to skid control ECU</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PSB Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS seat belt operation command from driving support ECU to PCS seat belt control ECU</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Prefill Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS brake (standby) command from driving support ECU to skid control ECU</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Stop Lamp Lighting Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Stop light illumination command from driving support ECU to skid control ECU</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Brake Hold Request Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS after operation brake hold command from driving support ECU to skid control ECU</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Collision Avoidance Assist Request Flag 1</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Evasion support command 1 from driving support ECU to VGRS/DSR</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Collision Avoidance Assist Request Flag 2</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Evasion support command 2 from driving support ECU to VGRS/DSR</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Collision Avoidance Assist Request Flag 3</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Evasion support command 3 from driving support ECU to VGRS/DSR</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS SW</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">ON/OFF state of PCS according to switch operation</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Display (Diag Condition)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS system warning message status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Display (Milli Wave Dirt)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Existence of dirt, etc. on millimeter wave radar sensor</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Display (Temporarily not available)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS temporarily disabled</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">System Available / System Not Available</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Display (Sensor Recognition Status)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Sensor recognition status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Status1 / Status2</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Display (Milli-Meter Wave Radar Low Voltage Status)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Millimeter wave radar sensor low voltage</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Normal / Low</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Display (Camera Backlight Status)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Existence of camera backlight</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Normal / Backlight</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Display (Milli-Meter Wave Radar Alignment Flag)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Millimeter wave radar sensor beam axis adjustment status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">ON / OFF</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Display (Object Recognition Status)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Target recognition status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Status1 / Status2</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Display (Control Status 1)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS control status 1</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Level1 / Level2 / Level3 / Level4</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Display (Control Status 2)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS control status 2</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Level1 / Level2 / Level3 / Level4</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Target Distance</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Distance to PCS control target object</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">0.00 to 100.33 m</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If an object has been detected but PCS control has been determined to be not necessary, the maximum value will be displayed.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Target Relative Velocity</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Relative speed of PCS control target object</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">-57.540 to 14.000 m/s</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">A negative value will be displayed when approaching the target object.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If an object has been detected but PCS control has been determined to be not necessary, the maximum value will be displayed.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Target Lateral Position</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Horizontal position of PCS control target object</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">-5.12 to 4.80 m</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">A positive value is displayed when the detected object is to the right of the vehicle centerline.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">A negative value is displayed when the detected object is to the left of the vehicle centerline.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If an object has been detected but PCS control has been determined to be not necessary, the maximum value will be displayed.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Target Object Number</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Of objects detected by the sensors, number of objects judged to be PCS control target objects</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">1 to 33</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">If "1" is displayed when the maximum value is displayed for each related record data item ("Target Distance", " Target Relative Velocity", " Target Lateral Position"), PCS control operation will be determined to be unnecessary.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Relative Acceleration for Control Target</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Relative acceleration of PCS control target object</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">-8 to 7 m/s<sup class="ptxt">2</sup>
+</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Predicted Time to Collision 1 for Control Target</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Estimated time until collision with PCS control target object 1</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">0.0 to 6.3 sec</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Predicted Time to Collision 2 for Control Target</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Estimated time until collision with PCS control target object 2</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">0.0 to 6.3 sec</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Predicted Time to Collision Status for Control Target</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Estimated time until collision with PCS control target object status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Status1 / Status2</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Sensor Recognition Status for Control Target</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Sensor recognition status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Status1 to Status10</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Type of the Object for Control Target</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS control target object type</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Type1 to Type12</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS ALM Mode Status</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS warning sensitivity setting</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">OFF / Far / Middle / Near</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS ALM Status</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS warning status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Status1 to Status3</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Guard Status C</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS guard status C</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Status1 / Status2</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Guard Status B</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS guard status B</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Status1 / Status2</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">PCS Guard Status A</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">PCS guard status A</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Status1 to Status4</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Sensor Recognition Status (Horizontal Axis Offset Status of Milli-Meter Wave Radar)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Millimeter wave radar sensor horizontal deviation</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Status1 / Status2</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Sensor Recognition Status (Vertical Axis Offset Status of Milli-Meter Wave Radar)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Millimeter wave radar sensor vertical deviation</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Status1 to Status8</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Estimated Curve Radius</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Estimated route curve radius</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">-6400 to 6200 m</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Detection of Certain Level of Acceleration</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Detection of acceleration above threshold</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Not Supported / No / Invalid / Yes</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "PCS Reception Data Invalid Flag" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">LKA DDR Trigger Signal</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Detection of LKA/LDA trigger (Trigger ID No. 19)</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">Trigger OFF: Conditions not met</p> <p class="ptxt">Trigger Condition1: Condition 1 met</p> <p class="ptxt">Trigger Condition2: Condition 2 met</p> <p class="ptxt">Trigger Condition3: Condition 3 met</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Invalid of LKA DDR Data" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Invalid of LKA DDR Data</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Validity of LKA/LDA related information</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">Valid / Invalid</td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Steering Wheel Release Condition</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Driver hands on steering wheel judgment during LKA operation</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: Hands not detected on steering wheel</p> <p class="ptxt">OFF: Hands detected on steering wheel</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Invalid of LKA DDR Data" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Steering Operation of LKA</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Steering wheel operation judgment during LKA operation</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: Steering wheel being operated</p> <p class="ptxt">OFF: Steering wheel not being operated</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Invalid of LKA DDR Data" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Steering Operation of LDA</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Steering wheel operation judgment during LDA operation</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: Steering wheel being operated</p> <p class="ptxt">OFF: Steering wheel not being operated</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Invalid of LKA DDR Data" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">LKA Control Condition (EPS Control)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">EPS control status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: EPS control operating</p> <p class="ptxt">OFF: EPS control not operating</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Invalid of LKA DDR Data" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">LKA Control Condition</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">LKA/LDA control status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">LKA Available: LKA operation possible</p> <p class="ptxt">LDA Available: LDA operation possible</p> <p class="ptxt">OFF: LKA/LDA operation not possible</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Invalid of LKA DDR Data" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Turn Signal Operation</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Turn signal operation status</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">OFF / Right Turn ON / Left Turn ON</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">If the value of "Invalid of LKA DDR Data" is "Invalid", this item will be invalid.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">EPS Torque Sensor Value</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Amount of EPS assist</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">-12.5 to 12.5 Nm</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">A positive value is displayed when the steering wheel is turned left.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">HV Recognition Flag</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Hybrid vehicle judgment</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">HV: Hybrid vehicle</p> <p class="ptxt">Not HV: Gasoline vehicle or diesel vehicle</p> </td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Diesel Flag</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Diesel vehicle judgment</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">Diesel: Diesel vehicle</p> <p class="ptxt">Not Diesel: Gasoline vehicle or hybrid vehicle</p> </td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Sensor Type Identification (Yaw Rate Sensor)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Number of installed yaw rate sensors</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">1 / 2</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">A fixed value is displayed for each vehicle.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Sensor Type Identification (G Sensor)</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Number of installed acceleration sensors</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%">1 / 2</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">A fixed value is displayed for each vehicle.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Sensor Type Identification (G Sensor Layout)</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Acceleration sensor installation angle in relation to longitudinal axis of vehicle</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%">45 deg / 90 deg</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">A fixed value is displayed for each vehicle.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Sensor Type Identification (Security)</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Existence of tilt sensor</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%">With / Without</td> 
+            <td class="cellrowborder" headers="ID0EQABI " width="NaN%">A fixed value is displayed for each vehicle.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">Yaw G Sensor Installation Information</td> 
+            <td align="left" class="cellrowborder" headers="ID0EEABI " width="NaN%">Acceleration sensor installation orientation (Normal or Reverse (180° from Normal))</td> 
+            <td align="left" class="cellrowborder" headers="ID0EKABI " width="NaN%">Original / Counter</td> 
+            <td align="left" class="cellrowborder" headers="ID0EQABI " width="NaN%">A fixed value is displayed for each vehicle.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E56AI " width="NaN%">DSC Operation Flag</td> 
+            <td class="cellrowborder" headers="ID0EEABI " width="NaN%">Operation of DSC (Drive Start Control)</td> 
+            <td class="cellrowborder" headers="ID0EKABI " width="NaN%"> <p class="ptxt">ON: Operating</p> <p class="ptxt">OFF: Not operating or invalid</p> </td> 
+            <td align="center" class="cellrowborder" headers="ID0EQABI " width="NaN%">-</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

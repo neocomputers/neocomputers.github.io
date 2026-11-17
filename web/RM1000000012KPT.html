@@ -1,0 +1,511 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="HYBRID BATTERY SYSTEM VEHICLE CONTROL HISTORY" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0305508" name="ttlId"/> 
+  <meta content="HYBRID BATTERY SYSTEM" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="VEHICLE CONTROL HISTORY" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000012KPT" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>HYBRID BATTERY SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">HYBRID BATTERY SYSTEM<span class="topictitle1"> VEHICLE CONTROL HISTORY</span>
+</h1>
+<div class="subpara" id="RM1000000012KPT__RM1000000012KPT_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM1000000012KPT__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">VEHICLE CONTROL HISTORY (HYBRID BATTERY SYSTEM)</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the GTS on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Powertrain / HV battery / Utility / Vehicle Control History.</p>
+<br class="step2Root-step2"/>Powertrain &gt; HV Battery &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EEG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EEG " width="NaN%">Vehicle Control History</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If any of the conditions in the "Cause" column are met, data related to the Vehicle Control History item "Ready ON Prevention" will be stored in the battery ECU assembly.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">When the Vehicle Control History item "Ready ON Prevention" is stored, the vehicle condition will be as shown in the Symptom column.</p>
+</li> 
+         </ul> 
+        </div>
+<div class="tablenoborder">
+         <table class="big-table">
+<caption class="step2-table">
+           Ready ON Prevention
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0ETEAC" width="NaN%">Symptom</th> 
+            <th align="center" class="cellrowborder" id="ID0EZEAC" width="NaN%">Cause</th> 
+            <th align="center" class="cellrowborder" id="ID0E6EAC" width="NaN%">Vehicle Control History Data</th> 
+            <th align="center" class="cellrowborder" id="ID0EFFAC" width="NaN%">Procedure</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETEAC " rowspan="3" width="NaN%">Power switch does not turn on (READY).</td> 
+            <td align="left" class="cellrowborder" headers="ID0EZEAC " width="NaN%">Battery diagnosis request was ignored</td> 
+            <td align="left" class="cellrowborder" headers="ID0E6EAC " width="NaN%"> <p class="ptxt">Hybrid Battery Check Status Light Request</p> <p class="ptxt">If a value of "6" or higher is displayed for this item and no other conditions are preventing the power switch from being turned on (READY), the power switch cannot be turned on (READY) due to Battery Diagnosis not being performed and the vehicle being driven for a certain amount of time after "Have Traction Battery Inspected" was displayed on the multi-information display.</p> </td> 
+            <td align="left" class="cellrowborder" headers="ID0EFFAC " width="NaN%">Perform Battery Diagnosis using the GTS.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EZEAC " width="NaN%">Excessive engine cranking requests when HV battery cannot be used</td> 
+            <td align="left" class="cellrowborder" headers="ID0E6EAC " width="NaN%"> <p class="ptxt">Number of Cranking when No Hybrid Battery</p> <p class="ptxt">The power switch cannot be turned on (READY) as engine cranking operation requests have exceeded a threshold when the HV battery could not be used.</p> </td> 
+            <td class="cellrowborder" headers="ID0EFFAC " width="NaN%">Repair the malfunctions indicated by the output DTCs and clear the DTCs.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EZEAC " width="NaN%">Extremely low HV battery temperature judgment</td> 
+            <td align="left" class="cellrowborder" headers="ID0E6EAC " width="NaN%"> <p class="ptxt">Hybrid Battery Extremely Low Temperature Judgment</p> <p class="ptxt">If "ON" is displayed for this item, the power switch cannot be turned on (READY) as the temperature of the HV battery is extremely low.</p> <p class="ptxt">The values of "HV Battery Temperature 1 to 15" can be used as a reference.</p> </td> 
+            <td class="cellrowborder" headers="ID0EFFAC " width="NaN%">Wait for the HV battery temperature to increase.</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0ETEAC " rowspan="2" width="NaN%">The power switch is slow to turn on (READY).</td> 
+            <td align="left" class="cellrowborder" headers="ID0EZEAC " width="NaN%">High HV battery cell voltage</td> 
+            <td align="left" class="cellrowborder" headers="ID0E6EAC " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Stack 1 Cell Maximum Voltage</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Stack 2 Cell Maximum Voltage</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Stack 3 Cell Maximum Voltage</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Stack 4 Cell Maximum Voltage</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Stack 5 Cell Maximum Voltage</p>
+</li> 
+             </ul> </td> 
+            <td class="cellrowborder" headers="ID0EFFAC " width="NaN%">Perform troubleshooting for any DTCs that are output.</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EZEAC " width="NaN%">Low HV battery cell voltage</td> 
+            <td align="left" class="cellrowborder" headers="ID0E6EAC " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Stack 1 Cell Minimum Voltage</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Stack 2 Cell Minimum Voltage</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Stack 3 Cell Minimum Voltage</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Stack 4 Cell Minimum Voltage</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Stack 5 Cell Minimum Voltage</p>
+</li> 
+             </ul> </td> 
+            <td class="cellrowborder" headers="ID0EFFAC " width="NaN%">Perform troubleshooting for any DTCs that are output.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           Hybrid Battery Cooling Performance Decrement
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EMPAC" width="NaN%">Description</th> 
+            <th align="center" class="cellrowborder" id="ID0ESPAC" width="NaN%">Vehicle Control History Data</th> 
+            <th align="center" class="cellrowborder" id="ID0EYPAC" width="NaN%">Diagnostic Note</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMPAC " width="NaN%">History of poor HV battery cooling performance</td> 
+            <td align="left" class="cellrowborder" headers="ID0ESPAC " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Temperature 1 to 15</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Cooling Fan Intake Air Temperature 1</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Cooling Fan Intake Air Temperature 2</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Cooling Fan Integrated Airflow (Total cumulative volume of battery cooling blower assembly (No. 0))</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Hybrid Battery Cooling Fan 2 Integrated Airflow (Total cumulative volume of battery cooling blower assembly (No. 1))</p>
+</li> 
+             </ul> </td> 
+            <td align="center" class="cellrowborder" headers="ID0EYPAC " width="NaN%"> <p class="ptxt">
+<a class="ptxt-xref" href="RM1000000012KPR.html#RM1000000012KPR">Click here</a>
+</p> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">VEHICLE CONTROL HISTORY DATA (HYBRID BATTERY SYSTEM)</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the GTS on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Powertrain / HV battery / Utility / Vehicle Control History.</p>
+<br class="step2Root-step2"/>Powertrain &gt; HV Battery &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EIGAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EIGAE " width="NaN%">Vehicle Control History</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Select a vehicle control history item to access the applicable data.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Check the Data recorded with the Vehicle Control History.</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           Check the freeze frame Data recorded with the Vehicle Control History.
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EBMAE" width="NaN%">GTS Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EHMAE" width="NaN%">Description</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Smoothed Value of BATT Voltage</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Smoothed value of auxiliary battery voltage</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">WIN Control Limit Power</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Charge control wattage sent from battery ECU assembly to hybrid vehicle control ECU</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">WOUT Control Limit Power</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Discharge control wattage sent from battery ECU assembly to hybrid vehicle control ECU</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery SOC</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%"> <p class="ptxt">HV battery state of charge</p> <p class="ptxt">Primary calculated from charging and discharging amperage</p> </td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Cooling Fan Integrated Airflow</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery cooling blower assembly (No. 0) integrated airflow</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Cooling Fan 2 Integrated Airflow</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery cooling blower assembly (No. 1) integrated airflow</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Current for Hybrid Battery Control</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Hybrid battery current for hybrid battery control</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Current for Hybrid Battery Control (Sub)</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Hybrid battery current for hybrid battery control (Sub)</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Control Mode</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">HV battery control mode</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Number of Cranking when No Hybrid Battery</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Number of cranking when no hybrid battery</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Check Status Light Request</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Hybrid battery check status light request</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Extremely Low Temperature Judgment</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Hybrid battery extremely low temperature Judgment</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 1</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 2</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 3</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 4</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 5</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 6</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 7</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 8</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 9</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 10</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 11</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 12</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 13</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 14</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Temperature 15</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery module temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 1 Cell Minimum Voltage</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 1 HV supply stack sub-assembly cell Minimum Voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 1 Cell Maximum Voltage</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 1 HV supply stack sub-assembly cell maximum voltage</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 2 Cell Minimum Voltage</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 2 HV supply stack sub-assembly cell Minimum Voltage</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 2 Cell Maximum Voltage</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 2 HV supply stack sub-assembly cell maximum voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 3 Cell Minimum Voltage</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 3 HV supply stack sub-assembly cell Minimum Voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 3 Cell Maximum Voltage</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 3 HV supply stack sub-assembly cell maximum voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 4 Cell Minimum Voltage</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 4 HV supply stack sub-assembly cell Minimum Voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 4 Cell Maximum Voltage</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 4 HV supply stack sub-assembly cell maximum voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 5 Cell Minimum Voltage</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 5 HV supply stack sub-assembly cell Minimum Voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 5 Cell Maximum Voltage</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 5 HV supply stack sub-assembly cell maximum voltage</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 1 Cell Minimum SOC</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 1 HV supply stack sub-assembly cell Minimum SOC</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 1 Cell Maximum SOC</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 1 HV supply stack sub-assembly cell maximum SOC</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 2 Cell Minimum SOC</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 2 HV supply stack sub-assembly cell Minimum SOC</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 2 Cell Maximum SOC</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 2 HV supply stack sub-assembly cell maximum SOC</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 3 Cell Minimum SOC</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 3 HV supply stack sub-assembly cell Minimum SOC</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 3 Cell Maximum SOC</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 3 HV supply stack sub-assembly cell maximum SOC</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 4 Cell Minimum SOC</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 4 HV supply stack sub-assembly cell Minimum SOC</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 4 Cell Maximum SOC</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 4 HV supply stack sub-assembly cell maximum SOC</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 5 Cell Minimum SOC</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 5 HV supply stack sub-assembly cell Minimum SOC</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 5 Cell Maximum SOC</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 5 HV supply stack sub-assembly cell maximum SOC</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Block 1 Cell Average Voltage</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">HV battery block 1 cell average voltage</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Block 2 Cell Average Voltage</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">HV battery stack 2 cell average voltage</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Block 3 Cell Average Voltage</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">HV battery stack 3 cell average voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Block 4 Cell Average Voltage</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">HV battery stack 4 cell average voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Block 5 Cell Average Voltage</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">HV battery stack 5 cell average voltage</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 1 Cell Average Voltage</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 1 HV supply stack sub-assembly cell average voltage</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 2 Cell Average Voltage</td> 
+            <td class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 2 HV supply stack sub-assembly cell average voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 3 Cell Average Voltage</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 3 HV supply stack sub-assembly cell average voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 4 Cell Average Voltage</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 4 HV supply stack sub-assembly cell average voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 5 Cell Average Voltage</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 5 HV supply stack sub-assembly cell average voltage</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 1 Current Interrupt Device</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 1 HV supply stack sub-assembly current interrupt device</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 2 Current Interrupt Device</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 2 HV supply stack sub-assembly current interrupt device</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 3 Current Interrupt Device</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 3 HV supply stack sub-assembly current interrupt device</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 4 Current Interrupt Device</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 4 HV supply stack sub-assembly current interrupt device</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Stack 5 Current Interrupt Device</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">No. 5 HV supply stack sub-assembly current interrupt device</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Cooling Fan Intake Air Temperature 1</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery cooling blower assembly (No. 0) intake air temperature</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EBMAE " width="NaN%">Hybrid Battery Cooling Fan Intake Air Temperature 2</td> 
+            <td align="left" class="cellrowborder" headers="ID0EHMAE " width="NaN%">Battery cooling blower assembly (No. 1) intake air temperature</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

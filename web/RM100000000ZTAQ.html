@@ -1,0 +1,978 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ENTRY AND START SYSTEM(for Start Function), Diagnostic DTC:B2278" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058032" name="sectionId"/> 
+  <meta content="THEFT DETERRENT / KEYLESS ENTRY" name="sectionName"/> 
+  <meta content="_0288581" name="ttlId"/> 
+  <meta content="ENTRY AND START SYSTEM(for Start Function)" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000ZTAQ" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>B2278</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ENTRY AND START SYSTEM(for Start Function), Diagnostic DTC:B2278</h1>
+<div class="section" id="RM100000000ZTAQ__RM100000000ZTAQ_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">B2278</td> 
+       <td class="dtcname" headers="ID0EED">Engine/Power Switch Malfunction</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000000ZTAQ__RM100000000ZTAQ_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">This DTC is stored when the SSW1 contact signal and SSW2 contact signal, which are detected when the power switch is operated, do not match.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0ERF" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EXF" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0E4F" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EDG" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EJG" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ERF " width="NaN%">B2278</td> 
+        <td align="left" class="cellrowborder" headers="ID0EXF " width="NaN%">Engine/Power Switch Malfunction</td> 
+        <td align="left" class="cellrowborder" headers="ID0E4F " width="NaN%">When the power switch is operated, the SSW1 contact signal and SSW2 contact signal do not match (1-trip detection logic*).</td> 
+        <td align="left" class="cellrowborder" headers="ID0EDG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">AM2 fuse</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Power switch</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Certification ECU (smart key ECU assembly)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Wire harness or connector</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EJG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1 nonmark"> 
+          <p class="list1-li-title">
+<strong class="li-title-title">DTC Output Confirmation Operation:</strong>
+</p> 
+          <li class="list1-item">
+<p class="list1-nonmark-heading">Turn the power switch on (IG).</p>
+</li> 
+         </ul> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <br class="subpara"/>
+    <ul class="content5-list1 nonmark"> 
+     <li class="list1-item">
+<p class="content5-list1-nonmark-heading">*: Only detected while a malfunction is present.</p>
+</li> 
+    </ul> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Vehicle Condition and Fail-safe Function when Malfunction Detected
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EYDAC" width="NaN%">Vehicle Condition when Malfunction Detected</th> 
+        <th align="center" class="cellrowborder" id="ID0E5DAC" width="NaN%">Fail-safe Function when Malfunction Detected</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0EYDAC " width="NaN%">If either the SSW1 contact signal or SSW2 contact signal is stuck on, the power source mode cannot be changed by pressing the power switch. If either the SSW1 contact signal or SSW2 contact signal is stuck off, emergency stop by pressing and holding the power switch for 2 seconds or more cannot be operated.</td> 
+        <td align="center" class="cellrowborder" headers="ID0E5DAC " width="NaN%">-</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Related Data List and Active Test Items
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EYFAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0E5FAC" width="NaN%">Data List and Active Test</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0EYFAC " width="NaN%">B2278</td> 
+        <td class="cellrowborder" headers="ID0E5FAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <p class="list1-li-title">
+<strong class="li-title-title">Power Source Control</strong>
+</p> 
+          <li class="list1-item">
+<p class="list1-heading">Starter Switch1</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Starter Switch2</p>
+</li> 
+         </ul> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000ZTAQ__RM100000000ZTAQ_03">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003LFQE11" class="figure-graphic--bigImage" src="../images/a003lfqe11.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM100000000ZTAQ__RM100000000ZTAQ_04">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">When using the GTS with the power switch off, connect the GTS to the DLC3 and turn a courtesy light switch on and off at intervals of 1.5 seconds or less until communication between the GTS and the vehicle begins. Then select Model Code "KEY REGIST" under manual mode and enter the following menus: Body Electrical / Entry&amp;Start(CAN). While using the GTS, periodically turn a courtesy light switch on and off at intervals of 1.5 seconds or less to maintain communication between the GTS and the vehicle.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">The entry and start system (for Start Function) uses the LIN communication system and CAN communication system. Inspect the communication function by following How to Proceed with Troubleshooting. Troubleshoot the entry and start system (for Start Function) after confirming that the communication systems are functioning properly.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZTAI.html#RM100000000ZTAI">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Inspect the fuses of circuits related to this system before performing the following procedure.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Before replacing the certification ECU (smart key ECU assembly), refer to entry and start system (for Start Function) Precaution.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZTA5.html#RM100000000ZTA5">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">After repair, confirm that no DTCs are output by performing "DTC Output Confirmation Operation".</p>
+</li> 
+     </ul> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">When the cable is disconnected and reconnected to the negative (-) auxiliary battery terminal, the power source mode returns to the state it was in before the cable was disconnected.</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000ZTAQ__RM100000000ZTAQ_01">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000ZTAQ__RM100000000ZTAQ_01_0002">
+<p class="testgrp-heading">READ VALUE USING GTS (START SWITCH1, START SWITCH2)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Power Source Control / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Power Source Control &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EZAAE" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0E6AAE" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EFBAE" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0ELBAE" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0ERBAE" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZAAE " width="NaN%">Start Switch1</td> 
+              <td align="left" class="cellrowborder" headers="ID0E6AAE " width="NaN%">Power switch 1 status</td> 
+              <td align="center" class="cellrowborder" headers="ID0EFBAE " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0ELBAE " width="NaN%"> <p class="ptxt">OFF: Power switch not pressed</p> <p class="ptxt">ON: Power switch pressed</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0ERBAE " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">If the power switch is pressed for a short time, the display may not change.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Use this item to determine if the power switch input signal is malfunctioning.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZAAE " width="NaN%">Start Switch2</td> 
+              <td align="left" class="cellrowborder" headers="ID0E6AAE " width="NaN%">Power switch 2 status</td> 
+              <td align="center" class="cellrowborder" headers="ID0EFBAE " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0ELBAE " width="NaN%"> <p class="ptxt">OFF: Power switch not pressed</p> <p class="ptxt">ON: Power switch pressed</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0ERBAE " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Backup for power switch 1. However, when the power switch is pressed and held, the power source mode can only be changed when both power switch 1 and 2 are normal.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Behaves the same way as power switch 1.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Power Source Control &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ERLAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ERLAE " width="NaN%">Start Switch1</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ERLAE " width="NaN%">Start Switch2</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1RAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0E1RAE">The GTS display changes correctly in response to the power switch operation.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EUSAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EUSAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EXTAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXTAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXTAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK HARNESS AND CONNECTOR (POWER SOURCE)  <a class="res-right-fin-false-xref" href="#RM100000000ZTAQ__RM100000000ZTAQ_01_0006">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTAQ__RM100000000ZTAQ_01_0003">
+<p class="testgrp-heading">READ VALUE USING GTS (START SWITCH1, START SWITCH2)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Power Source Control / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">According to the display on the GTS, read the Data List while wiggling the wire harness.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Power Source Control &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EUZAE" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0E1ZAE" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EA1AE" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EG1AE" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0EM1AE" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUZAE " width="NaN%">Start Switch1</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1ZAE " width="NaN%">Power switch 1 status</td> 
+              <td align="center" class="cellrowborder" headers="ID0EA1AE " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0EG1AE " width="NaN%"> <p class="ptxt">OFF: Power switch not pressed</p> <p class="ptxt">ON: Power switch pressed</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EM1AE " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">If the power switch is pressed for a short time, the display may not change.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Use this item to determine if the power switch input signal is malfunctioning.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EUZAE " width="NaN%">Start Switch2</td> 
+              <td align="left" class="cellrowborder" headers="ID0E1ZAE " width="NaN%">Power switch 2 status</td> 
+              <td align="center" class="cellrowborder" headers="ID0EA1AE " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0EG1AE " width="NaN%"> <p class="ptxt">OFF: Power switch not pressed</p> <p class="ptxt">ON: Power switch pressed</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EM1AE " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Backup for power switch 1. However, when the power switch is pressed and held, the power source mode can only be changed when both power switch 1 and 2 are normal.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Behaves the same way as power switch 1.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Power Source Control &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ENEAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ENEAG " width="NaN%">Start Switch1</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ENEAG " width="NaN%">Start Switch2</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EWKAG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EWKAG">The GTS display changes correctly in response to the power switch operation.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQLAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQLAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETMAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETMAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETMAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>USE SIMULATION METHOD TO CHECK <a class="content6-ptxt-xref" href="RM100000001145X.html#RM100000001145X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTAQ__RM100000000ZTAQ_01_0006">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (POWER SOURCE)</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0ENPAG" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0ENPAG" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EQQAG" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EQQAG " width="NaN%">OK</td> 
+              </tr> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EQQAG " width="NaN%">NG</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003LHRC26" class="figure-graphic" src="../images/a003lhrc26.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Certification ECU (Smart Key ECU Assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Disconnect the I1 certification ECU (smart key ECU assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDVAG" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EDVAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQWAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EWWAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3WAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQWAG " width="NaN%">I1-4 (+B) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWWAG " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3WAG " width="NaN%">11 to 14 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EOYAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EOYAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ERZAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERZAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ERZAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTAQ__RM100000000ZTAQ_01_0007">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (GROUND)</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EF3AG" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EF3AG" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EI4AG" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EI4AG " width="NaN%">OK</td> 
+              </tr> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EI4AG " width="NaN%">NG</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003LHRC27" class="figure-graphic" src="../images/a003lhrc27.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Certification ECU (Smart Key ECU Assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQBBG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQBBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E4CBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EDDBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJDBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4CBG " width="NaN%">I1-18 (E) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDDBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJDBG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2EBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2EBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5FBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5FBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E5FBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTAQ__RM100000000ZTAQ_01_0010">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) - POWER SWITCH)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I53 power switch connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMJBG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EMJBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EZKBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E6KBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EFLBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZKBG " width="NaN%">I1-23 (SSW1) - I53-5 (SS1)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6KBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFLBG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZKBG " width="NaN%">I1-21 (SSW2) - I53-1 (SS2)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6KBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFLBG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZKBG " width="NaN%">I1-11 (AGND) - I53-6 (AGND)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6KBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFLBG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZKBG " width="NaN%">I1-23 (SSW1) or I53-5 (SS1) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6KBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFLBG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZKBG " width="NaN%">I1-21 (SSW2) or I53-1 (SS2) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6KBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFLBG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZKBG " width="NaN%">I1-11 (AGND) or I53-6 (AGND) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6KBG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFLBG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EFQBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EFQBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EIRBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EIRBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EIRBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000ZTAQ__RM100000000ZTAQ_01_0012">
+<p class="testgrp-heading">INSPECT POWER SWITCH</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the power switch.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000104TI.html#RM10000000104TI">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the power switch.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000104TJ.html#RM10000000104TJ">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMVBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EMVBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPWBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPWBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPWBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CERTIFICATION ECU (SMART KEY ECU ASSEMBLY) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE POWER SWITCH <a class="content6-ptxt-xref" href="RM10000000104TI.html#RM10000000104TI">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

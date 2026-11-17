@@ -1,0 +1,1079 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="HYBRID CONTROL SYSTEM Drive Mode Select Switch Circuit" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296362" name="ttlId"/> 
+  <meta content="HYBRID CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000011O0T" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Drive Mode Select Switch Circuit</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">HYBRID CONTROL SYSTEM<span class="topictitle1"> Drive Mode Select Switch Circuit</span>
+</h1>
+<div class="subpara" id="RM1000000011O0T__RM1000000011O0T_05">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">When the drive mode select switch (pattern select switch assembly) is operated, a switch signal is sent to the hybrid vehicle control ECU and the hybrid vehicle control ECU changes the drive mode.</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">If the power switch is turned off while in POWER mode, the drive mode will automatically be changed to NORMAL mode when the power switch is turned on (IG).</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">If the power switch is turned off while in NORMAL mode or ECO mode, the selected drive mode will resume when the power switch is turned on (IG).</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000011O0T__RM1000000011O0T_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<p class="figcap">Figure 1. for LHD</p>
+<img alt="B006I12E09" class="figure-graphic--bigImage" src="../images/b006i12e09.png"/>
+</div> 
+    <div class="fignone--bigImage">
+<p class="figcap">Figure 2. for RHD</p>
+<img alt="B006I12E10" class="figure-graphic--bigImage" src="../images/b006i12e10.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM1000000011O0T__RM1000000011O0T_06">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM1000000011O0T__RM1000000011O0T_06_0001">
+<p class="testgrp-heading">READ VALUE USING GTS (CAN BUS CHECK)</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0E5H" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0E5H" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0ECBAC" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0ECBAC " width="NaN%">A</td> 
+              </tr> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0ECBAC " width="NaN%">B</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: System Select / CAN Bus Check.</p>
+<br class="test1Root-test1"/>CAN Bus Check<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ERGAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ERGAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EZHAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E6HAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EZHAC " width="NaN%">All of the ECUs and sensors that are currently connected to the CAN communication system are displayed.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6HAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EZHAC " width="NaN%">None of the ECUs and sensors that are currently connected to the CAN communication system are displayed, or some of them are not displayed.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E6HAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO CAN COMMUNICATION SYSTEM <a class="content6-ptxt-xref" href="RM1000000011A35.html#RM1000000011A35">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011O0T__RM1000000011O0T_06_0002">
+<p class="testgrp-heading">CHECK DTC OUTPUT (HEALTH CHECK)</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EQLAC" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EQLAC" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0ETMAC" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0ETMAC " width="NaN%">A</td> 
+              </tr> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0ETMAC " width="NaN%">B</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: System Select / Health Check.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E5PAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E5PAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EHBAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ENBAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EHBAE " width="NaN%">No DTCs output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ENBAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EHBAE " width="NaN%">DTCs output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ENBAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011O0T__RM1000000011O0T_06_0004">
+<p class="testgrp-heading">CHECK DRIVE MODE STATUS (NORMAL MODE, ECO MODE, POWER MODE)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Operate the drive mode select switch (pattern select switch assembly) to change the drive mode.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the drive mode indicator is displayed on the multi-information display and changes according to the selected drive mode.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZFAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZFAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EBHAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EHHAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EBHAE " width="NaN%">The display changes according to the drive mode select switch (pattern select switch assembly) operation.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHHAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EBHAE " width="NaN%">The display does not change according to the drive mode select switch (pattern select switch assembly) operation.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHHAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO PROBLEM SYMPTOMS TABLE <a class="content6-ptxt-xref" href="RM1000000011O0R.html#RM1000000011O0R">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">B</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011O0T__RM1000000011O0T_06_0020">
+<p class="testgrp-heading">READ VALUE USING GTS (POWERTRAIN DRIVE MODE SWITCH)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Data List / Powertrain Drive Mode Switch.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EBNAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EBNAE " width="NaN%">Powertrain Drive Mode Switch</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the value displayed on the GTS.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EPTAE" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EVTAE" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0E2TAE" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EBUAE" width="NaN%">Normal Condition</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EPTAE " width="NaN%">Powertrain Drive Mode Switch</td> 
+              <td align="left" class="cellrowborder" headers="ID0EVTAE " width="NaN%">Drive mode select switch (pattern select switch assembly) condition</td> 
+              <td align="left" class="cellrowborder" headers="ID0E2TAE " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBUAE " width="NaN%"> <p class="ptxt">Drive mode select switch (pattern select switch assembly) not operated: OFF</p> <p class="ptxt">Drive mode select switch (pattern select switch assembly) being pushed and held: ON</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E2YAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E2YAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ED1AE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJ1AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ED1AE " width="NaN%">The display changes according to the drive mode select switch (pattern select switch assembly) operation.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJ1AE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ED1AE " width="NaN%">The display does not change according to the drive mode select switch (pattern select switch assembly) operation.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJ1AE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHECK METER / GAUGE SYSTEM <a class="content6-ptxt-xref" href="RM1000000011ARR.html#RM1000000011ARR">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">B</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011O0T__RM1000000011O0T_06_0005">
+<p class="testgrp-heading">INSPECT DRIVE MODE SELECT SWITCH (PATTERN SELECT SWITCH ASSEMBLY)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the drive mode select switch (pattern select switch assembly).</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000115C1.html#RM10000000115C1">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">for LHD:</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="B006J4RC60" class="figure-graphic" src="../images/b006j4rc60.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*A</td> 
+                <td align="left" class="cellrowborder" width="NaN%">w/ Vehicle Approaching Speaker Switch</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*B</td> 
+                <td align="left" class="cellrowborder" width="NaN%">w/o Vehicle Approaching Speaker Switch</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Component without harness connected</p> <p class="ptxt">(Drive Mode Select Switch (Pattern Select Switch Assembly))</p> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="test2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0EZCAG" class="spec-title">Standard Resistance</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0EZCAG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<caption class="table">
+                  w/ Vehicle Approaching Speaker Switch
+                 </caption>
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EJEAG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EPEAG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0EVEAG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EJEAG " rowspan="2" width="NaN%">3 (DRV) - I47-9 (E)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EPEAG " width="NaN%">Drive mode select switch (pattern select switch assembly) being pushed and held</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EVEAG " width="NaN%">Below 50 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EPEAG " width="NaN%">Drive mode select switch (pattern select switch assembly) not pushed</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EVEAG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0EZCAG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<caption class="table">
+                  w/o Vehicle Approaching Speaker Switch
+                 </caption>
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EZHAG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0E6HAG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0EFIAG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EZHAG " rowspan="2" width="NaN%">14 (DRV) - I47-9 (E)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E6HAG " width="NaN%">Drive mode select switch (pattern select switch assembly) being pushed and held</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EFIAG " width="NaN%">Below 50 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0E6HAG " width="NaN%">Drive mode select switch (pattern select switch assembly) not pushed</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EFIAG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table>
+</li>
+</ol>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">for RHD:</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="B006J4RC61" class="figure-graphic" src="../images/b006j4rc61.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Component without harness connected</p> <p class="ptxt">(Drive Mode Select Switch (Pattern Select Switch Assembly))</p> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="test2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0EONAG" class="spec-title">Standard Resistance</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0EONAG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0E2OAG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EBPAG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0EHPAG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0E2OAG " rowspan="2" width="NaN%">10 (DRV) - 9 (E)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EBPAG " width="NaN%">Drive mode select switch (pattern select switch assembly) being pushed and held</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EHPAG " width="NaN%">Below 50 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EBPAG " width="NaN%">Drive mode select switch (pattern select switch assembly) not pushed</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EHPAG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table>
+</li>
+</ol>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the drive mode select switch (pattern select switch assembly).</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EXRAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EXRAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E1SAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1SAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E1SAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE DRIVE MODE SELECT SWITCH (PATTERN SELECT SWITCH ASSEMBLY) <a class="content6-ptxt-xref" href="RM10000000115C1.html#RM10000000115C1">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011O0T__RM1000000011O0T_06_0019">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (DRIVE MODE SELECT SWITCH (PATTERN SELECT SWITCH ASSEMBLY) - BODY GROUND)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I47 drive mode select switch (pattern select switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HD0C08" class="figure-graphic" src="../images/b006hd0c08.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Drive Mode Select Switch (Pattern Select Switch Assembly))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZYAG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZYAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EG1AG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EM1AG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ES1AG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EG1AG " width="NaN%">I47-9 (E) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EM1AG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ES1AG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the I47 drive mode select switch (pattern select switch assembly) connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EP3AG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EP3AG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ES4AG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ES4AG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ES4AG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM1000000011O0T__RM1000000011O0T_06_0007">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (HYBRID VEHICLE CONTROL ECU - DRIVE MODE SELECT SWITCH (PATTERN SELECT SWITCH ASSEMBLY))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I3 hybrid vehicle control ECU connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I47 drive mode select switch (pattern select switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">for LHD:</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="B006IDSC18" class="figure-graphic" src="../images/b006idsc18.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*A</td> 
+                <td align="left" class="cellrowborder" width="NaN%">w/ Vehicle Approaching Speaker Switch</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*B</td> 
+                <td align="left" class="cellrowborder" width="NaN%">w/o Vehicle Approaching Speaker Switch</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Hybrid Vehicle Control ECU)</p> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Drive Mode Select Switch (Pattern Select Switch Assembly))</p> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="test2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0E5FBG" class="spec-title">Standard Resistance</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0E5FBG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<caption class="table">
+                  w/ Vehicle Approaching Speaker Switch
+                 </caption>
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EOHBG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EUHBG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0E1HBG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EOHBG " width="NaN%">I3-37 (PDRV) - I47-3 (DRV)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EUHBG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E1HBG " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EOHBG " width="NaN%">I3-37 (PDRV) or I47-3 (DRV) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EUHBG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E1HBG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0E5FBG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<caption class="table">
+                  w/o Vehicle Approaching Speaker Switch
+                 </caption>
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EDLBG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EJLBG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0EPLBG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EDLBG " width="NaN%">I3-37 (PDRV) - I47-14 (DRV)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EJLBG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EPLBG " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EDLBG " width="NaN%">I3-37 (PDRV) or I47-14 (DRV) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EJLBG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EPLBG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table>
+</li>
+</ol>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">for RHD:</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="B006IDSC19" class="figure-graphic" src="../images/b006idsc19.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Hybrid Vehicle Control ECU)</p> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Drive Mode Select Switch (Pattern Select Switch Assembly))</p> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="test2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0EXRBG" class="spec-title">Standard Resistance</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0EXRBG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EETBG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EKTBG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0EQTBG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EETBG " width="NaN%">I3-37 (PDRV) - I47-10 (DRV)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EKTBG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EQTBG " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EETBG " width="NaN%">I3-37 (PDRV) or I47-10 (DRV) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EKTBG " width="NaN%">Always</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EQTBG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table>
+</li>
+</ol>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the I47 drive mode select switch (pattern select switch assembly) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the I3 hybrid vehicle control ECU connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQWBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQWBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETXBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETXBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETXBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HYBRID VEHICLE CONTROL ECU <a class="content6-ptxt-xref" href="RM10000000115AK.html#RM10000000115AK">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

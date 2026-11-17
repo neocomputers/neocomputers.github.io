@@ -1,0 +1,832 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="PRE-CRASH SAFETY SYSTEM SYSTEM DESCRIPTION" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058078" name="sectionId"/> 
+  <meta content="PRE-CRASH SAFETY" name="sectionName"/> 
+  <meta content="_0284504" name="ttlId"/> 
+  <meta content="PRE-CRASH SAFETY SYSTEM" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="SYSTEM DESCRIPTION" name="paraName"/> 
+  <meta content="201801" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001AA5D" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>PRE-CRASH SAFETY SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">PRE-CRASH SAFETY SYSTEM<span class="topictitle1"> SYSTEM DESCRIPTION</span>
+</h1>
+<div class="subpara" id="RM100000001AA5D__RM100000001AA5D_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000001AA5D__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">PRE-CRASH SAFETY SYSTEM DESCRIPTION</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">The pre-crash safety system uses the pre-crash warning control, pre-crash brake assist control and pre-crash braking control to help avoid a collision or reduce the impact if it determines that the possibility of a collision is high or a collision is unavoidable based on the position and relative speed of a preceding vehicle.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">The operation of this system can be turned off and on using the setting screen of the multi-information display.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">When the pre-crash safety system is turned off, the PCS warning light in the combination meter assembly will illuminate.</p> 
+        </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">PRE-CRASH SAFETY SYSTEM SENSOR DESCRIPTION</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">The millimeter wave radar sensor assembly and forward recognition camera detect the position and relative speed of preceding vehicles and pedestrians*. This information is sent to the driving support ECU to determine if the possibility of a collision is high or a collision is unavoidable.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">*: Depending on the vehicle destination and specifications, the pedestrian detection function may not be available.</p> 
+        </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">FUNCTION OF MAIN COMPONENTS</p>
+<div class="tablenoborder">
+       <table class="step1-table">
+<thead align="left" class="step1-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0ECH" width="NaN%">COMPONENTS</th> 
+          <th align="center" class="cellrowborder" id="ID0EIH" width="NaN%">FUNCTION</th> 
+         </tr> 
+        </thead>
+<tbody class="step1-table"> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ECH " width="NaN%">Millimeter Wave Radar Sensor Assembly</td> 
+          <td class="cellrowborder" headers="ID0EIH " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Radiates millimeter radar waves forward and uses reflected waves to detect the distance to, direction of, and relative speed of objects in front of the vehicle.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Sends information (the distance to, direction of, and relative speed of detected objects) to the driving support ECU assembly.</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ECH " width="NaN%">Driving Support ECU Assembly</td> 
+          <td class="cellrowborder" headers="ID0EIH " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Determines if the possibility of a collision is high or a collision is unavoidable based on the signals from each sensor and sends brake request signals to the skid control ECU.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Sends request signals to illuminate the warning lights, display related information on the multi-information display in the combination meter assembly and sound a buzzer.</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ECH " width="NaN%">Forward Recognition Camera</td> 
+          <td class="cellrowborder" headers="ID0EIH " width="NaN%">Captures images of the area in front of the vehicle and processes them to detect preceding vehicles or pedestrians and sends information to the driving support ECU assembly.</td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ECH " width="NaN%">Yaw Rate Sensor (Airbag Sensor Assembly)</td> 
+          <td class="cellrowborder" headers="ID0EIH " width="NaN%">Detects the yaw rate and acceleration of the vehicle and sends signals to the driving support ECU assembly.</td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ECH " width="NaN%">Steering Sensor</td> 
+          <td class="cellrowborder" headers="ID0EIH " width="NaN%">Detects the steering angle and direction and sends signals to the driving support ECU assembly.</td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ECH " width="NaN%">Vehicle Speed Sensor</td> 
+          <td class="cellrowborder" headers="ID0EIH " width="NaN%">Detects the wheel speed and sends signals to the skid control ECU.</td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ECH " width="NaN%">Stop Light Relay (Stop Light Switch Assembly)</td> 
+          <td class="cellrowborder" headers="ID0EIH " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Detects the depression of the brake pedal and sends signals to the skid control ECU.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Illuminates the stop lights based on the pre-crash braking control operation signal from the skid control ECU.</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ECH " width="NaN%">Steering Pad Switch Assembly</td> 
+          <td class="cellrowborder" headers="ID0EIH " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Used to turn the pre-crash safety system on and off.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Can be used to change the pre-crash safety system sensitivity setting between "Far", "Mid", "Near".</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ECH " width="NaN%">VSC OFF Switch</td> 
+          <td class="cellrowborder" headers="ID0EIH " width="NaN%">Disables the pre-crash brake assist control and pre-crash braking control if pressed and held.</td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ECH " width="NaN%">Skid Control ECU (Brake Booster with Master Cylinder Assembly)</td> 
+          <td class="cellrowborder" headers="ID0EIH " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Performs pre-crash brake control based on brake request signals from the driving support ECU assembly.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Sends wheel speed signals to the driving support ECU assembly.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Detects the brake request signal and sends a signal to the stop light relay (stop light switch assembly).</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ECH " width="NaN%">Combination Meter Assembly</td> 
+          <td class="cellrowborder" headers="ID0EIH " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Displays "BRAKE!" on the multi-information display when the pre-crash warning control is being performed.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Illuminates the PCS warning light when the pre-crash safety system is turned off.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Warns the driver of a pre-crash safety system malfunction by displaying a message on the multi-information display, illuminating the master warning light and blinking the PCS warning light.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Warns the driver when the pre-crash safety system is temporarily unavailable when the area of the windshield in front of the camera is dirty or fogged up by illuminating the PCS warning light. Warns the driver when the pre-crash safety system is temporarily unavailable when the area of the windshield in front of the camera is not dirty or fogged up by blinking the PCS warning light.</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ECH " width="NaN%">Skid Control Buzzer</td> 
+          <td class="cellrowborder" headers="ID0EIH " width="NaN%">Sounds to warn the driver when the pre-crash warning control is operated.</td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ECH " width="NaN%">Main Body ECU (Multiplex Network Body ECU)</td> 
+          <td class="cellrowborder" headers="ID0EIH " width="NaN%">Sends vehicle destination country information to the driving support ECU assembly.</td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ECH " width="NaN%">Headup Display (Combination Meter Mirror ECU)*</td> 
+          <td class="cellrowborder" headers="ID0EIH " width="NaN%">Displays "BRAKE!" on the headup display when the pre-crash warning control is being performed.</td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+<p class="footnote">*: w/ Headup display System</p>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">OUTLINE OF PRE-CRASH SAFETY SYSTEM</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">PRE-CRASH WARNING:</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">When the system determines that the possibility of a frontal collision is high, a buzzer will sound and a warning message will be displayed on the multi-information display to urge the driver to take evasive action.</p>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">PRE-CRASH BRAKE ASSIST:</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">When the system determines that the possibility of a frontal collision is high, the system applies greater braking force in relation to how strongly the brake pedal is depressed.</p>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">PRE-CRASH BRAKING*:</p>
+<p class="step2-ptxt">*: Depending on the region in which the vehicle was sold, the pre-crash braking control function may not be available.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">When the system determines that the possibility of a frontal collision is high, the system warns the driver. If the system determines that the possibility of a collision is extremely high, the brakes are automatically applied to help avoid the collision or reduce the collision speed.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">The vehicle may creep after the pre-crash braking function has operated, the driver should depress the brake pedal as necessary.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">If the accelerator pedal is being depressed strongly or the steering wheel is being turned, the system may determine that the driver is taking evasive action and possibly prevent the pre-crash braking function from operating.</p>
+</li> 
+           </ul> 
+          </div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">PRE-CRASH SAFETY SYSTEM CONTROL OPERATION</p>
+<div class="tablenoborder">
+       <table class="big-table">
+<caption class="step1-table">
+         Control Operation
+        </caption>
+<thead align="left" class="step1-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0ESCAE" width="NaN%">Control</th> 
+          <th align="center" class="cellrowborder" id="ID0EYCAE" width="NaN%">Operating Condition</th> 
+          <th align="center" class="cellrowborder" id="ID0E5CAE" width="NaN%">Transmitting ECU</th> 
+          <th align="center" class="cellrowborder" id="ID0EEDAE" width="NaN%">Receiving ECU</th> 
+          <th align="center" class="cellrowborder" id="ID0EKDAE" width="NaN%">Part Operated</th> 
+         </tr> 
+        </thead>
+<tbody class="step1-table"> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ESCAE " width="NaN%">Pre-crash warning</td> 
+          <td class="cellrowborder" headers="ID0EYCAE " width="NaN%">Possibility of a collision is high</td> 
+          <td class="cellrowborder" headers="ID0E5CAE " width="NaN%">Driving Support ECU Assembly</td> 
+          <td class="cellrowborder" headers="ID0EEDAE " width="NaN%">Combination Meter Assembly (Meter Circuit Plate)</td> 
+          <td class="cellrowborder" headers="ID0EKDAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Combination Meter Assembly (warning message)</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Skid Control Buzzer (warning buzzer)</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ESCAE " width="NaN%">Pre-crash brake assist</td> 
+          <td class="cellrowborder" headers="ID0EYCAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Possibility of a collision is high</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The brake pedal is depressed</p>
+</li> 
+           </ul> </td> 
+          <td class="cellrowborder" headers="ID0E5CAE " width="NaN%">Driving Support ECU Assembly</td> 
+          <td class="cellrowborder" headers="ID0EEDAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Combination Meter Assembly (Meter Circuit Plate)</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Skid Control ECU (Brake Booster with Master Cylinder Assembly)</p>
+</li> 
+           </ul> </td> 
+          <td class="cellrowborder" headers="ID0EKDAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Combination Meter Assembly (warning message)</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Skid Control Buzzer (warning buzzer)</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Brake Actuator Assembly</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td class="cellrowborder" headers="ID0ESCAE " width="NaN%">Pre-crash braking</td> 
+          <td class="cellrowborder" headers="ID0EYCAE " width="NaN%">Possibility of a collision is high</td> 
+          <td class="cellrowborder" headers="ID0E5CAE " width="NaN%">Driving Support ECU Assembly</td> 
+          <td class="cellrowborder" headers="ID0EEDAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Combination Meter Assembly (Meter Circuit Plate)</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Skid Control ECU (Brake Booster with Master Cylinder Assembly)</p>
+</li> 
+           </ul> </td> 
+          <td class="cellrowborder" headers="ID0EKDAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Combination Meter Assembly (warning message)</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Skid Control Buzzer (warning buzzer)</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Brake Actuator Assembly</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">PRE-CRASH SAFETY SYSTEM OPERATION CONDITIONS</p>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Always observe the legal speed limit when driving on public roads.</p> 
+      </div>
+<div class="tablenoborder">
+       <table class="big-table">
+<caption class="step1-table">
+         CONTROL OPERATION CONDITIONS FOR EACH SPECIFICATION
+        </caption>
+<thead align="left" class="step1-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0EPOAE" width="NaN%">Specification</th> 
+          <th align="center" class="cellrowborder" id="ID0EVOAE" width="NaN%">Pre-crash Warning</th> 
+          <th align="center" class="cellrowborder" id="ID0E2OAE" width="NaN%">Pre-crash Brake Assist (PBA)</th> 
+          <th align="center" class="cellrowborder" id="ID0EBPAE" width="NaN%">Pre-crash Braking (PB)</th> 
+         </tr> 
+        </thead>
+<tbody class="step1-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0EPOAE " width="NaN%">1</td> 
+          <td class="cellrowborder" headers="ID0EVOAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">The pre-crash safety system is ON.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Vehicle speed is between approximately 10 and 180 km/h (7 and 110 mph).</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The relative speed to a preceding vehicle is approximately 10 km/h (7 mph) or more.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">For detecting a pedestrian, vehicle speed is between approximately 10 and 80 km/h (7 and 50 mph).</p>
+</li> 
+           </ul> </td> 
+          <td class="cellrowborder" headers="ID0E2OAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">The pre-crash safety system is ON.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The VSC is enabled.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Vehicle speed is between approximately 30 and 180 km/h (19 and 110 mph).</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The relative speed to a preceding vehicle is approximately 30 km/h (19 mph) or more.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">For detecting a pedestrian, vehicle speed is between approximately 30 and 80 km/h (19 and 50 mph).</p>
+</li> 
+           </ul> </td> 
+          <td class="cellrowborder" headers="ID0EBPAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">The pre-crash safety system is ON.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The VSC is enabled.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Vehicle speed is between approximately 10 and 180 km/h (7 and 110 mph).</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The relative speed to a preceding vehicle is approximately 10 km/h (7 mph) or more.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">For detecting a pedestrian, vehicle speed is between approximately 10 and 80 km/h (7 and 50 mph).</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0EPOAE " width="NaN%">2</td> 
+          <td class="cellrowborder" headers="ID0EVOAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">The pre-crash safety system is ON.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Vehicle speed is between approximately 15 and 180 km/h (10 and 110 mph).</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The relative speed to a preceding vehicle is approximately 10 km/h (7 mph) or more.</p>
+</li> 
+           </ul> </td> 
+          <td class="cellrowborder" headers="ID0E2OAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">The pre-crash safety system is ON.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The VSC is enabled.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Vehicle speed is between approximately 30 and 180 km/h (19 and 110 mph).</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The relative speed to a preceding vehicle is approximately 30 km/h (19 mph) or more.</p>
+</li> 
+           </ul> </td> 
+          <td class="cellrowborder" headers="ID0EBPAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">The pre-crash safety system is ON.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The VSC is enabled.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Vehicle speed is between approximately 15 and 180 km/h (10 and 110 mph).</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The relative speed to a preceding vehicle is approximately 10 km/h (7 mph) or more.</p>
+</li> 
+           </ul> </td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0EPOAE " width="NaN%">3</td> 
+          <td class="cellrowborder" headers="ID0EVOAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">The pre-crash safety system is ON.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Vehicle speed is between approximately 15 and 180 km/h (10 and 110 mph).</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The relative speed to a preceding vehicle is approximately 10 km/h (7 mph) or more.</p>
+</li> 
+           </ul> </td> 
+          <td class="cellrowborder" headers="ID0E2OAE " width="NaN%"> <br class="cellrowborder"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">The pre-crash safety system is ON.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The VSC is enabled.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Vehicle speed is between approximately 30 and 180 km/h (19 and 110 mph).</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The relative speed to a preceding vehicle is approximately 30 km/h (19 mph) or more.</p>
+</li> 
+           </ul> </td> 
+          <td class="cellrowborder" headers="ID0EBPAE " width="NaN%">Not Available</td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+<div class="tablenoborder">
+       <table class="big-table">
+<caption class="step1-table">
+         CONTROLS AVAILABLE FOR EACH SPECIFICATION (REFERENCE)
+        </caption>
+<thead align="left" class="step1-table"> 
+         <tr> 
+          <th align="center" class="cellrowborder" id="ID0E56AE" width="NaN%">Specification</th> 
+          <th align="center" class="cellrowborder" id="ID0EFAAG" width="NaN%">Pre-crash Warning</th> 
+          <th align="center" class="cellrowborder" id="ID0ELAAG" width="NaN%">Pre-crash Brake Assist (PBA)</th> 
+          <th align="center" class="cellrowborder" id="ID0ERAAG" width="NaN%">Pre-crash Braking (PB)</th> 
+          <th align="center" class="cellrowborder" id="ID0EXAAG" width="NaN%">Pedestrian Detection Function</th> 
+         </tr> 
+        </thead>
+<tbody class="step1-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E56AE " width="NaN%">1</td> 
+          <td align="center" class="cellrowborder" headers="ID0EFAAG " width="NaN%">Available</td> 
+          <td align="center" class="cellrowborder" headers="ID0ELAAG " width="NaN%">Available</td> 
+          <td align="center" class="cellrowborder" headers="ID0ERAAG " width="NaN%">Available</td> 
+          <td align="center" class="cellrowborder" headers="ID0EXAAG " width="NaN%">Available</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E56AE " width="NaN%">2</td> 
+          <td align="center" class="cellrowborder" headers="ID0EFAAG " width="NaN%">Available</td> 
+          <td align="center" class="cellrowborder" headers="ID0ELAAG " width="NaN%">Available</td> 
+          <td align="center" class="cellrowborder" headers="ID0ERAAG " width="NaN%">Available</td> 
+          <td align="center" class="cellrowborder" headers="ID0EXAAG " width="NaN%">Not Available</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" headers="ID0E56AE " width="NaN%">3</td> 
+          <td align="center" class="cellrowborder" headers="ID0EFAAG " width="NaN%">Available</td> 
+          <td align="center" class="cellrowborder" headers="ID0ELAAG " width="NaN%">Available</td> 
+          <td align="center" class="cellrowborder" headers="ID0ERAAG " width="NaN%">Not Available</td> 
+          <td align="center" class="cellrowborder" headers="ID0EXAAG " width="NaN%">Not Available</td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">Conditions under which the system may operate even if there is no possibility of a collision</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">In some situations such as the following, the system may determine that there is a possibility of a frontal collision and operate.</p>
+<br class="step2Root-step2"/>
+<ul class="step2-list1"> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When passing a vehicle or pedestrian*</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When changing lanes while overtaking a preceding vehicle</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When overtaking a preceding vehicle that is changing lanes</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When overtaking a preceding vehicle that is making a left/right turn</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When passing a vehicle in an oncoming lane that is stopped to make a right/left turn</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When driving on a road where relative location to vehicle ahead in an adjacent lane may change, such as on a winding road</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When rapidly closing on a vehicle ahead</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If the front of the vehicle is raised or lowered, such as when the road surface is uneven or undulating</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When approaching objects on the roadside, such as guardrails, utility poles, trees, or walls</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When there is a vehicle, pedestrian*, or object by the roadside at the entrance of a curve</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When driving on a narrow path surrounded by a structure, such as in a tunnel or on an iron bridge</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When there is a metal object (manhole cover, steel plate, etc.), steps, or a protrusion on the road surface or roadside</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When a crossing pedestrian approaches very close to the vehicle*</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When passing through a place with a low structure above the road (low ceiling, traffic sign, etc.)</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When passing under an object (billboard, etc.) at the top of an uphill road</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When rapidly closing on an electric toll gate barrier, parking area barrier, or other barrier that opens and closes</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When using an automatic car wash</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When driving through or under objects that may contact the vehicle, such as thick grass, tree branches, or a banner</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When the vehicle is hit by water, snow, dust, etc. from a vehicle ahead</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When driving through steam or smoke</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When there are patterns or paint on the road or a wall that may be mistaken for a vehicle or pedestrian*</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When driving near an object that reflects radio waves, such as a large truck or guardrail</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When driving near a TV tower, broadcasting station, electric power plant, or other location where strong radio waves or electrical noise may be present</p>
+</li> 
+        </ul>
+<p class="step2-ptxt">*: Depending on the region in which the vehicle was sold, the pedestrian detection function may not be available.</p>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">Situations in which the system may not operate properly</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">In some situations such as the following, a vehicle may not be detected by the millimeter wave radar sensor assembly and forward recognition camera, preventing the system from operating properly:</p>
+<br class="step2Root-step2"/>
+<ul class="step2-list1"> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If an oncoming vehicle is approaching the vehicle</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If a vehicle ahead is a motorcycle or bicycle</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When approaching the side of a vehicle</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If a preceding vehicle has a small rear end, such as an unloaded truck</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If a preceding vehicle has a low rear end, such as a low bed trailer</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If a vehicle ahead is carrying a load which protrudes past its rear bumper</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If a vehicle ahead has extremely high ground clearance</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If a vehicle ahead is irregularly shaped, such as a tractor or side car</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If the sun or other light is shining directly on a vehicle ahead</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If a vehicle cuts in front of the vehicle or emerges from beside a vehicle</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If a vehicle ahead makes an abrupt maneuver (such as sudden swerving, acceleration or deceleration)</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When suddenly cutting behind a preceding vehicle</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When a vehicle ahead is not directly in front of the vehicle</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When driving in inclement weather such as heavy rain, fog, snow or a sandstorm</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When the vehicle is hit by water, snow, dust, etc. from a vehicle ahead</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When driving through steam or smoke</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When driving in a place where the surrounding brightness changes suddenly, such as at the entrance or exit of a tunnel</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When a very bright light, such as the sun or the headlights of oncoming traffic, shines directly into the forward recognition camera</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When the surrounding area is dim, such as at dawn or dusk, or while at night or in a tunnel</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">After the hybrid system has started the vehicle has not been driven for a certain amount of time</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">While making a left/right turn and for a few seconds after making a left/right turn</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">While driving on a curve and for a few seconds after driving on a curve</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If the vehicle is skidding</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If the front of the vehicle is raised or lowered</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If the wheels are misaligned</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If a wiper blade is blocking the forward recognition camera</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">The vehicle is wobbling</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">The vehicle is being driven at extremely high speeds</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When driving on a hill</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If the millimeter wave radar sensor assembly or forward recognition camera is misaligned</p>
+</li> 
+        </ul>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">In some situations such as the following, sufficient braking force may not be obtained, preventing the system from performing properly:</p>
+<br class="step2Root-step2"/>
+<ul class="step2-list1"> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If the braking functions cannot operate to their full extent, such as when the brake parts are extremely cold, extremely hot, or wet</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If the vehicle is not properly maintained (brakes or tires are excessively worn, improper tire inflation pressure, etc.)</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When the vehicle is being driven on a gravel road or other slippery surface</p>
+</li> 
+        </ul>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Some pedestrians such as the following may not be detected by the millimeter wave radar sensor assembly and forward recognition camera, preventing the system from operating properly*:</p>
+<br class="step2Root-step2"/>
+<ul class="step2-list1"> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Pedestrians shorter than approximately 3.2 ft. (1 m) or taller than approximately 6.5 ft. (2 m)</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Pedestrians wearing oversized clothing (a rain coat, long skirt, etc.), making their silhouette obscure</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Pedestrians who are carrying large baggage, holding an umbrella, etc., hiding part of their body</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Pedestrians who are bending forward or squatting</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Pedestrians who are pushing a stroller, wheelchair, bicycle or other vehicle</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Groups of pedestrians which are close together</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Pedestrians who are wearing white and look extremely bright</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Pedestrians in the dark, such as at night or while in a tunnel</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Pedestrians whose clothing appears to be nearly the same color or brightness as their surroundings</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Pedestrians near walls, fences, guardrails, or large objects</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Pedestrians who are on a metal object (manhole cover, steel plate, etc.) on the road</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Pedestrians who are walking fast</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Pedestrians who are changing speed abruptly</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Pedestrians running out from behind a vehicle or a large object</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Pedestrians who are extremely close to the side of the vehicle (outside rear view mirror, etc.)</p>
+</li> 
+        </ul>
+<p class="step2-ptxt">*: Depending on the region in which the vehicle was sold, the pedestrian detection function may not be available.</p>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">If the PCS warning light blinking or illuminated and a warning message is displayed on the multi-information display</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">For details on the operation of the PCS warning light and displayed warning messages, refer to Diagnosis System.</p> 
+       <p class="ptxt"> <a class="ptxt-xref" href="RM100000001AA5F.html#RM100000001AA5F">Click here</a>
+</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">The pre-crash safety system may be temporarily unavailable or there may be a malfunction in the system.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">In the following situations, the warning light will turn off, the message will disappear and the system will become operational when normal operating conditions return:</p>
+<br class="step2Root-step2"/>
+<ul class="step2-list1"> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When the millimeter wave radar sensor assembly or forward recognition camera or the area around either sensor is hot, such as in the sun</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When the millimeter wave radar sensor assembly or forward recognition camera or the area around either sensor is cold, such as in an extremely cold environment</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When the millimeter wave radar sensor assembly or front grille emblem is dirty or covered with snow, etc.</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">When the part of the windshield glass in front of the forward recognition camera is foggedup or covered with condensation or ice</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">If the forward recognition camera is obstructed, such as when the hood is open or a sticker is attached to the windshield near the forward recognition camera</p>
+</li> 
+        </ul>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">If VSC is disabled</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">If VSC is disabled, the pre-crash brake assist and pre-crash braking functions are also disabled.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">The PCS warning light will turn on and "VSC Turned Off Pre-crash Brake System Unavailable" will be displayed on the multi-information display.</p>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

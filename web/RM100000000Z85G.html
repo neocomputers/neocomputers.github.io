@@ -1,0 +1,1505 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="NAVIGATION SYSTEM(for Radio and Display Type) OPERATION CHECK" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_56" name="servcatId"/> 
+  <meta content="Audio / Visual / Telematics" name="servcatName"/> 
+  <meta content="_058037" name="sectionId"/> 
+  <meta content="NAVIGATION / MULTI INFO DISPLAY" name="sectionName"/> 
+  <meta content="_0284601" name="ttlId"/> 
+  <meta content="NAVIGATION SYSTEM(for Radio and Display Type)" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="OPERATION CHECK" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000Z85G" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>NAVIGATION SYSTEM(for Radio and Display Type)</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">NAVIGATION SYSTEM(for Radio and Display Type)<span class="topictitle1"> OPERATION CHECK</span>
+</h1>
+<div class="subpara" id="RM100000000Z85G__RM100000000Z85G_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000000Z85G__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK NAVIGATION SYSTEM NORMAL CONDITION</p>
+<div class="ie8fixer"/>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">If the symptom is applicable to any of the following, it is intended behavior, and not a malfunction.</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EZE" width="NaN%">Symptom</th> 
+            <th align="center" class="cellrowborder" id="ID0E6E" width="NaN%">Answer</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EZE " width="NaN%">A longer route than expected is chosen.</td> 
+            <td class="cellrowborder" headers="ID0E6E " width="NaN%">Depending on the road conditions, the navigation ECU may determine that a longer route is quicker.</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EZE " width="NaN%">Even when distance priority is high, the shortest route is not shown.</td> 
+            <td class="cellrowborder" headers="ID0E6E " width="NaN%">Some routes may not be advised due to safety concerns.</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EZE " width="NaN%">When the vehicle is put into motion immediately after the engine starts, the navigation system deviates from the correct position.</td> 
+            <td class="cellrowborder" headers="ID0E6E " width="NaN%">If the vehicle starts before the navigation system activates, the system may not react.</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EZE " width="NaN%">When driving on certain types of roads, especially new roads, the vehicle position deviates from the correct position.</td> 
+            <td class="cellrowborder" headers="ID0E6E " width="NaN%">When the vehicle is driving on new roads not available on the internal memory, the system attempts to match it to another nearby road, causing the position mark to deviate.</td> 
+           </tr> 
+           <tr> 
+            <td class="cellrowborder" headers="ID0EZE " width="NaN%">Expected arrival time is earlier than current time, or time different from expected arrival time is displayed.</td> 
+            <td class="cellrowborder" headers="ID0E6E " width="NaN%">If a destination is set to a point where a different time zone is used, the system displays an expected arrival time corresponding to the time zone of the destination. If a location on the sea is set as the destination, the system may display an expected arrival time corresponding to the time zone setting of the vehicle. Check which communication is not used for displaying traffic information.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003NBZ" class="figure-graphic" src="../images/a003nbz.png"/> 
+        </div>
+<p class="step2-heading">The following symptoms are not malfunctions, but are caused by errors inherent in the GPS, gyro sensor or navigation ECU.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">The current position mark may be displayed on a nearby parallel road.</p>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003JZM" class="figure-graphic" src="../images/a003jzm.png"/> 
+          </div>
+<p class="step3-heading">Immediately after a fork in the road, the current vehicle position mark may be displayed on the wrong road.</p>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003MK6" class="figure-graphic" src="../images/a003mk6.png"/> 
+          </div>
+<p class="step3-heading">When the vehicle turns right or left at an intersection, the current vehicle position mark may be displayed on a nearby parallel road.</p>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003KR4" class="figure-graphic" src="../images/a003kr4.png"/> 
+          </div>
+<p class="step3-heading">When the vehicle is carried, such as on a ferry, and the vehicle itself is not driving, the current vehicle position mark may be displayed in the position where the vehicle was until a measurement can be performed by the GPS.</p>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003M4A" class="figure-graphic" src="../images/a003m4a.png"/> 
+          </div>
+<p class="step3-heading">When the vehicle travels on a steep hill, the current vehicle position mark may deviate from the correct position.</p>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003MRI" class="figure-graphic" src="../images/a003mri.png"/> 
+          </div>
+<p class="step3-heading">When the vehicle makes a continuous turn (e.g. 360, 720, 1080 degrees), the current vehicle position mark may deviate from the correct position.</p>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003MQT" class="figure-graphic" src="../images/a003mqt.png"/> 
+          </div>
+<p class="step3-heading">When the vehicle moves erratically, such as constant lane changes, the current vehicle position mark may deviate from the correct position.</p>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003OJT" class="figure-graphic" src="../images/a003ojt.png"/> 
+          </div>
+<p class="step3-heading">When the power switch is turned on (ACC) or on (IG) and the vehicle is turned on a turntable before parking, the current vehicle position mark may not indicate the correct direction. The same will occur when the vehicle comes out of the parking garage.</p>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003KWZ" class="figure-graphic" src="../images/a003kwz.png"/> 
+          </div>
+<p class="step3-heading">When the vehicle travels on a snowy road or a mountain path with tire chains installed or using a spare tire, the current vehicle position mark may deviate from the correct position.</p>
+</li>
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003KDO" class="figure-graphic" src="../images/a003kdo.png"/> 
+          </div>
+<p class="step3-heading">When the tires are changed, the current vehicle position mark may deviate from the correct position.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">A change in tire diameter may cause a speed sensor error.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Performing "tire change" in calibration mode will allow the system to correct the current vehicle position faster.</p>
+</li> 
+           </ul> 
+          </div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK PANEL &amp; STEERING SWITCH</p>
+<div class="ie8fixer"/>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">The radio and display receiver assembly panel switches and steering switches are checked in the following procedure.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Illustrations may differ from the actual vehicle screen depending on the device settings and options. Therefore, some detailed areas may not be shown exactly the same as on the actual vehicle screen.</p>
+</li> 
+       </ul> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Enter diagnostic mode.</p>
+<p class="step2-ptxt"> <a class="ptxt-xref" href="RM100000000Z85H.html#RM100000000Z85H">Click here</a>
+</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003KHR" class="figure-graphic" src="../images/a003khr.png"/> 
+        </div>
+<p class="step2-heading">Select "Function Check/Setting" from the "Service Menu" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003KKY" class="figure-graphic" src="../images/a003kky.png"/> 
+        </div>
+<p class="step2-heading">Select "Panel &amp; Steering Switch" from the "Function Check/Setting I" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003OKYN01" class="figure-graphic" src="../images/a003okyn01.png"/> 
+        </div>
+<p class="step2-heading">Panel &amp; Steering Switch Check Mode</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           Screen Description
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EOOAC" width="NaN%">Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EUOAC" width="NaN%">Content</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EOOAC " width="NaN%">*a: Switch condition</td> 
+            <td class="cellrowborder" headers="ID0EUOAC " width="NaN%">"Pushed" is displayed when any switch is pushed.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EOOAC " width="NaN%">*b: Number of switches pushed</td> 
+            <td class="cellrowborder" headers="ID0EUOAC " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Number of switches pushed at once is displayed.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If more than 3 switches are pushed at once, "More than 3" is displayed.</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">If 4 or more switches are pushed at once, "More than 3" is displayed</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EOOAC " width="NaN%">*c: Rotary switch direction</td> 
+            <td class="cellrowborder" headers="ID0EUOAC " width="NaN%">Direction of rotary switch is displayed.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="A003NKAC02" class="figure-graphic" src="../images/a003nkac02.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td class="cellrowborder" width="NaN%">Setup Switch</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="step3-heading">Operate each switch and check that the switch conditions are correctly displayed.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">If the setup switch is pressed and held for 3 seconds or more, diagnostic mode will be canceled.</p> 
+          </div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK TOUCH SWITCH</p>
+<div class="ie8fixer"/>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">The touch switches on the screen are checked in the following procedure.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Illustrations may differ from the actual vehicle screen depending on the device settings and options. Therefore, some detailed areas may not be shown exactly the same as on the actual vehicle screen.</p>
+</li> 
+       </ul> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Enter diagnostic mode.</p>
+<p class="step2-ptxt"> <a class="ptxt-xref" href="RM100000000Z85H.html#RM100000000Z85H">Click here</a>
+</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003KHR" class="figure-graphic" src="../images/a003khr.png"/> 
+        </div>
+<p class="step2-heading">Select "Function Check/Setting" from the "Service Menu" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003NQQ" class="figure-graphic" src="../images/a003nqq.png"/> 
+        </div>
+<p class="step2-heading">Select "Touch Switch" from the "Function Check/Setting I" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003L05" class="figure-graphic" src="../images/a003l05.png"/> 
+        </div>
+<p class="step2-heading">Touch Switch Check</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Touch the display anywhere in the open area to perform the check when the "Touch Switch Check" screen is displayed.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">A "+" mark is displayed where the display was touched.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">The "+" mark remains on the display even after your finger is removed.</p>
+</li> 
+           </ul> 
+          </div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK VEHICLE SIGNAL</p>
+<div class="ie8fixer"/>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">Vehicle signals received by the radio and display receiver assembly are checked in the following procedure.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Illustrations may differ from the actual vehicle screen depending on the device settings and options. Therefore, some detailed areas may not be shown exactly the same as on the actual vehicle screen.</p>
+</li> 
+       </ul> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Enter diagnostic mode.</p>
+<p class="step2-ptxt"> <a class="ptxt-xref" href="RM100000000Z85H.html#RM100000000Z85H">Click here</a>
+</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003KHR" class="figure-graphic" src="../images/a003khr.png"/> 
+        </div>
+<p class="step2-heading">Select "Function Check/Setting" from the "Service Menu" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003KYN" class="figure-graphic" src="../images/a003kyn.png"/> 
+        </div>
+<p class="step2-heading">Select "Vehicle Signal" from the "Function Check/Setting I" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003LZZ" class="figure-graphic" src="../images/a003lzz.png"/> 
+        </div>
+<p class="step2-heading">Vehicle Signal Check Mode</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           Screen Description
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EFQAE" width="NaN%">Display</th> 
+            <th align="center" class="cellrowborder" id="ID0ELQAE" width="NaN%">Content</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EFQAE " width="NaN%">Battery</td> 
+            <td class="cellrowborder" headers="ID0ELQAE " width="NaN%">Auxiliary battery voltage is displayed.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EFQAE " width="NaN%">IG</td> 
+            <td class="cellrowborder" headers="ID0ELQAE " width="NaN%">Power switch ON/OFF state is displayed.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EFQAE " width="NaN%">PKB</td> 
+            <td class="cellrowborder" headers="ID0ELQAE " width="NaN%">Parking brake ON/OFF state is displayed.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EFQAE " width="NaN%">REV</td> 
+            <td class="cellrowborder" headers="ID0ELQAE " width="NaN%">Reverse signal ON/OFF state is displayed.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EFQAE " width="NaN%">SPEED</td> 
+            <td class="cellrowborder" headers="ID0ELQAE " width="NaN%">Vehicle speed is displayed in km/h.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EFQAE " width="NaN%">TAIL</td> 
+            <td class="cellrowborder" headers="ID0ELQAE " width="NaN%">Tail signal (light control switch) ON/OFF state is displayed.</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EFQAE " width="NaN%">ADIM/TCAN</td> 
+            <td class="cellrowborder" headers="ID0ELQAE " width="NaN%">Brightness state DIM (with)/BRIGHT (without) is displayed.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Only items sending vehicle signals will be displayed.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">This screen displays vehicle signals input to the radio and display receiver assembly.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">This screen is updated once per second.</p>
+</li> 
+         </ul> 
+        </div>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">When the "Vehicle Signal Check Mode" screen is displayed, check all the vehicle signal conditions.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK DAB RECEPTION</p>
+<div class="ie8fixer"/>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">The reception condition of DAB (Digital Audio Broadcast) can be checked.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Illustrations may differ from the actual vehicle screen depending on the device settings and options. Therefore, some detailed areas may not be shown exactly the same as on the actual vehicle screen.</p>
+</li> 
+       </ul> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Enter diagnostic mode.</p>
+<p class="step2-ptxt"> <a class="ptxt-xref" href="RM100000000Z85H.html#RM100000000Z85H">Click here</a>
+</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003KHR" class="figure-graphic" src="../images/a003khr.png"/> 
+        </div>
+<p class="step2-heading">Select "Function Check/Setting" from the "Service Menu" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003MPK" class="figure-graphic" src="../images/a003mpk.png"/> 
+        </div>
+<p class="step2-heading">Select "Next Page" from the "Function Check/Setting I" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003LSI" class="figure-graphic" src="../images/a003lsi.png"/> 
+        </div>
+<p class="step2-heading">Select "DAB Reception Check" from the "Function Check/Setting II" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003OJ8N01" class="figure-graphic" src="../images/a003oj8n01.png"/> 
+        </div>
+<p class="step2-heading">DAB Reception Check</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           *a: Channel Change Switch Description
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EH3AE" width="NaN%">Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EN3AE" width="NaN%">Content</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EH3AE " width="NaN%">Up or down button</td> 
+            <td align="left" class="cellrowborder" headers="ID0EN3AE " width="NaN%">Enables the channel to be changed to the one to be checked.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           *b: Check Switch Description
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EM5AE" width="NaN%">Display</th> 
+            <th align="center" class="cellrowborder" id="ID0ES5AE" width="NaN%">Condition</th> 
+            <th align="center" class="cellrowborder" id="ID0EY5AE" width="NaN%">Content</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EM5AE " width="NaN%">Check</td> 
+            <td align="center" class="cellrowborder" headers="ID0ES5AE " width="NaN%">Before/after check</td> 
+            <td align="center" class="cellrowborder" headers="ID0EY5AE " width="NaN%">Starts checking</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EM5AE " width="NaN%">STOP</td> 
+            <td align="center" class="cellrowborder" headers="ID0ES5AE " width="NaN%">During check</td> 
+            <td align="center" class="cellrowborder" headers="ID0EY5AE " width="NaN%">Stops checking</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           *c: Antenna Connection Check Result Description
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EPBAG" width="NaN%">Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EVBAG" width="NaN%">Content</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EPBAG " width="NaN%">OK</td> 
+            <td align="left" class="cellrowborder" headers="ID0EVBAG " width="NaN%">Connected properly</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EPBAG " width="NaN%">NG</td> 
+            <td align="left" class="cellrowborder" headers="ID0EVBAG " width="NaN%">Not connected properly</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EPBAG " width="NaN%">-</td> 
+            <td align="left" class="cellrowborder" headers="ID0EVBAG " width="NaN%">Not equipped with DAB antenna</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           *d: DAB Tuner Reception Level Check Result Description
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EPEAG" width="NaN%">Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EVEAG" width="NaN%">Content</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EPEAG " width="NaN%">Black</td> 
+            <td align="left" class="cellrowborder" headers="ID0EVEAG " width="NaN%">Good reception</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EPEAG " width="NaN%">Red</td> 
+            <td align="left" class="cellrowborder" headers="ID0EVEAG " width="NaN%">Poor reception</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EPEAG " width="NaN%">-</td> 
+            <td align="left" class="cellrowborder" headers="ID0EVEAG " width="NaN%">Not equipped with DAB antenna</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Select "Check" to start the DAB reception check.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Check the results displayed when the DAB reception check is complete.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK MICROPHONE</p>
+<div class="ie8fixer"/>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">The microphone and microphone input level are checked in the following procedure.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Illustrations may differ from the actual vehicle screen depending on the device settings and options. Therefore, some detailed areas may not be shown exactly the same as on the actual vehicle screen.</p>
+</li> 
+       </ul> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Enter diagnostic mode.</p>
+<p class="step2-ptxt"> <a class="ptxt-xref" href="RM100000000Z85H.html#RM100000000Z85H">Click here</a>
+</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003KHR" class="figure-graphic" src="../images/a003khr.png"/> 
+        </div>
+<p class="step2-heading">Select "Function Check/Setting" from the "Service Menu" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003MPK" class="figure-graphic" src="../images/a003mpk.png"/> 
+        </div>
+<p class="step2-heading">Select "Next Page" from the "Function Check/Setting I" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003P4K" class="figure-graphic" src="../images/a003p4k.png"/> 
+        </div>
+<p class="step2-heading">Select "EXT BOX" from the "Function Check/Setting II" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003MSL" class="figure-graphic" src="../images/a003msl.png"/> 
+        </div>
+<p class="step2-heading">Select "Microphone Check" from the "EXT BOX" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003NBXN01" class="figure-graphic" src="../images/a003nbxn01.png"/> 
+        </div>
+<p class="step2-heading">Microphone Check</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           Screen Description
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0ECOAG" width="NaN%">Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EIOAG" width="NaN%">Content</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0ECOAG " width="NaN%">*a: Microphone input level meter</td> 
+            <td class="cellrowborder" headers="ID0EIOAG " width="NaN%">Monitors the microphone input level every 0.1 seconds and displays the results in 8 different levels.</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">When speaking into the microphone, check that the microphone input level meter changes according to the input level.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">The microphone is active at all times when this screen is displayed.</p> 
+          </div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK SYSTEM SENSORS</p>
+<div class="ie8fixer"/>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">GPS information, vehicle signals and sensor signals are checked in the following procedure.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Illustrations may differ from the actual vehicle screen depending on the device settings and options. Therefore, some detailed areas may not be shown exactly the same as on the actual vehicle screen.</p>
+</li> 
+       </ul> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Enter diagnostic mode.</p>
+<p class="step2-ptxt"> <a class="ptxt-xref" href="RM100000000Z85H.html#RM100000000Z85H">Click here</a>
+</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003KHR" class="figure-graphic" src="../images/a003khr.png"/> 
+        </div>
+<p class="step2-heading">Select "Function Check/Setting" from the "Service Menu" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003MPK" class="figure-graphic" src="../images/a003mpk.png"/> 
+        </div>
+<p class="step2-heading">Select "Next Page" from the "Function Check/Setting I" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003P4K" class="figure-graphic" src="../images/a003p4k.png"/> 
+        </div>
+<p class="step2-heading">Select "EXT BOX" from the "Function Check/Setting II" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003OY4" class="figure-graphic" src="../images/a003oy4.png"/> 
+        </div>
+<p class="step2-heading">Select "System Sensors Check" from the "EXT BOX" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003MYXN01" class="figure-graphic" src="../images/a003myxn01.png"/> 
+        </div>
+<p class="step2-heading">System Sensors Check</p>
+<div class="tablenoborder">
+         <table class="big-table">
+<caption class="step2-table">
+           *a: GPS
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E1XAG" width="NaN%">Display</th> 
+            <th align="center" class="cellrowborder" colspan="3" id="ID0EAYAG">Content</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1XAG " rowspan="3" width="NaN%">Reception number</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " rowspan="3" width="NaN%">Displays reception condition of the satellites used to determine vehicle position</td> 
+            <td align="center" class="cellrowborder" headers="ID0EAYAG " width="NaN%">Blue: P (In use)</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " width="NaN%">System is using GPS signal for location</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EAYAG " width="NaN%">Yellow: T (Receiving)</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " width="NaN%">System is tracking GPS signal for location</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EAYAG " width="NaN%">No color: Not in use</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " width="NaN%">System cannot receive GPS signal (searching for GPS signal)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1XAG " rowspan="7" width="NaN%">Status</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " rowspan="7" width="NaN%">Displays reception status of the satellites used to determine vehicle position</td> 
+            <td align="center" class="cellrowborder" headers="ID0EAYAG " width="NaN%">OK (H3D)</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " width="NaN%">High accuracy 3-dimensional location method is being used</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EAYAG " width="NaN%">OK (H2D)</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " width="NaN%">High accuracy 2-dimensional location method is being used</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EAYAG " width="NaN%">OK (3D)</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " width="NaN%">3-dimensional location method is being used</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EAYAG " width="NaN%">OK (2D)</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " width="NaN%">2-dimensional location method is being used</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EAYAG " width="NaN%">NG</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " width="NaN%">Location data cannot be used</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EAYAG " width="NaN%">error</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " width="NaN%">Reception error has occurred</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EAYAG " width="NaN%">-</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " width="NaN%">Any other state</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1XAG " rowspan="3" width="NaN%">Measurement Ratio</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " rowspan="3" width="NaN%">Displays the ratio of satellites performing measurements</td> 
+            <td align="center" class="cellrowborder" headers="ID0EAYAG " width="NaN%">3D</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " width="NaN%">Ratio of satellites performing 3D positioning, Hyper 3D positioning and Hyper 2D positioning is displayed</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EAYAG " width="NaN%">2D</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " width="NaN%">Ratio of satellites performing 2D positioning is displayed</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EAYAG " width="NaN%">NG</td> 
+            <td class="cellrowborder" headers="ID0EAYAG " width="NaN%">Ratio of satellites not performing measurement is displayed</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1XAG " width="NaN%">Date</td> 
+            <td class="cellrowborder" colspan="3" headers="ID0EAYAG ">Date/time information obtained from GPS signals is displayed in Greenwich Mean Time (GMT)</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1XAG " width="NaN%">Position</td> 
+            <td class="cellrowborder" colspan="3" headers="ID0EAYAG ">Latitude and longitude information on current position is displayed</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           *b: SPD
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EYBBG" width="NaN%">Display</th> 
+            <th align="center" class="cellrowborder" id="ID0E5BBG" width="NaN%">Content</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EYBBG " width="NaN%">Pulse Count</td> 
+            <td class="cellrowborder" headers="ID0E5BBG " width="NaN%">Displays the accumulated number of input pulses beginning when this screen is displayed</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0EYBBG " width="NaN%">Speed</td> 
+            <td class="cellrowborder" headers="ID0E5BBG " width="NaN%">Displays vehicle speed</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           *c: Sensor Signal
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0ELEBG" width="NaN%">Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EREBG" width="NaN%">Content</th> 
+            <th align="center" class="cellrowborder" id="ID0EXEBG" width="NaN%">Note</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0ELEBG " width="NaN%">Gyro Voltage</td> 
+            <td class="cellrowborder" headers="ID0EREBG " width="NaN%">Displays the output voltage of the gyro sensor</td> 
+            <td align="center" class="cellrowborder" headers="ID0EXEBG " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0ELEBG " width="NaN%">0 point Voltage</td> 
+            <td class="cellrowborder" headers="ID0EREBG " width="NaN%">Displays the zero-point voltage of the gyro sensor</td> 
+            <td align="center" class="cellrowborder" headers="ID0EXEBG " width="NaN%">-</td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0ELEBG " width="NaN%">Relative bearing</td> 
+            <td class="cellrowborder" headers="ID0EREBG " width="NaN%">Displays the output angle of the gyro sensor</td> 
+            <td class="cellrowborder" headers="ID0EXEBG " width="NaN%">The amount of change in bearing angle (degrees) after the system sensor check screen is displayed (clockwise: "+", counterclockwise: "-")</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           *d: Gyro/Distance correction study situation
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E6HBG" width="NaN%">Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EFIBG" width="NaN%">Content</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E6HBG " width="NaN%">Gyro/Distance correction study situation</td> 
+            <td class="cellrowborder" headers="ID0EFIBG " width="NaN%">Displays learning status of Gyro/Distance correction</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tablenoborder">
+         <table class="step2-table">
+<caption class="step2-table">
+           *e: Reset
+          </caption>
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E5JBG" width="NaN%">Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EEKBG" width="NaN%">Content</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E5JBG " width="NaN%">Reset</td> 
+            <td class="cellrowborder" headers="ID0EEKBG " width="NaN%">When this switch is pressed and held for 3 seconds or more, the values for the display items of SPD and Sensor Signal are reset and display "0"</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">When the "System Sensors Check" screen is displayed, check all the sensor signals.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">This screen is updated once per second.</p> 
+          </div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK SPEAKER</p>
+<div class="ie8fixer"/>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">This function is used when checking the speaker wiring and whether the speakers are functioning properly.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Illustrations may differ from the actual vehicle screen depending on the device settings and options. Therefore, some detailed areas may not be shown exactly the same as on the actual vehicle screen.</p>
+</li> 
+       </ul> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Turn audio mode on and play any audio source.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">This audio source will be used for the speaker check.</p> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter diagnostic mode.</p>
+<p class="step2-ptxt"> <a class="ptxt-xref" href="RM100000000Z85H.html#RM100000000Z85H">Click here</a>
+</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003O8Z" class="figure-graphic" src="../images/a003o8z.png"/> 
+        </div>
+<p class="step2-heading">Select "Failure Diagnosis" from the "Service Menu" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003KSW" class="figure-graphic" src="../images/a003ksw.png"/> 
+        </div>
+<p class="step2-heading">Select "System Check" from the "Failure Diagnosis" screen.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003OFH" class="figure-graphic" src="../images/a003ofh.png"/> 
+        </div>
+<p class="step2-heading">Select "SP Check ON" from the "System Check Mode" screen.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Check the speaker wiring and check that the speakers are functioning properly.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Check that each speaker outputs sound from the selected audio source properly.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">"SP Check OFF" is displayed during the speaker check.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Sound can be heard from the speakers around the vehicle in order beginning from a speaker on the front side.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">More than one speaker may sound simultaneously depending on the speaker wiring.</p>
+</li> 
+         </ul> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Sound stops when any of the following conditions are met:</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">"SP Check OFF" is selected.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">The power switch is turned off.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Diagnostic mode is turned off.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">The screen is changed to another screen.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Audio mode is turned off.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK SOFTWARE ERROR HISTORY</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">This function is used to check the cause when the radio and display receiver assembly screen is blacked out.</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Check Software Error History.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the GTS on.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Enter the following menus: Body Electrical / Navigation System / Utility / Software Error History.</p>
+<br class="step3Root-step3"/>Body Electrical &gt; Navigation System &gt; Utility<div class="tablenoborder">
+             <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+               <tr> 
+                <th align="center" class="cellrowborder" id="ID0EHZBG" width="NaN%">Tester Display</th> 
+               </tr> 
+              </thead>
+<tbody class="gts-info-title-table-table"> 
+               <tr> 
+                <td align="left" class="cellrowborder" headers="ID0EHZBG " width="NaN%">Software Error History</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">When an item is stored for Software Error History, record it before repairing the radio and display receiver assembly.</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<caption class="step3-table">
+             Software Error History Screen Description
+            </caption>
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EZ5BG" width="NaN%">Error Description</th> 
+              <th align="center" class="cellrowborder" id="ID0E65BG" width="NaN%">Trigger</th> 
+              <th align="center" class="cellrowborder" id="ID0EF6BG" width="NaN%">Detail</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EZ5BG " rowspan="3" width="NaN%">Software Reset</td> 
+              <td class="cellrowborder" headers="ID0E65BG " width="NaN%">Navi Microcomputer</td> 
+              <td class="cellrowborder" headers="ID0EF6BG " rowspan="6" width="NaN%">Hexadecimal Number</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0E65BG " width="NaN%">Audio Microcomputer</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0E65BG " width="NaN%">CAN Microcomputer</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EZ5BG " rowspan="2" width="NaN%">No Video Signal</td> 
+              <td class="cellrowborder" headers="ID0E65BG " width="NaN%">Front Monitor</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0E65BG " width="NaN%">Rear Monitor</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EZ5BG " width="NaN%">MOST Cold Restart</td> 
+              <td class="cellrowborder" headers="ID0E65BG " width="NaN%">Always</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">Software Error History can store up to 5 history data items. If a new software error occurs when 5 data items have already been stored, the oldest data is cleared and the new data is stored.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">If an error that is unsupported by the GTS occurs, a "-" is displayed for the display items.</p>
+</li> 
+           </ul> 
+          </div>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Clear software error history.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">When DTCs are cleared using any of the following operations, Software Error History will be cleared as well.</p>
+<p class="step3-ptxt"> <a class="ptxt-xref" href="RM100000000Z85H.html#RM100000000Z85H">Click here</a>
+</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1"> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Cleared using the GTS.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Cleared using the system check mode screen.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Cleared using the unit check mode screen.</p>
+</li> 
+          </ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK VIDEO DEVICE CONNECTION CHECK</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">This function is used to detect disconnection of the video devices.</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Check Video Device Connection Check.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the GTS on.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Enter the following menus: Body Electrical / Navigation System / Utility / Video Device Connection Check.</p>
+<br class="step3Root-step3"/>Body Electrical &gt; Navigation System &gt; Utility<div class="tablenoborder">
+             <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+               <tr> 
+                <th align="center" class="cellrowborder" id="ID0ELJAI" width="NaN%">Tester Display</th> 
+               </tr> 
+              </thead>
+<tbody class="gts-info-title-table-table"> 
+               <tr> 
+                <td align="left" class="cellrowborder" headers="ID0ELJAI " width="NaN%">Video Device Connection Check</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">When an item is stored for Video Device Connection Check, record it before proceeding with troubleshooting.</p>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <br class="tip"/>
+           <ul class="list1"> 
+            <li class="list1-item">
+<p class="list1-heading">DTCs are stored when errors are detected.</p>
+</li> 
+            <li class="list1-item">
+<p class="list1-heading">Depending on the vehicle, some of the items are not displayed on the "Error Detected Image Line (Type)" screen.</p>
+</li> 
+           </ul> 
+          </div>
+<div class="tablenoborder">
+           <table class="step3-table">
+<caption class="step3-table">
+             Video Device Connection Check Screen Description
+            </caption>
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EZPAI" width="NaN%">Error Detected Image Line (Type)</th> 
+              <th align="center" class="cellrowborder" id="ID0E6PAI" width="NaN%">Areas to be Checked</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZPAI " width="NaN%">H/U - &gt; Separate Display (GVIF)</td> 
+              <td class="cellrowborder" headers="ID0E6PAI " width="NaN%">Not available</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZPAI " width="NaN%">H/U - &gt; Full RSE (GVIF)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E6PAI " width="NaN%">Not available</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZPAI " width="NaN%">RSE - &gt; Seat Back Display RH (GVIF)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E6PAI " width="NaN%">Not available</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZPAI " width="NaN%">RSE - &gt; Seat Back Display LH (GVIF)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E6PAI " width="NaN%">Not available</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZPAI " width="NaN%">Rear Camera - &gt; H/U (NTSC)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E6PAI " width="NaN%">NTSC video signal between the radio and display receiver assembly and rear television camera assembly</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZPAI " width="NaN%">IPA/BGM/PVM ECU - &gt; Separate Display (GVIF)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E6PAI " width="NaN%">Not available</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZPAI " width="NaN%">IPA/BGM/PVM ECU - &gt; H/U (NTSC)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E6PAI " width="NaN%">Not available</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZPAI " width="NaN%">IPA/BGM/PVM ECU - &gt; H/U (GVIF)</td> 
+              <td align="left" class="cellrowborder" headers="ID0E6PAI " width="NaN%">Not available</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Clear video device connection check.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">When DTCs are cleared using any of the following operations, Video Device Connection Check will be cleared as well.</p>
+<p class="step3-ptxt"> <a class="ptxt-xref" href="RM100000000Z85H.html#RM100000000Z85H">Click here</a>
+</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1"> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Cleared using the GTS.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Cleared using the system check mode screen.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Cleared using the unit check mode screen.</p>
+</li> 
+          </ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK Wi-Fi CONNECTION HISTORY (w/ "Wi-Fi" Function)</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">This function is used to check the connection history when the connection between the radio and display receiver assembly and a Wi-Fi device is unstable.</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Check Wi-Fi Connection History.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Turn the GTS on.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Enter the following menus: Body Electrical / Navigation System / Utility / Wi-Fi Connection History.</p>
+<br class="step3Root-step3"/>Body Electrical &gt; Navigation System &gt; Utility<div class="tablenoborder">
+             <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+               <tr> 
+                <th align="center" class="cellrowborder" id="ID0EV1AI" width="NaN%">Tester Display</th> 
+               </tr> 
+              </thead>
+<tbody class="gts-info-title-table-table"> 
+               <tr> 
+                <td align="left" class="cellrowborder" headers="ID0EV1AI " width="NaN%">Wi-Fi Connection History</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">When a value for an item is displayed in Wi-Fi Connection History, record it before proceeding with troubleshooting.</p>
+<div class="tablenoborder">
+           <table class="step3-table">
+<caption class="step3-table">
+             Wi-Fi Connection History Screen Description
+            </caption>
+<thead align="left" class="step3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ECABI" width="NaN%">Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EIABI" width="NaN%">Content</th> 
+             </tr> 
+            </thead>
+<tbody class="step3-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ECABI " width="NaN%">Occurrence Date/Time</td> 
+              <td align="left" class="cellrowborder" headers="ID0EIABI " width="NaN%">Year is displayed in 4 digits and month, date, hour, minute and second are displayed in 2 digits</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ECABI " rowspan="6" width="NaN%">Result</td> 
+              <td align="left" class="cellrowborder" headers="ID0EIABI " width="NaN%">Connect/Disconnect Success</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EIABI " width="NaN%">Timeout</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EIABI " width="NaN%">Communication Error</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EIABI " width="NaN%">Authentication Failure</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EIABI " width="NaN%">Disconnection Failure</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EIABI " width="NaN%">Other Failure</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ECABI " rowspan="7" width="NaN%">Contents</td> 
+              <td align="left" class="cellrowborder" headers="ID0EIABI " width="NaN%">No Error</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">AP Connection Error</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">AP Connection Error (WPS)</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">DHCP Connection Error</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">DNS Connection Error</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">HTTP Connection Error</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">Other Error</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0ECABI " width="NaN%">Destination MAC Address</td> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">Displayed in lower case hexadecimal format with "-" inserted every two characters.</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0ECABI " width="NaN%">Destination SSID</td> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">Data is displayed as ASCII code</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0ECABI " rowspan="4" width="NaN%">WLAN Standard</td> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">802.11 b</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">802.11 g</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">802.11 n</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">Undetectability</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0ECABI " width="NaN%">Received Signal Strength</td> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">-127 dBm to +127 dBm</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0ECABI " rowspan="21" width="NaN%">Data Rate</td> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">1.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">2.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">5.5 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">6.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">6.5 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">9.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">11.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">12.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">13.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">18.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">19.5 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">24.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">26.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">36.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">39.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">48.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">52.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">54.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">58.5 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">65.0 Mbps</td> 
+             </tr> 
+             <tr> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">Undetectability</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ECABI " width="NaN%">Packet Error Rate</td> 
+              <td class="cellrowborder" headers="ID0EIABI " width="NaN%">Displayed in decimal format with "%"</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">If there is no history for an item, "-" or "No Information" will be displayed.</p> 
+          </div>
+</li>
+</ol>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Clear "Wi-Fi" connection history.</p>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">When DTCs are cleared using any of the following methods, Wi-Fi Connection History will be cleared as well.</p>
+<p class="step3-ptxt"> <a class="ptxt-xref" href="RM100000000Z85H.html#RM100000000Z85H">Click here</a>
+</p>
+<br class="step3Root-step3"/>
+<ul class="step3-list1"> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Cleared using the GTS.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Cleared using the system check mode screen.</p>
+</li> 
+           <li class="list1-item">
+<p class="step3-list1-heading">Cleared using the unit check mode screen.</p>
+</li> 
+          </ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

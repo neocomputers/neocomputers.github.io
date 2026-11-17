@@ -1,0 +1,446 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="AUDIO AND VISUAL SYSTEM Vehicle Speed Signal Circuit between Radio Receiver and Combination Meter" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_56" name="servcatId"/> 
+  <meta content="Audio / Visual / Telematics" name="servcatName"/> 
+  <meta content="_058036" name="sectionId"/> 
+  <meta content="AUDIO / VIDEO" name="sectionName"/> 
+  <meta content="_0284588" name="ttlId"/> 
+  <meta content="AUDIO AND VISUAL SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000Z83A" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Vehicle Speed Signal Circuit between Radio Receiver and Combination Meter</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">AUDIO AND VISUAL SYSTEM<span class="topictitle1"> Vehicle Speed Signal Circuit between Radio Receiver and Combination Meter</span>
+</h1>
+<div class="subpara" id="RM100000000Z83A__RM100000000Z83A_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <br class="subpara"/>
+    <ul class="content5-list1 nonmark"> 
+     <p class="list1-li-title">
+<strong class="li-title-title">for Automatic Sound Levelizer (ASL):</strong>
+</p> 
+     <li class="list1-item">
+<p class="content5-list1-nonmark-heading">This circuit is necessary for the Automatic Sound Levelizer (ASL) built into the radio and display receiver assembly.</p>
+<p class="item-ptxt">The Automatic Sound Levelizer (ASL) function automatically adjusts the audio system volume level in order to compensate for increased vehicle noise (vehicle noise tends to increase as vehicle speed increases). The ASL adjusts the volume level based on vehicle speed signals sent from the meter circuit plate.</p>
+</li> 
+    </ul> 
+    <br class="subpara"/>
+    <ul class="content5-list1 nonmark"> 
+     <p class="list1-li-title">
+<strong class="li-title-title">for "Bluetooth":</strong>
+</p> 
+     <li class="list1-item">
+<p class="content5-list1-nonmark-heading">Vehicle speed signals are sent from the meter circuit plate and used to cancel "Bluetooth" function operation.</p>
+<p class="item-ptxt">The radio and display receiver assembly recognizes that the vehicle is being driven and makes it impossible to connect or register a "Bluetooth" device while driving.</p>
+</li> 
+    </ul> 
+    <br class="subpara"/>
+    <ul class="content5-list1 nonmark"> 
+     <p class="list1-li-title">
+<strong class="li-title-title">for Digital Versatile Disc (DVD):</strong>
+</p> 
+     <li class="list1-item">
+<p class="content5-list1-nonmark-heading">The radio and display receiver assembly receives a vehicle speed signal from the meter circuit plate for DVD viewing restriction while driving, etc.</p>
+</li> 
+    </ul> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">A voltage of 12 V or 5 V is output from each ECU and then input to the meter circuit plate. The signal is changed to a pulse signal at the transistor in the meter circuit plate. Each ECU controls its respective system based on this pulse signal.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">If a short occurs in any of the ECUs or in the wire harness connected to an ECU, all systems in the following diagram will not operate normally.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000Z83A__RM100000000Z83A_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003N28E03" class="figure-graphic--bigImage" src="../images/a003n28e03.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM100000000Z83A__RM100000000Z83A_05">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000Z83A__RM100000000Z83A_05_0001">
+<p class="testgrp-heading">CHECK VEHICLE SIGNAL (OPERATION CHECK)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003MUH" class="figure-graphic" src="../images/a003muh.png"/> 
+        </div>
+<p class="test1-heading">Enter the "Vehicle Signal Check Mode" screen. Refer to Check Vehicle Signal Check Mode in Operation Check.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000Z837.html#RM100000000Z837">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">While driving the vehicle, compare the value of "SPEED" to the reading on the speedometer. Check if these readings are almost equal.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">The meter circuit plate receives the vehicle speed signal from the skid control ECU via CAN communication. Therefore, perform the following inspection referring to values in the Data List of the skid control ECU because it is the source of the vehicle speed signal.</p> 
+        </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBEAC" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EBEAC">Vehicle speed displayed on the "Vehicle Signal Check Mode" screen is almost the same as the actual vehicle speed measured using the GTS.</td> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EBEAC">Click here <a class="ptxt-xref" href="RM10000000110K0.html#RM10000000110K0">Click here</a>
+</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMFAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EMFAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPGAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPGAC " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPGAC " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>PROCEED TO NEXT SUSPECTED AREA SHOWN IN PROBLEM SYMPTOMS TABLE <a class="content6-ptxt-xref" href="RM100000000Z8ID.html#RM100000000Z8ID">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000Z83A__RM100000000Z83A_05_0003">
+<p class="testgrp-heading">INSPECT METER CIRCUIT PLATE (OUTPUT WAVEFORM)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Check the output waveform.</p>
+<div class="fignone--bigImage">
+<img alt="A003KEYC30" class="figure-graphic--bigImage" src="../images/a003keyc30.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Component with harness connected</p> <p class="ptxt">(Meter Circuit Plate)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2"> <p class="test2-heading">Remove the meter circuit plate with the connector still connected.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Connect an oscilloscope to terminal I6-19 (+S) and body ground.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Turn the power switch on (IG).</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Turn a wheel slowly.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Check the signal waveform according to the condition(s) in the table below.</p> 
+          <div class="tablenoborder">
+           <table class="test2-table">
+<thead align="left" class="test2-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EFPAC" width="NaN%">Item</th> 
+              <th align="center" class="cellrowborder" id="ID0ELPAC" width="NaN%">Condition</th> 
+             </tr> 
+            </thead>
+<tbody class="test2-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EFPAC " width="NaN%">Measurement terminal</td> 
+              <td align="center" class="cellrowborder" headers="ID0ELPAC " width="NaN%">I6-19 (+S) - Body ground</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EFPAC " width="NaN%">Tool setting</td> 
+              <td align="center" class="cellrowborder" headers="ID0ELPAC " width="NaN%">5 V/DIV., 20 ms./DIV.</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EFPAC " width="NaN%">Vehicle condition</td> 
+              <td align="center" class="cellrowborder" headers="ID0ELPAC " width="NaN%">Wheel being rotated</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+          <table class="spec">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0EUBAE" class="spec-title">OK</th> 
+            </tr> 
+            <tr class="spec-specitem"> 
+             <td class="specitem-ptxt" headers="ID0EUBAE">The waveform is similar to that shown in the illustration.</td> 
+            </tr> 
+           </tbody>
+</table> 
+          <div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">When the system is functioning normally, one wheel revolution generates 4 pulses. As the vehicle speed increases, the width indicated by (A) in the illustration narrows.</p> 
+          </div> </li>
+</ol>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1CAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E1CAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E4DAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4DAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4DAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO METER / GAUGE SYSTEM <a class="content6-ptxt-xref" href="RM1000000011AS6.html#RM1000000011AS6">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000Z83A__RM100000000Z83A_05_0005">
+<p class="testgrp-heading">INSPECT RADIO AND DISPLAY RECEIVER ASSEMBLY (INPUT WAVEFORM)</p>
+<div class="ie8fixer"/>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<p class="test1-heading">Check the input waveform.</p>
+<div class="fignone--bigImage">
+<img alt="A003MWAC39" class="figure-graphic--bigImage" src="../images/a003mwac39.png"/>
+<div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="big-image-callout">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Component with harness connected</p> <p class="ptxt">(Radio and Display Receiver Assembly)</p> </td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+              <td align="center" class="cellrowborder" width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div>
+</div>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2"> <p class="test2-heading">Remove the radio and display receiver assembly with the connector still connected.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Connect an oscilloscope to terminal I96-17 (SPD) and body ground.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Turn the power switch on (IG).</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Turn a wheel slowly.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Check the signal waveform according to the condition(s) in the table below.</p> 
+          <div class="tablenoborder">
+           <table class="test2-table">
+<thead align="left" class="test2-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ETMAE" width="NaN%">Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EZMAE" width="NaN%">Condition</th> 
+             </tr> 
+            </thead>
+<tbody class="test2-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ETMAE " width="NaN%">Measurement terminal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EZMAE " width="NaN%">I96-17 (SPD) - Body ground</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ETMAE " width="NaN%">Tool setting</td> 
+              <td align="center" class="cellrowborder" headers="ID0EZMAE " width="NaN%">5 V/DIV., 20 ms./DIV.</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ETMAE " width="NaN%">Vehicle condition</td> 
+              <td align="center" class="cellrowborder" headers="ID0EZMAE " width="NaN%">Wheel being rotated</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+          <table class="spec">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0EBPAE" class="spec-title">OK</th> 
+            </tr> 
+            <tr class="spec-specitem"> 
+             <td class="specitem-ptxt" headers="ID0EBPAE">The waveform is similar to that shown in the illustration.</td> 
+            </tr> 
+           </tbody>
+</table> 
+          <div class="tip">
+           <p class="tiptitle">Tech Tips</p> 
+           <p class="ptxt">When the system is functioning normally, one wheel revolution generates 4 pulses. As the vehicle speed increases, the width indicated by (A) in the illustration narrows.</p> 
+          </div> </li>
+</ol>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHQAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EHQAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EKRAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKRAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKRAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE RADIO AND DISPLAY RECEIVER ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000Z83T.html#RM100000000Z83T">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

@@ -1,0 +1,288 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/o Canister Pump Module) DIAGNOSIS SYSTEM" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290547" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/o Canister Pump Module)" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="DIAGNOSIS SYSTEM" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001064L" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>SFI SYSTEM(w/o Canister Pump Module)</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/o Canister Pump Module)<span class="topictitle1"> DIAGNOSIS SYSTEM</span>
+</h1>
+<div class="subpara" id="RM100000001064L__RM100000001064L_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000001064L__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">EURO-OBD (EUROPEAN SPEC.)</p>
+<div class="ie8fixer"/>
+<div class="fignone"> 
+       <img alt="A003NT4" class="figure-graphic" src="../images/a003nt4.png"/> 
+      </div>
+<p class="step1-ptxt">When troubleshooting Europe On-Board Diagnostic (Euro-OBD) vehicles, the vehicle must be connected to an OBD scan tool (complying with ISO 15765-4). Various data output from the vehicle's ECM can then be read.</p>
+<p class="step1-ptxt">Euro-OBD regulations require that the vehicle's on-board computer illuminate the Malfunction Indicator Lamp (MIL) on the instrument panel when the computer detects a malfunction in:</p>
+<br class="step1Root-step1"/>
+<ol class="step1-list1" type="a">
+<li class="list1-item">
+<p class="step1-list1-heading">The emission control system and components.</p>
+</li>
+<li class="list1-item">
+<p class="step1-list1-heading">The powertrain control components (which affect vehicle emissions).</p>
+</li>
+<li class="list1-item">
+<p class="step1-list1-heading">The computer.</p>
+</li>
+</ol>
+<p class="step1-ptxt">In addition, the applicable Diagnostic Trouble Codes (DTCs) prescribed by ISO 15765-4 are stored in the ECM memory. If the malfunction does not reoccur in 3 consecutive trips, the MIL turns off automatically but the DTCs remain stored in the ECM memory.</p>
+<p class="step1-ptxt">To check for DTCs, connect the GTS or OBD scan tool to the Data Link Connector 3 (DLC3) of the vehicle.</p>
+<p class="step1-ptxt">The GTS displays DTCs, the freeze frame data and a variety of engine data.</p>
+<p class="step1-ptxt">The DTCs and freeze frame data can be cleared using the GTS.</p>
+<p class="step1-ptxt"> <a class="ptxt-xref" href="RM100000001064M.html#RM100000001064M">Click here</a>
+</p>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">NORMAL MODE AND CHECK MODE</p>
+<p class="step1-ptxt">The diagnosis system operates in normal mode during normal vehicle use. In normal mode, 2 trip detection logic is used to ensure accurate detection of malfunctions. Check mode is also available as an option for technicians. In check mode, 1 trip detection logic is used for duplicating malfunction symptoms and increasing the system's ability to detect malfunctions, including intermittent problems (GTS only).</p>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">2 TRIP DETECTION LOGIC</p>
+<p class="step1-ptxt">When a malfunction is first detected, the malfunction is temporarily stored in the ECM memory (1st trip). If the same malfunction is detected during the subsequent drive cycle, the MIL is illuminated (2nd trip).</p>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">DLC3 (Data Link Connector 3)</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Check the DLC3.</p>
+<p class="step2-ptxt"> <a class="ptxt-xref" href="RM1000000011465.html#RM1000000011465">Click here</a>
+</p>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">FREEZE FRAME DATA</p>
+<p class="step1-ptxt">The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was moving or stationary, whether the engine was warmed up or not, whether the air fuel ratio was lean or rich, and other data from the time the malfunction occurred.</p>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">AUXILIARY BATTERY VOLTAGE</p>
+<table class="spec"/>
+<p class="step1-ptxt">If the voltage is less than 11 V, recharge or replace the auxiliary battery.</p>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">MIL (Malfunction Indicator Lamp)</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">The MIL is illuminated when the power switch is turned on (IG) (with the engine is not running).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">The MIL will turn off when the power switch is turned on (READY). If the MIL remains illuminated, the diagnosis system has detected a malfunction or abnormality in the system.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If the MIL does not illuminate when the power switch is turned on (IG), check the MIL circuit.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM100000001066V.html#RM100000001066V">Click here</a>
+</p> 
+        </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">ALL READINESS</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">With "All Readiness", you can use the GTS to check whether or not DTC judgment has been completed.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">You should check "All Readiness" after simulating malfunction symptoms or for validation after finishing repairs.</p>
+</li> 
+       </ul> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the GTS on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Clear the DTCs.</p>
+<br class="step2Root-step2"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch off and wait for at least 30 seconds.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the GTS on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Perform the DTC judgment driving pattern to run the DTC judgment.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Powertrain / Engine / Utility / All Readiness.</p>
+<br class="step2Root-step2"/>Powertrain &gt; Engine &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EDNAC" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EDNAC " width="NaN%">All Readiness</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Input the DTCs to be confirmed.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Check the DTC judgment result.</p>
+<div class="tablenoborder">
+         <table class="step2-table">
+<thead align="left" class="step2-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0E1CAE" width="NaN%">GTS Display</th> 
+            <th align="center" class="cellrowborder" id="ID0EADAE" width="NaN%">Description</th> 
+           </tr> 
+          </thead>
+<tbody class="step2-table"> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1CAE " width="NaN%">NORMAL</td> 
+            <td class="cellrowborder" headers="ID0EADAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">System normal</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1CAE " width="NaN%">ABNORMAL</td> 
+            <td class="cellrowborder" headers="ID0EADAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">DTC judgment completed</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">System abnormal</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1CAE " width="NaN%">INCOMPLETE</td> 
+            <td class="cellrowborder" headers="ID0EADAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">DTC judgment not completed</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Perform the driving pattern after confirming DTC enabling conditions</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+           <tr> 
+            <td align="center" class="cellrowborder" headers="ID0E1CAE " width="NaN%">N/A</td> 
+            <td class="cellrowborder" headers="ID0EADAE " width="NaN%"> <br class="cellrowborder"/>
+             <ul class="list1"> 
+              <li class="list1-item">
+<p class="list1-heading">Unable to perform DTC judgment</p>
+</li> 
+              <li class="list1-item">
+<p class="list1-heading">Number of DTCs which do not fulfill DTC preconditions has reached ECU memory limit</p>
+</li> 
+             </ul> </td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">Diagnosis Related Information</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the detection conditions of certain DTCs are met before a malfunction can be confirmed, the ECM will store Diagnosis Related Information. Vehicle condition information from when the detection conditions were met can be checked using the Diagnosis Related Information. Diagnosis Related Information should be used as a reference only, and should not be relied upon solely when determining whether a part is faulty or not.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">Clearing DTCs will also clear Diagnosis Related Information.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">DTCs and Diagnosis Related Information are saved in the GTS at the same time.</p>
+</li> 
+       </ul> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the GTS on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Powertrain / Engine / Utility / Diagnosis Related Information.</p>
+<br class="step2Root-step2"/>Powertrain &gt; Engine &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EKNAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKNAE " width="NaN%">Diagnosis Related Information</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Select a Diagnosis Related Information item to display it' s details.</p>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

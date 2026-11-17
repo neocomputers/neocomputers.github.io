@@ -1,0 +1,153 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ROAD SIGN ASSIST SYSTEM SYSTEM DIAGRAM" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058076" name="sectionId"/> 
+  <meta content="CRUISE CONTROL" name="sectionName"/> 
+  <meta content="_0284503" name="ttlId"/> 
+  <meta content="ROAD SIGN ASSIST SYSTEM" name="ttlName"/> 
+  <meta content="U" name="paraCategory"/> 
+  <meta content="SYSTEM DIAGRAM" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000Z7BN" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>ROAD SIGN ASSIST SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ROAD SIGN ASSIST SYSTEM<span class="topictitle1"> SYSTEM DIAGRAM</span>
+</h1>
+<div class="subpara" id="RM100000000Z7BN__RM100000000Z7BN_z0">
+     
+    <div class="fignone--bigImage">
+<img alt="A003O50E01" class="figure-graphic--bigImage" src="../images/a003o50e01.png"/>
+</div> 
+    <div class="fignone--bigImage">
+<img alt="A003KTJE02" class="figure-graphic--bigImage" src="../images/a003ktje02.png"/>
+<div class="figure-p"> 
+      <div class="tablenoborder">
+       <table class="big-image-callout">
+<caption class="p-table">
+         
+        </caption>
+<tbody class="p-table"> 
+         <tr> 
+          <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+          <td align="left" class="cellrowborder" width="NaN%">CAXH</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" width="NaN%">*2</td> 
+          <td align="left" class="cellrowborder" width="NaN%">CAXL</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" width="NaN%">*3</td> 
+          <td align="left" class="cellrowborder" width="NaN%">Central Gateway ECU (Network Gateway ECU)</td> 
+         </tr> 
+         <tr> 
+          <td align="center" class="cellrowborder" width="NaN%">*4</td> 
+          <td align="left" class="cellrowborder" width="NaN%">CAN Communication Line</td> 
+         </tr> 
+        </tbody>
+</table> 
+      </div> 
+     </div>
+</div> 
+    <div class="fignone--bigImage">
+<img alt="A003KC8E02" class="figure-graphic--bigImage" src="../images/a003kc8e02.png"/>
+</div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Communication Table
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0ESAAC" width="NaN%">Sender</th> 
+        <th align="center" class="cellrowborder" id="ID0EYAAC" width="NaN%">Receiver</th> 
+        <th align="center" class="cellrowborder" id="ID0E5AAC" width="NaN%">Signal</th> 
+        <th align="center" class="cellrowborder" id="ID0EEBAC" width="NaN%">Line</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ESAAC " width="NaN%">Forward Recognition Camera</td> 
+        <td align="center" class="cellrowborder" headers="ID0EYAAC " width="NaN%">Combination Meter Assembly</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5AAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Multi-information display signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Road sign assist buzzer request signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0EEBAC " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ESAAC " width="NaN%">Combination Meter Assembly</td> 
+        <td align="center" class="cellrowborder" headers="ID0EYAAC " width="NaN%">Forward Recognition Camera</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5AAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Turn signal light state signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">System settings information signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0EEBAC " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ESAAC " width="NaN%">Skid Control ECU (Brake Booster with Master Cylinder Assembly)</td> 
+        <td align="center" class="cellrowborder" headers="ID0EYAAC " width="NaN%">Forward Recognition Camera</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5AAC " width="NaN%">Wheel speed signal</td> 
+        <td align="center" class="cellrowborder" headers="ID0EEBAC " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ESAAC " width="NaN%">Yaw Rate Sensor (Airbag Sensor Assembly)</td> 
+        <td align="center" class="cellrowborder" headers="ID0EYAAC " width="NaN%">Forward Recognition Camera</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5AAC " width="NaN%">Yaw rate sensor signal</td> 
+        <td align="center" class="cellrowborder" headers="ID0EEBAC " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ESAAC " width="NaN%">AIR Conditioning Amplifier Assembly</td> 
+        <td align="center" class="cellrowborder" headers="ID0EYAAC " width="NaN%">Forward Recognition Camera</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5AAC " width="NaN%">Temperature sensor information signal</td> 
+        <td align="center" class="cellrowborder" headers="ID0EEBAC " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ESAAC " width="NaN%">Hybrid Vehicle Control ECU</td> 
+        <td align="center" class="cellrowborder" headers="ID0EYAAC " width="NaN%">Forward Recognition Camera</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5AAC " width="NaN%">Shift state signal</td> 
+        <td align="center" class="cellrowborder" headers="ID0EEBAC " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ESAAC " width="NaN%">Main Body ECU (Multiplex Network Body ECU)</td> 
+        <td align="center" class="cellrowborder" headers="ID0EYAAC " width="NaN%">Forward Recognition Camera</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5AAC " width="NaN%">Vehicle specification information (destination, steering wheel position)</td> 
+        <td align="center" class="cellrowborder" headers="ID0EEBAC " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0ESAAC " width="NaN%">Millimeter Wave Radar Sensor Assembly</td> 
+        <td align="center" class="cellrowborder" headers="ID0EYAAC " width="NaN%">Forward Recognition Camera</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5AAC " width="NaN%">Object detection information</td> 
+        <td align="center" class="cellrowborder" headers="ID0EEBAC " width="NaN%">CAN</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+</div>
+
+</html>

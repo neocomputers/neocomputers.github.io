@@ -1,0 +1,191 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="CRUISE CONTROL SYSTEM, Diagnostic DTC:U012287" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058076" name="sectionId"/> 
+  <meta content="CRUISE CONTROL" name="sectionName"/> 
+  <meta content="_0283208" name="ttlId"/> 
+  <meta content="CRUISE CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000Z1IH" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>U012287</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">CRUISE CONTROL SYSTEM, Diagnostic DTC:U012287</h1>
+<div class="section" id="RM100000000Z1IH__RM100000000Z1IH_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">U012287</td> 
+       <td class="dtcname" headers="ID0EED">Lost Communication with Vehicle Dynamics Control Module Missing Message</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000000Z1IH__RM100000000Z1IH_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The hybrid vehicle control ECU communicates several signals with each sensor and ECU via CAN communication.</p> 
+    <p class="content5-ptxt">If there are any malfunctions in the communication circuit, one or more CAN communication system DTCs are stored.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0ERF" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EXF" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0E4F" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EDG" width="NaN%">Trouble Area</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0ERF " width="NaN%">U012287</td> 
+        <td align="left" class="cellrowborder" headers="ID0EXF " width="NaN%">Lost Communication with Vehicle Dynamics Control Module Missing Message</td> 
+        <td align="left" class="cellrowborder" headers="ID0E4F " width="NaN%">While the vehicle speed is 40 km/h or 25 mph or more and the cruise control main switch (ON-OFF button) is on, signals cannot be received from the skid control ECU (brake booster with master cylinder assembly) for 2.58 seconds or more.</td> 
+        <td align="left" class="cellrowborder" headers="ID0EDG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">CAN communication system</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid vehicle control ECU</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Skid control ECU (Brake booster with master cylinder assembly)</p>
+</li> 
+         </ul> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000Z1IH__RM100000000Z1IH_07">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <p class="content5-ptxt">Refer to troubleshooting in CAN Communication System.</p> 
+    <p class="content5-ptxt"> <a class="ptxt-xref" href="RM1000000011A35.html#RM1000000011A35">Click here</a>
+</p> 
+   </div>
+<div class="subpara" id="RM100000000Z1IH__RM100000000Z1IH_06">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000Z1IH__RM100000000Z1IH_06_0001">
+<p class="testgrp-heading">CHECK FOR DTCS (DTC U012287)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000Z1I7.html#RM100000000Z1I7">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Cruise Control &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Perform the following to make sure that the DTC detection conditions are met.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If the detection conditions are not met, the malfunction cannot be detected.</p> 
+        </div>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2"> <p class="test2-heading">Drive the vehicle at a speed for which cruise control system operation is possible.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Turn the cruise control system on using the cruise control main switch (ON-OFF).</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Push the cruise control main switch to -SET to begin control of vehicle speed using the cruise control system.</p> </li>
+</ol>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000Z1I7.html#RM100000000Z1I7">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Cruise Control &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYMAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EYMAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EAOAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EGOAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EAOAC " width="NaN%">DTC U012287 is not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGOAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EAOAC " width="NaN%">DTC U012287 is output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGOAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>USE SIMULATION METHOD TO CHECK <a class="content6-ptxt-xref" href="RM100000001145X.html#RM100000001145X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO CAN COMMUNICATION SYSTEM <a class="content6-ptxt-xref" href="RM1000000011A35.html#RM1000000011A35">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

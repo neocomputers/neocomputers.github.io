@@ -1,0 +1,658 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="HYBRID CONTROL SYSTEM, Diagnostic DTC:P160600, P160604" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296362" name="ttlId"/> 
+  <meta content="HYBRID CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000001152E" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>P160600, P160604</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">HYBRID CONTROL SYSTEM, Diagnostic DTC:P160600, P160604</h1>
+<div class="section" id="RM100000001152E__RM100000001152E_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P160600</td> 
+       <td class="dtcname" headers="ID0EED">Collision detected or Collision Sensor Connection (Open)</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">P160604</td> 
+       <td class="dtcname" headers="ID0EED">Collision detected or Collision Sensor Connection (Open) System Internal Failure</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM100000001152E__RM100000001152E_07">
+     
+    <p class="subpara-subparaName">DTC SUMMARY</p> 
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000001152E__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">MALFUNCTION DESCRIPTION</p>
+<p class="step1-ptxt">The hybrid vehicle control ECU and airbag sensor assembly detect that a collision has occurred and shut off the system main relay.</p>
+<p class="step1-ptxt">The cause of this DTC may be one of the following:</p>
+<br class="step1Root-step1"/>
+<ul class="content5-list1"> 
+       <li class="list1-item">
+<p class="content5-list1-heading">Collision is detected</p>
+</li> 
+       <li class="list1-item">
+<p class="content5-list1-heading">Detection sensor system malfunction</p>
+</li> 
+       <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+         <li class="list2-item">
+<p class="li-list2-list2-heading">Airbag system malfunction</p>
+</li> 
+         <li class="list2-item">
+<p class="li-list2-list2-heading">Hybrid vehicle control ECU malfunction</p>
+</li> 
+         <li class="list2-item">
+<p class="li-list2-list2-heading">Communication malfunction between airbag sensor assembly and hybrid vehicle control ECU</p>
+</li> 
+         <li class="list2-item">
+<p class="li-list2-list2-heading">Hybrid vehicle control ECU communication malfunction</p>
+</li> 
+        </ul> 
+      </ul>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001152E__RM100000001152E_04">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The hybrid vehicle control ECU receives a signal that indicates a collision from the airbag sensor assembly to detect a collision. After detecting a collision, the hybrid vehicle control ECU shuts off the high voltage systems for safety.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EACAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EGCAC" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EMCAC" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0ESCAC" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EYCAC" width="NaN%">MIL</th> 
+        <th align="center" class="cellrowborder" id="ID0E5CAC" width="NaN%">Warning Indicate</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EACAC " width="NaN%">P160600</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGCAC " width="NaN%">Collision detected or Collision Sensor Connection (Open)</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMCAC " width="NaN%"> <p class="ptxt">Collision detection</p> <p class="ptxt">A block signal is received from the airbag sensor assembly.</p> <p class="ptxt">(1 trip detection logic)</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ESCAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Airbag sensor assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid vehicle control ECU</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Airbag system</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EYCAC " width="NaN%">Does not come on</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5CAC " width="NaN%"> <p class="ptxt">Master Warning Light:</p> <p class="ptxt">Comes on</p> </td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EACAC " width="NaN%">P160604</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGCAC " width="NaN%">Collision detected or Collision Sensor Connection (Open) System Internal Failure</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMCAC " width="NaN%"> <p class="ptxt">Collision detection</p> <p class="ptxt">Multiple wiring malfunctions occur simultaneously.</p> <p class="ptxt">(1 trip detection logic)</p> </td> 
+        <td align="left" class="cellrowborder" headers="ID0ESCAC " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid vehicle control ECU</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Airbag system</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EYCAC " width="NaN%">Does not come on</td> 
+        <td align="left" class="cellrowborder" headers="ID0E5CAC " width="NaN%"> <p class="ptxt">Master Warning Light:</p> <p class="ptxt">Comes on</p> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">If P160600 or P160604 is output, the hybrid system cannot be started unless the DTCs are cleared using the GTS.</p> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Related Data List
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0E5KAC" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EELAC" width="NaN%">Data List</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0E5KAC " width="NaN%">P160600</td> 
+        <td align="left" class="cellrowborder" headers="ID0EELAC " rowspan="2" width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Airbag Status (Collision)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Airbag Status (Normal)</p>
+</li> 
+         </ul> </td> 
+       </tr> 
+       <tr> 
+        <td align="center" class="cellrowborder" headers="ID0E5KAC " width="NaN%">P160604</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000001152E__RM100000001152E_06">
+     
+    <p class="subpara-subparaName">CONFIRMATION DRIVING PATTERN</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">After repair has been completed, clear the DTC and then check that the vehicle has returned to normal by performing the following All Readiness check procedure.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM1000000011O0Q.html#RM1000000011O0Q">Click here</a>
+</p> 
+    </div> 
+    <br class="subpara"/>
+    <ol class="content5-list1">
+<li class="list1-item">
+<p class="content5-list1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) and turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Clear the DTCs (even if no DTCs are stored, perform the clear DTC procedure).</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch off and wait for 2 minutes or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Turn the power switch on (IG) and turn the GTS on.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">With power switch on (IG) and wait for 5 seconds or more.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Enter the following menus: Powertrain / Hybrid Control / Utility / All Readiness.</p>
+</li>
+<li class="list1-item">
+<p class="content5-list1-heading">Check the DTC judgment result.</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <br class="tip"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows NORMAL, the system is normal.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows ABNORMAL, the system has a malfunction.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">If the judgment result shows INCOMPLETE or N/A, perform driving pattern again.</p>
+</li> 
+       </ul> 
+      </div>
+</li>
+</ol> 
+   </div>
+<div class="subpara" id="RM100000001152E__RM100000001152E_05">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000001152E__RM100000001152E_05_0001">
+<p class="testgrp-heading">CHECK VEHICLE FOR COLLISION DAMAGE</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the vehicle condition.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJEAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJEAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ERFAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EXFAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ERFAE " width="NaN%">The vehicle is not damaged.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EXFAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ERFAE " width="NaN%">The vehicle is damaged.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EXFAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR VEHICLE </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001152E__RM100000001152E_05_0012">
+<p class="testgrp-heading">CHECK DTC OUTPUT (HYBRID CONTROL)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHNAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EHNAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPOAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EVOAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EPOAE " width="NaN%">P160600 or P160604 only is output, or DTCs except the ones in the table below are also output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVOAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EPOAE " width="NaN%">Any of the following DTCs including pending DTCs are also output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVOAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tablenoborder">
+         <table class="test1-table">
+<thead align="left" class="test1-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0EGRAE" width="NaN%">Malfunction Content</th> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0EMRAE">Relevant DTC</th> 
+           </tr> 
+          </thead>
+<tbody class="test1-table"> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EGRAE " rowspan="16" width="NaN%">Microcomputer malfunction</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P060647</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV Powertrain Control Module Processor Watchdog / Safety MCU Failure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P060687</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV Powertrain Control Module Processor to Monitoring Processor Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P060A29</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor Signal Invalid</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P060A44</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor Data Memory Failure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P060A45</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor Program Memory Failure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P060A47</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor Watchdog / Safety MCU Failure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P060A49</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor Internal Electronic Failure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P060A87</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV Powertrain Control Module Processor from Monitoring Processor Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P060B1C</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV Powertrain Control Module A/D Processing Voltage Out of Range</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P060B49</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV Powertrain Control Module A/D Processing Internal Electronic Failure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P060B71</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV Powertrain Control Module A/D Processing Actuator Stuck</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P06881F</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">ECM/PCM Power Relay Sense Circuit Intermittent</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P1C9E9F</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV System Reset Stuck Off</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P1CE31C</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor A/D Processing Voltage Out of Range</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P1CE349</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor A/D Processing Internal Electronic Failure</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">P1CE371</td> 
+            <td align="left" class="cellrowborder" headers="ID0EMRAE " width="NaN%">Hybrid/EV Powertrain Control Module Monitoring Processor A/D Processing Actuator Stuck</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">P160600 or P160604 may be output as a result of the malfunction indicated by the DTCs above.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (HYBRID CONTROL SYSTEM) <a class="content6-ptxt-xref" href="RM100000001AGZH.html#RM100000001AGZH">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000001152E__RM100000001152E_05_0007">
+<p class="testgrp-heading">CHECK DTC OUTPUT (HYBRID CONTROL)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4AAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E4AAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EFCAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ELCAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EFCAG " width="NaN%">P160600 is output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELCAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EFCAG " width="NaN%">P160604 is output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELCAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CHECK AIRBAG SYSTEM <a class="content6-ptxt-xref" href="RM100000000Z8VM.html#RM100000000Z8VM">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">B</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000001152E__RM100000001152E_05_0014">
+<p class="testgrp-heading">CHECK DTC OUTPUT (HYBRID CONTROL, MOTOR GENERATOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Hybrid Control and Motor Generator / Trouble Codes.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<br class="test1Root-test1"/>Powertrain &gt; Motor Generator &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMNAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EMNAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EUOAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E1OAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EUOAG " width="NaN%">DTCs of hybrid control system in the table below are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1OAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EUOAG " width="NaN%">DTCs of motor generator control system in the table below are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1OAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tablenoborder">
+         <table class="test1-table">
+<thead align="left" class="test1-table"> 
+           <tr> 
+            <th align="center" class="cellrowborder" id="ID0ELRAG" width="NaN%">System</th> 
+            <th align="center" class="cellrowborder" colspan="2" id="ID0ERRAG">Relevant DTC</th> 
+           </tr> 
+          </thead>
+<tbody class="test1-table"> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0ELRAG " rowspan="3" width="NaN%">Hybrid control system</td> 
+            <td align="left" class="cellrowborder" headers="ID0ERRAG " width="NaN%">P310711</td> 
+            <td align="left" class="cellrowborder" headers="ID0ERRAG " width="NaN%">Lost Communication with Airbag System Control Module Circuit Short to Ground (Low)</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0ERRAG " width="NaN%">P310715</td> 
+            <td align="left" class="cellrowborder" headers="ID0ERRAG " width="NaN%">Lost Communication with Airbag System Control Module Circuit Short to Auxiliary Battery or Open (High)</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0ERRAG " width="NaN%">U015187</td> 
+            <td align="left" class="cellrowborder" headers="ID0ERRAG " width="NaN%">Lost Communication with Restraints Control Module Missing Message</td> 
+           </tr> 
+           <tr> 
+            <td align="left" class="cellrowborder" headers="ID0ELRAG " width="NaN%">Motor generator control system</td> 
+            <td align="left" class="cellrowborder" headers="ID0ERRAG " width="NaN%">P312487</td> 
+            <td align="left" class="cellrowborder" headers="ID0ERRAG " width="NaN%">Lost Communication between Drive Motor "A" and HV ECU Missing Message</td> 
+           </tr> 
+          </tbody>
+</table> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (HYBRID CONTROL SYSTEM) <a class="content6-ptxt-xref" href="RM100000001AGZH.html#RM100000001AGZH">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO DTC CHART (MOTOR GENERATOR CONTROL SYSTEM) <a class="content6-ptxt-xref" href="RM100000001AKGG.html#RM100000001AKGG">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

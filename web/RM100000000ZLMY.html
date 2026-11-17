@@ -1,0 +1,568 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="WIRELESS DOOR LOCK CONTROL SYSTEM No Answer-Back" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058039" name="sectionId"/> 
+  <meta content="DOOR LOCK" name="sectionName"/> 
+  <meta content="_0287429" name="ttlId"/> 
+  <meta content="WIRELESS DOOR LOCK CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000ZLMY" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>No Answer-Back</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">WIRELESS DOOR LOCK CONTROL SYSTEM<span class="topictitle1"> No Answer-Back</span>
+</h1>
+<div class="subpara" id="RM100000000ZLMY__RM100000000ZLMY_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">In some cases, wireless door lock control functions are normal but the hazard warning light and/or wireless door lock buzzer answer-back function does not operate. In such cases, hazard warning light and wireless door lock buzzer signal outputs from the main body ECU (multiplex network body ECU) may be malfunctioning.</p> 
+   </div>
+<div class="subpara" id="RM100000000ZLMY__RM100000000ZLMY_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003MRJE13" class="figure-graphic--bigImage" src="../images/a003mrje13.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM100000000ZLMY__RM100000000ZLMY_03">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">The wireless door lock control system uses the CAN communication system. Inspect the communication function by following How to Proceed with Troubleshooting. Troubleshoot the wireless door lock control system after confirming that the communication system is functioning properly.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000ZLMP.html#RM100000000ZLMP">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Before replacing the main body ECU (multiplex network body ECU), refer to Service Bulletin.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000ZLMY__RM100000000ZLMY_07">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000ZLMY__RM100000000ZLMY_07_0001">
+<p class="testgrp-heading">READ VALUE USING GTS (Hazard Answer Back, Wireless Buzzer Resp, Wireless Buzzer Vol)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Customize Setting / Wireless Door Lock.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Select the setting by referring to the table below.</p>
+<br class="test1Root-test1"/>Wireless Door Lock<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ELDAC" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0ERDAC" width="NaN%">Description</th> 
+              <th align="center" class="cellrowborder" id="ID0EXDAC" width="NaN%">Default</th> 
+              <th align="center" class="cellrowborder" id="ID0E4DAC" width="NaN%">Setting</th> 
+              <th align="center" class="cellrowborder" id="ID0EDEAC" width="NaN%">ECU</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ELDAC " width="NaN%">Hazard Answer Back</td> 
+              <td align="left" class="cellrowborder" headers="ID0ERDAC " width="NaN%">Function that flashes the hazard warning lights once when the doors are locked by wireless operation and twice when the doors are unlocked by wireless operation.</td> 
+              <td align="center" class="cellrowborder" headers="ID0EXDAC " width="NaN%">ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0E4DAC " width="NaN%">0:OFF,1:ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0EDEAC " width="NaN%">Main body ECU (Multiplex network body ECU)</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ELDAC " width="NaN%">Wireless Buzzer Resp</td> 
+              <td align="left" class="cellrowborder" headers="ID0ERDAC " width="NaN%">Function that enables/disables the wireless door lock buzzer response*</td> 
+              <td align="center" class="cellrowborder" headers="ID0EXDAC " width="NaN%">ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0E4DAC " width="NaN%">0:OFF,1:ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0EDEAC " width="NaN%">Main body ECU (Multiplex network body ECU)</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ELDAC " width="NaN%">Wireless Buzzer Vol</td> 
+              <td align="left" class="cellrowborder" headers="ID0ERDAC " width="NaN%">Function that adjusts the wireless door lock buzzer volume*</td> 
+              <td align="center" class="cellrowborder" headers="ID0EXDAC " width="NaN%">Level 5</td> 
+              <td align="left" class="cellrowborder" headers="ID0E4DAC " width="NaN%">0000:Level7,0001:Level6,0010:Level5,0011:Level4,0100:Level3,0101:Level2,0110:Level1,0111:Level0</td> 
+              <td align="left" class="cellrowborder" headers="ID0EDEAC " width="NaN%">Main body ECU (Multiplex network body ECU)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>
+<ul class="test1-list1 nonmark"> 
+         <li class="list1-item">
+<p class="test1-list1-nonmark-heading">*: w/ Wireless Door Lock Buzzer Answer-back Function</p>
+</li> 
+        </ul>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKAAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EKAAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ESBAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EYBAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ESBAE " width="NaN%">Items are ON and except Level 0</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYBAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ESBAE " width="NaN%">An item is OFF or Level 0</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYBAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>PERFORM CUSTOMIZE FUNCTION <a class="content6-ptxt-xref" href="RM100000000ZLMR.html#RM100000000ZLMR">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZLMY__RM100000000ZLMY_07_0002">
+<p class="testgrp-heading">CHECK WIRELESS DOOR LOCK CONTROL FUNCTIONS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the wireless door lock control function using the electrical key transmitter sub-assembly.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENFAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENFAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EVGAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E2GAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EVGAE " width="NaN%">Wireless door lock/unlock operates properly.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2GAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EVGAE " width="NaN%">Wireless door lock/unlock does not operate properly.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2GAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO PROBLEM SYMPTOMS TABLE <a class="content6-ptxt-xref" href="RM100000000ZLMS.html#RM100000000ZLMS">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZLMY__RM100000000ZLMY_07_0003">
+<p class="testgrp-heading">READ VALUE USING GTS (FR Door Lock Pos, FL Door Lock Pos, RR-Door Lock Pos SW, RL-Door Lock Pos SW)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Main Body / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Main Body &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EKNAE" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EQNAE" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EWNAE" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0E3NAE" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0ECOAE" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKNAE " width="NaN%">FR Door Lock Pos</td> 
+              <td align="left" class="cellrowborder" headers="ID0EQNAE " width="NaN%">Front door RH unlock detection switch signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EWNAE " width="NaN%">LOCK or UNLOCK</td> 
+              <td align="left" class="cellrowborder" headers="ID0E3NAE " width="NaN%"> <p class="ptxt">LOCK: Front door RH locked</p> <p class="ptxt">UNLOCK: Front door RH unlocked</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0ECOAE " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKNAE " width="NaN%">FL Door Lock Pos</td> 
+              <td align="left" class="cellrowborder" headers="ID0EQNAE " width="NaN%">Front door LH unlock detection switch signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EWNAE " width="NaN%">LOCK or UNLOCK</td> 
+              <td align="left" class="cellrowborder" headers="ID0E3NAE " width="NaN%"> <p class="ptxt">LOCK: Front door LH locked</p> <p class="ptxt">UNLOCK: Front door LH unlocked</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0ECOAE " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKNAE " width="NaN%">RR-Door Lock Pos SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EQNAE " width="NaN%">Rear door RH unlock detection switch signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EWNAE " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0E3NAE " width="NaN%"> <p class="ptxt">OFF: Rear door RH locked</p> <p class="ptxt">ON: Rear door RH unlocked</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0ECOAE " width="NaN%">*1</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKNAE " width="NaN%">RL-Door Lock Pos SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EQNAE " width="NaN%">Rear door LH unlock detection switch signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EWNAE " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0E3NAE " width="NaN%"> <p class="ptxt">OFF: Rear door LH locked</p> <p class="ptxt">ON: Rear door LH unlocked</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0ECOAE " width="NaN%">*2</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>
+<ul class="test1-list1 nonmark"> 
+         <li class="list1-item">
+<p class="test1-list1-nonmark-heading">*1: When checking RR-Door Lock Pos SW, make sure to check it with the rear door LH locked.</p>
+</li> 
+         <li class="list1-item">
+<p class="test1-list1-nonmark-heading">*2: When checking RL-Door Lock Pos SW, make sure to check it with the rear door RH locked.</p>
+</li> 
+        </ul>
+<br class="test1Root-test1"/>Body Electrical &gt; Main Body &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E52AE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E52AE " width="NaN%">FR Door Lock Pos</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E52AE " width="NaN%">FL Door Lock Pos</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E52AE " width="NaN%">RR-Door Lock Pos SW</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E52AE " width="NaN%">RL-Door Lock Pos SW</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EGFAG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EGFAG">The GTS display changes correctly in response to the lock/unlock operation.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EAGAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EAGAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDHAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDHAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDHAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO LIGHTING SYSTEM (Proceed to Door Unlock Detection Switch Circuit) <a class="content6-ptxt-xref" href="RM1000000011EV1.html#RM1000000011EV1">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZLMY__RM100000000ZLMY_07_0013">
+<p class="testgrp-heading">CHECK WIRELESS ANSWER-BACK OPERATION</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the wireless answer-back operation using the electrical key transmitter sub-assembly.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMKAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EMKAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EULAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0E1LAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EULAG " width="NaN%">Only wireless door lock buzzer answer-back does not occur.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1LAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EULAG " width="NaN%">Only hazard warning light answer-back does not occur.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E1LAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO ENTRY AND START SYSTEM (for Entry Function) <a class="content6-ptxt-xref" href="RM100000000ZT9O.html#RM100000000ZT9O">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">B</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000ZLMY__RM100000000ZLMY_07_0004">
+<p class="testgrp-heading">CHECK HAZARD WARNING LIGHTS OPERATION</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the hazard warning lights blink when the hazard warning signal switch is pressed.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPPAG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EPPAG">Hazard warning lights blink.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJQAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJQAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMRAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMRAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMRAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE MAIN BODY ECU (MULTIPLEX NETWORK BODY ECU) <a class="content6-ptxt-xref" href="RM100000000ZQ1S.html#RM100000000ZQ1S">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO LIGHTING SYSTEM (Proceed to Hazard Warning Switch Circuit) <a class="content6-ptxt-xref" href="RM1000000010UOF.html#RM1000000010UOF">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

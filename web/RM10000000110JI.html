@@ -1,0 +1,598 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C1259, C1310" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_54" name="servcatId"/> 
+  <meta content="Brake" name="servcatName"/> 
+  <meta content="_058045" name="sectionId"/> 
+  <meta content="BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS" name="sectionName"/> 
+  <meta content="_0295571" name="ttlId"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM10000000110JI" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>C1259, C1310</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C1259, C1310</h1>
+<div class="section" id="RM10000000110JI__RM10000000110JI_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C1259</td> 
+       <td class="dtcname" headers="ID0EED">HV Control System Regenerative Malfunction</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C1310</td> 
+       <td class="dtcname" headers="ID0EED">HV System Malfunction</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM10000000110JI__RM10000000110JI_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The skid control ECU (brake booster with master cylinder assembly) communicates with the hybrid vehicle control ECU and controls braking force according to the motor's regenerative force.</p> 
+    <p class="content5-ptxt">The skid control ECU (brake booster with master cylinder assembly) sends VSC+/VSC and cooperative control with EPS signals to the hybrid vehicle control ECU and receives operating signals from the hybrid vehicle control ECU.</p> 
+    <p class="content5-ptxt">The skid control ECU (brake booster with master cylinder assembly) uses CAN communication for communicating with the hybrid vehicle control ECU. If a communication malfunction is detected, the skid control ECU (brake booster with master cylinder assembly) prohibits VSC+/VSC and cooperative control with EPS operation and part of the electronically controlled brake system control as a fail-safe function.</p> 
+    <p class="content5-ptxt">If the signals from the hybrid vehicle control ECU return to normal, the warning light will go off and the DTCs C1259 and C1310 will be cleared.</p> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">These DTCs will be output from the skid control ECU (brake booster with master cylinder assembly) when the hybrid vehicle control ECU sends a malfunction signal to the skid control ECU (brake booster with master cylinder assembly).</p> 
+    </div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0E4G" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EDH" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0EJH" width="NaN%">INF Code</th> 
+        <th align="center" class="cellrowborder" id="ID0EPH" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EVH" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0E2H" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0E4G " width="NaN%">C1259</td> 
+        <td align="left" class="cellrowborder" headers="ID0EDH " width="NaN%">HV Control System Regenerative Malfunction</td> 
+        <td align="center" class="cellrowborder" headers="ID0EJH " width="NaN%">1132</td> 
+        <td align="left" class="cellrowborder" headers="ID0EPH " width="NaN%">A regeneration malfunction signal is input for at least 0.036 seconds when IG2 terminal voltage is 9.5 V or more for at least 2 seconds and communication with the hybrid vehicle control ECU is valid.</td> 
+        <td align="left" class="cellrowborder" headers="ID0EVH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid vehicle control ECU</p>
+<p class="item-ptxt">(Regeneration malfunction)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Skid control ECU (brake booster with master cylinder assembly)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0E2H " width="NaN%"> <p class="ptxt">Electronically controlled brake system DTC</p> 
+         <div class="tip">
+          <p class="tiptitle">Tech Tips</p> 
+          <p class="ptxt">The DTC is cleared when the conditions return to normal.</p> 
+         </div> </td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0E4G " width="NaN%">C1310</td> 
+        <td align="left" class="cellrowborder" headers="ID0EDH " width="NaN%">HV System Malfunction</td> 
+        <td align="center" class="cellrowborder" headers="ID0EJH " width="NaN%">1140</td> 
+        <td align="left" class="cellrowborder" headers="ID0EPH " width="NaN%">When the IG2 terminal voltage is 9.5 V or more for 2 seconds or more and communication with the hybrid vehicle control ECU is possible, an internal malfunction signal is detected for 0.072 seconds or more.</td> 
+        <td align="left" class="cellrowborder" headers="ID0EVH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Hybrid vehicle control ECU</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Skid control ECU (brake booster with master cylinder assembly)</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0E2H " width="NaN%"> <p class="ptxt">VSC DTC</p> 
+         <div class="tip">
+          <p class="tiptitle">Tech Tips</p> 
+          <p class="ptxt">The DTC is cleared when the conditions return to normal.</p> 
+         </div> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110JI__RM10000000110JI_06">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">After replacing the skid control ECU (brake booster with master cylinder assembly), perform linear solenoid valve offset learning, ABS holding solenoid valve learning, yaw rate and acceleration sensor zero point calibration and system information memorization after performing "Reset Memory".</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM10000000110JB.html#RM10000000110JB">Click here</a>
+</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110JI__RM10000000110JI_04">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM10000000110JI__RM10000000110JI_04_0001">
+<p class="testgrp-heading">CHECK DTC (HYBRID CONTROL SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if a hybrid control system DTCs are output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001152V.html#RM100000001152V">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Hybrid Control &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYLAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EYLAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EBNAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EGNAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EBNAC " width="NaN%">DTCs are not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGNAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EBNAC " width="NaN%">DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EGNAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>INSPECT HYBRID CONTROL SYSTEM <a class="content6-ptxt-xref" href="RM1000000011530.html#RM1000000011530">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110JI__RM10000000110JI_04_0010">
+<p class="testgrp-heading">CHECK DTC (MOTOR GENERATOR CONTROL SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if a motor generator control system DTCs are output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001155N.html#RM100000001155N">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Motor Generator &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EAEAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EAEAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJFAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EOFAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EJFAE " width="NaN%">DTCs are not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOFAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EJFAE " width="NaN%">DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOFAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>INSPECT MOTOR GENERATOR CONTROL SYSTEM <a class="content6-ptxt-xref" href="RM100000001155Q.html#RM100000001155Q">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110JI__RM10000000110JI_04_0011">
+<p class="testgrp-heading">CHECK DTC (SFI SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if a SFI system DTCs are output.</p>
+<p class="test1-ptxt">w/ Canister Pump Module: <a class="ptxt-xref" href="RM1000000010619.html#RM1000000010619">Click here</a>
+</p>
+<p class="test1-ptxt">w/o Canister Pump Module: <a class="ptxt-xref" href="RM100000001064M.html#RM100000001064M">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; Engine &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESMAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ESMAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E2NAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EAOAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E2NAE " width="NaN%">DTCs are not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAOAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E2NAE " width="NaN%">DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAOAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>INSPECT SFI SYSTEM w/ Canister Pump Module: <a class="content6-ptxt-xref" href="RM1000000010613.html#RM1000000010613">Click here</a> <br/>INSPECT SFI SYSTEM w/o Canister Pump Module: <a class="content6-ptxt-xref" href="RM100000001064E.html#RM100000001064E">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110JI__RM10000000110JI_04_0014">
+<p class="testgrp-heading">CHECK DTC (HYBRID BATTERY SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check if a hybrid battery system DTCs are output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000001152V.html#RM100000001152V">Click here</a>
+</p>
+<br class="test1Root-test1"/>Powertrain &gt; HV Battery &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDVAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EDVAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMWAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ERWAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EMWAE " width="NaN%">DTCs are not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ERWAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EMWAE " width="NaN%">DTCs are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ERWAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>INSPECT HYBRID BATTERY SYSTEM <a class="content6-ptxt-xref" href="RM1000000011530.html#RM1000000011530">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110JI__RM10000000110JI_04_0004">
+<p class="testgrp-heading">PROBLEM SYMPTOMS TABLE (HYBRID CONTROL SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the Problem Symptoms Table of the hybrid control system.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000011O0R.html#RM1000000011O0R">Click here</a>
+</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EK1AE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EK1AE">No malfunctions in the Problem Symptoms Table are occurring.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EE2AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EE2AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EH3AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EH3AE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EH3AE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR MALFUNCTIONING PART </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM10000000110JI__RM10000000110JI_04_0006">
+<p class="testgrp-heading">RECONFIRM DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the same DTC is output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ECHAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ECHAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ELIAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EQIAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0ELIAG " width="NaN%">DTCs C1259 and/or C1310 are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQIAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0ELIAG " width="NaN%">DTCs other than C1259 and C1310 are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQIAG " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ELIAG " width="NaN%">DTCs are not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQIAG " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for LHD: <a class="content6-ptxt-xref" href="RM100000000Z7YC.html#RM100000000Z7YC">Click here</a> <br/>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for RHD: <a class="content6-ptxt-xref" href="RM100000000Z7YF.html#RM100000000Z7YF">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR CIRCUITS INDICATED BY OUTPUT DTCS <a class="content6-ptxt-xref" href="RM10000000110K1.html#RM10000000110K1">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>USE SIMULATION METHOD TO CHECK <a class="content6-ptxt-xref" href="RM100000001145X.html#RM100000001145X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

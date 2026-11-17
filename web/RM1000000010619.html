@@ -1,0 +1,216 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module) DTC CHECK / CLEAR" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058063" name="sectionId"/> 
+  <meta content="2ZR-FXE ENGINE CONTROL" name="sectionName"/> 
+  <meta content="_0290546" name="ttlId"/> 
+  <meta content="SFI SYSTEM(w/ Canister Pump Module)" name="ttlName"/> 
+  <meta content="D" name="paraCategory"/> 
+  <meta content="DTC CHECK / CLEAR" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000010619" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>SFI SYSTEM(w/ Canister Pump Module)</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SFI SYSTEM(w/ Canister Pump Module)<span class="topictitle1"> DTC CHECK / CLEAR</span>
+</h1>
+<div class="subpara" id="RM1000000010619__RM1000000010619_z0">
+     
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">When the diagnosis system is changed from normal mode to check mode or vice versa, all DTCs and freeze frame data recorded in normal mode are cleared. Before changing modes, always check and make a note of DTCs and freeze frame data.</p> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">DTCs which are stored in the ECM can be displayed on the GTS. The GTS can display the confirmed and pending DTCs.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Some DTCs are not stored if the ECM does not detect the same malfunction again during a second consecutive driving cycle. However, such malfunctions, detected on only one occasion, are stored as pending DTCs.</p>
+</li> 
+     </ul> 
+    </div> 
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM1000000010619__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK DTC</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the GTS on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+<br class="step2Root-step2"/>Powertrain &gt; Engine &gt; Trouble Codes</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Check the DTC(s) and freeze frame data, and then write them down.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <div class="tablenoborder">
+          <table class="table">
+<thead align="left" class="table"> 
+            <tr> 
+             <th align="center" class="cellrowborder" id="ID0EWCAC" width="NaN%">GTS Display</th> 
+             <th align="center" class="cellrowborder" id="ID0E3CAC" width="NaN%">Description</th> 
+            </tr> 
+           </thead>
+<tbody class="table"> 
+            <tr> 
+             <td align="center" class="cellrowborder" headers="ID0EWCAC " width="NaN%">Test Failed</td> 
+             <td align="left" class="cellrowborder" headers="ID0E3CAC " width="NaN%">Shows the malfunction judgment results during the current trip.</td> 
+            </tr> 
+            <tr> 
+             <td align="center" class="cellrowborder" headers="ID0EWCAC " width="NaN%">Pending</td> 
+             <td class="cellrowborder" headers="ID0E3CAC " width="NaN%">Shows the malfunction judgment results up to now. (Indicates the possibility of a malfunction when no DTC is confirmed.)</td> 
+            </tr> 
+            <tr> 
+             <td align="center" class="cellrowborder" headers="ID0EWCAC " width="NaN%">Confirmed</td> 
+             <td align="left" class="cellrowborder" headers="ID0E3CAC " width="NaN%">Shows the DTCs confirmed up to now. (The number of current trips differs for each DTC.)</td> 
+            </tr> 
+           </tbody>
+</table> 
+         </div> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Check the details of the DTC(s).</p>
+<p class="step2-ptxt"> <a class="ptxt-xref" href="RM100000001AMDC.html#RM100000001AMDC">Click here</a>
+</p>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CHECK TIME STAMP</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">By checking Time Stamp, the time and order in which DTCs were stored in an ECU can be checked.</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the GTS on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Health Check.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Perform the following steps when the data setting screen is displayed.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Select the systems for which to perform Health Check and check for time stamp data.</p>
+<br class="step2Root-step2"/>
+<ul class="step2-list1"> 
+         <p class="list1-li-title">
+<strong class="li-title-title">Selectable items:</strong>
+</p> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Powertrain</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Chassis</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Body</p>
+</li> 
+         <li class="list1-item">
+<p class="step2-list1-heading">Store All Data</p>
+</li> 
+        </ul>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Select "Yes" when "Do you want to store time stamp data?" is displayed.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">If "Yes" is not selected, time stamp data will not be stored.</p> 
+        </div>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">After Health Check has completed, select "Time Stamp Data" to display the Time Stamp screen.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Select the desired system from the drop-down list on the bottom of the Time Stamp screen.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Check the order and time which DTCs were stored for the selected system.</p>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CLEAR DTC</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the GTS on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Powertrain / Engine / Trouble Codes.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Clear the DTCs.</p>
+<br class="step2Root-step2"/>Powertrain &gt; Engine &gt; Clear DTCs</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">CLEAR DTC (Without using GTS)</p>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Perform either of the following operations:</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After turning power switch off, waiting time may be required before disconnecting the cable from the negative (-) auxiliary battery terminal. Therefore, make sure to read the disconnecting the cable from the negative (-) auxiliary battery terminal notices before proceeding with work.</p> 
+         <p class="ptxt"> <a class="ptxt-xref" href="RM100000001AAN7.html#RM100000001AAN7">Click here</a>
+</p> 
+        </div>
+<br class="step2Root-step2"/>
+<ol class="step3" type="i">
+<li class="step3Root-step3">
+<p class="step3-heading">Disconnect the cable from the negative (-) auxiliary battery terminal for more than 1 minute.</p>
+</li>
+<li class="step3Root-step3">
+<p class="step3-heading">Remove the EFI-MAIN and ETCS fuses from the No. 1 engine room relay block and No. 1 junction block assembly located inside the engine compartment for more than 1 minute.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

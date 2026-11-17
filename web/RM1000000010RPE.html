@@ -1,0 +1,520 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="LIGHTING SYSTEM Headlight Dimmer Switch Circuit" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_59" name="servcatId"/> 
+  <meta content="Vehicle Exterior" name="servcatName"/> 
+  <meta content="_058067" name="sectionId"/> 
+  <meta content="LIGHTING (EXT)" name="sectionName"/> 
+  <meta content="_0293721" name="ttlId"/> 
+  <meta content="LIGHTING SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000010RPE" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Headlight Dimmer Switch Circuit</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">LIGHTING SYSTEM<span class="topictitle1"> Headlight Dimmer Switch Circuit</span>
+</h1>
+<div class="subpara" id="RM1000000010RPE__RM1000000010RPE_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The main body ECU (multiplex network body ECU) receives the following switch information:</p> 
+    <br class="subpara"/>
+    <ul class="content5-list1"> 
+     <li class="list1-item">
+<p class="content5-list1-heading">Light control switch in off*1, tail, head or AUTO position</p>
+</li> 
+     <li class="list1-item">
+<p class="content5-list1-heading">Dimmer switch in high, low or high flash (pass) position</p>
+</li> 
+     <li class="list1-item">
+<p class="content5-list1-heading">Fog light switch in front, rear*2 or off position</p>
+</li> 
+    </ul> 
+    <br class="subpara"/>
+    <ul class="content5-list1 nonmark"> 
+     <li class="list1-item">
+<p class="content5-list1-nonmark-heading">*1: w/ Light Control Switch off Position</p>
+</li> 
+     <li class="list1-item">
+<p class="content5-list1-nonmark-heading">*2: w/ Rear Fog Light</p>
+</li> 
+    </ul> 
+   </div>
+<div class="subpara" id="RM1000000010RPE__RM1000000010RPE_03">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003O16E03" class="figure-graphic--bigImage" src="../images/a003o16e03.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM1000000010RPE__RM1000000010RPE_04">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">Before replacing the main body ECU (multiplex network body ECU), refer to Service Bulletin.</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000010RPE__RM1000000010RPE_01">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM1000000010RPE__RM1000000010RPE_01_0001">
+<p class="testgrp-heading">READ VALUE USING GTS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Main Body / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Main Body &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EMEAC" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0ESEAC" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EYEAC" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0E5EAC" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0EEFAC" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMEAC " width="NaN%">Dimmer SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESEAC " width="NaN%">Dimmer switch high position signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EYEAC " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5EAC " width="NaN%"> <p class="ptxt">OFF: Dimmer switch in low position</p> <p class="ptxt">ON: Dimmer switch in high or high flash position</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EEFAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMEAC " width="NaN%">Passing Light SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESEAC " width="NaN%">Dimmer switch high flash position (pass) signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EYEAC " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5EAC " width="NaN%"> <p class="ptxt">OFF: Dimmer switch not in high flash position</p> <p class="ptxt">ON: Dimmer switch in high flash position</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EEFAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMEAC " width="NaN%">Rear Fog Light SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESEAC " width="NaN%">Fog light switch rear position signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EYEAC " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5EAC " width="NaN%"> <p class="ptxt">OFF: Fog light switch off</p> <p class="ptxt">ON: Fog light switch in rear position</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EEFAC " width="NaN%">w/ Rear Fog Light</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMEAC " width="NaN%">Front Fog Light SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESEAC " width="NaN%">Fog light switch front position signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EYEAC " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5EAC " width="NaN%"> <p class="ptxt">OFF: Fog light switch off</p> <p class="ptxt">ON: Fog light switch in front position</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EEFAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMEAC " width="NaN%">Auto Light SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESEAC " width="NaN%">Light control switch AUTO position signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EYEAC " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5EAC " width="NaN%"> <p class="ptxt">OFF: Light control switch not in AUTO position</p> <p class="ptxt">ON: Light control switch in AUTO position</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EEFAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMEAC " width="NaN%">Head Light SW (Head)</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESEAC " width="NaN%">Light control switch head position signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EYEAC " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5EAC " width="NaN%"> <p class="ptxt">OFF: Light control switch not in head position</p> <p class="ptxt">ON: Light control switch in head position</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EEFAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMEAC " width="NaN%">Head Light SW (Tail)</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESEAC " width="NaN%">Light control switch tail position signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EYEAC " width="NaN%">OFF or ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5EAC " width="NaN%"> <p class="ptxt">OFF: Light control switch not in tail or head position</p> <p class="ptxt">ON: Light control switch in tail or head position</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EEFAC " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Main Body &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EMJAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMJAE " width="NaN%">Dimmer SW</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMJAE " width="NaN%">Passing Light SW</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMJAE " width="NaN%">Rear Fog Light SW</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMJAE " width="NaN%">Front Fog Light SW</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMJAE " width="NaN%">Auto Light SW</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMJAE " width="NaN%">Head Light SW (Head)</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMJAE " width="NaN%">Head Light SW (Tail)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EAXAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EAXAE">Normal conditions listed above are displayed.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1XAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E1XAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E4YAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4YAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4YAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>PROCEED TO NEXT SUSPECTED AREA SHOWN IN PROBLEM SYMPTOMS TABLE <a class="content6-ptxt-xref" href="RM1000000010RPQ.html#RM1000000010RPQ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000010RPE__RM1000000010RPE_01_0009">
+<p class="testgrp-heading">INSPECT HEADLIGHT DIMMER SWITCH ASSEMBLY</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">Inspect the items that did not change when reading the Data List.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the headlight dimmer switch assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000010FKJ.html#RM1000000010FKJ">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the headlight dimmer switch assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM1000000010FKK.html#RM1000000010FKK">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ER4AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ER4AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EU5AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EU5AE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EU5AE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HEADLIGHT DIMMER SWITCH ASSEMBLY <a class="content6-ptxt-xref" href="RM1000000010FKJ.html#RM1000000010FKJ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM1000000010RPE__RM1000000010RPE_01_0005">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (HEADLIGHT DIMMER SWITCH ASSEMBLY - MAIN BODY ECU (MULTIPLEX NETWORK BODY ECU) AND BODY GROUND)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I18 main body ECU (multiplex network body ECU) connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJCAG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJCAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWDAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E3DAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ECEAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-14 (HU) - I18-24 (HU)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-17 (HF) - I18-10 (HF)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-18 (T) - I18-22 (TAIL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-19 (H) - I18-12 (HEAD)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-20 (A) - I18-8 (A)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-9 (BFG) - I18-26 (FFOG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-7 (B) - I18-23 (RFOG)*</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-14 (HU) or I18-24 (HU) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-17 (HF) or I18-10 (HF) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-18 (T) or I18-22 (TAIL) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-19 (H) or I18-12 (HEAD) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-20 (A) or I18-8 (A) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-9 (BFG) or I18-26 (FFOG) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-7 (B) or I18-23 (RFOG) - Body ground*</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-8 (LFG) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWDAG " width="NaN%">I67-15 (EL) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E3DAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECEAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<br class="test1Root-test1"/>
+<ul class="test1-list1 nonmark"> 
+         <li class="list1-item">
+<p class="test1-list1-nonmark-heading">*: w/ Rear Fog Light</p>
+</li> 
+        </ul>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPQAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPQAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ESRAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESRAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESRAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE MAIN BODY ECU (MULTIPLEX NETWORK BODY ECU) <a class="content6-ptxt-xref" href="RM100000000ZQ1S.html#RM100000000ZQ1S">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

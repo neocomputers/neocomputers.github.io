@@ -1,0 +1,898 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ENTRY AND START SYSTEM(for Entry Function) DATA LIST / ACTIVE TEST" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058032" name="sectionId"/> 
+  <meta content="THEFT DETERRENT / KEYLESS ENTRY" name="sectionName"/> 
+  <meta content="_0288580" name="ttlId"/> 
+  <meta content="ENTRY AND START SYSTEM(for Entry Function)" name="ttlName"/> 
+  <meta content="U" name="paraCategory"/> 
+  <meta content="DATA LIST / ACTIVE TEST" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000ZT9H" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>ENTRY AND START SYSTEM(for Entry Function)</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ENTRY AND START SYSTEM(for Entry Function)<span class="topictitle1"> DATA LIST / ACTIVE TEST</span>
+</h1>
+<div class="subpara" id="RM100000000ZT9H__RM100000000ZT9H_z0">
+     
+    <br class="subpara"/>
+    
+    <ol class="step1" id="RM100000000ZT9H__11step">
+<li class="step1Root-step1">
+<p class="step1-heading">DATA LIST</p>
+<div class="ie8fixer"/>
+<div class="note">
+       <p class="notetitle">Note</p> 
+       <br class="note"/>
+       <ul class="list1"> 
+        <li class="list1-item">
+<p class="list1-heading">In the table below, the values listed under "Normal Condition" are reference values. Do not depend solely on these reference values when deciding whether a part is faulty or not.</p>
+</li> 
+        <li class="list1-item">
+<p class="list1-heading">When using the GTS with the power switch off, connect the GTS to the DLC3 and turn a courtesy light switch on and off at intervals of 1.5 seconds or less until communication between the GTS and the vehicle begins. Then select Model Code "KEY REGIST" under manual mode and enter the following menus: Body Electrical / Entry&amp;Start(CAN). While using the GTS, periodically turn a courtesy light switch on and off at intervals of 1.5 seconds or less to maintain communication between the GTS and the vehicle.</p>
+</li> 
+       </ul> 
+      </div>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">Using the GTS to read the Data List allows the values or states of switches, sensors, actuators and other items to be read without removing any parts. This non-intrusive inspection can be very useful because intermittent conditions or signals may be discovered before parts or wiring is disturbed. Reading the Data List information early in troubleshooting is one way to save diagnostic time.</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the GTS on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Body Electrical / Entry&amp;Start, Main Body, Power Source Control or Combination Meter / Data List.</p>
+</li>
+<li class="step2Root-step2 clearer">
+<div class="ie8fixer"/>
+<p class="step2-heading">Read the Data List according to the display on the GTS.</p>
+<br class="step2Root-step2"/>Body Electrical &gt; Entry&amp;Start &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EQAAC" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EWAAC" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0E3AAC" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0ECBAC" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0EIBAC" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">D-Door Touch Sensor</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Driver door touch sensor (unlock sensor)*</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">ON: Driver door touch sensor (unlock sensor) touched</p> <p class="ptxt">OFF: Driver door touch sensor (unlock sensor) not touched</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Displays whether the unlock sensor is on or off (even if the sensor is touched and contact is maintained, "ON" is displayed only momentarily).</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Use this Data List item to help determine if there is an unlock sensor malfunction when the entry unlock function does not operate.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">P-Door Touch Sensor</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Front passenger door touch sensor (unlock sensor)*</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">ON: Front passenger door touch sensor (unlock sensor) touched</p> <p class="ptxt">OFF: Front passenger door touch sensor (unlock sensor) not touched</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Displays whether the unlock sensor is on or off (even if the sensor is touched and contact is maintained, "ON" is displayed only momentarily).</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Use this Data List item to help determine if there is an unlock sensor malfunction when the entry unlock function does not operate.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">D-Door Trigger Switch</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Driver door touch sensor (lock sensor)*</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">ON: Driver door touch sensor (lock sensor) touched</p> <p class="ptxt">OFF: Driver door touch sensor (lock sensor) not touched</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Displays whether the lock sensor is on or off (even if the sensor is touched and contact is maintained, "ON" is displayed only momentarily).</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Use this Data List item to help determine if there is a lock sensor malfunction when the entry lock function does not operate.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">P-Door Trigger Switch</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Front passenger door touch sensor (lock sensor)*</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">ON: Front passenger door touch sensor (lock sensor) touched</p> <p class="ptxt">OFF: Front passenger door touch sensor (lock sensor) not touched</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Displays whether the lock sensor is on or off (even if the sensor is touched and contact is maintained, "ON" is displayed only momentarily).</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Use this Data List item to help determine if there is a lock sensor malfunction when the entry lock function does not operate.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Tr/B-Door Lock SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Back door opener switch assembly (lock switch)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">ON: Back door opener switch assembly (lock switch) pressed</p> <p class="ptxt">OFF: Back door opener switch assembly (lock switch) not pressed</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Displays whether the back door opener switch assembly (lock switch) is on or off.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Use this Data List item to help determine if there is a switch malfunction when the back door lock function does not operate.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Tr/B-Door Unlock SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Back door opener switch assembly (open switch)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">ON: Back door opener switch assembly (open switch) pressed</p> <p class="ptxt">OFF: Back door opener switch assembly (open switch) not pressed</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Displays whether the back door opener switch assembly (open switch) is on or off.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Use this Data List item to help determine if there is a switch malfunction when the back door open function does not operate.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Unmatched Vehicle-ID</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Key No. (incorrect or correct)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Yes or No</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">Yes: Communication malfunction</p> <p class="ptxt">No: Communication normal</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">The vehicle ID registered in the vehicle and the vehicle ID registered in the electrical key transmitter sub-assembly are different (if a key from another vehicle is brought into the vehicle exterior detection area while the doors are locked, "Yes" is displayed for "Unmatched Vehicle-ID" in the Data List).</p> <p class="ptxt">Other potential causes:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">An electrical key transmitter sub-assembly from a different vehicle is being used.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">A communication error due to wave interference.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly or certification ECU (smart key ECU assembly) is malfunctioning.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">No Response</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Communication response</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Yes or No</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">Yes: Communication malfunction</p> <p class="ptxt">No: Communication normal</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">The vehicle IDs registered in the vehicle and electrical key transmitter sub-assembly match, but there is no response from the electrical key transmitter sub-assembly. (If the electrical key transmitter sub-assembly is not in the detection area or the transmitter battery is depleted resulting in a matching code not being detected when a lock switch or the power switch is pressed, etc., "Yes" is displayed for "No Response" in the Data List. If there is wave interference in the LF band that the vehicle uses for transmission or the RF band that the electrical key transmitter sub-assembly uses for transmission, "Yes" may be displayed for "No Response" in the Data List.)</p> <p class="ptxt">Other potential causes:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">An electrical key transmitter sub-assembly from a different vehicle is being used.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly or certification ECU (smart key ECU assembly) is malfunctioning.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Unmatch Code or Form</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Code format (incorrect or correct)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Yes or No</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">Yes: Communication malfunction</p> <p class="ptxt">No: Communication normal</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">There is an error in the data sent from the electrical key transmitter sub-assembly (if there is wave interference in the RF band that the electrical key transmitter sub-assembly uses for transmission, "Yes" may be displayed for "Unmatch Code or Form", "No Response", "ID Code Difference(Resp)" and "C Code Difference" in the Data List).</p> <p class="ptxt">Other potential causes:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">An electrical key transmitter sub-assembly from a different manufacturer is being used.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly or certification ECU (smart key ECU assembly) is malfunctioning.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Key Low Battery</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Transmitter battery depleted</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Yes or No</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">Yes: Transmitter battery depleted</p> <p class="ptxt">No: Transmitter battery not depleted</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%">The electrical key transmitter sub-assembly sends voltage information to the certification ECU (smart key ECU assembly) when it is transmitting. "Yes" is displayed for the Data List item "Key Low Battery" when this voltage information indicates 2.2 V or less. This Data List item should be checked when the electrical key transmitter sub-assembly is at room temperature (example: at -20°C (-4°F), "Yes" may be displayed even if the transmitter battery is new).</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Power Save Cnt 10 Min.</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Number of times power saving control is activated due to electrical key transmitter sub-assembly being in detection area for 10 minutes or more</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">0 to 255</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%">Within range of 0 to 255</td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%">If the electrical key transmitter sub-assembly is in a vehicle exterior detection area, communication is frequently performed between the vehicle and electrical key transmitter sub-assembly, resulting in an increase in transmitter battery power consumption. To prevent the transmitter battery from becoming fully depleted, if the electrical key transmitter sub-assembly is left in the detection area for 10 minutes or more, the entry and start system automatically deactivates the exterior detection area the electrical key transmitter sub-assembly is in. If the doors are locked/unlocked with a wireless operation or by the mechanical key, the system resumes operation.</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Power Save Cnt 5 Days</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Number of times power saving control 1 (vehicle exterior periodic signal transmission stop) is activated due to hybrid control system not being started for 5 days or more</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">0 to 255</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%">Within range of 0 to 255</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Power Save Cnt 14 Days</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Number of times power saving control 2 (lock/unlock sensor of front door outside handle assembly of front passenger door disabled) is activated due to hybrid control system not being started for 14 days or more</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">0 to 255</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%">Within range of 0 to 255</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%"># Codes</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Number of trouble codes</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">0 to 255</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%">Number of stored DTCs displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">ID Code Difference(Resp)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">ID code (incorrect or correct)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Yes or No</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">Yes: Communication malfunction</p> <p class="ptxt">No: Communication normal</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">The ID code registered in the vehicle and the ID code registered in the electrical key transmitter sub-assembly are different (if there is wave interference in the RF band that the electrical key transmitter sub-assembly uses for transmission, "Yes" may be displayed for "Unmatch Code or Form", "No Response", "ID Code Difference(Resp)" and "C Code Difference" in the Data List).</p> <p class="ptxt">Other potential causes:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">An electrical key transmitter sub-assembly from a different vehicle is being used.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly or certification ECU (smart key ECU assembly) is malfunctioning.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">C Code Difference</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Challenge code (incorrect or correct)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Yes or No</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">Yes: Communication malfunction</p> <p class="ptxt">No: Communication normal</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">The electrical key transmitter sub-assembly sends a response code in response to the challenge code from the vehicle, but the response code is incorrect (if there is wave interference in the RF band that the electrical key transmitter sub-assembly uses for transmission, "Yes" may be displayed for "Unmatch Code or Form", "No Response", "ID Code Difference(Resp)" and "C Code Difference" in the Data List).</p> <p class="ptxt">Other potential causes:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly or certification ECU (smart key ECU assembly) is malfunctioning.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">ID Code Difference</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Wireless ID code (incorrect or correct)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Yes or No</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">Yes: Communication malfunction</p> <p class="ptxt">No: Communication normal</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">The ID code registered in the vehicle and the ID code registered in the electrical key transmitter sub-assembly are different. (If a wireless ID other than those for any of the registered electrical key transmitter sub-assemblies is detected, "Yes" is displayed for "ID Code Difference" in the Data List. If a wireless signal from the electrical key transmitter sub-assembly of another vehicle is detected, "Yes" is displayed for "ID Code Difference(Resp)" in the Data List.)</p> <p class="ptxt">Other potential causes:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">An electrical key transmitter sub-assembly from a different vehicle is being used.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">A communication error due to external noise (RF).</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly or certification ECU (smart key ECU assembly) is malfunctioning.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Immobiliser</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Immobiliser system status determined by certification ECU</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Set or Unset</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">Set: Immobiliser set (hybrid control system start prohibited) (power switch off)</p> <p class="ptxt">Unset: Immobiliser unset (hybrid control system start permitted) (power switch on (ACC) or on (IG))</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%">When the immobiliser system does not change to the unset state, this item can be used to determine if the cause is the certification ECU or ID code box.</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Different Rolling Code</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Rolling code (incorrect or correct)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Yes or No</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">Yes: Communication malfunction</p> <p class="ptxt">No: Communication normal</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">The rolling code registered in the vehicle and the rolling code registered in the electrical key transmitter sub-assembly are different</p> <p class="ptxt">Other potential causes:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">An electrical key transmitter sub-assembly switch is pressed 100 times or more in a location where the radio waves cannot reach the vehicle.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">A communication error due to external noise (RF).</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">The electrical key transmitter sub-assembly or certification ECU (smart key ECU assembly) is malfunctioning.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">S Code Check</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">S code verification result</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">OK or NG</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">OK: S code verification result normal</p> <p class="ptxt">NG: S code verification result abnormal</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">Problems may be caused by the following:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Registration has not been performed for the certification ECU (smart key ECU assembly) or ID code box (immobiliser code ECU).</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Malfunctions in the certification ECU (smart key ECU assembly) or ID code box (immobiliser code ECU).</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">L Code Check</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">L code verification result</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">OK or NG</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">OK: L code verification result normal</p> <p class="ptxt">NG: L code verification result abnormal</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%"> <p class="ptxt">Problems may be caused by the following:</p> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Registration has not been performed for the ID code box (immobiliser code ECU) or hybrid vehicle control ECU.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Malfunctions in the ID code box (immobiliser code ECU) or hybrid vehicle control ECU.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Unlock Request Receive</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Status of parking lock unlock command from certification ECU (smart key ECU assembly)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">OK or NG</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">OK: Certification ECU (smart key ECU assembly) sends parking lock unlock command (within 10 seconds of power switch turned on (ACC) or on (IG), or hybrid control system start operation performed)</p> <p class="ptxt">NG: Certification ECU (smart key ECU assembly) does not send parking lock unlock command (power switch not turned on (ACC) or on (IG), and hybrid control system start operation not performed)</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Lock Request Receive</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Status of parking lock lock command from certification ECU (smart key ECU assembly)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">OK or NG</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">OK: Certification ECU (smart key ECU assembly) sends parking lock lock command (within 10 seconds of any door opened with shift lever in P and power switch off)</p> <p class="ptxt">NG: Certification ECU (smart key ECU assembly) does not send parking lock lock command (no door opened with shift lever in P and power switch off)</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">S Code Check(Past)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">S code verification result (past)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">OK or NG(Past)</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">OK: Verification result normal (past)</p> <p class="ptxt">NG(Past): Verification result abnormal (past)</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">L Code Check(Past)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">L code verification result (past)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">OK or NG(Past)</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">OK: Verification confirmed (past)</p> <p class="ptxt">NG(Past): Verification not confirmed (past)</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Steering Lock</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">State of whether hybrid vehicle control ECU has determined parking lock is locked</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Set or Unset</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">Set: Parking lock locked</p> <p class="ptxt">Unset: Parking lock unlocked</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%">If this item displays "Unset", the parking lock is not locked.</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Steering Unlock</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">State of whether hybrid vehicle control ECU determined parking lock is unlocked</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Set or Unset</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">Set: Parking lock unlocked</p> <p class="ptxt">Unset: Parking lock locked</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%">If this item displays "Unset", the parking lock is not unlocked (hybrid control system cannot be started).</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">B Code Difference</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">B code mismatch</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Yes or No</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">Yes: Communication malfunction</p> <p class="ptxt">No: Communication normal</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">B Code</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">B code registration status</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Regd or No Regd</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">Regd: B code registered correctly</p> <p class="ptxt">No Regd: B code not registered correctly</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Door Unlock Mode2</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Door unlock mode</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">All or Driver</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%">Customize setting displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Ignition Available Area</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Ignition available area</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Front or All</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%">Customize setting displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Parking Wait Time</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Parking wait time</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">0.5s, 1.5s, 2.5s or 5s</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%">Customize setting displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">B-Dr Opening Operation</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Back door opening operation</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Long,Twice or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%">Customize setting displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Touch Activation Over Threshold</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Consecutive entry lock operation</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Active or Not Active</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%">Customize setting displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Wireless Signal Encryption Support</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Wireless signal encryption support</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">Yes or No</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">Yes: Wireless signal encryption supported</p> <p class="ptxt">No: Wireless signal encryption not supported</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Key Low Battery Warning</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Low transmitter battery warning</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%">Customize setting displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Engine Start Indicator</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Entry warning light lights</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%">Customize setting displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Door Unlock Sensor Touch Time Adjust</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Door unlock sensor touch time adjust</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">OFF, Short, Middle or Long</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%">Customize setting displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Number of Registered Key Codes</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Number of registered electrical key transmitter sub-assemblies</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">0 to 8</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%">Number of registered electrical key transmitter sub-assemblies</td> 
+              <td align="left" class="cellrowborder" headers="ID0EIBAC " width="NaN%">Up to 7 electrical key transmitter sub-assemblies can be registered.</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Short in Fr P Side Door Oscillators Circuit (Hist)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Short in front passenger door electrical key antenna circuit (history)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">OK or NG(Hist)</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">OK: Front passenger door electrical key antenna circuit was normal</p> <p class="ptxt">NG(Hist): Front passenger door electrical key antenna circuit was abnormal</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Short in D Side Door Oscillators Circuit (Hist)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Short in driver door electrical key antenna circuit (history)</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">OK or NG(Hist)</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">OK: Driver door electrical key antenna circuit was normal</p> <p class="ptxt">NG(Hist): Driver door electrical key antenna circuit was abnormal</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Short in Front P Side Door Oscillators Circuit</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Short in front passenger door electrical key antenna circuit</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">OK or NG</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">OK: Front passenger door electrical key antenna circuit is normal</p> <p class="ptxt">NG: Front passenger door electrical key antenna circuit is abnormal</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQAAC " width="NaN%">Short in Driver Side Door Oscillators Circuit</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWAAC " width="NaN%">Short in driver door electrical key antenna circuit</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3AAC " width="NaN%">OK or NG</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECBAC " width="NaN%"> <p class="ptxt">OK: Driver door electrical key antenna circuit is normal</p> <p class="ptxt">NG: Driver door electrical key antenna circuit is abnormal</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIBAC " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="step2Root-step2"/>
+<ul class="step2-list1 nonmark"> 
+         <li class="list1-item">
+<p class="step2-list1-nonmark-heading">*: Data from an actual vehicle provided for reference.</p>
+</li> 
+        </ul>
+<div class="fignone--bigImage">
+<img alt="A003L8YE08" class="figure-graphic--bigImage" src="../images/a003l8ye08.png"/>
+</div>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">*1: With power switch off, all doors closed, electrical key transmitter sub-assembly not inside vehicle and all doors locked, the unlock sensor of the front door outside handle assembly is touched.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">*2: Approximately 150 ms</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">*3: With power switch off, all doors closed, electrical key transmitter sub-assembly not inside vehicle and all doors unlocked, the lock sensor of the front door outside handle assembly is touched.</p>
+</li> 
+         </ul> 
+        </div>
+<br class="step2Root-step2"/>Body Electrical &gt; Main Body &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EQLAI" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EWLAI" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0E3LAI" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0ECMAI" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0EIMAI" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">ACC SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Power switch status</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%"> <p class="ptxt">ON: Power switch on (ACC)</p> <p class="ptxt">OFF: Power switch off</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIMAI " width="NaN%">"ON" is also displayed when the power switch is on (IG).</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">IG SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Power switch status</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%"> <p class="ptxt">ON: Power switch on (IG)</p> <p class="ptxt">OFF: Power switch off</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0EIMAI " width="NaN%">"OFF" is also displayed when the power switch is on (ACC).</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">RR Door Courtesy SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Rear door RH courtesy light switch</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%"> <p class="ptxt">ON: Rear door RH open</p> <p class="ptxt">OFF: Rear door RH closed</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">RL Door Courtesy SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Rear door LH courtesy light switch</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%"> <p class="ptxt">ON: Rear door LH open</p> <p class="ptxt">OFF: Rear door LH closed</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">Back Door Courtesy SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Back door courtesy light switch</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%"> <p class="ptxt">ON: Back door open</p> <p class="ptxt">OFF: Back door closed</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">FR Door Lock Pos</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Front door RH unlock detection switch signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">UNLOCK or LOCK</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%"> <p class="ptxt">UNLOCK: Front door RH unlocked</p> <p class="ptxt">LOCK: Front door RH locked</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">FR Door Courtesy SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Front door RH courtesy light switch signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%"> <p class="ptxt">ON: Front door RH open</p> <p class="ptxt">OFF: Front door RH closed</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">FL Door Lock Pos</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Front door LH unlock detection switch signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">UNLOCK or LOCK</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%"> <p class="ptxt">UNLOCK: Front door LH unlocked</p> <p class="ptxt">LOCK: Front door LH locked</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">FL Door Courtesy SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Front door LH courtesy light switch signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%"> <p class="ptxt">ON: Front door LH open</p> <p class="ptxt">OFF: Front door LH closed</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">RR-Door Lock Pos SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Rear door RH unlock detection switch signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%"> <p class="ptxt">ON: Rear door RH unlocked</p> <p class="ptxt">OFF: Rear door RH locked</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">RL-Door Lock Pos SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Rear door LH unlock detection switch signal</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%"> <p class="ptxt">ON: Rear door LH unlocked</p> <p class="ptxt">OFF: Rear door LH locked</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">Wireless Control</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Wireless door lock function</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%">Customize setting displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">Hazard Answer Back</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Hazard answer-back of entry function</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%">Customize setting displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">Open Door Warning</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Open door warning</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%">Customize setting displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">Auto Lock Time</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Automatic lock time</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">30 s, 60 s or 120 s</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%">Customize setting displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">Wireless Buzzer Resp</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Wireless buzzer answer-back of entry function</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%">Customize setting displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EQLAI " width="NaN%">Wireless Buzzer Vol</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWLAI " width="NaN%">Wireless buzzer volume</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3LAI " width="NaN%">Level7, Level6, Level5, Level4, Level3, Level2, Level1 or Level0</td> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAI " width="NaN%">Customize setting displayed</td> 
+              <td align="center" class="cellrowborder" headers="ID0EIMAI " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="step2Root-step2"/>Body Electrical &gt; Power Source Control &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EEXBI" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EKXBI" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EQXBI" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EWXBI" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0E3XBI" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EEXBI " width="NaN%">Steering Unlock Switch</td> 
+              <td align="left" class="cellrowborder" headers="ID0EKXBI " width="NaN%">State of parking lock motor signal output from hybrid vehicle control ECU</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQXBI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWXBI " width="NaN%"> <p class="ptxt">ON: Parking lock unlocked</p> <p class="ptxt">OFF: Parking lock locked</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0E3XBI " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">When the park (P) and the power switch is off, if any door is opened then closed, the parking lock is locked.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">When the key is in the cabin and the power switch is turned on (ACC) or on (IG), the parking lock unlocks.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">The hybrid control system cannot be started when the parking lock motor signal is OFF.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EEXBI " width="NaN%">Stop Light Switch1</td> 
+              <td align="left" class="cellrowborder" headers="ID0EKXBI " width="NaN%">State of brake pedal</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQXBI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWXBI " width="NaN%"> <p class="ptxt">ON: Brake pedal depressed</p> <p class="ptxt">OFF: Brake pedal released</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0E3XBI " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Use this item to determine whether the stop light switch assembly is malfunctioning.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">The hybrid control system cannot be started when this item is OFF.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">When stop light switch assembly is malfunctioning, the hybrid control system can be started by pressing and holding the power switch for a certain period of time.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EEXBI " width="NaN%">Start Switch1</td> 
+              <td align="left" class="cellrowborder" headers="ID0EKXBI " width="NaN%">Power switch 1 status</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQXBI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWXBI " width="NaN%"> <p class="ptxt">ON: Power switch pressed</p> <p class="ptxt">OFF: Power switch not pressed</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0E3XBI " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">If the power switch is pressed for a short time, the display may not change.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Use this item to determine whether the power switch input signal is malfunctioning.</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EEXBI " width="NaN%">Start Switch2</td> 
+              <td align="left" class="cellrowborder" headers="ID0EKXBI " width="NaN%">Power switch 2 status</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQXBI " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWXBI " width="NaN%"> <p class="ptxt">ON: Power switch pressed</p> <p class="ptxt">OFF: Power switch not pressed</p> </td> 
+              <td align="left" class="cellrowborder" headers="ID0E3XBI " width="NaN%"> <br class="cellrowborder"/>
+               <ul class="list1"> 
+                <li class="list1-item">
+<p class="list1-heading">Backup for "Start Switch 1". However, when the power switch is pressed and held, the control functions only when both Start Switch 1 and 2 are normal.</p>
+</li> 
+                <li class="list1-item">
+<p class="list1-heading">Behaves the same way as "Start Switch 1".</p>
+</li> 
+               </ul> </td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EEXBI " width="NaN%">Vehicle Speed Signal</td> 
+              <td align="left" class="cellrowborder" headers="ID0EKXBI " width="NaN%">Vehicle being driven or stopped</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQXBI " width="NaN%">Stop or Run</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWXBI " width="NaN%"> <p class="ptxt">Stop: Vehicle stopped</p> <p class="ptxt">Run: Vehicle being driven at 5 km/h (3 mph) or more</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0E3XBI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EEXBI " width="NaN%">Shift P Signal Pulse</td> 
+              <td align="left" class="cellrowborder" headers="ID0EKXBI " width="NaN%">P position signal status</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQXBI " width="NaN%">Normal1, Normal2, Normal3, Error1, Error2, Error3 or Unknown</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWXBI " width="NaN%"> <p class="ptxt">Normal1: Signal normal and park (P) state cannot be determined</p> <p class="ptxt">Normal2: Signal normal and park (P) selected</p> <p class="ptxt">Normal3: Signal normal and R, N, D or B selected</p> <p class="ptxt">Error1: Signal abnormal and park (P) state cannot be determined</p> <p class="ptxt">Error2: Signal abnormal and park (P) selected</p> <p class="ptxt">Error3: Signal abnormal and R, N, D or B selected</p> <p class="ptxt">Unknown: Other</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0E3XBI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EEXBI " width="NaN%">Power Supply Condition</td> 
+              <td align="left" class="cellrowborder" headers="ID0EKXBI " width="NaN%">Power supply state</td> 
+              <td align="center" class="cellrowborder" headers="ID0EQXBI " width="NaN%">All OFF, ACC ON, IG ON or ST ON</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWXBI " width="NaN%"> <p class="ptxt">All OFF: Power switch off</p> <p class="ptxt">ACC ON: Power switch on (ACC)</p> <p class="ptxt">IG ON: Power switch on (IG)</p> <p class="ptxt">ST ON: Sending hybrid control system start request signal</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0E3XBI " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="step2Root-step2"/>Body Electrical &gt; Combination Meter &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EFSCI" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0ELSCI" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0ERSCI" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EXSCI" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0E4SCI" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EFSCI " width="NaN%">Vehicle Speed Meter</td> 
+              <td align="left" class="cellrowborder" headers="ID0ELSCI " width="NaN%">Vehicle speed</td> 
+              <td align="left" class="cellrowborder" headers="ID0ERSCI " width="NaN%">Min.: 0 km/h (0 mph), Max.: 255 km/h (158 mph)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EXSCI " width="NaN%">Almost the same as actual vehicle speed</td> 
+              <td align="center" class="cellrowborder" headers="ID0E4SCI " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+</ol>
+</li>
+<li class="step1Root-step1">
+<p class="step1-heading">ACTIVE TEST</p>
+<div class="tip">
+       <p class="tiptitle">Tech Tips</p> 
+       <p class="ptxt">Using the GTS to perform Active Tests allows relays, VSVs, actuators and other items to be operated without removing any parts. This non-intrusive functional inspection can be very useful because intermittent operation may be discovered before parts or wiring is disturbed. Performing Active Tests early in troubleshooting is one way to save diagnostic time. Data List information can be displayed while performing Active Tests.</p> 
+      </div>
+<br class="step1Root-step1"/>
+<ol class="step2" type="a">
+<li class="step2Root-step2">
+<p class="step2-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Turn the GTS on.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Enter the following menus: Body Electrical / Entry&amp;Start or Main Body / Active Test.</p>
+</li>
+<li class="step2Root-step2">
+<p class="step2-heading">Perform Active Test according to the display on the GTS.</p>
+<br class="step2Root-step2"/>Body Electrical &gt; Entry&amp;Start &gt; Active Test<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EN2CI" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0ET2CI" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EZ2CI" width="NaN%">Control Range</th> 
+              <th align="center" class="cellrowborder" id="ID0E62CI" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EN2CI " width="NaN%">Overhead Tuner Power Supply ON</td> 
+              <td align="center" class="cellrowborder" headers="ID0ET2CI " width="NaN%">Electrical key and tire pressure monitoring system receiver assembly</td> 
+              <td align="center" class="cellrowborder" headers="ID0EZ2CI " width="NaN%">OFF/ON</td> 
+              <td align="center" class="cellrowborder" headers="ID0E62CI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EN2CI " width="NaN%">Power for P-Seat Sens</td> 
+              <td align="center" class="cellrowborder" headers="ID0ET2CI " width="NaN%">Front door outside handle (for front passenger door)</td> 
+              <td align="center" class="cellrowborder" headers="ID0EZ2CI " width="NaN%">OFF/ON</td> 
+              <td align="center" class="cellrowborder" headers="ID0E62CI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EN2CI " width="NaN%">Multi Channel SW</td> 
+              <td align="center" class="cellrowborder" headers="ID0ET2CI " width="NaN%">Electrical key and tire pressure monitoring system receiver assembly</td> 
+              <td align="center" class="cellrowborder" headers="ID0EZ2CI " width="NaN%">CH1/CH2</td> 
+              <td align="center" class="cellrowborder" headers="ID0E62CI " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="step2Root-step2"/>Body Electrical &gt; Main Body &gt; Active Test<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EPFDI" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EVFDI" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0E2FDI" width="NaN%">Control Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EBGDI" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EPFDI " width="NaN%">Door Lock</td> 
+              <td align="left" class="cellrowborder" headers="ID0EVFDI " width="NaN%">Door lock motor</td> 
+              <td align="center" class="cellrowborder" headers="ID0E2FDI " width="NaN%">OFF/Unlock/Lock</td> 
+              <td align="center" class="cellrowborder" headers="ID0EBGDI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EPFDI " width="NaN%">D-Door Unlock</td> 
+              <td align="left" class="cellrowborder" headers="ID0EVFDI " width="NaN%">Driver door lock motor</td> 
+              <td align="center" class="cellrowborder" headers="ID0E2FDI " width="NaN%">OFF/ON</td> 
+              <td align="center" class="cellrowborder" headers="ID0EBGDI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EPFDI " width="NaN%">Trunk and Back-Door Open</td> 
+              <td align="left" class="cellrowborder" headers="ID0EVFDI " width="NaN%">Back door lock motor</td> 
+              <td align="center" class="cellrowborder" headers="ID0E2FDI " width="NaN%">OFF/ON</td> 
+              <td align="center" class="cellrowborder" headers="ID0EBGDI " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EPFDI " width="NaN%">Wireless Buzzer</td> 
+              <td align="left" class="cellrowborder" headers="ID0EVFDI " width="NaN%">Wireless door lock buzzer</td> 
+              <td align="center" class="cellrowborder" headers="ID0E2FDI " width="NaN%">OFF/ON</td> 
+              <td align="center" class="cellrowborder" headers="ID0EBGDI " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

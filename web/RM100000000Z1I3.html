@@ -1,0 +1,301 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="CRUISE CONTROL SYSTEM Cruise Main Indicator Light Circuit" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058076" name="sectionId"/> 
+  <meta content="CRUISE CONTROL" name="sectionName"/> 
+  <meta content="_0283208" name="ttlId"/> 
+  <meta content="CRUISE CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000Z1I3" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Cruise Main Indicator Light Circuit</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">CRUISE CONTROL SYSTEM<span class="topictitle1"> Cruise Main Indicator Light Circuit</span>
+</h1>
+<div class="subpara" id="RM100000000Z1I3__RM100000000Z1I3_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The hybrid vehicle control ECU illuminates the cruise control indicator by sending indicator output demand signals to the combination meter assembly via CAN communication. The cruise control indicator illuminates when the cruise control system is turned on using the cruise control main switch (ON-OFF button). If a malfunction is detected, the cruise control indicator turns off and a warning message is displayed. The cruise control indicator circuit uses CAN communication. If the cruise control indicator is not functioning correctly, check for CAN communication DTCs before troubleshooting this circuit.</p> 
+   </div>
+<div class="subpara" id="RM100000000Z1I3__RM100000000Z1I3_06">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">Before replacing the hybrid vehicle control ECU, refer to Service Bulletin.</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000Z1I3__RM100000000Z1I3_05">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000Z1I3__RM100000000Z1I3_05_0001">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (Meter Display 1)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Combination Meter / Active Test.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Perform the Active Test according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Active Test<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EKBAC" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EQBAC" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EWBAC" width="NaN%">Control Range</th> 
+              <th align="center" class="cellrowborder" id="ID0E3BAC" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EKBAC " width="NaN%">Meter Display 1</td> 
+              <td align="left" class="cellrowborder" headers="ID0EQBAC " width="NaN%">Multi-information display</td> 
+              <td align="left" class="cellrowborder" headers="ID0EWBAC " width="NaN%">OFF or All</td> 
+              <td align="center" class="cellrowborder" headers="ID0E3BAC " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Combination Meter &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EEHAC" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EEHAC " width="NaN%">Meter Display 1</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EDMAC" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EDMAC">The multi-information display turns on or off according to the operation of the Active Test.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4MAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E4MAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EGOAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EMOAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EGOAC " width="NaN%">The multi-information display in the combination meter assembly turns on or off according to the operation of the Active Test.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMOAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EGOAC " width="NaN%">The multi-information display in the combination meter assembly does not turn on or off according to the operation of the Active Test.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMOAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO METER / GAUGE SYSTEM <a class="content6-ptxt-xref" href="RM1000000011ARR.html#RM1000000011ARR">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000Z1I3__RM100000000Z1I3_05_0004">
+<p class="testgrp-heading">READ VALUE USING GTS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Cruise Control / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Cruise Control &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E2DAE" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EBEAE" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EHEAE" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0ENEAE" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0ETEAE" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E2DAE " width="NaN%">Cruise Indicator</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBEAE " width="NaN%">Cruise control indicator light signal</td> 
+              <td align="left" class="cellrowborder" headers="ID0EHEAE " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0ENEAE " width="NaN%"> <p class="ptxt">ON: Cruise control indicator light turns on</p> <p class="ptxt">OFF: Cruise control indicator light turns off</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0ETEAE " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Powertrain &gt; Cruise Control &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EMKAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMKAE " width="NaN%">Cruise Indicator</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EGPAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EGPAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPQAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EVQAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EPQAE " width="NaN%">The cruise control indicator illuminates and turns off according to the operation of the cruise control main switch (ON-OFF button).</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVQAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EPQAE " width="NaN%">The cruise control indicator does not illuminate but the Data List item Cruise Indicator changes according to the operation of the cruise control main switch (ON-OFF button).</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVQAE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EPQAE " width="NaN%">The cruise control indicator does not illuminate and the Data List item Cruise Indicator does not change according to the operation of the cruise control main switch (ON-OFF button).</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVQAE " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>PROCEED TO NEXT SUSPECTED AREA SHOWN IN PROBLEM SYMPTOMS TABLE <a class="content6-ptxt-xref" href="RM100000000Z1I1.html#RM100000000Z1I1">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE METER CIRCUIT PLATE <a class="content6-ptxt-xref" href="RM1000000011ATA.html#RM1000000011ATA">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HYBRID VEHICLE CONTROL ECU <a class="content6-ptxt-xref" href="RM10000000115AJ.html#RM10000000115AJ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

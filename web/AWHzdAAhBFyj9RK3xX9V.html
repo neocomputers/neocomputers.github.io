@@ -1,0 +1,297 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="DYNAMIC RADAR CRUISE CONTROL SYSTEM SYSTEM DIAGRAM" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058076" name="sectionId"/> 
+  <meta content="CRUISE CONTROL" name="sectionName"/> 
+  <meta content="_0283209" name="ttlId"/> 
+  <meta content="DYNAMIC RADAR CRUISE CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="U" name="paraCategory"/> 
+  <meta content="SYSTEM DIAGRAM" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000Z1IY" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>DYNAMIC RADAR CRUISE CONTROL SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">DYNAMIC RADAR CRUISE CONTROL SYSTEM<span class="topictitle1"> SYSTEM DIAGRAM</span>
+</h1>
+<div class="subpara" id="RM100000000Z1IY__RM100000000Z1IY_z0">
+     
+    <div class="fignone--bigImage">
+<img alt="A003NIAE08" class="figure-graphic--bigImage" src="../images/a003niae08.png"/>
+</div> 
+    <div class="fignone--bigImage">
+<img alt="A003K26E04" class="figure-graphic--bigImage" src="../images/a003k26e04.png"/>
+</div> 
+    <div class="fignone--bigImage">
+<img alt="A003M8XE02" class="figure-graphic--bigImage" src="../images/a003m8xe02.png"/>
+</div> 
+    <div class="fignone--bigImage">
+<img alt="A003NIRE04" class="figure-graphic--bigImage" src="../images/a003nire04.png"/>
+</div> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<caption class="content5-table">
+       Communication Table
+      </caption>
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EAG" width="NaN%">Sender</th> 
+        <th align="center" class="cellrowborder" id="ID0EGG" width="NaN%">Receiver</th> 
+        <th align="center" class="cellrowborder" id="ID0EMG" width="NaN%">Signal</th> 
+        <th align="center" class="cellrowborder" id="ID0ESG" width="NaN%">Line</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EAG " width="NaN%">Hybrid Vehicle Control ECU</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGG " width="NaN%">Driving Support ECU Assembly</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Cruise control operation signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Accelerator pedal idle position signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Accel override operation signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Cruise control speed status signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Approach warning signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Brake signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Cruise control main switch (ON/OFF button) on signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Cruise control mode signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Set vehicle-to-vehicle distance signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Cruise preset vehicle speed signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0ESG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EAG " width="NaN%">Hybrid Vehicle Control ECU</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGG " width="NaN%">Skid Control ECU (Brake Booster with Master Cylinder Assembly)</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Cruise control operation signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Accelerator pedal idle position signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Cruise control operation request signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Braking request signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Target acceleration from cruise control system signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0ESG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EAG " width="NaN%">Hybrid Vehicle Control ECU</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGG " width="NaN%">Combination Meter Assembly</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Low speed cancel buzzer request signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Low speed zone leading vehicle lost buzzer signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Control vehicle speed unit signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Cruise control display ID signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Cruise control vehicle speed signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0ESG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EAG " width="NaN%">Hybrid Vehicle Control ECU</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGG " width="NaN%">Forward Recognition Camera</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMG " width="NaN%">Cruise control operation signal</td> 
+        <td align="center" class="cellrowborder" headers="ID0ESG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EAG " width="NaN%">Driving Support ECU Assembly</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGG " width="NaN%">Hybrid Vehicle Control ECU</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Cruise control target acceleration signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Cruise control mode signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Target vehicle detection signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Vehicle-to-vehicle distance control switch status signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Detection of dirt adhesion on millimeter wave radar sensor signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Millimeter wave radar sensor malfunction signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Approach warning signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Bad environment detection signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Cruise control target acceleration raw data signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Force request for driving support ECU assembly signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Control status of driving support ECU assembly signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0ESG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0EAG " width="NaN%">Driving Support ECU Assembly</td> 
+        <td class="cellrowborder" headers="ID0EGG " width="NaN%">Combination Meter Assembly</td> 
+        <td class="cellrowborder" headers="ID0EMG " width="NaN%">Millimeter wave radar sensor beam axis deviation signal</td> 
+        <td align="center" class="cellrowborder" headers="ID0ESG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EAG " width="NaN%">Skid Control ECU (Brake Booster with Master Cylinder Assembly)</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGG " width="NaN%">Driving Support ECU Assembly</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Stop light switch status signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Yaw rate sensor zero point signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Yaw rate sensor zero point malfunction signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Under brake control signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0ESG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0EAG " width="NaN%">Skid Control ECU (Brake Booster with Master Cylinder Assembly)</td> 
+        <td class="cellrowborder" headers="ID0EGG " width="NaN%">Hybrid Vehicle Control ECU</td> 
+        <td class="cellrowborder" headers="ID0EMG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Wheel speed signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Under TRC control signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Under VSC control signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Cruise control cancellation request signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Stop light switch control relay malfunction signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Temporary inhibition of brake control signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Under brake control signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Presumed road slope signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Estimated acceleration signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0ESG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EAG " width="NaN%">Steering Sensor</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGG " width="NaN%">Driving Support ECU Assembly</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Steering sensor malfunction signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Steering angle signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Steering sensor zero point signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0ESG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EAG " width="NaN%">Main Body ECU (Multiplex Network Body ECU)</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGG " width="NaN%">Driving Support ECU Assembly</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMG " width="NaN%">Country specification information signal</td> 
+        <td align="center" class="cellrowborder" headers="ID0ESG " width="NaN%">CAN</td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EAG " width="NaN%">Yaw Rate and Acceleration Sensor</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGG " width="NaN%">Driving Support ECU Assembly</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Yaw rate sensor signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Yaw rate sensor malfunction signal</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Yaw rate sensor voltage signal</p>
+</li> 
+         </ul> </td> 
+        <td align="center" class="cellrowborder" headers="ID0ESG " width="NaN%">CAN</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+</div>
+
+</html>

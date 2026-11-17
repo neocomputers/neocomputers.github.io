@@ -1,0 +1,343 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="METER / GAUGE SYSTEM ON-VEHICLE INSPECTION" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058040" name="sectionId"/> 
+  <meta content="METER / GAUGE / DISPLAY" name="sectionName"/> 
+  <meta content="_0297242" name="ttlId"/> 
+  <meta content="METER / GAUGE SYSTEM" name="ttlName"/> 
+  <meta content="G" name="paraCategory"/> 
+  <meta content="ON-VEHICLE INSPECTION" name="paraName"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000011ARU" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>METER / GAUGE SYSTEM</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">METER / GAUGE SYSTEM<span class="topictitle1"> ON-VEHICLE INSPECTION</span>
+</h1>
+<div class="subpara" id="RM1000000011ARU__RM1000000011ARU_01">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="s1">
+<li class="s1Root-s-1">
+<p class="s1-heading">INSPECT COMBINATION METER ASSEMBLY (METER CIRCUIT PLATE)</p>
+<br class="s1Root-s-1"/>
+<ol class="s2" type="a">
+<li class="s2Root-s2">
+<p class="s2-heading">Check speedometer operation</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <br class="note"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">The combination meter assembly (meter circuit plate) receives the vehicle speed signal from the skid control ECU (brake booster with master cylinder assembly) via CAN communication. Therefore, perform the following inspection referring to values on the Data List of the skid control ECU (brake booster with master cylinder assembly) because it is the source of the vehicle speed signal.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Data List values of the skid control ECU (brake booster with master cylinder assembly) are used for this inspection. Therefore, make sure to perform this inspection after confirming that DTCs are not output.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If the tire size or tire inflation pressure is not within the specified range, or the tires are excessively worn, the speedometer indication error will increase. Therefore, make sure to perform this inspection after checking that the tire size, tire inflation pressure and tire wear are in the specified range.</p>
+</li> 
+         </ul> 
+        </div>
+<br class="s2Root-s2"/>
+<ol class="s3" type="i">
+<li class="s3Root-s3">
+<p class="s3-heading">Warm up the engine.</p>
+</li>
+<li class="s3Root-s3">
+<p class="s3-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="s3Root-s3">
+<p class="s3-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="s3Root-s3">
+<p class="s3-heading">Turn the GTS on.</p>
+</li>
+<li class="s3Root-s3">
+<p class="s3-heading">Enter the following menus: Chassis / ABS/VSC/TRC / Data List.</p>
+</li>
+<li class="s3Root-s3">
+<p class="s3-heading">Read the Data List according to the display on the GTS.</p>
+<br class="s3Root-s3"/>Chassis &gt; ABS/VSC/TRC &gt; Data List<div class="tablenoborder">
+             <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+               <tr> 
+                <th align="center" class="cellrowborder" id="ID0EPBAC" width="NaN%">Tester Display</th> 
+                <th align="center" class="cellrowborder" id="ID0EVBAC" width="NaN%">Measurement Item</th> 
+                <th align="center" class="cellrowborder" id="ID0E2BAC" width="NaN%">Range</th> 
+                <th align="center" class="cellrowborder" id="ID0EBCAC" width="NaN%">Normal Condition</th> 
+                <th align="center" class="cellrowborder" id="ID0EHCAC" width="NaN%">Diagnostic Note</th> 
+               </tr> 
+              </thead>
+<tbody class="gts-info-title-table-table"> 
+               <tr> 
+                <td align="left" class="cellrowborder" headers="ID0EPBAC " width="NaN%">Vehicle Speed</td> 
+                <td align="left" class="cellrowborder" headers="ID0EVBAC " width="NaN%">Maximum wheel speed sensor</td> 
+                <td align="center" class="cellrowborder" headers="ID0E2BAC " width="NaN%">Min.: 0 km/h (0 mph), Max.: 326.4 km/h (203 mph)</td> 
+                <td align="left" class="cellrowborder" headers="ID0EBCAC " width="NaN%">Vehicle stopped: 0 km/h (0 mph)</td> 
+                <td align="left" class="cellrowborder" headers="ID0EHCAC " width="NaN%">When driving at constant speed: No large fluctuations</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+<br class="s3Root-s3"/>Chassis &gt; ABS/VSC/TRC &gt; Data List<div class="tablenoborder">
+             <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+               <tr> 
+                <th align="center" class="cellrowborder" id="ID0EVHAC" width="NaN%">Tester Display</th> 
+               </tr> 
+              </thead>
+<tbody class="gts-info-title-table-table"> 
+               <tr> 
+                <td align="left" class="cellrowborder" headers="ID0EVHAC " width="NaN%">Vehicle Speed</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div>
+<div class="tablenoborder">
+           <table class="s3-table">
+<caption class="s3-table">
+             Reference mph
+            </caption>
+<thead align="left" class="s3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ECNAC" width="NaN%">GTS Indication (mph)</th> 
+              <th align="center" class="cellrowborder" id="ID0EINAC" width="NaN%">Acceptable Range (mph)</th> 
+             </tr> 
+            </thead>
+<tbody class="s3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ECNAC " width="NaN%">20</td> 
+              <td align="center" class="cellrowborder" headers="ID0EINAC " width="NaN%">21 to 23</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ECNAC " width="NaN%">40</td> 
+              <td align="center" class="cellrowborder" headers="ID0EINAC " width="NaN%">42 to 44</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ECNAC " width="NaN%">60</td> 
+              <td align="center" class="cellrowborder" headers="ID0EINAC " width="NaN%">63 to 65</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ECNAC " width="NaN%">80</td> 
+              <td align="center" class="cellrowborder" headers="ID0EINAC " width="NaN%">83 to 85</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ECNAC " width="NaN%">100</td> 
+              <td align="center" class="cellrowborder" headers="ID0EINAC " width="NaN%">104 to 106</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ECNAC " width="NaN%">120</td> 
+              <td align="center" class="cellrowborder" headers="ID0EINAC " width="NaN%">125 to 127</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ECNAC " width="NaN%">140</td> 
+              <td align="center" class="cellrowborder" headers="ID0EINAC " width="NaN%">146 to 148</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ECNAC " width="NaN%">160</td> 
+              <td align="center" class="cellrowborder" headers="ID0EINAC " width="NaN%">166 to 168</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0ECNAC " width="NaN%">180</td> 
+              <td align="center" class="cellrowborder" headers="ID0EINAC " width="NaN%">187 to 189</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<div class="tablenoborder">
+           <table class="s3-table">
+<caption class="s3-table">
+             Reference km/h
+            </caption>
+<thead align="left" class="s3-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EEDAE" width="NaN%">GTS Indication (km/h)</th> 
+              <th align="center" class="cellrowborder" id="ID0EKDAE" width="NaN%">Acceptable Range (km/h)</th> 
+             </tr> 
+            </thead>
+<tbody class="s3-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EEDAE " width="NaN%">20</td> 
+              <td align="center" class="cellrowborder" headers="ID0EKDAE " width="NaN%">21 to 23</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EEDAE " width="NaN%">40</td> 
+              <td align="center" class="cellrowborder" headers="ID0EKDAE " width="NaN%">42 to 44</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EEDAE " width="NaN%">60</td> 
+              <td align="center" class="cellrowborder" headers="ID0EKDAE " width="NaN%">63 to 65</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EEDAE " width="NaN%">80</td> 
+              <td align="center" class="cellrowborder" headers="ID0EKDAE " width="NaN%">84 to 86</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EEDAE " width="NaN%">100</td> 
+              <td align="center" class="cellrowborder" headers="ID0EKDAE " width="NaN%">104 to 106</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EEDAE " width="NaN%">120</td> 
+              <td align="center" class="cellrowborder" headers="ID0EKDAE " width="NaN%">125 to 127</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EEDAE " width="NaN%">140</td> 
+              <td align="center" class="cellrowborder" headers="ID0EKDAE " width="NaN%">146 to 148</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EEDAE " width="NaN%">160</td> 
+              <td align="center" class="cellrowborder" headers="ID0EKDAE " width="NaN%">167 to 169</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" headers="ID0EEDAE " width="NaN%">180</td> 
+              <td align="center" class="cellrowborder" headers="ID0EKDAE " width="NaN%">187 to 189</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="s3-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0ESIAE" class="spec-title">OK</th> 
+            </tr> 
+            <tr class="spec-specitem"> 
+             <td class="specitem-ptxt" headers="ID0ESIAE">Speedometer reading is within the acceptable range at each vehicle speed.</td> 
+            </tr> 
+           </tbody>
+</table>
+</li>
+</ol>
+</li>
+<li class="s2Root-s2">
+<p class="s2-heading">Check LED illumination (LED check)</p>
+<br class="s2Root-s2"/>
+<ol class="s3" type="i">
+<li class="s3Root-s3">
+<p class="s3-heading">Check the illumination function of the warning or indicator lights listed below when turning the power switch on (IG).</p>
+<table class="spec-with-table">
+<tbody class="s3-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0EIKAE" class="spec-title">OK</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0EIKAE" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0ERLAE" width="NaN%">Warning or Indicator Light</th> 
+                   <th align="center" class="spec-table-item" id="ID0EXLAE" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td class="spec-table-item" headers="ID0ERLAE " width="NaN%">Brake warning light / red (malfunction)</td> 
+                   <td class="spec-table-item" headers="ID0EXLAE " rowspan="5" width="NaN%"> <br class="cellrowborder"/>
+                    <ul class="list1"> 
+                     <li class="list1-item">
+<p class="list1-heading">Warning or indicator light comes on when the power switch is turned on (IG).</p>
+</li> 
+                     <li class="list1-item">
+<p class="list1-heading">Warning or indicator light comes on for 3 seconds when the power switch is turned from off to on (READY), then goes off.</p>
+</li> 
+                    </ul> </td> 
+                  </tr> 
+                  <tr> 
+                   <td class="spec-table-item" headers="ID0ERLAE " width="NaN%">Brake warning Light / yellow (minor malfunction)</td> 
+                  </tr> 
+                  <tr> 
+                   <td class="spec-table-item" headers="ID0ERLAE " width="NaN%">Slip indicator light</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="left" class="spec-table-item" headers="ID0ERLAE " width="NaN%">VSC OFF indicator light</td> 
+                  </tr> 
+                  <tr> 
+                   <td class="spec-table-item" headers="ID0ERLAE " width="NaN%">ABS warning light</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="left" class="spec-table-item" headers="ID0ERLAE " width="NaN%">ICS OFF indicator light*1</td> 
+                   <td class="spec-table-item" headers="ID0EXLAE " rowspan="5" width="NaN%">Warning or indicator light comes on for about 3 seconds after turning the power switch on (IG).</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="left" class="spec-table-item" headers="ID0ERLAE " width="NaN%">Tire pressure warning light</td> 
+                  </tr> 
+                  <tr> 
+                   <td class="spec-table-item" headers="ID0ERLAE " width="NaN%">PCS warning light*2</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="left" class="spec-table-item" headers="ID0ERLAE " width="NaN%">Master warning light</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="left" class="spec-table-item" headers="ID0ERLAE " width="NaN%">Engine coolant temperature hot warning light</td> 
+                  </tr> 
+                  <tr> 
+                   <td class="spec-table-item" headers="ID0ERLAE " width="NaN%">Passenger airbag OFF indicator light</td> 
+                   <td class="spec-table-item" headers="ID0EXLAE " rowspan="2" width="NaN%">Indicator light comes on for about 4 seconds after turning the power switch on (IG).</td> 
+                  </tr> 
+                  <tr> 
+                   <td class="spec-table-item" headers="ID0ERLAE " width="NaN%">Passenger airbag ON indicator light</td> 
+                  </tr> 
+                  <tr> 
+                   <td class="spec-table-item" headers="ID0ERLAE " width="NaN%">SRS warning light</td> 
+                   <td class="spec-table-item" headers="ID0EXLAE " width="NaN%">Warning light comes on for about 6 seconds after turning the power switch on (IG).</td> 
+                  </tr> 
+                  <tr> 
+                   <td class="spec-table-item" headers="ID0ERLAE " width="NaN%">EPS warning light</td> 
+                   <td class="spec-table-item" headers="ID0EXLAE " width="NaN%">Warning light (red) illuminates for 2 seconds and then the warning light (yellow) illuminates for 2 seconds when the power switch is turned on (IG).</td> 
+                  </tr> 
+                  <tr> 
+                   <td class="spec-table-item" headers="ID0ERLAE " width="NaN%">Charge warning light</td> 
+                   <td class="spec-table-item" headers="ID0EXLAE " rowspan="4" width="NaN%">Warning or indicator light comes on when the power switch is turned on (IG).</td> 
+                  </tr> 
+                  <tr> 
+                   <td class="spec-table-item" headers="ID0ERLAE " width="NaN%">MIL (Check engine warning light)</td> 
+                  </tr> 
+                  <tr> 
+                   <td class="spec-table-item" headers="ID0ERLAE " width="NaN%">Engine oil pressure warning light</td> 
+                  </tr> 
+                  <tr> 
+                   <td class="spec-table-item" headers="ID0ERLAE " width="NaN%">S-IPA indicator light*1</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table>
+<br class="s3Root-s3"/>
+<ul class="s3-list1 nonmark"> 
+           <li class="list1-item">
+<p class="s3-list1-nonmark-heading">*1: w/ Intelligent Clearance Sonar System</p>
+</li> 
+           <li class="list1-item">
+<p class="s3-list1-nonmark-heading">*2: w/ Pre-crash Safety System</p>
+</li> 
+          </ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

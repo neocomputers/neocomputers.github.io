@@ -1,0 +1,1242 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="PLUG-IN CHARGE CONTROL SYSTEM Control Pilot Signal Circuit" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058056" name="sectionId"/> 
+  <meta content="HYBRID / BATTERY CONTROL" name="sectionName"/> 
+  <meta content="_0296365" name="ttlId"/> 
+  <meta content="PLUG-IN CHARGE CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM1000000011O1X" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Control Pilot Signal Circuit</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">PLUG-IN CHARGE CONTROL SYSTEM<span class="topictitle1"> Control Pilot Signal Circuit</span>
+</h1>
+<div class="subpara" id="RM1000000011O1X__RM1000000011O1X_02">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The electric vehicle charger assembly detects when a charging connector has been connected and charging is possible by using the CPLT signal (control pilot signal). The electric vehicle charger assembly will then start the plug-in charge control system and change the CPLT signal (control pilot signal).</p> 
+    <p class="content5-ptxt">Using the waveform duty ratio of the CPLT signal (control pilot signal), the electric vehicle charger assembly recognizes the rated amperage of a charging facility (a socket using a charging cable) or charging station. By changing the CPLT signal (control pilot signal), the electric vehicle charger assembly transmits the status that the vehicle is ready to start charging, to the charging facility (CCID unit).</p> 
+   </div>
+<div class="subpara" id="RM1000000011O1X__RM1000000011O1X_03">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<p class="figcap">Figure 1. for Electric Vehicle Charger Cable Assembly (Type 1)</p>
+<img alt="B006HIYE05" class="figure-graphic--bigImage" src="../images/b006hiye05.png"/>
+</div> 
+    <div class="fignone--bigImage">
+<p class="figcap">Figure 2. for Electric Vehicle Charger Cable Assembly (Type 2)</p>
+<img alt="B006HIYE04" class="figure-graphic--bigImage" src="../images/b006hiye04.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM1000000011O1X__RM1000000011O1X_04">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    
+    <div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+     <br class="caution"/>
+     <ul class="list1"> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006HUP" class="figure-graphic" src="../images/b006hup.png"/> 
+       </div>
+<p class="list1-heading">Before the following operations are conducted, take precautions to prevent electric shock by turning the power switch off, wearing insulated gloves, and removing the service plug grip from HV battery.</p>
+</li> 
+      <br class="list1-li-list2"/>
+<ul class="li-list2-list2"> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Inspecting the high-voltage system</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the inverter with converter assembly</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the HV battery</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the electric vehicle charger assembly</p>
+</li> 
+        <li class="list2-item">
+<p class="li-list2-list2-heading">Disconnecting the low voltage connector of the solar energy control unit</p>
+</li> 
+       </ul> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006IQP" class="figure-graphic" src="../images/b006iqp.png"/> 
+       </div>
+<p class="list1-heading">To prevent electric shock, make sure to remove the service plug grip to cut off the high voltage circuit before servicing the vehicle.</p>
+</li> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006HQC" class="figure-graphic" src="../images/b006hqc.png"/> 
+       </div>
+<p class="list1-heading">After removing the service plug grip from the HV battery, put it in your pocket to prevent other technicians from accidentally reconnecting it while you are working on the high-voltage system.</p>
+</li> 
+      <li class="list1-item clearer">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+        <img alt="B006IVPC05" class="figure-graphic" src="../images/b006ivpc05.png"/> 
+        <div class="figure-p"> 
+         <div class="tablenoborder">
+          <table class="p-table">
+<tbody class="p-table"> 
+            <tr> 
+             <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+             <td class="cellrowborder" width="NaN%">Without waiting for 10 minutes</td> 
+            </tr> 
+           </tbody>
+</table> 
+         </div> 
+        </div> 
+       </div>
+<p class="list1-heading">After removing the service plug grip, wait for at least 10 minutes before touching any of the high-voltage connectors or terminals. After waiting for 10 minutes, check the voltage at the terminals in the inspection point in the inverter with converter assembly. The voltage should be 0 V before beginning work.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM1000000011O15.html#RM1000000011O15">Click here</a>
+</p>
+<div class="tip">
+        <p class="tiptitle">Tech Tips</p> 
+        <p class="ptxt">Waiting for at least 10 minutes is required to discharge the high-voltage capacitor inside the inverter with converter assembly and the electric vehicle charger assembly.</p> 
+       </div>
+</li> 
+     </ul> 
+    </div> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">After turning the power switch off, waiting time may be required before disconnecting the cable from the negative (-) auxiliary battery terminal. Therefore, make sure to read the disconnecting the cable from the negative (-) auxiliary battery terminal notices before proceeding with work.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM100000001AAN7.html#RM100000001AAN7">Click here</a>
+</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM1000000011O1X__RM1000000011O1X_06">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM1000000011O1X__RM1000000011O1X_06_0001">
+<p class="testgrp-heading">READ VALUE USING GTS (CHARGING CURRENT DUTY FROM CHARGER, TIME CYCLE OF CHARGING CURRENT DUTY FROM CHARGER)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Using the electric vehicle charger cable assembly, plugincharge the vehicle.</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2"> <p class="test2-heading">Connect the GTS to the DLC3.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Turn the power switch on (IG).</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Turn the GTS on.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Enter the following menus: Powertrain / Plug-in Control / Data List / Charging Current Duty from Charger, Time Cycle of Charging Current Duty from Charger.</p> <br class="test2Root-test2"/>
+          Powertrain &gt; Plug-in Control &gt; Data List<div class="tablenoborder">
+             <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+               <tr> 
+                <th align="center" class="cellrowborder" id="ID0ESKAC" width="NaN%">Tester Display</th> 
+               </tr> 
+              </thead>
+<tbody class="gts-info-title-table-table"> 
+               <tr> 
+                <td align="left" class="cellrowborder" headers="ID0ESKAC " width="NaN%">Charging Current Duty from Charger</td> 
+               </tr> 
+               <tr> 
+                <td align="left" class="cellrowborder" headers="ID0ESKAC " width="NaN%">Time Cycle of Charging Current Duty from Charger</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Read the value displayed on the GTS.</p> <br class="test2Root-test2"/>
+          Powertrain &gt; Plug-in Control &gt; Data List<div class="tablenoborder">
+             <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+               <tr> 
+                <th align="center" class="cellrowborder" id="ID0ELCAE" width="NaN%">Tester Display</th> 
+                <th align="center" class="cellrowborder" id="ID0ERCAE" width="NaN%">Measurement Item</th> 
+                <th align="center" class="cellrowborder" id="ID0EXCAE" width="NaN%">Normal Condition</th> 
+               </tr> 
+              </thead>
+<tbody class="gts-info-title-table-table"> 
+               <tr> 
+                <td align="left" class="cellrowborder" headers="ID0ELCAE " width="NaN%">Charging Current Duty from Charger</td> 
+                <td align="left" class="cellrowborder" headers="ID0ERCAE " width="NaN%">Duty value of CPLT signal generated from the electric vehicle charger assembly</td> 
+                <td align="left" class="cellrowborder" headers="ID0EXCAE " width="NaN%"> <p class="ptxt">Electric vehicle charger cable assembly connected: 5 to 39%</p> <p class="ptxt">Not connected to EVSE (charging station) or no power supplied: 0%</p> </td> 
+               </tr> 
+               <tr> 
+                <td align="left" class="cellrowborder" headers="ID0ELCAE " width="NaN%">Time Cycle of Charging Current Duty from Charger</td> 
+                <td align="left" class="cellrowborder" headers="ID0ERCAE " width="NaN%">Duration of 1 cycle of CPLT signal</td> 
+                <td align="left" class="cellrowborder" headers="ID0EXCAE " width="NaN%">CPLT (control pilot signal) generated: 951 to 1049 μs</td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Turn the power switch off.</p> </li>
+<li class="test2Root-test2"> <p class="test2-heading">Disconnect the electric vehicle charger cable assembly.</p> </li>
+</ol>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZJAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZJAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EBLAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EHLAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EBLAE " width="NaN%">Values are as specified in Normal Condition column</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHLAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EBLAE " width="NaN%">Values are not as specified in Normal Condition column</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHLAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO PROBLEM SYMPTOMS TABLE (PLUG-IN CHARGE CONTROL SYSTEM) <a class="content6-ptxt-xref" href="RM1000000011O1C.html#RM1000000011O1C">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">B</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011O1X__RM1000000011O1X_06_0003">
+<p class="testgrp-heading">CHECK INLET AC CHARGER CABLE (BODY GROUND)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Open the charging port lid.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">for Electric vehicle charger cable assembly (Type 1):</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="B006HUXC07" class="figure-graphic" src="../images/b006huxc07.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*A</td> 
+                <td align="left" class="cellrowborder" width="NaN%">w/ Charging Connector Locking System</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*B</td> 
+                <td align="left" class="cellrowborder" width="NaN%">w/o Charging Connector Locking System</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Inlet AC Charger Cable (for Type 1)</p> <p class="ptxt">(Charging Inlet Side)</p> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="test2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0EATAE" class="spec-title">Standard Resistance</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0EATAE" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<caption class="table">
+                  w/ Charging Connector Locking System
+                 </caption>
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EQUAE" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EWUAE" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0E3UAE" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EQUAE " width="NaN%">h1-5 (GND) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EWUAE " width="NaN%">Power switch off</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E3UAE " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0EATAE" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<caption class="table">
+                  w/o Charging Connector Locking System
+                 </caption>
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EPXAE" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EVXAE" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0E2XAE" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EPXAE " width="NaN%">h3-5 (GND) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EVXAE " width="NaN%">Power switch off</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E2XAE " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table>
+</li>
+</ol>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">for Electric vehicle charger cable assembly (Type 2):</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="B006HGEC03" class="figure-graphic" src="../images/b006hgec03.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Inlet AC Charger Cable (for Type 2)</p> <p class="ptxt">(Charging Inlet Side)</p> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="test2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0ET3AE" class="spec-title">Standard Resistance</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0ET3AE" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EA5AE" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EG5AE" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0EM5AE" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EA5AE " width="NaN%">h2-2 (GND) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EG5AE " width="NaN%">Power switch off</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EM5AE " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table>
+</li>
+</ol>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Close the charging port lid.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMAAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EMAAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPBAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPBAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPBAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK INLET AC CHARGER CABLE (BODY GROUND TERMINAL CONNECTION CONDITION)  <a class="res-right-fin-false-xref" href="#RM1000000011O1X__RM1000000011O1X_06_0012">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011O1X__RM1000000011O1X_06_0004">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (ELECTRIC VEHICLE CHARGER ASSEMBLY - CHARGING INLET)</p>
+<div class="ie8fixer"/>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Open the charging port lid.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the EV charger duct.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000115AT.html#RM10000000115AT_01_0423">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006J4KN05" class="figure-graphic" src="../images/b006j4kn05.png"/> 
+        </div>
+<p class="test1-heading">Disconnect the N74 electric vehicle charger assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">for Electric vehicle charger cable assembly (Type 1):</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="B006IT7C03" class="figure-graphic" src="../images/b006it7c03.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*A</td> 
+                <td align="left" class="cellrowborder" width="NaN%">w/ Charging Connector Locking System</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*B</td> 
+                <td align="left" class="cellrowborder" width="NaN%">w/o Charging Connector Locking System</td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Inlet AC Charger Cable (for Type 1)</p> <p class="ptxt">(Charging Inlet Side)</p> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Electric Vehicle Charger Assembly)</p> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="test2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0E5LAG" class="spec-title">Standard Resistance</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0E5LAG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<caption class="table">
+                  w/ Charging Connector Locking System
+                 </caption>
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EONAG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EUNAG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0E1NAG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EONAG " width="NaN%">h1-4 (CPLT) - N74-5 (CPLT)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EUNAG " width="NaN%">Power switch off</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E1NAG " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EONAG " width="NaN%">h1-4(CPLT) or N74-5(CPLT) - Body ground and other terminals</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EUNAG " width="NaN%">Power switch off</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E1NAG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EONAG " width="NaN%">h1-5 (GND) - Other terminals</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EUNAG " width="NaN%">Power switch off</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E1NAG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0E5LAG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<caption class="table">
+                  w/o Charging Connector Locking System
+                 </caption>
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EZRAG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0E6RAG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0EFSAG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EZRAG " width="NaN%">h3-4 (CPLT) - N74-5 (CPLT)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E6RAG " width="NaN%">Power switch off</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EFSAG " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EZRAG " width="NaN%">h3-4(CPLT) or N74-5(CPLT) - Body ground and other terminals</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E6RAG " width="NaN%">Power switch off</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EFSAG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EZRAG " width="NaN%">h3-5 (GND) - Other terminals</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E6RAG " width="NaN%">Power switch off</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EFSAG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table>
+</li>
+<li class="test2Root-test2">
+<p class="test2-heading">Connect the cable to the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="test2Root-test2">
+<p class="test2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test2Root-test2">
+<p class="test2-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0EEWAG" class="spec-title">Standard Voltage</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0EEWAG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<caption class="table">
+                  w/ Charging Connector Locking System
+                 </caption>
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EUXAG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0E1XAG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0EAYAG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EUXAG " width="NaN%">h1-4 (CPLT) or N74-5 (CPLT) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E1XAG " width="NaN%">Power switch on (IG)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EAYAG " width="NaN%">Below 1 V</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0EEWAG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<caption class="table">
+                  w/o Charging Connector Locking System
+                 </caption>
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0ET1AG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EZ1AG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0E61AG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0ET1AG " width="NaN%">h3-4 (CPLT) or N74-5 (CPLT) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EZ1AG " width="NaN%">Power switch on (IG)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0E61AG " width="NaN%">Below 1 V</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table>
+<div class="note">
+           <p class="notetitle">Note</p> 
+           <p class="ptxt">Turning the power switch on (IG) with the electric vehicle charger assembly connector disconnected causes other DTCs to be stored. Clear the DTCs after performingthis inspection.</p> 
+          </div>
+</li>
+</ol>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">for Electric vehicle charger cable assembly (Type 2):</p>
+<br class="test1Root-test1"/>
+<ol class="test2" type="i">
+<li class="test2Root-test2">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+           <img alt="B006HUTC02" class="figure-graphic" src="../images/b006hutc02.png"/> 
+           <div class="figure-p"> 
+            <div class="tablenoborder">
+             <table class="p-table">
+<tbody class="p-table"> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Inlet AC Charger Cable (for Type 2)</p> <p class="ptxt">(Charging Inlet Side)</p> </td> 
+               </tr> 
+               <tr> 
+                <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+                <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Electric Vehicle Charger Assembly)</p> </td> 
+               </tr> 
+              </tbody>
+</table> 
+            </div> 
+           </div> 
+          </div>
+<p class="test2-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0E2ABG" class="spec-title">Standard Resistance</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0E2ABG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EICBG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EOCBG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0EUCBG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EICBG " width="NaN%">h2-5 (CPLT) - N74-5 (CPLT)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EOCBG " width="NaN%">Power switch off</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EUCBG " width="NaN%">Below 1 Ω</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EICBG " width="NaN%">h2-5(CPLT) or N74-5(CPLT) - Body ground and other terminals</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EOCBG " width="NaN%">Power switch off</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EUCBG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EICBG " width="NaN%">h2-2 (GND) - Other terminals</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EOCBG " width="NaN%">Power switch off</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EUCBG " width="NaN%">10 kΩ or higher</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table>
+</li>
+<li class="test2Root-test2">
+<p class="test2-heading">Connect the cable to the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="test2Root-test2">
+<p class="test2-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test2Root-test2">
+<p class="test2-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test2-spec">
+            <tr class="spec-title"> 
+             <th align="left" id="ID0ETGBG" class="spec-title">Standard Voltage</th> 
+            </tr> 
+            <tr class="spec-table"> 
+             <td headers="ID0ETGBG" class="spec-table"> 
+              <div class="p"> 
+               <div class="tablenoborder">
+                <table class="table">
+<thead align="left" class="table"> 
+                  <tr> 
+                   <th align="center" class="spec-table-item" id="ID0EAIBG" width="NaN%">Tester Connection</th> 
+                   <th align="center" class="spec-table-item" id="ID0EGIBG" width="NaN%">Condition</th> 
+                   <th align="center" class="spec-table-item" id="ID0EMIBG" width="NaN%">Specified Condition</th> 
+                  </tr> 
+                 </thead>
+<tbody class="table"> 
+                  <tr> 
+                   <td align="center" class="spec-table-item" headers="ID0EAIBG " width="NaN%">h2-5 (CPLT) or N74-5 (CPLT) - Body ground</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EGIBG " width="NaN%">Power switch on (IG)</td> 
+                   <td align="center" class="spec-table-item" headers="ID0EMIBG " width="NaN%">Below 1 V</td> 
+                  </tr> 
+                 </tbody>
+</table> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+</table>
+<div class="note">
+           <p class="notetitle">Note</p> 
+           <p class="ptxt">Turning the power switch on (IG) with the electric vehicle charger assembly connector disconnected causes other DTCs to be stored. Clear the DTCs after performingthis inspection.</p> 
+          </div>
+</li>
+</ol>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the N74 electric vehicle charger assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the EV charger duct.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Close the charging port lid.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EBMBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EBMBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EENBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EENBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EENBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">NG</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK HARNESS AND CONNECTOR (ELECTRIC VEHICLE CHARGER ASSEMBLY - INLET AC CHARGER CABLE)  <a class="res-right-fin-false-xref" href="#RM1000000011O1X__RM1000000011O1X_06_0009">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011O1X__RM1000000011O1X_06_0006">
+<p class="testgrp-heading">INSPECT ELECTRIC VEHICLE CHARGER CABLE ASSEMBLY (CPLT TERMINAL VOLTAGE)</p>
+<p class="content6-ptxt"> <a class="content6-ptxt-xref" href="RM10000000115B0.html#RM10000000115B0">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+        <tr class="spec-title"> 
+         <th align="left" id="ID0EDQBG" class="spec-title">Result</th> 
+        </tr> 
+        <tr class="spec-table"> 
+         <td headers="ID0EDQBG" class="spec-table"> 
+          <div class="p"> 
+           <div class="tablenoborder">
+            <table class="table">
+<thead align="left" class="table"> 
+              <tr> 
+               <th align="center" class="spec-table-item" id="ID0EGRBG" width="NaN%">Proceed to</th> 
+              </tr> 
+             </thead>
+<tbody class="table"> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EGRBG " width="NaN%">OK</td> 
+              </tr> 
+              <tr> 
+               <td align="center" class="spec-table-item" headers="ID0EGRBG " width="NaN%">NG</td> 
+              </tr> 
+             </tbody>
+</table> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+</table>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ELECTRIC VEHICLE CHARGER ASSEMBLY <a class="content6-ptxt-xref" href="RM10000000115AT.html#RM10000000115AT">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ELECTRIC VEHICLE CHARGER CABLE ASSEMBLY </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM1000000011O1X__RM1000000011O1X_06_0012">
+<p class="testgrp-heading">CHECK INLET AC CHARGER CABLE (BODY GROUND TERMINAL CONNECTION CONDITION)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check the installation condition of the ground wire hA.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENUBG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ENUBG">The ground wire is securely installed.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHVBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EHVBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EKWBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKWBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKWBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE INLET AC CHARGER CABLE <a class="content6-ptxt-xref" href="RM10000000115AW.html#RM10000000115AW">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>CONNECT SECURELY </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM1000000011O1X__RM1000000011O1X_06_0009">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (ELECTRIC VEHICLE CHARGER ASSEMBLY - INLET AC CHARGER CABLE)</p>
+<div class="ie8fixer"/>
+<div class="caution">
+<p class="cautiontitle">CAUTION:</p> 
+       <p class="ptxt">Be sure to wear insulated gloves.</p> 
+      </div>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check that the service plug grip is not installed.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">After removing the service plug grip, do not turn the power switch on (READY), unless instructed by the repair manual because this may cause a malfunction.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006IMME01" class="figure-graphic" src="../images/b006imme01.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<caption class="p-table">
+             
+            </caption>
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*1</td> 
+              <td align="left" class="cellrowborder" width="NaN%">Nh1</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Disconnect the Nh1 inlet AC charger cable connector.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">If the Nh1 connector is disconnected with the auxiliary battery connected, P0D5615 may be detected. Check that the cable is disconnected from the negative (-) auxiliary battery terminal before proceeding work. (for Electric vehicle charger cable assembly (Type 1))</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the EV charger duct.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006J4KN05" class="figure-graphic" src="../images/b006j4kn05.png"/> 
+        </div>
+<p class="test1-heading">Disconnect the N74 electric vehicle charger assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HTIC03" class="figure-graphic" src="../images/b006htic03.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Inlet AC Charger Cable)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Electric Vehicle Charger Assembly)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQBAI" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQBAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E4CAI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EDDAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJDAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4CAI " width="NaN%">Nh1-1 (CPLT) - N74-5 (CPLT)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDDAI " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJDAI " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4CAI " width="NaN%">Nh1-1 (CPLT) or N74-5 (CPLT) - Body ground and other terminals</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDDAI " width="NaN%">Power switch off</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJDAI " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the cable to the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the voltage according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESGAI" class="spec-title">Standard Voltage</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ESGAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E6HAI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EFIAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ELIAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E6HAI " width="NaN%">Nh1-1 (CPLT) or N74-5 (CPLT) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EFIAI " width="NaN%">Power switch on (IG)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ELIAI " width="NaN%">Below 1 V</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Turning the power switch on (IG) with the electric vehicle charger assembly connector disconnected causes DTCs to be stored. Clear the DTCs after performing this inspection.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the N74 electric vehicle charger assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Install the EV charger duct.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the Nh1 inlet AC charger cable connector.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E5LAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E5LAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EBNAI" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EBNAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EBNAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE INLET AC CHARGER CABLE <a class="content6-ptxt-xref" href="RM10000000115AW.html#RM10000000115AW">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

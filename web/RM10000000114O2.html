@@ -1,0 +1,1313 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="CAN COMMUNICATION SYSTEM Check Bus 1 Lines for Short Circuit" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_57" name="servcatId"/> 
+  <meta content="Power Source / Network" name="servcatName"/> 
+  <meta content="_058034" name="sectionId"/> 
+  <meta content="NETWORKING" name="sectionName"/> 
+  <meta content="_0296329" name="ttlId"/> 
+  <meta content="CAN COMMUNICATION SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM10000000114O2" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Check Bus 1 Lines for Short Circuit</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">CAN COMMUNICATION SYSTEM<span class="topictitle1"> Check Bus 1 Lines for Short Circuit</span>
+</h1>
+<div class="subpara" id="RM10000000114O2__RM10000000114O2_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">There may be a short circuit between the CAN main bus lines and/or CAN branch lines when the resistance between terminals 23 (CA1H) and 8 (CA1L) of the central gateway ECU (network gateway ECU) is below 54 Ω.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EFF" width="NaN%">Symptom</th> 
+        <th align="center" class="cellrowborder" id="ID0ELF" width="NaN%">Trouble Area</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td class="cellrowborder" headers="ID0EFF " width="NaN%">Resistance between terminals 23 (CA1H) and 8 (CA1L) of the central gateway ECU (network gateway ECU) is below 54 Ω.</td> 
+        <td class="cellrowborder" headers="ID0ELF " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Short in CAN main bus lines</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Short in CAN branch lines</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Central gateway ECU (network gateway ECU)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Millimeter wave radar sensor assembly</p>
+<p class="item-ptxt">(w/ Toyota Safety Sense)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Driving support ECU assembly</p>
+<p class="item-ptxt">(w/ Toyota Safety Sense)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Forward recognition camera</p>
+<p class="item-ptxt">(w/ Toyota Safety Sense)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Clearance warning ECU assembly</p>
+<p class="item-ptxt">(w/ Simple Intelligent Parking Assist System)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Swing grille actuator assembly</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Blind spot monitor sensor LH</p>
+<p class="item-ptxt">(w/ Blind Spot Monitor System)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Rear television camera assembly</p>
+<p class="item-ptxt">(w/ Parking Assist Monitor System)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">No. 1 CAN junction connector</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">No. 8 CAN junction connector</p>
+<p class="item-ptxt">(w/o Occupant Classification System)</p>
+</li> 
+         </ul> </td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000114O2__RM10000000114O2_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="B006HAHE06" class="figure-graphic--bigImage" src="../images/b006hahe06.png"/>
+</div> 
+    <div class="fignone--bigImage">
+<img alt="B006J74E08" class="figure-graphic--bigImage" src="../images/b006j74e08.png"/>
+</div> 
+    <div class="fignone--bigImage">
+<img alt="B006I1TE06" class="figure-graphic--bigImage" src="../images/b006i1te06.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM10000000114O2__RM10000000114O2_03">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">Because the order of diagnosis is important to allow correct diagnosis, make sure to begin troubleshooting using How to Proceed with Troubleshooting when CAN communication system related DTCs are output.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM1000000011A35.html#RM1000000011A35">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">Before measuring the resistance of the CAN bus, turn the power switch off and leave the vehicle for 1 minute or more without operating the key or any switches, or opening or closing the doors. After that, disconnect the cable from the negative (-) auxiliary battery terminal and leave the vehicle for 1 minute or more before measuring the resistance.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">After turning the power switch off, waiting time may be required before disconnecting the cable from the negative (-) auxiliary battery terminal. Therefore, make sure to read the disconnecting the cable from the negative (-) auxiliary battery terminal notices before proceeding with work.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001AAN7.html#RM100000001AAN7">Click here</a>
+</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">After performing repairs, perform the DTC check procedure and confirm that the DTCs are not output again.</p>
+<p class="item-ptxt">DTC check procedure: Turn the power switch on (IG) and wait at least approximately 20 seconds. Turn the blind spot monitor system on using the blind spot monitor main switch (ON/OFF switch), turn the cruise control main switch on, turn the lane departure alert main switch on and then drive the vehicle at a speed of 5 km/h (3 mph) or more for approximately 52 seconds or more.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">After the repair, perform the CAN bus check and check that all the ECUs and sensors connected to the CAN communication system are displayed as normal.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000001AAUK.html#RM100000001AAUK">Click here</a>
+</p>
+</li> 
+     </ul> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <br class="tip"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">Before disconnecting related connectors for inspection, push in on each connector body to check that the connector is not loose or disconnected.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">When a connector is disconnected, check that the terminals and connector body are not cracked, deformed or corroded.</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000114O2__RM10000000114O2_07">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM10000000114O2__RM10000000114O2_07_0054">
+<p class="testgrp-heading">CHECK VEHICLE TYPE</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Check vehicle type.</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EULAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EULAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E3MAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ECNAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E3MAC " width="NaN%">w/ Occupant Classification System</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECNAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E3MAC " width="NaN%">w/o Occupant Classification System</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECNAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">B</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK FOR SHORT IN CAN BUS LINES (NO. 8 CAN JUNCTION CONNECTOR)  <a class="res-right-fin-false-xref" href="#RM10000000114O2__RM10000000114O2_07_0060">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000114O2__RM10000000114O2_07_0053">
+<p class="testgrp-heading">CHECK FOR SHORT IN CAN BUS LINES (NO. 1 CAN JUNCTION CONNECTOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I74 No. 1 CAN junction connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HX9C95" class="figure-graphic" src="../images/b006hx9c95.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 1 CAN Junction Connector)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">to Swing Grille Actuator Assembly</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+              <td align="left" class="cellrowborder" width="NaN%">to Central Gateway ECU (Network Gateway ECU)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESEAE" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ESEAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EEGAE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EKGAE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EQGAE" width="NaN%">Specified Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EWGAE" width="NaN%">Connected to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEGAE " width="NaN%">I74-1 (CANH) - I74-12 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKGAE " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQGAE " width="NaN%">200 Ω or higher</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWGAE " width="NaN%">Swing grille actuator assembly</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEGAE " width="NaN%">I74-2 (CANH) - I74-13 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKGAE " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQGAE " width="NaN%">108 to 132 Ω</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWGAE " width="NaN%">Central gateway ECU (network gateway ECU)</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EEGAE " width="NaN%">I74-3 (CANH) - I74-14 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EKGAE " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EQGAE " width="NaN%">108 to 132 Ω</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EWGAE " width="NaN%">Central gateway ECU (network gateway ECU)</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EGKAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EGKAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EOLAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EULAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EOLAE " width="NaN%">OK</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EULAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EOLAE " width="NaN%">NG (Line to central gateway ECU (network gateway ECU))</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EULAE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EOLAE " width="NaN%">NG (Line to ECU or sensor)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EULAE " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE NO. 1 CAN JUNCTION CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">C</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 8  <a class="res-right-fin-false-xref" href="#RM10000000114O2__RM10000000114O2_07_0072">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">B</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000114O2__RM10000000114O2_07_0056">
+<p class="testgrp-heading">CHECK FOR SHORT IN CAN BUS LINES (NO. 1 CAN JUNCTION CONNECTOR - CENTRAL GATEWAY ECU (NETWORK GATEWAY ECU))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I62 central gateway ECU (network gateway ECU) connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006HX9C96" class="figure-graphic" src="../images/b006hx9c96.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 1 CAN Junction Connector)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">to Central Gateway ECU (Network Gateway ECU)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EFTAE" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EFTAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ESUAE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EYUAE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E5UAE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESUAE " width="NaN%">I74-2 (CANH) - I74-13 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYUAE " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5UAE " width="NaN%">1 MΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ESUAE " width="NaN%">I74-3 (CANH) - I74-14 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EYUAE " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5UAE " width="NaN%">1 MΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EGXAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EGXAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJYAE" width="NaN%">Result</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJYAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJYAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CENTRAL GATEWAY ECU (NETWORK GATEWAY ECU) <a class="content6-ptxt-xref" href="RM100000000ZQHW.html#RM100000000ZQHW">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE CAN MAIN BUS LINES OR CONNECTOR (NO. 1 CAN JUNCTION CONNECTOR - CENTRAL GATEWAY ECU (NETWORK GATEWAY ECU)) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000114O2__RM10000000114O2_07_0060">
+<p class="testgrp-heading">CHECK FOR SHORT IN CAN BUS LINES (NO. 8 CAN JUNCTION CONNECTOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the cable from the negative (-) auxiliary battery terminal.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the N95 No. 8 CAN junction connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006H8GC10" class="figure-graphic" src="../images/b006h8gc10.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 8 CAN Junction Connector)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">to Central Gateway ECU (Network Gateway ECU)</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">to Blind Spot Monitor Sensor LH</p> <p class="ptxt">(w/ Blind Spot Monitor System)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">to Rear Television Camera Assembly</p> <p class="ptxt">(w/ Parking Assist Monitor System)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*e</td> 
+              <td align="left" class="cellrowborder" width="NaN%">to No. 1 CAN Junction Connector</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EI3AE" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EI3AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E14AE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EA5AE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EG5AE" width="NaN%">Specified Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EM5AE" width="NaN%">Connected to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E14AE " width="NaN%">N95-4 (CANH) - N95-14 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EA5AE " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EG5AE " width="NaN%">108 to 132 Ω</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EM5AE " width="NaN%">Central gateway ECU (network gateway ECU)</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E14AE " width="NaN%">N95-5 (CANH) - N95-15 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EA5AE " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EG5AE " width="NaN%">200 Ω or higher</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EM5AE " width="NaN%">Blind spot monitor sensor LH*1</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E14AE " width="NaN%">N95-6 (CANH) - N95-16 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EA5AE " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EG5AE " width="NaN%">200 Ω or higher</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EM5AE " width="NaN%">Rear television camera assembly*2</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E14AE " width="NaN%">N95-7 (CANH) - N95-17 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EA5AE " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EG5AE " width="NaN%">108 to 132 Ω</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EM5AE " width="NaN%">No. 1 CAN junction connector</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<br class="test1Root-test1"/>
+<ul class="test1-list1"> 
+         <li class="list1-item">
+<p class="test1-list1-heading">*1: w/ Blind Spot Monitor System</p>
+</li> 
+         <li class="list1-item">
+<p class="test1-list1-heading">*2: w/ Parking Assist Monitor System</p>
+</li> 
+        </ul>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EWIAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EWIAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E5JAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EEKAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E5JAG " width="NaN%">OK</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEKAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E5JAG " width="NaN%">NG (Line to central gateway ECU (network gateway ECU))</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEKAG " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E5JAG " width="NaN%">NG (Line to No. 1 CAN junction connector)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEKAG " width="NaN%">C</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E5JAG " width="NaN%">NG (Line to ECU or sensor)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EEKAG " width="NaN%">D</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE NO. 8 CAN JUNCTION CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">C</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK FOR SHORT IN CAN BUS LINES (NO. 1 CAN JUNCTION CONNECTOR)  <a class="res-right-fin-false-xref" href="#RM10000000114O2__RM10000000114O2_07_0065">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false">
+<td class="res-right-fin-false-cap">D</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-false-link">
+<p class="testgrp-testtitle">CHECK FOR SHORT IN CAN BUS LINES (ECU OR SENSOR)  <a class="res-right-fin-false-xref" href="#RM10000000114O2__RM10000000114O2_07_0072">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">B</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000114O2__RM10000000114O2_07_0062">
+<p class="testgrp-heading">CHECK FOR SHORT IN CAN BUS LINES (NO. 8 CAN JUNCTION CONNECTOR - CENTRAL GATEWAY ECU (NETWORK GATEWAY ECU))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I62 central gateway ECU (network gateway ECU) connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006IMWC26" class="figure-graphic" src="../images/b006imwc26.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 8 CAN Junction Connector)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">to Central Gateway ECU (Network Gateway ECU)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EPPAG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EPPAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E3QAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0ECRAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EIRAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3QAG " width="NaN%">N95-4 (CANH) - N95-14 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ECRAG " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EIRAG " width="NaN%">1 MΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EVVAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EVVAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EYWAG" width="NaN%">Result</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYWAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYWAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CENTRAL GATEWAY ECU (NETWORK GATEWAY ECU) <a class="content6-ptxt-xref" href="RM100000000ZQHW.html#RM100000000ZQHW">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE CAN MAIN BUS LINES OR CONNECTOR (NO. 8 CAN JUNCTION CONNECTOR - CENTRAL GATEWAY ECU (NETWORK GATEWAY ECU)) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000114O2__RM10000000114O2_07_0065">
+<p class="testgrp-heading">CHECK FOR SHORT IN CAN BUS LINES (NO. 1 CAN JUNCTION CONNECTOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the N95 No. 8 CAN junction connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I73 No. 1 CAN junction connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006H8GC08" class="figure-graphic" src="../images/b006h8gc08.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 1 CAN Junction Connector)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">to Swing Grille Actuator Assembly</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*c</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">to Clearance Warning ECU Assembly</p> <p class="ptxt">(w/ Simple Intelligent Parking Assist System)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*d</td> 
+              <td align="left" class="cellrowborder" width="NaN%">to Forward Recognition Camera</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*e</td> 
+              <td align="left" class="cellrowborder" width="NaN%">to Millimeter Wave Radar Sensor Assembly</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*f</td> 
+              <td align="left" class="cellrowborder" width="NaN%">to Driving Support ECU Assembly</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*g</td> 
+              <td align="left" class="cellrowborder" width="NaN%">to No. 8 CAN Junction Connector</td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*h</td> 
+              <td align="left" class="cellrowborder" width="NaN%">to Central Gateway ECU (Network Gateway ECU)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E4ABG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E4ABG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EPCBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EVCBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0E2CBG" width="NaN%">Specified Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EBDBG" width="NaN%">Connected to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPCBG " width="NaN%">I73-2 (CANH) - I73-12 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVCBG " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2CBG " width="NaN%">200 Ω or higher</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBDBG " width="NaN%">Swing grille actuator assembly</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPCBG " width="NaN%">I73-3 (CANH) - I73-13 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVCBG " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2CBG " width="NaN%">200 Ω or higher</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBDBG " width="NaN%">Clearance warning ECU assembly*</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPCBG " width="NaN%">I73-4 (CANH) - I73-14 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVCBG " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2CBG " width="NaN%">200 Ω or higher</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBDBG " width="NaN%">Forward recognition camera</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPCBG " width="NaN%">I73-5 (CANH) - I73-15 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVCBG " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2CBG " width="NaN%">200 Ω or higher</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBDBG " width="NaN%">Millimeter wave radar sensor assembly</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPCBG " width="NaN%">I73-6 (CANH) - I73-16 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVCBG " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2CBG " width="NaN%">200 Ω or higher</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBDBG " width="NaN%">Driving support ECU assembly</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPCBG " width="NaN%">I73-7 (CANH) - I73-17 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVCBG " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2CBG " width="NaN%">108 to 132 Ω</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBDBG " width="NaN%">No. 8 CAN junction connector</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EPCBG " width="NaN%">I73-8 (CANH) - I73-18 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVCBG " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E2CBG " width="NaN%">108 to 132 Ω</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBDBG " width="NaN%">Central gateway ECU (network gateway ECU)</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<br class="test1Root-test1"/>
+<ul class="test1-list1 nonmark"> 
+         <li class="list1-item">
+<p class="test1-list1-nonmark-heading">*: w/ Simple Intelligent Parking Assist System</p>
+</li> 
+        </ul>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESKBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ESKBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E1LBG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EAMBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E1LBG " width="NaN%">OK</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAMBG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E1LBG " width="NaN%">NG (Line to central gateway ECU (network gateway ECU))</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAMBG " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E1LBG " width="NaN%">NG (Line to No. 8 CAN junction connector)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAMBG " width="NaN%">C</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E1LBG " width="NaN%">NG (Line to ECU or sensor)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAMBG " width="NaN%">D</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE NO. 1 CAN JUNCTION CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE CAN MAIN BUS LINES OR CONNECTOR (NO. 1 CAN JUNCTION CONNECTOR - NO. 8 CAN JUNCTION CONNECTOR) </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-false-xtref">
+<td class="res-right-fin-false-cap">D</td>
+<td class="res-right-fin-false">
+<img class="res-right" src="../img/next_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO STEP 8  <a class="res-right-fin-false-xref" href="#RM10000000114O2__RM10000000114O2_07_0072">Click here</a>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">B</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000114O2__RM10000000114O2_07_0067">
+<p class="testgrp-heading">CHECK FOR SHORT IN CAN BUS LINES (NO. 1 CAN JUNCTION CONNECTOR - CENTRAL GATEWAY ECU (NETWORK GATEWAY ECU))</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I62 central gateway ECU (network gateway ECU) connector.</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006H8GC11" class="figure-graphic" src="../images/b006h8gc11.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to No. 1 CAN Junction Connector)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td align="left" class="cellrowborder" width="NaN%">to Central Gateway ECU (Network Gateway ECU)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKUBG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EKUBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EXVBG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0E4VBG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EDWBG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXVBG " width="NaN%">I73-8 (CANH) - I73-18 (CANL)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E4VBG " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EDWBG " width="NaN%">1 MΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EVXBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EVXBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EYYBG" width="NaN%">Result</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYYBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EYYBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CENTRAL GATEWAY ECU (NETWORK GATEWAY ECU) <a class="content6-ptxt-xref" href="RM100000000ZQHW.html#RM100000000ZQHW">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE CAN MAIN BUS LINES OR CONNECTOR (NO. 1 CAN JUNCTION CONNECTOR - CENTRAL GATEWAY ECU (NETWORK GATEWAY ECU)) </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM10000000114O2__RM10000000114O2_07_0072">
+<p class="testgrp-heading">CHECK FOR SHORT IN CAN BUS LINES (ECU OR SENSOR)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect all wire harness connectors.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the connector that includes terminals CANH and CANL from the ECU or sensor to which the short circuited branch line is connected.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000114OD.html#RM10000000114OD">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="B006IS4C95" class="figure-graphic" src="../images/b006is4c95.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td align="left" class="cellrowborder" width="NaN%"> <p class="ptxt">Component with harness connected</p> <p class="ptxt">(Central Gateway ECU (Network Gateway ECU))</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EN6BG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EN6BG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E2AAI" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EBBAI" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EHBAI" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E2AAI " width="NaN%">I62-23 (CA1H) - I62-8 (CA1L)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EBBAI " width="NaN%">Cable disconnected from negative (-) auxiliary battery terminal</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EHBAI " width="NaN%">54 to 69 Ω</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">If the resistance becomes normal (between 54 and 69 Ω) when the connector is disconnected from the ECU or sensor, there may be a short in the ECU or sensor.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If the resistance does not become normal when the connector is disconnected from the ECU or sensor, check for a short in the wire harness and repair or replace the wire harness or connector if necessary.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E1DAI" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E1DAI" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E4EAI" width="NaN%">Result</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4EAI " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E4EAI " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE ECU OR SENSOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

@@ -1,0 +1,480 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="SEAT BELT WARNING SYSTEM(w/ Occupant Classification System) Front Passenger Side Seat Belt Warning Light does not Operate" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_58" name="servcatId"/> 
+  <meta content="Vehicle Interior" name="servcatName"/> 
+  <meta content="_058074" name="sectionId"/> 
+  <meta content="SEAT BELT" name="sectionName"/> 
+  <meta content="_0288591" name="ttlId"/> 
+  <meta content="SEAT BELT WARNING SYSTEM(w/ Occupant Classification System)" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000ZTCQ" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Front Passenger Side Seat Belt Warning Light does not Operate</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">SEAT BELT WARNING SYSTEM(w/ Occupant Classification System)<span class="topictitle1"> Front Passenger Side Seat Belt Warning Light does not Operate</span>
+</h1>
+<div class="subpara" id="RM100000000ZTCQ__RM100000000ZTCQ_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">When the power switch is turned on (IG), the occupant detection ECU sends signals to the airbag ECU assembly to indicate the state of the front seat inner belt assembly RH and also whether the front passenger seat is occupied. The airbag ECU assembly sends those signals to the combination meter assembly via CAN communication. The seat belt warning light on the combination meter assembly illuminates, blinks or turns off in accordance with these signals.</p> 
+   </div>
+<div class="subpara" id="RM100000000ZTCQ__RM100000000ZTCQ_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="B006I95E04" class="figure-graphic--bigImage" src="../images/b006i95e04.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM100000000ZTCQ__RM100000000ZTCQ_03">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">The seat belt warning system uses the CAN communication system. First, confirm that there are no malfunctions in the CAN communication system. Refer to How to Proceed with Troubleshooting.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM100000000ZTCS.html#RM100000000ZTCS">Click here</a>
+</p> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">The seat belt warning light on the combination meter assembly is used for both the driver seat and front passenger seat.Check that the operation of the seat belt warning light is normal first.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM100000000ZTCY.html#RM100000000ZTCY">Click here</a>
+</p> 
+     <p class="ptxt">If the seat belt warning light does not operate for both the driver seat and front passenger seat, replace the meter circuit plate.</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM1000000011ATB.html#RM1000000011ATB">Click here</a>
+</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000ZTCQ__RM100000000ZTCQ_05">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000ZTCQ__RM100000000ZTCQ_05_0001">
+<p class="testgrp-heading">CHECK DTC OUTPUT (OCCUPANT CLASSIFICATION SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000Z8XK.html#RM100000000Z8XK">Click here</a>
+</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Occupant Detection &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000Z8XK.html#RM100000000Z8XK">Click here</a>
+</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Occupant Detection &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EAIAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EAIAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EIJAC" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EOJAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EIJAC " width="NaN%">DTCs are not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOJAC " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EIJAC " width="NaN%">DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EOJAC " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO OCCUPANT CLASSIFICATION SYSTEM <a class="content6-ptxt-xref" href="RM100000000Z8X3.html#RM100000000Z8X3">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTCQ__RM100000000ZTCQ_05_0002">
+<p class="testgrp-heading">CHECK DTC OUTPUT (AIRBAG SYSTEM)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000Z8VQ.html#RM100000000Z8VQ">Click here</a>
+</p>
+<br class="test1Root-test1"/>Body Electrical &gt; SRS Airbag &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check for DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000Z8VQ.html#RM100000000Z8VQ">Click here</a>
+</p>
+<br class="test1Root-test1"/>Body Electrical &gt; SRS Airbag &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EFEAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EFEAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ENFAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0ETFAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ENFAE " width="NaN%">DTCs are not output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ETFAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0ENFAE " width="NaN%">DTCs are output</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ETFAE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>GO TO AIRBAG SYSTEM <a class="content6-ptxt-xref" href="RM100000000Z8VT.html#RM100000000Z8VT">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000ZTCQ__RM100000000ZTCQ_05_0003">
+<p class="testgrp-heading">READ VALUE USING GTS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / Occupant Detection / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; Occupant Detection &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ECMAE" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EIMAE" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EOMAE" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EUMAE" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0E1MAE" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ECMAE " width="NaN%">Passenger Buckle SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EIMAE " width="NaN%">Front passenger buckle switch</td> 
+              <td align="center" class="cellrowborder" headers="ID0EOMAE " width="NaN%">Unset, Set or NG</td> 
+              <td align="left" class="cellrowborder" headers="ID0EUMAE " width="NaN%"> <p class="ptxt">Unset: Seat belt not fastened</p> <p class="ptxt">Set: Seat belt fastened</p> <p class="ptxt">NG: Data is not determined</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0E1MAE " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; Occupant Detection &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EYSAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EYSAE " width="NaN%">Passenger Buckle SW</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESXAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ESXAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E1YAE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EAZAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E1YAE " width="NaN%">Unset or Set is displayed on the GTS according to the front passenger seat belt condition</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAZAE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0E1YAE " width="NaN%">Unset or Set is not displayed correctly on the GTS according to the front passenger seat belt condition</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAZAE " width="NaN%">B</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0E1YAE " width="NaN%">NG is displayed on the GTS</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EAZAE " width="NaN%">C</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE FRONT SEAT INNER BELT ASSEMBLY RH <a class="content6-ptxt-xref" href="RM100000000ZTDN.html#RM100000000ZTDN">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">C</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE OCCUPANT DETECTION ECU <a class="content6-ptxt-xref" href="RM100000000Z8ZD.html#RM100000000Z8ZD">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">A</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000ZTCQ__RM100000000ZTCQ_05_0020">
+<p class="testgrp-heading">READ VALUE USING GTS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Body Electrical / SRS Airbag / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Body Electrical &gt; SRS Airbag &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EOAAG" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0EUAAG" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0E1AAG" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EABAG" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0EGBAG" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EOAAG " width="NaN%">Right side Buckle SW</td> 
+              <td align="left" class="cellrowborder" headers="ID0EUAAG " width="NaN%">RH buckle switch</td> 
+              <td align="center" class="cellrowborder" headers="ID0E1AAG " width="NaN%">Unset, Set or NG</td> 
+              <td align="left" class="cellrowborder" headers="ID0EABAG " width="NaN%"> <p class="ptxt">Unset: Seat belt not fastened</p> <p class="ptxt">Set: Seat belt fastened</p> <p class="ptxt">NG: Data is not determined</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EGBAG " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Body Electrical &gt; SRS Airbag &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EEHAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EEHAG " width="NaN%">Right side Buckle SW</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E5LAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E5LAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EGNAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EMNAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EGNAG " width="NaN%">Unset or Set is displayed on the GTS according to the front passenger seat belt condition</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMNAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td align="left" class="spec-table-item" headers="ID0EGNAG " width="NaN%"> <br class="cellrowborder"/>
+                  <ul class="list1"> 
+                   <li class="list1-item">
+<p class="list1-heading">Unset or Set is not displayed correctly on the GTS according to the front passenger seat belt condition</p>
+</li> 
+                   <li class="list1-item">
+<p class="list1-heading">NG is displayed on the GTS</p>
+</li> 
+                  </ul> </td> 
+                 <td align="center" class="spec-table-item" headers="ID0EMNAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>USE SIMULATION METHOD TO CHECK <a class="content6-ptxt-xref" href="RM100000001145X.html#RM100000001145X">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE AIRBAG ECU ASSEMBLY <a class="content6-ptxt-xref" href="RM100000001ABAH.html#RM100000001ABAH">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

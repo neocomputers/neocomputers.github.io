@@ -1,0 +1,626 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="DYNAMIC RADAR CRUISE CONTROL SYSTEM Cruise Control Switch Circuit" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_51" name="servcatId"/> 
+  <meta content="Engine / Hybrid System" name="servcatName"/> 
+  <meta content="_058076" name="sectionId"/> 
+  <meta content="CRUISE CONTROL" name="sectionName"/> 
+  <meta content="_0283209" name="ttlId"/> 
+  <meta content="DYNAMIC RADAR CRUISE CONTROL SYSTEM" name="ttlName"/> 
+  <meta content="J" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM100000000Z1IQ" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>Cruise Control Switch Circuit</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">DYNAMIC RADAR CRUISE CONTROL SYSTEM<span class="topictitle1"> Cruise Control Switch Circuit</span>
+</h1>
+<div class="subpara" id="RM100000000Z1IQ__RM100000000Z1IQ_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The cruise control main switch is used to turn the dynamic radar cruise control system on and off, as well as operate 7 functions: SET, - (COAST), TAP-DOWN, RES (RESUME), + (ACCEL), TAP-UP and CANCEL.</p> 
+    <p class="content5-ptxt">The SET, TAP-DOWN and - (COAST) functions, and the RES (RESUME), TAP-UP and + (ACCEL) functions are operated with the same switch. The cruise control main switch contains momentary type contacts for each function. The contacts close only while the cruise control main switch is being operated in the direction of the relative function arrow, and open when the cruise control main switch is released. The voltage at the terminal of the hybrid vehicle control ECU changes as each of the different contacts open or close. The hybrid vehicle control ECU reads this voltage and controls the SET, - (COAST), RES (RESUME), + (ACCEL), and CANCEL functions accordingly.</p> 
+    <br class="subpara"/>
+    <ul class="content5-list1"> 
+     <li class="list1-item">
+<p class="content5-list1-heading">Vehicle-to-vehicle distance control mode is selected by default when the dynamic radar cruise control system is turned on using the cruise control main switch (ON/OFF button).</p>
+</li> 
+     <li class="list1-item">
+<p class="content5-list1-heading">The operation of constant speed control mode is the same as that for a conventional cruise control system.</p>
+</li> 
+    </ul> 
+   </div>
+<div class="subpara" id="RM100000000Z1IQ__RM100000000Z1IQ_02">
+     
+    <p class="subpara-subparaName">WIRING DIAGRAM</p> 
+    <div class="fignone--bigImage">
+<img alt="A003LFDE43" class="figure-graphic--bigImage" src="../images/a003lfde43.png"/>
+</div> 
+   </div>
+<div class="subpara" id="RM100000000Z1IQ__RM100000000Z1IQ_03">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <br class="note"/>
+     <ul class="list1"> 
+      <li class="list1-item">
+<p class="list1-heading">Before replacing the hybrid vehicle control ECU, refer to Service Bulletin.</p>
+</li> 
+      <li class="list1-item">
+<p class="list1-heading">The vehicle is equipped with a Supplemental Restraint System (SRS) which includes components such as airbags. Before servicing (including removal or installation of parts), be sure to read the precaution for Supplemental Restraint System.</p>
+<p class="item-ptxt"> <a class="ptxt-xref" href="RM100000000Z8X1.html#RM100000000Z8X1">Click here</a>
+</p>
+</li> 
+     </ul> 
+    </div> 
+   </div>
+<div class="subpara" id="RM100000000Z1IQ__RM100000000Z1IQ_05">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM100000000Z1IQ__RM100000000Z1IQ_05_0001">
+<p class="testgrp-heading">READ VALUE USING GTS</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Connect the GTS to the DLC3.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the GTS on.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Enter the following menus: Powertrain / Radar Cruise 1 / Data List.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Read the Data List according to the display on the GTS.</p>
+<br class="test1Root-test1"/>Powertrain &gt; Cruise Control &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EMEAC" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0ESEAC" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EYEAC" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0E5EAC" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0EEFAC" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMEAC " width="NaN%">Cancel Switch</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESEAC " width="NaN%">CANCEL switch status</td> 
+              <td align="left" class="cellrowborder" headers="ID0EYEAC " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5EAC " width="NaN%"> <p class="ptxt">ON: CANCEL switch on</p> <p class="ptxt">OFF: CANCEL switch off</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EEFAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMEAC " width="NaN%">-SET Switch</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESEAC " width="NaN%">-SET switch status</td> 
+              <td align="left" class="cellrowborder" headers="ID0EYEAC " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5EAC " width="NaN%"> <p class="ptxt">ON: -SET switch on</p> <p class="ptxt">OFF: -SET switch off</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EEFAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMEAC " width="NaN%">+RES Switch</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESEAC " width="NaN%">+RES switch status</td> 
+              <td align="left" class="cellrowborder" headers="ID0EYEAC " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5EAC " width="NaN%"> <p class="ptxt">ON: +RES switch on</p> <p class="ptxt">OFF: +RES switch off</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EEFAC " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EMEAC " width="NaN%">Cruise Main Switch Operation Condition</td> 
+              <td align="left" class="cellrowborder" headers="ID0ESEAC " width="NaN%">Cruise control main switch (ON/OFF button) status</td> 
+              <td align="left" class="cellrowborder" headers="ID0EYEAC " width="NaN%">ON or OFF</td> 
+              <td align="left" class="cellrowborder" headers="ID0E5EAC " width="NaN%"> <p class="ptxt">ON: Cruise control main switch (ON/OFF button) pushed</p> <p class="ptxt">OFF: Cruise control main switch (ON/OFF button) not pushed</p> </td> 
+              <td align="center" class="cellrowborder" headers="ID0EEFAC " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Powertrain &gt; Cruise Control &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EFCAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EFCAE " width="NaN%">Cancel Switch</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EFCAE " width="NaN%">-SET Switch</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EFCAE " width="NaN%">+RES Switch</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EFCAE " width="NaN%">Cruise Main Switch Operation Condition</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EMLAE" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EMLAE">The Data List items shown in the table change according to the operation of the cruise control main switch.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EGMAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EGMAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EJNAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJNAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EJNAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>PROCEED TO NEXT SUSPECTED AREA SHOWN IN PROBLEM SYMPTOMS TABLE <a class="content6-ptxt-xref" href="RM100000000Z1IP.html#RM100000000Z1IP">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000Z1IQ__RM100000000Z1IQ_05_0003">
+<p class="testgrp-heading">INSPECT CRUISE CONTROL MAIN SWITCH</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the cruise control main switch.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZWFK.html#RM100000000ZWFK">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the cruise control main switch.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000ZWFI.html#RM100000000ZWFI">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ETRAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ETRAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWSAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWSAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWSAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CRUISE CONTROL MAIN SWITCH <a class="content6-ptxt-xref" href="RM100000000ZWFJ.html#RM100000000ZWFJ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000Z1IQ__RM100000000Z1IQ_05_0018">
+<p class="testgrp-heading">CHECK CRUISE CONTROL SWITCH WIRE</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<div class="ie8fixer"/>
+<div class="fignone"> 
+         <img alt="A003MTJC71" class="figure-graphic" src="../images/a003mtjc71.png"/> 
+         <div class="figure-p"> 
+          <div class="tablenoborder">
+           <table class="p-table">
+<tbody class="p-table"> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*a</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Spiral Cable Sub-assembly)</p> </td> 
+             </tr> 
+             <tr> 
+              <td align="center" class="cellrowborder" width="NaN%">*b</td> 
+              <td class="cellrowborder" width="NaN%"> <p class="ptxt">Front view of wire harness connector</p> <p class="ptxt">(to Cruise Control Main Switch)</p> </td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div> 
+         </div> 
+        </div>
+<p class="test1-heading">Remove the cruise control switch wire.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000Z9NW.html#RM100000000Z9NW">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EZZAE" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EZZAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EG2AE" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EM2AE" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0ES2AE" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EG2AE " width="NaN%">z4-3 (CCS) - A-3 (CCS)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EM2AE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ES2AE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EG2AE " width="NaN%">z4-4 (ECC) - A-1 (ECC)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EM2AE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ES2AE " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EG2AE " width="NaN%">z4-3 (CCS) or A-3 (CCS) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EM2AE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ES2AE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EG2AE " width="NaN%">z4-4 (ECC) or A-1 (ECC) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EM2AE " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ES2AE " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EG6AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EG6AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EKAAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKAAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EKAAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE CRUISE CONTROL SWITCH WIRE <a class="content6-ptxt-xref" href="RM100000000Z9NV.html#RM100000000Z9NV">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM100000000Z1IQ__RM100000000Z1IQ_05_0007">
+<p class="testgrp-heading">INSPECT SPIRAL CABLE SUB-ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Remove the spiral cable sub-assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000Z8XW.html#RM100000000Z8XW">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Inspect the spiral cable sub-assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000Z8XU.html#RM100000000Z8XU">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EUEAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EUEAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EXFAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXFAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXFAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE SPIRAL CABLE SUB-ASSEMBLY <a class="content6-ptxt-xref" href="RM100000000Z8XV.html#RM100000000Z8XV">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM100000000Z1IQ__RM100000000Z1IQ_05_0016">
+<p class="testgrp-heading">CHECK HARNESS AND CONNECTOR (SPIRAL CABLE SUB-ASSEMBLY - HYBRID VEHICLE CONTROL ECU AND BODY GROUND)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I23 spiral cable sub-assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the I3 hybrid vehicle control ECU connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Measure the resistance according to the value(s) in the table below.</p>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EWJAG" class="spec-title">Standard Resistance</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EWJAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EDLAG" width="NaN%">Tester Connection</th> 
+                 <th align="center" class="spec-table-item" id="ID0EJLAG" width="NaN%">Condition</th> 
+                 <th align="center" class="spec-table-item" id="ID0EPLAG" width="NaN%">Specified Condition</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDLAG " width="NaN%">I23-1 (CCS) - I3-14 (CCS)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJLAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPLAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDLAG " width="NaN%">I23-2 (ECC) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJLAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPLAG " width="NaN%">Below 1 Ω</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EDLAG " width="NaN%">I23-1 (CCS) or I3-14 (CCS) - Body ground</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EJLAG " width="NaN%">Always</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EPLAG " width="NaN%">10 kΩ or higher</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ENOAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ENOAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQPAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQPAG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EQPAG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE HYBRID VEHICLE CONTROL ECU <a class="content6-ptxt-xref" href="RM10000000115AJ.html#RM10000000115AJ">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR OR REPLACE HARNESS OR CONNECTOR </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

@@ -1,0 +1,527 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C14B6" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_54" name="servcatId"/> 
+  <meta content="Brake" name="servcatName"/> 
+  <meta content="_058045" name="sectionId"/> 
+  <meta content="BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS" name="sectionName"/> 
+  <meta content="_0295571" name="ttlId"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM10000000110L0" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>C14B6</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C14B6</h1>
+<div class="section" id="RM10000000110L0__RM10000000110L0_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C14B6</td> 
+       <td class="dtcname" headers="ID0EED">Stroke Sensor / Reaction Force Pressure Sensor Output Inconsistent</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM10000000110L0__RM10000000110L0_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">If the skid control ECU (brake booster with master cylinder assembly) detects an inconsistency between the brake pedal stroke sensor assembly signal and reaction force pressure sensor signal, DTC C14B6 is stored.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EWF" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0E3F" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0ECG" width="NaN%">INF Code</th> 
+        <th align="center" class="cellrowborder" id="ID0EIG" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EOG" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EUG" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EWF " width="NaN%">C14B6</td> 
+        <td align="left" class="cellrowborder" headers="ID0E3F " width="NaN%">Stroke Sensor / Reaction Force Pressure Sensor Output Inconsistent</td> 
+        <td align="center" class="cellrowborder" headers="ID0ECG " width="NaN%">209</td> 
+        <td align="left" class="cellrowborder" headers="ID0EIG " width="NaN%">The difference between brake pedal stroke sensor assembly output value and reaction force pressure sensor output value is above the threshold for a certain period of time.</td> 
+        <td align="left" class="cellrowborder" headers="ID0EOG " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Brake actuator (brake booster with master cylinder assembly)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Brake pedal stroke sensor assembly</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EUG " width="NaN%">Electronically controlled brake system DTC</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110L0__RM10000000110L0_06">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">After replacing the brake actuator (brake booster with master cylinder assembly) or brake pedal stroke sensor assembly perform linear solenoid valve offset learning, ABS holding solenoid valve learning, yaw rate and acceleration sensor zero point calibration and system information memorization after performing "Reset Memory".</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM10000000110JB.html#RM10000000110JB">Click here</a>
+</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110L0__RM10000000110L0_04">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM10000000110L0__RM10000000110L0_04_0003">
+<p class="testgrp-heading">CUSTOMER PROBLEM ANALYSIS (CHECK CONDITION WHEN MALFUNCTION OCCURRED) AND FREEZE FRAME DATA</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Interview the customer to check the vehicle conditions when the brake warning light / yellow (minor malfunction) illuminated.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Using the GTS, read the "Shift Lever Position", "Vehicle Speed", "Yaw Rate Sensor", "Steering Angle Sensor", "Stop Light SW", "Stroke Sensor", "Reaction Force Pressure", "Servo Pressure" and "Accumulator Pressure" of the Freeze Frame Data stored when the DTC was stored.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <br class="tip"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Freeze Frame Data is only stored once when a DTC is stored.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">If other DTCs are output, repair any malfunctions related to those DTCs first, and then reproduce the conditions that caused DTC C14B6 to be stored based on the interview with the customer.</p>
+</li> 
+         </ul> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EIFAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EIFAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ELGAC" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ELGAC " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110L0__RM10000000110L0_04_0005">
+<p class="testgrp-heading">INSPECT BRAKE PEDAL STROKE SENSOR ASSEMBLY OUTPUT VOLTAGES AND WHEEL CYLINDER PRESSURE</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Mount a pedal effort gauge.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Disconnect the A11 brake booster pump assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Depress the brake pedal 10 times or more until it becomes hard.</p>
+<div class="tip">
+         <p class="tiptitle">Tech Tips</p> 
+         <p class="ptxt">Depressing the brake pedal with the connector of the brake booster pump assembly disconnected drops the accumulator pressure to approximately 0 MPa.</p> 
+        </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Connect an LSPV gauge set.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Select the Data List on the GTS.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110K0.html#RM10000000110K0">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Data List<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EVMAC" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0E2MAC" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EBNAC" width="NaN%">Range</th> 
+              <th align="center" class="cellrowborder" id="ID0EHNAC" width="NaN%">Normal Condition</th> 
+              <th align="center" class="cellrowborder" id="ID0ENNAC" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EVMAC " width="NaN%">Stroke Sensor</td> 
+              <td align="left" class="cellrowborder" headers="ID0E2MAC " width="NaN%">Brake pedal stroke sensor assembly</td> 
+              <td align="left" class="cellrowborder" headers="ID0EBNAC " width="NaN%">Min.: 0.00 V, Max.: 5.00 V</td> 
+              <td align="left" class="cellrowborder" headers="ID0EHNAC " width="NaN%">Brake pedal released: 0.65 to 1.35 V</td> 
+              <td align="left" class="cellrowborder" headers="ID0ENNAC " width="NaN%">Reading increases when brake pedal is depressed</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Data List<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0E3CAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0E3CAE " width="NaN%">Stroke Sensor</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Slowly depress the brake pedal and check the brake pedal stroke sensor assembly output voltages and the wheel cylinder pressure with respect to brake pedal depression force.</p>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Check the wheel cylinder pressure with the switching solenoid (SSA, SGH) off and an accumulator pressure of 0 MPa.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELIAE" class="spec-title">Standard Pressure</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELIAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<caption class="table">
+                for Front Right Wheel
+               </caption>
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0E3JAE" width="NaN%"> <p class="ptxt">Brake Effort</p> <p class="ptxt">[N (kgf, lbf)]</p> </th> 
+                 <th align="center" class="spec-table-item" id="ID0ENKAE" width="NaN%"> <p class="ptxt">Stroke Sensor</p> <p class="ptxt">[V]</p> </th> 
+                 <th align="center" class="spec-table-item" id="ID0E5KAE" width="NaN%"> <p class="ptxt">Hydraulic Pressure</p> <p class="ptxt">[MPa (kgf/cm<sup class="ptxt">2</sup>, psi)]</p> </th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3JAE " width="NaN%">200 (20, 45.0)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ENKAE " width="NaN%">1.14 to 1.84</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5KAE " width="NaN%">0.03 (0.3, 4.4) to 2.03 (20.7, 294)</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0E3JAE " width="NaN%">500 (51, 112.4)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0ENKAE " width="NaN%">1.31 to 2.01</td> 
+                 <td align="center" class="spec-table-item" headers="ID0E5KAE " width="NaN%">2.00 (20.4, 290) to 4.00 (40.8, 580)</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ELIAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<caption class="table">
+                for Front Left Wheel
+               </caption>
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EXOAE" width="NaN%"> <p class="ptxt">Brake Effort</p> <p class="ptxt">[N (kgf, lbf)]</p> </th> 
+                 <th align="center" class="spec-table-item" id="ID0EIPAE" width="NaN%"> <p class="ptxt">Stroke Sensor</p> <p class="ptxt">[V]</p> </th> 
+                 <th align="center" class="spec-table-item" id="ID0EZPAE" width="NaN%"> <p class="ptxt">Hydraulic Pressure</p> <p class="ptxt">[MPa (kgf/cm<sup class="ptxt">2</sup>, psi)]</p> </th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXOAE " width="NaN%">200 (20, 45.0)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EIPAE " width="NaN%">1.14 to 1.84</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZPAE " width="NaN%">0.03 (0.3, 4.4) to 2.03 (20.7, 294)</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EXOAE " width="NaN%">500 (51, 112.4)</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EIPAE " width="NaN%">1.31 to 2.01</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EZPAE " width="NaN%">2.00 (20.4, 290) to 4.00 (40.8, 580)</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQSAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EQSAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ETTAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETTAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ETTAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for LHD: <a class="content6-ptxt-xref" href="RM100000000Z7YC.html#RM100000000Z7YC">Click here</a> <br/>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for RHD: <a class="content6-ptxt-xref" href="RM100000000Z7YF.html#RM100000000Z7YF">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NG</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110L0__RM10000000110L0_04_0006">
+<p class="testgrp-heading">REPLACE BRAKE PEDAL STROKE SENSOR ASSEMBLY</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Reconnect the A11 brake booster pump assembly connector.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Replace brake pedal stroke sensor assembly.</p>
+<p class="test1-ptxt">for LHD: <a class="ptxt-xref" href="RM100000000Z7XL.html#RM100000000Z7XL">Click here</a>
+</p>
+<p class="test1-ptxt">for RHD: <a class="ptxt-xref" href="RM100000000Z7XO.html#RM100000000Z7XO">Click here</a>
+</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Perform zero point calibration of the brake pedal stroke sensor assembly.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110JB.html#RM10000000110JB">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EB1AE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EB1AE " width="NaN%">ECB Utility</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ER5AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ER5AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EU6AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EU6AE " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM10000000110L0__RM10000000110L0_04_0007">
+<p class="testgrp-heading">RECONFIRM DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Perform a road test under the same malfunction conditions recreated based on the Freeze Frame Data or customer problem analysis.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off and wait for 2 minutes or more.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the same DTC is output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EHKAG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EHKAG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EQLAG" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EVLAG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EQLAG " width="NaN%">DTC C14B6 is not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVLAG " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EQLAG " width="NaN%">DTC C14B6 is output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EVLAG " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">B</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for LHD: <a class="content6-ptxt-xref" href="RM100000000Z7YC.html#RM100000000Z7YC">Click here</a> <br/>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for RHD: <a class="content6-ptxt-xref" href="RM100000000Z7YF.html#RM100000000Z7YF">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>

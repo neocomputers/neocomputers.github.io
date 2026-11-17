@@ -1,0 +1,632 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+ 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
+  <meta content="(C) Copyright 2005" name="copyright"/> 
+  <meta content="(C) Copyright 2005" name="DC.rights.owner"/> 
+  <meta content="topic" name="DC.Type"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C1349, C134A" name="DC.Title"/> 
+  <meta content="RM32E1E" name="pubId"/> 
+  <meta content="_54" name="servcatId"/> 
+  <meta content="Brake" name="servcatName"/> 
+  <meta content="_058045" name="sectionId"/> 
+  <meta content="BRAKE CONTROL / DYNAMIC CONTROL SYSTEMS" name="sectionName"/> 
+  <meta content="_0295571" name="ttlId"/> 
+  <meta content="ELECTRONICALLY CONTROLLED BRAKE SYSTEM" name="ttlName"/> 
+  <meta content="C" name="paraCategory"/> 
+  <meta content="201701" name="paraFrom"/> 
+  <meta content="UFX" name="xmlSource"/> 
+  <meta content="XHTML" name="DC.Format"/> 
+  <meta content="RM10000000110KB" name="DC.Identifier"/> 
+  <link href="../css/commonltr.css" rel="stylesheet" type="text/css"/> 
+  <link href="../css/topic.css" rel="stylesheet" type="text/css"/> 
+  <title>C1349, C134A</title> 
+ </head> 
+ <div class="e2e">
+<h1 class="topictitle1">ELECTRONICALLY CONTROLLED BRAKE SYSTEM, Diagnostic DTC:C1349, C134A</h1>
+<div class="section" id="RM10000000110KB__RM10000000110KB_DTC">
+     
+    <table class="dtc">
+<tbody class="dtc">
+      <tr class="dtc-dtc-head"> 
+       <th align="left" id="ID0EBD" class="dtc-dtc-head">DTC Code</th> 
+       <th align="left" id="ID0EED" class="dtc-dtc-head">DTC Name</th> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C1349</td> 
+       <td class="dtcname" headers="ID0EED">Pressure Holding Solenoid Valve Learning Undone</td> 
+      </tr> 
+      <tr> 
+       <td class="dtccode" headers="ID0EBD">C134A</td> 
+       <td class="dtcname" headers="ID0EED">Pressure Holding Solenoid Valve Learning Malfunction</td> 
+      </tr> 
+     </tbody>
+</table> 
+   </div>
+<div class="subpara" id="RM10000000110KB__RM10000000110KB_01">
+     
+    <p class="subpara-subparaName">DESCRIPTION</p> 
+    <p class="content5-ptxt">The skid control ECU (brake booster with master cylinder assembly) stores the individual characteristic of each holding solenoid built into the brake actuator assembly. Based on the stored information, the skid control ECU (brake booster with master cylinder assembly) calibrates the individual differences and controls systems.</p> 
+    <p class="content5-ptxt">The skid control ECU (brake booster with master cylinder assembly) receives the park (P) signal from the hybrid vehicle control ECU through the CAN communication system.</p> 
+    <p class="content5-ptxt">These DTCs are cleared when the ABS holding solenoid valve learning results are normal.</p> 
+    <div class="tablenoborder">
+     <table class="big-table">
+<thead align="left" class="content5-table"> 
+       <tr> 
+        <th align="center" class="cellrowborder" id="ID0EOG" width="NaN%">DTC No.</th> 
+        <th align="center" class="cellrowborder" id="ID0EUG" width="NaN%">Detection Item</th> 
+        <th align="center" class="cellrowborder" id="ID0E1G" width="NaN%">INF Code</th> 
+        <th align="center" class="cellrowborder" id="ID0EAH" width="NaN%">DTC Detection Condition</th> 
+        <th align="center" class="cellrowborder" id="ID0EGH" width="NaN%">Trouble Area</th> 
+        <th align="center" class="cellrowborder" id="ID0EMH" width="NaN%">Note</th> 
+       </tr> 
+      </thead>
+<tbody class="content5-table"> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EOG " width="NaN%">C1349</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUG " width="NaN%">Pressure Holding Solenoid Valve Learning Undone</td> 
+        <td align="center" class="cellrowborder" headers="ID0E1G " width="NaN%">1155</td> 
+        <td align="left" class="cellrowborder" headers="ID0EAH " width="NaN%">The ABS holding solenoid valve learning value is not stored.</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGH " width="NaN%">Perform ABS holding solenoid valve learning and check for DTCs. If no DTCs are output again, the valve is normal.</td> 
+        <td align="left" class="cellrowborder" headers="ID0EMH " width="NaN%"> <p class="ptxt">Electronically controlled brake system DTC</p> 
+         <div class="tip">
+          <p class="tiptitle">Tech Tips</p> 
+          <p class="ptxt">During test mode, related DTCs are cleared.</p> 
+         </div> </td> 
+       </tr> 
+       <tr> 
+        <td align="left" class="cellrowborder" headers="ID0EOG " width="NaN%">C134A</td> 
+        <td align="left" class="cellrowborder" headers="ID0EUG " width="NaN%">Pressure Holding Solenoid Valve Learning Malfunction</td> 
+        <td align="center" class="cellrowborder" headers="ID0E1G " width="NaN%">1156</td> 
+        <td align="left" class="cellrowborder" headers="ID0EAH " width="NaN%">The ABS holding solenoid valve learning value cannot be obtained.</td> 
+        <td align="left" class="cellrowborder" headers="ID0EGH " width="NaN%"> <br class="cellrowborder"/>
+         <ul class="list1"> 
+          <li class="list1-item">
+<p class="list1-heading">Perform ABS holding solenoid valve learning and check for DTCs. If no DTCs are output again, the valve is normal.</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Skid control ECU (brake booster with master cylinder assembly)</p>
+</li> 
+          <li class="list1-item">
+<p class="list1-heading">Brake actuator assembly</p>
+</li> 
+         </ul> </td> 
+        <td align="left" class="cellrowborder" headers="ID0EMH " width="NaN%">Electronically controlled brake system DTC</td> 
+       </tr> 
+      </tbody>
+</table> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110KB__RM10000000110KB_03">
+     
+    <p class="subpara-subparaName">CAUTION / NOTICE / HINT</p> 
+    <div class="note">
+     <p class="notetitle">Note</p> 
+     <p class="ptxt">After replacing the skid control ECU (brake booster with master cylinder assembly) or brake actuator assembly, perform linear solenoid valve offset learning, ABS holding solenoid valve learning, yaw rate and acceleration sensor zero point calibration and system information memorization after performing "Reset Memory".</p> 
+     <p class="ptxt"> <a class="ptxt-xref" href="RM10000000110JB.html#RM10000000110JB">Click here</a>
+</p> 
+    </div> 
+    <div class="tip">
+     <p class="tiptitle">Tech Tips</p> 
+     <p class="ptxt">Before performing linear solenoid valve offset learning, ABS holding solenoid valve learning, yaw rate and acceleration sensor zero point calibration and system information memorization, DTC C1203 will be output.</p> 
+    </div> 
+   </div>
+<div class="subpara" id="RM10000000110KB__RM10000000110KB_05">
+     
+    <p class="subpara-subparaName">PROCEDURE</p> 
+    <br class="subpara"/>
+    <ol class="testgrp">
+<li class="testitem" id="RM10000000110KB__RM10000000110KB_05_0008">
+<p class="testgrp-heading">CHECK DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check that DTCs other than C1345, C1349 and C1392 are not output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Trouble Codes<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EYOAC" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EYOAC">DTCs other than C1345, C1349 and C1392 are not output.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ESPAC" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0ESPAC" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EWAAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWAAE " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EWAAE " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPAIR CIRCUITS INDICATED BY OUTPUT DTCS <a class="content6-ptxt-xref" href="RM10000000110K1.html#RM10000000110K1">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">OK</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110KB__RM10000000110KB_05_0016">
+<p class="testgrp-heading">PERFORM AIR BLEEDING</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Perform the air bleeding procedure in Bleed Brake System.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM100000000Z7XZ.html#RM100000000Z7XZ_02_0002">Click here</a>
+</p>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EJEAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EJEAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EMFAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EMFAE " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110KB__RM10000000110KB_05_0009">
+<p class="testgrp-heading">PERFORM ABS HOLDING SOLENOID VALVE LEARNING</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check and ensure the following conditions required for performing ABS holding solenoid valve learning and then perform ABS holding solenoid valve learning.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110JB.html#RM10000000110JB">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Utility<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EJJAE" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EJJAE " width="NaN%">ECB Utility</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>
+<ol class="test1-list1" type="i">
+<li class="list1-item clearer">
+<p class="test1-list1-heading">The auxiliary battery voltage is 11 to 15.5 V when the power switch is on (READY).</p>
+</li>
+<li class="list1-item">
+<p class="test1-list1-heading">The brake actuator assembly is not hot.</p>
+</li>
+<li class="list1-item">
+<p class="test1-list1-heading">The hybrid control system is not malfunctioning.</p>
+</li>
+<li class="list1-item">
+<p class="test1-list1-heading">The shift state indicator shows that the vehicle shift state is park (P).</p>
+</li>
+<li class="list1-item">
+<p class="test1-list1-heading">The READY light in the combination meter assembly is illuminated.</p>
+</li>
+<li class="list1-item">
+<p class="test1-list1-heading">The brake pedal is not depressed.</p>
+</li>
+<li class="list1-item">
+<p class="test1-list1-heading">The parking brake is released.</p>
+</li>
+</ol>
+<div class="note">
+         <p class="notetitle">Note</p> 
+         <p class="ptxt">Learning will be performed in the order of linear solenoid valve offset learning and then ABS holding solenoid valve learning.</p> 
+        </div>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EWQAE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EWQAE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EZRAE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0EZRAE " width="NaN%">NEXT</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">NEXT</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem" id="RM10000000110KB__RM10000000110KB_05_0010">
+<p class="testgrp-heading">RECONFIRM DTC</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Clear the DTCs.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Clear DTCs</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch off.</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Turn the power switch on (IG).</p>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Check if the same DTC is output.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110J9.html#RM10000000110J9">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Trouble Codes<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0E52AE" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0E52AE" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0EH4AE" width="NaN%">Result</th> 
+                 <th align="center" class="spec-table-item" id="ID0EM4AE" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EH4AE " width="NaN%">DTCs C1349 and C134A are not output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EM4AE " width="NaN%">A</td> 
+                </tr> 
+                <tr> 
+                 <td class="spec-table-item" headers="ID0EH4AE " width="NaN%">DTCs C1349 and/or C134A are output.</td> 
+                 <td align="center" class="spec-table-item" headers="ID0EM4AE " width="NaN%">B</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">A</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>END </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-down">
+<tbody>
+<tr class="res-down-fin-false">
+<tr>
+<td class="res-down-fin-false-cap">B</td>
+</tr>
+<tr>
+<td class="res-down-fin-false">
+<img class="res-down" src="../img/next_down.png"/>
+</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="testitem whitespacer" id="RM10000000110KB__RM10000000110KB_05_0012">
+<p class="testgrp-heading">PERFORM ACTIVE TEST USING GTS (ABS SOLENOID)</p>
+<br class="testitem"/>
+<ol class="test1" type="a">
+<li class="test1Root-test1">
+<p class="test1-heading">Select the Active Test on the GTS.</p>
+<p class="test1-ptxt"> <a class="ptxt-xref" href="RM10000000110K0.html#RM10000000110K0">Click here</a>
+</p>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Active Test<div class="tablenoborder">
+           <table class="big-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ELCAG" width="NaN%">Tester Display</th> 
+              <th align="center" class="cellrowborder" id="ID0ERCAG" width="NaN%">Measurement Item</th> 
+              <th align="center" class="cellrowborder" id="ID0EXCAG" width="NaN%">Control Range</th> 
+              <th align="center" class="cellrowborder" id="ID0E4CAG" width="NaN%">Diagnostic Note</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ELCAG " width="NaN%">ABS Solenoid (SRLH)</td> 
+              <td align="left" class="cellrowborder" headers="ID0ERCAG " width="NaN%">Holding solenoid valve (RLH)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EXCAG " width="NaN%">Solenoid ON/OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0E4CAG " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ELCAG " width="NaN%">ABS Solenoid (SRRH)</td> 
+              <td align="left" class="cellrowborder" headers="ID0ERCAG " width="NaN%">Holding solenoid valve (RRH)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EXCAG " width="NaN%">Solenoid ON/OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0E4CAG " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ELCAG " width="NaN%">ABS Solenoid (SFLH)</td> 
+              <td align="left" class="cellrowborder" headers="ID0ERCAG " width="NaN%">Holding solenoid valve (FLH)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EXCAG " width="NaN%">Solenoid ON/OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0E4CAG " width="NaN%">-</td> 
+             </tr> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ELCAG " width="NaN%">ABS Solenoid (SFRH)</td> 
+              <td align="left" class="cellrowborder" headers="ID0ERCAG " width="NaN%">Holding solenoid valve (FRH)</td> 
+              <td align="left" class="cellrowborder" headers="ID0EXCAG " width="NaN%">Solenoid ON/OFF</td> 
+              <td align="center" class="cellrowborder" headers="ID0E4CAG " width="NaN%">-</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EZNAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EZNAG " width="NaN%">ABS Solenoid (SRLH)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0ERTAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0ERTAG " width="NaN%">ABS Solenoid (SRRH)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EJZAG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EJZAG " width="NaN%">ABS Solenoid (SFLH)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+<br class="test1Root-test1"/>Chassis &gt; ABS/VSC/TRC &gt; Active Test<div class="tablenoborder">
+           <table class="gts-info-title-table-table">
+<thead align="left" class="gts-info-title-table-table"> 
+             <tr> 
+              <th align="center" class="cellrowborder" id="ID0EB6AG" width="NaN%">Tester Display</th> 
+             </tr> 
+            </thead>
+<tbody class="gts-info-title-table-table"> 
+             <tr> 
+              <td align="left" class="cellrowborder" headers="ID0EB6AG " width="NaN%">ABS Solenoid (SFRH)</td> 
+             </tr> 
+            </tbody>
+</table> 
+          </div>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">Operate the SFRH (front right wheel holding solenoid valve), SFLH (front left wheel holding solenoid valve), SRRH (rear right wheel holding solenoid valve) and SRLH (rear left wheel holding solenoid valve) solenoids one by one. While operating each solenoid, depress the brake pedal, open the corresponding bleeder plug and check that brake fluid does not flow from the bleeder plug.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0ELEBG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0ELEBG">Brake fluid does not flow from the corresponding bleeder plug when the brake pedal is depressed when operating each solenoid.</td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+<li class="test1Root-test1">
+<p class="test1-heading">While not operating the SFRH (front right wheel holding solenoid valve), SFLH (front left wheel holding solenoid valve), SRRH (rear right wheel holding solenoid valve) and SRLH (rear left wheel holding solenoid valve) solenoids, depress the brake pedal, open each bleeder plug and check that brake fluid flows from each bleeder plug.</p>
+<table class="spec">
+<tbody class="test1-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EQFBG" class="spec-title">OK</th> 
+          </tr> 
+          <tr class="spec-specitem"> 
+           <td class="specitem-ptxt" headers="ID0EQFBG">Brake fluid flows from each bleeder plug when not operating each solenoid and the brake pedal is depressed.</td> 
+          </tr> 
+         </tbody>
+</table>
+<table class="spec-with-table">
+<tbody class="content6-spec">
+          <tr class="spec-title"> 
+           <th align="left" id="ID0EKGBG" class="spec-title">Result</th> 
+          </tr> 
+          <tr class="spec-table"> 
+           <td headers="ID0EKGBG" class="spec-table"> 
+            <div class="p"> 
+             <div class="tablenoborder">
+              <table class="table">
+<thead align="left" class="table"> 
+                <tr> 
+                 <th align="center" class="spec-table-item" id="ID0ENHBG" width="NaN%">Proceed to</th> 
+                </tr> 
+               </thead>
+<tbody class="table"> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ENHBG " width="NaN%">OK</td> 
+                </tr> 
+                <tr> 
+                 <td align="center" class="spec-table-item" headers="ID0ENHBG " width="NaN%">NG</td> 
+                </tr> 
+               </tbody>
+</table> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+</table>
+</li>
+</ol>
+<br class="testitem"/>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">OK</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for LHD: <a class="content6-ptxt-xref" href="RM100000000Z7YC.html#RM100000000Z7YC">Click here</a> <br/>REPLACE BRAKE BOOSTER WITH MASTER CYLINDER ASSEMBLY for RHD: <a class="content6-ptxt-xref" href="RM100000000Z7YF.html#RM100000000Z7YF">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="testgrp-res-right">
+<tbody>
+<tr class="res-right-fin-true-xtref">
+<td class="res-right-fin-true-cap">NG</td>
+<td class="res-right-fin-true">
+<img class="res-right" src="../img/fin_right.png"/>
+</td>
+<td class="res-right-fin-true-link">
+<p>REPLACE BRAKE ACTUATOR ASSEMBLY for LHD: <a class="content6-ptxt-xref" href="RM1000000010JRW.html#RM1000000010JRW">Click here</a> <br/>REPLACE BRAKE ACTUATOR ASSEMBLY for RHD: <a class="content6-ptxt-xref" href="RM100000000Z7X8.html#RM100000000Z7X8">Click here</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol> 
+   </div>
+</div>
+
+</html>
